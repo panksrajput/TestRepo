@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_mailing_config>
+	<add_attachment>true</add_attachment>
+	<rendition_formats/>
+	<list-recipient>
+		<recipient type="attribute">subject</recipient>
+	</list-recipient>
+	<list-subject>
+		<subject_en>Results of your recent Multi Document Action</subject_en>
+	</list-subject>
+	<list-object>
+		<object_en>$value(title)</object_en>
+	</list-object>
+</d2_mailing_config>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dialog id="PropertiesDialog" auto_smartview_edit_mode="false" buttons_right="false" focus="" height="500" initial_invalid="false" resizable="true" signoff_creation="false" signoff_edit="false" signoff_import="false" signoff_intention_dictionary="" signoff_intention_required="false" width="400">
+	<content>
+		<fieldset>
+			<comment font_color="#FF3333" font_size="24pt" label_en="Do Not Use this Page - it is meant as a placeholder for Restricted Edit"/>
+		</fieldset>
+	</content>
+	<buttons>
+		<button id="buttonOk" action="validDialog()"/>
+		<button id="buttonCancel" action="cancelDialog()"/>
+	</buttons>
+</dialog>

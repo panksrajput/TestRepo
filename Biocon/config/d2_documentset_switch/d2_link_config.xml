@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_documentset_switch object_name="d2_link_config">
+	<d2_documentset name="Registration Forms¬Medical Device Registration Forms" config="Medical Device Registration Form Auto Link"/>
+	<d2_documentset name="Registration Forms¬Product Registration Forms" config="Product Registration Form Auto Link"/>
+	<d2_documentset name="Registration Forms¬Medical Device Regulatory Submission Registration Form Context" config="Medical Device Regulatory Submission Registration Form Auto link"/>
+	<d2_documentset name="Registration Forms¬Medical Device Regulatory-Admin Registration Forms" config="Medical Device Regulatory Admin Registration Form Auto Link"/>
+	<d2_documentset name="Registration Forms¬Manufactured Item Registration Forms¬Item Registration Forms for Finished Goods without item code" config="Manufactured Item Registration Forms  for Finished Goods Auto Link"/>
+	<d2_documentset name="Registration Forms¬Manufactured Item Registration Forms¬Item Registration Forms for Finished Goods" config="Manufactured Item Registration Forms  for Finished Goods Auto Link"/>
+	<d2_documentset name="Registration Forms¬Manufactured Item Registration Forms¬Item Registration Forms for Semi-finished Goods without item code" config="Manufactured Item Registration Forms  for Semi-finished Good Auto Link"/>
+	<d2_documentset name="Registration Forms¬Manufactured Item Registration Forms¬Item Registration Forms for Semi-finished Goods" config="Manufactured Item Registration Forms  for Semi-finished Good Auto Link"/>
+	<d2_documentset name="Registration Forms¬Manufactured Item Registration Forms¬Item Registration Forms for Active Ingredients without item code" config="Manufactured Item Registration Forms  for Active Ingredients Auto Link"/>
+	<d2_documentset name="Registration Forms¬Manufactured Item Registration Forms¬Item Registration Forms for Active Ingredients" config="Manufactured Item Registration Forms  for Active Ingredients Auto Link"/>
+	<d2_documentset name="GMP Documents¬GMP Group Directive" config="Governance and Procedures Auto Link"/>
+	<d2_documentset name="GMP Documents¬GMP Group Drawings" config="Facility and Organization"/>
+	<d2_documentset name="GMP Documents¬GMP Group Executed Manufacturing¬GMP Subgroup Exec Manu Finished Good" config="Manufacturing Finished Good Documents Executed Manufacturing"/>
+	<d2_documentset name="GMP Documents¬GMP Group Executed Manufacturing¬GMP Subgroup Exec Manu Semi-finished Good" config="Manufacturing Semi-finished Good Documents Auto Link"/>
+	<d2_documentset name="GMP Documents¬GMP Group Executed Manufacturing¬GMP Subgroup Exec Manu Active Ingredient" config="Manufacturing Active Ingredient Document Executed Manufacturing"/>
+	<d2_documentset name="GMP Documents¬GMP Group Executed Validation¬GMP Subgroup Exec Validation Equipment" config="Validation Equipment Documents"/>
+	<d2_documentset name="GMP Documents¬GMP Group Executed Validation¬GMP Subgroup Exec Validation Material" config="Validation Material Documents"/>
+	<d2_documentset name="GMP Documents¬GMP Group Executed Validation¬GMP Subgroup Exec Validation Finished Good" config="Validation Finished Good Documents"/>
+	<d2_documentset name="GMP Documents¬GMP Group Executed Validation¬GMP Subgroup Exec Validation Semi-finished Good" config="Validation Semi-finished Good Documents"/>
+	<d2_documentset name="GMP Documents¬GMP Group Executed Validation¬GMP Subgroup Exec Validation Active Ingredient" config="Validation Active Ingredient Documents"/>
+	<d2_documentset name="GMP Documents¬GMP Group Executed Validation¬GMP Subgroup Exec Validation System" config="Validation System Documents"/>
+	<d2_documentset name="GMP Documents¬GMP Group Executed Validation¬Bio GMP Subgroup Exec Validation QC Instrument" config="Bio Validation QC Instrument Documents"/>
+	<d2_documentset name="GMP Documents¬GMP Group Facility Records and Certificates" config="Facility and Organization"/>
+	<d2_documentset name="GMP Documents¬GMP Group Form" config="Bio Governance and Procedures Auto Link - FORM &amp; SOP"/>
+	<d2_documentset name="GMP Documents¬GMP Group Guideline" config="Governance and Procedures Auto Link"/>
+	<d2_documentset name="GMP Documents¬GMP Group Program" config="Governance and Procedures Auto Link"/>
+	<d2_documentset name="GMP Documents¬GMP Group Manuals" config="Reference and Training Documents"/>
+	<d2_documentset name="GMP Documents¬GMP Group Master Manufacturing¬GMP Subgroup Master Manu Finished Good" config="Manufacturing Finished Good Document Master Manufacturing Auto Link"/>
+	<d2_documentset name="GMP Documents¬GMP Group Master Manufacturing¬GMP Subgroup Master Manu Semi-finished Good" config="Manufacturing Semi-finished Good Document Master Manufacturing Auto Link"/>
+	<d2_documentset name="GMP Documents¬GMP Group Master Manufacturing¬GMP Subgroup Master Manu Active Ingredient" config="Manufacturing Active Ingredient Documents Master Manufacturing Auto Link"/>
+	<d2_documentset name="GMP Documents¬GMP Group Master Validation¬GMP Subgroup Master Validation Equipment" config="Validation Equipment Documents"/>
+	<d2_documentset name="GMP Documents¬GMP Group Master Validation¬GMP Subgroup Master Validation Material" config="Validation Material Documents"/>
+	<d2_documentset name="GMP Documents¬GMP Group Master Validation¬GMP Subgroup Master Validation Finished Good" config="Validation Finished Good Documents"/>
+	<d2_documentset name="GMP Documents¬GMP Group Master Validation¬GMP Subgroup Master Validation Semi-finished Good" config="Validation Semi-finished Good Documents"/>
+	<d2_documentset name="GMP Documents¬GMP Group Master Validation¬GMP Subgroup Master Validation Active Ingredient" config="Validation Active Ingredient Documents"/>
+	<d2_documentset name="GMP Documents¬GMP Group Master Validation¬GMP Subgroup Master Validation System" config="Validation System Documents"/>
+	<d2_documentset name="GMP Documents¬GMP Group Master Validation¬Bio GMP Subgroup Master Validation QC Instrument" config="Bio Validation QC Instrument Documents"/>
+	<d2_documentset name="GMP Documents¬GMP Group Method¬GMP Subgroup Method General" config="Manufacturing General Documents"/>
+	<d2_documentset name="GMP Documents¬GMP Group Method¬GMP Subgroup Method Material" config="Manufacturing Material Documents Auto Link"/>
+	<d2_documentset name="GMP Documents¬GMP Group Method¬GMP Subgroup Method Finished Good" config="Manufacturing Finished Good Documents Auto Link"/>
+	<d2_documentset name="GMP Documents¬GMP Group Method¬GMP Subgroup Method Semi-finished Good" config="Manufacturing Semi-finished Good Documents Auto Link"/>
+	<d2_documentset name="GMP Documents¬GMP Group Method¬GMP Subgroup Method Active Ingredient" config="Manufacturing Active Ingredient Documents Auto Link"/>
+	<d2_documentset name="GMP Documents¬GMP Group Packaging and Labeling" config="Packaging and Labeling"/>
+	<d2_documentset name="GMP Documents¬GMP Group Policy" config="Governance and Procedures Auto Link"/>
+	<d2_documentset name="GMP Documents¬GMP Group Project Documents" config="Project Documents"/>
+	<d2_documentset name="GMP Documents¬GMP Group Quality Documents¬GMP Subgroup Quality Doc Finished Good" config="Manufacturing Finished Good Documents Auto Link"/>
+	<d2_documentset name="GMP Documents¬GMP Group Quality Documents¬GMP Subgroup Quality Doc Semi-finished Good" config="Manufacturing Semi-finished Good Documents Auto Link"/>
+	<d2_documentset name="GMP Documents¬GMP Group Quality Documents¬GMP Subgroup Quality Doc Active Ingredient" config="Manufacturing Active Ingredient Documents Auto Link"/>
+	<d2_documentset name="GMP Documents¬GMP Group Quality Manual" config="Governance and Procedures Auto Link"/>
+	<d2_documentset name="GMP Documents¬GMP Group Records and Certificates¬GMP Subgroup Record and Cert Finished Good" config="Manufacturing Finished Good Documents Auto Link"/>
+	<d2_documentset name="GMP Documents¬GMP Group Records and Certificates¬GMP Subgroup Record and Cert Semi-finished Good" config="Manufacturing Semi-finished Good Documents Auto Link"/>
+	<d2_documentset name="GMP Documents¬GMP Group Records and Certificates¬GMP Subgroup Record and Cert Active Ingredient" config="Manufacturing Active Ingredient Documents Auto Link"/>
+	<d2_documentset name="GMP Documents¬GMP Group Records and Certificates¬GMP Subgroup Record and Cert Material" config="Manufacturing Material Documents Auto Link"/>
+	<d2_documentset name="GMP Documents¬GMP Group Records and Certificates¬GMP Subgroup Record and Cert Equipment" config="Manufacturing Equipment Documents"/>
+	<d2_documentset name="GMP Documents¬GMP Group SOP" config="Bio Governance and Procedures Auto Link - FORM &amp; SOP"/>
+	<d2_documentset name="GMP Documents¬GMP Group Specification¬GMP Subgroup Specification General" config="Manufacturing General Documents"/>
+	<d2_documentset name="GMP Documents¬GMP Group Specification¬GMP Subgroup Specification Material" config="Manufacturing Material Documents Auto Link"/>
+	<d2_documentset name="GMP Documents¬GMP Group Specification¬GMP Subgroup Specification Finished Good" config="Manufacturing Finished Good Documents Auto Link"/>
+	<d2_documentset name="GMP Documents¬GMP Group Specification¬GMP Subgroup Specification Semi-finished Good" config="Manufacturing Semi-finished Good Documents Auto Link"/>
+	<d2_documentset name="GMP Documents¬GMP Group Specification¬GMP Subgroup Specification Active Ingredient" config="Manufacturing Active Ingredient Documents Auto Link"/>
+	<d2_documentset name="GMP Documents¬GMP Group Training" config="Reference and Training Documents"/>
+	<d2_documentset name="GMP Documents¬GMP Group Work Instruction" config="Governance and Procedures Auto Link"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group External Audit" config="GMP QMA External Audit Documents"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Internal Audit" config="GMP QMA Internal Audit Documents"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Investigations¬GMP QMA Subgroup Investigation Equipment" config="GMP QMA Investigation Equipment Documents"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Investigations¬GMP QMA Subgroup Investigation General" config="GMP QMA Investigation General Documents"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Investigations¬GMP QMA Subgroup Investigation Material" config="GMP QMA Investigation Material Documents"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Investigations¬GMP QMA Subgroup Investigation Finished Good" config="GMP QMA Investigation Finished Good Documents"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Investigations¬GMP QMA Subgroup Investigation Active Ingredient" config="GMP QMA Investigation Active Ingredient Documents"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Investigations¬GMP QMA Subgroup Investigation System" config="GMP QMA Investigation System Documents"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Quality Events¬GMP QMA Subgroup QE Equipment" config="GMP QMA Quality Event Equipment Documents"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Quality Events¬GMP QMA Subgroup QE General" config="GMP QMA Quality Event General Documents"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Quality Events¬GMP QMA Subgroup QE Material" config="GMP QMA Quality Event Material Documents"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Quality Events¬GMP QMA Subgroup QE Finished Good" config="GMP QMA Quality Event Finished Good Documents"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Quality Events¬GMP QMA Subgroup QE Active Ingredient" config="GMP QMA Quality Event Active Ingredient Documents"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Quality Events¬GMP QMA Subgroup QE System" config="GMP QMA Quality Event System Documents"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Quality Management¬GMP QMA Subgroup QM Customer Management" config="GMP QMA General Autolink"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Quality Management¬GMP QMA Subgroup QM General Management" config="GMP QMA General Autolink"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Quality Management¬GMP QMA Subgroup QM Quality Agreement" config="GMP QMA General Autolink"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Quality Management¬GMP QMA Subgroup QM Quality Mgmt Review - General" config="GMP QMA Quality Management Quality Mgmt Review - General"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Quality Management¬GMP QMA Subgroup QM Quality Mgmt Review - Finished Good" config="GMP QMA Quality Management Quality Mgmt Review - Finished Good"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Quality Management¬GMP QMA Subgroup QM Quality Planning" config="GMP QMA General Autolink"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Quality Management¬GMP QMA Subgroup QM Sales Management" config="GMP QMA General Autolink"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Quality Management¬GMP QMA Subgroup QM Supplier Management" config="GMP QMA Quality Management Supplier Management"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Quality Records¬GMP QMA Subgroup QR Customer Records" config="GMP QMA General Autolink"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Quality Records¬GMP QMA Subgroup QR General Records" config="GMP QMA General Autolink"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Quality Records¬GMP QMA Subgroup QR Sales Records" config="GMP QMA General Autolink"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Quality Records¬GMP QMA Subgroup QR Supplier Records" config="GMP QMA Quality Records Supplier Records Documents"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Quality Risk Documentation" config="GMP QMA General Autolink"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Recalls¬GMP QMA Subgroup Recall Finished Good" config="GMP QMA Recall Finished Good Documents"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Recalls¬GMP QMA Subgroup Recall Active Ingredient" config="GMP QMA Recall Active Ingredient Documents"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Site Master File" config="GMP QMA General Autolink"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Supplier Audit¬Bio GMP QMA Group Supplier Audit - Form" config="GMP QMA Supplier Audit Documents"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Supplier Audit¬Bio GMP QMA Group Supplier Audit - Supplier Audit Report" config="GMP QMA Supplier Audit Documents"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Supplier Audit¬Bio GMP QMA Group Supplier Audit - Supplier Audit Supporting Documents" config="Bio GMP QMA Supplier Audit Documents - Sugroup"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Supplier Audit¬Bio GMP QMA Group Supplier Audit - Supplier Questionnaire" config="Bio GMP QMA Supplier Audit Documents - Sugroup"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Protocol" config="Med Device Documents Auto Link"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Reports" config="Med Device Documents Auto Link"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Requirements" config="Med Device Documents Auto Link"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Reviews" config="Med Device Documents Auto Link"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Plans" config="Med Device Documents Auto Link"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Checklists" config="Med Device Documents Auto Link"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Matrix" config="Med Device Documents Auto Link"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Risk Documentation" config="Med Device Documents Auto Link"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group DHF" config="Med Device Documents Auto Link"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Bill Of Material" config="Med Device Documents Auto Link"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group DMR" config="Med Device Documents Auto Link"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Labeling" config="Med Device Documents Auto Link"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Drawings" config="Med Device Documents Auto Link"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Production Document" config="Med Device Documents Auto Link"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Customer Documents" config="Med Device Documents Auto Link"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Service Documents" config="Med Device Documents Auto Link"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Software Release" config="Med Device Documents Auto Link"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Preliminary Bill Of Material" config="Med Device Documents Auto Link"/>
+	<d2_documentset name="Med Device Documents¬Med Device DMR Group Specifications" config="Med Device Documents Auto Link"/>
+	<d2_documentset name="Med Device Documents¬Med Device DHF Group Specifications" config="Med Device Documents Auto Link"/>
+	<d2_documentset name="Med Device Documents¬Med Device Subgroup Parent" config="Med Device Documents Parent Auto Link"/>
+	<d2_documentset name="Med Device Documents¬Med Device DMR Subgroup Index" config="Med Device Documents Section Index Auto Link"/>
+	<d2_documentset name="Med Device Documents¬Med Device DHF Subgroup Index" config="Med Device Documents Section Index Auto Link"/>
+	<d2_documentset name="Med Device Documents¬Med Device Subgroup Section" config="Med Device Documents Section Index Auto Link"/>
+	<d2_documentset name="Issued Print¬Issued Print Objects" config="Issued Print Objects"/>
+	<d2_documentset name="Issued Print¬Issued Print Request Objects" config="Issued Print Objects"/>
+	<d2_documentset name="Change Request¬Change Requests" config="Change Request Auto Link"/>
+	<d2_documentset name="Security Tag" config="Security Tag Definition Auto Link"/>
+	<d2_documentset name="Security Group Generator" config="Security Group Generator Auto Link"/>
+	<d2_documentset name="Security Model" config="Security Model Auto Link"/>
+	<d2_documentset name="Training Models" config="Document Training Model Autolink"/>
+	<d2_documentset name="Security Folder Model" config="Security Folder Model Auto Link"/>
+	<d2_documentset name="Security Shared" config="Security Shared Auto Link"/>
+	<d2_documentset name="Content Templates¬Quality in Manufacturing Content Templates" config="Content Template Auto Link"/>
+	<d2_documentset name="Content Templates¬Med Device Content Templates" config="Content Template Auto Link"/>
+	<d2_documentset name="DistributionList" config="Distribution List"/>
+	<d2_documentset name="Restricted Edit Models" config="Restricted Edit Model"/>
+	<d2_documentset name="Restricted Edit Instances" config="Restricted Edit Instance"/>
+	<d2_documentset name="Controlled Print Objects" config="Controlled Print Objects"/>
+	<switch_defaults/>
+</d2_documentset_switch>

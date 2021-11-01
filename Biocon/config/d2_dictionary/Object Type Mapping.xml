@@ -1,0 +1,693 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_dictionary object_name="Object Type Mapping" title="This dictionary defines the object-type-level artifact initialization settings" lock_config="false" parents_config="" application_names="OpenText Life Sciences eTMF Solution¬OpenText Life Sciences Medical Device for Quality and Manufacturing Solution¬OpenText Life Sciences Medical Device for Research and Development Solution¬OpenText Life Sciences Quality and Manufacturing Solution¬OpenText Life Sciences Research and Development Solution¬OpenText Life Sciences Submission Storage and Viewing" security_group="admingroup" search_group="admingroup" version="2" is_versioned="false" manual_order="false" create_view_option="false" is_dql="false" is_dql_cache="false" dql="" label_en="Object Type Mapping">
+	<d2_dictionary_value object_name="cd_app_reg_labeling_doc" is_enabled="true" order_no="0">
+		<alias name="Label (en)" value="Application Labeling Documents"/>
+		<alias name="Artifact Dictionary" value="Regulatory Labeling Regional Artifacts"/>
+		<alias name="Artifact Key" value="$value(artifact_name)|$value(region)"/>
+		<alias name="Add Creator To" value=""/>
+		<alias name="Initial State" value="Draft"/>
+		<alias name="Owner" value="admingroup"/>
+		<alias name="Role Group Dictionary" value=""/>
+		<alias name="Record Filename In" value="$if($value(copy_file_name),title)"/>
+		<alias name="Applicable Workflows" value=""/>
+		<alias name="Approval Signature Reqd" value=""/>
+		<alias name="Default Values" value=""/>
+		<alias name="Apply CDF Inheritance Rules" value="Y"/>
+		<alias name="Apply D2 Auto Naming" value="N"/>
+		<alias name="Apply D2 Auto Linking" value="N"/>
+		<alias name="Apply D2 Security" value="Y"/>
+		<alias name="Auto Relations" value="App-App Labeling,App-Core Labeling,Reg Labeling-Application,Reg Labeling-Submission"/>
+		<alias name="Post-Processing Method" value=""/>
+		<alias name="Auto Create Related Artifacts" value=""/>
+		<alias name="Reclassification Object Types" value="'cd_app_reg_labeling_doc', 'cd_core_reg_labeling_doc'"/>
+		<alias name="Reclassification Document States" value="'Draft', 'Effective'"/>
+		<alias name="Apply Dynamic Security" value=""/>
+		<alias name="Reset Properties" value=""/>
+		<alias name="Allowed in VDoc Templates" value="Y"/>
+		<alias name="Domain" value="Labeling"/>
+		<alias name="Primary Group Alias" value="Group"/>
+		<alias name="Subgroup Alias" value="Subgroup"/>
+		<alias name="Artifact Name Alias" value="Artifact"/>
+		<locale name="en" value="Application Labeling Documents"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="cd_change_request" is_enabled="true" order_no="0">
+		<alias name="Label (en)" value="Change Requests"/>
+		<alias name="Artifact Dictionary" value=""/>
+		<alias name="Artifact Key" value=""/>
+		<alias name="Add Creator To" value="authors"/>
+		<alias name="Initial State" value="Draft"/>
+		<alias name="Owner" value="admingroup"/>
+		<alias name="Role Group Dictionary" value="GMP Applicable Sites"/>
+		<alias name="Record Filename In" value="$if($value(copy_file_name),title)"/>
+		<alias name="Applicable Workflows" value="CR-REVIEW-APPROVE,CR-APPROVE,1-COLLABORATION"/>
+		<alias name="Approval Signature Reqd" value="Y"/>
+		<alias name="Default Values" value=""/>
+		<alias name="Apply CDF Inheritance Rules" value="N"/>
+		<alias name="Apply D2 Auto Naming" value="N"/>
+		<alias name="Apply D2 Auto Linking" value="N"/>
+		<alias name="Apply D2 Security" value="Y"/>
+		<alias name="Auto Relations" value=""/>
+		<alias name="Post-Processing Method" value="com.documentum.cdf.methods.CDFUpdateChangeRequestAttributes"/>
+		<alias name="Auto Create Related Artifacts" value=""/>
+		<alias name="Reclassification Object Types" value="''"/>
+		<alias name="Reclassification Document States" value="''"/>
+		<alias name="Apply Dynamic Security" value=""/>
+		<alias name="Reset Properties" value=""/>
+		<alias name="Allowed in VDoc Templates" value="N"/>
+		<alias name="Domain" value="GMP"/>
+		<alias name="Primary Group Alias" value=""/>
+		<alias name="Subgroup Alias" value=""/>
+		<alias name="Artifact Name Alias" value=""/>
+		<locale name="en" value="Change Requests"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="cd_clinical" is_enabled="true" order_no="0">
+		<alias name="Label (en)" value="Clinical R&amp;D Documents"/>
+		<alias name="Artifact Dictionary" value="Clinical Artifact Names Inventory"/>
+		<alias name="Artifact Key" value="$value(artifact_name)|$value(subgroup)"/>
+		<alias name="Add Creator To" value=""/>
+		<alias name="Initial State" value="Draft"/>
+		<alias name="Owner" value="admingroup"/>
+		<alias name="Role Group Dictionary" value=""/>
+		<alias name="Record Filename In" value="$if($value(copy_file_name),title)"/>
+		<alias name="Applicable Workflows" value=""/>
+		<alias name="Approval Signature Reqd" value=""/>
+		<alias name="Default Values" value=""/>
+		<alias name="Apply CDF Inheritance Rules" value="Y"/>
+		<alias name="Apply D2 Auto Naming" value="Y"/>
+		<alias name="Apply D2 Auto Linking" value="Y"/>
+		<alias name="Apply D2 Security" value="Y"/>
+		<alias name="Auto Relations" value="Clinical-Application,Clinical-Regulatory Submission"/>
+		<alias name="Post-Processing Method" value=""/>
+		<alias name="Auto Create Related Artifacts" value=""/>
+		<alias name="Reclassification Object Types" value="'cd_clinical', 'cd_safety'"/>
+		<alias name="Reclassification Document States" value="'Draft', 'Effective'"/>
+		<alias name="Apply Dynamic Security" value=""/>
+		<alias name="Reset Properties" value=""/>
+		<alias name="Allowed in VDoc Templates" value="Y"/>
+		<alias name="Domain" value="Clinical"/>
+		<alias name="Primary Group Alias" value="Clinical Groups"/>
+		<alias name="Subgroup Alias" value="Clinical Subgroups"/>
+		<alias name="Artifact Name Alias" value="Clinical Artifact Names"/>
+		<locale name="en" value="Clinical R&amp;D Documents"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="cd_clinical_country_info" is_enabled="true" order_no="0">
+		<alias name="Label (en)" value="TMF Country Registration Forms"/>
+		<alias name="Artifact Dictionary" value=""/>
+		<alias name="Artifact Key" value=""/>
+		<alias name="Add Creator To" value="form_managers"/>
+		<alias name="Initial State" value="Active"/>
+		<alias name="Owner" value="admingroup"/>
+		<alias name="Role Group Dictionary" value=""/>
+		<alias name="Record Filename In" value=""/>
+		<alias name="Applicable Workflows" value=""/>
+		<alias name="Approval Signature Reqd" value=""/>
+		<alias name="Default Values" value=""/>
+		<alias name="Apply CDF Inheritance Rules" value="N"/>
+		<alias name="Apply D2 Auto Naming" value="N"/>
+		<alias name="Apply D2 Auto Linking" value="N"/>
+		<alias name="Apply D2 Security" value="Y"/>
+		<alias name="Auto Relations" value=""/>
+		<alias name="Post-Processing Method" value=""/>
+		<alias name="Auto Create Related Artifacts" value=""/>
+		<alias name="Reclassification Object Types" value="''"/>
+		<alias name="Reclassification Document States" value="''"/>
+		<alias name="Apply Dynamic Security" value=""/>
+		<alias name="Reset Properties" value=""/>
+		<alias name="Allowed in VDoc Templates" value="N"/>
+		<alias name="Domain" value="Clinical Trial Management"/>
+		<alias name="Primary Group Alias" value=""/>
+		<alias name="Subgroup Alias" value=""/>
+		<alias name="Artifact Name Alias" value=""/>
+		<locale name="en" value="TMF Country Registration Forms"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="cd_clinical_site_info" is_enabled="true" order_no="0">
+		<alias name="Label (en)" value="TMF Site Registration Forms"/>
+		<alias name="Artifact Dictionary" value=""/>
+		<alias name="Artifact Key" value=""/>
+		<alias name="Add Creator To" value="form_managers"/>
+		<alias name="Initial State" value="Active"/>
+		<alias name="Owner" value="admingroup"/>
+		<alias name="Role Group Dictionary" value=""/>
+		<alias name="Record Filename In" value=""/>
+		<alias name="Applicable Workflows" value=""/>
+		<alias name="Approval Signature Reqd" value=""/>
+		<alias name="Default Values" value=""/>
+		<alias name="Apply CDF Inheritance Rules" value="N"/>
+		<alias name="Apply D2 Auto Naming" value="N"/>
+		<alias name="Apply D2 Auto Linking" value="N"/>
+		<alias name="Apply D2 Security" value="Y"/>
+		<alias name="Auto Relations" value=""/>
+		<alias name="Post-Processing Method" value=""/>
+		<alias name="Auto Create Related Artifacts" value=""/>
+		<alias name="Reclassification Object Types" value="''"/>
+		<alias name="Reclassification Document States" value="''"/>
+		<alias name="Apply Dynamic Security" value=""/>
+		<alias name="Reset Properties" value=""/>
+		<alias name="Allowed in VDoc Templates" value="N"/>
+		<alias name="Domain" value="Clinical Trial Management"/>
+		<alias name="Primary Group Alias" value=""/>
+		<alias name="Subgroup Alias" value=""/>
+		<alias name="Artifact Name Alias" value=""/>
+		<locale name="en" value="TMF Site Registration Forms"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="cd_clinical_tmf_doc" is_enabled="true" order_no="0">
+		<alias name="Label (en)" value="Clinical TMF Documents"/>
+		<alias name="Artifact Dictionary" value="'$lookup($value(dia_tmf_ref_model_version),TMF Models,Dictionary)'"/>
+		<alias name="Artifact Key" value="$value(tmf_artifact_name)"/>
+		<alias name="Add Creator To" value=""/>
+		<alias name="Initial State" value="Draft"/>
+		<alias name="Owner" value="admingroup"/>
+		<alias name="Role Group Dictionary" value=""/>
+		<alias name="Record Filename In" value="$if($value(copy_file_name),title)"/>
+		<alias name="Applicable Workflows" value=""/>
+		<alias name="Approval Signature Reqd" value=""/>
+		<alias name="Default Values" value="tmf_artifact_name=$default($value(tmf_artifact_name),$value(artifact_name))"/>
+		<alias name="Apply CDF Inheritance Rules" value="Y"/>
+		<alias name="Apply D2 Auto Naming" value="N"/>
+		<alias name="Apply D2 Auto Linking" value="N"/>
+		<alias name="Apply D2 Security" value="Y"/>
+		<alias name="Auto Relations" value=""/>
+		<alias name="Post-Processing Method" value=""/>
+		<alias name="Auto Create Related Artifacts" value=""/>
+		<alias name="Reclassification Object Types" value="''"/>
+		<alias name="Reclassification Document States" value="''"/>
+		<alias name="Apply Dynamic Security" value=""/>
+		<alias name="Reset Properties" value=""/>
+		<alias name="Allowed in VDoc Templates" value="N"/>
+		<alias name="Domain" value="Clinical TMF"/>
+		<alias name="Primary Group Alias" value=""/>
+		<alias name="Subgroup Alias" value=""/>
+		<alias name="Artifact Name Alias" value=""/>
+		<locale name="en" value="Clinical TMF Documents"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="cd_clinical_trial_info" is_enabled="true" order_no="0">
+		<alias name="Label (en)" value="Clinical Trial Registration Forms"/>
+		<alias name="Artifact Dictionary" value=""/>
+		<alias name="Artifact Key" value=""/>
+		<alias name="Add Creator To" value="form_managers"/>
+		<alias name="Initial State" value="$if($value( generate_tmf_ template), Planning, Active)"/>
+		<alias name="Owner" value="admingroup"/>
+		<alias name="Role Group Dictionary" value=""/>
+		<alias name="Record Filename In" value=""/>
+		<alias name="Applicable Workflows" value=""/>
+		<alias name="Approval Signature Reqd" value=""/>
+		<alias name="Default Values" value=""/>
+		<alias name="Apply CDF Inheritance Rules" value="N"/>
+		<alias name="Apply D2 Auto Naming" value="N"/>
+		<alias name="Apply D2 Auto Linking" value="N"/>
+		<alias name="Apply D2 Security" value="Y"/>
+		<alias name="Auto Relations" value=""/>
+		<alias name="Post-Processing Method" value=""/>
+		<alias name="Auto Create Related Artifacts" value=""/>
+		<alias name="Reclassification Object Types" value="''"/>
+		<alias name="Reclassification Document States" value="''"/>
+		<alias name="Apply Dynamic Security" value=""/>
+		<alias name="Reset Properties" value=""/>
+		<alias name="Allowed in VDoc Templates" value="N"/>
+		<alias name="Domain" value="Clinical Trial Management"/>
+		<alias name="Primary Group Alias" value=""/>
+		<alias name="Subgroup Alias" value=""/>
+		<alias name="Artifact Name Alias" value=""/>
+		<locale name="en" value="Clinical Trial Registration Forms"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="cd_content_template" is_enabled="true" order_no="0">
+		<alias name="Label (en)" value="Template Documents"/>
+		<alias name="Artifact Dictionary" value=""/>
+		<alias name="Artifact Key" value=""/>
+		<alias name="Add Creator To" value="authors"/>
+		<alias name="Initial State" value="Draft"/>
+		<alias name="Owner" value="admingroup"/>
+		<alias name="Role Group Dictionary" value=""/>
+		<alias name="Record Filename In" value="$if($value(copy_file_name),title)"/>
+		<alias name="Applicable Workflows" value="TEMPLATE-APPROVE"/>
+		<alias name="Approval Signature Reqd" value="N"/>
+		<alias name="Default Values" value=""/>
+		<alias name="Apply CDF Inheritance Rules" value="N"/>
+		<alias name="Apply D2 Auto Naming" value="N"/>
+		<alias name="Apply D2 Auto Linking" value="N"/>
+		<alias name="Apply D2 Security" value="Y"/>
+		<alias name="Auto Relations" value=""/>
+		<alias name="Post-Processing Method" value=""/>
+		<alias name="Auto Create Related Artifacts" value=""/>
+		<alias name="Reclassification Object Types" value="''"/>
+		<alias name="Reclassification Document States" value="''"/>
+		<alias name="Apply Dynamic Security" value=""/>
+		<alias name="Reset Properties" value=""/>
+		<alias name="Allowed in VDoc Templates" value="Y"/>
+		<alias name="Domain" value="$value(domain)"/>
+		<alias name="Primary Group Alias" value=""/>
+		<alias name="Subgroup Alias" value=""/>
+		<alias name="Artifact Name Alias" value=""/>
+		<locale name="en" value="Template Documents"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="cd_core_reg_labeling_doc" is_enabled="true" order_no="0">
+		<alias name="Label (en)" value="Core Labeling Documents"/>
+		<alias name="Artifact Dictionary" value="Regulatory-Labeling Artifacts"/>
+		<alias name="Artifact Key" value="$value(artifact_name)"/>
+		<alias name="Add Creator To" value=""/>
+		<alias name="Initial State" value="Draft"/>
+		<alias name="Owner" value="admingroup"/>
+		<alias name="Role Group Dictionary" value=""/>
+		<alias name="Record Filename In" value="$if($value(copy_file_name),title)"/>
+		<alias name="Applicable Workflows" value=""/>
+		<alias name="Approval Signature Reqd" value=""/>
+		<alias name="Default Values" value=""/>
+		<alias name="Apply CDF Inheritance Rules" value="Y"/>
+		<alias name="Apply D2 Auto Naming" value="N"/>
+		<alias name="Apply D2 Auto Linking" value="N"/>
+		<alias name="Apply D2 Security" value="Y"/>
+		<alias name="Auto Relations" value="Core-Core Labeling,Core-App Labeling"/>
+		<alias name="Post-Processing Method" value=""/>
+		<alias name="Auto Create Related Artifacts" value=""/>
+		<alias name="Reclassification Object Types" value="'cd_core_reg_labeling_doc', 'cd_app_reg_labeling_doc'"/>
+		<alias name="Reclassification Document States" value="'Draft', 'Effective'"/>
+		<alias name="Apply Dynamic Security" value=""/>
+		<alias name="Reset Properties" value=""/>
+		<alias name="Allowed in VDoc Templates" value="Y"/>
+		<alias name="Domain" value="Labeling"/>
+		<alias name="Primary Group Alias" value="Group"/>
+		<alias name="Subgroup Alias" value="Subgroup"/>
+		<alias name="Artifact Name Alias" value="Artifact"/>
+		<locale name="en" value="Core Labeling Documents"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="cd_non_clinical" is_enabled="true" order_no="0">
+		<alias name="Label (en)" value="Non-Clinical R&amp;D Documents"/>
+		<alias name="Artifact Dictionary" value="Non-Clinical Artifacts"/>
+		<alias name="Artifact Key" value="$value(artifact_name)|$value(subgroup)"/>
+		<alias name="Add Creator To" value=""/>
+		<alias name="Initial State" value="Draft"/>
+		<alias name="Owner" value="admingroup"/>
+		<alias name="Role Group Dictionary" value=""/>
+		<alias name="Record Filename In" value="$if($value(copy_file_name),title)"/>
+		<alias name="Applicable Workflows" value=""/>
+		<alias name="Approval Signature Reqd" value=""/>
+		<alias name="Default Values" value=""/>
+		<alias name="Apply CDF Inheritance Rules" value="Y"/>
+		<alias name="Apply D2 Auto Naming" value="N"/>
+		<alias name="Apply D2 Auto Linking" value="N"/>
+		<alias name="Apply D2 Security" value="Y"/>
+		<alias name="Auto Relations" value="Non Clinical-Application,Non Clinical-Submission"/>
+		<alias name="Post-Processing Method" value=""/>
+		<alias name="Auto Create Related Artifacts" value=""/>
+		<alias name="Reclassification Object Types" value="'cd_non_clinical'"/>
+		<alias name="Reclassification Document States" value="'Draft', 'Effective'"/>
+		<alias name="Apply Dynamic Security" value=""/>
+		<alias name="Reset Properties" value=""/>
+		<alias name="Allowed in VDoc Templates" value="Y"/>
+		<alias name="Domain" value="Non-Clinical"/>
+		<alias name="Primary Group Alias" value="Group"/>
+		<alias name="Subgroup Alias" value="Subgroup"/>
+		<alias name="Artifact Name Alias" value="Artifact"/>
+		<locale name="en" value="Non-Clinical R&amp;D Documents"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="cd_non_clinical_study_info" is_enabled="true" order_no="0">
+		<alias name="Label (en)" value="Non-Clinical Study Registration Forms"/>
+		<alias name="Artifact Dictionary" value=""/>
+		<alias name="Artifact Key" value=""/>
+		<alias name="Add Creator To" value="form_managers"/>
+		<alias name="Initial State" value="Active"/>
+		<alias name="Owner" value="admingroup"/>
+		<alias name="Role Group Dictionary" value=""/>
+		<alias name="Record Filename In" value=""/>
+		<alias name="Applicable Workflows" value=""/>
+		<alias name="Approval Signature Reqd" value=""/>
+		<alias name="Default Values" value=""/>
+		<alias name="Apply CDF Inheritance Rules" value="N"/>
+		<alias name="Apply D2 Auto Naming" value="N"/>
+		<alias name="Apply D2 Auto Linking" value="N"/>
+		<alias name="Apply D2 Security" value="Y"/>
+		<alias name="Auto Relations" value=""/>
+		<alias name="Post-Processing Method" value=""/>
+		<alias name="Auto Create Related Artifacts" value=""/>
+		<alias name="Reclassification Object Types" value="''"/>
+		<alias name="Reclassification Document States" value="''"/>
+		<alias name="Apply Dynamic Security" value=""/>
+		<alias name="Reset Properties" value=""/>
+		<alias name="Allowed in VDoc Templates" value="N"/>
+		<alias name="Domain" value="Non-Clinical Study Management"/>
+		<alias name="Primary Group Alias" value=""/>
+		<alias name="Subgroup Alias" value=""/>
+		<alias name="Artifact Name Alias" value=""/>
+		<locale name="en" value="Non-Clinical Study Registration Forms"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="cd_product_info" is_enabled="true" order_no="0">
+		<alias name="Label (en)" value="Product Registration Forms"/>
+		<alias name="Artifact Dictionary" value=""/>
+		<alias name="Artifact Key" value=""/>
+		<alias name="Add Creator To" value="form_managers"/>
+		<alias name="Initial State" value="Active"/>
+		<alias name="Owner" value="admingroup"/>
+		<alias name="Role Group Dictionary" value=""/>
+		<alias name="Record Filename In" value=""/>
+		<alias name="Applicable Workflows" value=""/>
+		<alias name="Approval Signature Reqd" value=""/>
+		<alias name="Default Values" value=""/>
+		<alias name="Apply CDF Inheritance Rules" value="N"/>
+		<alias name="Apply D2 Auto Naming" value="N"/>
+		<alias name="Apply D2 Auto Linking" value="N"/>
+		<alias name="Apply D2 Security" value="Y"/>
+		<alias name="Auto Relations" value=""/>
+		<alias name="Post-Processing Method" value=""/>
+		<alias name="Auto Create Related Artifacts" value=""/>
+		<alias name="Reclassification Object Types" value="''"/>
+		<alias name="Reclassification Document States" value="''"/>
+		<alias name="Apply Dynamic Security" value=""/>
+		<alias name="Reset Properties" value=""/>
+		<alias name="Allowed in VDoc Templates" value="N"/>
+		<alias name="Domain" value="Product Management"/>
+		<alias name="Primary Group Alias" value=""/>
+		<alias name="Subgroup Alias" value=""/>
+		<alias name="Artifact Name Alias" value=""/>
+		<locale name="en" value="Product Registration Forms"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="cd_quality" is_enabled="true" order_no="0">
+		<alias name="Label (en)" value="R&amp;D Quality Documents"/>
+		<alias name="Artifact Dictionary" value="Quality Classification by Group"/>
+		<alias name="Artifact Key" value="$value(primary_group)|$value(subgroup)|$value(artifact_name)"/>
+		<alias name="Add Creator To" value=""/>
+		<alias name="Initial State" value="Draft"/>
+		<alias name="Owner" value="admingroup"/>
+		<alias name="Role Group Dictionary" value=""/>
+		<alias name="Record Filename In" value="$if($value(copy_file_name),title)"/>
+		<alias name="Applicable Workflows" value=""/>
+		<alias name="Approval Signature Reqd" value=""/>
+		<alias name="Default Values" value=""/>
+		<alias name="Apply CDF Inheritance Rules" value="Y"/>
+		<alias name="Apply D2 Auto Naming" value="N"/>
+		<alias name="Apply D2 Auto Linking" value="N"/>
+		<alias name="Apply D2 Security" value="Y"/>
+		<alias name="Auto Relations" value="Quality-Application,Quality-Regulatory Submission"/>
+		<alias name="Post-Processing Method" value=""/>
+		<alias name="Auto Create Related Artifacts" value=""/>
+		<alias name="Reclassification Object Types" value="'cd_quality_gmp_effective', 'cd_quality_gmp_approved', 'cd_quality'"/>
+		<alias name="Reclassification Document States" value="'Draft', 'Effective'"/>
+		<alias name="Apply Dynamic Security" value=""/>
+		<alias name="Reset Properties" value=""/>
+		<alias name="Allowed in VDoc Templates" value="Y"/>
+		<alias name="Domain" value="Quality"/>
+		<alias name="Primary Group Alias" value="Quality Groups"/>
+		<alias name="Subgroup Alias" value="Quality Subgroups"/>
+		<alias name="Artifact Name Alias" value="Quality Artifact Names"/>
+		<locale name="en" value="R&amp;D Quality Documents"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="cd_quality_gmp_approved" is_enabled="true" order_no="0">
+		<alias name="Label (en)" value="GMP Quality Documents (final state= Approved)"/>
+		<alias name="Artifact Dictionary" value="GMP Artifacts Classification by Groups and Subgroups"/>
+		<alias name="Artifact Key" value="$value(primary_group)|$value(subgroup)|$value(artifact_name)"/>
+		<alias name="Add Creator To" value=""/>
+		<alias name="Initial State" value="Draft"/>
+		<alias name="Owner" value="admingroup"/>
+		<alias name="Role Group Dictionary" value="GMP Applicable Sites"/>
+		<alias name="Record Filename In" value="$if($value(copy_file_name),title)"/>
+		<alias name="Applicable Workflows" value=""/>
+		<alias name="Approval Signature Reqd" value=""/>
+		<alias name="Default Values" value="a_special_app=$value(i_chronicle_id)"/>
+		<alias name="Apply CDF Inheritance Rules" value="Y"/>
+		<alias name="Apply D2 Auto Naming" value="N"/>
+		<alias name="Apply D2 Auto Linking" value="N"/>
+		<alias name="Apply D2 Security" value="Y"/>
+		<alias name="Auto Relations" value=""/>
+		<alias name="Post-Processing Method" value=""/>
+		<alias name="Auto Create Related Artifacts" value=""/>
+		<alias name="Reclassification Object Types" value="'cd_quality_gmp_effective', 'cd_quality_gmp_approved', 'cd_quality'"/>
+		<alias name="Reclassification Document States" value="'Draft', 'Effective'"/>
+		<alias name="Apply Dynamic Security" value=""/>
+		<alias name="Reset Properties" value=""/>
+		<alias name="Allowed in VDoc Templates" value="N"/>
+		<alias name="Domain" value="GMP"/>
+		<alias name="Primary Group Alias" value="GMP Groups"/>
+		<alias name="Subgroup Alias" value="GMP Subgroups"/>
+		<alias name="Artifact Name Alias" value="GMP Artifacts"/>
+		<locale name="en" value="GMP Quality Documents (final state= Approved)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="cd_quality_gmp_effective" is_enabled="true" order_no="0">
+		<alias name="Label (en)" value="GMP Quality Documents (final state= Effective)"/>
+		<alias name="Artifact Dictionary" value="GMP Artifacts Classification by Groups and Subgroups"/>
+		<alias name="Artifact Key" value="$value(primary_group)|$value(subgroup)|$value(artifact_name)"/>
+		<alias name="Add Creator To" value=""/>
+		<alias name="Initial State" value="Draft"/>
+		<alias name="Owner" value="admingroup"/>
+		<alias name="Role Group Dictionary" value="GMP Applicable Sites"/>
+		<alias name="Record Filename In" value="$if($value(copy_file_name),title)"/>
+		<alias name="Applicable Workflows" value=""/>
+		<alias name="Approval Signature Reqd" value=""/>
+		<alias name="Default Values" value="a_special_app=$value(i_chronicle_id)"/>
+		<alias name="Apply CDF Inheritance Rules" value="Y"/>
+		<alias name="Apply D2 Auto Naming" value="N"/>
+		<alias name="Apply D2 Auto Linking" value="N"/>
+		<alias name="Apply D2 Security" value="Y"/>
+		<alias name="Auto Relations" value=""/>
+		<alias name="Post-Processing Method" value=""/>
+		<alias name="Auto Create Related Artifacts" value=""/>
+		<alias name="Reclassification Object Types" value="'cd_quality_gmp_effective', 'cd_quality_gmp_approved', 'cd_quality'"/>
+		<alias name="Reclassification Document States" value="'Draft', 'Effective'"/>
+		<alias name="Apply Dynamic Security" value=""/>
+		<alias name="Reset Properties" value=""/>
+		<alias name="Allowed in VDoc Templates" value="N"/>
+		<alias name="Domain" value="GMP"/>
+		<alias name="Primary Group Alias" value="GMP Groups"/>
+		<alias name="Subgroup Alias" value="GMP Subgroups"/>
+		<alias name="Artifact Name Alias" value="GMP Artifacts"/>
+		<locale name="en" value="GMP Quality Documents (final state= Effective)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="cd_quality_project_info" is_enabled="true" order_no="0">
+		<alias name="Label (en)" value="R&amp;D Quality Project Registration Forms"/>
+		<alias name="Artifact Dictionary" value=""/>
+		<alias name="Artifact Key" value=""/>
+		<alias name="Add Creator To" value="form_managers"/>
+		<alias name="Initial State" value="Active"/>
+		<alias name="Owner" value="admingroup"/>
+		<alias name="Role Group Dictionary" value=""/>
+		<alias name="Record Filename In" value=""/>
+		<alias name="Applicable Workflows" value=""/>
+		<alias name="Approval Signature Reqd" value=""/>
+		<alias name="Default Values" value=""/>
+		<alias name="Apply CDF Inheritance Rules" value="N"/>
+		<alias name="Apply D2 Auto Naming" value="N"/>
+		<alias name="Apply D2 Auto Linking" value="N"/>
+		<alias name="Apply D2 Security" value="Y"/>
+		<alias name="Auto Relations" value=""/>
+		<alias name="Post-Processing Method" value=""/>
+		<alias name="Auto Create Related Artifacts" value=""/>
+		<alias name="Reclassification Object Types" value="''"/>
+		<alias name="Reclassification Document States" value="''"/>
+		<alias name="Apply Dynamic Security" value=""/>
+		<alias name="Reset Properties" value=""/>
+		<alias name="Allowed in VDoc Templates" value="N"/>
+		<alias name="Domain" value="Quality Project Management"/>
+		<alias name="Primary Group Alias" value=""/>
+		<alias name="Subgroup Alias" value=""/>
+		<alias name="Artifact Name Alias" value=""/>
+		<locale name="en" value="R&amp;D Quality Project Registration Forms"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="cd_reg_activity_info" is_enabled="true" order_no="0">
+		<alias name="Label (en)" value="Regulatory Activity Packages"/>
+		<alias name="Artifact Dictionary" value=""/>
+		<alias name="Artifact Key" value=""/>
+		<alias name="Add Creator To" value="form_managers"/>
+		<alias name="Initial State" value="Active"/>
+		<alias name="Owner" value="admingroup"/>
+		<alias name="Role Group Dictionary" value=""/>
+		<alias name="Record Filename In" value=""/>
+		<alias name="Applicable Workflows" value=""/>
+		<alias name="Approval Signature Reqd" value=""/>
+		<alias name="Default Values" value=""/>
+		<alias name="Apply CDF Inheritance Rules" value="N"/>
+		<alias name="Apply D2 Auto Naming" value="N"/>
+		<alias name="Apply D2 Auto Linking" value="N"/>
+		<alias name="Apply D2 Security" value="Y"/>
+		<alias name="Auto Relations" value=""/>
+		<alias name="Post-Processing Method" value=""/>
+		<alias name="Auto Create Related Artifacts" value=""/>
+		<alias name="Reclassification Object Types" value="''"/>
+		<alias name="Reclassification Document States" value="''"/>
+		<alias name="Apply Dynamic Security" value=""/>
+		<alias name="Reset Properties" value=""/>
+		<alias name="Allowed in VDoc Templates" value="N"/>
+		<alias name="Domain" value="Regulatory/Administrative"/>
+		<alias name="Primary Group Alias" value=""/>
+		<alias name="Subgroup Alias" value=""/>
+		<alias name="Artifact Name Alias" value=""/>
+		<locale name="en" value="Regulatory Activity Packages"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="cd_reg_ad_promo" is_enabled="true" order_no="0">
+		<alias name="Label (en)" value="Regulatory Promotional / Advertising Documents"/>
+		<alias name="Artifact Dictionary" value="Promotional Materials Artifact"/>
+		<alias name="Artifact Key" value="$value(artifact_name)"/>
+		<alias name="Add Creator To" value=""/>
+		<alias name="Initial State" value="Draft"/>
+		<alias name="Owner" value="admingroup"/>
+		<alias name="Role Group Dictionary" value=""/>
+		<alias name="Record Filename In" value="$if($value(copy_file_name),title)"/>
+		<alias name="Applicable Workflows" value=""/>
+		<alias name="Approval Signature Reqd" value=""/>
+		<alias name="Default Values" value=""/>
+		<alias name="Apply CDF Inheritance Rules" value="Y"/>
+		<alias name="Apply D2 Auto Naming" value="N"/>
+		<alias name="Apply D2 Auto Linking" value="N"/>
+		<alias name="Apply D2 Security" value="Y"/>
+		<alias name="Auto Relations" value="Promo Material - Application,Promo Material-Submission"/>
+		<alias name="Post-Processing Method" value=""/>
+		<alias name="Auto Create Related Artifacts" value=""/>
+		<alias name="Reclassification Object Types" value="'cd_reg_ad_promo'"/>
+		<alias name="Reclassification Document States" value="'Draft', 'Effective'"/>
+		<alias name="Apply Dynamic Security" value=""/>
+		<alias name="Reset Properties" value=""/>
+		<alias name="Allowed in VDoc Templates" value="Y"/>
+		<alias name="Domain" value="Ad Promo"/>
+		<alias name="Primary Group Alias" value="Group"/>
+		<alias name="Subgroup Alias" value="Subgroup"/>
+		<alias name="Artifact Name Alias" value="Artifact"/>
+		<locale name="en" value="Regulatory Promotional / Advertising Documents"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="cd_reg_admin" is_enabled="true" order_no="0">
+		<alias name="Label (en)" value="Regulatory / Administrative Documents"/>
+		<alias name="Artifact Dictionary" value="Regulatory-Admin Artifact"/>
+		<alias name="Artifact Key" value="$value(artifact_name)|$value(region)"/>
+		<alias name="Add Creator To" value=""/>
+		<alias name="Initial State" value="Draft"/>
+		<alias name="Owner" value="admingroup"/>
+		<alias name="Role Group Dictionary" value=""/>
+		<alias name="Record Filename In" value="$if($value(copy_file_name),title)"/>
+		<alias name="Applicable Workflows" value=""/>
+		<alias name="Approval Signature Reqd" value=""/>
+		<alias name="Default Values" value=""/>
+		<alias name="Apply CDF Inheritance Rules" value="Y"/>
+		<alias name="Apply D2 Auto Naming" value="N"/>
+		<alias name="Apply D2 Auto Linking" value="N"/>
+		<alias name="Apply D2 Security" value="Y"/>
+		<alias name="Auto Relations" value="Reg Admin-Application,Reg Admin-Submission"/>
+		<alias name="Post-Processing Method" value=""/>
+		<alias name="Auto Create Related Artifacts" value=""/>
+		<alias name="Reclassification Object Types" value="'cd_reg_admin', 'cd_reg_correspondence'"/>
+		<alias name="Reclassification Document States" value="'Draft', 'Effective'"/>
+		<alias name="Apply Dynamic Security" value=""/>
+		<alias name="Reset Properties" value=""/>
+		<alias name="Allowed in VDoc Templates" value="Y"/>
+		<alias name="Domain" value="Regulatory/Administrative"/>
+		<alias name="Primary Group Alias" value="Group"/>
+		<alias name="Subgroup Alias" value="Subgroup"/>
+		<alias name="Artifact Name Alias" value="Artifact"/>
+		<locale name="en" value="Regulatory / Administrative Documents"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="cd_reg_admin_info" is_enabled="true" order_no="0">
+		<alias name="Label (en)" value="Regulatory Application Registration Forms"/>
+		<alias name="Artifact Dictionary" value=""/>
+		<alias name="Artifact Key" value=""/>
+		<alias name="Add Creator To" value="form_managers"/>
+		<alias name="Initial State" value="Active"/>
+		<alias name="Owner" value="admingroup"/>
+		<alias name="Role Group Dictionary" value=""/>
+		<alias name="Record Filename In" value=""/>
+		<alias name="Applicable Workflows" value=""/>
+		<alias name="Approval Signature Reqd" value=""/>
+		<alias name="Default Values" value=""/>
+		<alias name="Apply CDF Inheritance Rules" value="N"/>
+		<alias name="Apply D2 Auto Naming" value="N"/>
+		<alias name="Apply D2 Auto Linking" value="N"/>
+		<alias name="Apply D2 Security" value="Y"/>
+		<alias name="Auto Relations" value=""/>
+		<alias name="Post-Processing Method" value=""/>
+		<alias name="Auto Create Related Artifacts" value=""/>
+		<alias name="Reclassification Object Types" value="''"/>
+		<alias name="Reclassification Document States" value="''"/>
+		<alias name="Apply Dynamic Security" value=""/>
+		<alias name="Reset Properties" value=""/>
+		<alias name="Allowed in VDoc Templates" value="N"/>
+		<alias name="Domain" value="Regulatory/Administrative"/>
+		<alias name="Primary Group Alias" value=""/>
+		<alias name="Subgroup Alias" value=""/>
+		<alias name="Artifact Name Alias" value=""/>
+		<locale name="en" value="Regulatory Application Registration Forms"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="cd_reg_correspondence" is_enabled="true" order_no="0">
+		<alias name="Label (en)" value="Regulatory Correspondence Documents"/>
+		<alias name="Artifact Dictionary" value="Regulatory Correspondence Classification by Groups and Artifacts"/>
+		<alias name="Artifact Key" value="$value(primary_group)|$value(artifact_name)"/>
+		<alias name="Add Creator To" value=""/>
+		<alias name="Initial State" value="Draft"/>
+		<alias name="Owner" value="admingroup"/>
+		<alias name="Role Group Dictionary" value=""/>
+		<alias name="Record Filename In" value="$if($value(copy_file_name),title)"/>
+		<alias name="Applicable Workflows" value=""/>
+		<alias name="Approval Signature Reqd" value=""/>
+		<alias name="Default Values" value=""/>
+		<alias name="Apply CDF Inheritance Rules" value="Y"/>
+		<alias name="Apply D2 Auto Naming" value="N"/>
+		<alias name="Apply D2 Auto Linking" value="N"/>
+		<alias name="Apply D2 Security" value="Y"/>
+		<alias name="Auto Relations" value="Reg Correspondence - Application,Reg Correspondence - Submission"/>
+		<alias name="Post-Processing Method" value="com.documentum.ssv.methods.UpdateCorrespondenceDocuments"/>
+		<alias name="Auto Create Related Artifacts" value=""/>
+		<alias name="Reclassification Object Types" value="'cd_reg_correspondence', 'cd_reg_admin'"/>
+		<alias name="Reclassification Document States" value="'Draft', 'Effective'"/>
+		<alias name="Apply Dynamic Security" value=""/>
+		<alias name="Reset Properties" value=""/>
+		<alias name="Allowed in VDoc Templates" value="N"/>
+		<alias name="Domain" value="Regulatory/Administrative"/>
+		<alias name="Primary Group Alias" value="Group"/>
+		<alias name="Subgroup Alias" value=""/>
+		<alias name="Artifact Name Alias" value="Artifact"/>
+		<locale name="en" value="Regulatory Correspondence Documents"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="cd_reg_submission_info" is_enabled="true" order_no="0">
+		<alias name="Label (en)" value="Submission Registration Forms"/>
+		<alias name="Artifact Dictionary" value=""/>
+		<alias name="Artifact Key" value=""/>
+		<alias name="Add Creator To" value="form_managers"/>
+		<alias name="Initial State" value="Active"/>
+		<alias name="Owner" value="admingroup"/>
+		<alias name="Role Group Dictionary" value=""/>
+		<alias name="Record Filename In" value=""/>
+		<alias name="Applicable Workflows" value=""/>
+		<alias name="Approval Signature Reqd" value=""/>
+		<alias name="Default Values" value=""/>
+		<alias name="Apply CDF Inheritance Rules" value="Y"/>
+		<alias name="Apply D2 Auto Naming" value="N"/>
+		<alias name="Apply D2 Auto Linking" value="N"/>
+		<alias name="Apply D2 Security" value="Y"/>
+		<alias name="Auto Relations" value="Safety-Application,Safety-Submission"/>
+		<alias name="Post-Processing Method" value=""/>
+		<alias name="Auto Create Related Artifacts" value=""/>
+		<alias name="Reclassification Object Types" value="''"/>
+		<alias name="Reclassification Document States" value="''"/>
+		<alias name="Apply Dynamic Security" value=""/>
+		<alias name="Reset Properties" value=""/>
+		<alias name="Allowed in VDoc Templates" value="N"/>
+		<alias name="Domain" value="Regulatory"/>
+		<alias name="Primary Group Alias" value=""/>
+		<alias name="Subgroup Alias" value=""/>
+		<alias name="Artifact Name Alias" value=""/>
+		<locale name="en" value="Submission Registration Forms"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="cd_safety" is_enabled="true" order_no="0">
+		<alias name="Label (en)" value="Safety Documents"/>
+		<alias name="Artifact Dictionary" value="Safety Artifact"/>
+		<alias name="Artifact Key" value="$value(artifact_name)|$value(primary_group)"/>
+		<alias name="Add Creator To" value=""/>
+		<alias name="Initial State" value="Draft"/>
+		<alias name="Owner" value="admingroup"/>
+		<alias name="Role Group Dictionary" value=""/>
+		<alias name="Record Filename In" value="$if($value(copy_file_name),title)"/>
+		<alias name="Applicable Workflows" value=""/>
+		<alias name="Approval Signature Reqd" value=""/>
+		<alias name="Default Values" value=""/>
+		<alias name="Apply CDF Inheritance Rules" value="Y"/>
+		<alias name="Apply D2 Auto Naming" value="N"/>
+		<alias name="Apply D2 Auto Linking" value="N"/>
+		<alias name="Apply D2 Security" value="Y"/>
+		<alias name="Auto Relations" value="Safety-Application,Safety-Submission"/>
+		<alias name="Post-Processing Method" value=""/>
+		<alias name="Auto Create Related Artifacts" value=""/>
+		<alias name="Reclassification Object Types" value="'cd_safety', 'cd_clinical'"/>
+		<alias name="Reclassification Document States" value="'Draft', 'Effective'"/>
+		<alias name="Apply Dynamic Security" value=""/>
+		<alias name="Reset Properties" value=""/>
+		<alias name="Allowed in VDoc Templates" value="Y"/>
+		<alias name="Domain" value="Safety"/>
+		<alias name="Primary Group Alias" value="Group"/>
+		<alias name="Subgroup Alias" value=""/>
+		<alias name="Artifact Name Alias" value="Artifact"/>
+		<locale name="en" value="Safety Documents"/>
+	</d2_dictionary_value>
+</d2_dictionary>

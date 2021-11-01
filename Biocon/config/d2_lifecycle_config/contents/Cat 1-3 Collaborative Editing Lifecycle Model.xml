@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2lifecycle execute_actions_on_start="true" state_attribute="">
+	<state direct="false" entry="false" name="(Start WF)">
+		<entry_conditions/>
+		<actions>
+			<set name="wf_is_in_workflow" value="true"/>
+			<applymethod argument="-id $value(r_object_id)  -query &quot;select object_name as wf_workflow_name from dm_workflow where r_object_id in (select r_workflow_id from dmi_package where any r_component_id='$value(r_object_id)') and r_runtime_state =1&quot; -ignore_null_values true -override true" name="CDFUpdateAttrsViaQueryMethod"/>
+			<applyparameters/>
+		</actions>
+		<next_states/>
+	</state>
+	<state direct="false" entry="false" name="(End collab WF)">
+		<entry_conditions>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate selected document and other documents from same workflow package is not locked"/>
+		</entry_conditions>
+		<actions>
+			<makeversion keep_symbolic_label="false" type="minor"/>
+			<setrepeating mode="reset" name="wf_reviewers" removeDuplicate="false" value=""/>
+			<applyparameters/>
+			<applymethod argument="-target &quot;select r_object_id from cd_controlled_doc(all) where i_chronicle_id='$value(i_chronicle_id)' and wf_is_in_workflow=true&quot; -attr &quot;wf_is_in_workflow,wf_workflow_name&quot; -value &quot;false, &quot;" name="CDFSetAttributeMethod"/>
+			<renditionrequest/>
+		</actions>
+		<next_states/>
+	</state>
+	<state direct="false" entry="false" name="Draft">
+		<entry_conditions/>
+		<actions/>
+		<next_states>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(End collab WF)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+		</next_states>
+	</state>
+</d2lifecycle>

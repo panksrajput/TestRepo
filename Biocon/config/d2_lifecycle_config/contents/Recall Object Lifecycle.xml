@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2lifecycle execute_actions_on_start="true" state_attribute="">
+	<state direct="false" entry="true" name="In Progress">
+		<entry_conditions/>
+		<actions>
+			<set name="a_status" value="In Progress"/>
+		</actions>
+		<next_states>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="Completed (Internal)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="Completed (External)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(Check Recipient)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(Check Requestor)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+		</next_states>
+	</state>
+	<state direct="false" entry="false" name="Completed (Internal)">
+		<entry_conditions/>
+		<actions>
+			<set name="a_status" value="Completed"/>
+			<applymethod argument="-id &quot;$value(doc_id)&quot; -target &quot;SELECT r_object_id FROM dm_sysobject WHERE r_object_id = '$value(doc_id)'&quot; -event dm_recall_esig -context_user &quot;$dqlvalue(&quot;select user_name from dm_audittrail where audited_obj_id = '$value(r_object_id)' and event_name = 'd2_workflow_signoff'&quot;)&quot; -string_1 &quot;Controlled Copy #: $value(cc_num)&quot; -string_2 &quot;Requestor: $value(requestor)&quot; -string_3 &quot;Recipient: $value(recipient)&quot; -string_4 &quot;Recall Reason: $value(recall_reason)&quot;" name="CDFAuditMethod"/>
+			<applymethod argument="-doc_id &quot;$value(doc_id)&quot; -ccnum &quot;$value(cc_num)&quot;" name="ControlledPrintUpdateStatus"/>
+		</actions>
+		<next_states/>
+	</state>
+	<state direct="false" entry="false" name="Completed (External)">
+		<entry_conditions/>
+		<actions>
+			<set name="a_status" value="Completed"/>
+			<applymethod argument="-id &quot;$value(doc_id)&quot; -target &quot;SELECT r_object_id FROM dm_sysobject WHERE r_object_id = '$value(doc_id)'&quot; -event &quot;dm_recall_esig&quot; -context_user &quot;$dqlvalue(&quot;select user_name from dm_audittrail where audited_obj_id = '$value(r_object_id)' and event_name = 'd2_workflow_signoff'&quot;)&quot; -string_1 &quot;Controlled Copy #: $value(cc_num)&quot; -string_2 &quot;Requestor: $value(requestor)&quot; -string_3 &quot;Recipient: $value(recipient)&quot; -string_4 &quot;Recall Reason: $value(recall_reason)&quot;" name="CDFAuditMethod"/>
+			<applymethod argument="-doc_id &quot;$value(doc_id)&quot; -ccnum &quot;$value(cc_num)&quot;" name="ControlledPrintUpdateStatus"/>
+		</actions>
+		<next_states/>
+	</state>
+	<state direct="false" entry="false" name="(Check Recipient)">
+		<entry_conditions>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate recall recipient is an active user"/>
+		</entry_conditions>
+		<actions/>
+		<next_states/>
+	</state>
+	<state direct="false" entry="false" name="(Check Requestor)">
+		<entry_conditions>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate recall requestor is an active user"/>
+		</entry_conditions>
+		<actions/>
+		<next_states/>
+	</state>
+</d2lifecycle>

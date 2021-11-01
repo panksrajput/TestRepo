@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_documentset new_format="true">
+	<object_name value="GMP Subgroup Exec Manu Semi-finished Good"/>
+	<title value="Refers to GMP Subgroup Exec Manu Semi-finished Good documents."/>
+	<subject value=""/>
+	<authors/>
+	<keywords/>
+	<a_status value=""/>
+	<a_content_type value=""/>
+	<log_entry value=""/>
+	<language_code value=""/>
+	<dql_where value="domain='GMP' and primary_group='Executed Manufacturing' and subgroup='Executed Manufacturing Document Semi-finished Good'"/>
+	<order_no value="24"/>
+	<dql_from>
+		<repeating value="cd_quality_gmp"/>
+	</dql_from>
+	<group_names/>
+	<application_names>
+		<repeating value="OpenText Life Sciences Quality and Manufacturing Solution"/>
+	</application_names>
+	<user_agent value=""/>
+	<parent_names>
+		<repeating value="GMP Group Executed Manufacturing"/>
+	</parent_names>
+	<parent_order_no>
+		<repeating value="2"/>
+	</parent_order_no>
+	<lock_config value="F"/>
+	<parents_config/>
+</d2_documentset>

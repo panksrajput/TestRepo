@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_dictionary object_name="Bio SubDepartment" title="" lock_config="false" parents_config="" application_names="Biocon¬Custom Configurations" security_group="biocon_dict_admin" search_group="" version="2" is_versioned="false" manual_order="false" create_view_option="false" is_dql="false" is_dql_cache="false" dql="" label_en="">
+	<d2_dictionary_value object_name="A1" is_enabled="true" order_no="0">
+		<locale name="en" value="A1"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="A2" is_enabled="true" order_no="0">
+		<locale name="en" value="A2"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="C1" is_enabled="true" order_no="0">
+		<locale name="en" value="C1"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="C1AB" is_enabled="true" order_no="0">
+		<locale name="en" value="C1AB"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="C1C" is_enabled="true" order_no="0">
+		<locale name="en" value="C1C"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="C1E" is_enabled="true" order_no="0">
+		<locale name="en" value="C1E"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="C2" is_enabled="true" order_no="0">
+		<locale name="en" value="C2"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="C3" is_enabled="true" order_no="0">
+		<locale name="en" value="C3"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="D1" is_enabled="true" order_no="0">
+		<locale name="en" value="D1"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="D2" is_enabled="true" order_no="0">
+		<locale name="en" value="D2"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="D3" is_enabled="true" order_no="0">
+		<locale name="en" value="D3"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="D4" is_enabled="true" order_no="0">
+		<locale name="en" value="D4"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Dispatch Production" is_enabled="true" order_no="0">
+		<locale name="en" value="Dispatch Production"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="ETP" is_enabled="true" order_no="0">
+		<locale name="en" value="ETP"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="FG Warehouse" is_enabled="true" order_no="0">
+		<locale name="en" value="FG Warehouse"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="General EHS" is_enabled="true" order_no="0">
+		<locale name="en" value="General EHS"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="KiloLab" is_enabled="true" order_no="0">
+		<locale name="en" value="KiloLab"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Lab Engineering" is_enabled="true" order_no="0">
+		<locale name="en" value="Lab Engineering"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="NA" is_enabled="true" order_no="0">
+		<locale name="en" value="NA"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="PE LAB" is_enabled="true" order_no="0">
+		<locale name="en" value="PE LAB"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="PEAL" is_enabled="true" order_no="0">
+		<locale name="en" value="PEAL"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="PETT" is_enabled="true" order_no="0">
+		<locale name="en" value="PETT"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="PROD-OQT" is_enabled="true" order_no="0">
+		<locale name="en" value="PROD-OQT"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="R1" is_enabled="true" order_no="0">
+		<locale name="en" value="R1"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="RO" is_enabled="true" order_no="0">
+		<locale name="en" value="RO"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="SAF" is_enabled="true" order_no="0">
+		<locale name="en" value="SAF"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Utility" is_enabled="true" order_no="0">
+		<locale name="en" value="Utility"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="W1" is_enabled="true" order_no="0">
+		<locale name="en" value="W1"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="WTP" is_enabled="true" order_no="0">
+		<locale name="en" value="WTP"/>
+	</d2_dictionary_value>
+</d2_dictionary>

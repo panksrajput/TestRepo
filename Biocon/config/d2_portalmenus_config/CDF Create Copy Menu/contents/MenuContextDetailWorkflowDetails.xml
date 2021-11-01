@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<delta>
+	<insert position-after="separator0,menuCustom1415087168573,menuCustom1415087310196,separatorCustom1502261425384,menuContextCheckin,menuContextCancelCheckout,separator1,menuContextLocate,menuContextLocateSourceOfReference,menuContextCopyLocator,separator2,menuContextDestroy,separator3,menuContextProperties" position-before="menuContextView,menuContextEdit">
+		<menuitem id="menuCustom1502261103994" action="" label_en="Display Virtual Document">
+			<dynamic-action class="com.emc.d2fs.dctm.ui.dynamicactions.events.Publish" event="D2_ACTION_OPEN_VD"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.vd.IsVD"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.objects.IsReference" equals="false"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.interfaces.IsMultipleSelection" equals="false"/>
+		</menuitem>
+	</insert>
+	<insert position-after="menuCustom1415087310196,separatorCustom1502261425384,menuContextCheckin,menuContextCancelCheckout,separator1,menuContextLocate,menuContextLocateSourceOfReference,menuContextCopyLocator,separator2,menuContextDestroy,separator3,menuContextProperties" position-before="menuContextView,menuContextEdit,menuCustom1502261103994,separator0">
+		<menuitem id="menuCustom1415087168573" label_en="Review and Edit Consolidated Copy">
+			<dynamic-action action="D2_ACTION_CONTENT_ANNOTATE_NATIVE_ANNOTATION" class="com.emc.d2fs.dctm.ui.dynamicactions.actions.NativeAnnotation" locateAndRefresh="false"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.useragent.IsThinClient" equals="false" showifinvalid="false"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.interfaces.IsConnected" showifinvalid="true"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.typeparts.IsDocument" showifinvalid="true"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.actions.CheckoutByAndPermitLevel" showifinvalid="true" value="relate"/>
+		</menuitem>
+	</insert>
+	<insert position-after="separatorCustom1502261425384,menuContextCheckin,menuContextCancelCheckout,separator1,menuContextLocate,menuContextLocateSourceOfReference,menuContextCopyLocator,separator2,menuContextDestroy,separator3,menuContextProperties" position-before="menuContextView,menuContextEdit,menuCustom1502261103994,separator0,menuCustom1415087168573">
+		<menuitem id="menuCustom1415087310196" label_en="Checkout and Merge Changes">
+			<dynamic-action action="D2_ACTION_CONTENT_EDIT_WITH_NATIVE_ANNOTATION" class="com.emc.d2fs.dctm.ui.dynamicactions.actions.NativeAnnotation" locateAndRefresh="false"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.useragent.IsThinClient" equals="false" showifinvalid="false"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.interfaces.IsConnected" showifinvalid="true"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.permits.HasClientCapability" showifinvalid="true" value="contributor"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.actions.CanEdit" showifinvalid="true"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.actions.CanMerge"/>
+		</menuitem>
+	</insert>
+	<insert position-after="menuContextCheckin,menuContextCancelCheckout,separator1,menuContextLocate,menuContextLocateSourceOfReference,menuContextCopyLocator,separator2,menuContextDestroy,separator3,menuContextProperties" position-before="menuContextView,menuContextEdit,menuCustom1502261103994,separator0,menuCustom1415087168573,menuCustom1415087310196">
+		<separator id="separatorCustom1502261425384"/>
+	</insert>
+	<modify id="menuContextEdit" label_en="Checkout and Edit">
+		<modify class="com.emc.d2fs.dctm.ui.dynamicactions.actions.Checkout" locateAndRefresh="false"/>
+	</modify>
+	<modify id="menuContextCopyLocator" hidden="true"/>
+	<modify id="menuContextDestroy" hidden="true"/>
+	<modify id="menuContextCheckin">
+		<modify class="com.emc.d2fs.dctm.ui.dynamicactions.actions.Checkin" locateAndRefresh="false"/>
+	</modify>
+	<modify id="menuContextCancelCheckout">
+		<modify class="com.emc.d2fs.dctm.ui.dynamicactions.actions.Checkout" locateAndRefresh="false"/>
+	</modify>
+	<modify id="menuContextProperties">
+		<modify class="com.emc.d2fs.dctm.ui.dynamicactions.actions.ShowDialog" locateAndRefresh="false" refreshCheckoutState=""/>
+	</modify>
+</delta>

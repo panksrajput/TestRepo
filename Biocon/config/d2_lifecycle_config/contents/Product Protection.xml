@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2lifecycle execute_actions_on_start="true" state_attribute="product_protection_code">
+	<state direct="false" entry="false" name="UNPROTECTED">
+		<entry_conditions>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate user is a Manager of the selected registration form"/>
+			<attribute compare="contains" message_failed_en="Cannot unprotect the Product Registration Form because the Registration Form is created externally." name="external_system_attribute" value="F"/>
+		</entry_conditions>
+		<actions>
+			<set name="product_protection_code" value="UNPROTECTING"/>
+			<applymethod argument="-state_transition &quot;(unprotect)&quot; -qualifier &quot;cd_product_info where r_object_id = '$value(r_object_id)'&quot;" name="CDFApplyD2ConfigurationsAsyncMethod"/>
+		</actions>
+		<next_states>
+			<state action="" confirmation_en="" dialog="" event="" label_en="Protect" name="PROTECTED" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+		</next_states>
+	</state>
+	<state direct="false" entry="false" name="PROTECTED">
+		<entry_conditions>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate user is a Manager of the selected registration form"/>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate Product does not have any checked out documents"/>
+			<attribute compare="contains" message_failed_en="Cannot protect the Product Registration Form because the Registration Form is created externally." name="external_system_attribute" value="F"/>
+		</entry_conditions>
+		<actions>
+			<set name="product_protection_code" value="PROTECTING"/>
+			<applymethod argument="-state_transition &quot;(protect)&quot; -qualifier &quot;cd_product_info where r_object_id = '$value(r_object_id)'&quot;" name="CDFApplyD2ConfigurationsAsyncMethod"/>
+		</actions>
+		<next_states>
+			<state action="" confirmation_en="" dialog="" event="" label_en="Unprotect" name="UNPROTECTED" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+		</next_states>
+	</state>
+	<state direct="false" entry="true" name=" ">
+		<entry_conditions/>
+		<actions/>
+		<next_states>
+			<state action="" confirmation_en="" dialog="" event="" label_en="Protect" name="UNPROTECTED" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+		</next_states>
+	</state>
+</d2lifecycle>

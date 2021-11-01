@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<delta>
+	<replace id="separator3">
+		<separator id="separator4"/>
+	</replace>
+	<modify id="menuContextVDConvertToVd">
+		<append>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.objects.HasAttrValue" equals="false" property="category" value="1"/>
+		</append>
+	</modify>
+	<modify id="menuContextVDSetBinding">
+		<append>
+			<condition all_valid="true" class="com.emc.d2fs.dctm.ui.conditions.objects.HasAttrValue" equals="false" property="category" value="1"/>
+		</append>
+	</modify>
+</delta>

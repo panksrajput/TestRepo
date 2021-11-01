@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2lifecycle execute_actions_on_start="true" state_attribute="">
+	<state direct="false" entry="true" name="Pending Approval">
+		<entry_conditions/>
+		<actions/>
+		<next_states>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="Rejected" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="Printed" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+		</next_states>
+	</state>
+	<state direct="false" entry="false" name="Rejected">
+		<entry_conditions/>
+		<actions>
+			<set name="a_status" value="Rejected"/>
+			<sendmail d2_mailing_config="Issued Print Request Rejected"/>
+		</actions>
+		<next_states/>
+	</state>
+	<state direct="false" entry="false" name="Printed">
+		<entry_conditions/>
+		<actions>
+			<set name="a_status" value="Printed"/>
+		</actions>
+		<next_states/>
+	</state>
+</d2lifecycle>

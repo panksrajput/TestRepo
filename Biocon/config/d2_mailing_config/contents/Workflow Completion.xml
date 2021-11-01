@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_mailing_config>
+	<add_attachment>false</add_attachment>
+	<rendition_formats/>
+	<list-recipient>
+		<recipient type="attribute">recipients</recipient>
+	</list-recipient>
+	<list-subject>
+		<subject_en>Workflow Completion for $value(package_name)</subject_en>
+	</list-subject>
+	<list-object>
+		<object_en>This email is to notify you that the $dqlvalue(&quot;select v.alias_value from d2_dictionary d,d2_dictionary_value v where d.object_name = v.dictionary_name and d.object_name = 'Workflow Name Alias Lookup' and d.alias_name='lookup value' and v.object_name = '$value(workflow_name)' and v.i_position=d.i_position enable (ROW_BASED)&quot;) has been completed for $value(package_name), $value(package_title).&lt;/br&gt;
+The status of the document has transitioned to $dqlvalue(&quot;select v.alias_value from d2_dictionary d,d2_dictionary_value v where d.object_name = v.dictionary_name and d.object_name = 'Domain Document Status Display' and d.alias_name='$value(package_object_type)' and v.object_name = '$value(document_status)' and v.i_position=d.i_position enable (ROW_BASED)&quot;) . &lt;/br&gt;&lt;a href=https://bldmsdev.biocon.com/D2/?docbase=bioconqmdev&amp;locateId=$value(package_id)&gt;Click here to access the document&lt;/a&gt;</object_en>
+	</list-object>
+</d2_mailing_config>

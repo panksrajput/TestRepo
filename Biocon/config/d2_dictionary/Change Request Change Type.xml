@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_dictionary object_name="Change Request Change Type" title="Dictionary for Change Request for Types." lock_config="false" parents_config="" application_names="OpenText Life Sciences Medical Device for Quality and Manufacturing Solution¬OpenText Life Sciences Medical Device Solution¬OpenText Life Sciences Quality and Manufacturing Solution" security_group="admingroup" search_group="" version="2" is_versioned="false" manual_order="false" create_view_option="false" is_dql="false" is_dql_cache="false" dql="" label_en="Change Type">
+	<d2_dictionary_value object_name="New|Draft" is_enabled="true" order_no="0">
+		<alias name="Status" value="Draft"/>
+		<alias name="Change Type" value="New"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Reinstate|Suspended" is_enabled="true" order_no="0">
+		<alias name="Status" value="Suspended"/>
+		<alias name="Change Type" value="Reinstate"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Revise|Draft" is_enabled="true" order_no="0">
+		<alias name="Status" value="Draft"/>
+		<alias name="Change Type" value="Revise"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Revise|Effective" is_enabled="true" order_no="0">
+		<alias name="Status" value="Effective"/>
+		<alias name="Change Type" value="Revise"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Revise|Suspended" is_enabled="true" order_no="0">
+		<alias name="Status" value="Suspended"/>
+		<alias name="Change Type" value="Revise"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Revise|Withdrawn" is_enabled="true" order_no="0">
+		<alias name="Status" value="Withdrawn"/>
+		<alias name="Change Type" value="Revise"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Withdraw|Effective" is_enabled="true" order_no="0">
+		<alias name="Status" value="Effective"/>
+		<alias name="Change Type" value="Withdraw"/>
+	</d2_dictionary_value>
+</d2_dictionary>

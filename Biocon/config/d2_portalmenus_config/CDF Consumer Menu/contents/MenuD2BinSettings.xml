@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<delta>
+	<modify id="menuPluginActivated" label_en="menuPluginActivated"/>
+	<modify id="menuBinAdmin" label_en="menuBinAdmin"/>
+	<modify id="menuCanEmpty" label_en="menuCanEmpty"/>
+</delta>

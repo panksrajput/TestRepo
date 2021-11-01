@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dialog id="PropertiesDialog" buttons_right="false" focus="from_date" height="300" resizable="true" signoff_creation="false" signoff_edit="false" signoff_import="false" signoff_intention_dictionary="" signoff_intention_required="false" width="500">
+	<content>
+		<fieldset label_en="Find Delete Audit Events">
+			<fieldset advancedView_enabled="false" advancedView_visible="false" label_en="Date Range">
+				<date id="from_date" condition_required_create="true" condition_required_edit="true" condition_required_import="true" control="true" label_en="From Date"/>
+				<date id="to_date" advancedView_required="false" condition_required_create="true" condition_required_edit="true" condition_required_import="true" control="true" label_en="To Date"/>
+			</fieldset>
+		</fieldset>
+	</content>
+	<buttons>
+		<button id="buttonOk" action="validDialog()"/>
+		<button id="buttonCancel" action="cancelDialog()"/>
+	</buttons>
+</dialog>

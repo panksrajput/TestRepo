@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2lifecycle execute_actions_on_start="true" state_attribute="">
+	<state direct="false" entry="false" name="(Start SharePoint WF)">
+		<entry_conditions/>
+		<actions/>
+		<next_states/>
+	</state>
+	<state direct="false" entry="false" name="(End SharePoint WF)">
+		<entry_conditions/>
+		<actions/>
+		<next_states/>
+	</state>
+	<state direct="false" entry="false" name="(Demote to Draft)">
+		<entry_conditions/>
+		<actions/>
+		<next_states/>
+	</state>
+	<state direct="false" entry="false" name="In Collaboration">
+		<entry_conditions/>
+		<actions/>
+		<next_states/>
+	</state>
+	<state direct="false" entry="false" name="(Abort SP WF)">
+		<entry_conditions/>
+		<actions/>
+		<next_states/>
+	</state>
+</d2lifecycle>

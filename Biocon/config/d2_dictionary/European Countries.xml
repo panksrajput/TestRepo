@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_dictionary object_name="European Countries" title="" lock_config="false" parents_config="" application_names="OpenText Life Sciences Submission Storage and Viewing¬OpenText Life Sciences Research and Development Solution¬OpenText Life Sciences Quality and Manufacturing Solution" security_group="admingroup" search_group="admingroup" version="2" is_versioned="false" manual_order="true" create_view_option="false" is_dql="false" is_dql_cache="false" dql="" label_en="Health Authorities">
+	<d2_dictionary_value object_name="AT" is_enabled="true" order_no="0">
+		<locale name="en" value="Austria"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="BE" is_enabled="true" order_no="1">
+		<locale name="en" value="Belgium"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="CY" is_enabled="true" order_no="2">
+		<locale name="en" value="Cyprus"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="CZ" is_enabled="true" order_no="3">
+		<locale name="en" value="Czech Republic"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="EE" is_enabled="true" order_no="4">
+		<locale name="en" value="Estonia"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="EU" is_enabled="true" order_no="5">
+		<locale name="en" value="Europe"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="FI" is_enabled="true" order_no="6">
+		<locale name="en" value="Finland"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="FR" is_enabled="true" order_no="7">
+		<locale name="en" value="France"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="DE" is_enabled="true" order_no="8">
+		<locale name="en" value="Germany"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="GR" is_enabled="true" order_no="9">
+		<locale name="en" value="Greece"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="HU" is_enabled="true" order_no="10">
+		<locale name="en" value="Hungary"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="IS" is_enabled="true" order_no="11">
+		<locale name="en" value="Iceland"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="IE" is_enabled="true" order_no="12">
+		<locale name="en" value="Ireland"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="IT" is_enabled="true" order_no="13">
+		<locale name="en" value="Italy"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="LV" is_enabled="true" order_no="14">
+		<locale name="en" value="Latvia"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="LT" is_enabled="true" order_no="15">
+		<locale name="en" value="Lithuania"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="LU" is_enabled="true" order_no="16">
+		<locale name="en" value="Luxemburg"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="MT" is_enabled="true" order_no="17">
+		<locale name="en" value="Malta"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="NL" is_enabled="true" order_no="18">
+		<locale name="en" value="Netherlands"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="NO" is_enabled="true" order_no="19">
+		<locale name="en" value="Norway"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="PL" is_enabled="true" order_no="20">
+		<locale name="en" value="Poland"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="PT" is_enabled="true" order_no="21">
+		<locale name="en" value="Portugal"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="RO" is_enabled="true" order_no="22">
+		<locale name="en" value="Romania"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="RU" is_enabled="true" order_no="23">
+		<locale name="en" value="Russia"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="SI" is_enabled="true" order_no="24">
+		<locale name="en" value="Slovenia"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="ES" is_enabled="true" order_no="25">
+		<locale name="en" value="Spain"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="SE" is_enabled="true" order_no="26">
+		<locale name="en" value="Sweden"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="CH" is_enabled="true" order_no="27">
+		<locale name="en" value="Switzerland"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="UK" is_enabled="true" order_no="28">
+		<locale name="en" value="United Kingdom"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="DK" is_enabled="true" order_no="29">
+		<locale name="en" value="Denmark"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="ME" is_enabled="true" order_no="30">
+		<locale name="en" value="Multiple Countries"/>
+	</d2_dictionary_value>
+</d2_dictionary>

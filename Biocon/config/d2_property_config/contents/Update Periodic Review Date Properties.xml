@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dialog id="PropertiesDialog" buttons_right="false" focus="" height="400" resizable="true" signoff_creation="false" signoff_edit="false" signoff_import="false" signoff_intention_dictionary="" signoff_intention_required="false" width="400">
+	<content>
+		<tabs>
+			<tab label_en="Set Periodic Review Dates">
+				<text id="category" condition_enabled_create="false" condition_enabled_edit="false" condition_enabled_import="false" condition_visible_create="false" condition_visible_edit="false" condition_visible_import="false"/>
+				<text id="a_status" condition_enabled_create="false" condition_enabled_edit="false" condition_enabled_import="false" condition_visible_create="false" condition_visible_edit="false" condition_visible_import="false"/>
+				<date id="effective_date" condition_enabled_create="false" condition_enabled_edit="false" condition_enabled_import="false" label_en="Effective Date"/>
+				<label id="periodic_review_interval" label_en="Periodic Review Interval"/>
+				<date id="periodic_review_due_date" advancedView_enabled="false" advancedView_visible="false" condition_enabled="(getValue(periodic_review_interval).notContains(' '))" condition_validation="getValue(periodic_review_due_date).isGreaterOrEqualsThan('$TODAY')&amp;&amp;getValue(periodic_review_due_date).isGreaterOrEqualsThan('getValue(next_periodic_review_date)')" condition_visible="(getValue(category).equals('1'))" label_en="Next Review Due Date"/>
+				<date id="next_periodic_review_date" advancedView_visible="false" condition_enabled_create="false" condition_enabled_import="false" condition_validation="getValue(next_periodic_review_date).isGreaterOrEqualsThan('$TODAY')&amp;&amp;getValue(next_periodic_review_date).isLessOrEqualsThan('getValue(periodic_review_due_date)')" condition_visible="(getValue(category).equals('1'))" label_en="Next Review Start Date" validation_message_en="Next Periodic Review Date must be Greater than or equal to today and must be less than or equal to Periodic Review Due Date."/>
+				<date id="last_periodic_review_date" advancedView_enabled="false" advancedView_visible="false" condition_enabled="(getValue(category).equals('1'))" condition_enabled_create="false" condition_enabled_edit="false" condition_enabled_import="false" condition_validation="getValue(last_periodic_review_date).isLessOrEqualsThan('$TODAY')" condition_visible="(getValue(category).equals('1'))" label_en="Last Periodic Review Date"/>
+				<separator/>
+				<list id="review_notif_recipients" assistance_dql="select i_all_users_names from dm_group where  any i_supergroups_names in ($repeatingvalue(doc_coordinators)) union select group_name from dm_group where  any i_supergroups_names in ($repeatingvalue(doc_coordinators)) union select user_name from dm_user where user_name in ($repeatingvalue(doc_coordinators)) order by 1;" assistance_type="dql" asynchronous="false" condition_required_edit="true" label_en="Periodic Review Recipients" rows="4" sorted="true"/>
+				<memo id="comments" advancedView_enabled="false" advancedView_required="false" advancedView_visible="false" condition_enabled="((getValue(a_status).equals('Effective'))||(getValue(a_status).equals('Release Pending')))" condition_required="((getValue(a_status).equals('Effective'))||(getValue(a_status).equals('Release Pending')))" condition_required_edit="true" condition_visible="((getValue(a_status).equals('Effective'))||(getValue(a_status).equals('Release Pending')))" label_en="Reason For Change"/>
+				<list id="doc_coordinators" condition_enabled_create="false" condition_enabled_edit="false" condition_enabled_import="false" condition_visible_create="false" condition_visible_edit="false" condition_visible_import="false"/>
+			</tab>
+		</tabs>
+	</content>
+	<buttons>
+		<button id="buttonOk" action="validDialog()"/>
+		<button id="buttonCancel" action="cancelDialog()"/>
+	</buttons>
+</dialog>

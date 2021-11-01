@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_acl_config new_format="true">
+	<object_name value="Issued Print Security"/>
+	<title value="Security to apply to Issued Print objects"/>
+	<subject value=""/>
+	<authors/>
+	<keywords/>
+	<a_status value=""/>
+	<a_content_type value=""/>
+	<log_entry value=""/>
+	<language_code value=""/>
+	<module_type value="d2_acl_config"/>
+	<application_names>
+		<repeating value="OpenText Life Sciences Quality and Manufacturing Solution"/>
+	</application_names>
+	<lock_config value="F"/>
+	<parents_config/>
+	<accessor_permit>
+		<repeating value="1"/>
+		<repeating value="7"/>
+		<repeating value="3"/>
+		<repeating value="4"/>
+		<repeating value="3"/>
+	</accessor_permit>
+	<accessor_xpermit>
+		<repeating value="3"/>
+		<repeating value="3"/>
+		<repeating value="3"/>
+		<repeating value="3"/>
+		<repeating value="3"/>
+	</accessor_xpermit>
+	<accessor_name>
+		<repeating value="dm_world"/>
+		<repeating value="dm_owner"/>
+		<repeating value="%cd_issued_print_$value(print_site.GMP Applicable Sites.Print Site Name)_printers"/>
+		<repeating value="%cd_issued_print_$value(print_site.GMP Applicable Sites.Print Site Name)_reconcilers"/>
+		<repeating value="%cd_issued_print_$value(print_site.GMP Applicable Sites.Print Site Name)_reprinters"/>
+	</accessor_name>
+	<condition_attr_name>
+		<repeating value=""/>
+		<repeating value=""/>
+		<repeating value=""/>
+		<repeating value=""/>
+		<repeating value=""/>
+	</condition_attr_name>
+	<condition_attr_value>
+		<repeating value=""/>
+		<repeating value=""/>
+		<repeating value=""/>
+		<repeating value=""/>
+		<repeating value=""/>
+	</condition_attr_value>
+	<accessor_irm_permit>
+		<repeating value=""/>
+		<repeating value=""/>
+		<repeating value=""/>
+		<repeating value=""/>
+		<repeating value=""/>
+	</accessor_irm_permit>
+</d2_acl_config>

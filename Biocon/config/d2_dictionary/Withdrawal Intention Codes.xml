@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_dictionary object_name="Withdrawal Intention Codes" title="Dictionary for Intention Codes used in Withdrawal workflow." lock_config="false" parents_config="" application_names="OpenText Life Sciences Medical Device for Quality and Manufacturing Solution¬OpenText Life Sciences Submission Storage and Viewing¬OpenText Life Sciences Research and Development Solution¬OpenText Life Sciences eTMF Solution¬OpenText Life Sciences Quality and Manufacturing Solution¬OpenText Life Sciences Medical Device Solution¬Custom Configurations¬Biocon" security_group="biocon_dict_admin" search_group="biocon_dict_admin" version="2" is_versioned="false" manual_order="false" create_view_option="false" is_dql="false" is_dql_cache="false" dql="" label_en="Withdrawal Intention Codes">
+	<d2_dictionary_value object_name="Document / procedure merged with account document" is_enabled="true" order_no="0">
+		<locale name="en" value="Document / procedure merged with account document"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Equipment discontinued from usage" is_enabled="true" order_no="0">
+		<locale name="en" value="Equipment discontinued from usage"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Equipment transferred to other location" is_enabled="true" order_no="0">
+		<locale name="en" value="Equipment transferred to other location"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Facility discontinued from usage" is_enabled="true" order_no="0">
+		<locale name="en" value="Facility discontinued from usage"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Instrument discontinued from usage" is_enabled="true" order_no="0">
+		<locale name="en" value="Instrument discontinued from usage"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Material not in use" is_enabled="true" order_no="0">
+		<locale name="en" value="Material not in use"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Process withdrawn" is_enabled="true" order_no="0">
+		<locale name="en" value="Process withdrawn"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Product discontinued" is_enabled="true" order_no="0">
+		<locale name="en" value="Product discontinued"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="System discontinued from usage" is_enabled="true" order_no="0">
+		<locale name="en" value="System discontinued from usage"/>
+	</d2_dictionary_value>
+</d2_dictionary>

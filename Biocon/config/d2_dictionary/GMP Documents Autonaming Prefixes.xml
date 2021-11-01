@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_dictionary object_name="GMP Documents Autonaming Prefixes" title="Prefixes used for GMP documents based on Groups for autonaming" lock_config="false" parents_config="" application_names="OpenText Life Sciences Quality and Manufacturing Solution¬OpenText Life Sciences Medical Device Solution¬OpenText Life Sciences Medical Device for Quality and Manufacturing Solution" security_group="admingroup" search_group="" version="2" is_versioned="false" manual_order="false" create_view_option="false" is_dql="false" is_dql_cache="false" dql="" label_en="GMP Documents Autonaming Prefixes">
+	<d2_dictionary_value object_name="Bill Of Material" is_enabled="true" order_no="0">
+		<locale name="en" value="BOM"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Checklists" is_enabled="true" order_no="0">
+		<locale name="en" value="CHL"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Customer Documents" is_enabled="true" order_no="0">
+		<locale name="en" value="CTD"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="DHF" is_enabled="true" order_no="0">
+		<locale name="en" value="DHF"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="DHF Specifications" is_enabled="true" order_no="0">
+		<locale name="en" value="SPE"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="DMR" is_enabled="true" order_no="0">
+		<locale name="en" value="DMR"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="DMR Drawing" is_enabled="true" order_no="0">
+		<locale name="en" value="DRW"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="DMR Specifications" is_enabled="true" order_no="0">
+		<locale name="en" value="SPE"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="External Audit" is_enabled="true" order_no="0">
+		<locale name="en" value="AUD"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Internal Audit" is_enabled="true" order_no="0">
+		<locale name="en" value="AUD"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Investigations" is_enabled="true" order_no="0">
+		<locale name="en" value="INV"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Labeling" is_enabled="true" order_no="0">
+		<locale name="en" value="LBL"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Matrix" is_enabled="true" order_no="0">
+		<locale name="en" value="MTX"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Plans" is_enabled="true" order_no="0">
+		<locale name="en" value="PLN"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Preliminary Bill Of Material" is_enabled="true" order_no="0">
+		<locale name="en" value="PBOM"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Production Document" is_enabled="true" order_no="0">
+		<locale name="en" value="PRD"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Protocols" is_enabled="true" order_no="0">
+		<locale name="en" value="PRT"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Quality Events" is_enabled="true" order_no="0">
+		<locale name="en" value="QUE"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Quality Management" is_enabled="true" order_no="0">
+		<locale name="en" value="QMGT"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Quality Records" is_enabled="true" order_no="0">
+		<locale name="en" value="QREC"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Quality Risk Documentation" is_enabled="true" order_no="0">
+		<locale name="en" value="QRSK"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Recalls" is_enabled="true" order_no="0">
+		<locale name="en" value="REC"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Reports" is_enabled="true" order_no="0">
+		<locale name="en" value="RPT"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Requirements" is_enabled="true" order_no="0">
+		<locale name="en" value="REQ"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Reviews" is_enabled="true" order_no="0">
+		<locale name="en" value="REV"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Risk Documentation" is_enabled="true" order_no="0">
+		<locale name="en" value="RSK"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Service Documents" is_enabled="true" order_no="0">
+		<locale name="en" value="SVD"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Site Master File" is_enabled="true" order_no="0">
+		<locale name="en" value="SMF"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Software Documentation and Release" is_enabled="true" order_no="0">
+		<locale name="en" value="SFR"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Supplier Audit" is_enabled="true" order_no="0">
+		<locale name="en" value="AUD"/>
+	</d2_dictionary_value>
+</d2_dictionary>

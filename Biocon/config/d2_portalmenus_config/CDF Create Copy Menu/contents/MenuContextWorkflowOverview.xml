@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<delta>
+	<modify id="menuContextAbortWorkflow">
+		<delete class="com.emc.d2fs.dctm.ui.conditions.workflows.IsWorkflowSupervisor"/>
+	</modify>
+	<modify id="menuContextUpdatePerformer">
+		<replace class="com.emc.d2fs.dctm.ui.conditions.workflows.IsWorkflowSupervisor">
+			<condition all_valid="true" class="com.emc.d2fs.dctm.ui.conditions.objects.Predicate" value="cd_controlled_doc(all) WHERE r_object_id in (SELECT r_component_id FROM dmi_package p WHERE p.r_workflow_id in (SELECT child_id FROM dm_relation WHERE relation_name ='D2_WF_TRACKER_WORKFLOW' and parent_id='$value(r_object_id)') and (p.r_workflow_id in (select r_object_id from dm_workflow where supervisor_name in ('$USER')) or any r_component_id in (select r_object_id from cd_controlled_doc(all) where any wf_doc_coordinators IN ('$USER') or any wf_doc_coordinators IN (SELECT i_supergroups_names FROM dm_group WHERE any i_all_users_names in ('$USER')) or any doc_coordinators IN ('$USER') or any doc_coordinators in (SELECT i_supergroups_names FROM dm_group WHERE any i_all_users_names in ('$USER')))))"/>
+		</replace>
+	</modify>
+</delta>

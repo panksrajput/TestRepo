@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<delta>
+	<modify id="menuContextUpdatePerformer">
+		<insert position-after="com.emc.d2fs.dctm.ui.conditions.workflows.IsWorkflowSupervisor" position-before="com.emc.d2fs.dctm.ui.dynamicactions.workflows.WorkflowManagement,com.emc.d2fs.dctm.ui.conditions.interfaces.IsConnected,com.emc.d2fs.dctm.ui.conditions.interfaces.IsMultipleSelection,com.emc.d2fs.dctm.ui.conditions.workflows.IsTask,com.emc.d2fs.dctm.ui.conditions.workflows.IsTaskAcquired,com.emc.d2fs.dctm.ui.conditions.workflows.IsWorkflowRunning">
+			<condition class="com.emc.d2fs.dctm.ui.conditions.workflows.HasPermitLevelToLaunchScheduledWorkflow"/>
+		</insert>
+		<append>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.workflows.IsWorkflowSupervisor"/>
+		</append>
+	</modify>
+</delta>

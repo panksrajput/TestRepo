@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_mailing_config>
+	<add_attachment>false</add_attachment>
+	<rendition_formats/>
+	<list-recipient>
+		<recipient type="attribute">notification_list</recipient>
+	</list-recipient>
+	<list-subject>
+		<subject_en>Document &quot;$value(object_name)&quot; has been withdrawn.</subject_en>
+	</list-subject>
+	<list-object>
+		<object_en>&quot;$value(object_name)&quot; has been withdrawn from use. Please check any related documents to see if they are impacted by this, and withdraw them too where necessary.</object_en>
+	</list-object>
+</d2_mailing_config>

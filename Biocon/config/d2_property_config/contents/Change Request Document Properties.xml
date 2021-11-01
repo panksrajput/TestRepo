@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dialog id="PropertiesDialog" auto_smartview_edit_mode="false" buttons_right="false" focus="" height="600" initial_invalid="false" resizable="true" signoff_creation="false" signoff_edit="false" signoff_import="false" signoff_intention_dictionary="" signoff_intention_required="false" width="1020">
+	<content>
+		<fieldset label_en="Properties">
+			<tabs>
+				<tab label_en="Change Request Info">
+					<list id="cr_requestors" assistance_dql="select i_all_users_names from dm_group where any i_supergroups_names in (select alias_value from d2_dictionary_value where object_name in ($repeatingvalue(applicable_sites)) and any alias_value is not nullstring and (alias_value like '%_authors' or alias_value like '%_coordinators') ENABLE (ROW_BASED))" assistance_type="dql" condition_required_create="true" condition_required_edit="true" condition_required_import="true" rows="4" sorted="true"/>
+					<list-editable id="applicable_sites" assistance_dictionary="GMP Applicable Sites" assistance_dictionary_alias="auto" assistance_type="dictionary" condition_enabled_edit="false" condition_required_create="true" condition_required_edit="true" condition_required_import="true" rows="4" sorted="true"/>
+					<separator/>
+					<boolean id="copy_file_name" condition_visible_create="false" condition_visible_edit="false"/>
+					<text id="title" advancedView_enabled="false" condition_enabled="(getValue(copy_file_name).equals('false'))" condition_required_create="true" condition_required_edit="true" condition_required_import="true"/>
+					<combo id="reason_code" assistance_dictionary="Change Request Reason Codes" assistance_dictionary_alias="auto" assistance_type="dictionary" condition_required_create="true" condition_required_edit="true" condition_required_import="true"/>
+					<separator/>
+					<comment font_bold="false" font_color="#969696" html_content="true" label_en="Please provide the brief summary of the overall change request in the field below."/>
+					<memo id="change_summary" condition_required_create="true" condition_required_edit="true" condition_required_import="true"/>
+					<memo id="comments"/>
+					<text id="quality_rec_number"/>
+					<combo id="document_type" assistance_dictionary="GMP Artifacts" assistance_type="dictionary" condition_visible_create="false" condition_visible_edit="false" condition_visible_import="false"/>
+				</tab>
+				<tab condition_visible_create="false" condition_visible_import="false" label_en="Affected Documents">
+					<grid condition_enabled_create="false" condition_enabled_import="false" grid_height="400" no_empty_row="true" row_based_condition="true">
+						<text id="affected_doc_name" cell_width="140" condition_enabled_create="false" condition_enabled_edit="false" condition_enabled_import="false"/>
+						<text id="affected_doc_version" advancedView_enabled="false" cell_width="80" condition_enabled="(getValue(affected_doc_name).notEquals(''))" condition_enabled_create="false" condition_enabled_edit="false" condition_enabled_import="false" condition_required_create="true" condition_required_edit="true" condition_required_import="true" no_empty_cell="true"/>
+						<combo id="affected_doc_change_type" advancedView_enabled="false" assistance_dql="SELECT v.alias_value FROM d2_dictionary_value v, d2_dictionary d WHERE v.object_name IN (SELECT v.object_name FROM d2_dictionary_value v, d2_dictionary d WHERE d.object_name = 'Change Request Change Type' AND d.object_name = v.dictionary_name AND d.alias_name = 'Status' AND v.alias_value IN (SELECT a_status FROM cd_common_ref_model WHERE i_chronicle_id='$value(affected_doc_chronicle_id)') and d.i_position=v.i_position enable (ROW_BASED)) and d.object_name ='Change Request Change Type' and d.object_name =v.dictionary_name and d.alias_name='Change Type' and d.i_position=v.i_position order by 1 enable (ROW_BASED)" assistance_type="dql" asynchronous="true" condition_enabled="(getValue(affected_doc_name).notEquals(''))" condition_required_create="true" condition_required_edit="true" condition_required_import="true" no_empty_cell="true"/>
+						<combo id="affected_doc_notify_user" advancedView_enabled="false" assistance_dql="select groups_names from dm_group where any i_supergroups_names in (select alias_value from d2_dictionary_value where dictionary_name like 'GMP Applicable Sites' and any alias_value is not nullstring and  object_name in ($repeatingvalue(applicable_sites)) ENABLE (ROW_BASED)) union select grp.i_all_users_names from dm_group grp, dm_user usr where usr.user_state != 1 and any grp.i_all_users_names = usr.user_name and any grp.i_supergroups_names in (select alias_value from d2_dictionary_value where dictionary_name like 'GMP Applicable Sites' and any alias_value is not nullstring and  object_name in ($repeatingvalue(applicable_sites)) ENABLE (ROW_BASED))" assistance_type="dql" cell_width="130" condition_enabled="(getValue(affected_doc_name).notEquals(''))" condition_required_create="true" condition_required_edit="true" condition_required_import="true" no_empty_cell="true"/>
+						<text id="affected_doc_imp_assessment" advancedView_enabled="false" cell_width="220" condition_enabled="(getValue(affected_doc_name).notEquals(''))" condition_required_create="true" condition_required_edit="true" condition_required_import="true" no_empty_cell="true"/>
+						<text id="affected_doc_change_desc" advancedView_enabled="false" advancedView_visible="false" cell_width="220" condition_enabled="(getValue(affected_doc_name).notEquals(''))" condition_required_create="true" condition_required_edit="true" condition_required_import="true" no_empty_cell="true"/>
+						<text id="affected_doc_chronicle_id" advancedView_visible="false" condition_enabled_create="false" condition_enabled_edit="false" condition_enabled_import="false" condition_visible_create="false" condition_visible_edit="false" condition_visible_import="false"/>
+					</grid>
+				</tab>
+				<tab advancedView_visible="false" condition_visible="((getValue(a_status).equals('Draft'))||(getValue(a_status).equals('For Review')))" condition_visible_create="false" condition_visible_import="false" label_en="System Messages">
+					<grid condition_enabled_create="false" condition_enabled_edit="false" condition_enabled_import="false" grid_height="400">
+						<combo id="cr_err_message" cell_width="720"/>
+						<date id="cr_err_date" cell_width="110"/>
+						<combo id="cr_err_version" cell_width="110"/>
+					</grid>
+				</tab>
+				<tab label_en="Process Info">
+					<label id="category"/>
+					<label id="a_status"/>
+					<separator/>
+					<date id="sent_for_review_date" condition_enabled_create="false" condition_enabled_edit="false" condition_enabled_import="false"/>
+					<date id="sent_for_approval_date" condition_enabled_create="false" condition_enabled_edit="false" condition_enabled_import="false"/>
+					<date id="approved_date" condition_enabled_create="false" condition_enabled_edit="false" condition_enabled_import="false"/>
+					<date id="closed_date" condition_enabled_create="false" condition_enabled_edit="false" condition_enabled_import="false"/>
+				</tab>
+				<tab condition_visible_create="false" condition_visible_import="false" label_en="Document Info">
+					<label id="r_version_label"/>
+					<label id="owner_name"/>
+					<label id="a_content_type"/>
+					<label id="r_full_content_size"/>
+					<label id="cr_binding_at_creation" condition_visible_create="false" condition_visible_edit="false" condition_visible_import="false"/>
+					<label id="cr_document_final_state" condition_visible_create="false" condition_visible_edit="false" condition_visible_import="false"/>
+					<separator/>
+					<label id="r_creator_name"/>
+					<label id="r_modifier"/>
+					<label id="r_lock_owner"/>
+					<separator/>
+					<label id="r_creation_date"/>
+					<label id="r_modify_date"/>
+					<label id="r_lock_date"/>
+					<label id="a_special_app"/>
+					<label id="primary_group" condition_visible_create="false" condition_visible_edit="false" condition_visible_import="false"/>
+				</tab>
+			</tabs>
+		</fieldset>
+	</content>
+	<buttons>
+		<button id="buttonOk" action="validDialog()"/>
+		<button id="buttonCancel" action="cancelDialog()"/>
+	</buttons>
+</dialog>

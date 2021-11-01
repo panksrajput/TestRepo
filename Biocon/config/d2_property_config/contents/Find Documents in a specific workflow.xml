@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dialog id="PropertiesDialog" buttons_right="false" focus="" height="250" resizable="true" signoff_creation="false" signoff_edit="false" signoff_import="false" signoff_intention_dictionary="" signoff_intention_required="false" width="440">
+	<content>
+		<comment font_color="#000000" html_content="true" label_en="&lt;table cellspacing=0&gt;&lt;tr&gt;&lt;td&gt;Select the Workflow Name to get list of documents in that workflow.&lt;/td&gt;&lt;tr&gt;&lt;/table&gt;"/>
+		<combo-editable id="wf_workflow_name" assistance_dictionary="Workflow Config List" assistance_dictionary_alias="auto" assistance_type="dictionary"/>
+	</content>
+	<buttons>
+		<button id="buttonOk" action="validDialog()"/>
+		<button id="buttonCancel" action="cancelDialog()"/>
+	</buttons>
+</dialog>

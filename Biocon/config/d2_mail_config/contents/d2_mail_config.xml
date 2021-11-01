@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_mail_config>
+	<notification event="dm_abortworkflow" message_en="Workflow $value(object_name) has been aborted." subject_en="Workflow Aborted"/>
+	<notification event="d2_workflow_started" message_en="D2 Workflow Started.&lt;/br&gt;&lt;a href=https://bldmsdev.biocon.com/D2/?docbase=bioconqmdev&amp;locateTarget=TasksWidget&amp;locateId=$value(stamp)&gt; Click here to access the document &lt;/a&gt;" subject_en="D2 Workflow Started"/>
+	<notification event="d2_workflow_aborted" message_en="D2 Workflow Aborted" subject_en="D2 Workflow Aborted"/>
+	<notification event="dm_startedworkitem" message_en="Task with subject &quot;$value(task.subject)&quot; has been started.&lt;/br&gt;&lt;a href=https://bldmsdev.biocon.com/D2/?docbase=bioconqmdev&amp;locateTarget=TasksWidget&amp;locateId=$value(stamp)&gt; Click here to access the document &lt;/a&gt;" subject_en="Task has been started."/>
+</d2_mail_config>

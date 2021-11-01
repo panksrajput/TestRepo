@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_dictionary object_name="Medical Device Notified Bodies" title="" lock_config="false" parents_config="" application_names="OpenText Life Sciences Quality and Manufacturing Solution¬OpenText Life Sciences Medical Device for Quality and Manufacturing Solution¬OpenText Life Sciences Research and Development Solution¬OpenText Life Sciences Submission Storage and Viewing¬OpenText Life Sciences Medical Device for Research and Development Solution¬OpenText Life Sciences Medical Device Solution¬Custom Configurations" security_group="cd_md_regulatory_managers" search_group="cd_md_regulatory_managers" version="2" is_versioned="false" manual_order="false" create_view_option="false" is_dql="false" is_dql_cache="false" dql="" label_en="Medical Device Notified Bodies">
+	<d2_dictionary_value object_name="NB 0026|BE" is_enabled="true" order_no="0">
+		<alias name="Notified Body Code" value="NB 0026"/>
+		<alias name="Notified Body Name" value="AIB-VINÇOTTE INTERNATIONAL S.A."/>
+		<alias name="Country" value="BE"/>
+		<locale name="en" value="AIB-VINÇOTTE INTERNATIONAL S.A."/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="NB 0027|BE" is_enabled="true" order_no="0">
+		<alias name="Notified Body Code" value="NB 0027"/>
+		<alias name="Notified Body Name" value="VERENIGING BUREAU VERITAS"/>
+		<alias name="Country" value="BE"/>
+		<locale name="en" value="VERENIGING BUREAU VERITAS"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="NB 0028|PT" is_enabled="true" order_no="0">
+		<alias name="Notified Body Code" value="NB 0028"/>
+		<alias name="Notified Body Name" value="INSTITUTO DE SOLDADURA E QUALIDADE"/>
+		<alias name="Country" value="PT"/>
+		<locale name="en" value="INSTITUTO DE SOLDADURA E QUALIDADE"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="NB 0029|BE" is_enabled="true" order_no="0">
+		<alias name="Notified Body Code" value="NB 0029"/>
+		<alias name="Notified Body Name" value="APRAGAZ A.S.B.L."/>
+		<alias name="Country" value="BE"/>
+		<locale name="en" value="APRAGAZ A.S.B.L."/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="NB 0035|DE" is_enabled="true" order_no="0">
+		<alias name="Notified Body Code" value="NB 0035"/>
+		<alias name="Notified Body Name" value="TÜV Rheinland Industrie Service GmbH"/>
+		<alias name="Country" value="DE"/>
+		<locale name="en" value="TÜV Rheinland Industrie Service GmbH"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="NB 0036|DE" is_enabled="true" order_no="0">
+		<alias name="Notified Body Code" value="NB 0036"/>
+		<alias name="Notified Body Name" value="TÜV SÜD Industrie Service GmbH"/>
+		<alias name="Country" value="DE"/>
+		<locale name="en" value="TÜV SÜD Industrie Service GmbH"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="NB 0037|UK" is_enabled="true" order_no="0">
+		<alias name="Notified Body Code" value="NB 0037"/>
+		<alias name="Notified Body Name" value="ZURICH ENGINEERING"/>
+		<alias name="Country" value="UK"/>
+		<locale name="en" value="ZURICH ENGINEERING"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="NB 0038|UK" is_enabled="true" order_no="0">
+		<alias name="Notified Body Code" value="NB 0038"/>
+		<alias name="Notified Body Name" value="Lloyd's Register Verification Limited"/>
+		<alias name="Country" value="UK"/>
+		<locale name="en" value="Lloyd's Register Verification Limited"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="NB 0040|UK" is_enabled="true" order_no="0">
+		<alias name="Notified Body Code" value="NB 0040"/>
+		<alias name="Notified Body Name" value="BRITISH ENGINEERING SERVICES LTD"/>
+		<alias name="Country" value="UK"/>
+		<locale name="en" value="BRITISH ENGINEERING SERVICES LTD"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="NB 0041|UK" is_enabled="true" order_no="0">
+		<alias name="Notified Body Code" value="NB 0041"/>
+		<alias name="Notified Body Name" value="BUREAU VERITAS UK LIMITED"/>
+		<alias name="Country" value="UK"/>
+		<locale name="en" value="BUREAU VERITAS UK LIMITED"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="NB 0044|DE" is_enabled="true" order_no="0">
+		<alias name="Notified Body Code" value="NB 0044"/>
+		<alias name="Notified Body Name" value="TÜV NORD CERT GmbH"/>
+		<alias name="Country" value="DE"/>
+		<locale name="en" value="TÜV NORD CERT GmbH"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="NB 0045|DE" is_enabled="true" order_no="0">
+		<alias name="Notified Body Code" value="NB 0045"/>
+		<alias name="Notified Body Name" value="TÜV NORD SYSTEMS GMBH &amp; CO. KG"/>
+		<alias name="Country" value="DE"/>
+		<locale name="en" value="TÜV NORD SYSTEMS GMBH &amp; CO. KG"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="NB 0048|DK" is_enabled="true" order_no="0">
+		<alias name="Notified Body Code" value="NB 0048"/>
+		<alias name="Notified Body Name" value="DANMARKS GASMATERIEL PRØVNING"/>
+		<alias name="Country" value="DK"/>
+		<locale name="en" value="DANMARKS GASMATERIEL PRØVNING"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="NB 0049|FR" is_enabled="true" order_no="0">
+		<alias name="Notified Body Code" value="NB 0049"/>
+		<alias name="Notified Body Name" value="AFNOR CERTIFICATION SA"/>
+		<alias name="Country" value="FR"/>
+		<locale name="en" value="AFNOR CERTIFICATION SA"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="NB 0050|IE" is_enabled="true" order_no="0">
+		<alias name="Notified Body Code" value="NB 0050"/>
+		<alias name="Notified Body Name" value="National Standards Authority of Ireland (NSAI)"/>
+		<alias name="Country" value="IE"/>
+		<locale name="en" value="National Standards Authority of Ireland (NSAI)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="NB 0051|IT" is_enabled="true" order_no="0">
+		<alias name="Notified Body Code" value="NB 0051"/>
+		<alias name="Notified Body Name" value="IMQ ISTITUTO ITALIANO DEL MARCHIO DI QUALITÀ S.P.A."/>
+		<alias name="Country" value="IT"/>
+		<locale name="en" value="IMQ ISTITUTO ITALIANO DEL MARCHIO DI QUALITÀ S.P.A."/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="NB 0052|ES" is_enabled="true" order_no="0">
+		<alias name="Notified Body Code" value="NB 0052"/>
+		<alias name="Notified Body Name" value="CUALICONTROL- ACI, S.A."/>
+		<alias name="Country" value="ES"/>
+		<locale name="en" value="CUALICONTROL- ACI, S.A."/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="NB 0053|ES" is_enabled="true" order_no="0">
+		<alias name="Notified Body Code" value="NB 0053"/>
+		<alias name="Notified Body Name" value="ASISTENCIA TECNICA INDUSTRIAL S.A.E."/>
+		<alias name="Country" value="ES"/>
+		<locale name="en" value="ASISTENCIA TECNICA INDUSTRIAL S.A.E."/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="NB 0056|ES" is_enabled="true" order_no="0">
+		<alias name="Notified Body Code" value="NB 0056"/>
+		<alias name="Notified Body Name" value="ECA - ENTIDAD COLABORADORA DE LA ADMINISTRACION S.L. Unipersonal"/>
+		<alias name="Country" value="ES"/>
+		<locale name="en" value="ECA - ENTIDAD COLABORADORA DE LA ADMINISTRACION S.L. Unipersonal"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="NB 0057|ES" is_enabled="true" order_no="0">
+		<alias name="Notified Body Code" value="NB 0057"/>
+		<alias name="Notified Body Name" value="EUROCONTROL S.A."/>
+		<alias name="Country" value="ES"/>
+		<locale name="en" value="EUROCONTROL S.A."/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="NB 0058|ES" is_enabled="true" order_no="0">
+		<alias name="Notified Body Code" value="NB 0058"/>
+		<alias name="Notified Body Name" value="OCA INSPECCION, CONTROL Y PREVENCION, S.A.U."/>
+		<alias name="Country" value="ES"/>
+		<locale name="en" value="OCA INSPECCION, CONTROL Y PREVENCION, S.A.U."/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="NB 0059|ES" is_enabled="true" order_no="0">
+		<alias name="Notified Body Code" value="NB 0059"/>
+		<alias name="Notified Body Name" value="APPLUS NORCONTROL, S.L.U."/>
+		<alias name="Country" value="ES"/>
+		<locale name="en" value="APPLUS NORCONTROL, S.L.U."/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="NB 0060|FR" is_enabled="true" order_no="0">
+		<alias name="Notified Body Code" value="NB 0060"/>
+		<alias name="Notified Body Name" value="APAVE"/>
+		<alias name="Country" value="FR"/>
+		<locale name="en" value="APAVE"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="NB 0062|FR" is_enabled="true" order_no="0">
+		<alias name="Notified Body Code" value="NB 0062"/>
+		<alias name="Notified Body Name" value="BUREAU VERITAS"/>
+		<alias name="Country" value="FR"/>
+		<locale name="en" value="BUREAU VERITAS"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="NB 0063|NL" is_enabled="true" order_no="0">
+		<alias name="Notified Body Code" value="NB 0063"/>
+		<alias name="Notified Body Name" value="Kiwa Nederland B.V."/>
+		<alias name="Country" value="NL"/>
+		<locale name="en" value="Kiwa Nederland B.V."/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="NB 0066|IT" is_enabled="true" order_no="0">
+		<alias name="Notified Body Code" value="NB 0066"/>
+		<alias name="Notified Body Name" value="ISTITUTO DI CERTIFICAZIONE EUROPEA PRODOTTI INDUSTRIALI S.P.A."/>
+		<alias name="Country" value="IT"/>
+		<locale name="en" value="ISTITUTO DI CERTIFICAZIONE EUROPEA PRODOTTI INDUSTRIALI S.P.A."/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="NB 0068|IT" is_enabled="true" order_no="0">
+		<alias name="Notified Body Code" value="NB 0068"/>
+		<alias name="Notified Body Name" value="IRCM ISTITUTO DI RICERCHE E COLLAUDI MASINI S.R.L."/>
+		<alias name="Country" value="IT"/>
+		<locale name="en" value="IRCM ISTITUTO DI RICERCHE E COLLAUDI MASINI S.R.L."/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="NB 0069|FR" is_enabled="true" order_no="0">
+		<alias name="Notified Body Code" value="NB 0069"/>
+		<alias name="Notified Body Name" value="UNION TECHNIQUE DE L'AUTOMOBILE, DU MOTOCYCLE ET DU CYCLE"/>
+		<alias name="Country" value="FR"/>
+		<locale name="en" value="UNION TECHNIQUE DE L'AUTOMOBILE, DU MOTOCYCLE ET DU CYCLE"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="NB 0071|FR" is_enabled="true" order_no="0">
+		<alias name="Notified Body Code" value="NB 0071"/>
+		<alias name="Notified Body Name" value="Laboratoire National de métrologie et d'Essais (LNE)"/>
+		<alias name="Country" value="FR"/>
+		<locale name="en" value="Laboratoire National de métrologie et d'Essais (LNE)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="NB 0072|FR" is_enabled="true" order_no="0">
+		<alias name="Notified Body Code" value="NB 0072"/>
+		<alias name="Notified Body Name" value="Institut Français de Textile et de l'Habillement (IFTH)"/>
+		<alias name="Country" value="FR"/>
+		<locale name="en" value="Institut Français de Textile et de l'Habillement (IFTH)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="NB 0073|FR" is_enabled="true" order_no="0">
+		<alias name="Notified Body Code" value="NB 0073"/>
+		<alias name="Notified Body Name" value="INSTITUT DE RADIOPROTECTION ET DE SÛRETÉ NUCLÉAIRE"/>
+		<alias name="Country" value="FR"/>
+		<locale name="en" value="INSTITUT DE RADIOPROTECTION ET DE SÛRETÉ NUCLÉAIRE"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="NB 0074|FR" is_enabled="true" order_no="0">
+		<alias name="Notified Body Code" value="NB 0074"/>
+		<alias name="Notified Body Name" value="GINGER CEBTP"/>
+		<alias name="Country" value="FR"/>
+		<locale name="en" value="GINGER CEBTP"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="NB 0075|FR" is_enabled="true" order_no="0">
+		<alias name="Notified Body Code" value="NB 0075"/>
+		<alias name="Notified Body Name" value="CTC"/>
+		<alias name="Country" value="FR"/>
+		<locale name="en" value="CTC"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="NB 0078|FR" is_enabled="true" order_no="0">
+		<alias name="Notified Body Code" value="NB 0078"/>
+		<alias name="Notified Body Name" value="INSTITUT NATIONAL DE LA PLONGEE PROFESSIONNELLE"/>
+		<alias name="Country" value="FR"/>
+		<locale name="en" value="INSTITUT NATIONAL DE LA PLONGEE PROFESSIONNELLE"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="NB 0080|FR" is_enabled="true" order_no="0">
+		<alias name="Notified Body Code" value="NB 0080"/>
+		<alias name="Notified Body Name" value="INSTITUT NATIONAL DE L'ENVIRONNEMENT INDUSTRIEL ET DES RISQUES"/>
+		<alias name="Country" value="FR"/>
+		<locale name="en" value="INSTITUT NATIONAL DE L'ENVIRONNEMENT INDUSTRIEL ET DES RISQUES"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="NB 0081|FR" is_enabled="true" order_no="0">
+		<alias name="Notified Body Code" value="NB 0081"/>
+		<alias name="Notified Body Name" value="LABORATOIRE CENTRAL DES INDUSTRIES ELECTRIQUES"/>
+		<alias name="Country" value="FR"/>
+		<locale name="en" value="LABORATOIRE CENTRAL DES INDUSTRIES ELECTRIQUES"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="NB 0082|FR" is_enabled="true" order_no="0">
+		<alias name="Notified Body Code" value="NB 0082"/>
+		<alias name="Notified Body Name" value="APAVE SUDEUROPE SAS"/>
+		<alias name="Country" value="FR"/>
+		<locale name="en" value="APAVE SUDEUROPE SAS"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="NB 0085|DE" is_enabled="true" order_no="0">
+		<alias name="Notified Body Code" value="NB 0085"/>
+		<alias name="Notified Body Name" value="DVGW CERT GmbH"/>
+		<alias name="Country" value="DE"/>
+		<locale name="en" value="DVGW CERT GmbH"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="NB 0086|UK" is_enabled="true" order_no="0">
+		<alias name="Notified Body Code" value="NB 0086"/>
+		<alias name="Notified Body Name" value="BSI"/>
+		<alias name="Country" value="UK"/>
+		<locale name="en" value="BSI"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="NB 0087|UK" is_enabled="true" order_no="0">
+		<alias name="Notified Body Code" value="NB 0087"/>
+		<alias name="Notified Body Name" value="GL Industrial Services UK Ltd"/>
+		<alias name="Country" value="UK"/>
+		<locale name="en" value="GL Industrial Services UK Ltd"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="NB 0088|UK" is_enabled="true" order_no="0">
+		<alias name="Notified Body Code" value="NB 0088"/>
+		<alias name="Notified Body Name" value="LLOYD'S REGISTER QUALITY ASSURANCE LTD (0088)"/>
+		<alias name="Country" value="UK"/>
+		<locale name="en" value="LLOYD'S REGISTER QUALITY ASSURANCE LTD (0088)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="NB 0090|DE" is_enabled="true" order_no="0">
+		<alias name="Notified Body Code" value="NB 0090"/>
+		<alias name="Notified Body Name" value="TÜV Thüringen e.V."/>
+		<alias name="Country" value="DE"/>
+		<locale name="en" value="TÜV Thüringen e.V."/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="NB 0091|DE" is_enabled="true" order_no="0">
+		<alias name="Notified Body Code" value="NB 0091"/>
+		<alias name="Notified Body Name" value="TÜV TECHNISCHE ÜBERWACHUNG HESSEN GMBH"/>
+		<alias name="Country" value="DE"/>
+		<locale name="en" value="TÜV TECHNISCHE ÜBERWACHUNG HESSEN GMBH"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="NB 0094|ES" is_enabled="true" order_no="0">
+		<alias name="Notified Body Code" value="NB 0094"/>
+		<alias name="Notified Body Name" value="LLOYD'S REGISTER ESPAÑA, S.A."/>
+		<alias name="Country" value="ES"/>
+		<locale name="en" value="LLOYD'S REGISTER ESPAÑA, S.A."/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="NB 0096|ES" is_enabled="true" order_no="0">
+		<alias name="Notified Body Code" value="NB 0096"/>
+		<alias name="Notified Body Name" value="SGS, TECNOS, S.A."/>
+		<alias name="Country" value="ES"/>
+		<locale name="en" value="SGS, TECNOS, S.A."/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="NB 0097|UK" is_enabled="true" order_no="0">
+		<alias name="Notified Body Code" value="NB 0097"/>
+		<alias name="Notified Body Name" value="DET NORSKE VERITAS BV (DNV)"/>
+		<alias name="Country" value="UK"/>
+		<locale name="en" value="DET NORSKE VERITAS BV (DNV)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="NB 0098|DE" is_enabled="true" order_no="0">
+		<alias name="Notified Body Code" value="NB 0098"/>
+		<alias name="Notified Body Name" value="DNV GL SE"/>
+		<alias name="Country" value="DE"/>
+		<locale name="en" value="DNV GL SE"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="NB 0099|ES" is_enabled="true" order_no="0">
+		<alias name="Notified Body Code" value="NB 0099"/>
+		<alias name="Notified Body Name" value="ASOCIACION ESPAÑOLA DE NORMALIZACION Y CERTIFICACION (AENOR)"/>
+		<alias name="Country" value="ES"/>
+		<locale name="en" value="ASOCIACION ESPAÑOLA DE NORMALIZACION Y CERTIFICACION (AENOR)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="NB 0100|IT" is_enabled="true" order_no="0">
+		<alias name="Notified Body Code" value="NB 0100"/>
+		<alias name="Notified Body Name" value="INAIL - DIPARTIMENTO INNOVAZIONI TECNOLOGICHE E SICUREZZA DEGLI IMPIANTI, PRODOTTI ED INSEDIAMENTI ANTROPICI – Sezione Tecnico Scientifica Organismo Notificato per Direttive Europee"/>
+		<alias name="Country" value="IT"/>
+		<locale name="en" value="INAIL - DIPARTIMENTO INNOVAZIONI TECNOLOGICHE E SICUREZZA DEGLI IMPIANTI, PRODOTTI ED INSEDIAMENTI ANTROPICI – Sezione Tecnico Scientifica Organismo Notificato per Direttive Europee"/>
+	</d2_dictionary_value>
+</d2_dictionary>

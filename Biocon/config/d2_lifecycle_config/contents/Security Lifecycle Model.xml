@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2lifecycle execute_actions_on_start="true" state_attribute="">
+	<state direct="false" entry="true" name="Active">
+		<entry_conditions/>
+		<actions>
+			<set name="a_status" value="Active"/>
+		</actions>
+		<next_states>
+			<state action="" confirmation_en="" dialog="" event="" label_en="LinkTest" name="(Update)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+		</next_states>
+	</state>
+	<state direct="false" entry="false" name="(Update)">
+		<entry_conditions/>
+		<actions>
+			<applyautolink/>
+			<applysecurity/>
+		</actions>
+		<next_states/>
+	</state>
+</d2lifecycle>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_template_config new_format="true">
+	<object_name value="Blank Word Document Templates"/>
+	<title value="Blank document templates that can be used to create new content templates."/>
+	<subject value=""/>
+	<authors/>
+	<keywords/>
+	<a_status value=""/>
+	<a_content_type value=""/>
+	<log_entry value=""/>
+	<language_code value=""/>
+	<module_type value="d2_template_config"/>
+	<application_names>
+		<repeating value="OpenText Life Sciences Medical Device for Quality and Manufacturing Solution"/>
+		<repeating value="OpenText Life Sciences Submission Storage and Viewing"/>
+		<repeating value="OpenText Life Sciences Research and Development Solution"/>
+		<repeating value="OpenText Life Sciences Quality and Manufacturing Solution"/>
+	</application_names>
+	<lock_config value="F"/>
+	<parents_config/>
+	<no_content_authorized value="F"/>
+	<template>
+		<repeating value="Blank Microsoft Office Word Document.docm"/>
+	</template>
+	<security_group value="cd_admingroup"/>
+	<template_condition/>
+	<template_query value=""/>
+	<selection_mode value="0"/>
+</d2_template_config>

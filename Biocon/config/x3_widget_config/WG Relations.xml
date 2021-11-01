@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x3_widget_config new_format="true">
+	<object_name value="WG Relations"/>
+	<title value="Document relations widget."/>
+	<subject value=""/>
+	<authors/>
+	<keywords/>
+	<a_status value=""/>
+	<a_content_type value=""/>
+	<log_entry value=""/>
+	<language_code value=""/>
+	<module_type value="x3_widget_config"/>
+	<application_names>
+		<repeating value="OpenText Life Sciences Medical Device for Quality and Manufacturing Solution"/>
+		<repeating value="OpenText Life Sciences Medical Device for Research and Development Solution"/>
+		<repeating value="OpenText Life Sciences Medical Device Solution"/>
+		<repeating value="OpenText Life Sciences Submission Storage and Viewing"/>
+		<repeating value="OpenText Life Sciences Research and Development Solution"/>
+		<repeating value="OpenText Life Sciences eTMF Solution"/>
+		<repeating value="OpenText Life Sciences Quality and Manufacturing Solution"/>
+	</application_names>
+	<lock_config value="F"/>
+	<parents_config/>
+	<preview_x3_image value="CDF Relations Widget.png"/>
+	<label_locale>
+		<repeating value="fr"/>
+		<repeating value="en"/>
+		<repeating value="de"/>
+	</label_locale>
+	<label_value>
+		<repeating value="Relations"/>
+		<repeating value="Relations"/>
+		<repeating value=""/>
+	</label_value>
+	<desc_locale>
+		<repeating value="fr"/>
+		<repeating value="en"/>
+		<repeating value="de"/>
+	</desc_locale>
+	<desc_value>
+		<repeating value="Relations list"/>
+		<repeating value="Relations list"/>
+		<repeating value=""/>
+	</desc_value>
+	<widget_url value=""/>
+	<channel_name value=""/>
+	<widget_type value="DetailsRelationsWidget"/>
+	<query_form_name value=""/>
+	<is_oaj value="F"/>
+	<channel_names/>
+	<param_name/>
+	<param_value/>
+	<focus_events/>
+	<focus_event_params/>
+	<customize_columns value="T"/>
+	<columns>
+		<repeating value="relation_name"/>
+		<repeating value="object_name"/>
+		<repeating value="r_version_label"/>
+		<repeating value="title"/>
+		<repeating value="a_status"/>
+		<repeating value="r_modify_date"/>
+		<repeating value="r_modifier"/>
+		<repeating value="relation_description"/>
+	</columns>
+	<use_col_for_assist value="F"/>
+	<is_unloadprotect value="F"/>
+</x3_widget_config>

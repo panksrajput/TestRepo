@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<c2_xsl new_format="true">
+	<object_name value="hand written signature.xsl"/>
+	<title value=""/>
+	<subject value=""/>
+	<authors/>
+	<keywords/>
+	<a_status value=""/>
+	<a_content_type value="xslfo"/>
+	<log_entry value=""/>
+	<language_code value=""/>
+	<dql_query>
+		<repeating value="select user_name, string_2 as reason, time_stamp from dm_audittrail where audited_obj_id = '$value(r_object_id)' and event_name = 'd2_workflow_signoff' and string_2 &lt;&gt; 'RAU'"/>
+	</dql_query>
+</c2_xsl>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_checkout_config new_format="true">
+	<object_name value="Disable Checkout for Release Pending documents"/>
+	<title value=""/>
+	<subject value=""/>
+	<authors/>
+	<keywords/>
+	<a_status value=""/>
+	<a_content_type value=""/>
+	<log_entry value=""/>
+	<language_code value=""/>
+	<module_type value="d2_checkout_config"/>
+	<application_names>
+		<repeating value="OpenText Life Sciences Medical Device for Quality and Manufacturing Solution"/>
+		<repeating value="OpenText Life Sciences Quality and Manufacturing Solution"/>
+	</application_names>
+	<lock_config value="F"/>
+	<parents_config/>
+	<can_checkout value="F"/>
+	<is_warning value="T"/>
+	<warning_message>
+		<repeating value="&quot;$value(object_name)&quot; is release pending and cannot be versioned."/>
+	</warning_message>
+	<warning_locale>
+		<repeating value="en"/>
+	</warning_locale>
+	<xml_app_checkout value="all"/>
+	<xml_app_checkout_support value="T"/>
+</d2_checkout_config>

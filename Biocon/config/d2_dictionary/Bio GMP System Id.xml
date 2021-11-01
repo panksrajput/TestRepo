@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_dictionary object_name="Bio GMP System Id" title="" lock_config="false" parents_config="Bio System Id" application_names="Biocon¬Custom Configurations" security_group="biocon_dict_admin" search_group="biocon_dict_admin" version="2" is_versioned="false" manual_order="false" create_view_option="false" is_dql="false" is_dql_cache="false" dql="" label_en="">
+	<d2_dictionary_value object_name="CVS-01" is_enabled="true" order_no="0">
+		<locale name="en" value="CVS-01"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="DMS-01" is_enabled="true" order_no="0">
+		<locale name="en" value="DMS-01"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="ECM-01" is_enabled="true" order_no="0">
+		<locale name="en" value="ECM-01"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="EMP3-01" is_enabled="true" order_no="0">
+		<locale name="en" value="EMP3-01"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="EMP3-02" is_enabled="true" order_no="0">
+		<locale name="en" value="EMP3-02"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="ICDAS-01" is_enabled="true" order_no="0">
+		<locale name="en" value="ICDAS-01"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="LDB-01" is_enabled="true" order_no="0">
+		<locale name="en" value="LDB-01"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="NA" is_enabled="true" order_no="0">
+		<locale name="en" value="NA"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="NLIMS-01" is_enabled="true" order_no="0">
+		<locale name="en" value="NLIMS-01"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="NLIMS-02" is_enabled="true" order_no="0">
+		<locale name="en" value="NLIMS-02"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="PCS-01" is_enabled="true" order_no="0">
+		<locale name="en" value="PCS-01"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="SAP-01" is_enabled="true" order_no="0">
+		<locale name="en" value="SAP-01"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="SAPPI-01" is_enabled="true" order_no="0">
+		<locale name="en" value="SAPPI-01"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="SDMS-01" is_enabled="true" order_no="0">
+		<locale name="en" value="SDMS-01"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="TES-01" is_enabled="true" order_no="0">
+		<locale name="en" value="TES-01"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="VLMS-01" is_enabled="true" order_no="0">
+		<locale name="en" value="VLMS-01"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="VMS-01" is_enabled="true" order_no="0">
+		<locale name="en" value="VMS-01"/>
+	</d2_dictionary_value>
+</d2_dictionary>

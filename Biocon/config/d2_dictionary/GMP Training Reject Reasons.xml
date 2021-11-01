@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_dictionary object_name="GMP Training Reject Reasons" title="" lock_config="false" parents_config="" application_names="OpenText Life Sciences Medical Device for Quality and Manufacturing Solution¬OpenText Life Sciences Quality and Manufacturing Solution¬OpenText Life Sciences Medical Device Solution¬Custom Configurations" security_group="admingroup" search_group="admingroup" version="2" is_versioned="false" manual_order="false" create_view_option="false" is_dql="false" is_dql_cache="false" dql="" label_en="GMP Training Reject Reasons">
+	<d2_dictionary_value object_name="Reject Reason 1" is_enabled="true" order_no="0">
+		<locale name="en" value="Reject Reason 1"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Reject Reason 2" is_enabled="true" order_no="0">
+		<locale name="en" value="Reject Reason 2"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Reject Reason 3" is_enabled="true" order_no="0">
+		<locale name="en" value="Reject Reason 3"/>
+	</d2_dictionary_value>
+</d2_dictionary>

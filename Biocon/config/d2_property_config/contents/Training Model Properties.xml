@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dialog id="PropertiesDialog" buttons_right="false" focus="" height="500" resizable="true" signoff_creation="false" signoff_edit="false" signoff_import="false" signoff_intention_dictionary="" signoff_intention_required="false" width="500">
+	<content>
+		<text id="object_name" condition_required_create="true" condition_required_edit="true"/>
+		<text id="title" label_en="Description"/>
+		<combo id="training_key_dictionary" advancedView_enabled="false" advancedView_required="false" assistance_dql="select object_name from d2_dictionary where any application_names = 'OpenText Life Sciences Quality and Manufacturing Solution' and any alias_name = 'users' and any alias_name = 'coordinators' and not any (alias_name != 'users' and alias_name != 'coordinators') order by 1" assistance_type="dql" autoselect_single="true" condition_enabled="(getValue(control).equals('Group'))" condition_required="(getValue(control).equals('Group'))" condition_required_create="true" condition_required_edit="true" reinit_enabled="true"/>
+		<text id="training_key_generator" condition_enabled_edit="false" condition_required_create="true" condition_required_edit="true"/>
+		<text id="parent_folder" condition_enabled_create="false" condition_enabled_edit="false" condition_enabled_import="false" condition_required_create="true" condition_required_edit="true"/>
+		<list-radio id="control" assistance_dql="select 'Group' from dm_dbo.single_result_row_view union select 'User' from dm_dbo.single_result_row_view" assistance_type="dql" line="false"/>
+		<boolean id="split_key_to_folders"/>
+		<comment html_content="true" label_en="&lt;table&gt;&lt;tr&gt;&lt;td&gt;Checking the Split Key To Folders forces the system to create separate folders for delimited training keys rather than creating one folder for the entire training key. For example, if the training key is Boston|CMC, the system would create a Boston folder and then a CMC folder within it if checked and if not checked, would create a single folder named Boston|CMC.&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"/>
+	</content>
+	<buttons>
+		<button id="buttonOk" action="validDialog()"/>
+		<button id="buttonCancel" action="cancelDialog()"/>
+	</buttons>
+</dialog>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_documentset_switch object_name="c2_print_config">
+	<d2_documentset name="Issued Print¬Issued Print Category 1 GMP Form Documents Suppressing Overlays" config="Bio Cat 1 C2 Print for Effective Issued Print No Header No Sig"/>
+	<d2_documentset name="Issued Print¬Issued Print Category 1 GMP Form Documents" config="Bio Cat 1 C2 Print for Effective Issued Print No Sig"/>
+	<d2_documentset name="Issued Print¬Issued Print Category 1 Documents Suppressing Overlays" config="Category 1 C2 Print for Effective Issued Print No Header"/>
+	<d2_documentset name="Issued Print¬Issued Print Category 1 Documents" config="Category 1 C2 Print for Effective Issued Print"/>
+	<d2_documentset name="Issued Print¬Issued Print Category 2 Documents Suppressing Overlays" config="Category 2 C2 Print for Effective Issued Print No Header"/>
+	<d2_documentset name="Issued Print¬Issued Print Category 2 Documents" config="Category 2 C2 Print for Effective Issued Print"/>
+	<d2_documentset name="Issued Print¬Issued Print Category 3 Documents Suppressing Overlays" config="Category 3 C2 Print for Effective Issued Print No Header"/>
+	<d2_documentset name="Issued Print¬Issued Print Category 3 Documents" config="Category 3 C2 Print for Effective Issued Print"/>
+	<d2_documentset name="Change Request¬Change Request in CIP" config="Category 2 C2 Print for Effective"/>
+	<d2_documentset name="Change Request¬Open Change Request Candidate" config="Category 2 C2 Print for Non Effective"/>
+	<d2_documentset name="Non Effective-Approved Documents¬Not Effective Cat 1 Documents Suppressing Overlays" config="Category 1 C2 Print for Non Effective No Header"/>
+	<d2_documentset name="Non Effective-Approved Documents¬Not Effective Cat 1 Documents" config="Category 1 C2 Print for Non Effective"/>
+	<d2_documentset name="Non Effective-Approved Documents¬Not Approved Cat 2 GMP Documents Suppressing Overlays" config="Category 2 C2 Print for Non Effective No Header"/>
+	<d2_documentset name="Non Effective-Approved Documents¬Not Approved Cat 2 GMP Documents" config="Category 2 C2 Print for Non Effective"/>
+	<d2_documentset name="Non Effective-Approved Documents¬Not Approved Cat 3 GMP Documents Suppressing Overlays" config="Category 3 C2 Print for Non Effective No Header"/>
+	<d2_documentset name="Non Effective-Approved Documents¬Not Approved Cat 3 GMP Documents" config="Category 3 C2 Print for Non Effective"/>
+	<d2_documentset name="Effective-Approved Documents¬Effective Cat 1 GMP Forms Documents Suppressing Overlays No Sig Page" config="Bio Cat 1 C2 Print Ref Copy for Effective No Header"/>
+	<d2_documentset name="Effective-Approved Documents¬Effective Cat 1 GMP Forms Documents Suppressing Overlays No Sig Page" config="Category 1 C2 Print for Effective GMP Forms No Header"/>
+	<d2_documentset name="Effective-Approved Documents¬Effective Cat 1 GMP Forms Documents Suppressing Overlays" config="Bio Cat 1 C2 Print for Effective GMP Forms No Header with Sig"/>
+	<d2_documentset name="Effective-Approved Documents¬Effective Cat 1 GMP Forms Documents Suppressing Overlays" config="Bio Cat 1 C2 Print Ref Copy for Effective No Header with Sig"/>
+	<d2_documentset name="Effective-Approved Documents¬Effective Cat 1 GMP Forms Documents No Sig Page" config="Bio Cat 1 C2 Print for Effective GMP Forms No Sig"/>
+	<d2_documentset name="Effective-Approved Documents¬Effective Cat 1 GMP Forms Documents No Sig Page" config="Bio Cat 1 C2 Print Ref Copy for Effective GMP Forms No Sig"/>
+	<d2_documentset name="Effective-Approved Documents¬Effective Cat 1 GMP Forms Documents" config="Bio Cat 1 C2 Print Ref Copy for Effective GMP Forms"/>
+	<d2_documentset name="Effective-Approved Documents¬Effective Cat 1 GMP Forms Documents" config="Category 1 C2 Print for Effective GMP Forms"/>
+	<d2_documentset name="Effective-Approved Documents¬Effective Cat 1 GMP Non Form Documents Suppressing Overlays" config="Bio Cat 1 C2 Print Ref Copy for Effective No Header"/>
+	<d2_documentset name="Effective-Approved Documents¬Effective Cat 1 GMP Non Form Documents Suppressing Overlays" config="Category 1 C2 Print for Effective No Header"/>
+	<d2_documentset name="Effective-Approved Documents¬Effective Cat 1 GMP Non Form Documents" config="Bio Cat 1 C2 Print Ref Copy for Effective"/>
+	<d2_documentset name="Effective-Approved Documents¬Effective Cat 1 GMP Non Form Documents" config="Category 1 C2 Print for Effective"/>
+	<d2_documentset name="Effective-Approved Documents¬Effective Cat 2 GMP Documents Suppressing Overlays" config="Bio Cat 2 C2 Print Ref Copy for Effective No Header"/>
+	<d2_documentset name="Effective-Approved Documents¬Effective Cat 2 GMP Documents Suppressing Overlays" config="Category 2 C2 Print for Effective No Header"/>
+	<d2_documentset name="Effective-Approved Documents¬Effective Cat 2 GMP Documents" config="Bio Cat 2 C2 Print Ref Copy for Effective"/>
+	<d2_documentset name="Effective-Approved Documents¬Effective Cat 2 GMP Documents" config="Category 2 C2 Print for Effective"/>
+	<d2_documentset name="Effective-Approved Documents¬Effective Cat 3 Documents Suppressing Overlays" config="Bio Cat 3 C2 Print Ref Copy for Effective No Header"/>
+	<d2_documentset name="Effective-Approved Documents¬Effective Cat 3 Documents Suppressing Overlays" config="Category 3 C2 Print for Effective No Header"/>
+	<d2_documentset name="Effective-Approved Documents¬Effective Cat 3 Documents" config="Bio Cat 3 C2 Print Ref Copy for Effective"/>
+	<d2_documentset name="Effective-Approved Documents¬Effective Cat 3 Documents" config="Category 3 C2 Print for Effective"/>
+	<d2_documentset name="Life Sciences Managers¬Controlled Print Managers" config="Category 1 C2 Print for Non Effective"/>
+	<switch_defaults/>
+</d2_documentset_switch>

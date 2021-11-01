@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_mailing_config>
+	<add_attachment>false</add_attachment>
+	<rendition_formats/>
+	<list-recipient>
+		<recipient type="attribute">notification_list</recipient>
+	</list-recipient>
+	<list-subject>
+		<subject_en>Approved version of document &quot;$value(object_name)&quot; is available.</subject_en>
+	</list-subject>
+	<list-object>
+		<object_en>Version $value(r_version_label[0]) of &quot;$value(object_name)&quot; is now available. Please review it and check any related documents to see if they are impacted, and update them accordingly.</object_en>
+	</list-object>
+</d2_mailing_config>

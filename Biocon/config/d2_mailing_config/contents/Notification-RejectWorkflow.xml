@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_mailing_config>
+	<add_attachment>false</add_attachment>
+	<rendition_formats/>
+	<list-recipient>
+		<recipient type="attribute">title</recipient>
+	</list-recipient>
+	<list-subject>
+		<subject_en>A workflow has been rejected</subject_en>
+	</list-subject>
+	<list-object>
+		<object_en>&lt;html&gt;&lt;head&gt;&lt;style&gt;body { font-family: helvetica, arial, sans-serif; font-size: 12px; } .title { font-size: 14px; font-weight: bold; } .preamble { margin-top: 12px; margin-bottom: 12px; } table, th { border: 1px solid black; border-collapse: collapse; padding: 6px; text-align: left; } table th.Errors { background-color: red; color: white; } th.Successes{ background-color: green; color: white; } table th.Warnings { background-color: Orange; color: white; } td.header{ background-color: black; color: white; font-weight: bold;} table tr:nth-child(even) { background-color: #eee; } table tr:nth-child(odd) { background-color:#fff; } .textdata { border: 1px solid black; border-collapse: collapse; padding: 6px; text-align: left; } .nontextdata { border: 1px solid black; border-collapse: collapse; padding: 6px; text-align: right; } .rowcount { font-style: italic; margin-top: 12px; } &lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;table border=1&gt;&lt;tr&gt;&lt;td class=&quot;header&quot;&gt;Workflow Configuration&lt;/td&gt;&lt;td&gt;${customArgs.wfConfigName}&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;header&quot;&gt;Task Name&lt;/td&gt;&lt;td&gt;${customArgs.taskName}&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;header&quot;&gt;Rejected By&lt;/td&gt;&lt;td&gt;${customArgs.taskUser}&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;header&quot;&gt;Task Subject&lt;/td&gt;&lt;td&gt;${customArgs.taskSubject}&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;#if (customArgs.comment??) &gt;&lt;br&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;header&quot;&gt;The task was rejected with the following comment&lt;/td&gt;&lt;td&gt;${customArgs.comment}&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/#if&gt;&lt;br&gt;&lt;table&gt;&lt;tr&gt;&lt;th&gt;Documents attached to the workflow task&lt;/th&gt;&lt;/tr&gt;&lt;#list customArgs.documentMap as theLink,theTitle&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=${theLink}&gt;${theTitle}&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/#list&gt;&lt;/table&gt;&lt;/body&gt;&lt;/html&gt;</object_en>
+	</list-object>
+</d2_mailing_config>

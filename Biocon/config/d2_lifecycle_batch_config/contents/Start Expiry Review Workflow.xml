@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_lifecycle_batch_config>
+	<lifecycle>RD-SSV Cat 2 Controlled Document Lifecycle</lifecycle>
+	<targetstate>(launch expiration review)</targetstate>
+	<operation>promote</operation>
+	<list-attributes/>
+</d2_lifecycle_batch_config>

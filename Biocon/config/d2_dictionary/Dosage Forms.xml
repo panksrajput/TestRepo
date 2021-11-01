@@ -1,0 +1,675 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_dictionary object_name="Dosage Forms" title="List of pharmaceutical dosage forms." lock_config="false" parents_config="" application_names="OpenText Life Sciences Submission Storage and Viewing¬OpenText Life Sciences Research and Development Solution¬OpenText Life Sciences eTMF Solution¬OpenText Life Sciences Quality and Manufacturing Solution¬Custom Configurations" security_group="cd_clinical_doc_coordinators" search_group="cd_clinical_doc_coordinators" version="2" is_versioned="false" manual_order="false" create_view_option="false" is_dql="false" is_dql_cache="false" dql="" label_en="Dosage Forms">
+	<d2_dictionary_value object_name="AEROSOL" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42887"/>
+		<locale name="en" value="Aerosol"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="AEROSOL, FOAM" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42888"/>
+		<locale name="en" value="Aerosol, Foam"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="AEROSOL, METERED" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42960"/>
+		<locale name="en" value="Aerosol, Metered"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="AEROSOL, POWDER" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42971"/>
+		<locale name="en" value="Aerosol, Powder"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="AEROSOL, SPRAY" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42889"/>
+		<locale name="en" value="Aerosol, Spray"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="BAR, CHEWABLE" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42892"/>
+		<locale name="en" value="Bar, Chewable"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="BEAD" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42890"/>
+		<locale name="en" value="Bead"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="BEAD, IMPLANT, EXTENDED RELEASE" is_enabled="true" order_no="0">
+		<alias name="alias" value="C43451"/>
+		<locale name="en" value="Bead, Implant, Extended Release"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="BLOCK" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42891"/>
+		<locale name="en" value="Block"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="CAPSULE" is_enabled="true" order_no="0">
+		<alias name="alias" value="C25158"/>
+		<locale name="en" value="Capsule"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="CAPSULE, COATED" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42895"/>
+		<locale name="en" value="Capsule, Coated"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="CAPSULE, COATED PELLETS" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42896"/>
+		<locale name="en" value="Capsule, Coated Pellets"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="CAPSULE, COATED, EXTENDED RELEASE" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42917"/>
+		<locale name="en" value="Capsule, Coated, Extended Release"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="CAPSULE, DELAYED RELEASE" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42902"/>
+		<locale name="en" value="Capsule, Delayed Release"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="CAPSULE, DELAYED RELEASE PELLETS" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42904"/>
+		<locale name="en" value="Capsule, Delayed Release Pellets"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="CAPSULE, EXTENDED RELEASE" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42916"/>
+		<locale name="en" value="Capsule, Extended Release"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="CAPSULE, FILM COATED, EXTENDED RELEASE" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42928"/>
+		<locale name="en" value="Capsule, Film Coated, Extended Release"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="CAPSULE, GELATIN COATED" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42936"/>
+		<locale name="en" value="Capsule, Gelatin Coated"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="CAPSULE, LIQUID FILLED" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42954"/>
+		<locale name="en" value="Capsule, Liquid Filled"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="CELLULAR SHEET" is_enabled="true" order_no="0">
+		<alias name="alias" value="C100103"/>
+		<locale name="en" value="Cellular Sheet"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="CEMENT" is_enabled="true" order_no="0">
+		<alias name="alias" value="C45414"/>
+		<locale name="en" value="Cement"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="CIGARETTE" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42678"/>
+		<locale name="en" value="Cigarette"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="CLOTH" is_enabled="true" order_no="0">
+		<alias name="alias" value="C60884"/>
+		<locale name="en" value="Cloth"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="CONCENTRATE" is_enabled="true" order_no="0">
+		<alias name="alias" value="C60891"/>
+		<locale name="en" value="Concentrate"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="CONE" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42900"/>
+		<locale name="en" value="Cone"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="CORE, EXTENDED RELEASE" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42919"/>
+		<locale name="en" value="Core, Extended Release"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="CREAM" is_enabled="true" order_no="0">
+		<alias name="alias" value="C28944"/>
+		<locale name="en" value="Cream"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="CREAM, AUGMENTED" is_enabled="true" order_no="0">
+		<alias name="alias" value="C60897"/>
+		<locale name="en" value="Cream, Augmented"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="CRYSTAL" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42901"/>
+		<locale name="en" value="Crystal"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="CULTURE" is_enabled="true" order_no="0">
+		<alias name="alias" value="C45415"/>
+		<locale name="en" value="Culture"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="DIAPHRAGM" is_enabled="true" order_no="0">
+		<alias name="alias" value="C47890"/>
+		<locale name="en" value="Diaphragm"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="DISC" is_enabled="true" order_no="0">
+		<alias name="alias" value="C43525"/>
+		<locale name="en" value="Disc"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="DOUCHE" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42679"/>
+		<locale name="en" value="Douche"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="DRESSING" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42763"/>
+		<locale name="en" value="Dressing"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="DRUG DELIVERY SYSTEM" is_enabled="true" order_no="0">
+		<alias name="alias" value="C17423"/>
+		<locale name="en" value="Drug Delivery System"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="ELIXIR" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42912"/>
+		<locale name="en" value="Elixir"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="EMULSION" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42913"/>
+		<locale name="en" value="Emulsion"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="ENEMA" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42915"/>
+		<locale name="en" value="Enema"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="EXTRACT" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42929"/>
+		<locale name="en" value="Extract"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="FIBER, EXTENDED RELEASE" is_enabled="true" order_no="0">
+		<alias name="alias" value="C60926"/>
+		<locale name="en" value="Fiber, Extended Release"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="FILM" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42932"/>
+		<locale name="en" value="Film"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="FILM, EXTENDED RELEASE" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42920"/>
+		<locale name="en" value="Film, Extended Release"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="FILM, SOLUBLE" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42984"/>
+		<locale name="en" value="Film, Soluble"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="FOR SOLUTION" is_enabled="true" order_no="0">
+		<alias name="alias" value="C60927"/>
+		<locale name="en" value="For Solution"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="FOR SUSPENSION" is_enabled="true" order_no="0">
+		<alias name="alias" value="C60928"/>
+		<locale name="en" value="For Suspension"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="FOR SUSPENSION, EXTENDED RELEASE" is_enabled="true" order_no="0">
+		<alias name="alias" value="C60929"/>
+		<locale name="en" value="For Suspension, Extended Release"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="GAS" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42933"/>
+		<locale name="en" value="Gas"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="GEL" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42934"/>
+		<locale name="en" value="Gel"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="GEL, DENTIFRICE" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42906"/>
+		<locale name="en" value="Gel, Dentifrice"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="GEL, METERED" is_enabled="true" order_no="0">
+		<alias name="alias" value="C60930"/>
+		<locale name="en" value="Gel, Metered"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="GENERATOR" is_enabled="true" order_no="0">
+		<alias name="alias" value="C48193"/>
+		<locale name="en" value="Generator"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="GLOBULE" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42937"/>
+		<locale name="en" value="Globule"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="GRAFT" is_enabled="true" order_no="0">
+		<alias name="alias" value="C45416"/>
+		<locale name="en" value="Graft"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="GRANULE" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42938"/>
+		<locale name="en" value="Granule"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="GRANULE, DELAYED RELEASE" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42903"/>
+		<locale name="en" value="Granule, Delayed Release"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="GRANULE, EFFERVESCENT" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42909"/>
+		<locale name="en" value="Granule, Effervescent"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="GRANULE, FOR SOLUTION" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42939"/>
+		<locale name="en" value="Granule, For Solution"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="GRANULE, FOR SUSPENSION" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42940"/>
+		<locale name="en" value="Granule, For Suspension"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="GRANULE, FOR SUSPENSION, EXTENDED RELEASE" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42921"/>
+		<locale name="en" value="Granule, For Suspension, Extended Release"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="GUM" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42941"/>
+		<locale name="en" value="Gum"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="GUM, CHEWING" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42894"/>
+		<locale name="en" value="Gum, Chewing"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="GUM, RESIN" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42978"/>
+		<locale name="en" value="Gum, Resin"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="IMPLANT" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42942"/>
+		<locale name="en" value="Implant"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="INHALANT" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42944"/>
+		<locale name="en" value="Inhalant"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="INJECTABLE, LIPOSOMAL" is_enabled="true" order_no="0">
+		<alias name="alias" value="C60931"/>
+		<locale name="en" value="Injectable, Liposomal"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="INJECTION" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42946"/>
+		<locale name="en" value="Injection"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="INJECTION, EMULSION" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42914"/>
+		<locale name="en" value="Injection, Emulsion"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="INJECTION, LIPID COMPLEX" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42950"/>
+		<locale name="en" value="Injection, Lipid Complex"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="INJECTION, POWDER, FOR SOLUTION" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42974"/>
+		<locale name="en" value="Injection, Powder, For Solution"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="INJECTION, POWDER, FOR SUSPENSION" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42976"/>
+		<locale name="en" value="Injection, Powder, For Suspension"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="INJECTION, POWDER, FOR SUSPENSION, EXTENDED RELEASE" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42977"/>
+		<locale name="en" value="Injection, Powder, For Suspension, Extended Release"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="INJECTION, POWDER, LYOPHILIZED, FOR LIPOSOMAL SUSPENSION" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42959"/>
+		<locale name="en" value="Injection, Powder, Lyophilized, For Liposomal Suspension"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="INJECTION, POWDER, LYOPHILIZED, FOR SOLUTION" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42957"/>
+		<locale name="en" value="Injection, Powder, Lyophilized, For Solution"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="INJECTION, POWDER, LYOPHILIZED, FOR SUSPENSION" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42958"/>
+		<locale name="en" value="Injection, Powder, Lyophilized, For Suspension"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="INJECTION, POWDER, LYOPHILIZED, FOR SUSPENSION, EXTENDED RELEASE" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42956"/>
+		<locale name="en" value="Injection, Powder, Lyophilized, For Suspension, Extended Release"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="INJECTION, SOLUTION" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42945"/>
+		<locale name="en" value="Injection, Solution"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="INJECTION, SOLUTION, CONCENTRATE" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42899"/>
+		<locale name="en" value="Injection, Solution, Concentrate"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="INJECTION, SUSPENSION" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42995"/>
+		<locale name="en" value="Injection, Suspension"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="INJECTION, SUSPENSION, EXTENDED RELEASE" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42926"/>
+		<locale name="en" value="Injection, Suspension, Extended Release"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="INJECTION, SUSPENSION, LIPOSOMAL" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42951"/>
+		<locale name="en" value="Injection, Suspension, Liposomal"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="INJECTION, SUSPENSION, SONICATED" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42988"/>
+		<locale name="en" value="Injection, Suspension, Sonicated"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="INSERT" is_enabled="true" order_no="0">
+		<alias name="alias" value="C60933"/>
+		<locale name="en" value="Insert"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="INSERT, EXTENDED RELEASE" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42922"/>
+		<locale name="en" value="Insert, Extended Release"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="INTRAUTERINE DEVICE" is_enabled="true" order_no="0">
+		<alias name="alias" value="C47915"/>
+		<locale name="en" value="Intrauterine Device"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="IRRIGANT" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42947"/>
+		<locale name="en" value="Irrigant"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="JELLY" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42948"/>
+		<locale name="en" value="Jelly"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="KIT" is_enabled="true" order_no="0">
+		<alias name="alias" value="C47916"/>
+		<locale name="en" value="Kit"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="LINER, DENTAL" is_enabled="true" order_no="0">
+		<alias name="alias" value="C45413"/>
+		<locale name="en" value="Liner, Dental"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="LINIMENT" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42949"/>
+		<locale name="en" value="Liniment"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="LIPSTICK" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42952"/>
+		<locale name="en" value="Lipstick"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="LIQUID" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42953"/>
+		<locale name="en" value="Liquid"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="LIQUID, EXTENDED RELEASE" is_enabled="true" order_no="0">
+		<alias name="alias" value="C60934"/>
+		<locale name="en" value="Liquid, Extended Release"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="LOTION" is_enabled="true" order_no="0">
+		<alias name="alias" value="C29167"/>
+		<locale name="en" value="Lotion"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="LOTION, AUGMENTED" is_enabled="true" order_no="0">
+		<alias name="alias" value="C60957"/>
+		<locale name="en" value="Lotion, Augmented"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="LOTION, SHAMPOO" is_enabled="true" order_no="0">
+		<alias name="alias" value="C60958"/>
+		<locale name="en" value="Lotion, Shampoo"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="LOZENGE" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42955"/>
+		<locale name="en" value="Lozenge"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="MOUTHWASH" is_enabled="true" order_no="0">
+		<alias name="alias" value="C29269"/>
+		<locale name="en" value="Mouthwash"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="OIL" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42965"/>
+		<locale name="en" value="Oil"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="OINTMENT" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42966"/>
+		<locale name="en" value="Ointment"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="OINTMENT, AUGMENTED" is_enabled="true" order_no="0">
+		<alias name="alias" value="C60984"/>
+		<locale name="en" value="Ointment, Augmented"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="PACKING" is_enabled="true" order_no="0">
+		<alias name="alias" value="C47887"/>
+		<locale name="en" value="Packing"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="PASTE" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42967"/>
+		<locale name="en" value="Paste"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="PASTE, DENTIFRICE" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42907"/>
+		<locale name="en" value="Paste, Dentifrice"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="PASTILLE" is_enabled="true" order_no="0">
+		<alias name="alias" value="C60985"/>
+		<locale name="en" value="Pastille"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="PATCH" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42968"/>
+		<locale name="en" value="Patch"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="PATCH, EXTENDED RELEASE" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42923"/>
+		<locale name="en" value="Patch, Extended Release"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="PATCH, EXTENDED RELEASE, ELECTRICALLY CONTROLLED" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42911"/>
+		<locale name="en" value="Patch, Extended Release, Electrically Controlled"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="PELLET" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42969"/>
+		<locale name="en" value="Pellet"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="PELLET, IMPLANTABLE" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42943"/>
+		<locale name="en" value="Pellet, Implantable"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="PELLETS, COATED, EXTENDED RELEASE" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42918"/>
+		<locale name="en" value="Pellets, Coated, Extended Release"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="PILL" is_enabled="true" order_no="0">
+		<alias name="alias" value="C25394"/>
+		<locale name="en" value="Pill"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="PLASTER" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42970"/>
+		<locale name="en" value="Plaster"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="POULTICE" is_enabled="true" order_no="0">
+		<alias name="alias" value="C47913"/>
+		<locale name="en" value="Poultice"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="POWDER" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42972"/>
+		<locale name="en" value="Powder"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="POWDER, DENTIFRICE" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42908"/>
+		<locale name="en" value="Powder, Dentifrice"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="POWDER, FOR SOLUTION" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42973"/>
+		<locale name="en" value="Powder, For Solution"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="POWDER, FOR SUSPENSION" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42975"/>
+		<locale name="en" value="Powder, For Suspension"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="POWDER, METERED" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42961"/>
+		<locale name="en" value="Powder, Metered"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="RING" is_enabled="true" order_no="0">
+		<alias name="alias" value="C60988"/>
+		<locale name="en" value="Ring"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="RINSE" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42979"/>
+		<locale name="en" value="Rinse"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="SALVE" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42980"/>
+		<locale name="en" value="Salve"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="SHAMPOO" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42981"/>
+		<locale name="en" value="Shampoo"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="SHAMPOO, SUSPENSION" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42982"/>
+		<locale name="en" value="Shampoo, Suspension"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="SOAP" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42983"/>
+		<locale name="en" value="Soap"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="SOLUTION" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42986"/>
+		<locale name="en" value="Solution"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="SOLUTION, CONCENTRATE" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42898"/>
+		<locale name="en" value="Solution, Concentrate"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="SOLUTION, DROPS" is_enabled="true" order_no="0">
+		<alias name="alias" value="C60992"/>
+		<locale name="en" value="Solution, Drops"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="SOLUTION, FOR SLUSH" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42987"/>
+		<locale name="en" value="Solution, For Slush"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="SOLUTION, GEL FORMING, DROPS" is_enabled="true" order_no="0">
+		<alias name="alias" value="C60994"/>
+		<locale name="en" value="Solution, Gel Forming, Drops"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="SOLUTION, GEL FORMING, EXTENDED RELEASE" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42935"/>
+		<locale name="en" value="Solution, Gel Forming, Extended Release"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="SPONGE" is_enabled="true" order_no="0">
+		<alias name="alias" value="C47912"/>
+		<locale name="en" value="Sponge"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="SPRAY" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42989"/>
+		<locale name="en" value="Spray"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="SPRAY, METERED" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42962"/>
+		<locale name="en" value="Spray, Metered"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="SPRAY, SUSPENSION" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42990"/>
+		<locale name="en" value="Spray, Suspension"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="STICK" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42991"/>
+		<locale name="en" value="Stick"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="STRIP" is_enabled="true" order_no="0">
+		<alias name="alias" value="C47914"/>
+		<locale name="en" value="Strip"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="SUPPOSITORY" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42993"/>
+		<locale name="en" value="Suppository"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="SUPPOSITORY, EXTENDED RELEASE" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42924"/>
+		<locale name="en" value="Suppository, Extended Release"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="SUSPENSION" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42994"/>
+		<locale name="en" value="Suspension"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="SUSPENSION, DROPS" is_enabled="true" order_no="0">
+		<alias name="alias" value="C60995"/>
+		<locale name="en" value="Suspension, Drops"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="SUSPENSION, EXTENDED RELEASE" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42925"/>
+		<locale name="en" value="Suspension, Extended Release"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="SUTURE" is_enabled="true" order_no="0">
+		<alias name="alias" value="C47889"/>
+		<locale name="en" value="Suture"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="SWAB" is_enabled="true" order_no="0">
+		<alias name="alias" value="C47898"/>
+		<locale name="en" value="Swab"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="SYRUP" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42996"/>
+		<locale name="en" value="Syrup"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="TABLET" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42998"/>
+		<locale name="en" value="Tablet"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="TABLET, CHEWABLE" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42893"/>
+		<locale name="en" value="Tablet, Chewable"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="TABLET, COATED" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42897"/>
+		<locale name="en" value="Tablet, Coated"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="TABLET, COATED PARTICLES" is_enabled="true" order_no="0">
+		<alias name="alias" value="C60997"/>
+		<locale name="en" value="Tablet, Coated Particles"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="TABLET, DELAYED RELEASE" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42905"/>
+		<locale name="en" value="Tablet, Delayed Release"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="TABLET, DELAYED RELEASE PARTICLES" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42997"/>
+		<locale name="en" value="Tablet, Delayed Release Particles"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="TABLET, EFFERVESCENT" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42910"/>
+		<locale name="en" value="Tablet, Effervescent"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="TABLET, EXTENDED RELEASE" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42927"/>
+		<locale name="en" value="Tablet, Extended Release"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="TABLET, FILM COATED" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42931"/>
+		<locale name="en" value="Tablet, Film Coated"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="TABLET, FILM COATED, EXTENDED RELEASE" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42930"/>
+		<locale name="en" value="Tablet, Film Coated, Extended Release"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="TABLET, FOR SOLUTION" is_enabled="true" order_no="0">
+		<alias name="alias" value="C61004"/>
+		<locale name="en" value="Tablet, For Solution"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="TABLET, FOR SUSPENSION" is_enabled="true" order_no="0">
+		<alias name="alias" value="C61005"/>
+		<locale name="en" value="Tablet, For Suspension"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="TABLET, MULTILAYER" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42964"/>
+		<locale name="en" value="Tablet, Multilayer"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="TABLET, MULTILAYER, EXTENDED RELEASE" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42963"/>
+		<locale name="en" value="Tablet, Multilayer, Extended Release"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="TABLET, ORALLY DISINTEGRATING" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42999"/>
+		<locale name="en" value="Tablet, Orally Disintegrating"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="TABLET, ORALLY DISINTEGRATING, DELAYED RELEASE" is_enabled="true" order_no="0">
+		<alias name="alias" value="C61006"/>
+		<locale name="en" value="Tablet, Orally Disintegrating, Delayed Release"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="TABLET, SOLUBLE" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42985"/>
+		<locale name="en" value="Tablet, Soluble"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="TABLET, SUGAR COATED" is_enabled="true" order_no="0">
+		<alias name="alias" value="C42992"/>
+		<locale name="en" value="Tablet, Sugar Coated"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="TAMPON" is_enabled="true" order_no="0">
+		<alias name="alias" value="C47892"/>
+		<locale name="en" value="Tampon"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="TAPE" is_enabled="true" order_no="0">
+		<alias name="alias" value="C47897"/>
+		<locale name="en" value="Tape"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="TINCTURE" is_enabled="true" order_no="0">
+		<alias name="alias" value="C43000"/>
+		<locale name="en" value="Tincture"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="TROCHE" is_enabled="true" order_no="0">
+		<alias name="alias" value="C43001"/>
+		<locale name="en" value="Troche"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="UNASSIGNED" is_enabled="true" order_no="0">
+		<alias name="alias" value="C43002"/>
+		<locale name="en" value="Unassigned"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="WAFER" is_enabled="true" order_no="0">
+		<alias name="alias" value="C43003"/>
+		<locale name="en" value="Wafer"/>
+	</d2_dictionary_value>
+</d2_dictionary>

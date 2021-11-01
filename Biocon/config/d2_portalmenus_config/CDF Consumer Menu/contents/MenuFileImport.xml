@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<delta>
+	<modify id="menuFileImportRendition">
+		<move class="com.emc.d2fs.dctm.ui.conditions.typeparts.IsObjectType" position-after="com.emc.d2fs.dctm.ui.conditions.interfaces.IsConnected,com.emc.d2fs.dctm.ui.conditions.typeparts.IsDocument,com.emc.d2fs.dctm.ui.conditions.permits.HasClientCapability,com.emc.d2fs.dctm.ui.conditions.objects.HasContent,com.emc.d2fs.dctm.ui.conditions.actions.CheckoutByAndPermitLevel,com.emc.d2fs.dctm.ui.conditions.interfaces.IsMultipleSelection" position-before="com.emc.d2fs.dctm.ui.dynamicactions.actions.Rendition"/>
+	</modify>
+	<modify id="menuFileImportAsVersion">
+		<move class="com.emc.d2fs.dctm.ui.conditions.typeparts.IsObjectType" position-after="com.emc.d2fs.dctm.ui.conditions.interfaces.IsConnected,com.emc.d2fs.dctm.ui.conditions.permits.HasClientCapability,com.emc.d2fs.dctm.ui.conditions.permits.HasPermit,com.emc.d2fs.dctm.ui.conditions.typeparts.IsSysObject,com.emc.d2fs.dctm.ui.conditions.typeparts.IsFolder,com.emc.d2fs.dctm.ui.conditions.typeparts.IsCabinet,com.emc.d2fs.dctm.ui.conditions.actions.CheckoutByAndPermitLevel,com.emc.d2fs.dctm.ui.conditions.interfaces.IsMultipleSelection" position-before="com.emc.d2fs.dctm.ui.dynamicactions.actions.Checkin"/>
+	</modify>
+</delta>

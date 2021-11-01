@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_dictionary object_name="Issued Print Site Notification Queries" title="Contains the queries for the Issued Print Site Notifier based Jobs." lock_config="false" parents_config="" application_names="OpenText Life Sciences Quality and Manufacturing Solution" security_group="admingroup" search_group="" version="2" is_versioned="false" manual_order="false" create_view_option="false" is_dql="false" is_dql_cache="false" dql="" label_en="Issued Print Site Notification Queries">
+	<d2_dictionary_value object_name="reconciliation_due_in_7" is_enabled="true" order_no="0">
+		<alias name="Query" value="select object_name, requestor, print_site, print_location, page_range, date_printed, reconciliation_due_date from cd_issued_print where reconciliation_due_date &lt;= DATEADD(day, 7, DATE(TODAY)) and reconciliation_due_date &gt;= DATE(TODAY) and print_site = '%s' and a_status='Printed'"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="reconciliation_past_due" is_enabled="true" order_no="0">
+		<alias name="Query" value="select object_name, requestor, print_site, print_location, page_range, date_printed, reconciliation_due_date from cd_issued_print where reconciliation_due_date is not nulldate and reconciliation_due_date &lt;= DATE(TODAY) and print_site = '%s' and a_status='Printed'"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="requests_past_due" is_enabled="true" order_no="0">
+		<alias name="Query" value="select object_name, requestor, r_creation_date as date_requested, print_site, print_location, approval_due_date from cd_issued_print_request where approval_due_date is not nulldate and approval_due_date &lt;= DATE(TODAY) and print_site = '%s' and a_status='Pending Approval'"/>
+	</d2_dictionary_value>
+</d2_dictionary>

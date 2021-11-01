@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<textWatermark>
+	<textValue>$value(a_status)</textValue>
+	<fontName>helvetica</fontName>
+	<fontColor>#FF9900</fontColor>
+	<fontSize>128</fontSize>
+	<rotation>54.7</rotation>
+	<horizontalAlign>CENTER</horizontalAlign>
+	<verticalAlign>CENTER</verticalAlign>
+	<opacity>50</opacity>
+</textWatermark>

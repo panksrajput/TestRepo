@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_dictionary object_name="Bio All Roles - Reporting" title="" lock_config="false" parents_config="GMP Applicable Sites" application_names="OpenText Life Sciences Quality and Manufacturing Solution¬OpenText Life Sciences Medical Device Solution¬OpenText Life Sciences Medical Device for Quality and Manufacturing Solution¬Custom Configurations" security_group="admingroup" search_group="admingroup" version="2" is_versioned="false" manual_order="false" create_view_option="false" is_dql="false" is_dql_cache="false" dql="" label_en="GMP Applicable Sites">
+	<d2_dictionary_value object_name="Boston" is_enabled="true" order_no="0">
+		<alias name="users" value="cd_boston_users"/>
+		<alias name="authors" value="cd_boston_authors"/>
+		<alias name="approvers" value="cd_boston_approvers"/>
+		<alias name="auditors" value="cd_boston_auditors"/>
+		<alias name="reviewers" value="cd_boston_reviewers"/>
+		<alias name="qo_approvers" value="cd_boston_qo_approvers"/>
+		<alias name="readers" value="cd_boston_readers"/>
+		<alias name="doc_coordinators" value="cd_boston_coordinators"/>
+		<alias name="ip_approvers" value="cd_issued_print_boston_approvers"/>
+		<alias name="ip_printers" value="cd_issued_print_boston_printers"/>
+		<alias name="ip_reconcilers" value="cd_issued_print_boston_reconcilers"/>
+		<alias name="ip_reprinters" value="cd_issued_print_boston_reprinters"/>
+		<alias name="cp_printers" value="cd_controlled_print_boston_printers"/>
+		<alias name="cp_reprinters" value="cd_controlled_print_boston_reprinters"/>
+		<alias name="cp_recallers" value="cd_controlled_print_boston_recallers"/>
+		<locale name="en" value="Boston"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Manchester" is_enabled="true" order_no="0">
+		<alias name="users" value="cd_manchester_users"/>
+		<alias name="authors" value="cd_manchester_authors"/>
+		<alias name="approvers" value="cd_manchester_approvers"/>
+		<alias name="auditors" value="cd_manchester_auditors"/>
+		<alias name="reviewers" value="cd_manchester_reviewers"/>
+		<alias name="qo_approvers" value="cd_manchester_qo_approvers"/>
+		<alias name="readers" value="cd_manchester_readers"/>
+		<alias name="doc_coordinators" value="cd_manchester_coordinators"/>
+		<alias name="ip_approvers" value="cd_issued_print_manchester_approvers"/>
+		<alias name="ip_printers" value="cd_issued_print_manchester_printers"/>
+		<alias name="ip_reconcilers" value="cd_issued_print_manchester_reconcilers"/>
+		<alias name="ip_reprinters" value="cd_issued_print_manchester_reprinters"/>
+		<alias name="cp_printers" value="cd_controlled_print_manchester_printers"/>
+		<alias name="cp_reprinters" value="cd_controlled_print_manchester_reprinters"/>
+		<alias name="cp_recallers" value="cd_controlled_print_manchester_recallers"/>
+		<locale name="en" value="Manchester"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Site 2" is_enabled="true" order_no="0">
+		<alias name="users" value="cd_site2_users"/>
+		<alias name="authors" value="cd_site2_authors"/>
+		<alias name="approvers" value="cd_site2_approvers"/>
+		<alias name="auditors" value="cd_site2_auditors"/>
+		<alias name="reviewers" value="cd_site2_reviewers"/>
+		<alias name="qo_approvers" value="cd_site2_qo_approvers"/>
+		<alias name="readers" value="cd_site2_readers"/>
+		<alias name="doc_coordinators" value="cd_site2_coordinators"/>
+		<alias name="ip_approvers" value="cd_issued_print_site2_approvers"/>
+		<alias name="ip_printers" value="cd_issued_print_site2_printers"/>
+		<alias name="ip_reconcilers" value="cd_issued_print_site2_reconcilers"/>
+		<alias name="ip_reprinters" value="cd_issued_print_site2_reprinters"/>
+		<alias name="cp_printers" value="cd_controlled_print_site2_printers"/>
+		<alias name="cp_reprinters" value="cd_controlled_print_site2_reprinters"/>
+		<alias name="cp_recallers" value="cd_controlled_print_site2_recallers"/>
+		<locale name="en" value="Site 2"/>
+	</d2_dictionary_value>
+</d2_dictionary>

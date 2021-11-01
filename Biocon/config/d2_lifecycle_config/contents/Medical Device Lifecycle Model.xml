@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2lifecycle execute_actions_on_start="true" state_attribute="a_status">
+	<state direct="false" entry="false" name="Active">
+		<entry_conditions>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate user is a Manager of the selected registration form"/>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate selected document is not checked-out"/>
+		</entry_conditions>
+		<actions>
+			<set name="a_status" value="Active"/>
+			<applysecurity/>
+		</actions>
+		<next_states>
+			<state action="" confirmation_en="OK to change the status of this device registration form from &quot;Active&quot; to &quot;Inactive&quot;? This will freeze the current set of &quot;Effective/Final&quot; documents for this device registration form, preventing new documents related to this device registration form from being made &quot;Effective/Final&quot;, unless the device registration form is subsequently re-activated." dialog="" event="" label_en="Mark Device as ''Inactive''" name="Inactive" type="promote"/>
+			<state action="" confirmation_en="" dialog="Medical Device Update Device Information Properties" event="" label_en="Update Device Info..." name="(Update Device Info)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+		</next_states>
+	</state>
+	<state direct="false" entry="false" name="Inactive">
+		<entry_conditions>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate user is a Manager of the selected registration form"/>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate selected document is not checked-out"/>
+		</entry_conditions>
+		<actions>
+			<set name="a_status" value="Inactive"/>
+			<applysecurity/>
+		</actions>
+		<next_states>
+			<state action="" confirmation_en="OK to change this device registration form from &quot;Inactive&quot; back to &quot;Active&quot;? This will re-activate the device, enabling new documents related to this device registration form to be made &quot;Effective/Final&quot;." dialog="" event="" label_en="Revert device to ''Active''" name="Active" type="promote"/>
+		</next_states>
+	</state>
+	<state direct="false" entry="true" name="(Init)">
+		<entry_conditions/>
+		<actions>
+			<set name="owner_name" value="admingroup"/>
+			<set name="a_status" value="Active"/>
+			<applysecurity/>
+		</actions>
+		<next_states>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="Active" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+		</next_states>
+	</state>
+	<state direct="false" entry="false" name="(Update Device Info)">
+		<entry_conditions>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate user is a Manager of the selected registration form"/>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate selected document is not checked-out"/>
+		</entry_conditions>
+		<actions/>
+		<next_states/>
+	</state>
+</d2lifecycle>

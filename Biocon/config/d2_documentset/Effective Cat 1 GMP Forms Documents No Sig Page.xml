@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_documentset new_format="true">
+	<object_name value="Effective Cat 1 GMP Forms Documents No Sig Page"/>
+	<title value=""/>
+	<subject value=""/>
+	<authors/>
+	<keywords/>
+	<a_status value=""/>
+	<a_content_type value=""/>
+	<log_entry value=""/>
+	<language_code value=""/>
+	<dql_where value="category = 1 and a_status = 'Effective' and (domain='GMP' and primary_group='Form') and suppress_signature_page = true"/>
+	<order_no value="202"/>
+	<dql_from>
+		<repeating value="cd_common_ref_model"/>
+	</dql_from>
+	<group_names/>
+	<application_names>
+		<repeating value="OpenText Life Sciences Medical Device Solution"/>
+		<repeating value="OpenText Life Sciences Medical Device for Quality and Manufacturing Solution"/>
+		<repeating value="OpenText Life Sciences Quality and Manufacturing Solution"/>
+	</application_names>
+	<user_agent value=""/>
+	<parent_names>
+		<repeating value="Effective-Approved Documents"/>
+	</parent_names>
+	<parent_order_no>
+		<repeating value="3"/>
+	</parent_order_no>
+	<lock_config value="F"/>
+	<parents_config/>
+</d2_documentset>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<c2_print_config new_format="true">
+	<object_name value="Category 1 C2 Print for Effective"/>
+	<title value="Category 1 print with signature page and �Uncontrolled Copy� watermark on all"/>
+	<subject value=""/>
+	<authors/>
+	<keywords/>
+	<a_status value=""/>
+	<a_content_type value="xml"/>
+	<log_entry value=""/>
+	<language_code value=""/>
+	<application_names>
+		<repeating value="OpenText Life Sciences Medical Device for Quality and Manufacturing Solution"/>
+		<repeating value="OpenText Life Sciences Quality and Manufacturing Solution"/>
+		<repeating value="Custom Configurations"/>
+		<repeating value="Biocon"/>
+	</application_names>
+	<lock_config value="F"/>
+	<parents_config/>
+	<is_controled value="F"/>
+	<assistance_type value="freetext"/>
+	<assistance_dql value="select distinct  i_all_users_names from dm_group where group_name = 'cd_clinical' or group_name = 'cd_quality' or group_name = 'cd_regulatory' or group_name = 'cd_non_clinical'or group_name = 'cd_gmp_all_users' order by i_all_users_names"/>
+	<assistance_dictionary value=""/>
+	<assistance_dictionary_key value=""/>
+	<is_editable value="F"/>
+	<is_reason value="F"/>
+	<reason_dictionary value=""/>
+	<reason_dictionary_key value=""/>
+	<reason_dql value=""/>
+	<reason_assistance_type value="freetext"/>
+	<reason_is_editable value="F"/>
+	<default_config value="T"/>
+	<label_locale>
+		<repeating value="en"/>
+	</label_locale>
+	<label_value>
+		<repeating value="Category 1 C2 Print Uncontrolled Copy"/>
+	</label_value>
+	<input_format value="pdf"/>
+	<controlled_is_enabled_3 value="F"/>
+	<controlled_type_3 value="freetext"/>
+	<controlled_is_editable_3 value="F"/>
+	<controlled_dictionary_3 value=""/>
+	<controlled_dictionary_key_3 value=""/>
+	<controlled_dql_3 value=""/>
+	<controlled_label_field>
+		<repeating value="1"/>
+		<repeating value="2"/>
+		<repeating value="3"/>
+	</controlled_label_field>
+	<controlled_label_locale>
+		<repeating value="en"/>
+		<repeating value="en"/>
+		<repeating value="en"/>
+	</controlled_label_locale>
+	<controlled_label_value>
+		<repeating value=""/>
+		<repeating value=""/>
+		<repeating value=""/>
+	</controlled_label_value>
+	<fast_web_compliant value="T"/>
+</c2_print_config>

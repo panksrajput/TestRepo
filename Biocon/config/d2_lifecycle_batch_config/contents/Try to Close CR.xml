@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_lifecycle_batch_config>
+	<lifecycle>Change Request Lifecycle Model</lifecycle>
+	<targetstate>Closed</targetstate>
+	<operation>promote</operation>
+	<list-attributes/>
+</d2_lifecycle_batch_config>

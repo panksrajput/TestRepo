@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_audit_config new_format="true">
+	<object_name value="Auditing of Cat 4 Controlled Documents"/>
+	<title value="Defines the D2 events and property changes that are audited for Cat 4 controlled documents ('uncontrolled' documents)."/>
+	<subject value=""/>
+	<authors/>
+	<keywords/>
+	<a_status value=""/>
+	<a_content_type value=""/>
+	<log_entry value=""/>
+	<language_code value=""/>
+	<module_type value="d2_audit_config"/>
+	<application_names>
+		<repeating value="OpenText Life Sciences Submission Storage and Viewing"/>
+		<repeating value="OpenText Life Sciences Research and Development Solution"/>
+		<repeating value="OpenText Life Sciences Quality and Manufacturing Solution"/>
+		<repeating value="OpenText Life Sciences Medical Device Solution"/>
+		<repeating value="OpenText Life Sciences Medical Device for Research and Development Solution"/>
+		<repeating value="OpenText Life Sciences Medical Device for Quality and Manufacturing Solution"/>
+		<repeating value="OpenText Life Sciences eTMF Solution"/>
+	</application_names>
+	<lock_config value="F"/>
+	<parents_config/>
+	<audited_events>
+		<repeating value="c2_controled_print"/>
+		<repeating value="c2_controlled_print_recall"/>
+		<repeating value="d2_bin_restore_antecedant"/>
+		<repeating value="d2_bin_restore_rendition"/>
+		<repeating value="d2_bin_restore_version"/>
+		<repeating value="d2_change_state_failed"/>
+		<repeating value="d2_change_state_success"/>
+		<repeating value="d2_checkin"/>
+		<repeating value="d2_checkout"/>
+		<repeating value="d2_create"/>
+		<repeating value="d2_destroy"/>
+		<repeating value="d2_destroy_failed"/>
+		<repeating value="d2_import"/>
+		<repeating value="d2_mass_update"/>
+		<repeating value="d2_properties_save"/>
+		<repeating value="d2_relation_create"/>
+		<repeating value="d2_relation_destroy"/>
+	</audited_events>
+	<audited_properties>
+		<repeating value="authors"/>
+		<repeating value="object_name"/>
+		<repeating value="readers"/>
+	</audited_properties>
+	<displayed_events>
+		<repeating value="c2_controled_print"/>
+		<repeating value="d2_bin_restore_antecedant"/>
+		<repeating value="d2_bin_restore_rendition"/>
+		<repeating value="d2_bin_restore_version"/>
+		<repeating value="d2_change_state_failed"/>
+		<repeating value="d2_change_state_success"/>
+		<repeating value="d2_checkin"/>
+		<repeating value="d2_checkout"/>
+		<repeating value="d2_create"/>
+		<repeating value="d2_destroy"/>
+		<repeating value="d2_destroy_failed"/>
+		<repeating value="d2_import"/>
+		<repeating value="d2_mass_update"/>
+		<repeating value="d2_properties_save"/>
+		<repeating value="d2_relation_create"/>
+		<repeating value="d2_relation_destroy"/>
+	</displayed_events>
+	<hide_documentum_events value="F"/>
+	<extended_display value="F"/>
+	<audited_properties_old>
+		<repeating value="F"/>
+		<repeating value="F"/>
+		<repeating value="F"/>
+	</audited_properties_old>
+	<audited_properties_delta>
+		<repeating value="F"/>
+		<repeating value="F"/>
+		<repeating value="F"/>
+	</audited_properties_delta>
+</d2_audit_config>

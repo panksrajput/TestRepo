@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_dictionary object_name="BPU Cascades" title="" lock_config="false" parents_config="" application_names="OpenText Life Sciences eTMF Solution¬OpenText Life Sciences Medical Device for Quality and Manufacturing Solution¬OpenText Life Sciences Medical Device for Research and Development Solution¬OpenText Life Sciences Quality and Manufacturing Solution¬OpenText Life Sciences Research and Development Solution¬OpenText Life Sciences Submission Storage and Viewing" security_group="admingroup" search_group="admingroup" version="2" is_versioned="false" manual_order="false" create_view_option="false" is_dql="false" is_dql_cache="false" dql="" label_en="BPU Cascades">
+	<d2_dictionary_value object_name="Clinical Properties Non-Study-Specific|derived_product_codes" is_enabled="true" order_no="0">
+		<alias name="Attribute" value="derived_product_codes"/>
+		<alias name="Query" value="[0]dql:select derived_product_codes from cd_product_info where product_code = '$value(product_code)' and derived_product_codes is not nullstring enable(ROW_BASED)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Clinical Properties Non-Study-Specific|product_aliases" is_enabled="true" order_no="0">
+		<alias name="Attribute" value="product_aliases"/>
+		<alias name="Query" value="[0]dql:select product_aliases from cd_product_info where product_code = '$value(product_code)' and product_aliases is not nullstring enable(ROW_BASED)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Clinical Properties Non-Study-Specific|referenced_product_codes" is_enabled="true" order_no="0">
+		<alias name="Attribute" value="referenced_product_codes"/>
+		<alias name="Query" value="[0]dql:select referenced_product_codes from cd_product_info where product_code = '$value(product_code)' and referenced_product_codes is not nullstring enable(ROW_BASED)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Clinical Properties Study-Specific|derived_product_codes" is_enabled="true" order_no="0">
+		<alias name="Attribute" value="derived_product_codes"/>
+		<alias name="Query" value="[0]dql:select derived_product_codes from cd_product_info where product_code = '$value(product_code)' and derived_product_codes is not nullstring enable(ROW_BASED)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Clinical Properties Study-Specific|dosage_form.dosage_strength.route_of_admin.indication." is_enabled="true" order_no="0">
+		<alias name="Attribute" value="dosage_form.dosage_strength.route_of_admin.indication."/>
+		<alias name="Query" value="[1]dql:select dosage_form,dosage_strength,route_of_admin,indication from cd_clinical_trial_info where product_code = '$value(product_code)' and clinical_trial_id = '$value(clinical_trial_id)' order by 1"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Clinical Properties Study-Specific|ectd_section" is_enabled="true" order_no="0">
+		<alias name="Attribute" value="ectd_section"/>
+		<alias name="Query" value="[4]DQL - Regulatory Admin (Pharma) - eCTD Section for subgroup and artifact"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Clinical Properties Study-Specific|primary_group" is_enabled="true" order_no="0">
+		<alias name="Attribute" value="primary_group"/>
+		<alias name="Query" value="[0]dql:select primary_group as name from cd_clinical_trial_info where product_code = '$value(product_code)' and clinical_trial_id = '$value(clinical_trial_id)' order by 1"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Clinical Properties Study-Specific|product_aliases" is_enabled="true" order_no="0">
+		<alias name="Attribute" value="product_aliases"/>
+		<alias name="Query" value="[0]dql:select product_aliases from cd_product_info where product_code = '$value(product_code)' and product_aliases is not nullstring enable(ROW_BASED)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Clinical Properties Study-Specific|referenced_product_codes" is_enabled="true" order_no="0">
+		<alias name="Attribute" value="referenced_product_codes"/>
+		<alias name="Query" value="[0]dql:select referenced_product_codes from cd_product_info where product_code = '$value(product_code)' and referenced_product_codes is not nullstring enable(ROW_BASED)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Clinical Properties Study-Specific|study_phase" is_enabled="true" order_no="0">
+		<alias name="Attribute" value="study_phase"/>
+		<alias name="Query" value="[3]dql:select study_phase as name from cd_clinical_trial_info where product_code = '$value(product_code)' and clinical_trial_id = '$value(clinical_trial_id)' order by 1"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Clinical Properties Study-Specific|subgroup" is_enabled="true" order_no="0">
+		<alias name="Attribute" value="subgroup"/>
+		<alias name="Query" value="[2]DQL - Clinical TMF - Subgroup for selected trial"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Clinical Properties Study-Specific|type_of_control" is_enabled="true" order_no="0">
+		<alias name="Attribute" value="type_of_control"/>
+		<alias name="Query" value="[3]dql:select type_of_control from cd_clinical_trial_info where product_code = '$value(product_code)' and clinical_trial_id = '$value(clinical_trial_id)' order by 1"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Non-Clinical Properties Non-Study-Specific|derived_product_codes" is_enabled="true" order_no="0">
+		<alias name="Attribute" value="derived_product_codes"/>
+		<alias name="Query" value="[0]dql:select derived_product_codes from cd_product_info where product_code = '$value(product_code)' and derived_product_codes is not nullstring enable(ROW_BASED)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Non-Clinical Properties Non-Study-Specific|product_aliases" is_enabled="true" order_no="0">
+		<alias name="Attribute" value="product_aliases"/>
+		<alias name="Query" value="[0]dql:select product_aliases from cd_product_info where product_code = '$value(product_code)' and product_aliases is not nullstring enable(ROW_BASED)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Non-Clinical Properties Non-Study-Specific|referenced_product_codes" is_enabled="true" order_no="0">
+		<alias name="Attribute" value="referenced_product_codes"/>
+		<alias name="Query" value="[0]dql:select referenced_product_codes from cd_product_info where product_code = '$value(product_code)' and referenced_product_codes is not nullstring enable(ROW_BASED)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Non-Clinical Properties Study-Specific|derived_product_codes" is_enabled="true" order_no="0">
+		<alias name="Attribute" value="derived_product_codes"/>
+		<alias name="Query" value="[0]dql:select derived_product_codes from cd_product_info where product_code = '$value(product_code)' and derived_product_codes is not nullstring enable(ROW_BASED)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Non-Clinical Properties Study-Specific|ectd_section" is_enabled="true" order_no="0">
+		<alias name="Attribute" value="ectd_section"/>
+		<alias name="Query" value="[0]DQL - Regulatory Admin (Pharma) - eCTD Section for subgroup and artifact"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Non-Clinical Properties Study-Specific|primary_group" is_enabled="true" order_no="0">
+		<alias name="Attribute" value="primary_group"/>
+		<alias name="Query" value="[0]DQL - Non-Clinical - Primary group for selected study"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Non-Clinical Properties Study-Specific|product_aliases" is_enabled="true" order_no="0">
+		<alias name="Attribute" value="product_aliases"/>
+		<alias name="Query" value="[0]dql:select product_aliases from cd_product_info where product_code = '$value(product_code)' and product_aliases is not nullstring enable(ROW_BASED)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Non-Clinical Properties Study-Specific|referenced_product_codes" is_enabled="true" order_no="0">
+		<alias name="Attribute" value="referenced_product_codes"/>
+		<alias name="Query" value="[0]dql:select referenced_product_codes from cd_product_info where product_code = '$value(product_code)' and referenced_product_codes is not nullstring enable(ROW_BASED)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Non-Clinical Properties Study-Specific|study_director" is_enabled="true" order_no="0">
+		<alias name="Attribute" value="study_director"/>
+		<alias name="Query" value="[0]dql:select study_director from cd_non_clinical_study_info where product_code = '$value(product_code)' and nc_study_num = '$value(nc_study_num)'"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Non-Clinical Properties Study-Specific|subgroup" is_enabled="true" order_no="0">
+		<alias name="Attribute" value="subgroup"/>
+		<alias name="Query" value="[0]DQL - Non-Clinical - Subgroup for selected study"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Quality Adventitious Agents Properties|derived_product_codes" is_enabled="true" order_no="0">
+		<alias name="Attribute" value="derived_product_codes"/>
+		<alias name="Query" value="[0]dql:select derived_product_codes from cd_product_info where product_code = '$value(product_code)' and derived_product_codes is not nullstring enable(ROW_BASED)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Quality Adventitious Agents Properties|product_aliases" is_enabled="true" order_no="0">
+		<alias name="Attribute" value="product_aliases"/>
+		<alias name="Query" value="[0]dql:select product_aliases from cd_product_info where product_code = '$value(product_code)' and product_aliases is not nullstring enable(ROW_BASED)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Quality Adventitious Agents Properties|product_compound_id.product_chemical_names.product_generic_name." is_enabled="true" order_no="0">
+		<alias name="Attribute" value="product_compound_id.product_chemical_names.product_generic_name."/>
+		<alias name="Query" value="[0]dql:select product_compound_id,product_chemical_names,product_generic_name from cd_product_info where product_code = '$value(product_code)' and (drug_substance_name is not nullstring and inn_names is not nullstring and product_generic_name is not nullstring ) ORDER BY 1,2,3 enable (ROW_BASED)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Quality Adventitious Agents Properties|product_trade_name.product_trade_country." is_enabled="true" order_no="0">
+		<alias name="Attribute" value="product_trade_name.product_trade_country."/>
+		<alias name="Query" value="[0]dql:select product_trade_name,product_trade_country from cd_product_info where product_code = '$value(product_code)' and (product_trade_name is not nullstring) ORDER BY 1,2 enable (ROW_BASED)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Quality Adventitious Agents Properties|referenced_product_codes" is_enabled="true" order_no="0">
+		<alias name="Attribute" value="referenced_product_codes"/>
+		<alias name="Query" value="[0]dql:select referenced_product_codes from cd_product_info where product_code = '$value(product_code)' and referenced_product_codes is not nullstring enable(ROW_BASED)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Quality Drug Product Properties|derived_product_codes" is_enabled="true" order_no="0">
+		<alias name="Attribute" value="derived_product_codes"/>
+		<alias name="Query" value="[0]dql:select derived_product_codes from cd_product_info where product_code = '$value(product_code)' and derived_product_codes is not nullstring enable(ROW_BASED)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Quality Drug Product Properties|product_aliases" is_enabled="true" order_no="0">
+		<alias name="Attribute" value="product_aliases"/>
+		<alias name="Query" value="[0]dql:select product_aliases from cd_product_info where product_code = '$value(product_code)' and product_aliases is not nullstring enable(ROW_BASED)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Quality Drug Product Properties|product_compound_id.product_chemical_names.product_generic_name." is_enabled="true" order_no="0">
+		<alias name="Attribute" value="product_compound_id.product_chemical_names.product_generic_name."/>
+		<alias name="Query" value="[0]dql:select product_compound_id,product_chemical_names,product_generic_name from cd_product_info where product_code = '$value(product_code)' and ( product_compound_id is not nullstring or product_chemical_names is not nullstring or product_generic_name is not nullstring ) ORDER BY 1,2,3 enable (ROW_BASED)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Quality Drug Product Properties|referenced_product_codes" is_enabled="true" order_no="0">
+		<alias name="Attribute" value="referenced_product_codes"/>
+		<alias name="Query" value="[0]dql:select referenced_product_codes from cd_product_info where product_code = '$value(product_code)' and referenced_product_codes is not nullstring enable(ROW_BASED)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Quality Drug Substance Properties|derived_product_codes" is_enabled="true" order_no="0">
+		<alias name="Attribute" value="derived_product_codes"/>
+		<alias name="Query" value="[0]dql:select derived_product_codes from cd_product_info where product_code = '$value(product_code)' and derived_product_codes is not nullstring enable(ROW_BASED)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Quality Drug Substance Properties|product_aliases" is_enabled="true" order_no="0">
+		<alias name="Attribute" value="product_aliases"/>
+		<alias name="Query" value="[0]dql:select product_aliases from cd_product_info where product_code = '$value(product_code)' and product_aliases is not nullstring enable(ROW_BASED)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Quality Drug Substance Properties|product_compound_id.product_chemical_names.product_generic_name." is_enabled="true" order_no="0">
+		<alias name="Attribute" value="product_compound_id.product_chemical_names.product_generic_name."/>
+		<alias name="Query" value="[0]dql:select product_compound_id,product_chemical_names,product_generic_name from cd_product_info where product_code = '$value(product_code)' and ( product_compound_id is not nullstring or product_chemical_names is not nullstring or product_generic_name is not nullstring ) ORDER BY 1,2,3 enable (ROW_BASED)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Quality Drug Substance Properties|referenced_product_codes" is_enabled="true" order_no="0">
+		<alias name="Attribute" value="referenced_product_codes"/>
+		<alias name="Query" value="[0]dql:select referenced_product_codes from cd_product_info where product_code = '$value(product_code)' and referenced_product_codes is not nullstring enable(ROW_BASED)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Quality Excipients Properties|derived_product_codes" is_enabled="true" order_no="0">
+		<alias name="Attribute" value="derived_product_codes"/>
+		<alias name="Query" value="[0]dql:select derived_product_codes from cd_product_info where product_code = '$value(product_code)' and derived_product_codes is not nullstring enable(ROW_BASED)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Quality Excipients Properties|product_aliases" is_enabled="true" order_no="0">
+		<alias name="Attribute" value="product_aliases"/>
+		<alias name="Query" value="[0]dql:select product_aliases from cd_product_info where product_code = '$value(product_code)' and product_aliases is not nullstring enable(ROW_BASED)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Quality Excipients Properties|referenced_product_codes" is_enabled="true" order_no="0">
+		<alias name="Attribute" value="referenced_product_codes"/>
+		<alias name="Query" value="[0]dql:select referenced_product_codes from cd_product_info where product_code = '$value(product_code)' and referenced_product_codes is not nullstring enable(ROW_BASED)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Quality Information Properties|derived_product_codes" is_enabled="true" order_no="0">
+		<alias name="Attribute" value="derived_product_codes"/>
+		<alias name="Query" value="[0]dql:select derived_product_codes from cd_product_info where product_code = '$value(product_code)' and derived_product_codes is not nullstring enable(ROW_BASED)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Quality Information Properties|product_aliases" is_enabled="true" order_no="0">
+		<alias name="Attribute" value="product_aliases"/>
+		<alias name="Query" value="[0]dql:select product_aliases from cd_product_info where product_code = '$value(product_code)' and product_aliases is not nullstring enable(ROW_BASED)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Quality Information Properties|product_compound_id.product_chemical_names.product_generic_name." is_enabled="true" order_no="0">
+		<alias name="Attribute" value="product_compound_id.product_chemical_names.product_generic_name."/>
+		<alias name="Query" value="[0]dql:select product_compound_id,product_chemical_names,product_generic_name from cd_product_info where product_code = '$value(product_code)' and ( product_compound_id is not nullstring or product_chemical_names is not nullstring or product_generic_name is not nullstring ) ORDER BY 1,2,3 enable (ROW_BASED)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Quality Information Properties|product_trade_name.product_trade_country." is_enabled="true" order_no="0">
+		<alias name="Attribute" value="product_trade_name.product_trade_country."/>
+		<alias name="Query" value="[0]dql:select product_trade_name,product_trade_country from cd_product_info where product_code = '$value(product_code)' and (product_trade_name is not nullstring) ORDER BY 1,2 enable (ROW_BASED)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Quality Information Properties|referenced_product_codes" is_enabled="true" order_no="0">
+		<alias name="Attribute" value="referenced_product_codes"/>
+		<alias name="Query" value="[0]dql:select referenced_product_codes from cd_product_info where product_code = '$value(product_code)' and referenced_product_codes is not nullstring enable(ROW_BASED)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Quality Literature Reference Document|derived_product_codes" is_enabled="true" order_no="0">
+		<alias name="Attribute" value="derived_product_codes"/>
+		<alias name="Query" value="[0]dql:select derived_product_codes from cd_product_info where product_code = '$value(product_code)' and derived_product_codes is not nullstring enable(ROW_BASED)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Quality Literature Reference Document|product_aliases" is_enabled="true" order_no="0">
+		<alias name="Attribute" value="product_aliases"/>
+		<alias name="Query" value="[0]dql:select product_aliases from cd_product_info where product_code = '$value(product_code)' and product_aliases is not nullstring enable(ROW_BASED)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Quality Literature Reference Document|referenced_product_codes" is_enabled="true" order_no="0">
+		<alias name="Attribute" value="referenced_product_codes"/>
+		<alias name="Query" value="[0]dql:select referenced_product_codes from cd_product_info where product_code = '$value(product_code)' and referenced_product_codes is not nullstring enable(ROW_BASED)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Quality Medical Device Properties|derived_product_codes" is_enabled="true" order_no="0">
+		<alias name="Attribute" value="derived_product_codes"/>
+		<alias name="Query" value="[0]dql:select derived_product_codes from cd_product_info where product_code = '$value(product_code)' and derived_product_codes is not nullstring enable(ROW_BASED)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Quality Medical Device Properties|product_aliases" is_enabled="true" order_no="0">
+		<alias name="Attribute" value="product_aliases"/>
+		<alias name="Query" value="[0]dql:select product_aliases from cd_product_info where product_code = '$value(product_code)' and product_aliases is not nullstring enable(ROW_BASED)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Quality Medical Device Properties|product_compound_id.product_chemical_names.product_generic_name." is_enabled="true" order_no="0">
+		<alias name="Attribute" value="product_compound_id.product_chemical_names.product_generic_name."/>
+		<alias name="Query" value="[0]dql:select product_compound_id,product_chemical_names,product_generic_name from cd_product_info where product_code = '$value(product_code)' and ( product_compound_id is not nullstring or product_chemical_names is not nullstring or product_generic_name is not nullstring ) ORDER BY 1,2,3 enable (ROW_BASED)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Quality Medical Device Properties|product_trade_name.product_trade_country." is_enabled="true" order_no="0">
+		<alias name="Attribute" value="product_trade_name.product_trade_country."/>
+		<alias name="Query" value="[0]dql:select product_trade_name,product_trade_country from cd_product_info where product_code = '$value(product_code)' and (product_trade_name is not nullstring) ORDER BY 1,2 enable (ROW_BASED)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Quality Medical Device Properties|referenced_product_codes" is_enabled="true" order_no="0">
+		<alias name="Attribute" value="referenced_product_codes"/>
+		<alias name="Query" value="[0]dql:select referenced_product_codes from cd_product_info where product_code = '$value(product_code)' and referenced_product_codes is not nullstring enable(ROW_BASED)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Quality Overall Summary Properties|derived_product_codes" is_enabled="true" order_no="0">
+		<alias name="Attribute" value="derived_product_codes"/>
+		<alias name="Query" value="[0]dql:select derived_product_codes from cd_product_info where product_code = '$value(product_code)' and derived_product_codes is not nullstring enable(ROW_BASED)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Quality Overall Summary Properties|product_aliases" is_enabled="true" order_no="0">
+		<alias name="Attribute" value="product_aliases"/>
+		<alias name="Query" value="[0]dql:select product_aliases from cd_product_info where product_code = '$value(product_code)' and product_aliases is not nullstring enable(ROW_BASED)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Quality Overall Summary Properties|referenced_product_codes" is_enabled="true" order_no="0">
+		<alias name="Attribute" value="referenced_product_codes"/>
+		<alias name="Query" value="[0]dql:select referenced_product_codes from cd_product_info where product_code = '$value(product_code)' and referenced_product_codes is not nullstring enable(ROW_BASED)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Quality Overall Summary: Drug Product Properties|derived_product_codes" is_enabled="true" order_no="0">
+		<alias name="Attribute" value="derived_product_codes"/>
+		<alias name="Query" value="[0]dql:select derived_product_codes from cd_product_info where product_code = '$value(product_code)' and derived_product_codes is not nullstring enable(ROW_BASED)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Quality Overall Summary: Drug Product Properties|product_aliases" is_enabled="true" order_no="0">
+		<alias name="Attribute" value="product_aliases"/>
+		<alias name="Query" value="[0]dql:select product_aliases from cd_product_info where product_code = '$value(product_code)' and product_aliases is not nullstring enable(ROW_BASED)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Quality Overall Summary: Drug Product Properties|product_compound_id.product_chemical_names.product_generic_name." is_enabled="true" order_no="0">
+		<alias name="Attribute" value="product_compound_id.product_chemical_names.product_generic_name."/>
+		<alias name="Query" value="[0]dql:select product_compound_id,product_chemical_names,product_generic_name from cd_product_info where product_code = '$value(product_code)' and ( product_compound_id is not nullstring or product_chemical_names is not nullstring or product_generic_name is not nullstring ) ORDER BY 1,2,3 enable (ROW_BASED)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Quality Overall Summary: Drug Product Properties|product_trade_name.product_trade_country." is_enabled="true" order_no="0">
+		<alias name="Attribute" value="product_trade_name.product_trade_country."/>
+		<alias name="Query" value="[0]dql:select product_trade_name,product_trade_country from cd_product_info where product_code = '$value(product_code)' and (product_trade_name is not nullstring) ORDER BY 1,2 enable (ROW_BASED)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Quality Overall Summary: Drug Product Properties|referenced_product_codes" is_enabled="true" order_no="0">
+		<alias name="Attribute" value="referenced_product_codes"/>
+		<alias name="Query" value="[0]dql:select referenced_product_codes from cd_product_info where product_code = '$value(product_code)' and referenced_product_codes is not nullstring enable(ROW_BASED)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Quality Overall Summary: Drug Substance Properties|derived_product_codes" is_enabled="true" order_no="0">
+		<alias name="Attribute" value="derived_product_codes"/>
+		<alias name="Query" value="[0]dql:select derived_product_codes from cd_product_info where product_code = '$value(product_code)' and derived_product_codes is not nullstring enable(ROW_BASED)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Quality Overall Summary: Drug Substance Properties|product_aliases" is_enabled="true" order_no="0">
+		<alias name="Attribute" value="product_aliases"/>
+		<alias name="Query" value="[0]dql:select product_aliases from cd_product_info where product_code = '$value(product_code)' and product_aliases is not nullstring enable(ROW_BASED)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Quality Overall Summary: Drug Substance Properties|product_compound_id.product_chemical_names.product_generic_name." is_enabled="true" order_no="0">
+		<alias name="Attribute" value="product_compound_id.product_chemical_names.product_generic_name."/>
+		<alias name="Query" value="[0]dql:select product_compound_id,product_chemical_names,product_generic_name from cd_product_info where product_code = '$value(product_code)' and ( product_compound_id is not nullstring or product_chemical_names is not nullstring or product_generic_name is not nullstring ) ORDER BY 1,2,3 enable (ROW_BASED)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Quality Overall Summary: Drug Substance Properties|product_trade_name.product_trade_country." is_enabled="true" order_no="0">
+		<alias name="Attribute" value="product_trade_name.product_trade_country."/>
+		<alias name="Query" value="[0]dql:select product_trade_name,product_trade_country from cd_product_info where product_code = '$value(product_code)' and (product_trade_name is not nullstring) ORDER BY 1,2 enable (ROW_BASED)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Quality Overall Summary: Drug Substance Properties|referenced_product_codes" is_enabled="true" order_no="0">
+		<alias name="Attribute" value="referenced_product_codes"/>
+		<alias name="Query" value="[0]dql:select referenced_product_codes from cd_product_info where product_code = '$value(product_code)' and referenced_product_codes is not nullstring enable(ROW_BASED)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Quality Regional Information Properties|derived_product_codes" is_enabled="true" order_no="0">
+		<alias name="Attribute" value="derived_product_codes"/>
+		<alias name="Query" value="[0]dql:select derived_product_codes from cd_product_info where product_code = '$value(product_code)' and derived_product_codes is not nullstring enable(ROW_BASED)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Quality Regional Information Properties|product_aliases" is_enabled="true" order_no="0">
+		<alias name="Attribute" value="product_aliases"/>
+		<alias name="Query" value="[0]dql:select product_aliases from cd_product_info where product_code = '$value(product_code)' and product_aliases is not nullstring enable(ROW_BASED)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Quality Regional Information Properties|product_compound_id.product_chemical_names.product_generic_name." is_enabled="true" order_no="0">
+		<alias name="Attribute" value="product_compound_id.product_chemical_names.product_generic_name."/>
+		<alias name="Query" value="[0]dql:select product_compound_id,product_chemical_names,product_generic_name from cd_product_info where product_code = '$value(product_code)' and ( product_compound_id is not nullstring or product_chemical_names is not nullstring or product_generic_name is not nullstring ) ORDER BY 1,2,3 enable (ROW_BASED)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Quality Regional Information Properties|product_trade_name.product_trade_country." is_enabled="true" order_no="0">
+		<alias name="Attribute" value="product_trade_name.product_trade_country."/>
+		<alias name="Query" value="[0]dql:select product_trade_name,product_trade_country from cd_product_info where product_code = '$value(product_code)' and (product_trade_name is not nullstring) ORDER BY 1,2 enable (ROW_BASED)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Quality Regional Information Properties|referenced_product_codes" is_enabled="true" order_no="0">
+		<alias name="Attribute" value="referenced_product_codes"/>
+		<alias name="Query" value="[0]dql:select referenced_product_codes from cd_product_info where product_code = '$value(product_code)' and referenced_product_codes is not nullstring enable(ROW_BASED)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Regulatory Ad Promo Correspondence Documents Properties|derived_product_codes" is_enabled="true" order_no="0">
+		<alias name="Attribute" value="derived_product_codes"/>
+		<alias name="Query" value="[0]dql:select derived_product_codes from cd_product_info where product_code = '$value(product_code)' and derived_product_codes is not nullstring enable(ROW_BASED)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Regulatory Ad Promo Correspondence Documents Properties|product_aliases" is_enabled="true" order_no="0">
+		<alias name="Attribute" value="product_aliases"/>
+		<alias name="Query" value="[0]dql:select product_aliases from cd_product_info where product_code = '$value(product_code)' and product_aliases is not nullstring enable(ROW_BASED)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Regulatory Ad Promo Correspondence Documents Properties|referenced_product_codes" is_enabled="true" order_no="0">
+		<alias name="Attribute" value="referenced_product_codes"/>
+		<alias name="Query" value="[0]dql:select referenced_product_codes from cd_product_info where product_code = '$value(product_code)' and referenced_product_codes is not nullstring enable(ROW_BASED)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Regulatory Ad Promo Material Documents Properties|derived_product_codes" is_enabled="true" order_no="0">
+		<alias name="Attribute" value="derived_product_codes"/>
+		<alias name="Query" value="[0]dql:select derived_product_codes from cd_product_info where product_code = '$value(product_code)' and derived_product_codes is not nullstring enable(ROW_BASED)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Regulatory Ad Promo Material Documents Properties|product_aliases" is_enabled="true" order_no="0">
+		<alias name="Attribute" value="product_aliases"/>
+		<alias name="Query" value="[0]dql:select product_aliases from cd_product_info where product_code = '$value(product_code)' and product_aliases is not nullstring enable(ROW_BASED)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Regulatory Ad Promo Material Documents Properties|referenced_product_codes" is_enabled="true" order_no="0">
+		<alias name="Attribute" value="referenced_product_codes"/>
+		<alias name="Query" value="[0]dql:select referenced_product_codes from cd_product_info where product_code = '$value(product_code)' and referenced_product_codes is not nullstring enable(ROW_BASED)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Regulatory Application Labeling Documents Properties|derived_product_codes" is_enabled="true" order_no="0">
+		<alias name="Attribute" value="derived_product_codes"/>
+		<alias name="Query" value="[0]dql:select derived_product_codes from cd_product_info where product_code = '$value(product_code)' and derived_product_codes is not nullstring enable(ROW_BASED)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Regulatory Application Labeling Documents Properties|product_aliases" is_enabled="true" order_no="0">
+		<alias name="Attribute" value="product_aliases"/>
+		<alias name="Query" value="[0]dql:select product_aliases from cd_product_info where product_code = '$value(product_code)' and product_aliases is not nullstring enable(ROW_BASED)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Regulatory Application Labeling Documents Properties|referenced_product_codes" is_enabled="true" order_no="0">
+		<alias name="Attribute" value="referenced_product_codes"/>
+		<alias name="Query" value="[0]dql:select referenced_product_codes from cd_product_info where product_code = '$value(product_code)' and referenced_product_codes is not nullstring enable(ROW_BASED)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Regulatory Core Labeling Documents Properties|derived_product_codes" is_enabled="true" order_no="0">
+		<alias name="Attribute" value="derived_product_codes"/>
+		<alias name="Query" value="[0]dql:select derived_product_codes from cd_product_info where product_code = '$value(product_code)' and derived_product_codes is not nullstring enable(ROW_BASED)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Regulatory Core Labeling Documents Properties|product_aliases" is_enabled="true" order_no="0">
+		<alias name="Attribute" value="product_aliases"/>
+		<alias name="Query" value="[0]dql:select product_aliases from cd_product_info where product_code = '$value(product_code)' and product_aliases is not nullstring enable(ROW_BASED)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Regulatory Core Labeling Documents Properties|referenced_product_codes" is_enabled="true" order_no="0">
+		<alias name="Attribute" value="referenced_product_codes"/>
+		<alias name="Query" value="[0]dql:select referenced_product_codes from cd_product_info where product_code = '$value(product_code)' and referenced_product_codes is not nullstring enable(ROW_BASED)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Regulatory Correspondence : Agency Related Properties|application_forms.product_compound_id.product_chemical_names.inn_names.product_generic_name." is_enabled="true" order_no="0">
+		<alias name="Attribute" value="application_forms.product_compound_id.product_chemical_names.inn_names.product_generic_name."/>
+		<alias name="Query" value="[0]dql:select application_description as application_forms,product_compound_id,product_chemical_names,inn_names,product_generic_name from cd_reg_admin_info where application_description in ($repeatingvalue(application_descriptions)) and (product_compound_id is not nullstring or product_chemical_names is not nullstring or inn_names is not nullstring or product_generic_name is not nullstring) order by 1,2,3,4,5 enable (ROW_BASED)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Regulatory Correspondence : Agency Related Properties|derived_product_codes" is_enabled="true" order_no="0">
+		<alias name="Attribute" value="derived_product_codes"/>
+		<alias name="Query" value="[0]dql:select distinct derived_product_codes from cd_product_info where (product_code = '$value(product_code)' or product_code in ($repeatingvalue(product_codes))) and derived_product_codes is not nullstring enable(ROW_BASED)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Regulatory Correspondence : Agency Related Properties|indication_applications.indication." is_enabled="true" order_no="0">
+		<alias name="Attribute" value="indication_applications.indication."/>
+		<alias name="Query" value="[0]dql:select application_description as indication_applications,indication from cd_reg_admin_info where application_description in ($repeatingvalue(application_descriptions)) and indication is not nullstring  order by 1 enable (ROW_BASED)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Regulatory Correspondence : Agency Related Properties|product_aliases" is_enabled="true" order_no="0">
+		<alias name="Attribute" value="product_aliases"/>
+		<alias name="Query" value="[0]dql:select distinct product_aliases from cd_product_info where (product_code = '$value(product_code)' or product_code in ($repeatingvalue(product_codes))) and product_aliases is not nullstring enable(ROW_BASED)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Regulatory Correspondence : Agency Related Properties|referenced_product_codes" is_enabled="true" order_no="0">
+		<alias name="Attribute" value="referenced_product_codes"/>
+		<alias name="Query" value="[0]dql:select distinct referenced_product_codes from cd_product_info where (product_code = '$value(product_code)' or product_code in ($repeatingvalue(product_codes))) and referenced_product_codes is not nullstring enable(ROW_BASED)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Regulatory Correspondence : Agency Related Properties|trade_name_applications.product_trade_name.product_trade_country." is_enabled="true" order_no="0">
+		<alias name="Attribute" value="trade_name_applications.product_trade_name.product_trade_country."/>
+		<alias name="Query" value="[0]dql:select application_description as trade_name_applications, product_trade_name, product_trade_country from cd_reg_admin_info where application_description in ($repeatingvalue(application_descriptions)) and product_trade_name is not nullstring  order by 1,2,3 enable (ROW_BASED)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Regulatory Correspondence : Internal Properties|application_forms.product_compound_id.product_chemical_names.inn_names.product_generic_name." is_enabled="true" order_no="0">
+		<alias name="Attribute" value="application_forms.product_compound_id.product_chemical_names.inn_names.product_generic_name."/>
+		<alias name="Query" value="[0]dql:select application_description as application_forms,product_compound_id,product_chemical_names,inn_names,product_generic_name from cd_reg_admin_info where application_description in ($repeatingvalue(application_descriptions)) and (product_compound_id is not nullstring or product_chemical_names is not nullstring or inn_names is not nullstring or product_generic_name is not nullstring) order by 1,2,3,4,5 enable (ROW_BASED)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Regulatory Correspondence : Internal Properties|derived_product_codes" is_enabled="true" order_no="0">
+		<alias name="Attribute" value="derived_product_codes"/>
+		<alias name="Query" value="[0]dql:select distinct derived_product_codes from cd_product_info where (product_code = '$value(product_code)' or product_code in ($repeatingvalue(product_codes))) and derived_product_codes is not nullstring enable(ROW_BASED)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Regulatory Correspondence : Internal Properties|indication_applications.indication." is_enabled="true" order_no="0">
+		<alias name="Attribute" value="indication_applications.indication."/>
+		<alias name="Query" value="[0]dql:select application_description as indication_applications,indication from cd_reg_admin_info where application_description in ($repeatingvalue(application_descriptions)) and indication is not nullstring  order by 1 enable (ROW_BASED)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Regulatory Correspondence : Internal Properties|product_aliases" is_enabled="true" order_no="0">
+		<alias name="Attribute" value="product_aliases"/>
+		<alias name="Query" value="[0]dql:select distinct product_aliases from cd_product_info where (product_code = '$value(product_code)' or product_code in ($repeatingvalue(product_codes))) and product_aliases is not nullstring enable(ROW_BASED)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Regulatory Correspondence : Internal Properties|referenced_product_codes" is_enabled="true" order_no="0">
+		<alias name="Attribute" value="referenced_product_codes"/>
+		<alias name="Query" value="[0]dql:select distinct referenced_product_codes from cd_product_info where (product_code = '$value(product_code)' or product_code in ($repeatingvalue(product_codes))) and referenced_product_codes is not nullstring enable(ROW_BASED)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Regulatory Correspondence : Internal Properties|trade_name_applications.product_trade_name.product_trade_country." is_enabled="true" order_no="0">
+		<alias name="Attribute" value="trade_name_applications.product_trade_name.product_trade_country."/>
+		<alias name="Query" value="[0]dql:select application_description as trade_name_applications, product_trade_name, product_trade_country from cd_reg_admin_info where application_description in ($repeatingvalue(application_descriptions)) and product_trade_name is not nullstring  order by 1,2,3 enable (ROW_BASED)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Regulatory Correspondence : Submission Receipt Confirmation Properties|derived_product_codes" is_enabled="true" order_no="0">
+		<alias name="Attribute" value="derived_product_codes"/>
+		<alias name="Query" value="[0]dql:select derived_product_codes from cd_product_info where product_code = '$value(product_code)' and derived_product_codes is not nullstring enable(ROW_BASED)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Regulatory Correspondence : Submission Receipt Confirmation Properties|drug_substance_name" is_enabled="true" order_no="0">
+		<alias name="Attribute" value="drug_substance_name"/>
+		<alias name="Query" value="[0]dql:select drug_substance_name as trade_name_applications, product_trade_name, product_trade_country from cd_reg_admin_info where application_description = $quotedvalue(application_description) and drug_substance_name is not nullstring order by 1 enable (ROW_BASED)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Regulatory Correspondence : Submission Receipt Confirmation Properties|indication" is_enabled="true" order_no="0">
+		<alias name="Attribute" value="indication"/>
+		<alias name="Query" value="[0]dql:select indication as trade_name_applications, product_trade_name, product_trade_country from cd_reg_admin_info where application_description = $quotedvalue(application_description) and indication is not nullstring order by 1 enable (ROW_BASED)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Regulatory Correspondence : Submission Receipt Confirmation Properties|product_aliases" is_enabled="true" order_no="0">
+		<alias name="Attribute" value="product_aliases"/>
+		<alias name="Query" value="[0]dql:select product_aliases from cd_product_info where product_code = '$value(product_code)' and product_aliases is not nullstring enable(ROW_BASED)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Regulatory Correspondence : Submission Receipt Confirmation Properties|product_generic_name" is_enabled="true" order_no="0">
+		<alias name="Attribute" value="product_generic_name"/>
+		<alias name="Query" value="[0]dql:select product_generic_name as trade_name_applications, product_trade_name, product_trade_country from cd_reg_admin_info where application_description = $quotedvalue(application_description) and product_generic_name is not nullstring order by 1 enable (ROW_BASED)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Regulatory Correspondence : Submission Receipt Confirmation Properties|product_trade_name" is_enabled="true" order_no="0">
+		<alias name="Attribute" value="product_trade_name"/>
+		<alias name="Query" value="[0]dql:select product_trade_name as trade_name_applications, product_trade_name, product_trade_country from cd_reg_admin_info where application_description = $quotedvalue(application_description) and product_trade_name is not nullstring order by 1 enable (ROW_BASED)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Regulatory Correspondence : Submission Receipt Confirmation Properties|referenced_product_codes" is_enabled="true" order_no="0">
+		<alias name="Attribute" value="referenced_product_codes"/>
+		<alias name="Query" value="[0]dql:select referenced_product_codes from cd_product_info where product_code = '$value(product_code)' and referenced_product_codes is not nullstring enable(ROW_BASED)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Regulatory-Admin Properties|application_forms.product_compound_id.product_chemical_names.inn_names.product_generic_name." is_enabled="true" order_no="0">
+		<alias name="Attribute" value="application_forms.product_compound_id.product_chemical_names.inn_names.product_generic_name."/>
+		<alias name="Query" value="[0]dql:select application_description as application_forms,product_compound_id,product_chemical_names,inn_names,product_generic_name from cd_reg_admin_info where application_description in ($repeatingvalue(application_descriptions)) and (product_compound_id is not nullstring or product_chemical_names is not nullstring or inn_names is not nullstring or product_generic_name is not nullstring) order by 1,2,3,4,5 enable (ROW_BASED)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Regulatory-Admin Properties|derived_product_codes" is_enabled="true" order_no="0">
+		<alias name="Attribute" value="derived_product_codes"/>
+		<alias name="Query" value="[0]dql:select derived_product_codes from cd_product_info where product_code = '$value(product_code)' and derived_product_codes is not nullstring enable(ROW_BASED)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Regulatory-Admin Properties|product_aliases" is_enabled="true" order_no="0">
+		<alias name="Attribute" value="product_aliases"/>
+		<alias name="Query" value="[0]dql:select product_aliases from cd_product_info where product_code = '$value(product_code)' and product_aliases is not nullstring enable(ROW_BASED)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Regulatory-Admin Properties|referenced_product_codes" is_enabled="true" order_no="0">
+		<alias name="Attribute" value="referenced_product_codes"/>
+		<alias name="Query" value="[0]dql:select referenced_product_codes from cd_product_info where product_code = '$value(product_code)' and referenced_product_codes is not nullstring enable(ROW_BASED)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Regulatory-Admin Properties|trade_name_applications.product_trade_name.product_trade_country." is_enabled="true" order_no="0">
+		<alias name="Attribute" value="trade_name_applications.product_trade_name.product_trade_country."/>
+		<alias name="Query" value="[0]dql:select application_description as trade_name_applications, product_trade_name, product_trade_country from cd_reg_admin_info where application_description in ($repeatingvalue(application_descriptions)) and product_trade_name is not nullstring  order by 1,2,3 enable (ROW_BASED)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Safety Documents Properties|derived_product_codes" is_enabled="true" order_no="0">
+		<alias name="Attribute" value="derived_product_codes"/>
+		<alias name="Query" value="[0]dql:select derived_product_codes from cd_product_info where product_code = '$value(product_code)' and derived_product_codes is not nullstring enable(ROW_BASED)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Safety Documents Properties|product_aliases" is_enabled="true" order_no="0">
+		<alias name="Attribute" value="product_aliases"/>
+		<alias name="Query" value="[0]dql:select product_aliases from cd_product_info where product_code = '$value(product_code)' and product_aliases is not nullstring enable(ROW_BASED)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Safety Documents Properties|referenced_product_codes" is_enabled="true" order_no="0">
+		<alias name="Attribute" value="referenced_product_codes"/>
+		<alias name="Query" value="[0]dql:select referenced_product_codes from cd_product_info where product_code = '$value(product_code)' and referenced_product_codes is not nullstring enable(ROW_BASED)"/>
+	</d2_dictionary_value>
+</d2_dictionary>

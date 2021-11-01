@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_dictionary object_name="Object Type to Taxonomy mapping" title="" lock_config="false" parents_config="" application_names="OpenText Life Sciences Research and Development Solution¬OpenText Life Sciences Quality and Manufacturing Solution¬OpenText Life Sciences eTMF Solution¬OpenText Life Sciences Submission Storage and Viewing" security_group="admingroup" search_group="admingroup" version="2" is_versioned="false" manual_order="false" create_view_option="false" is_dql="false" is_dql_cache="false" dql="" label_en="Object Type to Taxonomy mapping">
+	<d2_dictionary_value object_name="cd_app_reg_labeling_doc" is_enabled="true" order_no="0">
+		<alias name="value" value="Regulatory Labeling Regional Artifacts"/>
+		<alias name="path" value="$value(artifact_name)|$value(region)"/>
+		<alias name="is dictionary" value="Y"/>
+		<alias name="secondaryValue" value=""/>
+		<alias name="secondaryKey" value=""/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="cd_clinical" is_enabled="true" order_no="0">
+		<alias name="value" value="Clinical Artifact Names Inventory"/>
+		<alias name="path" value="$value(artifact_name)|$value(subgroup)"/>
+		<alias name="is dictionary" value="Y"/>
+		<alias name="secondaryValue" value=""/>
+		<alias name="secondaryKey" value=""/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="cd_clinical_tmf_doc" is_enabled="true" order_no="0">
+		<alias name="value" value="$lookup($value(dia_tmf_ref_model_version),&quot;TMF Models&quot;,&quot;Dictionary&quot;)"/>
+		<alias name="path" value="$value(artifact_name)"/>
+		<alias name="is dictionary" value="Y"/>
+		<alias name="secondaryValue" value=""/>
+		<alias name="secondaryKey" value=""/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="cd_core_reg_labeling_doc" is_enabled="true" order_no="0">
+		<alias name="value" value="Regulatory-Labeling Artifacts"/>
+		<alias name="path" value="$value(artifact_name)"/>
+		<alias name="is dictionary" value="Y"/>
+		<alias name="secondaryValue" value=""/>
+		<alias name="secondaryKey" value=""/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="cd_md_clinical" is_enabled="true" order_no="0">
+		<alias name="value" value="Medical Device Clinical Inventory"/>
+		<alias name="path" value="$value(artifact_name)"/>
+		<alias name="is dictionary" value="Y"/>
+		<alias name="secondaryValue" value=""/>
+		<alias name="secondaryKey" value=""/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="cd_md_non_clinical" is_enabled="true" order_no="0">
+		<alias name="value" value="Medical Device Non Clinical Inventory"/>
+		<alias name="path" value="$value(artifact_name)|$value(subgroup)"/>
+		<alias name="is dictionary" value="Y"/>
+		<alias name="secondaryValue" value=""/>
+		<alias name="secondaryKey" value=""/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="cd_md_regulatory" is_enabled="true" order_no="0">
+		<alias name="value" value="Medical Device Regulatory Inventory"/>
+		<alias name="path" value="$value(artifact_name)"/>
+		<alias name="is dictionary" value="Y"/>
+		<alias name="secondaryValue" value=""/>
+		<alias name="secondaryKey" value=""/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="cd_med_info" is_enabled="true" order_no="0">
+		<alias name="value" value="Med Info Classification"/>
+		<alias name="path" value="/$value(primary_group)"/>
+		<alias name="is dictionary" value="N"/>
+		<alias name="secondaryValue" value=""/>
+		<alias name="secondaryKey" value=""/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="cd_non_clinical" is_enabled="true" order_no="0">
+		<alias name="value" value="Non-Clinical Artifacts"/>
+		<alias name="path" value="$value(artifact_name)|$value(subgroup)"/>
+		<alias name="is dictionary" value="Y"/>
+		<alias name="secondaryValue" value=""/>
+		<alias name="secondaryKey" value=""/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="cd_quality" is_enabled="true" order_no="0">
+		<alias name="value" value="Quality Classification by Group"/>
+		<alias name="path" value="$value(primary_group)|$value(artifact_name)"/>
+		<alias name="is dictionary" value="Y"/>
+		<alias name="secondaryValue" value=""/>
+		<alias name="secondaryKey" value=""/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="cd_quality_gmp" is_enabled="true" order_no="0">
+		<alias name="value" value="GMP Artifacts by Group"/>
+		<alias name="path" value="/$value(primary_group)/$value(subgroup)/$value(artifact_name)"/>
+		<alias name="is dictionary" value="N"/>
+		<alias name="secondaryValue" value=""/>
+		<alias name="secondaryKey" value=""/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="cd_quality_gmp_approved" is_enabled="true" order_no="0">
+		<alias name="value" value="GMP Artifacts by Group"/>
+		<alias name="path" value="/$value(primary_group)/$value(subgroup)/$value(artifact_name)"/>
+		<alias name="is dictionary" value="N"/>
+		<alias name="secondaryValue" value=""/>
+		<alias name="secondaryKey" value=""/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="cd_quality_gmp_effective" is_enabled="true" order_no="0">
+		<alias name="value" value="GMP Artifacts by Group"/>
+		<alias name="path" value="/$value(primary_group)/$value(subgroup)/$value(artifact_name)"/>
+		<alias name="is dictionary" value="N"/>
+		<alias name="secondaryValue" value=""/>
+		<alias name="secondaryKey" value=""/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="cd_reg_ad_promo" is_enabled="true" order_no="0">
+		<alias name="value" value="Promotional Materials Artifact"/>
+		<alias name="path" value="$value(artifact_name)"/>
+		<alias name="is dictionary" value="Y"/>
+		<alias name="secondaryValue" value=""/>
+		<alias name="secondaryKey" value=""/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="cd_reg_admin" is_enabled="true" order_no="0">
+		<alias name="value" value="Regulatory-Admin Artifact"/>
+		<alias name="path" value="$value(artifact_name)|$value(region)"/>
+		<alias name="is dictionary" value="Y"/>
+		<alias name="secondaryValue" value=""/>
+		<alias name="secondaryKey" value=""/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="cd_reg_correspondence" is_enabled="true" order_no="0">
+		<alias name="value" value="Regulatory Correspondence Classification by Groups and Artifacts"/>
+		<alias name="path" value="$value(primary_group)|$value(artifact_name)"/>
+		<alias name="is dictionary" value="Y"/>
+		<alias name="secondaryValue" value=""/>
+		<alias name="secondaryKey" value=""/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="cd_safety" is_enabled="true" order_no="0">
+		<alias name="value" value="Safety Artifact"/>
+		<alias name="path" value="$value(artifact_name)|$value(primary_group)"/>
+		<alias name="is dictionary" value="Y"/>
+		<alias name="secondaryValue" value=""/>
+		<alias name="secondaryKey" value=""/>
+	</d2_dictionary_value>
+</d2_dictionary>

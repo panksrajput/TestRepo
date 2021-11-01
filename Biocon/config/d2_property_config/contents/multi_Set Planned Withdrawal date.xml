@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dialog id="PropertiesDialog" buttons_right="false" focus="" height="400" initial_invalid="false" resizable="true" signoff_creation="false" signoff_edit="false" signoff_import="false" signoff_intention_dictionary="" signoff_intention_required="false" width="400">
+	<content>
+		<fieldset label_en="Set Planned Withdrawal Date">
+			<date id="planned_withdraw_date" advancedView_enabled="false" advancedView_required="false" condition_enabled_create="false" condition_enabled_import="false" condition_validation="getValue(planned_withdraw_date).isGreaterOrEqualsThan('$TODAY')" validation_message_en="Please select future date for 'Planned Withdraw date'."/>
+			<memo id="withdraw_reason" advancedView_enabled="false" advancedView_visible="false" condition_required_edit="true"/>
+			<memo id="comments" advancedView_enabled="false" advancedView_required="false" advancedView_visible="false" condition_enabled="((getValue(a_status).equals('Effective'))||(getValue(a_status).equals('Release Pending'))||(getValue(a_status).equals('#####')))" condition_required="((getValue(a_status).equals('Effective'))||(getValue(a_status).equals('Release Pending'))||(getValue(a_status).equals('#####')))" condition_required_edit="true" condition_visible="((getValue(a_status).equals('Effective'))||(getValue(a_status).equals('Release Pending'))||(getValue(a_status).equals('#####')))" label_en="Reason For Change"/>
+			<label id="a_status" condition_visible_create="false" condition_visible_edit="false" condition_visible_import="false"/>
+		</fieldset>
+	</content>
+	<buttons>
+		<button id="buttonOk" action="validDialog()"/>
+		<button id="buttonCancel" action="cancelDialog()"/>
+	</buttons>
+</dialog>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_mailing_config>
+	<add_attachment>false</add_attachment>
+	<rendition_formats/>
+	<list-recipient>
+		<recipient type="attribute">wf_authors</recipient>
+		<recipient type="attribute">cr_requestors</recipient>
+	</list-recipient>
+	<list-subject>
+		<subject_en>Change Request &quot;$value(object_name)&quot; has been returned to Draft</subject_en>
+	</list-subject>
+	<list-object>
+		<object_en>You are listed as a requestor on Change Request  &quot;$value(object_name)&quot; that has been returned to draft.</object_en>
+	</list-object>
+</d2_mailing_config>

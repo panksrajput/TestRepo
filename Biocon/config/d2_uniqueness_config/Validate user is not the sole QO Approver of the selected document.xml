@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_uniqueness_config new_format="true">
+	<object_name value="Validate user is not the sole QO Approver of the selected document"/>
+	<title value="Verify if the user is not only the sole QO Approver of the selected document."/>
+	<subject value=""/>
+	<authors/>
+	<keywords/>
+	<a_status value=""/>
+	<a_content_type value=""/>
+	<log_entry value=""/>
+	<language_code value=""/>
+	<module_type value="d2_uniqueness_config"/>
+	<application_names>
+		<repeating value="OpenText Life Sciences Quality and Manufacturing Solution"/>
+	</application_names>
+	<lock_config value="F"/>
+	<parents_config/>
+	<warning_message>
+		<repeating value="This workflow contains documents where one or more prior approval steps contain only authors.  Authors cannot be the sole approvers.  Reject the task so that approvers can be updated."/>
+	</warning_message>
+	<warning_locale>
+		<repeating value="en"/>
+	</warning_locale>
+	<warning_position>
+		<repeating value="0"/>
+	</warning_position>
+	<qualification>
+		<repeating value="dm_dbo.single_result_row_view where not exists (select * from cd_controlled_doc where r_object_id = '$value(r_object_id)' and any wf_qo_approvers is not nullstring and any wf_qo_approvers not in (select wf_authors from cd_controlled_doc where r_object_id='$value(r_object_id)' and any wf_authors is not nullstring enable(ROW_BASED)))"/>
+	</qualification>
+</d2_uniqueness_config>

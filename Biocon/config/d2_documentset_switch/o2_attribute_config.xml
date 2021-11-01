@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_documentset_switch object_name="o2_attribute_config">
+	<d2_documentset name="GMP Documents¬GMP Group Directive" config="O2 GMP Template"/>
+	<d2_documentset name="GMP Documents¬GMP Group Drawings" config="O2 GMP Template"/>
+	<d2_documentset name="GMP Documents¬GMP Group Executed Manufacturing" config="O2 GMP Template"/>
+	<d2_documentset name="GMP Documents¬GMP Group Executed Validation" config="O2 GMP Template"/>
+	<d2_documentset name="GMP Documents¬GMP Group Facility Records and Certificates" config="O2 GMP Template"/>
+	<d2_documentset name="GMP Documents¬GMP Group Form" config="O2 GMP Template"/>
+	<d2_documentset name="GMP Documents¬GMP Group Guideline" config="O2 GMP Template"/>
+	<d2_documentset name="GMP Documents¬GMP Group Program" config="O2 GMP Template"/>
+	<d2_documentset name="GMP Documents¬GMP Group Manuals" config="O2 GMP Template CAT2/CAT3"/>
+	<d2_documentset name="GMP Documents¬GMP Group Master Manufacturing" config="O2 GMP Template"/>
+	<d2_documentset name="GMP Documents¬GMP Group Master Validation" config="O2 GMP Template"/>
+	<d2_documentset name="GMP Documents¬GMP Group Method" config="O2 GMP Template"/>
+	<d2_documentset name="GMP Documents¬GMP Group Packaging and Labeling" config="O2 GMP Template"/>
+	<d2_documentset name="GMP Documents¬GMP Group Policy" config="O2 GMP Template"/>
+	<d2_documentset name="GMP Documents¬GMP Group Project Documents" config="O2 GMP Template CAT2/CAT3"/>
+	<d2_documentset name="GMP Documents¬GMP Group Quality Documents" config="O2 GMP Template"/>
+	<d2_documentset name="GMP Documents¬GMP Group Quality Manual" config="O2 GMP Template"/>
+	<d2_documentset name="GMP Documents¬GMP Group Records and Certificates" config="O2 GMP Template"/>
+	<d2_documentset name="GMP Documents¬GMP Group SOP" config="O2 GMP Template"/>
+	<d2_documentset name="GMP Documents¬GMP Group Specification" config="O2 GMP Template"/>
+	<d2_documentset name="GMP Documents¬GMP Group Training" config="O2 GMP Template CAT2/CAT3"/>
+	<d2_documentset name="GMP Documents¬GMP Group Work Instruction" config="O2 GMP Template"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group External Audit" config="O2 GMP Template CAT2/CAT3"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Internal Audit" config="O2 GMP Template CAT2/CAT3"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Investigations" config="O2 GMP Template CAT2/CAT3"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Quality Events" config="O2 GMP Template CAT2/CAT3"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Quality Management" config="O2 GMP Template CAT2/CAT3"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Quality Records" config="O2 GMP Template CAT2/CAT3"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Quality Risk Documentation" config="O2 GMP Template CAT2/CAT3"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Recalls" config="O2 GMP Template CAT2/CAT3"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Site Master File" config="O2 GMP Template CAT2/CAT3"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Supplier Audit" config="O2 GMP Template CAT2/CAT3"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Protocol" config="O2 GMP Template CAT2/CAT3"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Reports" config="O2 GMP Template CAT2/CAT3"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Requirements" config="O2 GMP Template CAT2/CAT3"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Reviews" config="O2 GMP Template CAT2/CAT3"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Plans" config="O2 GMP Template CAT2/CAT3"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Checklists" config="O2 GMP Template CAT2/CAT3"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Matrix" config="O2 GMP Template CAT2/CAT3"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Risk Documentation" config="O2 GMP Template CAT2/CAT3"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group DHF" config="O2 GMP Template CAT2/CAT3"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Bill Of Material" config="O2 GMP Template"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group DMR" config="O2 GMP Template"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Labeling" config="O2 GMP Template"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Drawings" config="O2 GMP Template"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Production Document" config="O2 GMP Template"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Customer Documents" config="O2 GMP Template"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Service Documents" config="O2 GMP Template"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Software Release" config="O2 GMP Template CAT2/CAT3"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Preliminary Bill Of Material" config="O2 GMP Template CAT2/CAT3"/>
+	<d2_documentset name="Med Device Documents¬Med Device DMR Group Specifications" config="O2 GMP Template"/>
+	<d2_documentset name="Med Device Documents¬Med Device DHF Group Specifications" config="O2 GMP Template CAT2/CAT3"/>
+	<d2_documentset name="Med Device Documents¬Med Device Subgroup Parent" config="O2 GMP Template CAT2/CAT3"/>
+	<d2_documentset name="Med Device Documents¬Med Device DMR Subgroup Index" config="O2 GMP Template"/>
+	<d2_documentset name="Med Device Documents¬Med Device DHF Subgroup Index" config="O2 GMP Template CAT2/CAT3"/>
+	<d2_documentset name="Med Device Documents¬Med Device Subgroup Section" config="O2 GMP Template CAT2/CAT3"/>
+	<d2_documentset name="Change Request¬Change Requests" config="O2 GMP Template"/>
+	<switch_default config=""/>
+</d2_documentset_switch>

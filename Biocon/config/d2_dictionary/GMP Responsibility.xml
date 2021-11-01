@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_dictionary object_name="GMP Responsibility" title="Dictionary for GMP Responsibility" lock_config="false" parents_config="" application_names="OpenText Life Sciences Quality and Manufacturing Solution¬OpenText Life Sciences Medical Device Solution¬OpenText Life Sciences Medical Device for Quality and Manufacturing Solution" security_group="admingroup" search_group="" version="2" is_versioned="false" manual_order="false" create_view_option="false" is_dql="false" is_dql_cache="false" dql="" label_en="GMP Responsibility">
+	<d2_dictionary_value object_name="Clinical Manager" is_enabled="true" order_no="0">
+		<locale name="en" value="Clinical Manager"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Director Regulator Affairs" is_enabled="true" order_no="0">
+		<locale name="en" value="Director Regulator Affairs"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Facilities Manager" is_enabled="true" order_no="0">
+		<locale name="en" value="Facilities Manager"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Lead Auditor" is_enabled="true" order_no="0">
+		<locale name="en" value="Lead Auditor"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Packaging Manager" is_enabled="true" order_no="0">
+		<locale name="en" value="Packaging Manager"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Production Manager" is_enabled="true" order_no="0">
+		<locale name="en" value="Production Manager"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="QA Director" is_enabled="true" order_no="0">
+		<locale name="en" value="QA Director"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="QC Manager" is_enabled="true" order_no="0">
+		<locale name="en" value="QC Manager"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Warehouse Manager" is_enabled="true" order_no="0">
+		<locale name="en" value="Warehouse Manager"/>
+	</d2_dictionary_value>
+</d2_dictionary>

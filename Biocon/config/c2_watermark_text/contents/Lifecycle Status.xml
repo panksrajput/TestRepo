@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<textWatermark>
+	<textValue>$value(a_status.Domain Status DQL Dictionary.display_value)</textValue>
+	<fontName>helvetica-bold</fontName>
+	<fontColor>#FF0000</fontColor>
+	<fontSize>60</fontSize>
+	<rotation>54.7</rotation>
+	<horizontalAlign>CENTER</horizontalAlign>
+	<verticalAlign>CENTER</verticalAlign>
+	<opacity>35</opacity>
+</textWatermark>

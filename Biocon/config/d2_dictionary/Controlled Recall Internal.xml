@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_dictionary object_name="Controlled Recall Internal" title="" lock_config="false" parents_config="" application_names="OpenText Life Sciences eTMF Solution¬OpenText Life Sciences Medical Device for Quality and Manufacturing Solution¬OpenText Life Sciences Medical Device for Research and Development Solution¬OpenText Life Sciences Medical Device Solution¬OpenText Life Sciences Quality and Manufacturing Solution¬OpenText Life Sciences Research and Development Solution¬OpenText Life Sciences Submission Storage and Viewing" security_group="admingroup" search_group="" version="2" is_versioned="false" manual_order="false" create_view_option="true" is_dql="false" is_dql_cache="false" dql="" label_en="">
+	<d2_dictionary_value object_name="Recipient Performs Recall" is_enabled="true" order_no="0">
+		<alias name="lookup value" value="1 - Recipient Performs Recall"/>
+		<alias name="order by" value="1"/>
+		<alias name="status" value="In Progress"/>
+		<alias name="task" value="Recipient Performs Recall"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Requestor Confirms Completion" is_enabled="true" order_no="0">
+		<alias name="lookup value" value="2 - Requestor Confirms Recall Completion"/>
+		<alias name="order by" value="2"/>
+		<alias name="status" value="In Progress"/>
+		<alias name="task" value="Requestor Confirms Recall Completion"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Update Recall Status" is_enabled="true" order_no="0">
+		<alias name="lookup value" value="3 - Update Recall Status"/>
+		<alias name="order by" value="3"/>
+		<alias name="status" value="In Progress"/>
+		<alias name="task" value="Update Recall Status"/>
+	</d2_dictionary_value>
+</d2_dictionary>

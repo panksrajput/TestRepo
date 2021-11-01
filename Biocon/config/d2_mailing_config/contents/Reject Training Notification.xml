@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_mailing_config>
+	<add_attachment>false</add_attachment>
+	<rendition_formats/>
+	<list-recipient>
+		<recipient type="attribute">keywords</recipient>
+	</list-recipient>
+	<list-subject>
+		<subject_en>Training rejected by '$value(user_name)'</subject_en>
+	</list-subject>
+	<list-object>
+		<object_en>User '$value(user_name)' rejected the training for document &quot;$value(document_name) - $value(document_title)&quot;. Please confirm the rejected training task by exempting the user or send the training task back to the user.</object_en>
+	</list-object>
+</d2_mailing_config>

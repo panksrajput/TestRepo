@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_mailing_config>
+	<add_attachment>false</add_attachment>
+	<rendition_formats/>
+	<list-recipient>
+		<recipient type="attribute">requestor</recipient>
+	</list-recipient>
+	<list-subject>
+		<subject_en>Print Request &quot;$value(object_name)&quot; has been rejected.</subject_en>
+	</list-subject>
+	<list-object>
+		<object_en>This email is to notify you that Issued Print request &quot;$value(object_name)&quot; created on $value(r_creation_date) has been rejected for the following reason: $value(rejection_reason).
+If an issued print is still required, request a new print by using the Print widget.</object_en>
+	</list-object>
+</d2_mailing_config>

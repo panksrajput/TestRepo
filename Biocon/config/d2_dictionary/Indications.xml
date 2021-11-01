@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_dictionary object_name="Indications" title="List of possible indications" lock_config="false" parents_config="" application_names="OpenText Life Sciences Submission Storage and Viewing¬OpenText Life Sciences Research and Development Solution¬OpenText Life Sciences Quality and Manufacturing Solution¬OpenText Life Sciences eTMF Solution¬Custom Configurations" security_group="cd_clinical_doc_coordinators" search_group="cd_clinical_doc_coordinators" version="2" is_versioned="false" manual_order="false" create_view_option="false" is_dql="false" is_dql_cache="false" dql="" label_en="Indications">
+	<d2_dictionary_value object_name="Angina" is_enabled="true" order_no="0"/>
+	<d2_dictionary_value object_name="Asthma" is_enabled="true" order_no="0"/>
+	<d2_dictionary_value object_name="Glaucoma" is_enabled="true" order_no="0"/>
+	<d2_dictionary_value object_name="Hypertension" is_enabled="true" order_no="0"/>
+	<d2_dictionary_value object_name="Methanol Poisoning" is_enabled="true" order_no="0"/>
+	<d2_dictionary_value object_name="Migraine Headaches" is_enabled="true" order_no="0"/>
+	<d2_dictionary_value object_name="Myocardial Infarction" is_enabled="true" order_no="0"/>
+	<d2_dictionary_value object_name="Pain" is_enabled="true" order_no="0"/>
+	<d2_dictionary_value object_name="Postmenopausal Osteoporosis" is_enabled="true" order_no="0"/>
+	<d2_dictionary_value object_name="Rheumatoid Arthritis" is_enabled="true" order_no="0"/>
+	<d2_dictionary_value object_name="Seasonal Allergic Rhinitis" is_enabled="true" order_no="0"/>
+	<d2_dictionary_value object_name="Stroke" is_enabled="true" order_no="0"/>
+	<d2_dictionary_value object_name="Thrombocythemia" is_enabled="true" order_no="0"/>
+	<d2_dictionary_value object_name="Thrombosis" is_enabled="true" order_no="0"/>
+	<d2_dictionary_value object_name="Type 2 Diabetes" is_enabled="true" order_no="0"/>
+</d2_dictionary>

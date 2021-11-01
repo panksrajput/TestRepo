@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_documentset_switch object_name="d2_filter_config">
+	<d2_documentset name="Life Sciences Managers¬GMP Manager" config="All"/>
+	<d2_documentset name="Life Sciences Managers¬GMP Manager" config="Current or Effective"/>
+	<d2_documentset name="Life Sciences Managers¬Business Administrators" config="All"/>
+	<d2_documentset name="Life Sciences Managers¬Business Administrators" config="Current or Effective"/>
+	<d2_documentset name="Life Sciences Managers¬Controlled Print Managers" config="All"/>
+	<d2_documentset name="Life Sciences Managers¬Controlled Print Managers" config="Current or Effective"/>
+	<d2_documentset name="Life Sciences Coordinators¬GMP Coordinators" config="All"/>
+	<d2_documentset name="Life Sciences Coordinators¬GMP Coordinators" config="Current or Effective"/>
+	<d2_documentset name="Life Sciences Authors¬GMP Authors" config="All"/>
+	<d2_documentset name="Life Sciences Authors¬GMP Authors" config="Current or Effective"/>
+	<d2_documentset name="Life Sciences Reviewers and Approvers¬GMP Reviewers" config="All"/>
+	<d2_documentset name="Life Sciences Reviewers and Approvers¬GMP Reviewers" config="Current or Effective"/>
+	<d2_documentset name="Life Sciences Reviewers and Approvers¬GMP Approvers" config="All"/>
+	<d2_documentset name="Life Sciences Reviewers and Approvers¬GMP Approvers" config="Current or Effective"/>
+	<d2_documentset name="Life Sciences Reviewers and Approvers¬GMP QO Approvers" config="All"/>
+	<d2_documentset name="Life Sciences Reviewers and Approvers¬GMP QO Approvers" config="Current or Effective"/>
+	<d2_documentset name="Life Sciences Readers and Recipients¬GMP Readers" config="Current or Effective"/>
+	<d2_documentset name="GMP Auditors" config="Current or Effective"/>
+	<switch_defaults>
+		<default>Current</default>
+		<default>All</default>
+	</switch_defaults>
+</d2_documentset_switch>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dialog id="PropertiesDialog" auto_smartview_edit_mode="false" buttons_right="false" focus="" height="700" initial_invalid="false" resizable="false" signoff_creation="false" signoff_edit="false" signoff_import="false" signoff_intention_dictionary="" signoff_intention_required="false" width="820">
+	<content>
+		<fieldset advancedView_enabled="false" condition_enabled="(getValue(external_system_attribute).notContains('external'))" label_en="Product Registration Form">
+			<tabs>
+				<tab label_en="Product Info">
+					<text id="product_code" condition_enabled_edit="false" condition_required_create="true" condition_required_edit="true" condition_required_import="true"/>
+					<grid condition_enabled_edit="false">
+						<text id="product_compound_id" cell_width="120"/>
+						<text id="product_chemical_names" cell_width="160"/>
+						<text id="drug_substance_name" cell_width="160" condition_required_create="true" condition_required_edit="true" condition_required_import="true" no_empty_cell="true"/>
+						<text id="inn_names" cell_width="100"/>
+						<text id="product_generic_name" cell_width="100" condition_required_create="true"/>
+					</grid>
+					<grid condition_enabled_edit="false">
+						<text id="product_trade_name" cell_width="300" condition_required_create="true"/>
+						<combo id="product_trade_country" assistance_dictionary="Submission Country" assistance_dictionary_alias="auto" assistance_type="dictionary" cell_width="300"/>
+					</grid>
+					<list id="indication" advancedView_enabled="false" assistance_dictionary="Indications" assistance_dictionary_alias="auto" assistance_type="dictionary" condition_enabled="(getValue(external_system_attribute).notContains('T'))" condition_required_create="true" condition_required_edit="true" condition_required_import="true" label_en="Indication" reinit_attributes="external_system_attribute" rows="4" sorted="true"/>
+					<comment html_content="true" label_en="&lt;table cellspacing=0&gt;&lt;tr&gt;&lt;td&gt;&lt;font color=#646464&gt;This information will be copied automatically to documents related to this product when they are created.&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"/>
+					<comment font_color="#646464" html_content="true" label_en="&lt;table cellspacing=0&gt;&lt;tr&gt;&lt;td&gt;&lt;font color=#646464&gt;Use the ''&lt;strong&gt;Update Product Info...''&lt;/strong&gt; function to modify these settings and apply the changes to existing documents.&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"/>
+					<comment condition_visible_edit="false" html_content="true" label_en="&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;font color=#646464&gt;&lt;strong&gt;Note:&lt;/strong&gt; Every property in the repeating group MUST BE populated with the value. Enter NA for values that are not available at this time.&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"/>
+				</tab>
+				<tab condition_enabled_import="false" label_en="Aliases / References">
+					<comment condition_visible_create="false" html_content="true" label_en="&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;font color=&quot;#646464&quot;&gt;Use the &lt;strong&gt;Register Aliases / Referenced Products&lt;/strong&gt; menu function to modify these settings.&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"/>
+					<combo id="corrections_reqd" advancedView_required="false" advancedView_visible="false" assistance_dql="select '' from dm_dbo.single_result_row_view" assistance_type="dql" condition_required="(getValue(validation_result).notEquals('0'))" condition_visible="(getValue(validation_result).notEquals('0'))" condition_visible_edit="false" condition_visible_import="false" control="true" label_en="Correct or remove invalid aliases"/>
+					<list-editable id="product_aliases" advancedView_enabled="false" condition_enabled_edit="false" condition_enabled_import="false" reinit_attributes="is_validated" rows="5" sorted="true"/>
+					<comment html_content="true" label_en="&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;font color=&quot;#646464&quot;&gt;Product aliases can be used as synonyms for this product in searches.&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"/>
+					<combo id="validation_result" assistance_dql="select count(distinct product_code) from dm_dbo.product_info_view where product_code in ($repeatingvalue(product_aliases)) or (product_aliases in ($repeatingvalue(product_aliases)) and product_code != '$value(product_code)')" assistance_type="dql" autoselect_single="true" condition_enabled_edit="false" condition_enabled_import="false" condition_visible_create="false" condition_visible_edit="false" condition_visible_import="false" control="true"/>
+					<comment advancedView_visible="false" condition_visible="(getValue(validation_result).notEquals('0'))" condition_visible_edit="false" condition_visible_import="false" font_bold="true" font_color="#FF0000" label_en="Invalid product code alias values specified."/>
+					<combo id="other_products" advancedView_visible="false" assistance_dql="select distinct product_code from dm_dbo.product_info_view where product_code in ($repeatingvalue(product_aliases)) or (product_aliases in ($repeatingvalue(product_aliases)) and product_code != '$value(product_code)') order by 1" assistance_type="dql" autoselect_single="true" condition_visible="(getValue(validation_result).notEquals('0'))" condition_visible_edit="false" condition_visible_import="false" control="true" label_en="These aliases are already used for the following product(s)"/>
+					<separator/>
+					<list id="referenced_product_codes" assistance_dql="select for write product_code as name from cd_product_info where product_code != '$value(product_code)' and product_code is not nullstring union select referenced_product_codes from cd_product_info where r_object_id = '$value(r_object_id)' and referenced_product_codes  is not nullstring order by 1 enable(row_based)" assistance_type="dql" asynchronous="true" condition_enabled_edit="false" condition_enabled_import="false" loadOnOpening="true" rows="5" sorted="true"/>
+					<comment html_content="true" label_en="&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;font color=&quot;#646464&quot;&gt;Registering other products as ''referenced products'' enables documents associated with those products to be included in searches for documents related to this product ($value(product_code)), and vice-versa. Use this feature to share documents with other products, where appropriate. You must be a designated Product Manager on both this product and the referenced products in order to do this.&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"/>
+				</tab>
+				<tab label_en="Access Control">
+					<list id="form_managers" assistance_dql="select groups_names from dm_group where any i_supergroups_names = 'cd_product_registration_group' union select users_names from dm_group where any i_supergroups_names = 'cd_product_registration_group' union select group_name from dm_group where group_name = 'cd_product_registration_group'" assistance_type="dql" asynchronous="false" label_en="Product Managers" rows="4" sorted="true"/>
+					<comment font_color="#646464" html_content="true" label_en="&lt;table cellspacing=0&gt;&lt;tr&gt;&lt;td&gt;&lt;font color=#646464&gt;These users will be responsible for managing the Product Information and Default Role settings in this form.&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"/>
+					<separator/>
+					<list id="form_users" assistance_dql="select group_name from dm_group where any i_supergroups_names in ('cd_clinical', 'cd_non_clinical', 'cd_quality', 'cd_regulatory','cd_safety','cd_labeling','cd_corres','cd_ad_promo','cd_gmp_all_users','cd_gmp_item_registration_group') order by 1" assistance_type="dql" asynchronous="false" label_en="Primary User Group(s)" rows="4" sorted="true"/>
+					<comment font_color="#646464" html_content="true" label_en="&lt;table cellspacing=0&gt;&lt;tr&gt;&lt;td&gt;&lt;font color=#646464&gt;These users will be able to read this form and create documents related to this Product.&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"/>
+				</tab>
+				<tab condition_visible_create="false" condition_visible_import="false" label_en="Form Info">
+					<label id="object_name" label_en="Form Name"/>
+					<label id="r_object_type" label_en="Object Type"/>
+					<label id="r_version_label" label_en="Version Label"/>
+					<label id="a_status" label_en="Status"/>
+					<label id="owner_name" label_en="Owner"/>
+					<label id="a_content_type" label_en="Content Format"/>
+					<label id="r_full_content_size" label_en="Full Content Size"/>
+					<separator/>
+					<columns count="2">
+						<label id="r_creator_name"/>
+						<date id="r_creation_date" condition_enabled_create="false" condition_enabled_edit="false" condition_enabled_import="false"/>
+						<label id="r_modifier"/>
+						<date id="r_modify_date" condition_enabled_create="false" condition_enabled_edit="false" condition_enabled_import="false"/>
+						<label id="r_lock_owner"/>
+						<date id="r_lock_date" condition_enabled_create="false" condition_enabled_edit="false" condition_enabled_import="false"/>
+					</columns>
+				</tab>
+			</tabs>
+		</fieldset>
+		<combo id="external_system_attribute" condition_enabled_create="false" condition_enabled_edit="false" condition_enabled_import="false" condition_visible_create="false" condition_visible_edit="false" condition_visible_import="false" control="true"/>
+	</content>
+	<buttons>
+		<button id="buttonOk" action="validDialog()" advancedView_enabled="false" advancedView_visible="false" condition_enabled="(getValue(validation_result).equals('0'))" condition_visible="(getValue(validation_result).equals('0'))"/>
+		<button id="buttonCancel" action="cancelDialog()"/>
+	</buttons>
+</dialog>

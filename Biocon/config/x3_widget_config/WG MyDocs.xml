@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x3_widget_config new_format="true">
+	<object_name value="WG MyDocs"/>
+	<title value=""/>
+	<subject value=""/>
+	<authors/>
+	<keywords/>
+	<a_status value=""/>
+	<a_content_type value=""/>
+	<log_entry value=""/>
+	<language_code value=""/>
+	<module_type value="x3_widget_config"/>
+	<application_names>
+		<repeating value="OpenText Life Sciences Medical Device for Quality and Manufacturing Solution"/>
+		<repeating value="OpenText Life Sciences Medical Device Solution"/>
+		<repeating value="OpenText Life Sciences Medical Device for Research and Development Solution"/>
+		<repeating value="OpenText Life Sciences Submission Storage and Viewing"/>
+		<repeating value="OpenText Life Sciences Research and Development Solution"/>
+		<repeating value="OpenText Life Sciences eTMF Solution"/>
+		<repeating value="OpenText Life Sciences Quality and Manufacturing Solution"/>
+	</application_names>
+	<lock_config value="F"/>
+	<parents_config/>
+	<preview_x3_image value="CDF Document List Widget.png"/>
+	<label_locale>
+		<repeating value="en"/>
+	</label_locale>
+	<label_value>
+		<repeating value="My Docs"/>
+	</label_value>
+	<desc_locale>
+		<repeating value="en"/>
+	</desc_locale>
+	<desc_value>
+		<repeating value="MyDocs"/>
+	</desc_value>
+	<widget_url value=""/>
+	<channel_name value=""/>
+	<widget_type value="DoclistWidget"/>
+	<query_form_name value=""/>
+	<is_oaj value="F"/>
+	<channel_names/>
+	<param_name>
+		<repeating value="content_type"/>
+		<repeating value="events_subscribe_onload"/>
+		<repeating value="is_events_subscribe_overridden"/>
+		<repeating value="dql_content"/>
+	</param_name>
+	<param_value>
+		<repeating value="DQL"/>
+		<repeating value="D2_EVENT_CHECKOUT_STATE_CHANGED"/>
+		<repeating value="true"/>
+		<repeating value="SELECT *,object_name, title, a_status, r_modify_date, r_lock_owner, r_modifier FROM cd_controlled_doc WHERE r_creator_name = USER"/>
+	</param_value>
+	<focus_events/>
+	<focus_event_params/>
+	<customize_columns value="F"/>
+	<columns/>
+	<use_col_for_assist value="F"/>
+	<is_unloadprotect value="F"/>
+</x3_widget_config>

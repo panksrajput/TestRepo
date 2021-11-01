@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2lifecycle execute_actions_on_start="true" state_attribute="">
+	<state direct="false" entry="true" name="Printed">
+		<entry_conditions/>
+		<actions/>
+		<next_states>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="Reconciled" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(Send Update Notification)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+		</next_states>
+	</state>
+	<state direct="false" entry="false" name="Reconciled">
+		<entry_conditions/>
+		<actions/>
+		<next_states/>
+	</state>
+	<state direct="false" entry="false" name="(Send Update Notification)">
+		<entry_conditions/>
+		<actions>
+			<sendmail d2_mailing_config="Issued Print Reconciliation Due Date changed"/>
+		</actions>
+		<next_states/>
+	</state>
+</d2lifecycle>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_documentset new_format="true">
+	<object_name value="Distribution List Folders"/>
+	<title value=""/>
+	<subject value=""/>
+	<authors/>
+	<keywords/>
+	<a_status value=""/>
+	<a_content_type value=""/>
+	<log_entry value=""/>
+	<language_code value=""/>
+	<dql_where value="any r_folder_path like '/Distribution%'"/>
+	<order_no value="271"/>
+	<dql_from>
+		<repeating value="dm_folder"/>
+	</dql_from>
+	<group_names/>
+	<application_names>
+		<repeating value="OpenText Life Sciences Medical Device for Quality and Manufacturing Solution"/>
+		<repeating value="OpenText Life Sciences Medical Device for Research and Development Solution"/>
+		<repeating value="OpenText Life Sciences Medical Device Solution"/>
+		<repeating value="OpenText Life Sciences Submission Storage and Viewing"/>
+		<repeating value="OpenText Life Sciences Research and Development Solution"/>
+		<repeating value="OpenText Life Sciences Quality and Manufacturing Solution"/>
+		<repeating value="OpenText Life Sciences eTMF Solution"/>
+	</application_names>
+	<user_agent value=""/>
+	<parent_names/>
+	<parent_order_no/>
+	<lock_config value="F"/>
+	<parents_config/>
+</d2_documentset>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_dictionary object_name="Species" title="List of species used in Non-Clinical studies." lock_config="false" parents_config="" application_names="OpenText Life Sciences Medical Device for Research and Development Solution¬OpenText Life Sciences Medical Device Solution¬OpenText Life Sciences Submission Storage and Viewing¬OpenText Life Sciences Research and Development Solution¬OpenText Life Sciences eTMF Solution¬OpenText Life Sciences Quality and Manufacturing Solution¬Custom Configurations" security_group="cd_non_clinical_doc_coordinators" search_group="" version="2" is_versioned="false" manual_order="false" create_view_option="false" is_dql="false" is_dql_cache="false" dql="" label_en="Species">
+	<d2_dictionary_value object_name="Beagle Dog" is_enabled="true" order_no="0">
+		<locale name="en" value="Beagle Dog"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Chimpanzee" is_enabled="true" order_no="0">
+		<locale name="en" value="Chimpanzee"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Mouse" is_enabled="true" order_no="0">
+		<locale name="en" value="Mouse"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Rabbit" is_enabled="true" order_no="0">
+		<locale name="en" value="Rabbit"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Rat" is_enabled="true" order_no="0">
+		<locale name="en" value="Rat"/>
+	</d2_dictionary_value>
+</d2_dictionary>

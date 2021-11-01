@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dialog id="PropertiesDialog" auto_smartview_edit_mode="false" buttons_right="false" focus="" height="500" initial_invalid="false" resizable="true" signoff_creation="false" signoff_edit="false" signoff_import="false" signoff_intention_dictionary="" signoff_intention_required="false" width="700">
+	<content>
+		<fieldset label_en="Find Product-Related Documents">
+			<list id="product_codes" assistance_dictionary="DQL - General - All available product codes" assistance_type="dictionary" rows="5"/>
+			<comment html_content="true" label_en="&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;font color=&quot;#646464&quot;&gt;Documents associated with derived / referenced products will be included in the search results, where applicable. &lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"/>
+			<separator/>
+			<comment font_color="#808080" label_en="Optional filters – leave blank where not applicable:"/>
+			<list id="indication" assistance_dictionary="DQL - General - Indications for selected products, inc. derived and referenced products" assistance_type="dictionary" asynchronous="true" loadOnOpening="true" rows="5"/>
+			<list id="product_trade_name" assistance_dictionary="DQL - General - Product Trade Names for selected products, inc. derived and referenced products" assistance_type="dictionary" asynchronous="true" loadOnOpening="true" rows="5"/>
+			<list id="product_generic_name" assistance_dictionary="DQL - General - Product Generic Names for selected products, inc. derived and referenced products" assistance_type="dictionary" asynchronous="true" loadOnOpening="true" rows="5"/>
+			<list id="drug_substance_name" assistance_dictionary="DQL - General - Drug Substance Names for selected products, inc. derived and referenced products" assistance_type="dictionary" asynchronous="true" loadOnOpening="true" rows="5"/>
+			<list id="inn_names" assistance_dictionary="DQL - General - INNs for selected products, inc. derived and referenced products" assistance_type="dictionary" asynchronous="true" loadOnOpening="true" rows="5"/>
+			<list id="product_chemical_names" assistance_dictionary="DQL - General - Product Chemical Names for selected products, inc. derived and referenced products" assistance_type="dictionary" asynchronous="true" loadOnOpening="true" rows="5"/>
+			<list id="product_compound_id" assistance_dictionary="DQL - General - Product Compound IDs for selected products, inc. derived and referenced products" assistance_dictionary_alias="auto" assistance_type="dictionary" asynchronous="true" loadOnOpening="true" rows="5"/>
+		</fieldset>
+	</content>
+	<buttons>
+		<button id="buttonOk" action="validDialog()"/>
+		<button id="buttonCancel" action="cancelDialog()"/>
+	</buttons>
+</dialog>

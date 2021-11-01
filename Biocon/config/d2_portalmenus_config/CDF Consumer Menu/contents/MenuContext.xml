@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<delta>
+	<replace id="menuContextOpen">
+		<menuitem id="menuCustom1462884010787" action="dialog==TMF Accept QC Confirm dialog" label_en="Pass Quality Check">
+			<dynamic-action class="com.emc.d2fs.dctm.ui.dynamicactions.lifecycles.D2Lifecycle" locateAndRefresh="false" operation="Promote" targetState="(Pass QC)"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.permits.IsUserInGroup" equals="true" value="cd_clinical_qc_tmf"/>
+			<condition all_valid="true" class="com.emc.d2fs.dctm.ui.conditions.objects.HasAttrValue" property="qc_user" value="$USER"/>
+		</menuitem>
+		<menuitem id="menuCustom1463554729810" action="" label_en="Acquire for QC">
+			<dynamic-action class="com.emc.d2fs.dctm.ui.dynamicactions.lifecycles.D2Lifecycle" locateAndRefresh="false" operation="Promote" targetState="(grab for QC)"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.permits.IsUserInGroup" value="cd_clinical_qc_tmf"/>
+			<condition all_valid="true" class="com.emc.d2fs.dctm.ui.conditions.objects.HasAttrValue" equals="true" property="qc_user" value="none"/>
+		</menuitem>
+		<menuitem id="menuCustom1462888451590" action="dialog==TMF QC Reject Property page" label_en="Reject to Index">
+			<dynamic-action class="com.emc.d2fs.dctm.ui.dynamicactions.lifecycles.D2Lifecycle" locateAndRefresh="false" operation="Demote" targetState="(Reject QC)"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.permits.IsUserInGroup" equals="true" value="cd_clinical_qc_tmf"/>
+			<condition all_valid="true" class="com.emc.d2fs.dctm.ui.conditions.objects.HasAttrValue" property="qc_user" value="$USER"/>
+		</menuitem>
+		<menuitem id="menuCustom1462888755619" action="dialog==TMF Documents for Indexing Properties" label_en="Edit Properties">
+			<dynamic-action class="com.emc.d2fs.dctm.ui.dynamicactions.lifecycles.D2Lifecycle" locateAndRefresh="false" operation="Promote" targetState="(update attrs via QC)"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.permits.IsUserInGroup" value="cd_clinical_qc_tmf"/>
+			<condition all_valid="true" class="com.emc.d2fs.dctm.ui.conditions.objects.HasAttrValue" property="qc_user" value="$USER"/>
+		</menuitem>
+		<menuitem id="menuCustom1463555067149" action="" label_en="Release QC lock">
+			<dynamic-action class="com.emc.d2fs.dctm.ui.dynamicactions.lifecycles.D2Lifecycle" locateAndRefresh="false" operation="Demote" targetState="(release QC lock)"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.permits.IsUserInGroup" value="cd_clinical_qc_tmf"/>
+			<condition all_valid="true" class="com.emc.d2fs.dctm.ui.conditions.objects.HasAttrValue" property="qc_user" value="$USER"/>
+		</menuitem>
+	</replace>
+	<insert position-after="menuCustom1408004185897,menuCustom1424350167130,menuCustom1429832545529,menuCustom1429832721100,menuContextDistributionActionAccept,menuContextDistributionActionReject,separator1,menuContextCheckin,menuContextCancelCheckout,separator2,menuContextCut,menuContextCopy,menuContextPaste,menuContextPasteLink,menuContextLocate,menuContextLocateSourceOfReference,menuContextSharing,menuContextComment,menuContextAddToFavorites,menuContextRemoveFromFavorites,menuContextSendmail,menuContextSubscribe,menuContextCopyLocator,menuContextHyperlink,menuContextDocumentLifeCycle,menuContextDocumentWorkflow,menuContextDistribution,separator5,menuContextDestroy,menuContextRefreshReference,menuContextMassUpdate,menuContextProperties" position-before="menuCustom1462884010787,menuCustom1463554729810,menuCustom1462888451590,menuCustom1462888755619,menuCustom1463555067149,menuContextOpenREF,menuContextView,menuDocumentC2View,menuDocumentExportFolder,menuContextDisplayVD,menuContextEdit,menuContextConvertToVD,menuContextConvertFolderToVD,menuContextDisplaySnapshot,separator0">
+		<dynamic-menuitem id="dynamicMenuDocumentD2LifeCycleNextStates" class="com.emc.d2fs.dctm.menu.dynamicmenus.MenuDocumentD2LifeCycleNextStates">
+			<condition class="com.emc.d2fs.dctm.ui.conditions.lifecycles.HasNextState" equals="true" showifinvalid="true"/>
+		</dynamic-menuitem>
+	</insert>
+	<insert position-after="menuCustom1424350167130,menuCustom1429832545529,menuCustom1429832721100,menuContextDistributionActionAccept,menuContextDistributionActionReject,separator1,menuContextCheckin,menuContextCancelCheckout,separator2,menuContextCut,menuContextCopy,menuContextPaste,menuContextPasteLink,menuContextLocate,menuContextLocateSourceOfReference,menuContextSharing,menuContextComment,menuContextAddToFavorites,menuContextRemoveFromFavorites,menuContextSendmail,menuContextSubscribe,menuContextCopyLocator,menuContextHyperlink,menuContextDocumentLifeCycle,menuContextDocumentWorkflow,menuContextDistribution,separator5,menuContextDestroy,menuContextRefreshReference,menuContextMassUpdate,menuContextProperties" position-before="menuCustom1462884010787,menuCustom1463554729810,menuCustom1462888451590,menuCustom1462888755619,menuCustom1463555067149,menuContextOpenREF,menuContextView,menuDocumentC2View,menuDocumentExportFolder,menuContextDisplayVD,menuContextEdit,menuContextConvertToVD,menuContextConvertFolderToVD,menuContextDisplaySnapshot,separator0,dynamicMenuDocumentD2LifeCycleNextStates">
+		<menuitem id="menuCustom1408004185897" action="target_widget_id==view_submission" label_en="Show in Submission Viewer">
+			<dynamic-action class="com.emc.d2fs.dctm.ui.dynamicactions.events.Publish" event="D2_EVENT_CUSTOM"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.interfaces.IsMultipleSelection" equals="false"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.typeparts.IsObjectType" value="cd_reg_admin_info"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.objects.HasAttrValue" property="a_content_type" value="xml"/>
+		</menuitem>
+	</insert>
+	<insert position-after="menuCustom1429832545529,menuCustom1429832721100,menuContextDistributionActionAccept,menuContextDistributionActionReject,separator1,menuContextCheckin,menuContextCancelCheckout,separator2,menuContextCut,menuContextCopy,menuContextPaste,menuContextPasteLink,menuContextLocate,menuContextLocateSourceOfReference,menuContextSharing,menuContextComment,menuContextAddToFavorites,menuContextRemoveFromFavorites,menuContextSendmail,menuContextSubscribe,menuContextCopyLocator,menuContextHyperlink,menuContextDocumentLifeCycle,menuContextDocumentWorkflow,menuContextDistribution,separator5,menuContextDestroy,menuContextRefreshReference,menuContextMassUpdate,menuContextProperties" position-before="menuCustom1462884010787,menuCustom1463554729810,menuCustom1462888451590,menuCustom1462888755619,menuCustom1463555067149,menuContextOpenREF,menuContextView,menuDocumentC2View,menuDocumentExportFolder,menuContextDisplayVD,menuContextEdit,menuContextConvertToVD,menuContextConvertFolderToVD,menuContextDisplaySnapshot,separator0,dynamicMenuDocumentD2LifeCycleNextStates,menuCustom1408004185897">
+		<menuitem id="menuCustom1424350167130" action="target_widget_id==view_submission" label_en="Show in Submission Viewer">
+			<dynamic-action class="com.emc.d2fs.dctm.ui.dynamicactions.events.Publish" event="D2_EVENT_CUSTOM"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.interfaces.IsMultipleSelection" equals="false"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.typeparts.IsObjectType" value="cd_reg_submission_info¬cd_submission_element"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.objects.HasContent"/>
+		</menuitem>
+	</insert>
+	<insert position-after="menuCustom1429832721100,menuContextDistributionActionAccept,menuContextDistributionActionReject,separator1,menuContextCheckin,menuContextCancelCheckout,separator2,menuContextCut,menuContextCopy,menuContextPaste,menuContextPasteLink,menuContextLocate,menuContextLocateSourceOfReference,menuContextSharing,menuContextComment,menuContextAddToFavorites,menuContextRemoveFromFavorites,menuContextSendmail,menuContextSubscribe,menuContextCopyLocator,menuContextHyperlink,menuContextDocumentLifeCycle,menuContextDocumentWorkflow,menuContextDistribution,separator5,menuContextDestroy,menuContextRefreshReference,menuContextMassUpdate,menuContextProperties" position-before="menuCustom1462884010787,menuCustom1463554729810,menuCustom1462888451590,menuCustom1462888755619,menuCustom1463555067149,menuContextOpenREF,menuContextView,menuDocumentC2View,menuDocumentExportFolder,menuContextDisplayVD,menuContextEdit,menuContextConvertToVD,menuContextConvertFolderToVD,menuContextDisplaySnapshot,separator0,dynamicMenuDocumentD2LifeCycleNextStates,menuCustom1408004185897,menuCustom1424350167130">
+		<menuitem id="menuCustom1429832545529" action="widget_id==lsDocViewer1!!format==pdf" label_en="Show in Viewer 1">
+			<dynamic-action class="com.emc.d2fs.dctm.ui.dynamicactions.events.Publish" event="D2_EVENT_CUSTOM"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.interfaces.IsMultipleSelection" equals="false"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.typeparts.IsObjectType" value="cd_submission_element"/>
+		</menuitem>
+	</insert>
+	<insert position-after="menuContextDistributionActionAccept,menuContextDistributionActionReject,separator1,menuContextCheckin,menuContextCancelCheckout,separator2,menuContextCut,menuContextCopy,menuContextPaste,menuContextPasteLink,menuContextLocate,menuContextLocateSourceOfReference,menuContextSharing,menuContextComment,menuContextAddToFavorites,menuContextRemoveFromFavorites,menuContextSendmail,menuContextSubscribe,menuContextCopyLocator,menuContextHyperlink,menuContextDocumentLifeCycle,menuContextDocumentWorkflow,menuContextDistribution,separator5,menuContextDestroy,menuContextRefreshReference,menuContextMassUpdate,menuContextProperties" position-before="menuCustom1462884010787,menuCustom1463554729810,menuCustom1462888451590,menuCustom1462888755619,menuCustom1463555067149,menuContextOpenREF,menuContextView,menuDocumentC2View,menuDocumentExportFolder,menuContextDisplayVD,menuContextEdit,menuContextConvertToVD,menuContextConvertFolderToVD,menuContextDisplaySnapshot,separator0,dynamicMenuDocumentD2LifeCycleNextStates,menuCustom1408004185897,menuCustom1424350167130,menuCustom1429832545529">
+		<menuitem id="menuCustom1429832721100" action="widget_id==lsDocViewer2!!format==pdf" label_en="Show in Viewer 2">
+			<dynamic-action class="com.emc.d2fs.dctm.ui.dynamicactions.events.Publish" event="D2_EVENT_CUSTOM"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.interfaces.IsMultipleSelection" equals="false"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.typeparts.IsObjectType" value="cd_submission_element"/>
+		</menuitem>
+	</insert>
+	<delete id="separator3"/>
+	<delete id="separator4"/>
+	<delete id="separator6"/>
+	<delete id="menuContextQueryCategoryProperties"/>
+	<modify id="menuDocumentC2View" hidden="true">
+		<append>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.permits.IsUserInGroup" equals="false" value="cd_clinical_qc_tmf"/>
+		</append>
+	</modify>
+	<modify id="menuContextDisplayVD" hidden="true"/>
+	<modify id="menuContextConvertToVD" hidden="true">
+		<move class="com.emc.d2fs.dctm.ui.conditions.typeparts.IsObjectType" position-after="com.emc.d2fs.dctm.ui.conditions.objects.IsReference,com.emc.d2fs.dctm.ui.conditions.vd.IsNotVD,com.emc.d2fs.dctm.ui.conditions.typeparts.IsDocument,com.emc.d2fs.dctm.ui.conditions.permits.HasClientCapability,com.emc.d2fs.dctm.ui.conditions.objects.HasContent,com.emc.d2fs.dctm.ui.conditions.actions.CheckoutByAndPermitLevel" position-before="com.emc.d2fs.dctm.ui.dynamicactions.events.Publish"/>
+		<modify class="com.emc.d2fs.dctm.ui.conditions.typeparts.IsObjectType" value="d2c_bin_deleted_document¬d2c_bin_folder¬d2c_bin_deleted_folder_dump¬d2c_bin_deleted_folder¬d2c_bin_deleted_rendition¬cd_clinical_trial_info¬cd_clinical_country_info¬cd_clinical_site_info¬cd_clinical_tmf_doc¬cd_clinical_tmf_doc_ref¬cd_clinical_tmf_package¬cd_quality_gmp_approved¬cd_quality_gmp_effective¬cd_quality_project_info¬cd_product_info¬cd_non_clinical_study_info¬cd_reg_admin_activity_info¬cd_reg_admin_info¬cd_reg_submission_info¬cd_xml_schema¬cd_submission_element¬cd_schema_configuration¬cd_reg_correspondence"/>
+	</modify>
+	<modify id="menuContextConvertFolderToVD" hidden="true">
+		<move class="com.emc.d2fs.dctm.ui.conditions.typeparts.IsObjectType" position-after="com.emc.d2fs.dctm.ui.conditions.objects.IsReference,com.emc.d2fs.dctm.ui.conditions.typeparts.IsCabinetOrFolder,com.emc.d2fs.dctm.ui.conditions.structure.HasConvertConfig,com.emc.d2fs.dctm.ui.conditions.interfaces.IsMultipleSelection" position-before="com.emc.d2fs.dctm.ui.dynamicactions.actions.ConvertFolderVD"/>
+		<modify class="com.emc.d2fs.dctm.ui.conditions.typeparts.IsObjectType" value="d2c_bin_folder¬d2c_bin_deleted_folder¬cd_controlled_folder"/>
+	</modify>
+	<modify id="menuContextDisplaySnapshot" hidden="true"/>
+	<modify id="menuContextCut" hidden="true">
+		<move class="com.emc.d2fs.dctm.ui.conditions.typeparts.IsObjectType" position-after="com.emc.d2fs.dctm.ui.conditions.interfaces.IsActiveWidget,com.emc.d2fs.dctm.ui.conditions.permits.HasClientCapability,com.emc.d2fs.dctm.ui.conditions.typeparts.IsObjectType,com.emc.d2fs.dctm.ui.conditions.typeparts.IsWorkflow,com.emc.d2fs.dctm.ui.conditions.typeparts.IsObjectId,com.emc.d2fs.dctm.ui.conditions.workflows.IsTask,com.emc.d2fs.dctm.ui.conditions.typeparts.IsCabinet,com.emc.d2fs.dctm.ui.conditions.typeparts.IsQueueItem,com.emc.d2fs.dctm.ui.conditions.objects.IsQuery,com.emc.d2fs.dctm.ui.conditions.objects.IsQueryCategory,com.emc.d2fs.dctm.ui.conditions.permits.HasPermit" position-before="com.emc.d2fs.dctm.ui.dynamicactions.events.Publish"/>
+		<modify class="com.emc.d2fs.dctm.ui.conditions.typeparts.IsObjectType" value="dm_user¬dm_group¬d2_template_config¬d2_dictionary¬d2_taxonomy¬d2_register_config¬d2c_task_folder¬d2c_task_user_folder"/>
+		<modify class="com.emc.d2fs.dctm.ui.conditions.typeparts.IsObjectType" value="dm_user¬dm_group¬d2_template_config¬d2_dictionary¬d2_taxonomy¬d2_register_config¬d2c_task_folder¬d2c_task_user_folder"/>
+	</modify>
+	<modify id="menuContextCopy" hidden="true">
+		<move class="com.emc.d2fs.dctm.ui.conditions.typeparts.IsObjectType" position-after="com.emc.d2fs.dctm.ui.conditions.permits.HasClientCapability,com.emc.d2fs.dctm.ui.conditions.typeparts.IsObjectType,com.emc.d2fs.dctm.ui.conditions.typeparts.IsWorkflow,com.emc.d2fs.dctm.ui.conditions.typeparts.IsObjectId,com.emc.d2fs.dctm.ui.conditions.workflows.IsTask,com.emc.d2fs.dctm.ui.conditions.typeparts.IsCabinet,com.emc.d2fs.dctm.ui.conditions.typeparts.IsQueueItem,com.emc.d2fs.dctm.ui.conditions.objects.IsQuery,com.emc.d2fs.dctm.ui.conditions.objects.IsQueryCategory,com.emc.d2fs.dctm.ui.conditions.permits.HasPermit" position-before="com.emc.d2fs.dctm.ui.dynamicactions.events.Publish"/>
+		<modify class="com.emc.d2fs.dctm.ui.conditions.typeparts.IsObjectType" value="dm_user¬dm_group¬d2_template_config¬d2_dictionary¬d2_taxonomy¬d2_register_config¬d2c_task_folder¬d2c_task_user_folder"/>
+		<modify class="com.emc.d2fs.dctm.ui.conditions.typeparts.IsObjectType" value="dm_user¬dm_group¬d2_template_config¬d2_dictionary¬d2_taxonomy¬d2_register_config¬d2c_task_folder¬d2c_task_user_folder"/>
+	</modify>
+	<modify id="menuContextPaste" hidden="true">
+		<move class="com.emc.d2fs.dctm.ui.conditions.typeparts.IsObjectType" position-after="com.emc.d2fs.dctm.ui.conditions.typeparts.IsObjectType,com.emc.d2fs.dctm.ui.conditions.typeparts.IsWorkflow,com.emc.d2fs.dctm.ui.conditions.typeparts.IsObjectId,com.emc.d2fs.dctm.ui.conditions.workflows.IsTask,com.emc.d2fs.dctm.ui.conditions.typeparts.IsQueueItem,com.emc.d2fs.dctm.ui.conditions.objects.IsQuery,com.emc.d2fs.dctm.ui.conditions.objects.IsQueryCategory,com.emc.d2fs.dctm.ui.conditions.actions.CanPaste" position-before="com.emc.d2fs.dctm.ui.dynamicactions.events.PublishPaste,com.emc.d2fs.dctm.ui.conditions.interfaces.IsActiveWidget,com.emc.d2fs.dctm.ui.conditions.permits.HasClientCapability"/>
+		<modify class="com.emc.d2fs.dctm.ui.conditions.typeparts.IsObjectType" value="dm_user¬dm_group¬d2_template_config¬d2_dictionary¬d2_taxonomy¬d2_register_config¬d2c_task_folder¬d2c_task_user_folder"/>
+		<modify class="com.emc.d2fs.dctm.ui.conditions.typeparts.IsObjectType" value="dm_user¬dm_group¬d2_template_config¬d2_dictionary¬d2_taxonomy¬d2_register_config¬d2c_task_folder¬d2c_task_user_folder"/>
+	</modify>
+	<modify id="menuContextPasteLink" hidden="true">
+		<move class="com.emc.d2fs.dctm.ui.conditions.typeparts.IsObjectType" position-after="com.emc.d2fs.dctm.ui.conditions.typeparts.IsObjectType,com.emc.d2fs.dctm.ui.conditions.typeparts.IsObjectId,com.emc.d2fs.dctm.ui.conditions.workflows.IsTask,com.emc.d2fs.dctm.ui.conditions.typeparts.IsQueueItem,com.emc.d2fs.dctm.ui.conditions.objects.IsQuery,com.emc.d2fs.dctm.ui.conditions.objects.IsQueryCategory,com.emc.d2fs.dctm.ui.conditions.actions.CanPasteLink" position-before="com.emc.d2fs.dctm.ui.dynamicactions.events.PublishPaste,com.emc.d2fs.dctm.ui.conditions.permits.HasClientCapability"/>
+		<modify class="com.emc.d2fs.dctm.ui.conditions.typeparts.IsObjectType" value="dm_user¬dm_group¬d2_template_config¬d2_dictionary¬d2_taxonomy¬d2_register_config¬d2c_task_folder¬d2c_task_user_folder"/>
+		<modify class="com.emc.d2fs.dctm.ui.conditions.typeparts.IsObjectType" value="dm_user¬dm_group¬d2_template_config¬d2_dictionary¬d2_taxonomy¬d2_register_config¬d2c_task_folder¬d2c_task_user_folder"/>
+	</modify>
+	<modify id="menuContextComment" hidden="true">
+		<move class="com.emc.d2fs.dctm.ui.conditions.typeparts.IsObjectType" position-after="com.emc.d2fs.dctm.ui.conditions.permits.HasPermit,com.emc.d2fs.dctm.ui.conditions.interfaces.IsMultipleSelection" position-before="com.emc.d2fs.dctm.ui.dynamicactions.actions.ActionDialog"/>
+	</modify>
+	<modify id="menuContextSubscribe" hidden="true">
+		<move class="com.emc.d2fs.dctm.ui.conditions.typeparts.IsObjectType" position-after="com.emc.d2fs.dctm.ui.conditions.typeparts.IsRootNode,com.emc.d2fs.dctm.ui.conditions.typeparts.IsObjectId,com.emc.d2fs.dctm.ui.conditions.interfaces.IsMultiSelectionSubscribe" position-before="com.emc.d2fs.dctm.ui.dynamicactions.actions.ActionDialog"/>
+	</modify>
+	<modify id="menuContextDocumentLifeCycle" hidden="true"/>
+	<modify id="menuContextDocumentWorkflow" hidden="true">
+		<append>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.permits.IsUserInGroup" equals="false" value="cd_clinical_qc_tmf"/>
+		</append>
+	</modify>
+	<modify id="menuContextDistribution" hidden="true">
+		<modify class="com.emc.d2fs.dctm.ui.conditions.typeparts.IsObjectType" showifinvalid="false" value="dm_user¬dm_group¬d2_template_config¬d2_dictionary¬d2_taxonomy¬d2_register_config"/>
+		<modify class="com.emc.d2fs.dctm.ui.conditions.typeparts.IsObjectType" showifinvalid="false" value="dm_user¬dm_group¬d2_template_config¬d2_dictionary¬d2_taxonomy¬d2_register_config"/>
+	</modify>
+	<modify id="menuContextMassUpdate" hidden="true"/>
+	<modify id="menuContextView">
+		<move class="com.emc.d2fs.dctm.ui.conditions.typeparts.IsObjectType" position-after="com.emc.d2fs.dctm.ui.conditions.typeparts.IsRootNode,com.emc.d2fs.dctm.ui.conditions.typeparts.IsObjectType,com.emc.d2fs.dctm.ui.conditions.workflows.IsTask,com.emc.d2fs.dctm.ui.conditions.objects.IsQuery,com.emc.d2fs.dctm.ui.conditions.objects.HasContent,com.emc.d2fs.dctm.ui.conditions.actions.CanView,com.emc.d2fs.dctm.ui.conditions.permits.IsUserInGroup" position-before="com.emc.d2fs.dctm.ui.dynamicactions.actions.View"/>
+		<append>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.permits.IsUserInGroup" equals="false" value="cd_clinical_qc_tmf"/>
+		</append>
+		<modify class="com.emc.d2fs.dctm.ui.conditions.typeparts.IsObjectType" value="dm_folder¬dm_user¬dm_group¬d2_template_config¬d2_dictionary¬d2_taxonomy¬d2_register_config¬d2c_snapshot"/>
+		<modify class="com.emc.d2fs.dctm.ui.conditions.typeparts.IsObjectType" value="dm_folder¬dm_user¬dm_group¬d2_template_config¬d2_dictionary¬d2_taxonomy¬d2_register_config¬d2c_snapshot"/>
+	</modify>
+	<modify id="menuDocumentExportFolder">
+		<delete class="com.emc.d2fs.dctm.ui.conditions.useragent.IsThinClient"/>
+	</modify>
+	<modify id="menuContextEdit">
+		<move class="com.emc.d2fs.dctm.ui.conditions.typeparts.IsObjectType" position-after="com.emc.d2fs.dctm.ui.conditions.useragent.IsTouchClient,com.emc.d2fs.dctm.ui.conditions.typeparts.IsRootNode,com.emc.d2fs.dctm.ui.conditions.typeparts.IsObjectType,com.emc.d2fs.dctm.ui.conditions.workflows.IsTask,com.emc.d2fs.dctm.ui.conditions.objects.IsQuery,com.emc.d2fs.dctm.ui.conditions.permits.HasClientCapability,com.emc.d2fs.dctm.ui.conditions.objects.HasContent,com.emc.d2fs.dctm.ui.conditions.actions.CanEdit" position-before="com.emc.d2fs.dctm.ui.dynamicactions.actions.Checkout"/>
+		<modify class="com.emc.d2fs.dctm.ui.conditions.typeparts.IsObjectType" value="dm_folder¬dm_user¬dm_group¬d2_template_config¬d2_dictionary¬d2_taxonomy¬d2_register_config¬d2c_snapshot¬cd_reg_admin_info¬cd_reg_submission_info"/>
+		<modify class="com.emc.d2fs.dctm.ui.conditions.typeparts.IsObjectType" value="dm_folder¬dm_user¬dm_group¬d2_template_config¬d2_dictionary¬d2_taxonomy¬d2_register_config¬d2c_snapshot"/>
+	</modify>
+	<modify id="menuContextCheckin">
+		<move class="com.emc.d2fs.dctm.ui.conditions.typeparts.IsObjectType" position-after="com.emc.d2fs.dctm.ui.conditions.useragent.IsTouchClient,com.emc.d2fs.dctm.ui.conditions.typeparts.IsDocument,com.emc.d2fs.dctm.ui.conditions.objects.IsQuery,com.emc.d2fs.dctm.ui.conditions.permits.HasClientCapability,com.emc.d2fs.dctm.ui.conditions.objects.HasContent,com.emc.d2fs.dctm.ui.conditions.actions.CanCheckin" position-before="com.emc.d2fs.dctm.ui.dynamicactions.actions.Checkin"/>
+	</modify>
+	<modify id="menuContextCancelCheckout">
+		<move class="com.emc.d2fs.dctm.ui.conditions.typeparts.IsObjectType" position-after="com.emc.d2fs.dctm.ui.conditions.useragent.IsTouchClient,com.emc.d2fs.dctm.ui.conditions.typeparts.IsDocument,com.emc.d2fs.dctm.ui.conditions.objects.IsQuery,com.emc.d2fs.dctm.ui.conditions.permits.HasClientCapability,com.emc.d2fs.dctm.ui.conditions.objects.HasContent,com.emc.d2fs.dctm.ui.conditions.actions.CanCancelCheckout" position-before="com.emc.d2fs.dctm.ui.dynamicactions.actions.Checkout"/>
+	</modify>
+	<modify id="menuContextSharing">
+		<move class="com.emc.d2fs.dctm.ui.conditions.typeparts.IsObjectType" position-after="com.emc.d2fs.dctm.ui.conditions.syncplicity.IsSyncplicityActive,com.emc.d2fs.dctm.ui.conditions.typeparts.IsFolder,com.emc.d2fs.dctm.ui.conditions.permits.HasPermit,com.emc.d2fs.dctm.ui.conditions.interfaces.IsMultipleSelection" position-before="com.emc.d2fs.dctm.ui.dynamicactions.actions.ActionDialog"/>
+	</modify>
+	<modify id="menuContextAddToFavorites">
+		<move class="com.emc.d2fs.dctm.ui.conditions.typeparts.IsObjectType" position-after="com.emc.d2fs.dctm.ui.conditions.actions.CanAddObjectToFavorites,com.emc.d2fs.dctm.ui.conditions.interfaces.IsActiveWidget" position-before="com.emc.d2fs.dctm.ui.dynamicactions.events.Publish"/>
+	</modify>
+	<modify id="menuContextSendmail">
+		<move class="com.emc.d2fs.dctm.ui.conditions.typeparts.IsObjectType" position-after="com.emc.d2fs.dctm.ui.conditions.sendmail.MailServerConfigured,com.emc.d2fs.dctm.ui.conditions.permits.HasPermit" position-before="com.emc.d2fs.dctm.ui.dynamicactions.actions.ActionDialog"/>
+	</modify>
+	<modify id="menuContextCopyLocator">
+		<move class="com.emc.d2fs.dctm.ui.conditions.typeparts.IsObjectType" position-after="com.emc.d2fs.dctm.ui.conditions.interfaces.IsConnected,com.emc.d2fs.dctm.ui.conditions.typeparts.IsObjectId,com.emc.d2fs.dctm.ui.conditions.interfaces.IsMultipleSelection" position-before="com.emc.d2fs.dctm.ui.dynamicactions.events.Publish"/>
+	</modify>
+	<modify id="menuContextHyperlink">
+		<append>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.permits.IsUserInGroup" equals="false" value="cd_clinical_qc_tmf"/>
+		</append>
+	</modify>
+	<modify id="menuContextDestroy">
+		<move class="com.emc.d2fs.dctm.ui.conditions.typeparts.IsObjectType" position-after="com.emc.d2fs.dctm.ui.conditions.typeparts.IsObjectId,com.emc.d2fs.dctm.ui.conditions.typeparts.IsObjectType,com.emc.d2fs.dctm.ui.conditions.typeparts.IsWorkflow,com.emc.d2fs.dctm.ui.conditions.typeparts.IsContent,com.emc.d2fs.dctm.ui.conditions.workflows.IsTask,com.emc.d2fs.dctm.ui.conditions.actions.CanDelete,com.emc.d2fs.dctm.ui.conditions.objects.HasAttrValue" position-before="com.emc.d2fs.dctm.ui.dynamicactions.actions.ActionDialog"/>
+		<append>
+			<condition all_valid="true" class="com.emc.d2fs.dctm.ui.conditions.objects.HasAttrValue" property="wf_is_in_workflow" showifinvalid="true" value="F"/>
+		</append>
+		<modify class="com.emc.d2fs.dctm.ui.conditions.typeparts.IsObjectType" showifinvalid="false" value="dm_user¬dm_group¬d2_dictionary¬d2_taxonomy¬d2_register_config¬d2c_workflow_tracker"/>
+		<modify class="com.emc.d2fs.dctm.ui.conditions.typeparts.IsObjectType" showifinvalid="false" value="dm_user¬dm_group¬d2_dictionary¬d2_taxonomy¬d2_register_config¬d2c_workflow_tracker"/>
+	</modify>
+	<modify id="menuContextProperties">
+		<move class="com.emc.d2fs.dctm.ui.conditions.typeparts.IsObjectType" position-after="com.emc.d2fs.dctm.ui.conditions.typeparts.IsQueueItem,com.emc.d2fs.dctm.ui.conditions.objects.IsQueryCategory,com.emc.d2fs.dctm.ui.conditions.typeparts.IsObjectId,com.emc.d2fs.dctm.ui.conditions.interfaces.IsMultipleSelection,com.emc.d2fs.dctm.ui.conditions.permits.IsUserInGroup" position-before="com.emc.d2fs.dctm.ui.dynamicactions.actions.ShowDialog"/>
+		<append>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.permits.IsUserInGroup" equals="false" value="cd_clinical_qc_tmf"/>
+		</append>
+	</modify>
+</delta>

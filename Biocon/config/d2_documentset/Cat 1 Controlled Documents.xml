@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_documentset new_format="true">
+	<object_name value="Cat 1 Controlled Documents"/>
+	<title value="Documents that require formal review and approval by both the designated Approvers and also Quality Organization (QO) Approvers - e.g. SOPs. Can be scheduled to become &quot;Effective&quot; in the future, can have TBR lists and review / expiry dates."/>
+	<subject value=""/>
+	<authors/>
+	<keywords/>
+	<a_status value=""/>
+	<a_content_type value=""/>
+	<log_entry value=""/>
+	<language_code value=""/>
+	<dql_where value="category = 1"/>
+	<order_no value="205"/>
+	<dql_from>
+		<repeating value="cd_controlled_doc"/>
+	</dql_from>
+	<group_names/>
+	<application_names>
+		<repeating value="OpenText Life Sciences Medical Device Solution"/>
+		<repeating value="OpenText Life Sciences Medical Device for Quality and Manufacturing Solution"/>
+		<repeating value="OpenText Life Sciences Quality and Manufacturing Solution"/>
+	</application_names>
+	<user_agent value=""/>
+	<parent_names>
+		<repeating value="Controlled Documents"/>
+	</parent_names>
+	<parent_order_no>
+		<repeating value="2"/>
+	</parent_order_no>
+	<lock_config value="F"/>
+	<parents_config/>
+</d2_documentset>

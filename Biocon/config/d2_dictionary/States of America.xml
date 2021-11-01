@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_dictionary object_name="States of America" title="Dictionary of state codes that can be assigned to site registrations within the USA." lock_config="false" parents_config="" application_names="OpenText Life Sciences Research and Development Solution¬OpenText Life Sciences Quality and Manufacturing Solution¬OpenText Life Sciences eTMF Solution¬Custom Configurations" security_group="cd_regulatory_managers" search_group="cd_regulatory_managers" version="2" is_versioned="false" manual_order="false" create_view_option="false" is_dql="false" is_dql_cache="false" dql="" label_en="State">
+	<d2_dictionary_value object_name="AK" is_enabled="true" order_no="0">
+		<locale name="en" value="Alaska"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="AL" is_enabled="true" order_no="0">
+		<locale name="en" value="Alabama"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="AR" is_enabled="true" order_no="0">
+		<locale name="en" value="Arkansas"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="AZ" is_enabled="true" order_no="0">
+		<locale name="en" value="Arizona"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="CA" is_enabled="true" order_no="0">
+		<locale name="en" value="California"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="CO" is_enabled="true" order_no="0">
+		<locale name="en" value="Colorado"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="CT" is_enabled="true" order_no="0">
+		<locale name="en" value="Connecticut"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="DE" is_enabled="true" order_no="0">
+		<locale name="en" value="Delaware"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="FL" is_enabled="true" order_no="0">
+		<locale name="en" value="Florida"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="GA" is_enabled="true" order_no="0">
+		<locale name="en" value="Georgia"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="HI" is_enabled="true" order_no="0">
+		<locale name="en" value="Hawaii"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="IA" is_enabled="true" order_no="0">
+		<locale name="en" value="Iowa"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="ID" is_enabled="true" order_no="0">
+		<locale name="en" value="Idaho"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="IL" is_enabled="true" order_no="0">
+		<locale name="en" value="Illinois"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="IN" is_enabled="true" order_no="0">
+		<locale name="en" value="Indiana"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="KS" is_enabled="true" order_no="0">
+		<locale name="en" value="Kansas"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="KY" is_enabled="true" order_no="0">
+		<locale name="en" value="Kentucky"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="LA" is_enabled="true" order_no="0">
+		<locale name="en" value="Louisiana"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="MA" is_enabled="true" order_no="0">
+		<locale name="en" value="Massachusetts"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="MD" is_enabled="true" order_no="0">
+		<locale name="en" value="Maryland"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="ME" is_enabled="true" order_no="0">
+		<locale name="en" value="Maine"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="MI" is_enabled="true" order_no="0">
+		<locale name="en" value="Michigan"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="MN" is_enabled="true" order_no="0">
+		<locale name="en" value="Minnesota"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="MO" is_enabled="true" order_no="0">
+		<locale name="en" value="Missouri"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="MS" is_enabled="true" order_no="0">
+		<locale name="en" value="Mississippi"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="MT" is_enabled="true" order_no="0">
+		<locale name="en" value="Montana"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="NC" is_enabled="true" order_no="0">
+		<locale name="en" value="North Carolina"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="ND" is_enabled="true" order_no="0">
+		<locale name="en" value="North Dakota"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="NE" is_enabled="true" order_no="0">
+		<locale name="en" value="Nebraska"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="NH" is_enabled="true" order_no="0">
+		<locale name="en" value="New Hampshire"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="NJ" is_enabled="true" order_no="0">
+		<locale name="en" value="New Jersey"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="NM" is_enabled="true" order_no="0">
+		<locale name="en" value="New Mexico"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="NV" is_enabled="true" order_no="0">
+		<locale name="en" value="Nevada"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="NY" is_enabled="true" order_no="0">
+		<locale name="en" value="New York"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="OH" is_enabled="true" order_no="0">
+		<locale name="en" value="Ohio"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="OK" is_enabled="true" order_no="0">
+		<locale name="en" value="Oklahoma"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="OR" is_enabled="true" order_no="0">
+		<locale name="en" value="Oregon"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="PA" is_enabled="true" order_no="0">
+		<locale name="en" value="Pennsylvania"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="RI" is_enabled="true" order_no="0">
+		<locale name="en" value="Rhode Island"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="SC" is_enabled="true" order_no="0">
+		<locale name="en" value="South Carolina"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="SD" is_enabled="true" order_no="0">
+		<locale name="en" value="South Dakota"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="TN" is_enabled="true" order_no="0">
+		<locale name="en" value="Tennessee"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="TX" is_enabled="true" order_no="0">
+		<locale name="en" value="Texas"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="UT" is_enabled="true" order_no="0">
+		<locale name="en" value="Utah"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="VA" is_enabled="true" order_no="0">
+		<locale name="en" value="Virginia"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="VT" is_enabled="true" order_no="0">
+		<locale name="en" value="Vermont"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="WA" is_enabled="true" order_no="0">
+		<locale name="en" value="Washington"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="WI" is_enabled="true" order_no="0">
+		<locale name="en" value="Wisconsin"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="WV" is_enabled="true" order_no="0">
+		<locale name="en" value="West Virginia"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="WY" is_enabled="true" order_no="0">
+		<locale name="en" value="Wyoming"/>
+	</d2_dictionary_value>
+</d2_dictionary>

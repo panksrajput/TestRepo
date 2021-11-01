@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_uniqueness_config new_format="true">
+	<object_name value="Validate product does not have locked Clinical Trials associated with it"/>
+	<title value="Prevents a product code from being changed if it has clinical trials that have been locked."/>
+	<subject value=""/>
+	<authors/>
+	<keywords/>
+	<a_status value=""/>
+	<a_content_type value=""/>
+	<log_entry value=""/>
+	<language_code value=""/>
+	<module_type value="d2_uniqueness_config"/>
+	<application_names>
+		<repeating value="OpenText Life Sciences Submission Storage and Viewing"/>
+		<repeating value="OpenText Life Sciences Research and Development Solution"/>
+		<repeating value="OpenText Life Sciences eTMF Solution"/>
+		<repeating value="OpenText Life Sciences Quality and Manufacturing Solution"/>
+	</application_names>
+	<lock_config value="F"/>
+	<parents_config/>
+	<warning_message>
+		<repeating value="The product code '$value(product_code)' cannot be changed because this product has clinical trials associated with it that are locked."/>
+	</warning_message>
+	<warning_locale>
+		<repeating value="en"/>
+	</warning_locale>
+	<warning_position>
+		<repeating value="0"/>
+	</warning_position>
+	<qualification>
+		<repeating value="cd_clinical_trial_info where product_code = '$value(product_code)' and r_lock_owner != ' ' and r_lock_machine = ' '"/>
+	</qualification>
+</d2_uniqueness_config>

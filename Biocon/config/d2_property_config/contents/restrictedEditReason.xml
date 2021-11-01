@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dialog id="PropertiesDialog" auto_smartview_edit_mode="false" buttons_right="false" focus="reReason" height="500" initial_invalid="false" resizable="true" signoff_creation="false" signoff_edit="false" signoff_import="false" signoff_intention_dictionary="" signoff_intention_required="false" width="400">
+	<content>
+		<tabs>
+			<tab label_en="Reason">
+				<tabs>
+					<tab label_en="Enter Reason">
+						<combo id="reReason" assistance_dictionary="Restricted Edit Reasons" assistance_dictionary_alias="auto" assistance_type="dictionary" autoselect_single="true" condition_required_edit="true" control="true" label_en="Reason For Restricted Edit"/>
+					</tab>
+					<tab label_en="System Info">
+						<comment html_content="true" label_en="keys"/>
+						<comment html_content="true" label_en="keyHash"/>
+						<comment label_en="attributeSet"/>
+					</tab>
+					<tab condition_visible_create="false" condition_visible_edit="false" condition_visible_import="false" label_en="Missing Fields">
+						<memo id="reMissing" condition_enabled_edit="false" control="true"/>
+					</tab>
+				</tabs>
+			</tab>
+		</tabs>
+	</content>
+	<buttons>
+		<button id="buttonOk" action="validDialog()"/>
+		<button id="buttonCancel" action="cancelDialog()"/>
+	</buttons>
+</dialog>

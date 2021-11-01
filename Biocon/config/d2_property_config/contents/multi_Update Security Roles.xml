@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dialog id="PropertiesDialog" auto_smartview_edit_mode="false" buttons_right="false" focus="" height="600" initial_invalid="false" resizable="true" signoff_creation="false" signoff_edit="false" signoff_import="false" signoff_intention_dictionary="" signoff_intention_required="false" width="700">
+	<content>
+		<boolean id="r_immutable_flag" condition_visible_create="false" condition_visible_edit="false" condition_visible_import="false"/>
+		<boolean id="apply_to_all_versions" advancedView_enabled="false" condition_enabled="(getValue(mlc_is_current).equals('CURRENT'))" label_en="Apply to All Versions"/>
+		<comment advancedView_visible="false" condition_visible="(getValue(apply_to_all_versions).equals('true'))" font_bold="true" font_color="#FF3300" label_en="You will receive a notification about the results of version actions. "/>
+		<comment advancedView_visible="false" condition_visible="(getValue(mlc_is_current).notEquals('CURRENT'))" font_color="#FF3300" label_en="You have selected non-current versions. You cannot apply to all versions."/>
+		<combo id="mlc_is_current" assistance_dql="select 'CURRENT' as x from dm_dbo.single_result_row_view where '$value(r_immutable_flag)' = 'F'" assistance_type="dql" autoselect_single="true" condition_visible_create="false" condition_visible_edit="false" condition_visible_import="false" control="true"/>
+		<fieldset advancedView_enabled="false" advancedView_visible="false" condition_visible="(getValue(isUserSecDocAdmin).notEquals(''))" label_en="Update Security Roles">
+			<tabs advancedView_enabled="false">
+				<tab advancedView_enabled="false" advancedView_visible="false" label_en="Coordinators">
+					<list id="doc_coordinators" advancedView_enabled="false" assistance_dql="select i_all_users_names from dm_group where group_name in ($repeatingvalue(select_doc_coordinators))  union select i_all_users_names from dm_group where group_name in (select select_doc_coordinators from lss_sec_shared_attribute where r_object_id = '$value(security_shared_id)')" assistance_type="dql" asynchronous="false" condition_enabled="(getValue(lstEditAttributes).contains('|doc_coordinators|'))" rows="4" sorted="true"/>
+					<comment font_color="#646464" html_content="true" label_en="&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;font color=#646464&gt;The Document Coordinators and Document Authors are responsible for ensuring that documents receive the proper approvals and electronic signatures where required.  In the case of Category 3 ''Self-Approved'' documents, the Authors themselves can act as Document Approvers.&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"/>
+				</tab>
+				<tab advancedView_enabled="false" label_en="Authors">
+					<list id="authors" advancedView_enabled="false" assistance_dql="select i_all_users_names from dm_group where group_name in ($repeatingvalue(select_authors))  union select i_all_users_names from dm_group where group_name in (select select_authors from lss_sec_shared_attribute where r_object_id = '$value(security_shared_id)')" assistance_type="dql" asynchronous="false" condition_enabled="(getValue(lstEditAttributes).contains('|authors|'))" rows="4" sorted="true"/>
+				</tab>
+				<tab advancedView_enabled="false" advancedView_visible="false" label_en="Reviewers">
+					<list id="reviewers" advancedView_enabled="false" advancedView_visible="false" assistance_dql="select i_all_users_names from dm_group where group_name in ($repeatingvalue(select_reviewers))  union select i_all_users_names from dm_group where group_name in (select select_reviewers from lss_sec_shared_attribute where r_object_id = '$value(security_shared_id)')" assistance_type="dql" asynchronous="false" condition_enabled="(getValue(lstEditAttributes).contains('|reviewers|'))" rows="4" sorted="true"/>
+					<comment font_color="#646464" html_content="true" label_en="&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;font color=#646464&gt;These users will be responsible for reviewing documents related to this product prior to approval (where necessary) and release as ''Effective'' versions. They may also act as Co-Authors in collaborative editing workflows.&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"/>
+				</tab>
+				<tab advancedView_enabled="false" advancedView_visible="false" label_en="Approvers">
+					<list id="approvers" advancedView_enabled="false" assistance_dql="select i_all_users_names from dm_group where group_name in ($repeatingvalue(select_approvers))  union select i_all_users_names from dm_group where group_name in (select select_approvers from lss_sec_shared_attribute where r_object_id = '$value(security_shared_id)')" assistance_type="dql" asynchronous="false" condition_enabled="(getValue(lstEditAttributes).contains('|approvers|'))" rows="4" sorted="true"/>
+					<comment font_color="#646464" html_content="true" label_en="&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;font color=#646464&gt;These users are responsible for approving (i.e. signing-off) Category 1-2 documents before they are made ''Effective''. This does not apply to Category 3 controlled documents, which are self-approved by the Document Authors.&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"/>
+				</tab>
+				<tab advancedView_enabled="false" advancedView_visible="false" label_en="Readers">
+					<list id="readers" advancedView_enabled="false" assistance_dql="select i_all_users_names from dm_group where group_name in ($repeatingvalue(select_readers))  union select i_all_users_names from dm_group where group_name in (select select_readers from lss_sec_shared_attribute where r_object_id = '$value(security_shared_id)')" assistance_type="dql" asynchronous="false" condition_enabled="(getValue(lstEditAttributes).contains('|readers|'))" rows="4" sorted="true"/>
+					<comment font_color="#646464" html_content="true" label_en="&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;font color=#646464&gt;These users will be able to access ''Effective'' versions of product-related documents on a read-only basis. They will not generally be able to view work-in-progress versions, unless they have designated roles such as Reviewer.&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"/>
+				</tab>
+				<tab advancedView_enabled="false" advancedView_visible="false" condition_enabled="(getValue(lstEditAttributes).contains('|auditors|'))" condition_visible="(getValue(category).isLessOrEqualsThan('3'))" label_en="Auditors">
+					<list id="auditors" advancedView_enabled="false" assistance_dql="select i_all_users_names from dm_group where group_name in ($repeatingvalue(select_auditors))  union select i_all_users_names from dm_group where group_name in (select select_auditors from lss_sec_shared_attribute where r_object_id = '$value(security_shared_id)')" assistance_type="dql" asynchronous="false" condition_enabled="(getValue(keywords).contains('|auditors|'))" rows="4" sorted="true"/>
+					<comment font_color="#646464" html_content="true" label_en="&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;font color=#646464&gt;These users are responsible for carrying out internal audits on documents related to this product.&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"/>
+				</tab>
+				<tab label_en="Document Specialists">
+					<list id="doc_specialists" advancedView_enabled="false" assistance_dictionary="DQL - General Non-GMP - Dynamic Security - Document Specialists" assistance_type="dictionary" asynchronous="true" condition_enabled="(getValue(lstEditAttributes).contains('|doc_specialists|'))" label_en="Document Specialists" rows="4" sorted="true"/>
+					<comment font_color="#646464" html_content="true" label_en="&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;font color=#646464&gt;The Document Specialists are responsible for the content of documents in Content Lockdown state to ensure submission readiness. Document Specialists can move Content Lockdown documents through approval process, via workflow or Sefl-Approve, or revert to Draft for further updates.&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"/>
+				</tab>
+			</tabs>
+			<label id="security_model"/>
+			<memo id="comments" advancedView_enabled="true" advancedView_required="false" advancedView_visible="false" condition_enabled="(getValue(a_status).equals('Effective')||getValue(a_status).equals('#####'))&amp;&amp; getValue(isUserSecDocAdmin).notEquals('')" condition_required="((getValue(a_status).equals('Effective'))||(getValue(a_status).equals('#####')))" condition_required_edit="true" condition_visible="((getValue(a_status).equals('Effective'))||(getValue(a_status).equals('#####')))" label_en="Reason For Change" rows="4"/>
+		</fieldset>
+		<fieldset advancedView_visible="false" condition_visible="(getValue(isUserSecDocAdmin).equals(''))" label_en="Cannot Update Security Roles">
+			<comment advancedView_visible="false" label_en="The documents selected do not have similar rights, or the user does not have rights to update the security roles on any."/>
+		</fieldset>
+		<fieldset condition_visible_create="false" condition_visible_edit="false" condition_visible_import="false">
+			<list id="select_authors"/>
+			<list id="select_approvers"/>
+			<list id="select_auditors"/>
+			<list id="select_doc_coordinators"/>
+			<list id="security_admin_document"/>
+			<list id="security_admin_model"/>
+			<list id="select_readers"/>
+			<list id="select_reviewers"/>
+			<list id="select_format_reviewers"/>
+			<label id="security_shared_id"/>
+			<label id="a_status" condition_visible_create="false" condition_visible_import="false"/>
+			<combo id="isUserSecModelAdmin" assistance_dql="select r_object_id from dm_dbo.single_result_row_view where exists (select r_object_id from dm_group where any i_all_users_names = '$USER' and group_name in ($repeatingvalue(security_admin_model)))" assistance_type="dql" autoselect_single="true" condition_enabled_create="false" condition_enabled_edit="false" condition_enabled_import="false" condition_visible_create="false" condition_visible_import="false" control="true"/>
+			<combo id="isUserSecDocAdmin" assistance_dql="select r_object_id from dm_dbo.single_result_row_view where exists (select r_object_id from dm_group where any i_all_users_names = '$USER' and group_name in ($repeatingvalue(security_admin_document)))" assistance_type="dql" autoselect_single="true" condition_enabled_create="false" condition_enabled_edit="false" condition_enabled_import="false" condition_visible_create="false" condition_visible_import="false" control="true"/>
+			<combo id="lstEditAttributes" assistance_dql="select admin_attribute_list from lss_sec_secmodel where security_model = '$value(security_model)'" assistance_type="dql" autoselect_single="true" condition_enabled_create="false" condition_enabled_edit="false" condition_enabled_import="false" condition_visible_create="false" condition_visible_import="false" control="true"/>
+		</fieldset>
+	</content>
+	<buttons>
+		<button id="buttonOk" action="validDialog()" advancedView_visible="false" condition_visible="(getValue(isUserSecDocAdmin).notEquals(''))"/>
+		<button id="buttonCancel" action="cancelDialog()"/>
+	</buttons>
+</dialog>

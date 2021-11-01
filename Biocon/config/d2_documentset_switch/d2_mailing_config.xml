@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_documentset_switch object_name="d2_mailing_config">
+	<d2_documentset name="Quality documents for making copies¬Quality documents for making copies - role" config="Notify of document change state"/>
+	<d2_documentset name="Notify Users¬Notify Document Coordinators of deferred documents" config="Notify of deferred effective documents"/>
+	<d2_documentset name="Notify Users¬Notify of Category 1 Periodic Review" config="Notify of documents needing review"/>
+	<d2_documentset name="Notify Users¬Notify of Expiring Documents" config="Notify of expiring effective documents"/>
+	<switch_default config=""/>
+</d2_documentset_switch>

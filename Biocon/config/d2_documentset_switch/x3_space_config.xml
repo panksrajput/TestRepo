@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_documentset_switch object_name="x3_space_config">
+	<d2_documentset name="Life Sciences Managers Workspace¬Q&amp;M Managers Workspace" config="WS QnM Multi-view (Managers)"/>
+	<d2_documentset name="Life Sciences Coordinators Workspace¬Q&amp;M Coordinators Workspace" config="WS QnM Multi-view (Coordinators)"/>
+	<d2_documentset name="Life Sciences Authors Workspace¬Q&amp;M Authors Workspace" config="WS QnM Multi-view (Authors)"/>
+	<d2_documentset name="Life Sciences Reviewer-Approver Workspace¬Q&amp;M Reviewer-Approver Workspace" config="WS QnM Multi-view (Reviewer-Approver)"/>
+	<d2_documentset name="Life Sciences Consumers Workspace¬Q&amp;M Consumers Workspace" config="WS QnM Multi-view (Consumers)"/>
+	<d2_documentset name="All LSS Workspaces" config="WS QnM Multi-view (Authors)"/>
+	<d2_documentset name="All LSS Workspaces" config="WS QnM Multi-view (Consumers)"/>
+	<d2_documentset name="All LSS Workspaces" config="WS QnM Multi-view (Coordinators)"/>
+	<d2_documentset name="All LSS Workspaces" config="WS QnM Multi-view (Managers)"/>
+	<d2_documentset name="All LSS Workspaces" config="WS QnM Multi-view (Reviewer-Approver)"/>
+	<switch_defaults/>
+</d2_documentset_switch>

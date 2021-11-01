@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dialog id="PropertiesDialog" buttons_right="false" focus="" height="250" resizable="true" signoff_creation="false" signoff_edit="false" signoff_import="false" signoff_intention_dictionary="" signoff_intention_required="false" width="500">
+	<content>
+		<fieldset>
+			<comment html_content="true" label_en="&lt;table cellspacing=0&gt;&lt;tr&gt;&lt;td&gt;&lt;font size=4&gt;Please click OK to confirm that you have Approved the document.&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"/>
+		</fieldset>
+	</content>
+	<buttons>
+		<button id="buttonOk" action="validDialog()"/>
+		<button id="buttonCancel" action="cancelDialog()"/>
+	</buttons>
+</dialog>

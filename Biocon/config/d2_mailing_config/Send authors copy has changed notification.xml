@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_mailing_config new_format="true">
+	<object_name value="Send authors copy has changed notification"/>
+	<title value="Send email to Authors to notify them of COPY document status change"/>
+	<subject value=""/>
+	<authors/>
+	<keywords/>
+	<a_status value=""/>
+	<a_content_type value="xml"/>
+	<log_entry value=""/>
+	<language_code value=""/>
+	<application_names>
+		<repeating value="OpenText Life Sciences Medical Device Solution"/>
+		<repeating value="OpenText Life Sciences Medical Device for Quality and Manufacturing Solution"/>
+		<repeating value="OpenText Life Sciences Submission Storage and Viewing"/>
+		<repeating value="OpenText Life Sciences Research and Development Solution"/>
+		<repeating value="OpenText Life Sciences Quality and Manufacturing Solution"/>
+	</application_names>
+	<lock_config value="F"/>
+	<parents_config/>
+</d2_mailing_config>

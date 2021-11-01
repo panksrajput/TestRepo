@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x3_skin_config new_format="true">
+	<object_name value="OpenText Blue Dark Theme"/>
+	<title value="Default themes for OpenText Life Sciences."/>
+	<subject value=""/>
+	<authors/>
+	<keywords/>
+	<a_status value=""/>
+	<a_content_type value=""/>
+	<log_entry value=""/>
+	<language_code value=""/>
+	<module_type value="x3_skin_config"/>
+	<application_names>
+		<repeating value="OpenText Life Sciences Medical Device for Research and Development Solution"/>
+		<repeating value="OpenText Life Sciences Medical Device Solution"/>
+		<repeating value="OpenText Life Sciences Submission Storage and Viewing"/>
+		<repeating value="OpenText Life Sciences Research and Development Solution"/>
+		<repeating value="OpenText Life Sciences Quality and Manufacturing Solution"/>
+		<repeating value="OpenText Life Sciences eTMF Solution"/>
+		<repeating value="Biocon"/>
+	</application_names>
+	<lock_config value="F"/>
+	<parents_config/>
+	<space_title_color value="244177"/>
+	<space_border_color value="244177"/>
+	<background_color value="808080"/>
+	<background_gradient_start value="DDDDDD"/>
+	<background_gradient_end value="969696"/>
+	<background_color_type value="gradient"/>
+	<label_value>
+		<repeating value="OpenText Blue Dark Theme"/>
+	</label_value>
+	<label_locale>
+		<repeating value="en"/>
+	</label_locale>
+	<selection_color value="d0d0d0"/>
+	<selection_blur_color value="646464"/>
+	<header_color value="244177"/>
+	<background_texture value="default_texture.png"/>
+	<tab_inactive_color value="313131"/>
+	<tab_active_color value="244177"/>
+	<tab_colored_text value="F"/>
+	<tab_border_color value="858585"/>
+	<dialog_background_white value="T"/>
+	<header_logo value="biocon.jpg"/>
+	<menu_text_color value="FFFFFF"/>
+	<menu_hover_color value="99ccee"/>
+	<tab_text_active value="FFFFFF"/>
+	<tab_text_inactive value="C0C0C0"/>
+</x3_skin_config>

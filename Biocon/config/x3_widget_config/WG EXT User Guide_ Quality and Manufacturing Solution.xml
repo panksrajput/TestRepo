@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x3_widget_config new_format="true">
+	<object_name value="WG EXT User Guide: Quality and Manufacturing Solution"/>
+	<title value="Provides access to the Quality and Manufacturing Solution User Guide files installed on the application server."/>
+	<subject value=""/>
+	<authors/>
+	<keywords/>
+	<a_status value=""/>
+	<a_content_type value=""/>
+	<log_entry value=""/>
+	<language_code value=""/>
+	<module_type value="x3_widget_config"/>
+	<application_names>
+		<repeating value="OpenText Life Sciences Medical Device for Quality and Manufacturing Solution"/>
+		<repeating value="OpenText Life Sciences Quality and Manufacturing Solution"/>
+	</application_names>
+	<lock_config value="F"/>
+	<parents_config/>
+	<preview_x3_image value="WG Solution User Guide.png"/>
+	<label_locale>
+		<repeating value="en"/>
+	</label_locale>
+	<label_value>
+		<repeating value="User Guide: Quality and Manufacturing Solution"/>
+	</label_value>
+	<desc_locale>
+		<repeating value="en"/>
+	</desc_locale>
+	<desc_value>
+		<repeating value="Quality and Manufacturing Solution User Guide"/>
+	</desc_value>
+	<widget_url value="/d2ls/LSQM-UG/htmlmulti/lsqm/index.htm"/>
+	<channel_name value=""/>
+	<widget_type value="ExternalWidget"/>
+	<query_form_name value=""/>
+	<is_oaj value="F"/>
+	<channel_names/>
+	<param_name/>
+	<param_value/>
+	<focus_events/>
+	<focus_event_params/>
+	<customize_columns value="F"/>
+	<columns/>
+	<use_col_for_assist value="F"/>
+	<is_unloadprotect value="F"/>
+</x3_widget_config>

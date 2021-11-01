@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_taxonomy object_name="GMP Equipment" is_versioned="false" title="This is taxonomy for GMP Equipment" lock_config="false" parents_config="" application_names="OpenText Life Sciences Medical Device for Quality and Manufacturing Solution¬OpenText Life Sciences Quality and Manufacturing Solution¬OpenText Life Sciences Medical Device Solution¬Custom Configurations" security_group="admingroup">
+	<level position="0" name="GMP Equipment Name"/>
+	<level position="1" name="GMP Equipment ID"/>
+	<path value="Ackley CP-200/EQUIP000001"/>
+	<path value="Ackley TP-500/EQUIP000002"/>
+	<path value="Capsuline Pro600/EQUIP000003"/>
+	<path value="KDP-1/EQUIP000004"/>
+	<path value="Kinex 700/EQUIP000005"/>
+	<path value="Model ALP-16/EQUIP000006"/>
+	<path value="Pharma Chem/EQUIP000007"/>
+	<path value="PLB-32/EQUIP000008"/>
+	<path value="Primera Label/EQUIP000009"/>
+	<path value="ProPack B9X12/EQUIP000010"/>
+	<path value="ROTA M400"/>
+</d2_taxonomy>

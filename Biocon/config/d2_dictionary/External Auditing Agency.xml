@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_dictionary object_name="External Auditing Agency" title="" lock_config="false" parents_config="" application_names="OpenText Life Sciences Quality and Manufacturing Solution¬Custom Configurations" security_group="biocon_dict_admin" search_group="biocon_dict_admin" version="2" is_versioned="false" manual_order="false" create_view_option="false" is_dql="false" is_dql_cache="false" dql="" label_en="External Auditing Agency">
+	<d2_dictionary_value object_name="EMA" is_enabled="true" order_no="0">
+		<locale name="en" value="EMA"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="FDA" is_enabled="true" order_no="0">
+		<locale name="en" value="FDA"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Health Canada" is_enabled="true" order_no="0">
+		<locale name="en" value="Health Canada"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="PMDA" is_enabled="true" order_no="0">
+		<locale name="en" value="PMDA"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Swissmedic" is_enabled="true" order_no="0">
+		<locale name="en" value="Swissmedic"/>
+	</d2_dictionary_value>
+</d2_dictionary>

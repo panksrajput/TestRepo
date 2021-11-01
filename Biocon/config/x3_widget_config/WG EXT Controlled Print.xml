@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x3_widget_config new_format="true">
+	<object_name value="WG EXT Controlled Print"/>
+	<title value=""/>
+	<subject value=""/>
+	<authors/>
+	<keywords/>
+	<a_status value=""/>
+	<a_content_type value=""/>
+	<log_entry value=""/>
+	<language_code value=""/>
+	<module_type value="x3_widget_config"/>
+	<application_names>
+		<repeating value="OpenText Life Sciences Medical Device for Quality and Manufacturing Solution"/>
+		<repeating value="OpenText Life Sciences Quality and Manufacturing Solution"/>
+	</application_names>
+	<lock_config value="F"/>
+	<parents_config/>
+	<preview_x3_image value="Print Widget.JPG"/>
+	<label_locale>
+		<repeating value="en"/>
+	</label_locale>
+	<label_value>
+		<repeating value="Print"/>
+	</label_value>
+	<desc_locale>
+		<repeating value="en"/>
+	</desc_locale>
+	<desc_value>
+		<repeating value="Print"/>
+	</desc_value>
+	<widget_url value="https://bldmsdev.biocon.com:7443/ControlledPrint?docbase=$DOCBASE&amp;locale=en&amp;username=$LOGIN&amp;user=$USER&amp;encodeDollarData=true"/>
+	<channel_name value=""/>
+	<widget_type value="ExternalWidget"/>
+	<query_form_name value=""/>
+	<is_oaj value="T"/>
+	<channel_names>
+		<repeating value="D2_EVENT_SELECT_OBJECT"/>
+	</channel_names>
+	<param_name/>
+	<param_value/>
+	<focus_events/>
+	<focus_event_params/>
+	<customize_columns value="F"/>
+	<columns/>
+	<use_col_for_assist value="F"/>
+	<is_unloadprotect value="F"/>
+</x3_widget_config>

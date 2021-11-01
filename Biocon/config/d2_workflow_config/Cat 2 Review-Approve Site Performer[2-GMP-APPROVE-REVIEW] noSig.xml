@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_workflow_config new_format="true">
+	<object_name value="Cat 2 Review/Approve Site Performer[2-GMP-APPROVE-REVIEW] noSig"/>
+	<title value="Workflow for GMP CAT 2 documents with Site Reviewers &amp; Approvers as Performers"/>
+	<subject value=""/>
+	<authors/>
+	<keywords/>
+	<a_status value=""/>
+	<a_content_type value="xml"/>
+	<log_entry value=""/>
+	<language_code value=""/>
+	<application_names>
+		<repeating value="OpenText Life Sciences Medical Device for Quality and Manufacturing Solution"/>
+		<repeating value="OpenText Life Sciences Quality and Manufacturing Solution"/>
+		<repeating value="OpenText Life Sciences Medical Device Solution"/>
+	</application_names>
+	<lock_config value="F"/>
+	<parents_config/>
+	<associated_dm_process value="Cat 2 Independently Approved without Release Pending - [2-APPROVE-REVIEW]"/>
+</d2_workflow_config>

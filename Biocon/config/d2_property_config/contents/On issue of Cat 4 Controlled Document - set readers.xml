@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dialog id="PropertiesDialog" buttons_right="false" focus="readers" height="300" resizable="true" signoff_creation="false" signoff_edit="false" signoff_import="false" signoff_intention_dictionary="" signoff_intention_required="false" width="400">
+	<content>
+		<fieldset label_en="Issue Document">
+			<comment html_content="true" label_en="Select the user groups and / or individual users who will &lt;br&gt;be able to read this document when it is issued:"/>
+			<list id="readers" assistance_dql="select groups_names from dm_group where any i_supergroups_names in('cd_clinical_doc_readers', 'cd_non_clinical_doc_readers', 'cd_quality_doc_readers', 'cd_regulatory_doc_readers') union select users_names from dm_group where any i_supergroups_names in ('cd_clinical_doc_readers', 'cd_non_clinical_doc_readers', 'cd_quality_doc_readers', 'cd_regulatory_doc_readers')  union select group_name from dm_group where group_name in('cd_clinical_doc_readers', 'cd_non_clinical_doc_readers', 'cd_quality_doc_readers', 'cd_regulatory_doc_readers')" assistance_type="dql" sorted="true"/>
+		</fieldset>
+	</content>
+	<buttons>
+		<button id="buttonOk" action="validDialog()"/>
+		<button id="buttonCancel" action="cancelDialog()"/>
+	</buttons>
+</dialog>

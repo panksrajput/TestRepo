@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dialog id="PropertiesDialog" buttons_right="false" focus="" height="500" resizable="true" signoff_creation="false" signoff_edit="false" signoff_import="false" signoff_intention_dictionary="" signoff_intention_required="false" width="800">
+	<content>
+		<comment html_content="true" label_en="If you want to filter the values that are evaluated for the generation of groups for each Tag identified in the group generator add a pipe (&quot;|&quot;) delimited list of values that you want to use for the associated hierarchy tag.&lt;br /&gt;e.g. for group_name - enter a list of cd_domains that are to be used to limit the operation |cd_clinical|cd_quality|&lt;br /&gt;&lt;span style=&quot;color: #ff0000;&quot;&gt;Note : invalid values (that are not part of the configuration) will be not generated.&lt;/span&gt;"/>
+		<grid grid_height="200">
+			<text id="hierarchies" condition_enabled_create="false" condition_enabled_edit="false" condition_enabled_import="false" label_en="Tag"/>
+			<text id="hierarchy_filter" cell_width="1500" label_en="Values"/>
+		</grid>
+	</content>
+	<buttons>
+		<button id="buttonOk" action="validDialog()"/>
+		<button id="buttonCancel" action="cancelDialog()"/>
+	</buttons>
+</dialog>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_dictionary object_name="Import States" title="A list of initial states that can be set for different document types." lock_config="false" parents_config="" application_names="OpenText Life Sciences Quality and Manufacturing Solution¬OpenText Life Sciences Research and Development Solution¬OpenText Life Sciences Medical Device for Quality and Manufacturing Solution¬OpenText Life Sciences Medical Device for Research and Development Solution¬OpenText Life Sciences Medical Device Solution¬OpenText Life Sciences Submission Storage and Viewing¬OpenText Life Sciences eTMF Solution" security_group="admingroup" search_group="admingroup" version="2" is_versioned="false" manual_order="false" create_view_option="false" is_dql="false" is_dql_cache="false" dql="" label_en="Import States">
+	<d2_dictionary_value object_name="cd_app_reg_labeling_doc.Draft" is_enabled="true" order_no="0">
+		<alias name="Post Transition" value=""/>
+		<alias name="Audit Event" value="Imported as Draft"/>
+		<alias name="Audit Event Args" value=""/>
+		<locale name="en" value="Draft"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="cd_app_reg_labeling_doc.Effective" is_enabled="true" order_no="0">
+		<alias name="Post Transition" value="Imported-Final"/>
+		<alias name="Audit Event" value="Imported as Approved"/>
+		<alias name="Audit Event Args" value="$value(original_file_name)"/>
+		<locale name="en" value="Approved"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="cd_clinical.Draft" is_enabled="true" order_no="0">
+		<alias name="Post Transition" value=""/>
+		<alias name="Audit Event" value="Imported as Draft"/>
+		<alias name="Audit Event Args" value=""/>
+		<locale name="en" value="Draft"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="cd_clinical.Effective" is_enabled="true" order_no="0">
+		<alias name="Post Transition" value="Imported-Final"/>
+		<alias name="Audit Event" value="Imported as Approved"/>
+		<alias name="Audit Event Args" value="$value(original_file_name)"/>
+		<locale name="en" value="Approved"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="cd_core_reg_labeling_doc.Draft" is_enabled="true" order_no="0">
+		<alias name="Post Transition" value=""/>
+		<alias name="Audit Event" value="Imported as Draft"/>
+		<alias name="Audit Event Args" value=""/>
+		<locale name="en" value="Draft"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="cd_core_reg_labeling_doc.Effective" is_enabled="true" order_no="0">
+		<alias name="Post Transition" value="Imported-Final"/>
+		<alias name="Audit Event" value="Imported as Approved"/>
+		<alias name="Audit Event Args" value="$value(original_file_name)"/>
+		<locale name="en" value="Approved"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="cd_general_doc.Draft" is_enabled="true" order_no="0">
+		<alias name="Post Transition" value=""/>
+		<alias name="Audit Event" value="Imported as Draft"/>
+		<alias name="Audit Event Args" value=""/>
+		<locale name="en" value="Draft"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="cd_general_doc.Effective" is_enabled="true" order_no="0">
+		<alias name="Post Transition" value="Imported-Final"/>
+		<alias name="Audit Event" value="Imported as Approved"/>
+		<alias name="Audit Event Args" value="$value(original_file_name)"/>
+		<locale name="en" value="Approved"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="cd_non_clinical.Draft" is_enabled="true" order_no="0">
+		<alias name="Post Transition" value=""/>
+		<alias name="Audit Event" value="Imported as Draft"/>
+		<alias name="Audit Event Args" value=""/>
+		<locale name="en" value="Draft"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="cd_non_clinical.Effective" is_enabled="true" order_no="0">
+		<alias name="Post Transition" value="Imported-Final"/>
+		<alias name="Audit Event" value="Imported as Approved"/>
+		<alias name="Audit Event Args" value="$value(original_file_name)"/>
+		<locale name="en" value="Approved"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="cd_quality.Draft" is_enabled="true" order_no="0">
+		<alias name="Post Transition" value=""/>
+		<alias name="Audit Event" value="Imported as Draft"/>
+		<alias name="Audit Event Args" value=""/>
+		<locale name="en" value="Draft"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="cd_quality.Effective" is_enabled="true" order_no="0">
+		<alias name="Post Transition" value="Imported-Final"/>
+		<alias name="Audit Event" value="Imported as Approved"/>
+		<alias name="Audit Event Args" value="$value(original_file_name)"/>
+		<locale name="en" value="Approved"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="cd_quality_gmp_approved.Draft" is_enabled="true" order_no="0">
+		<alias name="Post Transition" value=""/>
+		<alias name="Audit Event" value="Imported as Draft"/>
+		<alias name="Audit Event Args" value=""/>
+		<locale name="en" value="Draft"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="cd_quality_gmp_approved.Effective" is_enabled="true" order_no="0">
+		<alias name="Post Transition" value="(Import as Effective)"/>
+		<alias name="Audit Event" value="Imported as Approved"/>
+		<alias name="Audit Event Args" value="$value(original_file_name)"/>
+		<locale name="en" value="Approved"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="cd_quality_gmp_effective.Draft" is_enabled="true" order_no="0">
+		<alias name="Post Transition" value=""/>
+		<alias name="Audit Event" value="Imported as Draft"/>
+		<alias name="Audit Event Args" value=""/>
+		<locale name="en" value="Draft"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="cd_quality_gmp_effective.Effective" is_enabled="true" order_no="0">
+		<alias name="Post Transition" value="(Import as Effective)"/>
+		<alias name="Audit Event" value="Imported as Effective"/>
+		<alias name="Audit Event Args" value="$value(original_file_name)"/>
+		<locale name="en" value="Effective"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="cd_quality_gmp_effective.Release Pending" is_enabled="true" order_no="0">
+		<alias name="Post Transition" value="(Import as Release Pending)"/>
+		<alias name="Audit Event" value="Imported as Release Pending"/>
+		<alias name="Audit Event Args" value="$value(original_file_name)"/>
+		<locale name="en" value="Release Pending"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="cd_reg_ad_promo.Draft" is_enabled="true" order_no="0">
+		<alias name="Post Transition" value=""/>
+		<alias name="Audit Event" value="Imported as Draft"/>
+		<alias name="Audit Event Args" value=""/>
+		<locale name="en" value="Draft"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="cd_reg_ad_promo.Effective" is_enabled="true" order_no="0">
+		<alias name="Post Transition" value="Imported-Final"/>
+		<alias name="Audit Event" value="Imported as Approved"/>
+		<alias name="Audit Event Args" value="$value(original_file_name)"/>
+		<locale name="en" value="Approved"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="cd_reg_admin.Draft" is_enabled="true" order_no="0">
+		<alias name="Post Transition" value=""/>
+		<alias name="Audit Event" value="Imported as Draft"/>
+		<alias name="Audit Event Args" value=""/>
+		<locale name="en" value="Draft"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="cd_reg_admin.Effective" is_enabled="true" order_no="0">
+		<alias name="Post Transition" value="Imported-Final"/>
+		<alias name="Audit Event" value="Imported as Approved"/>
+		<alias name="Audit Event Args" value="$value(original_file_name)"/>
+		<locale name="en" value="Approved"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="cd_reg_correspondence.Draft" is_enabled="true" order_no="0">
+		<alias name="Post Transition" value=""/>
+		<alias name="Audit Event" value="Imported as Draft"/>
+		<alias name="Audit Event Args" value=""/>
+		<locale name="en" value="Draft"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="cd_reg_correspondence.Effective" is_enabled="true" order_no="0">
+		<alias name="Post Transition" value="Imported-Final"/>
+		<alias name="Audit Event" value="Imported as Approved"/>
+		<alias name="Audit Event Args" value="$value(original_file_name)"/>
+		<locale name="en" value="Approved"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="cd_safety.Draft" is_enabled="true" order_no="0">
+		<alias name="Post Transition" value=""/>
+		<alias name="Audit Event" value="Imported as Draft"/>
+		<alias name="Audit Event Args" value=""/>
+		<locale name="en" value="Draft"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="cd_safety.Effective" is_enabled="true" order_no="0">
+		<alias name="Post Transition" value="Imported-Final"/>
+		<alias name="Audit Event" value="Imported as Approved"/>
+		<alias name="Audit Event Args" value="$value(original_file_name)"/>
+		<locale name="en" value="Approved"/>
+	</d2_dictionary_value>
+</d2_dictionary>

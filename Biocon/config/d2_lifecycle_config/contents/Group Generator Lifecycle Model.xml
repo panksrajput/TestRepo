@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2lifecycle execute_actions_on_start="true" state_attribute="">
+	<state direct="false" entry="true" name="Active">
+		<entry_conditions/>
+		<actions>
+			<set name="a_status" value="Active"/>
+			<set name="reserve_user" value=""/>
+			<applysecurity/>
+		</actions>
+		<next_states>
+			<state action="" confirmation_en="" dialog="" event="" label_en="Copy Parent Generators" name="(Copy Parent Patterns)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="Link to Parent Patterns" name="(Link Parent Patterns)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="Security On Reserve Group Generator" event="" label_en="Generate Groups..." name="(Generate Groups)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="Security On Reserve Group Generator" event="" label_en="Reserve for Group Maintenance" name="Reserved" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="checkin" label_en="" name="(checkin)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+		</next_states>
+	</state>
+	<state direct="false" entry="false" name="(Copy Parent Patterns)">
+		<entry_conditions/>
+		<actions>
+			<applymethod argument="-query &quot;select pattern as pattern_parents from lss_sec_group_gen where generator_name in (select generator_parents from lss_sec_group_gen where r_object_id = '$value(r_object_id)')&quot; -ignore_null_values true -truncate true -all_rows true" name="CDFUpdateAttrsViaQueryMethod"/>
+			<set name="use_gen_pattern" value="false"/>
+		</actions>
+		<next_states/>
+	</state>
+	<state direct="false" entry="false" name="(Link Parent Patterns)">
+		<entry_conditions/>
+		<actions>
+			<set name="use_gen_pattern" value="true"/>
+		</actions>
+		<next_states/>
+	</state>
+	<state direct="false" entry="false" name="(Generate Groups)">
+		<entry_conditions>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate User is a Security Group Administrator"/>
+		</entry_conditions>
+		<actions>
+			<applyparameters/>
+			<applymethod argument="-filter true" fetchCurrent="false" name="CDFGroupGeneratorMethod"/>
+		</actions>
+		<next_states/>
+	</state>
+	<state direct="false" entry="false" name="Reserved">
+		<entry_conditions/>
+		<actions>
+			<applyparameters/>
+			<applymethod argument="-user &quot;$USER&quot; -action CREATE" name="CDFGroupMaintenance"/>
+		</actions>
+		<next_states>
+			<state action="" confirmation_en="" dialog="" event="" label_en="Release Reservation" name="(Release)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="Process Changes" name="Process" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="Security On Reserve Group Generator" event="" label_en="Refresh Spreadsheet" name="(Refresh Reservation)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+		</next_states>
+	</state>
+	<state direct="false" entry="false" name="(checkin)">
+		<entry_conditions/>
+		<actions>
+			<set name="a_status" value="Reserved"/>
+			<set name="reserve_user" value="$USER"/>
+			<applysecurity/>
+		</actions>
+		<next_states/>
+	</state>
+	<state direct="false" entry="false" name="Process">
+		<entry_conditions>
+			<attribute compare="eq" message_failed_en="This generator is reserved by $value(reserve_user). It can only be processed by them." name="reserve_user" value="$USER"/>
+		</entry_conditions>
+		<actions>
+			<set name="a_status" value="Processing..."/>
+			<applymethod argument="-user &quot;$USER&quot; -action PROCESS" name="CDFGroupMaintenance"/>
+			<applysecurity/>
+		</actions>
+		<next_states/>
+	</state>
+	<state direct="false" entry="false" name="(Release)">
+		<entry_conditions>
+			<attribute compare="eq" message_failed_en="This generator is reserved by $value(reserve_user). It can only be released by them." name="reserve_user" value="$USER"/>
+		</entry_conditions>
+		<actions>
+			<applymethod argument="-user &quot;$USER&quot; -action RELEASE" name="CDFGroupMaintenance"/>
+		</actions>
+		<next_states/>
+	</state>
+	<state direct="false" entry="false" name="(Refresh Reservation)">
+		<entry_conditions>
+			<attribute compare="eq" message_failed_en="" name="reserve_user" value="$USER"/>
+		</entry_conditions>
+		<actions>
+			<applyparameters/>
+			<applymethod argument="-user &quot;$USER&quot; -action CREATE " name="CDFGroupMaintenance"/>
+		</actions>
+		<next_states/>
+	</state>
+</d2lifecycle>

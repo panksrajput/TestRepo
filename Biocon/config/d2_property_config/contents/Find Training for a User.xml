@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dialog id="PropertiesDialog" buttons_right="false" focus="" height="500" initial_invalid="false" resizable="true" signoff_creation="false" signoff_edit="false" signoff_import="false" signoff_intention_dictionary="" signoff_intention_required="false" width="400">
+	<content>
+		<comment html_content="true" label_en="This query form allows you to select one or more users to view training information."/>
+		<list-editable id="user_name" assistance_dql="SELECT user_name FROM dm_user where r_is_group = 0 and client_capability &lt; 8 and user_name not like 'dm\_%' ESCAPE '\' and user_name not like 'dmc%' and user_name not like 'd2\_%' ESCAPE '\' order by user_name" assistance_type="dql" asynchronous="true" control="true" label_en="User Name"/>
+	</content>
+	<buttons>
+		<button id="buttonOk" action="validDialog()"/>
+		<button id="buttonCancel" action="cancelDialog()"/>
+	</buttons>
+</dialog>

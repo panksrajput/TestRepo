@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_dictionary object_name="GMP Training Roles" title="" lock_config="false" parents_config="" application_names="OpenText Life Sciences Quality and Manufacturing Solution¬Custom Configurations" security_group="admingroup" search_group="admingroup" version="2" is_versioned="false" manual_order="false" create_view_option="false" is_dql="false" is_dql_cache="false" dql="" label_en="GMP Training Roles">
+	<d2_dictionary_value object_name="Administrative Personnel" is_enabled="true" order_no="0">
+		<locale name="en" value="Administrative Personnel"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Administrators" is_enabled="true" order_no="0">
+		<locale name="en" value="Administrators"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Auditors" is_enabled="true" order_no="0">
+		<locale name="en" value="Auditors"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Business Analysts" is_enabled="true" order_no="0">
+		<locale name="en" value="Business Analysts"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Calibrations Personnel" is_enabled="true" order_no="0">
+		<locale name="en" value="Calibrations Personnel"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Chemists and Pharmacists" is_enabled="true" order_no="0">
+		<locale name="en" value="Chemists and Pharmacists"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Cleaning Personnel" is_enabled="true" order_no="0">
+		<locale name="en" value="Cleaning Personnel"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="CMO Release Personnel" is_enabled="true" order_no="0">
+		<locale name="en" value="CMO Release Personnel"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Complaint and Recall Handlers" is_enabled="true" order_no="0">
+		<locale name="en" value="Complaint and Recall Handlers"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Compliance Personnel" is_enabled="true" order_no="0">
+		<locale name="en" value="Compliance Personnel"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Coordinators" is_enabled="true" order_no="0">
+		<locale name="en" value="Coordinators"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Data Manager" is_enabled="true" order_no="0">
+		<locale name="en" value="Data Manager"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Demand Planners" is_enabled="true" order_no="0">
+		<locale name="en" value="Demand Planners"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Distribution Personnel" is_enabled="true" order_no="0">
+		<locale name="en" value="Distribution Personnel"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Divisional Directors" is_enabled="true" order_no="0">
+		<locale name="en" value="Divisional Directors"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Dossier Managers" is_enabled="true" order_no="0">
+		<locale name="en" value="Dossier Managers"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Electricians" is_enabled="true" order_no="0">
+		<locale name="en" value="Electricians"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Engineering and Maintenance" is_enabled="true" order_no="0">
+		<locale name="en" value="Engineering and Maintenance"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Finance Personnel" is_enabled="true" order_no="0">
+		<locale name="en" value="Finance Personnel"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Gas Chromotography Users" is_enabled="true" order_no="0">
+		<locale name="en" value="Gas Chromatography Users"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Heads of Department" is_enabled="true" order_no="0">
+		<locale name="en" value="Heads of Department"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Health Safety and Environment Personnel" is_enabled="true" order_no="0">
+		<locale name="en" value="Health Safety and Environment Personnel"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Human Resources Personnel" is_enabled="true" order_no="0">
+		<locale name="en" value="Human Resources Personnel"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Information Technology" is_enabled="true" order_no="0">
+		<locale name="en" value="Information Technology"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Inspection Personnel" is_enabled="true" order_no="0">
+		<locale name="en" value="Inspection Personnel"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="IT Application Specialists" is_enabled="true" order_no="0">
+		<locale name="en" value="IT Application Specialists"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="IT Personnel" is_enabled="true" order_no="0">
+		<locale name="en" value="IT Personnel"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Laboratory Personnel" is_enabled="true" order_no="0">
+		<locale name="en" value="Laboratory Personnel"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Legal" is_enabled="true" order_no="0">
+		<locale name="en" value="Legal"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Logistics Personnel" is_enabled="true" order_no="0">
+		<locale name="en" value="Logistics Personnel"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Managers" is_enabled="true" order_no="0">
+		<locale name="en" value="Managers"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Manufacturing Personnel" is_enabled="true" order_no="0">
+		<locale name="en" value="Manufacturing Personnel"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Market Coordinators" is_enabled="true" order_no="0">
+		<locale name="en" value="Market Coordinators"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Marketing Personnel" is_enabled="true" order_no="0">
+		<locale name="en" value="Marketing Personnel"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Medical Affairs Personnel" is_enabled="true" order_no="0">
+		<locale name="en" value="Medical Affairs Personnel"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Medical Directors" is_enabled="true" order_no="0">
+		<locale name="en" value="Medical Directors"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Medical Information Officers" is_enabled="true" order_no="0">
+		<locale name="en" value="Medical Information Officers"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Medical Science Liaisons" is_enabled="true" order_no="0">
+		<locale name="en" value="Medical Science Liaisons"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Pharmacology Operations" is_enabled="true" order_no="0">
+		<locale name="en" value="Pharmacology Operations"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Pharmacovigilance Personnel" is_enabled="true" order_no="0">
+		<locale name="en" value="Pharmacovigilance Personnel"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Principal Investigators" is_enabled="true" order_no="0">
+		<locale name="en" value="Principal Investigators"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Production Cleaning Personnel" is_enabled="true" order_no="0">
+		<locale name="en" value="Production Cleaning Personnel"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Production Documentation" is_enabled="true" order_no="0">
+		<locale name="en" value="Production Documentation"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Production Equipment" is_enabled="true" order_no="0">
+		<locale name="en" value="Production Equipment"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Production IT" is_enabled="true" order_no="0">
+		<locale name="en" value="Production IT"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Project Managers" is_enabled="true" order_no="0">
+		<locale name="en" value="Project Managers"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Publications Managers" is_enabled="true" order_no="0">
+		<locale name="en" value="Publications Managers"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Purified Water Personnel" is_enabled="true" order_no="0">
+		<locale name="en" value="Purified Water Personnel"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="QA" is_enabled="true" order_no="0">
+		<locale name="en" value="QA"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Qualification Personnel" is_enabled="true" order_no="0">
+		<locale name="en" value="Qualification Personnel"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Quality Assurance" is_enabled="true" order_no="0">
+		<locale name="en" value="Quality Assurance"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Quality Personnel" is_enabled="true" order_no="0">
+		<locale name="en" value="Quality Personnel"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Quality Systems" is_enabled="true" order_no="0">
+		<locale name="en" value="Quality Systems"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Records Managers" is_enabled="true" order_no="0">
+		<locale name="en" value="Records Managers"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Reference Standard Coordinators" is_enabled="true" order_no="0">
+		<locale name="en" value="Reference Standard Coordinators"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Regulatory Affairs Personnel" is_enabled="true" order_no="0">
+		<locale name="en" value="Regulatory Affairs Personnel"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Research Scientists" is_enabled="true" order_no="0">
+		<locale name="en" value="Research Scientists"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Safety Research Personnel" is_enabled="true" order_no="0">
+		<locale name="en" value="Safety Research Personnel"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Sales Personnel" is_enabled="true" order_no="0">
+		<locale name="en" value="Sales Personnel"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Scientists" is_enabled="true" order_no="0">
+		<locale name="en" value="Scientists"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Stability Personnel" is_enabled="true" order_no="0">
+		<locale name="en" value="Stability Personnel"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Study Directors" is_enabled="true" order_no="0">
+		<locale name="en" value="Study Directors"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Study Managers" is_enabled="true" order_no="0">
+		<locale name="en" value="Study Managers"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Supply Chain Managers" is_enabled="true" order_no="0">
+		<locale name="en" value="Supply Chain Managers"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Supply Personnel" is_enabled="true" order_no="0">
+		<locale name="en" value="Supply Personnel"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Supply Planners" is_enabled="true" order_no="0">
+		<locale name="en" value="Supply Planners"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="System Owners" is_enabled="true" order_no="0">
+		<locale name="en" value="System Owners"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Team Managers" is_enabled="true" order_no="0">
+		<locale name="en" value="Team Managers"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Technical Maintenance and Operations Personnel" is_enabled="true" order_no="0">
+		<locale name="en" value="Technical Maintenance and Operations Personnel"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Technical Preparation Personnel" is_enabled="true" order_no="0">
+		<locale name="en" value="Technical Preparation Personnel"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Technicians" is_enabled="true" order_no="0">
+		<locale name="en" value="Technicians"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Trial Personnel" is_enabled="true" order_no="0">
+		<locale name="en" value="Trial Personnel"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Validation Personnel" is_enabled="true" order_no="0">
+		<locale name="en" value="Validation Personnel"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Ventilation Personnel" is_enabled="true" order_no="0">
+		<locale name="en" value="Ventilation Personnel"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Warehouse Managers" is_enabled="true" order_no="0">
+		<locale name="en" value="Warehouse Managers"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Warehouse Technicians" is_enabled="true" order_no="0">
+		<locale name="en" value="Warehouse Technicians"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Website Personnel" is_enabled="true" order_no="0">
+		<locale name="en" value="Website Personnel"/>
+	</d2_dictionary_value>
+</d2_dictionary>

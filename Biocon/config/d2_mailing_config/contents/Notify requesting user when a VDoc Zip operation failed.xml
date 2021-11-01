@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_mailing_config>
+	<add_attachment>false</add_attachment>
+	<rendition_formats/>
+	<list-recipient>
+		<recipient type="attribute">notification_list</recipient>
+	</list-recipient>
+	<list-subject>
+		<subject_en>VDoc Zip file creation failed for &quot;$value(object_name)&quot;.</subject_en>
+	</list-subject>
+	<list-object>
+		<object_en>Failed to generate a zip file for the virtual document &quot;$value(object_name)&quot;. Please try again – if the problem persists, contact the System Administrators.</object_en>
+	</list-object>
+</d2_mailing_config>

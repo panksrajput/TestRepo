@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dialog id="PropertiesDialog" buttons_right="false" focus="" height="600" resizable="true" signoff_creation="false" signoff_edit="false" signoff_import="false" signoff_intention_dictionary="" signoff_intention_required="false" width="600">
+	<content>
+		<fieldset label_en="Delete Config Properties">
+			<text id="object_name" condition_enabled_import="false" condition_required_create="true" condition_required_edit="true"/>
+			<memo id="title" condition_required_create="true" condition_required_edit="true" condition_required_import="true" rows="2"/>
+			<combo id="doc_type" assistance_dql="select distinct r_object_type from cd_controlled_doc" assistance_type="dql"/>
+			<list id="doc_statuses" assistance_dictionary="TMF Document Status" assistance_dictionary_alias="auto" assistance_type="dictionary"/>
+			<list id="roles" assistance_dql="select distinct user_name from dm_user_sp where r_is_group=1" assistance_type="dql"/>
+			<fieldset>
+				<comment advancedView_visible="true" condition_enabled_create="false" condition_enabled_edit="false" condition_enabled_import="false" font_color="#000000" html_content="true" label_en="Select up to maximum 6 attributes only" reinit_visible="false" reserved_space="false"/>
+				<list id="auditted_attributes" advancedView_enabled="true" advancedView_required="true" advancedView_visible="false" assistance_dql="select distinct attr_name from dm_type where name='$value(doc_type)'" assistance_type="dql" label_en="Attributes to Audit" reserved_space="false" rows="5"/>
+			</fieldset>
+		</fieldset>
+	</content>
+	<buttons>
+		<button id="buttonOk" action="validDialog()"/>
+		<button id="buttonCancel" action="cancelDialog()"/>
+	</buttons>
+</dialog>

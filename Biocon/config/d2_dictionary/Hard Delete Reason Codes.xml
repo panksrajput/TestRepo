@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_dictionary object_name="Hard Delete Reason Codes" title="Different Reason Codes explaining the basic intention behind doing Hard Delete" lock_config="false" parents_config="" application_names="OpenText Life Sciences Research and Development Solution¬OpenText Life Sciences Quality and Manufacturing Solution¬OpenText Life Sciences eTMF Solution" security_group="admingroup" search_group="admingroup" version="2" is_versioned="false" manual_order="false" create_view_option="false" is_dql="false" is_dql_cache="false" dql="" label_en="Hard Delete Reason Codes">
+	<d2_dictionary_value object_name="001 Study reached end of life" is_enabled="true" order_no="0">
+		<locale name="en" value="001 Study reached end of life"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="002 Study aborted" is_enabled="true" order_no="0">
+		<locale name="en" value="002 Study aborted"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="003 Document not relevant anymore" is_enabled="true" order_no="0">
+		<locale name="en" value="003 Document not relevant anymore"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="004 Document rendered invalid" is_enabled="true" order_no="0">
+		<locale name="en" value="004 Document rendered invalid"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="005 Document outdated" is_enabled="true" order_no="0">
+		<locale name="en" value="005 Document outdated"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="006 Document insignificant to study" is_enabled="true" order_no="0">
+		<locale name="en" value="006 Document insignificant to study"/>
+	</d2_dictionary_value>
+</d2_dictionary>

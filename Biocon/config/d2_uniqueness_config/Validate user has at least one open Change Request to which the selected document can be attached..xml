@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_uniqueness_config new_format="true">
+	<object_name value="Validate user has at least one open Change Request to which the selected document can be attached."/>
+	<title value="Used in the 'Attach to Change Request' function to prompt the user to create a new Change Request if necessary."/>
+	<subject value=""/>
+	<authors/>
+	<keywords/>
+	<a_status value=""/>
+	<a_content_type value=""/>
+	<log_entry value=""/>
+	<language_code value=""/>
+	<module_type value="d2_uniqueness_config"/>
+	<application_names>
+		<repeating value="OpenText Life Sciences Medical Device for Quality and Manufacturing Solution"/>
+		<repeating value="OpenText Life Sciences Quality and Manufacturing Solution"/>
+	</application_names>
+	<lock_config value="F"/>
+	<parents_config/>
+	<warning_message>
+		<repeating value="You do not have any suitable Change Requests currently open to which the selected document can be attached. If the document is not already attached to a Change Request, select the document and create a new Change Request for it via the ''File / New / Document'' menu. You should then attach any other relevant documents to the Change Request as appropriate, prior to submitting it."/>
+	</warning_message>
+	<warning_locale>
+		<repeating value="en"/>
+	</warning_locale>
+	<warning_position>
+		<repeating value="0"/>
+	</warning_position>
+	<qualification>
+		<repeating value="dm_dbo.single_result_row_view where not exists (select * from cd_change_request cr where any cr.authors = '$USER' and cr.a_status in ('Draft', 'Rejected') and not exists (select * from dm_relation r where r.parent_id = cr.r_object_id and r.child_id = '$value(i_chronicle_id)'))"/>
+	</qualification>
+</d2_uniqueness_config>

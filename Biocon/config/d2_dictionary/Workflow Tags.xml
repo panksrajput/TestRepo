@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_dictionary object_name="Workflow Tags" title="This dictionary defines the column names (dictionary aliases) that may be used in the object type mapping dictionary or reference model dictionaries, enabling artifact-specific / object-type-specific workflows to be defined, as and where appropriate." lock_config="false" parents_config="" application_names="OpenText Life Sciences eTMF Solution¬OpenText Life Sciences Medical Device for Quality and Manufacturing Solution¬OpenText Life Sciences Medical Device for Research and Development Solution¬OpenText Life Sciences Quality and Manufacturing Solution¬OpenText Life Sciences Research and Development Solution¬OpenText Life Sciences Submission Storage and Viewing" security_group="admingroup" search_group="admingroup" version="2" is_versioned="false" manual_order="false" create_view_option="false" is_dql="false" is_dql_cache="false" dql="" label_en="">
+	<d2_dictionary_value object_name="1-COLLABORATION" is_enabled="false" order_no="0">
+		<alias name="Label (en)" value="Cat 1 collaborative editing workflow"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="1-FORMATTER" is_enabled="false" order_no="0">
+		<alias name="Label (en)" value="Cat 1 formatting review / review / approval workflow"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="1-GMP-APPROVE" is_enabled="false" order_no="0">
+		<alias name="Label (en)" value="Cat 1 GMP approval-only workflow"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="1-GMP-APPROVE-REVIEW" is_enabled="false" order_no="0">
+		<alias name="Label (en)" value="Cat 1 GMP review / approval workflow"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="1-PERIODIC" is_enabled="false" order_no="0">
+		<alias name="Label (en)" value="Cat 1 periodic review workflow"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="1-SP-COLLABORATION-1-STEP" is_enabled="false" order_no="0">
+		<alias name="Label (en)" value="Cat 1 SharePoint collaborative editing workflow"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="1-SP-COLLABORATION-2-STEP" is_enabled="false" order_no="0">
+		<alias name="Label (en)" value="Cat 1 SharePoint collaborative editing workflow"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="1-TBR" is_enabled="false" order_no="0">
+		<alias name="Label (en)" value="Cat 1 “to be read” workflow"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="2-APPROVE" is_enabled="false" order_no="0">
+		<alias name="Label (en)" value="Cat 2 approval-only workflow"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="2-APPROVE-2-STEP" is_enabled="false" order_no="0">
+		<alias name="Label (en)" value="Cat 2 Approve Only 2 Step Workflow"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="2-APPROVE-REVIEW" is_enabled="false" order_no="0">
+		<alias name="Label (en)" value="Cat 2 review / approval workflow"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="2-COLLABORATION" is_enabled="false" order_no="0">
+		<alias name="Label (en)" value="Cat 2 collaborative editing workflow"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="2-FOR-EDIT" is_enabled="false" order_no="0">
+		<alias name="Label (en)" value="Cat 1-3 For Edit Workflow"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="2-FORMATTER" is_enabled="false" order_no="0">
+		<alias name="Label (en)" value="Cat 2 formatting review / review / approval workflow"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="2-GMP-APPROVE" is_enabled="false" order_no="0">
+		<alias name="Label (en)" value="Cat 2 GMP approval-only workflow"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="2-GMP-APPROVE-REVIEW" is_enabled="false" order_no="0">
+		<alias name="Label (en)" value="Cat 2 GMP review / approval workflow"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="2-SELFAPPROVE" is_enabled="false" order_no="0">
+		<alias name="Label (en)" value="Cat 2 self-approval workflow"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="2-SP-COLLABORATION-1-STEP" is_enabled="false" order_no="0">
+		<alias name="Label (en)" value="Cat 2 SharePoint collaborative editing workflow"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="2-SP-COLLABORATION-2-STEP" is_enabled="false" order_no="0">
+		<alias name="Label (en)" value="Cat 2 SharePoint collaborative editing workflow"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="3-APPROVE" is_enabled="false" order_no="0">
+		<alias name="Label (en)" value="Cat 3 approval-only workflow"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="3-COLLABORATION" is_enabled="false" order_no="0">
+		<alias name="Label (en)" value="Cat 3 collaborative editing workflow"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="3-GMP-APPROVE" is_enabled="false" order_no="0">
+		<alias name="Label (en)" value="Cat 3 GMP approval-only workflow"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="3-GMP-REVIEW" is_enabled="false" order_no="0">
+		<alias name="Label (en)" value="Cat 3 GMP review-only workflow"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="3-REVIEW" is_enabled="false" order_no="0">
+		<alias name="Label (en)" value="Cat 3 review-only workflow"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="3-SP-COLLABORATION-1-STEP" is_enabled="false" order_no="0">
+		<alias name="Label (en)" value="Cat 3 SharePoint collaborative editing workflow"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="3-SP-COLLABORATION-2-STEP" is_enabled="false" order_no="0">
+		<alias name="Label (en)" value="Cat 3 SharePoint collaborative editing workflow"/>
+	</d2_dictionary_value>
+</d2_dictionary>

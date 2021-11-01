@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2c_query new_format="true" title="">
+	<object_name value="Test_Template search"/>
+	<title value=""/>
+	<subject value=""/>
+	<authors/>
+	<keywords/>
+	<a_status value=""/>
+	<a_content_type value=""/>
+	<log_entry value=""/>
+	<language_code value=""/>
+	<all_versions value="F"/>
+	<condition value="( UPPER(a_status) = UPPER('Effective')) and ( (folder('/Templates/D2', descend)))"/>
+	<folder_descend value="T"/>
+	<fulltext_condition value=""/>
+	<folder_path>
+		<repeating value="/Templates/D2"/>
+	</folder_path>
+	<searched_type value=""/>
+	<is_filter value="F"/>
+	<is_public value="T"/>
+	<col_name>
+		<repeating value="applicable_artifacts"/>
+		<repeating value="artifact_name"/>
+		<repeating value="object_name"/>
+		<repeating value="approvers"/>
+		<repeating value="r_creation_date"/>
+		<repeating value="group_name"/>
+		<repeating value="r_object_id"/>
+		<repeating value="r_content_size"/>
+		<repeating value="a_status"/>
+		<repeating value="subject"/>
+		<repeating value="title"/>
+		<repeating value="r_object_type"/>
+		<repeating value="r_version_label"/>
+	</col_name>
+	<order_by value=""/>
+	<order_by_direction value="Asc"/>
+	<migrate_version value="2"/>
+	<searched_types>
+		<repeating value="cd_content_template"/>
+	</searched_types>
+	<logical/>
+	<bracket_open/>
+	<bracket_close/>
+	<operator>
+		<repeating value="equals"/>
+	</operator>
+	<fulltext_operator value="all_words"/>
+	<fulltext_words value=""/>
+	<case_sensitive value="F"/>
+	<hidden_objects value="F"/>
+	<attr>
+		<repeating value="a_status"/>
+	</attr>
+	<attr_value>
+		<repeating value="Effective"/>
+	</attr_value>
+	<facets/>
+	<configuration_name value=""/>
+	<configuration_type value=""/>
+	<previous_srch_terms/>
+</d2c_query>

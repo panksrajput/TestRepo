@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x3_widget_config new_format="true">
+	<object_name value="WG EXT iHub User Training"/>
+	<title value="WG EXT iHub User Training"/>
+	<subject value=""/>
+	<authors/>
+	<keywords/>
+	<a_status value=""/>
+	<a_content_type value=""/>
+	<log_entry value=""/>
+	<language_code value=""/>
+	<module_type value="x3_widget_config"/>
+	<application_names>
+		<repeating value="OpenText Life Sciences eTMF Solution"/>
+		<repeating value="OpenText Life Sciences Medical Device for Quality and Manufacturing Solution"/>
+		<repeating value="OpenText Life Sciences Medical Device for Research and Development Solution"/>
+		<repeating value="OpenText Life Sciences Medical Device Solution"/>
+		<repeating value="OpenText Life Sciences Quality and Manufacturing Solution"/>
+		<repeating value="OpenText Life Sciences Research and Development Solution"/>
+		<repeating value="OpenText Life Sciences Submission Storage and Viewing"/>
+	</application_names>
+	<lock_config value="F"/>
+	<parents_config>
+		<repeating value="WG EXT TMF Author Welcome"/>
+		<repeating value="WG EXT TMF Reports by Object Type"/>
+		<repeating value="WG EXT Reports by Object Type"/>
+		<repeating value="WG EXT Audit"/>
+		<repeating value="WG EXT iHub Audit"/>
+		<repeating value="WG EXT iHub Document Training"/>
+	</parents_config>
+	<preview_x3_image value="Audit Report.PNG"/>
+	<label_locale>
+		<repeating value="en"/>
+		<repeating value="ja"/>
+	</label_locale>
+	<label_value>
+		<repeating value="User Training Report"/>
+		<repeating value=""/>
+	</label_value>
+	<desc_locale>
+		<repeating value="en"/>
+		<repeating value="ja"/>
+	</desc_locale>
+	<desc_value>
+		<repeating value=""/>
+		<repeating value=""/>
+	</desc_value>
+	<widget_url value="/XMLViewer/ReportViewer.html?widget_id=userTraining&amp;config=WG_EXT_iHub_User_Training&amp;workspaceView=iHub_Dashboard&amp;excludeTypes=dm_cabinet,dm_folder,cd_submission_folder,cd_submission_subfolder,cd_clinical_trial_info&amp;initMessage=Select_a_document&amp;report=LSSuite/Report%20Designs/User%20Document%20Training.rptdesign&amp;docbase=$DOCBASE&amp;locale=en&amp;username=$LOGIN&amp;trainedUser=$LOGIN&amp;iportalAdmin=&amp;iportalAdminPassword=&amp;iHubServerHost=BLDMSDHUB01.BIOCON.COM&amp;iHubServerPort=8701&amp;iHubcontext=iportal"/>
+	<channel_name value=""/>
+	<widget_type value="ExternalWidget"/>
+	<query_form_name value=""/>
+	<is_oaj value="T"/>
+	<channel_names>
+		<repeating value="D2_EVENT_SELECT_OBJECT"/>
+	</channel_names>
+	<param_name/>
+	<param_value/>
+	<focus_events>
+		<repeating value="D2_EVENT_CUSTOM"/>
+	</focus_events>
+	<focus_event_params>
+		<repeating value="target_widget_id==userTraining"/>
+	</focus_event_params>
+	<customize_columns value="F"/>
+	<columns/>
+	<use_col_for_assist value="F"/>
+	<is_unloadprotect value="F"/>
+</x3_widget_config>

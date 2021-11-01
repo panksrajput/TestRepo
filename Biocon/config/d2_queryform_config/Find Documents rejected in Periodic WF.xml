@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_queryform_config new_format="true">
+	<object_name value="Find Documents rejected in Periodic WF"/>
+	<title value=""/>
+	<subject value=""/>
+	<authors/>
+	<keywords/>
+	<a_status value=""/>
+	<a_content_type value=""/>
+	<log_entry value=""/>
+	<language_code value=""/>
+	<application_names>
+		<repeating value="OpenText Life Sciences Quality and Manufacturing Solution"/>
+	</application_names>
+	<lock_config value="F"/>
+	<parents_config/>
+	<default_value value=""/>
+	<description value=""/>
+	<property_page value="Find Documents rejected in Periodic review"/>
+	<locale>
+		<repeating value="en"/>
+	</locale>
+	<label>
+		<repeating value="Find Documents rejected in Periodic Workflow"/>
+	</label>
+	<ignore_empty_attr value="F"/>
+	<dql_value value="select d.r_object_id, d.object_name, d.title, a.user_name as Acknowledged_By, a.time_stamp as Acknowledged_On from cd_quality_gmp_effective d, dm_audittrail a where a.event_name='d2_workflow_forwarded_task' and a.audited_obj_id = d.r_object_id and d.r_object_type='cd_quality_gmp_effective' and d.a_status in ('Effective', 'Suspended') and any d.r_version_label not in (' ','CURRENT') and a.string_1 like '%has received comments from Periodic Review.' enable(ROW_BASED)"/>
+	<path value="/"/>
+	<add_mandatory_hidden value="T"/>
+	<add_user_pref value="T"/>
+	<facet_indent/>
+	<facet_position/>
+	<facet_sort/>
+	<is_facet/>
+	<is_xplore value="F"/>
+	<dictionary_name/>
+	<dql_qualification/>
+	<order_by value=""/>
+	<order_by_direction value="Asc"/>
+	<folder_path/>
+	<folder_descend value="F"/>
+	<col_name/>
+	<attr/>
+	<attr_value/>
+	<all_versions value="F"/>
+	<bracket_close/>
+	<bracket_open/>
+	<case_sensitive value="F"/>
+	<facets/>
+	<fulltext_operator value=""/>
+	<fulltext_words value=""/>
+	<logical/>
+	<operator/>
+	<type_name/>
+	<attr_name/>
+	<alias_locale_name/>
+</d2_queryform_config>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_mailing_config>
+	<add_attachment>false</add_attachment>
+	<rendition_formats/>
+	<list-recipient>
+		<recipient type="attribute">user_name</recipient>
+	</list-recipient>
+	<list-subject>
+		<subject_en>Overdue training &quot;$value(document_name) - $value(document_title)&quot;</subject_en>
+	</list-subject>
+	<list-object>
+		<object_en>Your training on document &quot;$value(document_name) - $value(document_title)&quot; is overdue. Please complete your training.</object_en>
+	</list-object>
+</d2_mailing_config>

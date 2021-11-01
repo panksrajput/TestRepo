@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<delta>
+	<insert position-after="menuCustom1586415769718,menuContextEdit,menuContextLocate,menuCustom1426241267382,separator0,menuCustom1511343301072,menuCustom1415087168573,menuCustom1586416817548,menuCustom1415087310196,separatorCustom1428561801573,menuContextCheckin,menuContextCancelCheckout,separator1,menuContextLocateSourceOfReference,menuContextCopyLocator,separator2,menuContextDestroy,separator3,menuContextProperties" position-before="menuContextView">
+		<menuitem id="menuCustom1567702361279" action="" label_en="View in SharePoint">
+			<dynamic-action class="com.emc.d2fs.dctm.ui.dynamicactions.actions.Generic" eMethod="getSharePointUrls" eService="SharePointConnectorService" rAction="ls_openlinks(urls)" rType="JS"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.typeparts.IsObjectType" value="cd_controlled_doc"/>
+			<condition all_valid="true" class="com.emc.d2fs.dctm.ui.conditions.objects.HasAttrValue" property="wf_is_in_sp_workflow" value="T"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.permits.HasPermit" value="relate"/>
+		</menuitem>
+	</insert>
+	<insert position-after="menuContextEdit,menuContextLocate,menuCustom1426241267382,separator0,menuCustom1511343301072,menuCustom1415087168573,menuCustom1586416817548,menuCustom1415087310196,separatorCustom1428561801573,menuContextCheckin,menuContextCancelCheckout,separator1,menuContextLocateSourceOfReference,menuContextCopyLocator,separator2,menuContextDestroy,separator3,menuContextProperties" position-before="menuContextView,menuCustom1567702361279">
+		<menuitem id="menuCustom1586415769718" action="" label_en="Edit">
+			<dynamic-action action="D2_ACTION_CONTENT_EDIT" class="com.emc.d2fs.dctm.ui.dynamicactions.actions.Checkout" locateAndRefresh="false" refreshCheckoutState="true"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.typeparts.IsDocument"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.permits.HasClientCapability" value="contributor"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.actions.CanEdit"/>
+			<condition all_valid="false" class="com.emc.d2fs.dctm.ui.conditions.objects.Predicate" equals="false" value="dm_dbo.single_result_row_view where exists (SELECT * FROM dm_workflow WHERE r_object_id IN (SELECT r_workflow_id FROM dmi_package WHERE ANY r_component_chron_id = '$value(i_chronicle_id)') AND r_runtime_state='1' AND object_name LIKE 'Cat 1-3 Editing Workflow%')"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.objects.IsCheckout" equals="true"/>
+		</menuitem>
+	</insert>
+	<move id="menuContextLocate" position-after="menuCustom1426241267382,separator0,menuCustom1511343301072,menuCustom1415087168573,menuCustom1586416817548,menuCustom1415087310196,separatorCustom1428561801573,menuContextCheckin,menuContextCancelCheckout,separator1,menuContextLocateSourceOfReference,menuContextCopyLocator,separator2,menuContextDestroy,separator3,menuContextProperties" position-before="menuContextView,menuCustom1567702361279,menuCustom1586415769718,menuContextEdit"/>
+	<insert position-after="separator0,menuCustom1511343301072,menuCustom1415087168573,menuCustom1586416817548,menuCustom1415087310196,separatorCustom1428561801573,menuContextCheckin,menuContextCancelCheckout,separator1,menuContextLocateSourceOfReference,menuContextCopyLocator,separator2,menuContextDestroy,separator3,menuContextProperties" position-before="menuContextView,menuCustom1567702361279,menuCustom1586415769718,menuContextEdit,menuContextLocate">
+		<menuitem id="menuCustom1426241267382" label_en="Display Virtual Document">
+			<dynamic-action class="com.emc.d2fs.dctm.ui.dynamicactions.events.Publish" event="D2_ACTION_OPEN_VD"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.vd.IsVD" showifinvalid="false"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.objects.IsReference" equals="false" showifinvalid="false"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.interfaces.IsMultipleSelection" equals="false" showifinvalid="false"/>
+		</menuitem>
+	</insert>
+	<insert position-after="menuCustom1415087168573,menuCustom1586416817548,menuCustom1415087310196,separatorCustom1428561801573,menuContextCheckin,menuContextCancelCheckout,separator1,menuContextLocateSourceOfReference,menuContextCopyLocator,separator2,menuContextDestroy,separator3,menuContextProperties" position-before="menuContextView,menuCustom1567702361279,menuCustom1586415769718,menuContextEdit,menuContextLocate,menuCustom1426241267382,separator0">
+		<menuitem id="menuCustom1511343301072" action="" label_en="Review and Edit Personal Copy">
+			<dynamic-action action="D2_ACTION_CONTENT_EDIT_NATIVE_ANNOTATION" class="com.emc.d2fs.dctm.ui.dynamicactions.actions.NativeAnnotation" locateAndRefresh="false"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.typeparts.IsObjectType" equals="false" value="d2c_bin_deleted_document¬d2c_bin_deleted_folder¬d2c_bin_deleted_folder_dump¬d2c_bin_deleted_rendition"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.useragent.IsThinClient" equals="false"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.interfaces.IsConnected"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.typeparts.IsDocument"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.actions.CheckoutByAndPermitLevel" value="relate"/>
+		</menuitem>
+	</insert>
+	<insert position-after="menuCustom1586416817548,menuCustom1415087310196,separatorCustom1428561801573,menuContextCheckin,menuContextCancelCheckout,separator1,menuContextLocateSourceOfReference,menuContextCopyLocator,separator2,menuContextDestroy,separator3,menuContextProperties" position-before="menuContextView,menuCustom1567702361279,menuCustom1586415769718,menuContextEdit,menuContextLocate,menuCustom1426241267382,separator0,menuCustom1511343301072">
+		<menuitem id="menuCustom1415087168573" label_en="Review and Edit Consolidated Copy">
+			<dynamic-action action="D2_ACTION_CONTENT_ANNOTATE_NATIVE_ANNOTATION" class="com.emc.d2fs.dctm.ui.dynamicactions.actions.NativeAnnotation" locateAndRefresh="false"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.useragent.IsThinClient" equals="false" showifinvalid="false"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.interfaces.IsConnected" showifinvalid="true"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.typeparts.IsDocument" showifinvalid="true"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.actions.CheckoutByAndPermitLevel" showifinvalid="true" value="relate"/>
+		</menuitem>
+	</insert>
+	<insert position-after="menuCustom1415087310196,separatorCustom1428561801573,menuContextCheckin,menuContextCancelCheckout,separator1,menuContextLocateSourceOfReference,menuContextCopyLocator,separator2,menuContextDestroy,separator3,menuContextProperties" position-before="menuContextView,menuCustom1567702361279,menuCustom1586415769718,menuContextEdit,menuContextLocate,menuCustom1426241267382,separator0,menuCustom1511343301072,menuCustom1415087168573">
+		<menuitem id="menuCustom1586416817548" action="" label_en="Merge Changes">
+			<dynamic-action action="D2_ACTION_CONTENT_EDIT_WITH_NATIVE_ANNOTATION" class="com.emc.d2fs.dctm.ui.dynamicactions.actions.NativeAnnotation" locateAndRefresh="false"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.useragent.IsThinClient" equals="false"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.interfaces.IsConnected"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.permits.HasClientCapability" value="contributor"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.actions.CanEdit"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.actions.CanMerge"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.objects.IsCheckout"/>
+		</menuitem>
+	</insert>
+	<insert position-after="separatorCustom1428561801573,menuContextCheckin,menuContextCancelCheckout,separator1,menuContextLocateSourceOfReference,menuContextCopyLocator,separator2,menuContextDestroy,separator3,menuContextProperties" position-before="menuContextView,menuCustom1567702361279,menuCustom1586415769718,menuContextEdit,menuContextLocate,menuCustom1426241267382,separator0,menuCustom1511343301072,menuCustom1415087168573,menuCustom1586416817548">
+		<menuitem id="menuCustom1415087310196" label_en="Checkout and Merge Changes">
+			<dynamic-action action="D2_ACTION_CONTENT_EDIT_WITH_NATIVE_ANNOTATION" class="com.emc.d2fs.dctm.ui.dynamicactions.actions.NativeAnnotation" locateAndRefresh="false"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.useragent.IsThinClient" equals="false" showifinvalid="false"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.interfaces.IsConnected" showifinvalid="true"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.permits.HasClientCapability" showifinvalid="true" value="contributor"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.actions.CanEdit" showifinvalid="true"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.actions.CanMerge"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.objects.IsCheckout" equals="false"/>
+		</menuitem>
+	</insert>
+	<insert position-after="menuContextCheckin,menuContextCancelCheckout,separator1,menuContextLocateSourceOfReference,menuContextCopyLocator,separator2,menuContextDestroy,separator3,menuContextProperties" position-before="menuContextView,menuCustom1567702361279,menuCustom1586415769718,menuContextEdit,menuContextLocate,menuCustom1426241267382,separator0,menuCustom1511343301072,menuCustom1415087168573,menuCustom1586416817548,menuCustom1415087310196">
+		<separator id="separatorCustom1428561801573"/>
+	</insert>
+	<modify id="menuContextEdit" label_en="Checkout and Edit">
+		<insert position-after="com.emc.d2fs.dctm.ui.conditions.objects.IsCheckout" position-before="com.emc.d2fs.dctm.ui.dynamicactions.actions.Checkout,com.emc.d2fs.dctm.ui.conditions.typeparts.IsDocument,com.emc.d2fs.dctm.ui.conditions.permits.HasClientCapability,com.emc.d2fs.dctm.ui.conditions.actions.CanEdit">
+			<condition all_valid="false" class="com.emc.d2fs.dctm.ui.conditions.objects.Predicate" equals="false" value="dm_dbo.single_result_row_view where exists (SELECT * FROM dm_workflow WHERE r_object_id IN (SELECT r_workflow_id FROM dmi_package WHERE ANY r_component_chron_id = '$value(i_chronicle_id)') AND r_runtime_state='1' AND object_name LIKE 'Cat 1-3 Editing Workflow%')"/>
+		</insert>
+		<append>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.objects.IsCheckout" equals="false"/>
+		</append>
+		<modify class="com.emc.d2fs.dctm.ui.dynamicactions.actions.Checkout" locateAndRefresh="false" refreshCheckoutState="true"/>
+	</modify>
+	<modify id="menuContextCopyLocator" hidden="true"/>
+	<modify id="menuContextDestroy" hidden="true"/>
+	<modify id="menuContextCheckin">
+		<modify class="com.emc.d2fs.dctm.ui.dynamicactions.actions.Checkin" locateAndRefresh="false" refreshCheckoutState="true"/>
+	</modify>
+	<modify id="menuContextCancelCheckout">
+		<modify class="com.emc.d2fs.dctm.ui.dynamicactions.actions.Checkout" locateAndRefresh="false" refreshCheckoutState="true"/>
+	</modify>
+	<modify id="menuContextProperties">
+		<modify class="com.emc.d2fs.dctm.ui.dynamicactions.actions.ShowDialog" locateAndRefresh="false"/>
+	</modify>
+</delta>

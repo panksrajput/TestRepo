@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_uniqueness_config new_format="true">
+	<object_name value="Validate User is a Security Document Administrator"/>
+	<title value="Check if the user can update the roles on the document"/>
+	<subject value=""/>
+	<authors/>
+	<keywords/>
+	<a_status value=""/>
+	<a_content_type value=""/>
+	<log_entry value=""/>
+	<language_code value=""/>
+	<module_type value="d2_uniqueness_config"/>
+	<application_names>
+		<repeating value="OpenText Life Sciences eTMF Solution"/>
+		<repeating value="OpenText Life Sciences Medical Device for Quality and Manufacturing Solution"/>
+		<repeating value="OpenText Life Sciences Medical Device for Research and Development Solution"/>
+		<repeating value="OpenText Life Sciences Medical Device Solution"/>
+		<repeating value="OpenText Life Sciences Quality and Manufacturing Solution"/>
+		<repeating value="OpenText Life Sciences Research and Development Solution"/>
+		<repeating value="OpenText Life Sciences Submission Storage and Viewing"/>
+	</application_names>
+	<lock_config value="F"/>
+	<parents_config/>
+	<warning_message>
+		<repeating value="User is not authorized to change the security roles"/>
+	</warning_message>
+	<warning_locale>
+		<repeating value="en"/>
+	</warning_locale>
+	<warning_position>
+		<repeating value="0"/>
+	</warning_position>
+	<qualification>
+		<repeating value="dm_dbo.single_result_row_view where not exists (select r_object_id from dm_group where any i_all_users_names = '$USER' and group_name in ($repeatingvalue(security_admin_document)))"/>
+	</qualification>
+</d2_uniqueness_config>

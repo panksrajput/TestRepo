@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_dictionary object_name="Security Object Types" title="Type of objects used for security" lock_config="false" parents_config="" application_names="OpenText Life Sciences eTMF Solution¬OpenText Life Sciences Medical Device for Quality and Manufacturing Solution¬OpenText Life Sciences Medical Device for Research and Development Solution¬OpenText Life Sciences Medical Device Solution¬OpenText Life Sciences Quality and Manufacturing Solution¬OpenText Life Sciences Research and Development Solution¬OpenText Life Sciences Submission Storage and Viewing" security_group="admingroup" search_group="" version="2" is_versioned="false" manual_order="false" create_view_option="false" is_dql="false" is_dql_cache="false" dql="" label_en="Document Type">
+	<d2_dictionary_value object_name="Security-Folder Security Model" is_enabled="true" order_no="0"/>
+	<d2_dictionary_value object_name="Security-Group Generator" is_enabled="true" order_no="0"/>
+	<d2_dictionary_value object_name="Security-Security Model" is_enabled="true" order_no="0"/>
+	<d2_dictionary_value object_name="Security-Tag Definition" is_enabled="true" order_no="0"/>
+</d2_dictionary>

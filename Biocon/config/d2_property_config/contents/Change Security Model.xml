@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dialog id="PropertiesDialog" auto_smartview_edit_mode="false" buttons_right="false" focus="" height="500" initial_invalid="false" resizable="true" signoff_creation="false" signoff_edit="false" signoff_import="false" signoff_intention_dictionary="" signoff_intention_required="false" width="500">
+	<content>
+		<boolean id="r_immutable_flag" condition_visible_create="false" condition_visible_edit="false" condition_visible_import="false"/>
+		<boolean id="apply_to_all_versions" advancedView_enabled="false" condition_enabled="(getValue(mlc_is_current).equals('CURRENT'))" label_en="Apply to All Versions"/>
+		<comment advancedView_visible="false" condition_visible="(getValue(apply_to_all_versions).equals('true'))" font_bold="true" font_color="#FF3300" label_en="You will receive a notification about the results of version actions. "/>
+		<comment advancedView_visible="false" condition_visible="(getValue(mlc_is_current).notEquals('CURRENT'))" font_color="#FF3300" label_en="You have selected non-current versions. You cannot apply to all versions."/>
+		<combo id="mlc_is_current" assistance_dql="select 'CURRENT' as x from dm_dbo.single_result_row_view where '$value(r_immutable_flag)' = 'F'" assistance_type="dql" autoselect_single="true" condition_visible_create="false" condition_visible_edit="false" condition_visible_import="false" control="true"/>
+		<fieldset advancedView_enabled="false" advancedView_visible="false">
+			<combo id="res" assistance_dictionary="Security Restriction Types" assistance_dictionary_alias="Display" assistance_type="dictionary" asynchronous="false" condition_required_create="true" condition_required_edit="true" condition_required_import="true" control="true" label_en="Restriction Level" reinit_attributes="security_model"/>
+			<combo-editable id="security_model" advancedView_enabled="false" assistance_dql="select security_model as name,security_model as label_en from lss_sec_secmodel where restriction_level = $value(res)" assistance_type="dql" asynchronous="false" autoselect_single="true" condition_required_create="true" condition_required_edit="true" condition_required_import="true" label_en="Security Model"/>
+			<label id="a_status" condition_visible_create="false" condition_visible_edit="false" condition_visible_import="false"/>
+			<memo id="comments" advancedView_enabled="false" advancedView_required="false" advancedView_visible="false" condition_enabled="((getValue(a_status).equals('Effective'))||(getValue(a_status).equals('#####')))" condition_required="((getValue(a_status).equals('Effective'))||(getValue(a_status).equals('#####')))" condition_required_edit="true" condition_visible="((getValue(a_status).equals('Effective'))||(getValue(a_status).equals('#####')))" label_en="Reason For Change"/>
+		</fieldset>
+	</content>
+	<buttons>
+		<button id="buttonOk" action="validDialog()"/>
+		<button id="buttonCancel" action="cancelDialog()"/>
+	</buttons>
+</dialog>

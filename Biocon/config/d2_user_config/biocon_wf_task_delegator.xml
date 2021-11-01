@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_user_config new_format="true">
+	<object_name value="biocon_wf_task_delegator"/>
+	<title value=""/>
+	<subject value=""/>
+	<authors/>
+	<keywords/>
+	<a_status value=""/>
+	<a_content_type value=""/>
+	<log_entry value=""/>
+	<language_code value=""/>
+	<object_type value="d2_user_config"/>
+	<lock_config value="F"/>
+	<parents_config/>
+	<manage_user_delegation>
+		<repeating value="cd_gmp_all_users"/>
+	</manage_user_delegation>
+</d2_user_config>

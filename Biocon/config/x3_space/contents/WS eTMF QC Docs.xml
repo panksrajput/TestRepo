@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="SpaceSchema.xsd">
+	<space>
+		<border-layout-container>
+			<data>
+				<border-layout-data layoutregion="WEST" maxSize="30%" size=".25" split="true"/>
+				<border-layout-data layoutregion="CENTER" maxSize="40%" split="true"/>
+				<border-layout-data layoutregion="EAST" maxSize="30%" size=".35" split="true"/>
+			</data>
+			<content>
+				<tab-container>
+					<content>
+						<widget config="WG eTMF Documents for QC Doclist"/>
+					</content>
+				</tab-container>
+				<tab-container>
+					<content>
+						<widget config="WG eTMF Properties QC Doclist"/>
+					</content>
+				</tab-container>
+				<tab-container>
+					<content>
+						<widget config="WG EXT LSCI LSS Doc Viewer (QC Index)"/>
+					</content>
+				</tab-container>
+			</content>
+		</border-layout-container>
+	</space>
+</root>

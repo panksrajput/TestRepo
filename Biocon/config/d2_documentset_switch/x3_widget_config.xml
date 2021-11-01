@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_documentset_switch object_name="x3_widget_config">
+	<d2_documentset name="Life Sciences Managers Workspace¬Q&amp;M Managers Workspace" config="Bio WG Brava Viewer CSR"/>
+	<d2_documentset name="Life Sciences Managers Workspace¬Q&amp;M Managers Workspace" config="WG Administration - Dictionaries"/>
+	<d2_documentset name="Life Sciences Managers Workspace¬Q&amp;M Managers Workspace" config="WG Administration - Groups"/>
+	<d2_documentset name="Life Sciences Managers Workspace¬Q&amp;M Managers Workspace" config="WG Administration - Taxonomies"/>
+	<d2_documentset name="Life Sciences Managers Workspace¬Q&amp;M Managers Workspace" config="WG Affected Documents"/>
+	<d2_documentset name="Life Sciences Managers Workspace¬Q&amp;M Managers Workspace" config="WG Associated Change Request"/>
+	<d2_documentset name="Life Sciences Managers Workspace¬Q&amp;M Managers Workspace" config="WG Audit"/>
+	<d2_documentset name="Life Sciences Managers Workspace¬Q&amp;M Managers Workspace" config="WG Change Request"/>
+	<d2_documentset name="Life Sciences Managers Workspace¬Q&amp;M Managers Workspace" config="WG Checkout"/>
+	<d2_documentset name="Life Sciences Managers Workspace¬Q&amp;M Managers Workspace" config="WG Delegation"/>
+	<d2_documentset name="Life Sciences Managers Workspace¬Q&amp;M Managers Workspace" config="WG Docbase browser"/>
+	<d2_documentset name="Life Sciences Managers Workspace¬Q&amp;M Managers Workspace" config="WG Doclist"/>
+	<d2_documentset name="Life Sciences Managers Workspace¬Q&amp;M Managers Workspace" config="WG Doclist QnM"/>
+	<d2_documentset name="Life Sciences Managers Workspace¬Q&amp;M Managers Workspace" config="WG Doclist Related R&amp;D Documents"/>
+	<d2_documentset name="Life Sciences Managers Workspace¬Q&amp;M Managers Workspace" config="WG Doclist Training"/>
+	<d2_documentset name="Life Sciences Managers Workspace¬Q&amp;M Managers Workspace" config="WG Dump"/>
+	<d2_documentset name="Life Sciences Managers Workspace¬Q&amp;M Managers Workspace" config="WG EXT Brava! Viewer"/>
+	<d2_documentset name="Life Sciences Managers Workspace¬Q&amp;M Managers Workspace" config="WG EXT DIA Website"/>
+	<d2_documentset name="Life Sciences Managers Workspace¬Q&amp;M Managers Workspace" config="WG EXT iHub Access Open Workflow"/>
+	<d2_documentset name="Life Sciences Managers Workspace¬Q&amp;M Managers Workspace" config="WG EXT iHub Audit"/>
+	<d2_documentset name="Life Sciences Managers Workspace¬Q&amp;M Managers Workspace" config="WG EXT iHub My Workflows"/>
+	<d2_documentset name="Life Sciences Managers Workspace¬Q&amp;M Managers Workspace" config="WG EXT Training Document Preview"/>
+	<d2_documentset name="Life Sciences Managers Workspace¬Q&amp;M Managers Workspace" config="WG EXT User Guide: Quality and Manufacturing Solution"/>
+	<d2_documentset name="Life Sciences Managers Workspace¬Q&amp;M Managers Workspace" config="WG Facets"/>
+	<d2_documentset name="Life Sciences Managers Workspace¬Q&amp;M Managers Workspace" config="WG Favorites"/>
+	<d2_documentset name="Life Sciences Managers Workspace¬Q&amp;M Managers Workspace" config="WG Hub"/>
+	<d2_documentset name="Life Sciences Managers Workspace¬Q&amp;M Managers Workspace" config="WG Locations"/>
+	<d2_documentset name="Life Sciences Managers Workspace¬Q&amp;M Managers Workspace" config="WG Markups"/>
+	<d2_documentset name="Life Sciences Managers Workspace¬Q&amp;M Managers Workspace" config="WG MyDocs"/>
+	<d2_documentset name="Life Sciences Managers Workspace¬Q&amp;M Managers Workspace" config="WG Predefined search"/>
+	<d2_documentset name="Life Sciences Managers Workspace¬Q&amp;M Managers Workspace" config="WG Preview"/>
+	<d2_documentset name="Life Sciences Managers Workspace¬Q&amp;M Managers Workspace" config="WG Properties"/>
+	<d2_documentset name="Life Sciences Managers Workspace¬Q&amp;M Managers Workspace" config="WG Properties (Auto-Edit)"/>
+	<d2_documentset name="Life Sciences Managers Workspace¬Q&amp;M Managers Workspace" config="WG Quick search"/>
+	<d2_documentset name="Life Sciences Managers Workspace¬Q&amp;M Managers Workspace" config="WG Recycle Bin"/>
+	<d2_documentset name="Life Sciences Managers Workspace¬Q&amp;M Managers Workspace" config="WG Relations"/>
+	<d2_documentset name="Life Sciences Managers Workspace¬Q&amp;M Managers Workspace" config="WG Renditions"/>
+	<d2_documentset name="Life Sciences Managers Workspace¬Q&amp;M Managers Workspace" config="WG Retentions"/>
+	<d2_documentset name="Life Sciences Managers Workspace¬Q&amp;M Managers Workspace" config="WG Thumbnails"/>
+	<d2_documentset name="Life Sciences Managers Workspace¬Q&amp;M Managers Workspace" config="WG Versions"/>
+	<d2_documentset name="Life Sciences Managers Workspace¬Q&amp;M Managers Workspace" config="WG Virtual document"/>
+	<d2_documentset name="Life Sciences Managers Workspace¬Q&amp;M Managers Workspace" config="WG WF Overview"/>
+	<d2_documentset name="Life Sciences Managers Workspace¬Q&amp;M Managers Workspace" config="WG WF Task Attachment"/>
+	<d2_documentset name="Life Sciences Managers Workspace¬Q&amp;M Managers Workspace" config="WG WF Task Details"/>
+	<d2_documentset name="Life Sciences Managers Workspace¬Q&amp;M Managers Workspace" config="WG WF Task Folders"/>
+	<d2_documentset name="Life Sciences Managers Workspace¬Q&amp;M Managers Workspace" config="WG WF Task List"/>
+	<d2_documentset name="Life Sciences Managers Workspace¬Q&amp;M Managers Workspace" config="WG WF Task Notes"/>
+	<d2_documentset name="Life Sciences Managers Workspace¬Q&amp;M Managers Workspace" config="WG WF Task Overview"/>
+	<d2_documentset name="Life Sciences Managers Workspace¬Q&amp;M Managers Workspace" config="WG WF Task Performers"/>
+	<d2_documentset name="Life Sciences Coordinators Workspace¬Q&amp;M Coordinators Workspace" config="Bio WG Brava Viewer CSR"/>
+	<d2_documentset name="Life Sciences Coordinators Workspace¬Q&amp;M Coordinators Workspace" config="WG Administration - Dictionaries"/>
+	<d2_documentset name="Life Sciences Coordinators Workspace¬Q&amp;M Coordinators Workspace" config="WG Administration - Groups"/>
+	<d2_documentset name="Life Sciences Coordinators Workspace¬Q&amp;M Coordinators Workspace" config="WG Administration - Taxonomies"/>
+	<d2_documentset name="Life Sciences Coordinators Workspace¬Q&amp;M Coordinators Workspace" config="WG Affected Documents"/>
+	<d2_documentset name="Life Sciences Coordinators Workspace¬Q&amp;M Coordinators Workspace" config="WG Associated Change Request"/>
+	<d2_documentset name="Life Sciences Coordinators Workspace¬Q&amp;M Coordinators Workspace" config="WG Audit"/>
+	<d2_documentset name="Life Sciences Coordinators Workspace¬Q&amp;M Coordinators Workspace" config="WG Change Request"/>
+	<d2_documentset name="Life Sciences Coordinators Workspace¬Q&amp;M Coordinators Workspace" config="WG Checkout"/>
+	<d2_documentset name="Life Sciences Coordinators Workspace¬Q&amp;M Coordinators Workspace" config="WG Delegation"/>
+	<d2_documentset name="Life Sciences Coordinators Workspace¬Q&amp;M Coordinators Workspace" config="WG Docbase browser"/>
+	<d2_documentset name="Life Sciences Coordinators Workspace¬Q&amp;M Coordinators Workspace" config="WG Doclist QnM"/>
+	<d2_documentset name="Life Sciences Coordinators Workspace¬Q&amp;M Coordinators Workspace" config="WG Doclist Related R&amp;D Documents"/>
+	<d2_documentset name="Life Sciences Coordinators Workspace¬Q&amp;M Coordinators Workspace" config="WG Doclist Training"/>
+	<d2_documentset name="Life Sciences Coordinators Workspace¬Q&amp;M Coordinators Workspace" config="WG Doclist Training Coordinator"/>
+	<d2_documentset name="Life Sciences Coordinators Workspace¬Q&amp;M Coordinators Workspace" config="WG Dump"/>
+	<d2_documentset name="Life Sciences Coordinators Workspace¬Q&amp;M Coordinators Workspace" config="WG EXT Brava! Viewer"/>
+	<d2_documentset name="Life Sciences Coordinators Workspace¬Q&amp;M Coordinators Workspace" config="WG EXT Controlled Print"/>
+	<d2_documentset name="Life Sciences Coordinators Workspace¬Q&amp;M Coordinators Workspace" config="WG EXT DIA Website"/>
+	<d2_documentset name="Life Sciences Coordinators Workspace¬Q&amp;M Coordinators Workspace" config="WG EXT iHub Access Open Workflow"/>
+	<d2_documentset name="Life Sciences Coordinators Workspace¬Q&amp;M Coordinators Workspace" config="WG EXT iHub Audit"/>
+	<d2_documentset name="Life Sciences Coordinators Workspace¬Q&amp;M Coordinators Workspace" config="WG EXT iHub Basic Periodic Review"/>
+	<d2_documentset name="Life Sciences Coordinators Workspace¬Q&amp;M Coordinators Workspace" config="WG EXT iHub My Workflows"/>
+	<d2_documentset name="Life Sciences Coordinators Workspace¬Q&amp;M Coordinators Workspace" config="WG EXT iHub Periodic Review Cycles Time"/>
+	<d2_documentset name="Life Sciences Coordinators Workspace¬Q&amp;M Coordinators Workspace" config="WG EXT iHub Periodic Review Statistics"/>
+	<d2_documentset name="Life Sciences Coordinators Workspace¬Q&amp;M Coordinators Workspace" config="WG EXT Training Document Preview"/>
+	<d2_documentset name="Life Sciences Coordinators Workspace¬Q&amp;M Coordinators Workspace" config="WG EXT User Guide: Quality and Manufacturing Solution"/>
+	<d2_documentset name="Life Sciences Coordinators Workspace¬Q&amp;M Coordinators Workspace" config="WG Facets"/>
+	<d2_documentset name="Life Sciences Coordinators Workspace¬Q&amp;M Coordinators Workspace" config="WG Favorites"/>
+	<d2_documentset name="Life Sciences Coordinators Workspace¬Q&amp;M Coordinators Workspace" config="WG Locations"/>
+	<d2_documentset name="Life Sciences Coordinators Workspace¬Q&amp;M Coordinators Workspace" config="WG MyDocs"/>
+	<d2_documentset name="Life Sciences Coordinators Workspace¬Q&amp;M Coordinators Workspace" config="WG Predefined search"/>
+	<d2_documentset name="Life Sciences Coordinators Workspace¬Q&amp;M Coordinators Workspace" config="WG Preview"/>
+	<d2_documentset name="Life Sciences Coordinators Workspace¬Q&amp;M Coordinators Workspace" config="WG Properties"/>
+	<d2_documentset name="Life Sciences Coordinators Workspace¬Q&amp;M Coordinators Workspace" config="WG Properties (Auto-Edit)"/>
+	<d2_documentset name="Life Sciences Coordinators Workspace¬Q&amp;M Coordinators Workspace" config="WG Quick search"/>
+	<d2_documentset name="Life Sciences Coordinators Workspace¬Q&amp;M Coordinators Workspace" config="WG Recycle Bin"/>
+	<d2_documentset name="Life Sciences Coordinators Workspace¬Q&amp;M Coordinators Workspace" config="WG Relations"/>
+	<d2_documentset name="Life Sciences Coordinators Workspace¬Q&amp;M Coordinators Workspace" config="WG Renditions"/>
+	<d2_documentset name="Life Sciences Coordinators Workspace¬Q&amp;M Coordinators Workspace" config="WG Thumbnails"/>
+	<d2_documentset name="Life Sciences Coordinators Workspace¬Q&amp;M Coordinators Workspace" config="WG Versions"/>
+	<d2_documentset name="Life Sciences Coordinators Workspace¬Q&amp;M Coordinators Workspace" config="WG Virtual document"/>
+	<d2_documentset name="Life Sciences Coordinators Workspace¬Q&amp;M Coordinators Workspace" config="WG WF Overview"/>
+	<d2_documentset name="Life Sciences Coordinators Workspace¬Q&amp;M Coordinators Workspace" config="WG WF Task Attachment"/>
+	<d2_documentset name="Life Sciences Coordinators Workspace¬Q&amp;M Coordinators Workspace" config="WG WF Task Details"/>
+	<d2_documentset name="Life Sciences Coordinators Workspace¬Q&amp;M Coordinators Workspace" config="WG WF Task Folders"/>
+	<d2_documentset name="Life Sciences Coordinators Workspace¬Q&amp;M Coordinators Workspace" config="WG WF Task List"/>
+	<d2_documentset name="Life Sciences Coordinators Workspace¬Q&amp;M Coordinators Workspace" config="WG WF Task Notes"/>
+	<d2_documentset name="Life Sciences Coordinators Workspace¬Q&amp;M Coordinators Workspace" config="WG WF Task Overview"/>
+	<d2_documentset name="Life Sciences Coordinators Workspace¬Q&amp;M Coordinators Workspace" config="WG WF Task Performers"/>
+	<d2_documentset name="Life Sciences Authors Workspace¬Q&amp;M Authors Workspace" config="Bio WG Brava Viewer CSR"/>
+	<d2_documentset name="Life Sciences Authors Workspace¬Q&amp;M Authors Workspace" config="WG Affected Documents"/>
+	<d2_documentset name="Life Sciences Authors Workspace¬Q&amp;M Authors Workspace" config="WG Associated Change Request"/>
+	<d2_documentset name="Life Sciences Authors Workspace¬Q&amp;M Authors Workspace" config="WG Audit"/>
+	<d2_documentset name="Life Sciences Authors Workspace¬Q&amp;M Authors Workspace" config="WG Change Request"/>
+	<d2_documentset name="Life Sciences Authors Workspace¬Q&amp;M Authors Workspace" config="WG Checkout"/>
+	<d2_documentset name="Life Sciences Authors Workspace¬Q&amp;M Authors Workspace" config="WG Delegation"/>
+	<d2_documentset name="Life Sciences Authors Workspace¬Q&amp;M Authors Workspace" config="WG Docbase browser"/>
+	<d2_documentset name="Life Sciences Authors Workspace¬Q&amp;M Authors Workspace" config="WG Doclist QnM"/>
+	<d2_documentset name="Life Sciences Authors Workspace¬Q&amp;M Authors Workspace" config="WG Doclist Related R&amp;D Documents"/>
+	<d2_documentset name="Life Sciences Authors Workspace¬Q&amp;M Authors Workspace" config="WG Doclist Training"/>
+	<d2_documentset name="Life Sciences Authors Workspace¬Q&amp;M Authors Workspace" config="WG EXT Brava! Viewer"/>
+	<d2_documentset name="Life Sciences Authors Workspace¬Q&amp;M Authors Workspace" config="WG EXT CDF Author Welcome"/>
+	<d2_documentset name="Life Sciences Authors Workspace¬Q&amp;M Authors Workspace" config="WG EXT Controlled Print"/>
+	<d2_documentset name="Life Sciences Authors Workspace¬Q&amp;M Authors Workspace" config="WG EXT DIA Website"/>
+	<d2_documentset name="Life Sciences Authors Workspace¬Q&amp;M Authors Workspace" config="WG EXT iHub Access Open Workflow"/>
+	<d2_documentset name="Life Sciences Authors Workspace¬Q&amp;M Authors Workspace" config="WG EXT iHub Audit"/>
+	<d2_documentset name="Life Sciences Authors Workspace¬Q&amp;M Authors Workspace" config="WG EXT iHub My Workflows"/>
+	<d2_documentset name="Life Sciences Authors Workspace¬Q&amp;M Authors Workspace" config="WG EXT Training Document Preview"/>
+	<d2_documentset name="Life Sciences Authors Workspace¬Q&amp;M Authors Workspace" config="WG EXT User Guide: Quality and Manufacturing Solution"/>
+	<d2_documentset name="Life Sciences Authors Workspace¬Q&amp;M Authors Workspace" config="WG Facets"/>
+	<d2_documentset name="Life Sciences Authors Workspace¬Q&amp;M Authors Workspace" config="WG Favorites"/>
+	<d2_documentset name="Life Sciences Authors Workspace¬Q&amp;M Authors Workspace" config="WG Locations"/>
+	<d2_documentset name="Life Sciences Authors Workspace¬Q&amp;M Authors Workspace" config="WG Markups"/>
+	<d2_documentset name="Life Sciences Authors Workspace¬Q&amp;M Authors Workspace" config="WG MyDocs"/>
+	<d2_documentset name="Life Sciences Authors Workspace¬Q&amp;M Authors Workspace" config="WG Predefined search"/>
+	<d2_documentset name="Life Sciences Authors Workspace¬Q&amp;M Authors Workspace" config="WG Preview"/>
+	<d2_documentset name="Life Sciences Authors Workspace¬Q&amp;M Authors Workspace" config="WG Properties"/>
+	<d2_documentset name="Life Sciences Authors Workspace¬Q&amp;M Authors Workspace" config="WG Properties (Auto-Edit)"/>
+	<d2_documentset name="Life Sciences Authors Workspace¬Q&amp;M Authors Workspace" config="WG Quick search"/>
+	<d2_documentset name="Life Sciences Authors Workspace¬Q&amp;M Authors Workspace" config="WG Recycle Bin"/>
+	<d2_documentset name="Life Sciences Authors Workspace¬Q&amp;M Authors Workspace" config="WG Relations"/>
+	<d2_documentset name="Life Sciences Authors Workspace¬Q&amp;M Authors Workspace" config="WG Renditions"/>
+	<d2_documentset name="Life Sciences Authors Workspace¬Q&amp;M Authors Workspace" config="WG Retentions"/>
+	<d2_documentset name="Life Sciences Authors Workspace¬Q&amp;M Authors Workspace" config="WG Thumbnails"/>
+	<d2_documentset name="Life Sciences Authors Workspace¬Q&amp;M Authors Workspace" config="WG Versions"/>
+	<d2_documentset name="Life Sciences Authors Workspace¬Q&amp;M Authors Workspace" config="WG Virtual document"/>
+	<d2_documentset name="Life Sciences Authors Workspace¬Q&amp;M Authors Workspace" config="WG WF Overview"/>
+	<d2_documentset name="Life Sciences Authors Workspace¬Q&amp;M Authors Workspace" config="WG WF Task Attachment"/>
+	<d2_documentset name="Life Sciences Authors Workspace¬Q&amp;M Authors Workspace" config="WG WF Task Details"/>
+	<d2_documentset name="Life Sciences Authors Workspace¬Q&amp;M Authors Workspace" config="WG WF Task Folders"/>
+	<d2_documentset name="Life Sciences Authors Workspace¬Q&amp;M Authors Workspace" config="WG WF Task List"/>
+	<d2_documentset name="Life Sciences Authors Workspace¬Q&amp;M Authors Workspace" config="WG WF Task Notes"/>
+	<d2_documentset name="Life Sciences Authors Workspace¬Q&amp;M Authors Workspace" config="WG WF Task Overview"/>
+	<d2_documentset name="Life Sciences Authors Workspace¬Q&amp;M Authors Workspace" config="WG WF Task Performers"/>
+	<d2_documentset name="Life Sciences Reviewer-Approver Workspace¬Q&amp;M Reviewer-Approver Workspace" config="Bio WG Brava Viewer CSR"/>
+	<d2_documentset name="Life Sciences Reviewer-Approver Workspace¬Q&amp;M Reviewer-Approver Workspace" config="WG Affected Documents"/>
+	<d2_documentset name="Life Sciences Reviewer-Approver Workspace¬Q&amp;M Reviewer-Approver Workspace" config="WG Associated Change Request"/>
+	<d2_documentset name="Life Sciences Reviewer-Approver Workspace¬Q&amp;M Reviewer-Approver Workspace" config="WG Audit"/>
+	<d2_documentset name="Life Sciences Reviewer-Approver Workspace¬Q&amp;M Reviewer-Approver Workspace" config="WG Change Request"/>
+	<d2_documentset name="Life Sciences Reviewer-Approver Workspace¬Q&amp;M Reviewer-Approver Workspace" config="WG Delegation"/>
+	<d2_documentset name="Life Sciences Reviewer-Approver Workspace¬Q&amp;M Reviewer-Approver Workspace" config="WG Docbase browser"/>
+	<d2_documentset name="Life Sciences Reviewer-Approver Workspace¬Q&amp;M Reviewer-Approver Workspace" config="WG Doclist QnM"/>
+	<d2_documentset name="Life Sciences Reviewer-Approver Workspace¬Q&amp;M Reviewer-Approver Workspace" config="WG Doclist Training"/>
+	<d2_documentset name="Life Sciences Reviewer-Approver Workspace¬Q&amp;M Reviewer-Approver Workspace" config="WG EXT Brava! Viewer"/>
+	<d2_documentset name="Life Sciences Reviewer-Approver Workspace¬Q&amp;M Reviewer-Approver Workspace" config="WG EXT CDF Reviewer/Approver Welcome"/>
+	<d2_documentset name="Life Sciences Reviewer-Approver Workspace¬Q&amp;M Reviewer-Approver Workspace" config="WG EXT Controlled Print"/>
+	<d2_documentset name="Life Sciences Reviewer-Approver Workspace¬Q&amp;M Reviewer-Approver Workspace" config="WG EXT DIA Website"/>
+	<d2_documentset name="Life Sciences Reviewer-Approver Workspace¬Q&amp;M Reviewer-Approver Workspace" config="WG EXT Training Document Preview"/>
+	<d2_documentset name="Life Sciences Reviewer-Approver Workspace¬Q&amp;M Reviewer-Approver Workspace" config="WG Facets"/>
+	<d2_documentset name="Life Sciences Reviewer-Approver Workspace¬Q&amp;M Reviewer-Approver Workspace" config="WG Favorites"/>
+	<d2_documentset name="Life Sciences Reviewer-Approver Workspace¬Q&amp;M Reviewer-Approver Workspace" config="WG Locations"/>
+	<d2_documentset name="Life Sciences Reviewer-Approver Workspace¬Q&amp;M Reviewer-Approver Workspace" config="WG Markups"/>
+	<d2_documentset name="Life Sciences Reviewer-Approver Workspace¬Q&amp;M Reviewer-Approver Workspace" config="WG Predefined search"/>
+	<d2_documentset name="Life Sciences Reviewer-Approver Workspace¬Q&amp;M Reviewer-Approver Workspace" config="WG Preview"/>
+	<d2_documentset name="Life Sciences Reviewer-Approver Workspace¬Q&amp;M Reviewer-Approver Workspace" config="WG Properties"/>
+	<d2_documentset name="Life Sciences Reviewer-Approver Workspace¬Q&amp;M Reviewer-Approver Workspace" config="WG Properties (Auto-Edit)"/>
+	<d2_documentset name="Life Sciences Reviewer-Approver Workspace¬Q&amp;M Reviewer-Approver Workspace" config="WG Quick search"/>
+	<d2_documentset name="Life Sciences Reviewer-Approver Workspace¬Q&amp;M Reviewer-Approver Workspace" config="WG Relations"/>
+	<d2_documentset name="Life Sciences Reviewer-Approver Workspace¬Q&amp;M Reviewer-Approver Workspace" config="WG Renditions"/>
+	<d2_documentset name="Life Sciences Reviewer-Approver Workspace¬Q&amp;M Reviewer-Approver Workspace" config="WG Retentions"/>
+	<d2_documentset name="Life Sciences Reviewer-Approver Workspace¬Q&amp;M Reviewer-Approver Workspace" config="WG Thumbnails"/>
+	<d2_documentset name="Life Sciences Reviewer-Approver Workspace¬Q&amp;M Reviewer-Approver Workspace" config="WG Versions"/>
+	<d2_documentset name="Life Sciences Reviewer-Approver Workspace¬Q&amp;M Reviewer-Approver Workspace" config="WG Virtual document"/>
+	<d2_documentset name="Life Sciences Reviewer-Approver Workspace¬Q&amp;M Reviewer-Approver Workspace" config="WG WF Overview"/>
+	<d2_documentset name="Life Sciences Reviewer-Approver Workspace¬Q&amp;M Reviewer-Approver Workspace" config="WG WF Task Attachment"/>
+	<d2_documentset name="Life Sciences Reviewer-Approver Workspace¬Q&amp;M Reviewer-Approver Workspace" config="WG WF Task Details"/>
+	<d2_documentset name="Life Sciences Reviewer-Approver Workspace¬Q&amp;M Reviewer-Approver Workspace" config="WG WF Task Folders"/>
+	<d2_documentset name="Life Sciences Reviewer-Approver Workspace¬Q&amp;M Reviewer-Approver Workspace" config="WG WF Task List"/>
+	<d2_documentset name="Life Sciences Reviewer-Approver Workspace¬Q&amp;M Reviewer-Approver Workspace" config="WG WF Task Notes"/>
+	<d2_documentset name="Life Sciences Reviewer-Approver Workspace¬Q&amp;M Reviewer-Approver Workspace" config="WG WF Task Overview"/>
+	<d2_documentset name="Life Sciences Reviewer-Approver Workspace¬Q&amp;M Reviewer-Approver Workspace" config="WG WF Task Performers"/>
+	<d2_documentset name="Life Sciences Consumers Workspace¬Q&amp;M Consumers Workspace" config="Bio WG Brava Viewer CSR"/>
+	<d2_documentset name="Life Sciences Consumers Workspace¬Q&amp;M Consumers Workspace" config="WG Affected Documents"/>
+	<d2_documentset name="Life Sciences Consumers Workspace¬Q&amp;M Consumers Workspace" config="WG Associated Change Request"/>
+	<d2_documentset name="Life Sciences Consumers Workspace¬Q&amp;M Consumers Workspace" config="WG Audit"/>
+	<d2_documentset name="Life Sciences Consumers Workspace¬Q&amp;M Consumers Workspace" config="WG Change Request"/>
+	<d2_documentset name="Life Sciences Consumers Workspace¬Q&amp;M Consumers Workspace" config="WG Checkout"/>
+	<d2_documentset name="Life Sciences Consumers Workspace¬Q&amp;M Consumers Workspace" config="WG Docbase browser"/>
+	<d2_documentset name="Life Sciences Consumers Workspace¬Q&amp;M Consumers Workspace" config="WG Doclist"/>
+	<d2_documentset name="Life Sciences Consumers Workspace¬Q&amp;M Consumers Workspace" config="WG Doclist QnM"/>
+	<d2_documentset name="Life Sciences Consumers Workspace¬Q&amp;M Consumers Workspace" config="WG Doclist Training"/>
+	<d2_documentset name="Life Sciences Consumers Workspace¬Q&amp;M Consumers Workspace" config="WG EXT CDF Reader Welcome"/>
+	<d2_documentset name="Life Sciences Consumers Workspace¬Q&amp;M Consumers Workspace" config="WG EXT Controlled Print"/>
+	<d2_documentset name="Life Sciences Consumers Workspace¬Q&amp;M Consumers Workspace" config="WG EXT DIA Website"/>
+	<d2_documentset name="Life Sciences Consumers Workspace¬Q&amp;M Consumers Workspace" config="WG EXT Training Document Preview"/>
+	<d2_documentset name="Life Sciences Consumers Workspace¬Q&amp;M Consumers Workspace" config="WG EXT User Guide: Quality and Manufacturing Solution"/>
+	<d2_documentset name="Life Sciences Consumers Workspace¬Q&amp;M Consumers Workspace" config="WG Facets"/>
+	<d2_documentset name="Life Sciences Consumers Workspace¬Q&amp;M Consumers Workspace" config="WG Favorites"/>
+	<d2_documentset name="Life Sciences Consumers Workspace¬Q&amp;M Consumers Workspace" config="WG Locations"/>
+	<d2_documentset name="Life Sciences Consumers Workspace¬Q&amp;M Consumers Workspace" config="WG MyDocs"/>
+	<d2_documentset name="Life Sciences Consumers Workspace¬Q&amp;M Consumers Workspace" config="WG Predefined search"/>
+	<d2_documentset name="Life Sciences Consumers Workspace¬Q&amp;M Consumers Workspace" config="WG Predefined search (Ad hoc Search)"/>
+	<d2_documentset name="Life Sciences Consumers Workspace¬Q&amp;M Consumers Workspace" config="WG Preview"/>
+	<d2_documentset name="Life Sciences Consumers Workspace¬Q&amp;M Consumers Workspace" config="WG Properties"/>
+	<d2_documentset name="Life Sciences Consumers Workspace¬Q&amp;M Consumers Workspace" config="WG Quick search"/>
+	<d2_documentset name="Life Sciences Consumers Workspace¬Q&amp;M Consumers Workspace" config="WG Recycle Bin"/>
+	<d2_documentset name="Life Sciences Consumers Workspace¬Q&amp;M Consumers Workspace" config="WG Relations"/>
+	<d2_documentset name="Life Sciences Consumers Workspace¬Q&amp;M Consumers Workspace" config="WG Renditions"/>
+	<d2_documentset name="Life Sciences Consumers Workspace¬Q&amp;M Consumers Workspace" config="WG Retentions"/>
+	<d2_documentset name="Life Sciences Consumers Workspace¬Q&amp;M Consumers Workspace" config="WG Thumbnails"/>
+	<d2_documentset name="Life Sciences Consumers Workspace¬Q&amp;M Consumers Workspace" config="WG Versions"/>
+	<d2_documentset name="Life Sciences Consumers Workspace¬Q&amp;M Consumers Workspace" config="WG Virtual document"/>
+	<d2_documentset name="Life Sciences Consumers Workspace¬Q&amp;M Consumers Workspace" config="WG WF Overview"/>
+	<d2_documentset name="Life Sciences Consumers Workspace¬Q&amp;M Consumers Workspace" config="WG WF Task Attachment"/>
+	<d2_documentset name="Life Sciences Consumers Workspace¬Q&amp;M Consumers Workspace" config="WG WF Task Details"/>
+	<d2_documentset name="Life Sciences Consumers Workspace¬Q&amp;M Consumers Workspace" config="WG WF Task Folders"/>
+	<d2_documentset name="Life Sciences Consumers Workspace¬Q&amp;M Consumers Workspace" config="WG WF Task List"/>
+	<d2_documentset name="Life Sciences Consumers Workspace¬Q&amp;M Consumers Workspace" config="WG WF Task Notes"/>
+	<d2_documentset name="Life Sciences Consumers Workspace¬Q&amp;M Consumers Workspace" config="WG WF Task Overview"/>
+	<d2_documentset name="Life Sciences Consumers Workspace¬Q&amp;M Consumers Workspace" config="WG WF Task Performers"/>
+	<d2_documentset name="All LSS Workspaces" config="Bio WG Brava Viewer CSR"/>
+	<d2_documentset name="All LSS Workspaces" config="WG Administration - Dictionaries"/>
+	<d2_documentset name="All LSS Workspaces" config="WG Administration - Groups"/>
+	<d2_documentset name="All LSS Workspaces" config="WG Administration - Taxonomies"/>
+	<d2_documentset name="All LSS Workspaces" config="WG Affected Documents"/>
+	<d2_documentset name="All LSS Workspaces" config="WG Associated Change Request"/>
+	<d2_documentset name="All LSS Workspaces" config="WG Audit"/>
+	<d2_documentset name="All LSS Workspaces" config="WG Change Request"/>
+	<d2_documentset name="All LSS Workspaces" config="WG Checkout"/>
+	<d2_documentset name="All LSS Workspaces" config="WG Delegation"/>
+	<d2_documentset name="All LSS Workspaces" config="WG Docbase browser"/>
+	<d2_documentset name="All LSS Workspaces" config="WG Doclist"/>
+	<d2_documentset name="All LSS Workspaces" config="WG Doclist QnM"/>
+	<d2_documentset name="All LSS Workspaces" config="WG Dump"/>
+	<d2_documentset name="All LSS Workspaces" config="WG EXT Brava! Viewer"/>
+	<d2_documentset name="All LSS Workspaces" config="WG EXT CDF Author Welcome"/>
+	<d2_documentset name="All LSS Workspaces" config="WG EXT CDF Reader Welcome"/>
+	<d2_documentset name="All LSS Workspaces" config="WG EXT CDF Reviewer/Approver Welcome"/>
+	<d2_documentset name="All LSS Workspaces" config="WG EXT DIA Website"/>
+	<d2_documentset name="All LSS Workspaces" config="WG EXT PDF Viewer 1"/>
+	<d2_documentset name="All LSS Workspaces" config="WG EXT PDF Viewer 2"/>
+	<d2_documentset name="All LSS Workspaces" config="WG EXT User Guide: Quality and Manufacturing Solution"/>
+	<d2_documentset name="All LSS Workspaces" config="WG Facets"/>
+	<d2_documentset name="All LSS Workspaces" config="WG Favorites"/>
+	<d2_documentset name="All LSS Workspaces" config="WG for Hard Delete"/>
+	<d2_documentset name="All LSS Workspaces" config="WG Hub"/>
+	<d2_documentset name="All LSS Workspaces" config="WG Locations"/>
+	<d2_documentset name="All LSS Workspaces" config="WG Markups"/>
+	<d2_documentset name="All LSS Workspaces" config="WG MyDocs"/>
+	<d2_documentset name="All LSS Workspaces" config="WG Predefined search"/>
+	<d2_documentset name="All LSS Workspaces" config="WG Predefined search (Ad hoc Search)"/>
+	<d2_documentset name="All LSS Workspaces" config="WG Preview"/>
+	<d2_documentset name="All LSS Workspaces" config="WG Properties"/>
+	<d2_documentset name="All LSS Workspaces" config="WG Properties (Auto-Edit)"/>
+	<d2_documentset name="All LSS Workspaces" config="WG Quick search"/>
+	<d2_documentset name="All LSS Workspaces" config="WG Recycle Bin"/>
+	<d2_documentset name="All LSS Workspaces" config="WG Relations"/>
+	<d2_documentset name="All LSS Workspaces" config="WG Renditions"/>
+	<d2_documentset name="All LSS Workspaces" config="WG Retentions"/>
+	<d2_documentset name="All LSS Workspaces" config="WG Thumbnails"/>
+	<d2_documentset name="All LSS Workspaces" config="WG Versions"/>
+	<d2_documentset name="All LSS Workspaces" config="WG Virtual document"/>
+	<d2_documentset name="All LSS Workspaces" config="WG WF Overview"/>
+	<d2_documentset name="All LSS Workspaces" config="WG WF Task Attachment"/>
+	<d2_documentset name="All LSS Workspaces" config="WG WF Task Details"/>
+	<d2_documentset name="All LSS Workspaces" config="WG WF Task Folders"/>
+	<d2_documentset name="All LSS Workspaces" config="WG WF Task List"/>
+	<d2_documentset name="All LSS Workspaces" config="WG WF Task Notes"/>
+	<d2_documentset name="All LSS Workspaces" config="WG WF Task Overview"/>
+	<d2_documentset name="All LSS Workspaces" config="WG WF Task Performers"/>
+	<switch_defaults>
+		<default>WG Doclist</default>
+		<default>WG Properties</default>
+		<default>WG Favorites</default>
+		<default>WG Docbase browser</default>
+		<default>WG Predefined search</default>
+	</switch_defaults>
+</d2_documentset_switch>

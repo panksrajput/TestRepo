@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<delta>
+	<delete id="separator0"/>
+	<replace id="menuDocumentViewWithNativeAnnotations,menuDocumentEditWithNativeAnnotations,separator1">
+		<menuitem id="menuCustom1566935034937" label_en="View native content">
+			<dynamic-action action="D2_ACTION_CONTENT_VIEW_C2_OVERRIDE" class="com.emc.d2fs.dctm.ui.dynamicactions.actions.View"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.interfaces.IsConnected" showifinvalid="true"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.objects.IsQuery" equals="false" showifinvalid="true"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.actions.CanView" redirectReference="SOURCE" showifinvalid="true"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.permits.IsUserInGroup" value="cd_readers_view_native"/>
+		</menuitem>
+	</replace>
+	<replace id="menuDocumentExportFolder,menuDocumentC2Print">
+		<menuitem id="menuCustom1566935083850" label_en="Export Native Content">
+			<dynamic-action action="D2_ACTION_CONTENT_EXPORT_C2_OVERRIDE" class="com.emc.d2fs.dctm.ui.dynamicactions.actions.Export"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.interfaces.IsConnected" showifinvalid="true"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.typeparts.IsObjectId" showifinvalid="true"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.actions.CanView" redirectReference="SOURCE"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.useragent.IsThinClient" equals="false"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.permits.IsUserInGroup" value="cd_export_native"/>
+		</menuitem>
+	</replace>
+	<replace id="separator2,menuDocumentCheckIn">
+		<separator id="separatorCustom1502213994131"/>
+		<menuitem id="menuDocumentExportFolder">
+			<dynamic-action action="D2_ACTION_CONTENT_EXPORT_FOLDER_NATIVE" class="com.emc.d2fs.dctm.ui.dynamicactions.actions.ExportFolder"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.useragent.IsThinClient" equals="false" showifinvalid="false"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.interfaces.IsConnected" showifinvalid="true"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.objects.IsReference" equals="false" showifinvalid="false"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.typeparts.IsCabinetOrFolder" equals="true" showifinvalid="false"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.permits.HasPermit" showifinvalid="true" value="read"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.objects.HasChildren" showifinvalid="true"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.typeparts.IsObjectType" equals="false" value="cd_submission_folder¬cd_submission_subfolder"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.typeparts.IsObjectType" equals="false" value="cd_submission_folder¬cd_submission_subfolder"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.typeparts.IsObjectType" equals="false" value="cd_submission_folder¬cd_submission_subfolder"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.typeparts.IsObjectType" equals="false" value="cd_submission_folder¬cd_submission_subfolder"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.typeparts.IsObjectType" equals="false" value="cd_submission_folder¬cd_submission_subfolder"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.typeparts.IsObjectType" equals="false" value="cd_submission_folder¬cd_submission_subfolder"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.typeparts.IsObjectType" equals="false" value="cd_submission_folder¬cd_submission_subfolder"/>
+		</menuitem>
+		<menuitem id="menuCustom1405579472662" action="" label_en="Export Submission">
+			<dynamic-action action="D2_ACTION_CONTENT_EXPORT_FOLDER_NATIVE" class="com.emc.d2fs.dctm.ui.dynamicactions.actions.ExportFolder"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.interfaces.IsConnected"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.typeparts.IsFolder"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.typeparts.IsObjectType" value="cd_submission_folder¬cd_submission_subfolder"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.useragent.IsThinClient" equals="false"/>
+		</menuitem>
+		<separator id="separatorCustom1405579466333"/>
+	</replace>
+	<replace id="separator3,menuDocumentAcrobatAnnotation">
+		<separator id="separator1"/>
+		<menuitem id="menuDocumentViewWithNativeAnnotations" label_en="View with Track Changes">
+			<dynamic-action action="D2_ACTION_CONTENT_VIEW_WITH_NATIVE_ANNOTATION" class="com.emc.d2fs.dctm.ui.dynamicactions.actions.NativeAnnotation"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.typeparts.IsObjectType" equals="false" value="d2c_bin_deleted_document¬d2c_bin_deleted_folder¬d2c_bin_deleted_folder_dump¬d2c_bin_deleted_rendition"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.useragent.IsThinClient" equals="false" showifinvalid="false"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.interfaces.IsConnected" showifinvalid="true"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.objects.IsQuery" equals="false" showifinvalid="true"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.actions.CanView" redirectReference="SOURCE" showifinvalid="true"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.actions.CanMerge"/>
+		</menuitem>
+	</replace>
+	<replace id="menuDocumentNativeAnnotationCheckIn,separator4,menuDocumentCompare,menuDocumentRelationCreate">
+		<menuitem id="menuDocumentEditWithNativeAnnotations" label_en="Checkout and Merge Changes">
+			<dynamic-action action="D2_ACTION_CONTENT_EDIT_WITH_NATIVE_ANNOTATION" class="com.emc.d2fs.dctm.ui.dynamicactions.actions.NativeAnnotation"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.typeparts.IsObjectType" equals="false" value="d2c_bin_deleted_document¬d2c_bin_deleted_folder¬d2c_bin_deleted_folder_dump¬d2c_bin_deleted_rendition"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.useragent.IsThinClient" equals="false" showifinvalid="false"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.interfaces.IsConnected" showifinvalid="true"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.permits.HasClientCapability" showifinvalid="true" value="contributor"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.actions.CanEdit" redirectReference="SOURCE" showifinvalid="true"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.actions.CanMerge"/>
+		</menuitem>
+		<menuitem id="menuDocumentC2Print" hidden="true" src="MenuDocumentPrint">
+			<condition class="com.emc.d2fs.dctm.ui.conditions.interfaces.IsConnected" showifinvalid="true"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.objects.IsQuery" equals="false" showifinvalid="true"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.actions.CanView" redirectReference="SOURCE" showifinvalid="true"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.permits.IsUserInGroup" value="cd_clinical_doc_coordinators¬cd_non_clinical_doc_coordinators¬cd_quality_doc_coordinators¬cd_regulatory_doc_coordinators¬cd_gmp_coordinators"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.permits.IsUserInGroup" value="cd_clinical_doc_coordinators¬cd_non_clinical_doc_coordinators¬cd_quality_doc_coordinators¬cd_regulatory_doc_coordinators¬cd_gmp_coordinators"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.permits.IsUserInGroup" value="cd_clinical_doc_coordinators¬cd_non_clinical_doc_coordinators¬cd_quality_doc_coordinators¬cd_regulatory_doc_coordinators¬cd_gmp_coordinators"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.permits.IsUserInGroup" value="cd_clinical_doc_coordinators¬cd_non_clinical_doc_coordinators¬cd_quality_doc_coordinators¬cd_regulatory_doc_coordinators¬cd_gmp_coordinators"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.permits.IsUserInGroup" value="cd_clinical_doc_coordinators¬cd_non_clinical_doc_coordinators¬cd_quality_doc_coordinators¬cd_regulatory_doc_coordinators¬cd_gmp_coordinators"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.permits.IsUserInGroup" value="cd_clinical_doc_coordinators¬cd_non_clinical_doc_coordinators¬cd_quality_doc_coordinators¬cd_regulatory_doc_coordinators¬cd_gmp_coordinators"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.permits.IsUserInGroup" value="cd_clinical_doc_coordinators¬cd_non_clinical_doc_coordinators¬cd_quality_doc_coordinators¬cd_regulatory_doc_coordinators¬cd_gmp_coordinators"/>
+		</menuitem>
+	</replace>
+	<replace id="separator5">
+		<menuitem id="menuDocumentNativeAnnotationCheckIn" label_en="Check in Track Changes">
+			<dynamic-action action="D2_ACTION_CONTENT_CHECKIN_NATIVE_ANNOTATION" class="com.emc.d2fs.dctm.ui.dynamicactions.actions.NativeAnnotation"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.typeparts.IsObjectType" equals="false" value="d2c_bin_deleted_document¬d2c_bin_deleted_folder¬d2c_bin_deleted_folder_dump¬d2c_bin_deleted_rendition"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.useragent.IsThinClient" equals="false" showifinvalid="false"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.interfaces.IsConnected" showifinvalid="true"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.typeparts.IsDocument" showifinvalid="false"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.actions.CanCheckinNativeAnnotation" showifinvalid="false"/>
+		</menuitem>
+		<menuitem id="menuDocumentAcrobatAnnotation">
+			<dynamic-action class="com.emc.d2fs.dctm.ui.dynamicactions.events.Publish" event="D2_ACTION_ACROBAT_ANNOTATION_OPEN"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.typeparts.IsObjectType" equals="false" value="d2c_bin_deleted_document¬d2c_bin_deleted_folder¬d2c_bin_deleted_folder_dump¬d2c_bin_deleted_rendition"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.useragent.IsThinClient" equals="false" showifinvalid="false"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.interfaces.IsConnected" showifinvalid="true"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.options.CanAcrobatComment"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.typeparts.IsDocument" showifinvalid="true"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.actions.CheckoutByAndPermitLevel" showifinvalid="true" value="read"/>
+		</menuitem>
+		<menuitem id="menuDocumentCompare">
+			<dynamic-action class="com.emc.d2fs.dctm.ui.dynamicactions.actions.Compare"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.typeparts.IsObjectType" equals="false" value="d2c_bin_deleted_document¬d2c_bin_deleted_folder¬d2c_bin_deleted_folder_dump¬d2c_bin_deleted_rendition"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.useragent.IsThinClient" equals="false" showifinvalid="false"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.interfaces.IsConnected" showifinvalid="true"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.options.CanCompare"/>
+		</menuitem>
+	</replace>
+	<insert position-after="menuFileDestroy,menuContextHyperlinkDestroy,menuContextRelationsDestroy,menuDocumentCheckIn,separatorCustom1502214994351,menuFilePermissions,menuFileProperties,separator4,menuContextCut,menuContextCopy,menuContextPaste" position-before="menuDocumentView,menuDocumentEdit,menuDocumentViewNative,menuCustom1566935034937,menuDocumentC2Export,menuDocumentExport,menuCustom1566935083850,menuDocumentPrint,separatorCustom1502213994131,menuDocumentExportFolder,menuCustom1405579472662,separatorCustom1405579466333,menuDocumentCheckOut,menuDocumentCancelCheckOut,separator1,menuDocumentViewWithNativeAnnotations,menuDocumentNativeAnnotation,menuDocumentAnnotateNativeAnnotation,menuDocumentEditWithNativeAnnotations,menuDocumentC2Print,menuDocumentConvertToDoc,menuDocumentConvertToVD,menuDocumentNativeAnnotationCheckIn,menuDocumentAcrobatAnnotation,menuDocumentCompare,menuDocumentRequestRendition,separator6">
+		<menuitem id="menuDocumentRelationCreate">
+			<dynamic-action action="D2_ACTION_RELATION_CREATE" class="com.emc.d2fs.dctm.ui.dynamicactions.actions.Relation"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.typeparts.IsObjectType" equals="false" value="d2c_bin_deleted_document¬d2c_bin_folder¬d2c_bin_deleted_folder¬d2c_bin_deleted_folder_dump¬d2c_bin_deleted_rendition"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.interfaces.IsConnected" showifinvalid="true"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.permits.HasClientCapability" showifinvalid="true" value="contributor"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.typeparts.IsDocument" showifinvalid="true"/>
+		</menuitem>
+	</insert>
+	<replace id="separator7">
+		<menuitem id="menuDocumentCheckIn">
+			<dynamic-action action="D2_ACTION_CONTENT_CHECKIN" class="com.emc.d2fs.dctm.ui.dynamicactions.actions.Checkin"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.typeparts.IsObjectType" equals="false" value="d2c_bin_deleted_document¬d2c_bin_deleted_folder¬d2c_bin_deleted_folder_dump¬d2c_bin_deleted_rendition"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.useragent.IsTouchClient" equals="false" showifinvalid="false"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.interfaces.IsConnected" showifinvalid="true"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.permits.HasClientCapability" showifinvalid="true" value="contributor"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.permits.HasPermit" showifinvalid="true" value="version"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.actions.CanCheckin"/>
+		</menuitem>
+		<separator id="separatorCustom1502214994351"/>
+	</replace>
+	<insert position-after="menuContextCut,menuContextCopy,menuContextPaste" position-before="menuDocumentView,menuDocumentEdit,menuDocumentViewNative,menuCustom1566935034937,menuDocumentC2Export,menuDocumentExport,menuCustom1566935083850,menuDocumentPrint,separatorCustom1502213994131,menuDocumentExportFolder,menuCustom1405579472662,separatorCustom1405579466333,menuDocumentCheckOut,menuDocumentCancelCheckOut,separator1,menuDocumentViewWithNativeAnnotations,menuDocumentNativeAnnotation,menuDocumentAnnotateNativeAnnotation,menuDocumentEditWithNativeAnnotations,menuDocumentC2Print,menuDocumentConvertToDoc,menuDocumentConvertToVD,menuDocumentNativeAnnotationCheckIn,menuDocumentAcrobatAnnotation,menuDocumentCompare,menuDocumentRequestRendition,separator6,menuDocumentRelationCreate,menuFileDestroy,menuContextHyperlinkDestroy,menuContextRelationsDestroy,menuDocumentCheckIn,separatorCustom1502214994351,menuFilePermissions,menuFileProperties">
+		<separator id="separator4"/>
+	</insert>
+	<modify id="menuDocumentEdit" label_en="Checkout and Edit">
+		<move class="com.emc.d2fs.dctm.ui.conditions.typeparts.IsObjectType" position-after="com.emc.d2fs.dctm.ui.conditions.useragent.IsTouchClient,com.emc.d2fs.dctm.ui.conditions.interfaces.IsConnected,com.emc.d2fs.dctm.ui.conditions.permits.HasClientCapability,com.emc.d2fs.dctm.ui.conditions.actions.CanEdit,com.emc.d2fs.dctm.ui.conditions.objects.Predicate" position-before="com.emc.d2fs.dctm.ui.dynamicactions.actions.Checkout"/>
+		<append>
+			<condition all_valid="false" class="com.emc.d2fs.dctm.ui.conditions.objects.Predicate" equals="false" showifinvalid="true" value="dm_dbo.single_result_row_view where exists(SELECT * FROM dm_workflow WHERE r_object_id IN (SELECT r_workflow_id FROM dmi_package WHERE ANY r_component_id = '$value(r_object_id)') AND r_runtime_state='1' AND object_name LIKE 'Cat 1 GMP withdrawal%') or exists (select * from cd_controlled_doc where r_object_id='$value(r_object_id)' and a_status = 'Effective' and can_be_withdrawn = true and planned_withdraw_date is not nulldate)"/>
+		</append>
+	</modify>
+	<modify id="menuDocumentC2Export" label_en="Export with watermark"/>
+	<modify id="menuDocumentViewWithNativeAnnotations" label_en="View with Track Changes">
+		<move class="com.emc.d2fs.dctm.ui.conditions.typeparts.IsObjectType" position-after="com.emc.d2fs.dctm.ui.conditions.useragent.IsThinClient,com.emc.d2fs.dctm.ui.conditions.interfaces.IsConnected,com.emc.d2fs.dctm.ui.conditions.objects.IsQuery,com.emc.d2fs.dctm.ui.conditions.actions.CanView,com.emc.d2fs.dctm.ui.conditions.actions.CanMerge" position-before="com.emc.d2fs.dctm.ui.dynamicactions.actions.NativeAnnotation"/>
+	</modify>
+	<modify id="menuDocumentNativeAnnotation" label_en="Review and Edit Personal Copy">
+		<move class="com.emc.d2fs.dctm.ui.conditions.typeparts.IsObjectType" position-after="com.emc.d2fs.dctm.ui.conditions.actions.CheckoutByAndPermitLevel" position-before="com.emc.d2fs.dctm.ui.dynamicactions.actions.NativeAnnotation,com.emc.d2fs.dctm.ui.conditions.useragent.IsThinClient,com.emc.d2fs.dctm.ui.conditions.interfaces.IsConnected,com.emc.d2fs.dctm.ui.conditions.typeparts.IsDocument"/>
+	</modify>
+	<modify id="menuDocumentAnnotateNativeAnnotation" label_en="Review and Edit Consolidated Copy"/>
+	<modify id="menuDocumentEditWithNativeAnnotations" label_en="Checkout and Merge Changes">
+		<move class="com.emc.d2fs.dctm.ui.conditions.typeparts.IsObjectType" position-after="com.emc.d2fs.dctm.ui.conditions.useragent.IsThinClient,com.emc.d2fs.dctm.ui.conditions.interfaces.IsConnected,com.emc.d2fs.dctm.ui.conditions.permits.HasClientCapability,com.emc.d2fs.dctm.ui.conditions.actions.CanEdit,com.emc.d2fs.dctm.ui.conditions.actions.CanMerge" position-before="com.emc.d2fs.dctm.ui.dynamicactions.actions.NativeAnnotation"/>
+	</modify>
+	<modify id="menuDocumentC2Print" hidden="true">
+		<insert position-after="com.emc.d2fs.dctm.ui.conditions.permits.IsUserInGroup,com.emc.d2fs.dctm.ui.conditions.permits.IsUserInGroup,com.emc.d2fs.dctm.ui.conditions.permits.IsUserInGroup,com.emc.d2fs.dctm.ui.conditions.permits.IsUserInGroup,com.emc.d2fs.dctm.ui.conditions.permits.IsUserInGroup,com.emc.d2fs.dctm.ui.conditions.permits.IsUserInGroup" position-before="com.emc.d2fs.dctm.ui.conditions.interfaces.IsConnected,com.emc.d2fs.dctm.ui.conditions.objects.IsQuery,com.emc.d2fs.dctm.ui.conditions.actions.CanView">
+			<condition class="com.emc.d2fs.dctm.ui.conditions.permits.IsUserInGroup" value="cd_clinical_doc_coordinators¬cd_non_clinical_doc_coordinators¬cd_quality_doc_coordinators¬cd_regulatory_doc_coordinators¬cd_gmp_coordinators"/>
+		</insert>
+	</modify>
+	<modify id="menuDocumentConvertToDoc" hidden="true">
+		<move class="com.emc.d2fs.dctm.ui.conditions.typeparts.IsObjectType" position-after="com.emc.d2fs.dctm.ui.conditions.interfaces.IsConnected,com.emc.d2fs.dctm.ui.conditions.objects.IsReference,com.emc.d2fs.dctm.ui.conditions.vd.IsVD,com.emc.d2fs.dctm.ui.conditions.vd.HasChildren,com.emc.d2fs.dctm.ui.conditions.permits.HasClientCapability,com.emc.d2fs.dctm.ui.conditions.actions.CheckoutByAndPermitLevel" position-before="com.emc.d2fs.dctm.ui.dynamicactions.events.Publish"/>
+	</modify>
+	<modify id="menuDocumentConvertToVD" hidden="true">
+		<move class="com.emc.d2fs.dctm.ui.conditions.typeparts.IsObjectType" position-after="com.emc.d2fs.dctm.ui.conditions.interfaces.IsConnected,com.emc.d2fs.dctm.ui.conditions.objects.IsReference,com.emc.d2fs.dctm.ui.conditions.vd.IsNotVD,com.emc.d2fs.dctm.ui.conditions.typeparts.IsDocument,com.emc.d2fs.dctm.ui.conditions.permits.HasClientCapability,com.emc.d2fs.dctm.ui.conditions.actions.CheckoutByAndPermitLevel" position-before="com.emc.d2fs.dctm.ui.dynamicactions.events.Publish"/>
+	</modify>
+	<modify id="menuDocumentNativeAnnotationCheckIn" label_en="Check in Track Changes">
+		<move class="com.emc.d2fs.dctm.ui.conditions.typeparts.IsObjectType" position-after="com.emc.d2fs.dctm.ui.conditions.useragent.IsThinClient,com.emc.d2fs.dctm.ui.conditions.interfaces.IsConnected,com.emc.d2fs.dctm.ui.conditions.typeparts.IsDocument,com.emc.d2fs.dctm.ui.conditions.actions.CanCheckinNativeAnnotation" position-before="com.emc.d2fs.dctm.ui.dynamicactions.actions.NativeAnnotation"/>
+		<modify class="com.emc.d2fs.dctm.ui.conditions.typeparts.IsDocument" showifinvalid="false"/>
+		<modify class="com.emc.d2fs.dctm.ui.conditions.actions.CanCheckinNativeAnnotation" showifinvalid="false"/>
+	</modify>
+	<modify id="menuDocumentViewNative">
+		<append>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.permits.IsUserInGroup" equals="false" value="cd_readers_view_native"/>
+		</append>
+	</modify>
+	<modify id="menuDocumentExport">
+		<append>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.useragent.IsThinClient" equals="false"/>
+		</append>
+	</modify>
+	<modify id="menuDocumentExportFolder">
+		<insert position-after="com.emc.d2fs.dctm.ui.conditions.typeparts.IsObjectType,com.emc.d2fs.dctm.ui.conditions.typeparts.IsObjectType,com.emc.d2fs.dctm.ui.conditions.typeparts.IsObjectType,com.emc.d2fs.dctm.ui.conditions.typeparts.IsObjectType,com.emc.d2fs.dctm.ui.conditions.typeparts.IsObjectType,com.emc.d2fs.dctm.ui.conditions.typeparts.IsObjectType" position-before="com.emc.d2fs.dctm.ui.dynamicactions.actions.ExportFolder,com.emc.d2fs.dctm.ui.conditions.useragent.IsThinClient,com.emc.d2fs.dctm.ui.conditions.interfaces.IsConnected,com.emc.d2fs.dctm.ui.conditions.objects.IsReference,com.emc.d2fs.dctm.ui.conditions.typeparts.IsCabinetOrFolder,com.emc.d2fs.dctm.ui.conditions.permits.HasPermit,com.emc.d2fs.dctm.ui.conditions.objects.HasChildren">
+			<condition class="com.emc.d2fs.dctm.ui.conditions.typeparts.IsObjectType" equals="false" value="cd_submission_folder¬cd_submission_subfolder"/>
+		</insert>
+		<modify action="D2_ACTION_CONTENT_EXPORT_FOLDER_NATIVE" class="com.emc.d2fs.dctm.ui.dynamicactions.actions.ExportFolder"/>
+	</modify>
+	<modify id="menuDocumentCheckOut">
+		<move class="com.emc.d2fs.dctm.ui.conditions.typeparts.IsObjectType" position-after="com.emc.d2fs.dctm.ui.conditions.useragent.IsTouchClient,com.emc.d2fs.dctm.ui.conditions.interfaces.IsConnected,com.emc.d2fs.dctm.ui.conditions.permits.HasClientCapability,com.emc.d2fs.dctm.ui.conditions.permits.HasPermit,com.emc.d2fs.dctm.ui.conditions.actions.CanCheckout,com.emc.d2fs.dctm.ui.conditions.objects.HasContent" position-before="com.emc.d2fs.dctm.ui.dynamicactions.actions.Checkout"/>
+		<append>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.objects.HasContent" equals="true" showifinvalid="false"/>
+		</append>
+		<modify class="com.emc.d2fs.dctm.ui.conditions.actions.CanCheckout" equals="true"/>
+	</modify>
+	<modify id="menuDocumentCancelCheckOut">
+		<move class="com.emc.d2fs.dctm.ui.conditions.typeparts.IsObjectType" position-after="com.emc.d2fs.dctm.ui.conditions.useragent.IsTouchClient,com.emc.d2fs.dctm.ui.conditions.interfaces.IsConnected,com.emc.d2fs.dctm.ui.conditions.permits.HasClientCapability,com.emc.d2fs.dctm.ui.conditions.actions.CanCancelCheckout" position-before="com.emc.d2fs.dctm.ui.dynamicactions.actions.Checkout"/>
+	</modify>
+	<modify id="menuDocumentAcrobatAnnotation">
+		<move class="com.emc.d2fs.dctm.ui.conditions.typeparts.IsObjectType" position-after="com.emc.d2fs.dctm.ui.conditions.useragent.IsThinClient,com.emc.d2fs.dctm.ui.conditions.interfaces.IsConnected,com.emc.d2fs.dctm.ui.conditions.options.CanAcrobatComment,com.emc.d2fs.dctm.ui.conditions.typeparts.IsDocument,com.emc.d2fs.dctm.ui.conditions.actions.CheckoutByAndPermitLevel" position-before="com.emc.d2fs.dctm.ui.dynamicactions.events.Publish"/>
+	</modify>
+	<modify id="menuDocumentCompare">
+		<move class="com.emc.d2fs.dctm.ui.conditions.typeparts.IsObjectType" position-after="com.emc.d2fs.dctm.ui.conditions.useragent.IsThinClient,com.emc.d2fs.dctm.ui.conditions.interfaces.IsConnected,com.emc.d2fs.dctm.ui.conditions.options.CanCompare" position-before="com.emc.d2fs.dctm.ui.dynamicactions.actions.Compare"/>
+	</modify>
+	<modify id="menuDocumentRequestRendition">
+		<move class="com.emc.d2fs.dctm.ui.conditions.typeparts.IsObjectType" position-after="com.emc.d2fs.dctm.ui.conditions.interfaces.IsConnected,com.emc.d2fs.dctm.ui.conditions.typeparts.IsDocument,com.emc.d2fs.dctm.ui.conditions.permits.HasClientCapability,com.emc.d2fs.dctm.ui.conditions.objects.HasContent" position-before="com.emc.d2fs.dctm.ui.dynamicactions.actions.Rendition"/>
+		<modify class="com.emc.d2fs.dctm.ui.conditions.typeparts.IsDocument" showifinvalid="false"/>
+	</modify>
+	<modify id="menuDocumentRelationCreate">
+		<move class="com.emc.d2fs.dctm.ui.conditions.typeparts.IsObjectType" position-after="com.emc.d2fs.dctm.ui.conditions.interfaces.IsConnected,com.emc.d2fs.dctm.ui.conditions.permits.HasClientCapability,com.emc.d2fs.dctm.ui.conditions.typeparts.IsDocument" position-before="com.emc.d2fs.dctm.ui.dynamicactions.actions.Relation"/>
+	</modify>
+	<modify id="menuFileDestroy">
+		<move class="com.emc.d2fs.dctm.ui.conditions.typeparts.IsObjectType" position-after="com.emc.d2fs.dctm.ui.conditions.interfaces.IsConnected,com.emc.d2fs.dctm.ui.conditions.typeparts.IsObjectId,com.emc.d2fs.dctm.ui.conditions.typeparts.IsObjectType,com.emc.d2fs.dctm.ui.conditions.typeparts.IsWorkflow,com.emc.d2fs.dctm.ui.conditions.typeparts.IsContent,com.emc.d2fs.dctm.ui.conditions.workflows.IsTask,com.emc.d2fs.dctm.ui.conditions.actions.CanDelete,com.emc.d2fs.dctm.ui.conditions.objects.HasAttrValue" position-before="com.emc.d2fs.dctm.ui.dynamicactions.actions.ActionDialog"/>
+		<delete class="com.emc.d2fs.dctm.ui.conditions.interfaces.IsActiveWidget"/>
+		<append>
+			<condition all_valid="true" class="com.emc.d2fs.dctm.ui.conditions.objects.HasAttrValue" property="wf_is_in_workflow" showifinvalid="true" value="F"/>
+		</append>
+		<modify class="com.emc.d2fs.dctm.ui.conditions.typeparts.IsObjectType" showifinvalid="true" value="dm_user¬dm_group¬d2_dictionary¬d2_taxonomy¬d2_register_config¬d2c_workflow_tracker¬d2c_distribution_tracker"/>
+		<modify class="com.emc.d2fs.dctm.ui.conditions.typeparts.IsObjectType" showifinvalid="true" value="dm_user¬dm_group¬d2_dictionary¬d2_taxonomy¬d2_register_config¬d2c_workflow_tracker¬d2c_distribution_tracker"/>
+	</modify>
+	<modify id="menuDocumentCheckIn">
+		<move class="com.emc.d2fs.dctm.ui.conditions.typeparts.IsObjectType" position-after="com.emc.d2fs.dctm.ui.conditions.useragent.IsTouchClient,com.emc.d2fs.dctm.ui.conditions.interfaces.IsConnected,com.emc.d2fs.dctm.ui.conditions.permits.HasClientCapability,com.emc.d2fs.dctm.ui.conditions.permits.HasPermit,com.emc.d2fs.dctm.ui.conditions.actions.CanCheckin" position-before="com.emc.d2fs.dctm.ui.dynamicactions.actions.Checkin"/>
+	</modify>
+	<modify id="menuFilePermissions">
+		<move class="com.emc.d2fs.dctm.ui.conditions.typeparts.IsObjectType" position-after="com.emc.d2fs.dctm.ui.conditions.interfaces.IsConnected,com.emc.d2fs.dctm.ui.conditions.typeparts.IsSysObject,com.emc.d2fs.dctm.ui.conditions.interfaces.IsMultipleSelection" position-before="com.emc.d2fs.dctm.ui.dynamicactions.actions.ActionDialog"/>
+	</modify>
+	<modify id="menuFileProperties">
+		<delete class="com.emc.d2fs.dctm.ui.conditions.typeparts.IsHyperlink"/>
+	</modify>
+</delta>

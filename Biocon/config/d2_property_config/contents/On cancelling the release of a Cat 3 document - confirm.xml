@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dialog id="PropertiesDialog" buttons_right="false" focus="" height="240" resizable="true" signoff_creation="false" signoff_edit="false" signoff_import="false" signoff_intention_dictionary="" signoff_intention_required="false" width="450">
+	<content>
+		<fieldset label_en="Cancel document release">
+			<comment font_bold="true" font_color="#CC0000" label_en="Note:"/>
+			<comment html_content="true" label_en="&lt;table cellspacing=0&gt;&lt;tr&gt;&lt;td&gt;This will revert ''$value(object_name)'' to &lt;strong&gt;Draft&lt;/strong&gt;, enabling further modifications to be made to the document.&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"/>
+			<comment font_bold="true" label_en="OK to continue?"/>
+		</fieldset>
+	</content>
+	<buttons>
+		<button id="buttonOk" action="validDialog()"/>
+		<button id="buttonCancel" action="cancelDialog()"/>
+	</buttons>
+</dialog>

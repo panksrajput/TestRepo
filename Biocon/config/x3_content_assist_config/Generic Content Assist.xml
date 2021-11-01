@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x3_content_assist_config new_format="true">
+	<object_name value="Generic Content Assist"/>
+	<title value="Generic content assistance configuration to allow both search and browse options."/>
+	<subject value=""/>
+	<authors/>
+	<keywords/>
+	<a_status value=""/>
+	<a_content_type value=""/>
+	<log_entry value=""/>
+	<language_code value=""/>
+	<module_type value="x3_content_assist_config"/>
+	<application_names>
+		<repeating value="OpenText Life Sciences Medical Device for Quality and Manufacturing Solution"/>
+		<repeating value="OpenText Life Sciences Medical Device for Research and Development Solution"/>
+		<repeating value="OpenText Life Sciences eTMF Solution"/>
+		<repeating value="OpenText Life Sciences Medical Device Solution"/>
+		<repeating value="OpenText Life Sciences Quality and Manufacturing Solution"/>
+		<repeating value="OpenText Life Sciences Research and Development Solution"/>
+		<repeating value="OpenText Life Sciences Submission Storage and Viewing"/>
+	</application_names>
+	<lock_config value="F"/>
+	<parents_config/>
+	<label_locale>
+		<repeating value="en"/>
+	</label_locale>
+	<label_value>
+		<repeating value=""/>
+	</label_value>
+	<has_browse_assist value="T"/>
+	<has_favorites_assist value="T"/>
+	<has_recent_assist value="F"/>
+	<has_search_assist value="T"/>
+</x3_content_assist_config>

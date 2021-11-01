@@ -1,0 +1,579 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_dictionary object_name="RejectEmailTargets" title="Dictionary to identify which role attributes to examine for reject notifications" lock_config="false" parents_config="" application_names="OpenText Life Sciences eTMF Solution¬OpenText Life Sciences Medical Device for Quality and Manufacturing Solution¬OpenText Life Sciences Medical Device for Research and Development Solution¬OpenText Life Sciences Quality and Manufacturing Solution¬OpenText Life Sciences Research and Development Solution¬OpenText Life Sciences Submission Storage and Viewing" security_group="admingroup" search_group="" version="2" is_versioned="false" manual_order="false" create_view_option="false" is_dql="false" is_dql_cache="false" dql="" label_en="RejectEmailTargets">
+	<d2_dictionary_value object_name="Bio Cat 1 Review Approve Site Performers [1-GMP-REVIEW-APPROVE]" is_enabled="true" order_no="0">
+		<alias name="Approval" value=""/>
+		<alias name="For Review" value="wf_reviewers"/>
+		<alias name="Review" value=""/>
+		<alias name="Format Review" value=""/>
+		<alias name="Delegated Approval" value=""/>
+		<alias name="Delegated Approval-no Sig" value=""/>
+		<alias name="Delegated Approval - no Sig" value=""/>
+		<alias name="Approval-no Sig" value=""/>
+		<alias name="For Approval" value="wf_reviewers,wf_approvers"/>
+		<alias name="For Approval-no Sig" value="wf_reviewers,wf_approvers"/>
+		<alias name="QO Approval" value="wf_reviewers,wf_approvers,wf_qo_approvers"/>
+		<alias name="Ready to Make Effective" value="wf_reviewers,wf_approvers,wf_qo_approvers,wf_doc_coordinators"/>
+		<alias name="Review CR" value=""/>
+		<alias name="Edit CR" value=""/>
+		<alias name="Approve CR" value=""/>
+		<alias name="approvers" value=""/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Bio Cat 2 Review/Approve Site Performer[2-GMP-APPROVE-REVIEW]" is_enabled="true" order_no="0">
+		<alias name="Approval" value="wf_reviewers,wf_approvers"/>
+		<alias name="For Review" value=""/>
+		<alias name="Review" value="wf_reviewers"/>
+		<alias name="Format Review" value=""/>
+		<alias name="Delegated Approval" value=""/>
+		<alias name="Delegated Approval-no Sig" value=""/>
+		<alias name="Delegated Approval - no Sig" value=""/>
+		<alias name="Approval-no Sig" value="wf_reviewers,wf_approvers"/>
+		<alias name="For Approval" value=""/>
+		<alias name="For Approval-no Sig" value=""/>
+		<alias name="QO Approval" value=""/>
+		<alias name="Ready to Make Effective" value=""/>
+		<alias name="Review CR" value=""/>
+		<alias name="Edit CR" value=""/>
+		<alias name="Approve CR" value=""/>
+		<alias name="approvers" value=""/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Cat 1 Approve Site Performers [1-GMP-APPROVE]" is_enabled="true" order_no="0">
+		<alias name="Approval" value=""/>
+		<alias name="For Review" value=""/>
+		<alias name="Review" value=""/>
+		<alias name="Format Review" value=""/>
+		<alias name="Delegated Approval" value=""/>
+		<alias name="Delegated Approval-no Sig" value=""/>
+		<alias name="Delegated Approval - no Sig" value=""/>
+		<alias name="Approval-no Sig" value=""/>
+		<alias name="For Approval" value="wf_approvers"/>
+		<alias name="For Approval-no Sig" value="wf_approvers"/>
+		<alias name="QO Approval" value="wf_approvers,wf_qo_approvers"/>
+		<alias name="Ready to Make Effective" value="wf_approvers,wf_qo_approvers,wf_doc_coordinators"/>
+		<alias name="Review CR" value=""/>
+		<alias name="Edit CR" value=""/>
+		<alias name="Approve CR" value=""/>
+		<alias name="approvers" value=""/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Cat 1 Approve Site Performers [1-GMP-APPROVE] noSig" is_enabled="true" order_no="0">
+		<alias name="Approval" value=""/>
+		<alias name="For Review" value=""/>
+		<alias name="Review" value=""/>
+		<alias name="Format Review" value=""/>
+		<alias name="Delegated Approval" value=""/>
+		<alias name="Delegated Approval-no Sig" value=""/>
+		<alias name="Delegated Approval - no Sig" value=""/>
+		<alias name="Approval-no Sig" value=""/>
+		<alias name="For Approval" value="wf_approvers"/>
+		<alias name="For Approval-no Sig" value="wf_approvers"/>
+		<alias name="QO Approval" value="wf_approvers,wf_qo_approvers"/>
+		<alias name="Ready to Make Effective" value="wf_approvers,wf_qo_approvers,wf_doc_coordinators"/>
+		<alias name="Review CR" value=""/>
+		<alias name="Edit CR" value=""/>
+		<alias name="Approve CR" value=""/>
+		<alias name="approvers" value=""/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Cat 1 GMP withdrawal WF" is_enabled="true" order_no="0">
+		<alias name="Approval" value=""/>
+		<alias name="For Review" value=""/>
+		<alias name="Review" value=""/>
+		<alias name="Format Review" value=""/>
+		<alias name="Delegated Approval" value=""/>
+		<alias name="Delegated Approval-no Sig" value=""/>
+		<alias name="Delegated Approval - no Sig" value=""/>
+		<alias name="Approval-no Sig" value=""/>
+		<alias name="For Approval" value=""/>
+		<alias name="For Approval-no Sig" value=""/>
+		<alias name="QO Approval" value=""/>
+		<alias name="Ready to Make Effective" value=""/>
+		<alias name="Review CR" value=""/>
+		<alias name="Edit CR" value=""/>
+		<alias name="Approve CR" value=""/>
+		<alias name="approvers" value="wf_approvers"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Cat 1 Periodic Review[1-PERIODIC]" is_enabled="true" order_no="0">
+		<alias name="Approval" value=""/>
+		<alias name="For Review" value=""/>
+		<alias name="Review" value="wf_authors,wf_periodic_reviewers,wf_doc_coordinators"/>
+		<alias name="Format Review" value=""/>
+		<alias name="Delegated Approval" value=""/>
+		<alias name="Delegated Approval-no Sig" value=""/>
+		<alias name="Delegated Approval - no Sig" value=""/>
+		<alias name="Approval-no Sig" value=""/>
+		<alias name="For Approval" value=""/>
+		<alias name="For Approval-no Sig" value=""/>
+		<alias name="QO Approval" value=""/>
+		<alias name="Ready to Make Effective" value=""/>
+		<alias name="Review CR" value=""/>
+		<alias name="Edit CR" value=""/>
+		<alias name="Approve CR" value=""/>
+		<alias name="approvers" value=""/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Cat 1 Review Approve Site Performers [1-GMP-REVIEW-APPROVE]" is_enabled="true" order_no="0">
+		<alias name="Approval" value=""/>
+		<alias name="For Review" value="wf_reviewers"/>
+		<alias name="Review" value=""/>
+		<alias name="Format Review" value=""/>
+		<alias name="Delegated Approval" value=""/>
+		<alias name="Delegated Approval-no Sig" value=""/>
+		<alias name="Delegated Approval - no Sig" value=""/>
+		<alias name="Approval-no Sig" value=""/>
+		<alias name="For Approval" value="wf_reviewers,wf_approvers"/>
+		<alias name="For Approval-no Sig" value="wf_reviewers,wf_approvers"/>
+		<alias name="QO Approval" value="wf_reviewers,wf_approvers,wf_qo_approvers"/>
+		<alias name="Ready to Make Effective" value="wf_reviewers,wf_approvers,wf_qo_approvers,wf_doc_coordinators"/>
+		<alias name="Review CR" value=""/>
+		<alias name="Edit CR" value=""/>
+		<alias name="Approve CR" value=""/>
+		<alias name="approvers" value=""/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Cat 1 Review Approve Site Performers [1-GMP-REVIEW-APPROVE] noSig" is_enabled="true" order_no="0">
+		<alias name="Approval" value=""/>
+		<alias name="For Review" value="wf_reviewers"/>
+		<alias name="Review" value=""/>
+		<alias name="Format Review" value=""/>
+		<alias name="Delegated Approval" value=""/>
+		<alias name="Delegated Approval-no Sig" value=""/>
+		<alias name="Delegated Approval - no Sig" value=""/>
+		<alias name="Approval-no Sig" value=""/>
+		<alias name="For Approval" value="wf_reviewers,wf_approvers"/>
+		<alias name="For Approval-no Sig" value="wf_reviewers,wf_approvers"/>
+		<alias name="QO Approval" value="wf_reviewers,wf_approvers,wf_qo_approvers"/>
+		<alias name="Ready to Make Effective" value="wf_reviewers,wf_approvers,wf_qo_approvers,wf_doc_coordinators"/>
+		<alias name="Review CR" value=""/>
+		<alias name="Edit CR" value=""/>
+		<alias name="Approve CR" value=""/>
+		<alias name="approvers" value=""/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Cat 2 Expiration Review[2-EXPIRY]" is_enabled="true" order_no="0">
+		<alias name="Approval" value=""/>
+		<alias name="For Review" value=""/>
+		<alias name="Review" value="wf_reviewers"/>
+		<alias name="Format Review" value=""/>
+		<alias name="Delegated Approval" value=""/>
+		<alias name="Delegated Approval-no Sig" value=""/>
+		<alias name="Delegated Approval - no Sig" value=""/>
+		<alias name="Approval-no Sig" value=""/>
+		<alias name="For Approval" value=""/>
+		<alias name="For Approval-no Sig" value=""/>
+		<alias name="QO Approval" value=""/>
+		<alias name="Ready to Make Effective" value=""/>
+		<alias name="Review CR" value=""/>
+		<alias name="Edit CR" value=""/>
+		<alias name="Approve CR" value=""/>
+		<alias name="approvers" value=""/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Cat 2 GMP Direct Approval Site Performers [2-GMP-APPROVE]" is_enabled="true" order_no="0">
+		<alias name="Approval" value="wf_approvers"/>
+		<alias name="For Review" value=""/>
+		<alias name="Review" value=""/>
+		<alias name="Format Review" value=""/>
+		<alias name="Delegated Approval" value=""/>
+		<alias name="Delegated Approval-no Sig" value=""/>
+		<alias name="Delegated Approval - no Sig" value=""/>
+		<alias name="Approval-no Sig" value="wf_approvers"/>
+		<alias name="For Approval" value=""/>
+		<alias name="For Approval-no Sig" value=""/>
+		<alias name="QO Approval" value=""/>
+		<alias name="Ready to Make Effective" value=""/>
+		<alias name="Review CR" value=""/>
+		<alias name="Edit CR" value=""/>
+		<alias name="Approve CR" value=""/>
+		<alias name="approvers" value=""/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Cat 2 GMP Direct Approval Site Performers [2-GMP-APPROVE] noSig" is_enabled="true" order_no="0">
+		<alias name="Approval" value="wf_approvers"/>
+		<alias name="For Review" value=""/>
+		<alias name="Review" value=""/>
+		<alias name="Format Review" value=""/>
+		<alias name="Delegated Approval" value=""/>
+		<alias name="Delegated Approval-no Sig" value=""/>
+		<alias name="Delegated Approval - no Sig" value=""/>
+		<alias name="Approval-no Sig" value="wf_approvers"/>
+		<alias name="For Approval" value=""/>
+		<alias name="For Approval-no Sig" value=""/>
+		<alias name="QO Approval" value=""/>
+		<alias name="Ready to Make Effective" value=""/>
+		<alias name="Review CR" value=""/>
+		<alias name="Edit CR" value=""/>
+		<alias name="Approve CR" value=""/>
+		<alias name="approvers" value=""/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Cat 2 Independently Approved without Release Pending - [2-APPROVE-REVIEW]" is_enabled="true" order_no="0">
+		<alias name="Approval" value="wf_reviewers,wf_approvers"/>
+		<alias name="For Review" value=""/>
+		<alias name="Review" value="wf_reviewers"/>
+		<alias name="Format Review" value=""/>
+		<alias name="Delegated Approval" value=""/>
+		<alias name="Delegated Approval-no Sig" value=""/>
+		<alias name="Delegated Approval - no Sig" value=""/>
+		<alias name="Approval-no Sig" value="wf_reviewers,wf_approvers"/>
+		<alias name="For Approval" value=""/>
+		<alias name="For Approval-no Sig" value=""/>
+		<alias name="QO Approval" value=""/>
+		<alias name="Ready to Make Effective" value=""/>
+		<alias name="Review CR" value=""/>
+		<alias name="Edit CR" value=""/>
+		<alias name="Approve CR" value=""/>
+		<alias name="approvers" value=""/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Cat 2 Independently Approved without Release Pending - [2-APPROVE-REVIEW] noSig" is_enabled="true" order_no="0">
+		<alias name="Approval" value="wf_reviewers,wf_approvers"/>
+		<alias name="For Review" value=""/>
+		<alias name="Review" value="wf_reviewers"/>
+		<alias name="Format Review" value=""/>
+		<alias name="Delegated Approval" value=""/>
+		<alias name="Delegated Approval-no Sig" value=""/>
+		<alias name="Delegated Approval - no Sig" value=""/>
+		<alias name="Approval-no Sig" value="wf_reviewers,wf_approvers"/>
+		<alias name="For Approval" value=""/>
+		<alias name="For Approval-no Sig" value=""/>
+		<alias name="QO Approval" value=""/>
+		<alias name="Ready to Make Effective" value=""/>
+		<alias name="Review CR" value=""/>
+		<alias name="Edit CR" value=""/>
+		<alias name="Approve CR" value=""/>
+		<alias name="approvers" value=""/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Cat 2 Independently Approved without Review and Release Pending - [2-APPROVE]" is_enabled="true" order_no="0">
+		<alias name="Approval" value="wf_approvers"/>
+		<alias name="For Review" value=""/>
+		<alias name="Review" value=""/>
+		<alias name="Format Review" value=""/>
+		<alias name="Delegated Approval" value=""/>
+		<alias name="Delegated Approval-no Sig" value=""/>
+		<alias name="Delegated Approval - no Sig" value=""/>
+		<alias name="Approval-no Sig" value="wf_approvers"/>
+		<alias name="For Approval" value=""/>
+		<alias name="For Approval-no Sig" value=""/>
+		<alias name="QO Approval" value=""/>
+		<alias name="Ready to Make Effective" value=""/>
+		<alias name="Review CR" value=""/>
+		<alias name="Edit CR" value=""/>
+		<alias name="Approve CR" value=""/>
+		<alias name="approvers" value=""/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Cat 2 Independently Approved without Review and Release Pending - [2-APPROVE] noSig" is_enabled="true" order_no="0">
+		<alias name="Approval" value="wf_approvers"/>
+		<alias name="For Review" value=""/>
+		<alias name="Review" value=""/>
+		<alias name="Format Review" value=""/>
+		<alias name="Delegated Approval" value=""/>
+		<alias name="Delegated Approval-no Sig" value=""/>
+		<alias name="Delegated Approval - no Sig" value=""/>
+		<alias name="Approval-no Sig" value="wf_approvers"/>
+		<alias name="For Approval" value=""/>
+		<alias name="For Approval-no Sig" value=""/>
+		<alias name="QO Approval" value=""/>
+		<alias name="Ready to Make Effective" value=""/>
+		<alias name="Review CR" value=""/>
+		<alias name="Edit CR" value=""/>
+		<alias name="Approve CR" value=""/>
+		<alias name="approvers" value=""/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Cat 2 Review/Approve Site Performer[2-GMP-APPROVE-REVIEW]" is_enabled="true" order_no="0">
+		<alias name="Approval" value="wf_reviewers,wf_approvers"/>
+		<alias name="For Review" value=""/>
+		<alias name="Review" value="wf_reviewers"/>
+		<alias name="Format Review" value=""/>
+		<alias name="Delegated Approval" value=""/>
+		<alias name="Delegated Approval-no Sig" value=""/>
+		<alias name="Delegated Approval - no Sig" value=""/>
+		<alias name="Approval-no Sig" value="wf_reviewers,wf_approvers"/>
+		<alias name="For Approval" value=""/>
+		<alias name="For Approval-no Sig" value=""/>
+		<alias name="QO Approval" value=""/>
+		<alias name="Ready to Make Effective" value=""/>
+		<alias name="Review CR" value=""/>
+		<alias name="Edit CR" value=""/>
+		<alias name="Approve CR" value=""/>
+		<alias name="approvers" value=""/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Cat 2 Review/Approve Site Performer[2-GMP-APPROVE-REVIEW] noSig" is_enabled="true" order_no="0">
+		<alias name="Approval" value="wf_reviewers,wf_approvers"/>
+		<alias name="For Review" value=""/>
+		<alias name="Review" value="wf_reviewers"/>
+		<alias name="Format Review" value=""/>
+		<alias name="Delegated Approval" value=""/>
+		<alias name="Delegated Approval-no Sig" value=""/>
+		<alias name="Delegated Approval - no Sig" value=""/>
+		<alias name="Approval-no Sig" value="wf_reviewers,wf_approvers"/>
+		<alias name="For Approval" value=""/>
+		<alias name="For Approval-no Sig" value=""/>
+		<alias name="QO Approval" value=""/>
+		<alias name="Ready to Make Effective" value=""/>
+		<alias name="Review CR" value=""/>
+		<alias name="Edit CR" value=""/>
+		<alias name="Approve CR" value=""/>
+		<alias name="approvers" value=""/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Cat 2 Review-Format-Approve Workflow - Dynamic Performers[2-FORMATTER]" is_enabled="true" order_no="0">
+		<alias name="Approval" value="wf_reviewers,wf_format_reviewers,wf_approvers"/>
+		<alias name="For Review" value=""/>
+		<alias name="Review" value="wf_reviewers"/>
+		<alias name="Format Review" value="wf_reviewers,wf_format_reviewers"/>
+		<alias name="Delegated Approval" value=""/>
+		<alias name="Delegated Approval-no Sig" value=""/>
+		<alias name="Delegated Approval - no Sig" value=""/>
+		<alias name="Approval-no Sig" value="wf_reviewers,wf_format_reviewers,wf_approvers"/>
+		<alias name="For Approval" value=""/>
+		<alias name="For Approval-no Sig" value=""/>
+		<alias name="QO Approval" value=""/>
+		<alias name="Ready to Make Effective" value=""/>
+		<alias name="Review CR" value=""/>
+		<alias name="Edit CR" value=""/>
+		<alias name="Approve CR" value=""/>
+		<alias name="approvers" value=""/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Cat 2 Review-Format-Approve Workflow - Dynamic Performers[2-FORMATTER] noSig" is_enabled="true" order_no="0">
+		<alias name="Approval" value="wf_reviewers,wf_format_reviewers,wf_approvers"/>
+		<alias name="For Review" value=""/>
+		<alias name="Review" value="wf_reviewers"/>
+		<alias name="Format Review" value="wf_reviewers,wf_format_reviewers"/>
+		<alias name="Delegated Approval" value=""/>
+		<alias name="Delegated Approval-no Sig" value=""/>
+		<alias name="Delegated Approval - no Sig" value=""/>
+		<alias name="Approval-no Sig" value="wf_reviewers,wf_format_reviewers,wf_approvers"/>
+		<alias name="For Approval" value=""/>
+		<alias name="For Approval-no Sig" value=""/>
+		<alias name="QO Approval" value=""/>
+		<alias name="Ready to Make Effective" value=""/>
+		<alias name="Review CR" value=""/>
+		<alias name="Edit CR" value=""/>
+		<alias name="Approve CR" value=""/>
+		<alias name="approvers" value=""/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Cat 2 Self Approved [2-SELFAPPROVE]" is_enabled="true" order_no="0">
+		<alias name="Approval" value="wf_approvers"/>
+		<alias name="For Review" value=""/>
+		<alias name="Review" value=""/>
+		<alias name="Format Review" value=""/>
+		<alias name="Delegated Approval" value=""/>
+		<alias name="Delegated Approval-no Sig" value=""/>
+		<alias name="Delegated Approval - no Sig" value=""/>
+		<alias name="Approval-no Sig" value=""/>
+		<alias name="For Approval" value=""/>
+		<alias name="For Approval-no Sig" value=""/>
+		<alias name="QO Approval" value=""/>
+		<alias name="Ready to Make Effective" value=""/>
+		<alias name="Review CR" value=""/>
+		<alias name="Edit CR" value=""/>
+		<alias name="Approve CR" value=""/>
+		<alias name="approvers" value=""/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Cat 2 Self Approved [2-SELFAPPROVE] noSig" is_enabled="true" order_no="0">
+		<alias name="Approval" value="wf_approvers"/>
+		<alias name="For Review" value=""/>
+		<alias name="Review" value=""/>
+		<alias name="Format Review" value=""/>
+		<alias name="Delegated Approval" value=""/>
+		<alias name="Delegated Approval-no Sig" value=""/>
+		<alias name="Delegated Approval - no Sig" value=""/>
+		<alias name="Approval-no Sig" value="wf_approvers"/>
+		<alias name="For Approval" value=""/>
+		<alias name="For Approval-no Sig" value=""/>
+		<alias name="QO Approval" value=""/>
+		<alias name="Ready to Make Effective" value=""/>
+		<alias name="Review CR" value=""/>
+		<alias name="Edit CR" value=""/>
+		<alias name="Approve CR" value=""/>
+		<alias name="approvers" value=""/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Cat 3 GMP Delegated Approved [3-GMP-APPROVE]" is_enabled="true" order_no="0">
+		<alias name="Approval" value=""/>
+		<alias name="For Review" value=""/>
+		<alias name="Review" value=""/>
+		<alias name="Format Review" value=""/>
+		<alias name="Delegated Approval" value="wf_approvers"/>
+		<alias name="Delegated Approval-no Sig" value="wf_approvers"/>
+		<alias name="Delegated Approval - no Sig" value="wf_approvers"/>
+		<alias name="Approval-no Sig" value=""/>
+		<alias name="For Approval" value=""/>
+		<alias name="For Approval-no Sig" value=""/>
+		<alias name="QO Approval" value=""/>
+		<alias name="Ready to Make Effective" value=""/>
+		<alias name="Review CR" value=""/>
+		<alias name="Edit CR" value=""/>
+		<alias name="Approve CR" value=""/>
+		<alias name="approvers" value=""/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Cat 3 GMP Delegated Approved [3-GMP-APPROVE] noSig" is_enabled="true" order_no="0">
+		<alias name="Approval" value=""/>
+		<alias name="For Review" value=""/>
+		<alias name="Review" value=""/>
+		<alias name="Format Review" value=""/>
+		<alias name="Delegated Approval" value="wf_approvers"/>
+		<alias name="Delegated Approval-no Sig" value="wf_approvers"/>
+		<alias name="Delegated Approval - no Sig" value="wf_approvers"/>
+		<alias name="Approval-no Sig" value=""/>
+		<alias name="For Approval" value=""/>
+		<alias name="For Approval-no Sig" value=""/>
+		<alias name="QO Approval" value=""/>
+		<alias name="Ready to Make Effective" value=""/>
+		<alias name="Review CR" value=""/>
+		<alias name="Edit CR" value=""/>
+		<alias name="Approve CR" value=""/>
+		<alias name="approvers" value=""/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Cat 3 GMP Review [3-GMP-REVIEW]" is_enabled="true" order_no="0">
+		<alias name="Approval" value=""/>
+		<alias name="For Review" value="wf_reviewers"/>
+		<alias name="Review" value=""/>
+		<alias name="Format Review" value=""/>
+		<alias name="Delegated Approval" value=""/>
+		<alias name="Delegated Approval-no Sig" value=""/>
+		<alias name="Delegated Approval - no Sig" value=""/>
+		<alias name="Approval-no Sig" value=""/>
+		<alias name="For Approval" value=""/>
+		<alias name="For Approval-no Sig" value=""/>
+		<alias name="QO Approval" value=""/>
+		<alias name="Ready to Make Effective" value=""/>
+		<alias name="Review CR" value=""/>
+		<alias name="Edit CR" value=""/>
+		<alias name="Approve CR" value=""/>
+		<alias name="approvers" value=""/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Cat 3 GMP Self Approved [3-GMP-REVIEW]" is_enabled="true" order_no="0">
+		<alias name="Approval" value=""/>
+		<alias name="For Review" value="wf_reviewers"/>
+		<alias name="Review" value=""/>
+		<alias name="Format Review" value=""/>
+		<alias name="Delegated Approval" value=""/>
+		<alias name="Delegated Approval-no Sig" value=""/>
+		<alias name="Delegated Approval - no Sig" value=""/>
+		<alias name="Approval-no Sig" value=""/>
+		<alias name="For Approval" value=""/>
+		<alias name="For Approval-no Sig" value=""/>
+		<alias name="QO Approval" value=""/>
+		<alias name="Ready to Make Effective" value=""/>
+		<alias name="Review CR" value=""/>
+		<alias name="Edit CR" value=""/>
+		<alias name="Approve CR" value=""/>
+		<alias name="approvers" value=""/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Category 3 - Delegated Approval Workflow Template [3-APPROVE]" is_enabled="true" order_no="0">
+		<alias name="Approval" value=""/>
+		<alias name="For Review" value=""/>
+		<alias name="Review" value=""/>
+		<alias name="Format Review" value=""/>
+		<alias name="Delegated Approval" value="wf_approvers"/>
+		<alias name="Delegated Approval-no Sig" value="wf_approvers"/>
+		<alias name="Delegated Approval - no Sig" value="wf_approvers"/>
+		<alias name="Approval-no Sig" value=""/>
+		<alias name="For Approval" value=""/>
+		<alias name="For Approval-no Sig" value=""/>
+		<alias name="QO Approval" value=""/>
+		<alias name="Ready to Make Effective" value=""/>
+		<alias name="Review CR" value=""/>
+		<alias name="Edit CR" value=""/>
+		<alias name="Approve CR" value=""/>
+		<alias name="approvers" value=""/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Category 3 - Delegated Approval Workflow Template [3-APPROVE] noSig" is_enabled="true" order_no="0">
+		<alias name="Approval" value=""/>
+		<alias name="For Review" value=""/>
+		<alias name="Review" value=""/>
+		<alias name="Format Review" value=""/>
+		<alias name="Delegated Approval" value="wf_approvers"/>
+		<alias name="Delegated Approval-no Sig" value="wf_approvers"/>
+		<alias name="Delegated Approval - no Sig" value="wf_approvers"/>
+		<alias name="Approval-no Sig" value=""/>
+		<alias name="For Approval" value=""/>
+		<alias name="For Approval-no Sig" value=""/>
+		<alias name="QO Approval" value=""/>
+		<alias name="Ready to Make Effective" value=""/>
+		<alias name="Review CR" value=""/>
+		<alias name="Edit CR" value=""/>
+		<alias name="Approve CR" value=""/>
+		<alias name="approvers" value=""/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Category 3 - Self Approved [3-REVIEW]" is_enabled="true" order_no="0">
+		<alias name="Approval" value=""/>
+		<alias name="For Review" value="wf_reviewers"/>
+		<alias name="Review" value=""/>
+		<alias name="Format Review" value=""/>
+		<alias name="Delegated Approval" value=""/>
+		<alias name="Delegated Approval-no Sig" value=""/>
+		<alias name="Delegated Approval - no Sig" value=""/>
+		<alias name="Approval-no Sig" value=""/>
+		<alias name="For Approval" value=""/>
+		<alias name="For Approval-no Sig" value=""/>
+		<alias name="QO Approval" value=""/>
+		<alias name="Ready to Make Effective" value=""/>
+		<alias name="Review CR" value=""/>
+		<alias name="Edit CR" value=""/>
+		<alias name="Approve CR" value=""/>
+		<alias name="approvers" value=""/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Change Request For Approval Workflow [CR-APPROVE]" is_enabled="true" order_no="0">
+		<alias name="Approval" value=""/>
+		<alias name="For Review" value=""/>
+		<alias name="Review" value=""/>
+		<alias name="Format Review" value=""/>
+		<alias name="Delegated Approval" value=""/>
+		<alias name="Delegated Approval-no Sig" value=""/>
+		<alias name="Delegated Approval - no Sig" value=""/>
+		<alias name="Approval-no Sig" value=""/>
+		<alias name="For Approval" value=""/>
+		<alias name="For Approval-no Sig" value=""/>
+		<alias name="QO Approval" value=""/>
+		<alias name="Ready to Make Effective" value=""/>
+		<alias name="Review CR" value=""/>
+		<alias name="Edit CR" value=""/>
+		<alias name="Approve CR" value="wf_approvers"/>
+		<alias name="approvers" value=""/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Change Request For Review/Approval Workflow [CR-REVIEW-APPROVE]" is_enabled="true" order_no="0">
+		<alias name="Approval" value=""/>
+		<alias name="For Review" value=""/>
+		<alias name="Review" value=""/>
+		<alias name="Format Review" value=""/>
+		<alias name="Delegated Approval" value=""/>
+		<alias name="Delegated Approval-no Sig" value=""/>
+		<alias name="Delegated Approval - no Sig" value=""/>
+		<alias name="Approval-no Sig" value=""/>
+		<alias name="For Approval" value=""/>
+		<alias name="For Approval-no Sig" value=""/>
+		<alias name="QO Approval" value=""/>
+		<alias name="Ready to Make Effective" value=""/>
+		<alias name="Review CR" value="wf_reviewers"/>
+		<alias name="Edit CR" value=""/>
+		<alias name="Approve CR" value="wf_approvers"/>
+		<alias name="approvers" value=""/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Content Template - Delegated Approval Workflow Template [TEMPLATE-APPROVE]" is_enabled="true" order_no="0">
+		<alias name="Approval" value=""/>
+		<alias name="For Review" value=""/>
+		<alias name="Review" value=""/>
+		<alias name="Format Review" value=""/>
+		<alias name="Delegated Approval" value=""/>
+		<alias name="Delegated Approval-no Sig" value=""/>
+		<alias name="Delegated Approval - no Sig" value=""/>
+		<alias name="Approval-no Sig" value=""/>
+		<alias name="For Approval" value=""/>
+		<alias name="For Approval-no Sig" value=""/>
+		<alias name="QO Approval" value=""/>
+		<alias name="Ready to Make Effective" value=""/>
+		<alias name="Review CR" value=""/>
+		<alias name="Edit CR" value=""/>
+		<alias name="Approve CR" value=""/>
+		<alias name="approvers" value=""/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Review Ingested Document" is_enabled="true" order_no="0">
+		<alias name="Approval" value=""/>
+		<alias name="For Review" value=""/>
+		<alias name="Review" value=""/>
+		<alias name="Format Review" value=""/>
+		<alias name="Delegated Approval" value=""/>
+		<alias name="Delegated Approval-no Sig" value=""/>
+		<alias name="Delegated Approval - no Sig" value=""/>
+		<alias name="Approval-no Sig" value=""/>
+		<alias name="For Approval" value=""/>
+		<alias name="For Approval-no Sig" value=""/>
+		<alias name="QO Approval" value=""/>
+		<alias name="Ready to Make Effective" value=""/>
+		<alias name="Review CR" value=""/>
+		<alias name="Edit CR" value=""/>
+		<alias name="Approve CR" value=""/>
+		<alias name="approvers" value=""/>
+	</d2_dictionary_value>
+</d2_dictionary>

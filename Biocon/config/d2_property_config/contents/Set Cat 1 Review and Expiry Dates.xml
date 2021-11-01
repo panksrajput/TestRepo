@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dialog id="PropertiesDialog" buttons_right="false" focus="" height="320" resizable="true" signoff_creation="false" signoff_edit="false" signoff_import="false" signoff_intention_dictionary="" signoff_intention_required="false" width="400">
+	<content>
+		<fieldset label_en="Set Periodic Review / Expiry Dates">
+			<label id="object_name"/>
+			<label id="r_version_label"/>
+			<label id="a_status" assistance_dictionary="Domain Status DQL Dictionary" assistance_dictionary_alias="display_value" assistance_type="dictionary"/>
+			<separator/>
+			<date id="planned_effective_date" advancedView_enabled="false" condition_enabled="((getValue(a_status).equals('Draft'))||(getValue(a_status).equals('Release Pending')))" condition_validation="getValue(planned_effective_date).isGreaterOrEqualsThan('$TODAY')"/>
+			<date id="effective_date" advancedView_enabled="false" advancedView_required="false" condition_enabled_create="false" condition_enabled_edit="false" condition_enabled_import="false" condition_required_create="true" condition_required_edit="true" condition_required_import="true" condition_validation="getValue(effective_date).isGreaterOrEqualsThan('$TODAY')"/>
+			<date id="review_date" condition_validation="getValue(review_date).isGreaterThan('getValue(effective_date)')&amp;&amp;getValue(review_date).isLessThan('getValue(expiration_date)')"/>
+			<date id="expiration_date" condition_validation="getValue(expiration_date).isGreaterThan('getValue(effective_date)')" condition_visible_create="false" condition_visible_edit="false" condition_visible_import="false"/>
+			<memo id="comments" advancedView_enabled="false" advancedView_required="false" advancedView_visible="false" condition_enabled="((getValue(a_status).equals('Release Pending'))||(getValue(a_status).equals('Effective')))" condition_required="((getValue(a_status).equals('Release Pending'))||(getValue(a_status).equals('Effective')))" condition_required_edit="true" condition_visible="((getValue(a_status).equals('Release Pending'))||(getValue(a_status).equals('Effective')))" label_en="Reason For Change"/>
+		</fieldset>
+	</content>
+	<buttons>
+		<button id="buttonOk" action="validDialog()"/>
+		<button id="buttonCancel" action="cancelDialog()"/>
+	</buttons>
+</dialog>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2lifecycle execute_actions_on_start="true" state_attribute="">
+	<state direct="false" entry="false" name="(chk for valid approvers)">
+		<entry_conditions>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate user is not the sole Approver of the selected document"/>
+		</entry_conditions>
+		<actions/>
+		<next_states/>
+	</state>
+	<state direct="false" entry="false" name="(chk for valid approvers-2-step)">
+		<entry_conditions>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate user is not the sole Approver of the selected document"/>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate user is not Approver and Second Step Approver of the document"/>
+		</entry_conditions>
+		<actions/>
+		<next_states/>
+	</state>
+	<state direct="false" entry="false" name="(chk for valid approvers-1-GMP)">
+		<entry_conditions>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate user is not the sole Approver of the selected document"/>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate user is not the sole QO Approver of the selected document"/>
+		</entry_conditions>
+		<actions/>
+		<next_states/>
+	</state>
+	<state direct="false" entry="false" name="(validate SP 2-step performers)">
+		<entry_conditions>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate SharePoint 2-step performers"/>
+		</entry_conditions>
+		<actions/>
+		<next_states/>
+	</state>
+</d2lifecycle>

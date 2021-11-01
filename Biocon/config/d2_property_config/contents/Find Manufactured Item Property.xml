@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dialog id="PropertiesDialog" buttons_right="false" focus="" height="300" resizable="true" signoff_creation="false" signoff_edit="false" signoff_import="false" signoff_intention_dictionary="" signoff_intention_required="false" width="600">
+	<content>
+		<combo id="item_type" assistance_dictionary="GMP Manufactured Item Type" assistance_dictionary_alias="auto" assistance_type="dictionary" label_en="Item type is"/>
+		<text id="item_code" label_en="Item code is or contains"/>
+		<text id="item_name" label_en="Item name is or contains"/>
+		<combo id="product_code" assistance_dql="select distinct product_code from cd_product_info where a_status = 'Active' and product_code != ' '" assistance_type="dql" label_en="Product code"/>
+		<list id="applicable_sites" assistance_dictionary="GMP Applicable Sites" assistance_dictionary_alias="en" assistance_type="dictionary" label_en="Applicable sites" rows="4"/>
+		<comment html_content="true" label_en="&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;font color=#646464&gt;All fields are case-sensitive.&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"/>
+	</content>
+	<buttons>
+		<button id="buttonOk" action="validDialog()"/>
+		<button id="buttonCancel" action="cancelDialog()"/>
+	</buttons>
+</dialog>

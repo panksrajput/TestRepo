@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_dictionary object_name="GMP Applicable Sites" title="Dictionary for GMP Applicable Sites" lock_config="false" parents_config="" application_names="OpenText Life Sciences Quality and Manufacturing Solution¬OpenText Life Sciences Medical Device Solution¬OpenText Life Sciences Medical Device for Quality and Manufacturing Solution¬Custom Configurations" security_group="admingroup" search_group="" version="2" is_versioned="false" manual_order="false" create_view_option="false" is_dql="false" is_dql_cache="false" dql="" label_en="GMP Applicable Sites">
+	<d2_dictionary_value object_name="Site 2" is_enabled="true" order_no="0">
+		<alias name="users" value="cd_site2_users"/>
+		<alias name="authors" value="cd_site2_authors"/>
+		<alias name="approvers" value="cd_site2_approvers"/>
+		<alias name="auditors" value="cd_site2_auditors"/>
+		<alias name="reviewers" value="cd_site2_reviewers"/>
+		<alias name="qo_approvers" value="cd_site2_qo_approvers"/>
+		<alias name="readers" value="cd_site2_readers"/>
+		<alias name="doc_coordinators" value="cd_site2_coordinators"/>
+		<alias name="Print Site Name" value="site2"/>
+		<locale name="en" value="Site 2"/>
+	</d2_dictionary_value>
+</d2_dictionary>

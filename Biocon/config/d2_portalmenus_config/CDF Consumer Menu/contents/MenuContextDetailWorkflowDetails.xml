@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<delta>
+	<move id="menuContextLocate" position-after="separator0,menuContextCheckin,menuContextCancelCheckout,separator1,menuContextLocateSourceOfReference,menuContextCopyLocator,separator2,menuContextDestroy,separator3,menuContextProperties" position-before="menuContextView,menuContextEdit"/>
+	<modify id="menuContextEdit" hidden="true"/>
+	<modify id="menuContextCopyLocator" hidden="true"/>
+	<modify id="menuContextDestroy" hidden="true"/>
+</delta>

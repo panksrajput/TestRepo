@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="SpaceSchema.xsd">
+	<space>
+		<border-layout-container>
+			<data>
+				<border-layout-data layoutregion="WEST" maxSize="1000" minSize="100" size=".25" split="true"/>
+				<border-layout-data layoutregion="CENTER" split="true"/>
+				<border-layout-data layoutregion="EAST" size=".375" split="true"/>
+			</data>
+			<content>
+				<border-layout-container>
+					<data>
+						<border-layout-data layoutregion="NORTH" maxSize="1000" size=".6" split="true"/>
+						<border-layout-data layoutregion="CENTER" split="true"/>
+					</data>
+					<content>
+						<tab-container>
+							<content>
+								<widget config="WG Predefined search"/>
+								<widget config="WG Docbase browser"/>
+							</content>
+						</tab-container>
+						<tab-container>
+							<content>
+								<widget config="WG Doclist SSV"/>
+								<widget config="WG Favorites"/>
+							</content>
+						</tab-container>
+					</content>
+				</border-layout-container>
+				<widget config="WG EXT LSCI SSV Doc Compare Viewer 1"/>
+				<widget config="WG EXT LSCI SSV Doc Compare Viewer 2"/>
+			</content>
+		</border-layout-container>
+	</space>
+</root>

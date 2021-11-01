@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_dictionary object_name="Change Request Reason Codes" title="Used to categorize change requests into various types in order to facilitate searching." lock_config="false" parents_config="" application_names="OpenText Life Sciences Medical Device for Quality and Manufacturing Solution¬OpenText Life Sciences Medical Device Solution¬OpenText Life Sciences Quality and Manufacturing Solution¬Custom Configurations" security_group="admingroup" search_group="" version="2" is_versioned="false" manual_order="false" create_view_option="false" is_dql="false" is_dql_cache="false" dql="" label_en="Reason">
+	<d2_dictionary_value object_name="Amendments" is_enabled="true" order_no="0">
+		<locale name="en" value="Required Amendments/Corrections"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Continuous Improvement" is_enabled="true" order_no="0">
+		<locale name="en" value="Continuous Improvement"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Corporate Procedure Change" is_enabled="true" order_no="0">
+		<locale name="en" value="Corporate Procedure Change"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Corrective Action Request (CAR)" is_enabled="true" order_no="0">
+		<locale name="en" value="Changes Associated with Corrective Action"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Equipment Change" is_enabled="true" order_no="0">
+		<locale name="en" value="Equipment Change"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Labelling" is_enabled="true" order_no="0">
+		<locale name="en" value="Labeling Change"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Organizational Change" is_enabled="true" order_no="0">
+		<locale name="en" value="Organizational Change"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Packaging" is_enabled="true" order_no="0">
+		<locale name="en" value="Packaging Change"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Preventative Action Request (PAR)" is_enabled="true" order_no="0">
+		<locale name="en" value="Changes Associated with Preventative Action"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Process Change" is_enabled="true" order_no="0">
+		<locale name="en" value="Process Change"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Product Change" is_enabled="true" order_no="0">
+		<locale name="en" value="Product Change"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Site Manufacturing Change" is_enabled="true" order_no="0">
+		<locale name="en" value="Site Manufacturing Change"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Site Procedure Change" is_enabled="true" order_no="0">
+		<locale name="en" value="Site Procedure Change"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="System Change" is_enabled="true" order_no="0">
+		<locale name="en" value="System Change"/>
+	</d2_dictionary_value>
+</d2_dictionary>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dialog id="PropertiesDialog" auto_smartview_edit_mode="false" buttons_right="false" focus="" height="350" initial_invalid="false" resizable="true" signoff_creation="false" signoff_edit="false" signoff_import="false" signoff_intention_dictionary="" signoff_intention_required="false" width="1000">
+	<content>
+		<fieldset label_en="Reclassify Attached Documents">
+			<text id="object_name" condition_enabled_create="false" condition_enabled_edit="false" condition_enabled_import="false" label_en="Parent Virtual Document"/>
+			<text id="artifact_name" condition_enabled_create="false" condition_enabled_edit="false" condition_enabled_import="false"/>
+			<boolean id="transform_artifacts" advancedView_enabled="false" advancedView_visible="false" condition_enabled="(getValue(apply_to_all_versions).equals('false'))" label_en="Convert the attached documents to this artifact" reinit_attributes="apply_to_all_versions"/>
+			<comment advancedView_visible="false" html_content="true" label_en="&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;font color=#646464&gt;Leave this option unchecked to update the properties of the attached documents without changing them to the same artifact as the parent virtual document.&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"/>
+			<separator/>
+			<combo id="auto_inherit_config_rule" assistance_dql="select object_name from cd_auto_inherit_config where any object_types = '$value(r_object_type)' and any automatic_events = 'Reclassify' and enabled = true order by precedence, object_name" assistance_type="dql" condition_required_create="true" condition_required_edit="true" condition_required_import="true" label_en="Reclassification Rule"/>
+			<boolean id="ignore_null_values" label_en="Skip Undefined Properties"/>
+			<comment advancedView_visible="true" condition_visible="getValue(transform_artifacts.condition_enabled_edit).equals('true')" html_content="true" label_en="&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;font color=#646464&gt;Check this option to keep the existing document values where they are left blank in the parent virtual document properties – otherwise they will be reset to blank values.&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"/>
+			<boolean id="apply_to_all_versions" advancedView_visible="false" condition_visible="(getValue(transform_artifacts).equals('false'))" reinit_attributes="transform_artifacts"/>
+			<comment advancedView_visible="false" condition_visible="(getValue(transform_artifacts).equals('false'))" html_content="true" label_en="&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;font color=#646464&gt;The property changes will be applied to a new minor version initially, so they can be verified. When the reclassification is approved, the changes will then be applied to all prior versions, including prior Effective/Approved versions. Note that Group, Subgroup, and Artifact will not be modified on prior versions.&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"/>
+		</fieldset>
+	</content>
+	<buttons>
+		<button id="buttonOk" action="validDialog()"/>
+		<button id="buttonCancel" action="cancelDialog()"/>
+	</buttons>
+</dialog>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_dictionary object_name="Device ID" title="ID used to recognize device in Medical Devices" lock_config="false" parents_config="" application_names="OpenText Life Sciences Quality and Manufacturing Solution¬Custom Configurations" security_group="admingroup" search_group="admingroup" version="2" is_versioned="false" manual_order="false" create_view_option="false" is_dql="false" is_dql_cache="false" dql="" label_en="Device ID">
+	<d2_dictionary_value object_name="Device ID1" is_enabled="true" order_no="0">
+		<locale name="en" value="Device ID1"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Device ID2" is_enabled="true" order_no="0">
+		<locale name="en" value="Device ID2"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Device ID3" is_enabled="true" order_no="0">
+		<locale name="en" value="Device ID3"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Device ID4" is_enabled="true" order_no="0">
+		<locale name="en" value="Device ID4"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Device ID5" is_enabled="true" order_no="0">
+		<locale name="en" value="Device ID5"/>
+	</d2_dictionary_value>
+</d2_dictionary>

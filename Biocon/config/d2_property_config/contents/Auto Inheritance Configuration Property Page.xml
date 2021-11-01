@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dialog id="PropertiesDialog" buttons_right="false" focus="" height="700" resizable="true" signoff_creation="false" signoff_edit="false" signoff_import="false" signoff_intention_dictionary="" signoff_intention_required="false" width="750">
+	<content>
+		<fieldset label_en="Auto inheritance configuration">
+			<text id="object_name" condition_required_create="true" condition_required_edit="true" condition_required_import="true"/>
+			<memo id="title" rows="2"/>
+			<boolean id="enabled" label_en="Enabled"/>
+			<tabs advancedView_visible="false" condition_visible="(getValue(enabled).equals('true'))">
+				<tab label_en="Rule applicability">
+					<boolean id="automatic" label_en="Automatically applies to new objects"/>
+					<comment font_color="#000000" html_content="true" label_en="&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;font color=#646464&gt;Check this option if the rule should apply automatically whenever objects of the specified types are created. Uncheck this option if the rule is to be applied explicitly as part of a lifecycle transition action - e.g. in the &lt;strong&gt;Change Product Code &lt;/strong&gt; function.&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"/>
+					<separator advancedView_visible="false" condition_visible="(getValue(automatic).equals('true'))"/>
+					<list id="automatic_events" advancedView_visible="false" assistance_dictionary="Auto Inheritance Event Codes" assistance_type="dictionary" condition_visible="(getValue(automatic).equals('true'))" rows="3" sorted="true"/>
+					<comment advancedView_visible="false" condition_visible="(getValue(automatic).equals('true'))" font_color="#646464" html_content="true" label_en="&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;font color=#646464&gt;Specifies the optional event code(s) for which the rule is applicable. The rule is used to filter “automatic” rules. For Example: The applicable events can be “Create” or “Update” (or both).  If undefined or blank, the default event “Create” is assumed, for backwards-compatibility..&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"/>
+					<separator/>
+					<list-radio id="precedence" assistance_dictionary="Auto Inheritance Rule Precedence Levels" assistance_dictionary_alias="auto" assistance_type="dictionary" label_en="Order of precedence"/>
+					<comment html_content="true" label_en="&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;font color=#646464&gt;Multiple inheritance rules can apply to the same object, in which case they are applied in order of precedence. The order may be significant when setting default values.&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"/>
+					<separator/>
+					<list id="object_types" assistance_dql="select r_type_name from dmi_type_info where any r_supertype = 'cd_controlled_doc' union select r_type_name from dmi_type_info where any r_supertype = 'cd_controlled_folder' union select '*' from dm_dbo.single_result_row_view order by 1" assistance_type="dql" condition_required_create="true" condition_required_edit="true" condition_required_import="true" label_en="Applies to object type(s)" rows="3" sorted="true"/>
+					<text id="condition" label_en="Condition qualifier (optional)"/>
+					<comment html_content="true" label_en="&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;font color=#646464&gt;Select the specific object type(s) for which this rule applies (sub-types are not included automatically). Select ''&lt;strong&gt;*&lt;/strong&gt;'' if this  inheritance rule can apply to objects of any type. You can also specify arbitrary DQL conditions in the &lt;strong&gt;Condition qualifier&lt;/strong&gt; box - e.g. &lt;strong&gt;a_status != 'Effective'&lt;/strong&gt; prevents the rule from affecting documents in the &lt;strong&gt;Effective&lt;/strong&gt; state.&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"/>
+				</tab>
+				<tab label_en="Inherit from">
+					<memo id="source" label_en="Inherit from"/>
+					<comment html_content="true" label_en="&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;font color=#646464&gt;Specify the &lt;em&gt;source object(s)&lt;/em&gt; that provide the values to be inherited as follows:&lt;ul&gt;&lt;li&gt;&lt;strong&gt;SELECTED&lt;/strong&gt; (or blank) - inherit values from the selected object in each case.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;PRIMARY_PARENT_FOLDER&lt;/strong&gt; - inherit values from the immediate primary parent folder (the first folder that the object is linked to).&lt;/li&gt;&lt;li&gt;&lt;strong&gt;PARENT_FOLDERS&lt;/strong&gt; - inherit values from each immediate parent folder that the object is linked to, starting with the primary folder.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;ALL_FOLDERS [&lt;&lt;em&gt;DQL-qualifier&lt;/em&gt;&gt;]&lt;/strong&gt; - inherit values from all direct and indirect parent folders, or all folders that match the specified conditions - e.g. &lt;strong&gt;ALL_FOLDERS tmf_folder where product_code != ' '&lt;/strong&gt; inherits values from parent folders of object type &lt;strong&gt;tmf_folder&lt;/strong&gt; that have defined &lt;strong&gt;product_code&lt;/strong&gt; values.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;&lt;&lt;em&gt;DQL-qualifier&lt;/em&gt;&gt;&lt;/strong&gt; - inherit values from the specified object(s); e.g. &lt;strong&gt;cd_product_info where product_code = '$value(product_code)'&lt;/strong&gt; inherits values from the associated Product Registration Form. (Use $-expressions to refer to attributes of the selected object.)&lt;/font&gt;&lt;/ul&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"/>
+				</tab>
+				<tab advancedView_visible="false" label_en="Inherit to">
+					<memo id="target" label_en="Inherit to"/>
+					<comment html_content="true" label_en="&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;font color=#646464&gt;Specify the &lt;em&gt;target object(s)&lt;/em&gt; that should inherit the relevant attribute values, as follows:&lt;ul&gt;&lt;li&gt;&lt;strong&gt;SELECTED&lt;/strong&gt; (or blank) - apply inherited values to the selected object in each case.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;PRIMARY_PARENT_FOLDER&lt;/strong&gt; - apply inherited values to the immediate primary parent folder (the first folder that the object is linked to).&lt;/li&gt;&lt;li&gt;&lt;strong&gt;PARENT_FOLDERS&lt;/strong&gt; - apply inherited values to each immediate parent folder that the object is linked to.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;ALL_FOLDERS [&lt;&lt;em&gt;DQL-qualifier&lt;/em&gt;&gt;]&lt;/strong&gt; - apply inherited values to all direct and indirect parent folders, or all folders that match the specified conditions - e.g. &lt;strong&gt;ALL_FOLDERS tmf_folder&lt;/strong&gt; applies values to direct / indirect parent folders of object type &lt;strong&gt;tmf_folder&lt;/strong&gt;.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;&lt;&lt;em&gt;DQL-qualifier&lt;/em&gt;&gt;&lt;/strong&gt; - apply inherited values to the specified object(s); e.g. &lt;strong&gt;cd_common_ref_info where product_code = '$value(product_code)'&lt;/strong&gt; applies inherited values to all objects associated with the relevant &lt;strong&gt;product_code&lt;/strong&gt;. (Use $-expressions to refer to attributes of the selected object.)&lt;/font&gt;&lt;/ul&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"/>
+					<separator/>
+					<columns count="2">
+						<combo id="locked_object_policy" assistance_dictionary="Auto Inheritance Rule Locked Object Policies" assistance_dictionary_alias="auto" assistance_type="dictionary" label_en="For checked-out objects"/>
+						<empty/>
+					</columns>
+					<comment html_content="true" label_en="&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;font color=#646464&gt;Specify how currently checked-out items should be handled. If you use the &lt;strong&gt;Bypass lock temporarily&lt;/strong&gt; option, the existing check-out locks are reinstated after the update, enabling users to continue to work on checked-out documents.&lt;/font&gt;&lt;/ul&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"/>
+				</tab>
+				<tab label_en="Attributes">
+					<list-editable id="attributes" sorted="true"/>
+					<comment html_content="true" label_en="&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;font color=#646464&gt;Specify the list of attributes to be inherited from the source to the target object(s), as follows:&lt;ul&gt;&lt;li&gt;&lt;strong&gt;replace &lt;&lt;em&gt;attribute&lt;/em&gt;&gt;&lt;/strong&gt; or just &lt;strong&gt;&lt;&lt;em&gt;attribute&lt;/em&gt;&gt;&lt;/strong&gt; - inherit the specified attribute value(s), overwriting the current value(s) on the target object(s).&lt;/li&gt;&lt;li&gt;&lt;strong&gt;default &lt;&lt;em&gt;attribute&lt;/em&gt;&gt;&lt;/strong&gt; - inherit the specified attribute value(s) only if it does not currently have a defined value on the target object.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;merge &lt;&lt;em&gt;repeated-attribute&lt;/em&gt;&gt;&lt;/strong&gt; - add the repeated attribute values from the source to the target where they do not already exist (avoiding duplicates).&lt;/li&gt;&lt;/ul&gt;If the source and target attributes are different, specify &lt;strong&gt;&lt;&lt;em&gt;target-attribute&lt;/em&gt;&gt;=&lt;&lt;/em&gt;source-attribute&lt;/em&gt;&gt;&lt;/strong&gt; in the right-hand side: e.g. &lt;strong&gt;replace study_title=title&lt;/strong&gt; copies the value of &lt;strong&gt;title&lt;/strong&gt; from the source object to the &lt;strong&gt;study_title&lt;/strong&gt; attribute of the target object. You can also specify an explicit value to set using the notation &lt;strong&gt;&lt;&lt;em&gt;target-attribute&lt;/em&gt;&gt;:&lt;&lt;em&gt;value&lt;/em&gt;&gt;&lt;/strong&gt; -  e.g. &lt;strong&gt;replace authors:$USER&lt;/strong&gt; resets the &lt;strong&gt;authors&lt;/strong&gt; to the current user. (You can use $-expressions within the value specification.)&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"/>
+					<separator/>
+					<columns count="2">
+						<combo id="update_mode" assistance_dictionary="Auto Inheritance Rule Update Modes" assistance_dictionary_alias="en" assistance_type="dictionary"/>
+						<empty/>
+					</columns>
+					<comment html_content="true" label_en="&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;font color=#646464&gt;Using &lt;strong&gt;Serial&lt;/strong&gt; update mode (the default setting) the target objects are processed one by one. If the update can potentially apply to many objects, set the update mode to &lt;strong&gt;Parallel&lt;/strong&gt; or &lt;strong&gt;Batch DQL&lt;/strong&gt;. Using &lt;strong&gt;Batch DQL&lt;/strong&gt; is most efficient, but you can only use this mode to &lt;strong&gt;replace&lt;/strong&gt; attributes. Also, you must specify a single source object, and the target objects must be specified in terms of a DQL qualifier when using this mode.&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"/>
+					<text id="repeat_max_times" advancedView_visible="false" condition_visible="(getValue(update_mode).equals('0'))" label_en="Repeat"/>
+					<comment advancedView_visible="false" condition_visible="(getValue(update_mode).equals('0'))" html_content="true" label_en="&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;font color=#646464&gt;Reapply this rule repeatedly until no further updates are required.&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"/>
+				</tab>
+				<tab advancedView_visible="false" label_en="Folder updates">
+					<list-editable id="update_folders" popup_height="200" popup_width="600" rows="12" sorted="false"/>
+					<comment html_content="true" label_en="&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;font color=#646464&gt;Specify the list of folders to be moved or renamed as a result of changes to inherited attributes, where applicable. Each entry should be in the form &lt;strong&gt;&lt;&lt;em&gt;folder-path|DQL-qualifier&lt;/em&gt;&gt; =&gt; &lt;&lt;em&gt;new-folder-path|new-folder-name&lt;/em&gt;&gt;&lt;/strong&gt; - e.g. &lt;strong&gt;/Clinical/$arg(old_value) =&gt; $arg(new_value)&lt;/strong&gt; renames a product-level folder in the &lt;strong&gt;Clinical&lt;/strong&gt; cabinet as part of the &lt;strong&gt;Change Product Code&lt;/strong&gt; operation. If the target folder already exists, the folder contents are merged.&lt;p&gt;If a DQL qualifier is used, the results should be &lt;strong&gt;dm_folder&lt;/strong&gt; object types, or sub-types of this type: all qualifying folders are moved or renamed accordingly. You can use $-expressions to refer to attributes of the source object (the first source object, if more than one are identified), and in the right-hand side, you can also use @-expressions to refer to attributes of the target folder in each case.&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"/>
+				</tab>
+				<tab label_en="Deletion">
+					<boolean id="delete_empty_folders"/>
+					<comment html_content="true" label_en="&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;font color=#646464&gt;When moving documents and folders to new locations via D2 auto-linking / folder updates, any empty folders that remain will be deleted automatically if this setting is enabled.&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"/>
+					<memo id="delete_objects" label_en="Delete Target Objects Where" rows="2"/>
+					<comment html_content="true" label_en="&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;font color=#646464&gt;Use this setting to selectively-remove redundant objects identified in terms of a DQL qualifier or Boolean attribute expression (i.e. an attribute expression returning a ''&lt;strong&gt;true&lt;/strong&gt;'' or ''&lt;strong&gt;false&lt;/strong&gt;'' value). For example, either the DQL qualifier &lt;strong&gt;r_object_type = 'cd_product_info'&lt;/strong&gt; or the attribute expression &lt;strong&gt;@eq(@value(r_object_type),cd_product_info)&lt;/strong&gt; can be used to delete Product Registration Forms.&lt;p&gt;If the update mode is set to &lt;strong&gt;Bulk DQL&lt;/strong&gt;, a DQL qualifier must be specified here; otherwise, it is more efficient to use an attribute expression. Within the attribute expression, use &lt;strong&gt;$value()&lt;/strong&gt; expressions to refer to attributes of the context object (the first source object, by default) and &lt;strong&gt;@value()&lt;/strong&gt; expressions to refer to attributes of the target object in each case. The wildcard symbol &lt;strong&gt;*&lt;/strong&gt; refers to all target objects. Note that the selection is made &lt;em&gt;before&lt;/em&gt; inherited attributes are applied, so the DQL qualifier or attribute expression should refer to the current object values, not the new values.&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"/>
+				</tab>
+				<tab advancedView_visible="false" label_en="Post-processing">
+					<comment label_en="After having applied the inherited attribute changes and folder updates (as applicable):"/>
+					<fieldset label_en="Reapply D2 configurations">
+						<memo id="apply_d2_auto_naming_to" label_en="Reapply D2 Auto-Naming Where" rows="2"/>
+						<memo id="apply_d2_auto_linking_to" label_en="Reapply D2 Auto-Linking Where" rows="2"/>
+						<memo id="apply_d2_security_to" label_en="Reapply D2 Security Where" rows="2"/>
+					</fieldset>
+					<fieldset label_en="Custom processing">
+						<memo id="apply_plugin_to" label_en="Apply Custom Processing Where" rows="2"/>
+						<text id="plugin_class" advancedView_enabled="false" advancedView_visible="false" label_en="Class Path of Custom Plug-in"/>
+						<text id="plugin_arguments" label_en="Additional plug-in arguments"/>
+					</fieldset>
+					<comment html_content="true" label_en="&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;font color=#646464&gt;Use these settings to selectively-apply D2 auto-naming, auto-linking, security and/ or custom post-processing to modified objects, as and where applicable. In each case, specify a DQL qualifier, Boolean attribute expression or the wildcard symbol &lt;strong&gt;*&lt;/strong&gt; - refer to the usage notes on the &lt;strong&gt;Deletion&lt;/strong&gt; tab for further guidance.&lt;p&gt;For advice on implementing custom post-processing plug-ins, refer to the Controlled Document Foundation API JavaDocs.&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"/>
+				</tab>
+				<tab label_en="Auditing">
+					<fieldset label_en="Auditing">
+						<memo id="apply_auditing_to" rows="3"/>
+						<comment html_content="true" label_en="&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;font color=#646464&gt;Enables auditing to be applied to a subset of the impacted objects based on a DQL qualifier; e.g. specify “r_object_type = ‘target_type’” in the “Apply Auditing To:” box to audit changes on objects of a specific type. Specify “*” to audit changes on all impacted objects (note that this can incur a lot of extra processing if many objects are affected).&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"/>
+						<separator/>
+						<text id="audited_event_name"/>
+						<comment html_content="true" label_en="&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;font color=#646464&gt;Specifies the event name to be recorded in the audit trail for each impacted item, where applicable. If null or undefined, auditing is disabled.&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"/>
+						<separator/>
+						<list-editable id="audited_event_args" rows="6" sorted="true"/>
+						<comment html_content="true" label_en="&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;font color=#646464&gt;Up to 5 arguments can be recorded in the audit trail for each modified object. The argument values can contain attribute expressions, prefixed either by “$” symbols to refer to attributes of the source object, or by “@” symbols to refer to attributes of the target (impacted) object in each case. For example, “@value(object_name)” records the name of the source object in the audit trail (that which caused the object to be updated) in each case.&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"/>
+					</fieldset>
+				</tab>
+			</tabs>
+		</fieldset>
+	</content>
+	<buttons>
+		<button id="buttonOk" action="validDialog()"/>
+		<button id="buttonCancel" action="cancelDialog()"/>
+	</buttons>
+</dialog>

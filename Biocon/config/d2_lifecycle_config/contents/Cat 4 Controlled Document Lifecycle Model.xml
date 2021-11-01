@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2lifecycle execute_actions_on_start="true" state_attribute="">
+	<state direct="false" entry="true" name="Not Issued">
+		<entry_conditions/>
+		<actions>
+			<set name="owner_name" value="admingroup"/>
+			<set name="a_status" value="Not Issued"/>
+			<setrepeating mode="append" name="authors" removeDuplicate="true" value="$USER"/>
+			<applymethod argument="-if &quot;copy_file_name=1&quot;  -attr &quot;title&quot; -value &quot;$substring($quotedvalue(original_file_name),1,$if($lastposition($quotedvalue(original_file_name),'.')=0,$length($quotedvalue(original_file_name)),$dec($lastposition($quotedvalue(original_file_name),'.'))))&quot;" name="CDFSetAttributeMethod"/>
+			<set name="copy_file_name" value="false"/>
+			<applysecurity/>
+		</actions>
+		<next_states>
+			<state action="" confirmation_en="" dialog="On issue of Cat 4 Controlled Document - set readers" event="" label_en="Issue document" name="Issued" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="Retain as a historic copy" name="Historic" type="promote"/>
+			<state action="" confirmation_en="" dialog="On purging interim Cat 4 versions - confirm" event="" label_en="Purge interim versions" name="(Purge interim versions)" type="promote"/>
+		</next_states>
+	</state>
+	<state direct="false" entry="false" name="Issued">
+		<entry_conditions>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate selected document is the CURRENT version"/>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate selected document is not checked-out"/>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate user is an Author for the selected document"/>
+		</entry_conditions>
+		<actions>
+			<set name="a_status" value="Issued"/>
+			<applyparameters/>
+			<applysecurity/>
+		</actions>
+		<next_states>
+			<state action="" confirmation_en="" dialog="" event="checkin" label_en="Revoke issue" name="Not Issued" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="Revoke issue and retain as a historic copy" name="Historic" type="promote"/>
+			<state action="" confirmation_en="" dialog="On purging interim Cat 4 versions - confirm" event="" label_en="Purge interim versions" name="(Purge interim versions)" type="promote"/>
+		</next_states>
+	</state>
+	<state direct="false" entry="false" name="Historic">
+		<entry_conditions>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate selected document is the CURRENT version"/>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate selected document is not checked-out"/>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate user is an Author for the selected document"/>
+		</entry_conditions>
+		<actions>
+			<set name="a_status" value="Historic"/>
+			<changestateversion filter="" target_state="Historic"/>
+			<applysecurity/>
+		</actions>
+		<next_states>
+			<state action="" confirmation_en="" dialog="" event="checkin" label_en="Revert to &quot;Not Issued&quot;" name="Not Issued" type="demote"/>
+			<state action="" confirmation_en="" dialog="On issue of Cat 4 Controlled Document - set readers" event="" label_en="Re-issue document" name="Issued" type="demote"/>
+			<state action="" confirmation_en="" dialog="On purging interim Cat 4 versions - confirm" event="" label_en="Purge interim versions" name="(Purge interim versions)" type="promote"/>
+		</next_states>
+	</state>
+	<state direct="false" entry="false" name="(Purge interim versions)">
+		<entry_conditions>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate selected document is not checked-out"/>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate selected document is the CURRENT version"/>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate user is an Author for the selected document"/>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate Cat 4 document has interim versions"/>
+		</entry_conditions>
+		<actions>
+			<destroyversions destroyannoted="false" filter="a_status in ('Not Issued', 'Historic')"/>
+		</actions>
+		<next_states/>
+	</state>
+</d2lifecycle>

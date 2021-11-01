@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_documentset_switch object_name="d2_property_config">
+	<d2_documentset name="Registration Forms¬Medical Device Registration Forms" config="Medical Device Registration Form Properties"/>
+	<d2_documentset name="Registration Forms¬Product Registration Forms" config="Product Registration Form Properties"/>
+	<d2_documentset name="Registration Forms¬Medical Device Regulatory Submission Registration Form Context" config="Medical Device Registered Submission Registration Form Property Page"/>
+	<d2_documentset name="Registration Forms¬Medical Device Regulatory-Admin Registration Forms" config="Medical Device Regulatory-Admin Registration Form Properties"/>
+	<d2_documentset name="Registration Forms¬Manufactured Item Registration Forms¬Item Registration Forms for Finished Goods without item code" config="Manufactured Item Registration Form Properties"/>
+	<d2_documentset name="Registration Forms¬Manufactured Item Registration Forms¬Item Registration Forms for Finished Goods" config="Manufactured Item Registration Form Properties"/>
+	<d2_documentset name="Registration Forms¬Manufactured Item Registration Forms¬Item Registration Forms for Semi-finished Goods without item code" config="Manufactured Item Registration Form Properties"/>
+	<d2_documentset name="Registration Forms¬Manufactured Item Registration Forms¬Item Registration Forms for Semi-finished Goods" config="Manufactured Item Registration Form Properties"/>
+	<d2_documentset name="Registration Forms¬Manufactured Item Registration Forms¬Item Registration Forms for Active Ingredients without item code" config="Manufactured Item Registration Form Properties"/>
+	<d2_documentset name="Registration Forms¬Manufactured Item Registration Forms¬Item Registration Forms for Active Ingredients" config="Manufactured Item Registration Form Properties"/>
+	<d2_documentset name="Training Records" config="Training Record Properties"/>
+	<d2_documentset name="Training Folders" config="Training Folder Properties"/>
+	<d2_documentset name="GMP Documents¬GMP Group Directive" config="GMP General Document"/>
+	<d2_documentset name="GMP Documents¬GMP Group Drawings" config="GMP General Document"/>
+	<d2_documentset name="GMP Documents¬GMP Group Drawings¬GMP Subgroup Drawings Equipment" config="GMP Equipment"/>
+	<d2_documentset name="GMP Documents¬GMP Group Executed Manufacturing¬GMP Subgroup Exec Manu Finished Good" config="GMP Production Finished Good"/>
+	<d2_documentset name="GMP Documents¬GMP Group Executed Manufacturing¬GMP Subgroup Exec Manu Semi-finished Good" config="GMP Semi Finished Goods"/>
+	<d2_documentset name="GMP Documents¬GMP Group Executed Manufacturing¬GMP Subgroup Exec Manu Active Ingredient" config="GMP Production Active Ingredient"/>
+	<d2_documentset name="GMP Documents¬GMP Group Executed Validation¬GMP Subgroup Exec Validation Equipment" config="GMP Equipment"/>
+	<d2_documentset name="GMP Documents¬GMP Group Executed Validation¬GMP Subgroup Exec Validation Material" config="GMP Material"/>
+	<d2_documentset name="GMP Documents¬GMP Group Executed Validation¬GMP Subgroup Exec Validation Finished Good" config="GMP Finished Good"/>
+	<d2_documentset name="GMP Documents¬GMP Group Executed Validation¬GMP Subgroup Exec Validation Semi-finished Good" config="GMP Semi Finished Goods"/>
+	<d2_documentset name="GMP Documents¬GMP Group Executed Validation¬GMP Subgroup Exec Validation Active Ingredient" config="GMP Active Ingredient"/>
+	<d2_documentset name="GMP Documents¬GMP Group Executed Validation¬GMP Subgroup Exec Validation System" config="GMP System"/>
+	<d2_documentset name="GMP Documents¬GMP Group Executed Validation¬Bio GMP Subgroup Exec Validation QC Instrument" config="Bio GMP QC Instrument"/>
+	<d2_documentset name="GMP Documents¬GMP Group Facility Records and Certificates" config="GMP General Document"/>
+	<d2_documentset name="GMP Documents¬GMP Group Facility Records and Certificates¬GMP Subgroup Facility Rec and Cert Equipment" config="GMP Equipment"/>
+	<d2_documentset name="GMP Documents¬GMP Group Form" config="GMP General Document"/>
+	<d2_documentset name="GMP Documents¬GMP Group Guideline" config="GMP General Document"/>
+	<d2_documentset name="GMP Documents¬GMP Group Program" config="GMP General Document"/>
+	<d2_documentset name="GMP Documents¬GMP Group Manuals" config="GMP General Document"/>
+	<d2_documentset name="GMP Documents¬GMP Group Manuals¬GMP Subgroup Manual Equipment" config="GMP Equipment"/>
+	<d2_documentset name="GMP Documents¬GMP Group Manuals¬GMP Subgroup Manual System" config="GMP System"/>
+	<d2_documentset name="GMP Documents¬GMP Group Master Manufacturing¬GMP Subgroup Master Manu Finished Good" config="GMP Finished Good"/>
+	<d2_documentset name="GMP Documents¬GMP Group Master Manufacturing¬GMP Subgroup Master Manu Semi-finished Good" config="GMP Semi Finished Goods"/>
+	<d2_documentset name="GMP Documents¬GMP Group Master Manufacturing¬GMP Subgroup Master Manu Active Ingredient" config="GMP Active Ingredient"/>
+	<d2_documentset name="GMP Documents¬GMP Group Master Validation¬GMP Subgroup Master Validation Equipment" config="GMP Equipment"/>
+	<d2_documentset name="GMP Documents¬GMP Group Master Validation¬GMP Subgroup Master Validation Material" config="GMP Material"/>
+	<d2_documentset name="GMP Documents¬GMP Group Master Validation¬GMP Subgroup Master Validation Finished Good" config="GMP Finished Good"/>
+	<d2_documentset name="GMP Documents¬GMP Group Master Validation¬GMP Subgroup Master Validation Semi-finished Good" config="GMP Semi Finished Goods"/>
+	<d2_documentset name="GMP Documents¬GMP Group Master Validation¬GMP Subgroup Master Validation Active Ingredient" config="GMP Active Ingredient"/>
+	<d2_documentset name="GMP Documents¬GMP Group Master Validation¬GMP Subgroup Master Validation System" config="GMP System"/>
+	<d2_documentset name="GMP Documents¬GMP Group Master Validation¬Bio GMP Subgroup Master Validation QC Instrument" config="Bio GMP QC Instrument"/>
+	<d2_documentset name="GMP Documents¬GMP Group Method¬GMP Subgroup Method General" config="GMP General Document"/>
+	<d2_documentset name="GMP Documents¬GMP Group Method¬GMP Subgroup Method Material" config="GMP Material"/>
+	<d2_documentset name="GMP Documents¬GMP Group Method¬GMP Subgroup Method Finished Good" config="Bio GMP Finished Good - SFG"/>
+	<d2_documentset name="GMP Documents¬GMP Group Method¬GMP Subgroup Method Semi-finished Good" config="GMP Semi Finished Goods"/>
+	<d2_documentset name="GMP Documents¬GMP Group Method¬GMP Subgroup Method Active Ingredient" config="GMP Active Ingredient"/>
+	<d2_documentset name="GMP Documents¬GMP Group Packaging and Labeling" config="GMP Finished Good"/>
+	<d2_documentset name="GMP Documents¬GMP Group Policy" config="GMP General Document"/>
+	<d2_documentset name="GMP Documents¬GMP Group Project Documents" config="GMP General Document"/>
+	<d2_documentset name="GMP Documents¬GMP Group Quality Documents¬GMP Subgroup Quality Doc Finished Good" config="GMP Finished Good"/>
+	<d2_documentset name="GMP Documents¬GMP Group Quality Documents¬GMP Subgroup Quality Doc Semi-finished Good" config="GMP Semi Finished Goods"/>
+	<d2_documentset name="GMP Documents¬GMP Group Quality Documents¬GMP Subgroup Quality Doc Active Ingredient" config="GMP Active Ingredient"/>
+	<d2_documentset name="GMP Documents¬GMP Group Quality Manual" config="GMP General Document"/>
+	<d2_documentset name="GMP Documents¬GMP Group Records and Certificates¬GMP Subgroup Record and Cert Finished Good" config="GMP Finished Good"/>
+	<d2_documentset name="GMP Documents¬GMP Group Records and Certificates¬GMP Subgroup Record and Cert Semi-finished Good" config="GMP Semi Finished Goods"/>
+	<d2_documentset name="GMP Documents¬GMP Group Records and Certificates¬GMP Subgroup Record and Cert Active Ingredient" config="GMP Active Ingredient"/>
+	<d2_documentset name="GMP Documents¬GMP Group Records and Certificates¬GMP Subgroup Record and Cert Material" config="GMP Material"/>
+	<d2_documentset name="GMP Documents¬GMP Group Records and Certificates¬GMP Subgroup Record and Cert Equipment" config="GMP Equipment"/>
+	<d2_documentset name="GMP Documents¬GMP Group SOP" config="GMP General Document"/>
+	<d2_documentset name="GMP Documents¬GMP Group Specification¬GMP Subgroup Specification General" config="GMP General Document"/>
+	<d2_documentset name="GMP Documents¬GMP Group Specification¬GMP Subgroup Specification Material" config="GMP Material"/>
+	<d2_documentset name="GMP Documents¬GMP Group Specification¬GMP Subgroup Specification Finished Good" config="Bio GMP Finished Good - SFG"/>
+	<d2_documentset name="GMP Documents¬GMP Group Specification¬GMP Subgroup Specification Semi-finished Good" config="GMP Semi Finished Goods"/>
+	<d2_documentset name="GMP Documents¬GMP Group Specification¬GMP Subgroup Specification Active Ingredient" config="GMP Active Ingredient"/>
+	<d2_documentset name="GMP Documents¬GMP Group Training" config="GMP General Document"/>
+	<d2_documentset name="GMP Documents¬GMP Group Work Instruction" config="GMP General Document"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group External Audit" config="GMP QMA Audit Properties"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Internal Audit" config="GMP QMA Audit Properties"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Investigations¬GMP QMA Subgroup Investigation Equipment" config="GMP QMA Investigation Equipment Properties"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Investigations¬GMP QMA Subgroup Investigation General" config="GMP QMA Investigation General Properties"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Investigations¬GMP QMA Subgroup Investigation Material" config="GMP QMA Investigation Material Properties"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Investigations¬GMP QMA Subgroup Investigation Finished Good" config="GMP QMA Investigation Finished Good Properties"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Investigations¬GMP QMA Subgroup Investigation Active Ingredient" config="GMP QMA Investigation Active Ingredient Properties"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Investigations¬GMP QMA Subgroup Investigation System" config="GMP QMA Investigation System Properties"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Quality Events¬GMP QMA Subgroup QE Equipment" config="GMP QMA Quality Event Equipment Properties"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Quality Events¬GMP QMA Subgroup QE General" config="GMP QMA Quality Event General Properties"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Quality Events¬GMP QMA Subgroup QE Material" config="GMP QMA Quality Event Material Properties"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Quality Events¬GMP QMA Subgroup QE Finished Good" config="GMP QMA Quality Event Finished Good Properties"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Quality Events¬GMP QMA Subgroup QE Active Ingredient" config="GMP QMA Quality Event Active Ingredient Properties"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Quality Events¬GMP QMA Subgroup QE System" config="GMP QMA Quality Event System Properties"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Quality Management¬GMP QMA Subgroup QM Customer Management" config="GMP General Document"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Quality Management¬GMP QMA Subgroup QM General Management" config="GMP General Document"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Quality Management¬GMP QMA Subgroup QM Quality Agreement" config="GMP General Document"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Quality Management¬GMP QMA Subgroup QM Quality Mgmt Review - General" config="GMP General Document"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Quality Management¬GMP QMA Subgroup QM Quality Mgmt Review - Finished Good" config="GMP Finished Good"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Quality Management¬GMP QMA Subgroup QM Quality Planning" config="GMP General Document"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Quality Management¬GMP QMA Subgroup QM Sales Management" config="GMP General Document"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Quality Management¬GMP QMA Subgroup QM Supplier Management" config="GMP QMA General Supplier Document"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Quality Records¬GMP QMA Subgroup QR Customer Records" config="GMP General Document"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Quality Records¬GMP QMA Subgroup QR General Records" config="GMP General Document"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Quality Records¬GMP QMA Subgroup QR Sales Records" config="GMP General Document"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Quality Records¬GMP QMA Subgroup QR Supplier Records" config="GMP QMA General Supplier Document"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Quality Risk Documentation" config="GMP General Document"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Recalls¬GMP QMA Subgroup Recall Finished Good" config="GMP QMA Quality Event Finished Good Properties"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Recalls¬GMP QMA Subgroup Recall Active Ingredient" config="GMP QMA Quality Event Active Ingredient Properties"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Site Master File" config="GMP General Document"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Supplier Audit" config="GMP QMA Audit Properties"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Risk Documentation" config="Med Device General Document"/>
+	<d2_documentset name="Med Device Documents¬Med Device Subgroup Parent" config="Med Device Classification Device"/>
+	<d2_documentset name="Med Device Documents¬Med Device DMR Subgroup Index" config="Med Device Device"/>
+	<d2_documentset name="Med Device Documents¬Med Device DHF Subgroup Index" config="Med Device Device"/>
+	<d2_documentset name="Med Device Documents¬Med Device Subgroup Section" config="Med Device Classification Device"/>
+	<d2_documentset name="Med Device Documents¬Med Device Subgroup Device" config="Med Device Device"/>
+	<d2_documentset name="Med Device Documents¬Med Device Subgroup Subassembly" config="Med Device Subassembly"/>
+	<d2_documentset name="Med Device Documents¬Med Device Subgroup Component" config="Med Device Component"/>
+	<d2_documentset name="Med Device Documents¬Med Device Subgroup Equipment" config="Med Device Equipment"/>
+	<d2_documentset name="Med Device Documents¬Med Device Subgroup Material" config="Med Device Material"/>
+	<d2_documentset name="Med Device Documents¬Med Device Subgroup General" config="Med Device General Document"/>
+	<d2_documentset name="Med Device Documents¬Med Device Subgroup Software" config="Med Device Software"/>
+	<d2_documentset name="Change Request¬Change Requests" config="Change Request Document Properties"/>
+	<d2_documentset name="Hard Delete Configuration context" config="Delete Config property page"/>
+	<d2_documentset name="Generic dm_folder property context" config="All Solutions dm_folder propery screen"/>
+	<d2_documentset name="Security Tag" config="Security Tag Property Page"/>
+	<d2_documentset name="Security Group Generator" config="Security Group Generator Property Page"/>
+	<d2_documentset name="Security Model" config="Security Model Property Page"/>
+	<d2_documentset name="Training Models" config="Training Model Properties"/>
+	<d2_documentset name="Security Folder Model" config="Security Folder Model Property Page"/>
+	<d2_documentset name="Security Shared" config="Security Shared Property Page"/>
+	<d2_documentset name="Content Templates¬Quality in Manufacturing Content Templates" config="Quality in Manufacturing Content Template Properties"/>
+	<d2_documentset name="Content Templates¬Med Device Content Templates" config="Med Device Content Template Properties"/>
+	<d2_documentset name="DistributionList" config="Distribution List"/>
+	<d2_documentset name="Restricted Edit Models" config="Restricted Edit Model"/>
+	<d2_documentset name="Restricted Edit Instances" config="Restricted Edit Instance"/>
+	<switch_default config=""/>
+</d2_documentset_switch>

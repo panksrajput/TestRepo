@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_dictionary object_name="SharePoint Connector Parameters" title="" lock_config="false" parents_config="" application_names="OpenText Life Sciences eTMF Solution¬OpenText Life Sciences Medical Device for Quality and Manufacturing Solution¬OpenText Life Sciences Medical Device for Research and Development Solution¬OpenText Life Sciences Medical Device Solution¬OpenText Life Sciences Quality and Manufacturing Solution¬OpenText Life Sciences Research and Development Solution¬OpenText Life Sciences Submission Storage and Viewing" security_group="admingroup" search_group="admingroup" version="2" is_versioned="false" manual_order="false" create_view_option="false" is_dql="false" is_dql_cache="false" dql="" label_en="SharePoint Connector Parameters">
+	<d2_dictionary_value object_name="dc4sp_url" is_enabled="true" order_no="0">
+		<locale name="en" value=""/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="documentum_sharepoint_admin_username" is_enabled="true" order_no="0">
+		<locale name="en" value=""/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="sharepoint_admin_username" is_enabled="true" order_no="0">
+		<locale name="en" value=""/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="sharepoint_create_document_library" is_enabled="true" order_no="0">
+		<locale name="en" value=""/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="sharepoint_document_library" is_enabled="true" order_no="0">
+		<locale name="en" value=""/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="sharepoint_site_title_template" is_enabled="true" order_no="0">
+		<locale name="en" value=""/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="sharepoint_site_url" is_enabled="true" order_no="0">
+		<locale name="en" value=""/>
+	</d2_dictionary_value>
+</d2_dictionary>

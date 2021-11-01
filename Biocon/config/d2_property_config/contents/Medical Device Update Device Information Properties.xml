@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dialog id="PropertiesDialog" buttons_right="false" focus="" height="650" initial_invalid="false" resizable="false" signoff_creation="false" signoff_edit="false" signoff_import="false" signoff_intention_dictionary="" signoff_intention_required="false" width="820">
+	<content>
+		<fieldset label_en="Medical Device Registration Form">
+			<tabs>
+				<tab label_en="Device Info">
+					<text id="dv_device_family" condition_enabled_create="false" condition_enabled_edit="false" condition_enabled_import="false" condition_required_create="true" condition_required_edit="true" condition_required_import="true"/>
+					<text id="dv_device_subfamily" condition_enabled_create="false" condition_enabled_edit="false" condition_enabled_import="false" condition_required_create="true" condition_required_edit="true" condition_required_import="true"/>
+					<grid grid_height="350">
+						<text id="dv_device_code" cell_width="100" condition_required_create="true" condition_required_edit="true" condition_required_import="true" no_empty_cell="true"/>
+						<text id="dv_device_name" cell_width="100" condition_required_create="true" condition_required_edit="true" condition_required_import="true" no_empty_cell="true"/>
+						<text id="dv_device_model_number" cell_width="150"/>
+						<text id="product_trade_name" cell_width="150"/>
+						<combo id="product_trade_country" assistance_dictionary="Submission Country" assistance_dictionary_alias="auto" assistance_type="dictionary" cell_width="150"/>
+					</grid>
+					<comment html_content="true" label_en="&lt;table cellspacing=0&gt;&lt;tr&gt;&lt;td&gt;&lt;font color=#646464&gt;&lt;strong&gt;Note: &lt;/strong&gt;This information will be copied automatically to documents related to this medical device.&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"/>
+				</tab>
+			</tabs>
+		</fieldset>
+	</content>
+	<buttons>
+		<button id="buttonOk" action="validDialog()"/>
+		<button id="buttonCancel" action="cancelDialog()"/>
+	</buttons>
+</dialog>

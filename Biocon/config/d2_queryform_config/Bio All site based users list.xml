@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_queryform_config new_format="true">
+	<object_name value="Bio All site based users list"/>
+	<title value=""/>
+	<subject value=""/>
+	<authors/>
+	<keywords/>
+	<a_status value=""/>
+	<a_content_type value=""/>
+	<log_entry value=""/>
+	<language_code value=""/>
+	<application_names>
+		<repeating value="Biocon"/>
+		<repeating value="OpenText Life Sciences Quality and Manufacturing Solution"/>
+	</application_names>
+	<lock_config value="F"/>
+	<parents_config/>
+	<default_value value=""/>
+	<description value=""/>
+	<property_page value="Bio List of all site based users"/>
+	<locale>
+		<repeating value="en"/>
+	</locale>
+	<label>
+		<repeating value="Show List of All Site Based Users"/>
+	</label>
+	<ignore_empty_attr value="F"/>
+	<dql_value value="select u.user_login_name as UserID,g.i_all_users_names as USERNAME,g.description as GROUPNAME,u.last_login_utc_time as LASTLOGINTIME from dm_group g, dm_user u where g.group_name in (select v.alias_value from d2_dictionary d, d2_dictionary_value v where d.object_name = v.dictionary_name and d.object_name = 'Bio All Roles - Reporting' and d.alias_name in ('authors','doc_coordinators','approvers','reviewers','qo_approvers','auditors','readers','ip_approvers','ip_printers','ip_reprinters','ip_reconcilers','cp_printers','cp_reprinters','cp_recallers') and d.i_position = v.i_position enable (ROW_BASED)) and any g.i_all_users_names=u.user_name"/>
+	<path value="/"/>
+	<add_mandatory_hidden value="F"/>
+	<add_user_pref value="F"/>
+	<facet_indent/>
+	<facet_position/>
+	<facet_sort/>
+	<is_facet/>
+	<is_xplore value="F"/>
+	<dictionary_name/>
+	<dql_qualification/>
+	<order_by value=""/>
+	<order_by_direction value="Asc"/>
+	<folder_path/>
+	<folder_descend value="F"/>
+	<col_name/>
+	<attr/>
+	<attr_value/>
+	<all_versions value="F"/>
+	<bracket_close/>
+	<bracket_open/>
+	<case_sensitive value="F"/>
+	<facets/>
+	<fulltext_operator value=""/>
+	<fulltext_words value=""/>
+	<logical/>
+	<operator/>
+	<type_name/>
+	<attr_name/>
+	<alias_locale_name/>
+</d2_queryform_config>

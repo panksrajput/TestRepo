@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_dictionary object_name="Application Status" title="Status with respect to actions of a Regulatory Authority on an application to conduct clinical trials or gain authorization to market a regulated pharmaceutical product." lock_config="false" parents_config="" application_names="OpenText Life Sciences Medical Device for Quality and Manufacturing Solution¬OpenText Life Sciences Medical Device for Research and Development Solution¬OpenText Life Sciences Medical Device Solution¬OpenText Life Sciences Submission Storage and Viewing¬OpenText Life Sciences Research and Development Solution¬OpenText Life Sciences Quality and Manufacturing Solution" security_group="admingroup" search_group="admingroup" version="2" is_versioned="false" manual_order="true" create_view_option="false" is_dql="false" is_dql_cache="false" dql="" label_en="Application Status">
+	<d2_dictionary_value object_name="In Development" is_enabled="true" order_no="0">
+		<locale name="en" value="In Development"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Submitted" is_enabled="true" order_no="1">
+		<locale name="en" value="Submitted"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Response Required" is_enabled="true" order_no="2">
+		<locale name="en" value="Response Reqd."/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Amendments Required" is_enabled="true" order_no="3">
+		<locale name="en" value="Amendments Reqd."/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Approved" is_enabled="true" order_no="4">
+		<locale name="en" value="Approved"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Suspended" is_enabled="true" order_no="5">
+		<locale name="en" value="Suspended"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Withdrawn" is_enabled="true" order_no="6">
+		<locale name="en" value="Withdrawn"/>
+	</d2_dictionary_value>
+</d2_dictionary>

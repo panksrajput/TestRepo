@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<o2_options new_format="true">
+	<object_name value=""/>
+	<title value=""/>
+	<subject value=""/>
+	<authors/>
+	<keywords/>
+	<a_status value=""/>
+	<a_content_type value=""/>
+	<log_entry value=""/>
+	<language_code value=""/>
+	<supported_formats>
+		<repeating value="ppt8_slide"/>
+		<repeating value="msw8"/>
+		<repeating value="excel12mebook"/>
+		<repeating value="msg"/>
+		<repeating value="msw8template"/>
+		<repeating value="ppt8_template"/>
+		<repeating value="excel8template"/>
+		<repeating value="ppt12"/>
+		<repeating value="entourage_msg"/>
+		<repeating value="eml"/>
+		<repeating value="excel12book"/>
+		<repeating value="excel8book"/>
+		<repeating value="ppt12slideshow"/>
+		<repeating value="ppt12template"/>
+		<repeating value="msw12"/>
+		<repeating value="msw12template"/>
+		<repeating value="excel12template"/>
+		<repeating value="msw12me"/>
+		<repeating value="ppt8"/>
+	</supported_formats>
+	<lock_config value="F"/>
+</o2_options>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_pdfrender_config new_format="true">
+	<object_name value="ADTS Thumbnail Rendition"/>
+	<title value="Thumbnail rendition configuration"/>
+	<subject value=""/>
+	<authors/>
+	<keywords/>
+	<a_status value=""/>
+	<a_content_type value=""/>
+	<log_entry value=""/>
+	<language_code value=""/>
+	<module_type value="d2_pdfrender_config"/>
+	<application_names>
+		<repeating value="OpenText Life Sciences Medical Device for Quality and Manufacturing Solution"/>
+		<repeating value="OpenText Life Sciences Submission Storage and Viewing"/>
+		<repeating value="OpenText Life Sciences Research and Development Solution"/>
+		<repeating value="OpenText Life Sciences eTMF Solution"/>
+		<repeating value="OpenText Life Sciences Quality and Manufacturing Solution"/>
+	</application_names>
+	<lock_config value="F"/>
+	<parents_config/>
+	<priority value="1"/>
+	<message value=""/>
+	<event_name value="dm_register_asset"/>
+	<queue_name value="dm_mediaserver"/>
+	<replace_rendition value="T"/>
+	<rendition_format value="pdf"/>
+</d2_pdfrender_config>

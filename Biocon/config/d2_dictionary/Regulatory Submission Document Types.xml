@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_dictionary object_name="Regulatory Submission Document Types" title="Lists the types of clinical documents that can be created as part of a drug / medical device development process; e.g. Clinical Study Reports. Usually subject to formal review / approval, and once &quot;Effective&quot;, can be used in regulatory submissions." lock_config="false" parents_config="" application_names="OpenText Life Sciences Submission Storage and Viewing¬OpenText Life Sciences Research and Development Solution¬OpenText Life Sciences Quality and Manufacturing Solution" security_group="admingroup" search_group="admingroup" version="2" is_versioned="false" manual_order="false" create_view_option="false" is_dql="false" is_dql_cache="false" dql="" label_en="Type">
+	<d2_dictionary_value object_name="cd_clinical" is_enabled="true" order_no="0">
+		<locale name="en" value="Clinical"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="cd_non_clinical" is_enabled="true" order_no="0">
+		<locale name="en" value="Non-Clinical"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="cd_quality" is_enabled="true" order_no="0">
+		<locale name="en" value="Quality and Manufacturing"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="cd_reg_admin" is_enabled="true" order_no="0">
+		<locale name="en" value="Regulatory-Administrative"/>
+	</d2_dictionary_value>
+</d2_dictionary>

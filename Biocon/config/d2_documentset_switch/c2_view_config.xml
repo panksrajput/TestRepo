@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_documentset_switch object_name="c2_view_config">
+	<d2_documentset name="Change Request¬Change Requests Suppressing Overlays" config="Change Request C2 View Suppressing Overlays"/>
+	<d2_documentset name="Change Request¬Change Requests" config="Audit Report C2 View"/>
+	<d2_documentset name="Change Request¬Change Requests" config="Change Request C2 View"/>
+	<d2_documentset name="Non Effective-Approved Documents¬Not Effective Cat 1 Documents Suppressing Overlays" config="Category 1 C2 View for Non Effective Suppressing Overlays"/>
+	<d2_documentset name="Non Effective-Approved Documents¬Not Effective Cat 1 Documents" config="Category 1 C2 View for Non Effective"/>
+	<d2_documentset name="Non Effective-Approved Documents¬Not Approved Cat 2 GMP Documents Suppressing Overlays" config="Category 2 C2 View for Non Effective Suppressing Overlays"/>
+	<d2_documentset name="Non Effective-Approved Documents¬Not Approved Cat 2 GMP Documents" config="Category 2 C2 View for Non Effective"/>
+	<d2_documentset name="Non Effective-Approved Documents¬Not Approved Cat 3 GMP Documents Suppressing Overlays" config="Category 3 C2 View for Non Effective Suppressing Overlays"/>
+	<d2_documentset name="Non Effective-Approved Documents¬Not Approved Cat 3 GMP Documents" config="Category 3 C2 View for Non Effective"/>
+	<d2_documentset name="Draft Documents¬Draft Cat 1 Controlled Documents" config="Audit Report C2 View"/>
+	<d2_documentset name="Draft Documents¬Draft Cat 2 Controlled Documents" config="Audit Report C2 View"/>
+	<d2_documentset name="Draft Documents¬Draft Cat 3 Controlled Documents" config="Audit Report C2 View"/>
+	<d2_documentset name="Release Pending Cat 1 Controlled Documents" config="Audit Report C2 View"/>
+	<d2_documentset name="Effective-Approved Documents¬Effective Cat 1 GMP Forms Documents Suppressing Overlays No Sig Page" config="Category 1 C2 View for Effective GMP Forms Suppressing Overlays No Sig Page"/>
+	<d2_documentset name="Effective-Approved Documents¬Effective Cat 1 GMP Forms Documents Suppressing Overlays" config="Category 1 C2 View for Effective GMP Forms Suppressing Overlays"/>
+	<d2_documentset name="Effective-Approved Documents¬Effective Cat 1 GMP Forms Documents No Sig Page" config="Category 1 C2 View for Effective GMP Forms No Sig Page"/>
+	<d2_documentset name="Effective-Approved Documents¬Effective Cat 1 GMP Forms Documents" config="Audit Report C2 View"/>
+	<d2_documentset name="Effective-Approved Documents¬Effective Cat 1 GMP Forms Documents" config="Category 1 C2 View for Effective GMP Forms"/>
+	<d2_documentset name="Effective-Approved Documents¬Effective Cat 1 GMP Non Form Documents Suppressing Overlays" config="Category 1 C2 View for Effective Suppressing Overlays"/>
+	<d2_documentset name="Effective-Approved Documents¬Effective Cat 1 GMP Non Form Documents" config="Audit Report C2 View"/>
+	<d2_documentset name="Effective-Approved Documents¬Effective Cat 1 GMP Non Form Documents" config="Category 1 C2 View for Effective"/>
+	<d2_documentset name="Effective-Approved Documents¬Effective Cat 2 GMP Documents Suppressing Overlays" config="Category 2 C2 View for Effective Suppressing Overlays"/>
+	<d2_documentset name="Effective-Approved Documents¬Effective Cat 2 GMP Documents" config="Audit Report C2 View"/>
+	<d2_documentset name="Effective-Approved Documents¬Effective Cat 2 GMP Documents" config="Category 2 C2 View for Effective"/>
+	<d2_documentset name="Effective-Approved Documents¬Effective Cat 3 Documents Suppressing Overlays" config="Category 3 C2 View for Approved Suppressing Overlays"/>
+	<d2_documentset name="Effective-Approved Documents¬Effective Cat 3 Documents" config="Audit Report C2 View"/>
+	<d2_documentset name="Effective-Approved Documents¬Effective Cat 3 Documents" config="Category 3 C2 View for Approved"/>
+	<d2_documentset name="Post Effective Cat 1 Documents" config="Audit Report C2 View"/>
+	<d2_documentset name="Controlled Documents¬Cat 1 Controlled Documents" config="Audit Report C2 View"/>
+	<d2_documentset name="Controlled Documents¬Cat 2 Controlled Documents" config="Audit Report C2 View"/>
+	<d2_documentset name="Controlled Documents¬Cat 3 Controlled Documents" config="Audit Report C2 View"/>
+	<d2_documentset name="Content Templates¬Quality in Manufacturing Content Templates" config="Templates C2 View"/>
+	<d2_documentset name="Content Templates¬Med Device Content Templates" config="Templates C2 View"/>
+	<switch_defaults/>
+</d2_documentset_switch>

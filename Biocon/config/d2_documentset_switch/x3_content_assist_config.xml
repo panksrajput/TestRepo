@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_documentset_switch object_name="x3_content_assist_config">
+	<d2_documentset name="Life Sciences Managers Workspace¬Q&amp;M Managers Workspace" config="Generic Content Assist"/>
+	<d2_documentset name="Life Sciences Coordinators Workspace¬Q&amp;M Coordinators Workspace" config="Generic Content Assist"/>
+	<d2_documentset name="Life Sciences Authors Workspace¬Q&amp;M Authors Workspace" config="Generic Content Assist"/>
+	<d2_documentset name="Life Sciences Reviewer-Approver Workspace¬Q&amp;M Reviewer-Approver Workspace" config="Generic Content Assist"/>
+	<switch_default config=""/>
+</d2_documentset_switch>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_mailing_config>
+	<add_attachment>false</add_attachment>
+	<rendition_formats/>
+	<list-recipient>
+		<recipient type="attribute">title</recipient>
+	</list-recipient>
+	<list-subject>
+		<subject_en/>
+	</list-subject>
+	<list-object>
+		<object_en>&lt;html&gt;&lt;head&gt;&lt;style&gt; body { font-family: helvetica, arial, sans-serif; font-size: 12px; } .title { font-size: 14px; font-weight: bold; } .preamble { margin-top: 12px; margin-bottom: 12px; } table, th { border: 1px solid black; border-collapse: collapse; padding: 6px; text-align: left; } table th.Errors { background-color: red; color: white; } th.Successes{ background-color: green; color: white; } table th.Warnings { background-color: Orange; color: white; } table tr:nth-child(even) { background-color: #eee; } table tr:nth-child(odd) { background-color:#fff; } .textdata { border: 1px solid black; border-collapse: collapse; padding: 6px; text-align: left; } .nontextdata { border: 1px solid black; border-collapse: collapse; padding: 6px; text-align: right; } .rowcount { font-style: italic; margin-top: 12px; } &lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;br&gt;&lt;#if (customArgs.processingMapsSuccess??)&gt;&lt;#if (customArgs.processingMapsSuccess?size &gt; 0)&gt;
+			Successes&lt;br&gt;&lt;table border=1&gt;&lt;tr&gt;&lt;th class=Successes&gt;ID&lt;/th&gt;&lt;th class=Successes&gt;Name&lt;/th&gt;&lt;th class=Successes&gt;Notes&lt;/th&gt;&lt;/tr&gt;&lt;#list customArgs.processingMapsSuccess as theID,theInfo&gt;&lt;tr&gt;&lt;td&gt;${theID}&lt;/td&gt;&lt;td nowrap&gt;${theInfo.getName()}&lt;/td&gt;&lt;td nowrap&gt;${theInfo.getIssue()}&lt;/td&gt;&lt;/tr&gt;&lt;/#list&gt;&lt;/table&gt;&lt;/#if&gt;&lt;/#if&gt;&lt;br&gt;&lt;#if (customArgs.processingMapsError?size &gt; 0)&gt;
+		Errors&lt;br&gt;&lt;table border=1&gt;&lt;tr&gt;&lt;th class=Errors&gt;ID&lt;/th&gt;&lt;th class=Errors&gt;Name&lt;/th&gt;&lt;th class=Errors&gt;Error(s)&lt;/th&gt;&lt;/tr&gt;&lt;#list customArgs.processingMapsError as theID,theInfo&gt;&lt;tr&gt;&lt;td&gt;${theID}&lt;/td&gt;&lt;td nowrap&gt;${theInfo.getName()}&lt;/td&gt;&lt;td nowrap&gt;${theInfo.getIssue()}&lt;/td&gt;&lt;/tr&gt;&lt;/#list&gt;&lt;/table&gt;&lt;/#if&gt;&lt;/body&gt;&lt;/html&gt;</object_en>
+	</list-object>
+</d2_mailing_config>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2c_query new_format="true" title="">
+	<object_name value="OQ-Search-Dry Run"/>
+	<title value=""/>
+	<subject value=""/>
+	<authors/>
+	<keywords/>
+	<a_status value=""/>
+	<a_content_type value=""/>
+	<log_entry value=""/>
+	<language_code value=""/>
+	<all_versions value="F"/>
+	<condition value=""/>
+	<folder_descend value="T"/>
+	<fulltext_condition value="SEARCH DOCUMENT CONTAINS '&quot;blazon rendition&quot;'"/>
+	<folder_path/>
+	<searched_type value=""/>
+	<is_filter value="F"/>
+	<is_public value="T"/>
+	<col_name>
+		<repeating value="object_name"/>
+		<repeating value="score"/>
+		<repeating value="title"/>
+		<repeating value="a_status"/>
+		<repeating value="r_modify_date"/>
+		<repeating value="r_modifier"/>
+		<repeating value="r_creation_date"/>
+	</col_name>
+	<order_by value="object_name"/>
+	<order_by_direction value="Asc"/>
+	<migrate_version value="2"/>
+	<searched_types>
+		<repeating value="cd_quality_gmp"/>
+	</searched_types>
+	<logical/>
+	<bracket_open/>
+	<bracket_close/>
+	<operator/>
+	<fulltext_operator value="exact_phrase"/>
+	<fulltext_words value="blazon rendition"/>
+	<case_sensitive value="F"/>
+	<hidden_objects value="F"/>
+	<attr/>
+	<attr_value/>
+	<facets/>
+	<configuration_name value=""/>
+	<configuration_type value=""/>
+	<previous_srch_terms>
+		<repeating value="blazon rendition"/>
+	</previous_srch_terms>
+</d2c_query>

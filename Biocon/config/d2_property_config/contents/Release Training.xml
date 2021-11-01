@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dialog id="PropertiesDialog" auto_smartview_edit_mode="false" buttons_right="false" focus="" height="600" initial_invalid="false" resizable="true" signoff_creation="false" signoff_edit="false" signoff_import="false" signoff_intention_dictionary="" signoff_intention_required="false" width="800">
+	<content>
+		<tabs>
+			<tab label_en="Coordinator">
+				<comment font_color="#646464" html_content="true" label_en="&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;font color=#646464&gt;The &quot;Users to notify&quot; is used for system defined users and groups.It gets updated automatically with respective site coordinators when any site is removed/added on the document.&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"/>
+				<list-editable id="notification_list" advancedView_enabled="false" asynchronous="false" condition_enabled_create="false" condition_enabled_edit="false" condition_enabled_import="false" rows="3" sorted="true"/>
+			</tab>
+			<tab label_en="Training">
+				<list id="training_roles" assistance_dql="SELECT distinct object_name AS name, locale_value as label_en FROM d2_dictionary_value WHERE dictionary_name = 'GMP Training Roles' and object_name in (select b.object_name from d2_dictionary_value a, d2_dictionary_value b, dm_relation r where a.dictionary_name = 'GMP Applicable Areas' and a.object_name in ($repeatingvalue(applicable_areas)) and a.r_object_id = r.parent_id and b.r_object_id = r.child_id and r.relation_name = 'D2_TAXONOMY') and locale_value is not nullstring order by locale_value enable(ROW_BASED)" assistance_type="dql"/>
+				<list id="training_users" assistance_dql="select user_name as name, user_name as display_label from dm_user where user_name in (select i_all_users_names from dm_group where group_name = 'cd_gmp_all_users') order by 2" assistance_type="dql" popup_height="500" popup_width="800" sorted="true"/>
+				<boolean id="training_required"/>
+				<boolean id="training_released" advancedView_enabled="false"/>
+				<combo id="training_excluded_version" assistance_dql="select distinct document_version from cd_training_record where object_name = '$value(object_name)' order by 1" assistance_type="dql"/>
+				<boolean id="training_before_effective" advancedView_visible="false" condition_visible="(getValue(a_status).equals('Release Pending'))"/>
+				<comment advancedView_visible="false" condition_visible="(getValue(a_status).equals('Release Pending'))" html_content="true" label_en="Selecting the Training Completed Before Effective requires that ALL users complete their training tasks before the document will be transitioned to Effective."/>
+			</tab>
+		</tabs>
+		<label id="a_status" condition_visible_create="false" condition_visible_edit="false" condition_visible_import="false"/>
+		<memo id="comments" advancedView_enabled="false" advancedView_required="false" advancedView_visible="false" condition_enabled="((getValue(a_status).equals('Release Pending'))||(getValue(a_status).equals('Effective')))" condition_required="((getValue(a_status).equals('Release Pending'))||(getValue(a_status).equals('Effective')))" condition_required_edit="true" condition_visible="((getValue(a_status).equals('Release Pending'))||(getValue(a_status).equals('Effective')))" label_en="Reason For Change"/>
+	</content>
+	<buttons>
+		<button id="buttonOk" action="validDialog()"/>
+		<button id="buttonCancel" action="cancelDialog()"/>
+	</buttons>
+</dialog>

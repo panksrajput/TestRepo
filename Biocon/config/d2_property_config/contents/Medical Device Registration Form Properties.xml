@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dialog id="PropertiesDialog" buttons_right="false" focus="" height="650" initial_invalid="true" resizable="false" signoff_creation="false" signoff_edit="false" signoff_import="false" signoff_intention_dictionary="" signoff_intention_required="false" width="820">
+	<content>
+		<fieldset label_en="Medical Device Registration Form">
+			<tabs>
+				<tab label_en="Device Info">
+					<text id="dv_device_family" condition_enabled_edit="false" condition_required_create="true" condition_required_edit="true" condition_required_import="true"/>
+					<text id="dv_device_subfamily" condition_enabled_edit="false" condition_required_create="true" condition_required_edit="true" condition_required_import="true"/>
+					<grid grid_height="250">
+						<text id="dv_device_code" cell_width="150" condition_required_create="true" condition_required_edit="true" condition_required_import="true" no_empty_cell="true"/>
+						<text id="dv_device_name" cell_width="150" condition_required_create="true" condition_required_edit="true" condition_required_import="true" no_empty_cell="true"/>
+						<text id="dv_device_model_number" cell_width="150"/>
+						<text id="product_trade_name" cell_width="150" label_en="Device Trade Name(s)"/>
+						<combo id="product_trade_country" assistance_dictionary="Submission Country" assistance_dictionary_alias="auto" assistance_type="dictionary" asynchronous="false" autoselect_single="true" cell_width="150" label_en="Device Trade Country"/>
+					</grid>
+					<comment html_content="true" label_en="&lt;table cellspacing=0&gt;&lt;tr&gt;&lt;td&gt;&lt;font color=#646464&gt;&lt;strong&gt;Note: &lt;/strong&gt;This information will be copied automatically to documents related to this medical device when they are created.&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"/>
+				</tab>
+				<tab label_en="Access Control Device">
+					<list id="form_managers" assistance_dql="select groups_names from dm_group where any i_supergroups_names = 'cd_md_managers' union select users_names from dm_group where any i_supergroups_names = 'cd_md_managers' union select group_name from dm_group where group_name = 'cd_md_managers'" assistance_type="dql" asynchronous="false" label_en="Device Form Managers" rows="4" sorted="true"/>
+					<comment font_color="#646464" html_content="true" label_en="&lt;table cellspacing=0&gt;&lt;tr&gt;&lt;td&gt;&lt;font color=#646464&gt;These users will be responsible for managing the Device Information and Default Role settings in this form.&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"/>
+					<separator/>
+					<list id="form_users" assistance_dql="select group_name from dm_group where any i_supergroups_names in ('cd_md') order by 1" assistance_type="dql" asynchronous="false" label_en="Primary User Group(s)" rows="4" sorted="true"/>
+					<comment font_color="#646464" html_content="true" label_en="&lt;table cellspacing=0&gt;&lt;tr&gt;&lt;td&gt;&lt;font color=#646464&gt;These users will be able to read this form and create documents related to this Device.&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"/>
+				</tab>
+				<tab label_en="Default Users / Groups Device">
+					<tabs>
+						<tab label_en="Document Coordinators">
+							<list id="doc_coordinators" assistance_dql="select groups_names from dm_group where any i_supergroups_names='cd_md_doc_coordinators' union select users_names from dm_group where any i_supergroups_names='cd_md_doc_coordinators' union select group_name from dm_group where group_name = 'cd_md_doc_coordinators'" assistance_type="dql" asynchronous="false" rows="8" sorted="true"/>
+							<comment html_content="true" label_en="&lt;table cellspacing=0&gt;&lt;tr&gt;&lt;td&gt;&lt;font color=#646464&gt;These users have the ability to manually change the status of documents created in relation to this Device.&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"/>
+						</tab>
+						<tab label_en="Reviewers">
+							<list id="reviewers" assistance_dql="select groups_names from dm_group where any i_supergroups_names='cd_md_doc_reviewers' union select users_names from dm_group where any i_supergroups_names='cd_md_doc_reviewers' union select group_name from dm_group where group_name = 'cd_md_doc_reviewers'" assistance_type="dql" asynchronous="false" rows="8" sorted="true"/>
+							<comment html_content="true" label_en="&lt;table cellspacing=0&gt;&lt;tr&gt;&lt;td&gt;&lt;font color=#646464&gt;These users will be prepopulated as Reviewers and/or co-Authors on Collaborative and Review workflows for documents created in relation to this Device. &lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"/>
+						</tab>
+						<tab label_en="Approvers">
+							<list id="approvers" assistance_dql="select groups_names from dm_group where any i_supergroups_names='cd_md_doc_approvers' union select users_names from dm_group where any i_supergroups_names='cd_md_doc_approvers' union select group_name from dm_group where group_name = 'cd_md_doc_approvers'" assistance_type="dql" asynchronous="false" rows="8" sorted="true"/>
+							<comment html_content="true" label_en="&lt;table cellspacing=0&gt;&lt;tr&gt;&lt;td&gt;&lt;font color=#646464&gt;These users will be prepopulated as Approvers on workflows for documents created in relation to this Device.&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"/>
+						</tab>
+						<tab label_en="Readers">
+							<list id="readers" assistance_dql="select groups_names from dm_group where any i_supergroups_names='cd_md_doc_readers' union select users_names from dm_group where any i_supergroups_names='cd_md_doc_readers' union select group_name from dm_group where group_name = 'cd_md_doc_readers'" assistance_type="dql" asynchronous="false" enableImportExport="false" rows="8" sorted="true"/>
+							<comment html_content="true" label_en="&lt;table cellspacing=0&gt;&lt;tr&gt;&lt;td&gt;&lt;font color=#646464&gt;These users will have Read Only Access to finalized documents created in relation to this Device. &lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"/>
+						</tab>
+						<tab label_en="Auditors">
+							<list id="auditors" assistance_dql="select groups_names from dm_group where any i_supergroups_names='cd_md_doc_auditors' union select users_names from dm_group where any i_supergroups_names='cd_md_doc_auditors' union select group_name from dm_group where group_name = 'cd_md_doc_auditors'" assistance_type="dql" asynchronous="false" rows="8" sorted="true"/>
+							<comment html_content="true" label_en="&lt;table cellspacing=0&gt;&lt;tr&gt;&lt;td&gt;&lt;font color=#646464&gt;These users are responsible for carrying out internal audits on documents related to this Device.&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"/>
+						</tab>
+					</tabs>
+					<comment condition_visible_create="false" condition_visible_import="false" html_content="true" label_en="&lt;table cellspacing=0&gt;&lt;tr&gt;&lt;td&gt;&lt;font color=#646464&gt;&lt;strong&gt;Note: &lt;/strong&gt;Changes to these settings will not affect existing documents - they will only apply to new documents.&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"/>
+				</tab>
+				<tab condition_visible_create="false" condition_visible_import="false" label_en="Form Info">
+					<label id="object_name" label_en="Form Name"/>
+					<label id="domain" condition_visible_create="false" condition_visible_edit="false" condition_visible_import="false"/>
+					<label id="r_object_type" label_en="Object Type"/>
+					<label id="r_version_label" label_en="Version Label"/>
+					<label id="a_status" label_en="Status"/>
+					<label id="owner_name" label_en="Owner"/>
+					<label id="a_content_type" label_en="Content Format"/>
+					<label id="r_full_content_size" label_en="Full Content Size"/>
+					<separator/>
+					<columns count="2">
+						<label id="r_creator_name"/>
+						<date id="r_creation_date" condition_enabled_create="false" condition_enabled_edit="false" condition_enabled_import="false"/>
+						<label id="r_modifier"/>
+						<date id="r_modify_date" condition_enabled_create="false" condition_enabled_edit="false" condition_enabled_import="false"/>
+						<label id="r_lock_owner"/>
+						<date id="r_lock_date" condition_enabled_create="false" condition_enabled_edit="false" condition_enabled_import="false"/>
+					</columns>
+				</tab>
+			</tabs>
+		</fieldset>
+	</content>
+	<buttons>
+		<button id="buttonOk" action="validDialog()"/>
+		<button id="buttonCancel" action="cancelDialog()"/>
+	</buttons>
+</dialog>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dialog id="PropertiesDialog" buttons_right="false" focus="" height="240" resizable="true" signoff_creation="false" signoff_edit="false" signoff_import="false" signoff_intention_dictionary="" signoff_intention_required="false" width="400">
+	<content>
+		<fieldset label_en="Purge previous interim versions">
+			<comment font_bold="true" font_color="#CC0000" label_en="Warning:"/>
+			<comment html_content="true" label_en="&lt;table cellspacing=0&gt;&lt;tr&gt;&lt;td&gt;All previous versions of ''$value(object_name)'' that are ''Draft'', ''For Review'', ''For Approval'' will be deleted.&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"/>
+			<comment font_bold="true" label_en="OK to continue?"/>
+		</fieldset>
+	</content>
+	<buttons>
+		<button id="buttonOk" action="validDialog()"/>
+		<button id="buttonCancel" action="cancelDialog()"/>
+	</buttons>
+</dialog>

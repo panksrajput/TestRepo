@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<c2_xsl new_format="true">
+	<object_name value="TBRAuditReport.xsl"/>
+	<title value=""/>
+	<subject value=""/>
+	<authors/>
+	<keywords/>
+	<a_status value=""/>
+	<a_content_type value="xslfo"/>
+	<log_entry value=""/>
+	<language_code value=""/>
+	<dql_query>
+		<repeating value="SELECT r_object_id, object_name, r_version_label, DATE(TODAY) AS report_time FROM cd_controlled_doc(ALL) WHERE r_object_id='$value(r_object_id)'"/>
+		<repeating value="SELECT a.user_name, b.user_login_name, a.event_name, a.time_stamp FROM dm_audittrail a, dm_user b WHERE a.user_name IN (SELECT tbr_distribution_list FROM cd_controlled_doc(ALL) WHERE r_object_id ='$value(r_object_id)') AND a.string_3 ='$value(r_object_id)' AND a.event_name = 'd2_workflow_signoff' AND b.user_name=a.user_name"/>
+		<repeating value="SELECT a.name, b.user_login_name, a.date_sent FROM dmi_queue_item a, dm_user b WHERE a.router_id IN (SELECT r_object_id FROM dm_workflow WHERE r_object_id IN (SELECT r_workflow_id FROM dmi_package WHERE ANY r_component_id = '$value(r_object_id)') AND r_runtime_state='1' AND object_name LIKE 'Category 1 - TBR flow %') AND a.task_state != 'finished' AND a.name IN (SELECT tbr_distribution_list FROM cd_controlled_doc(ALL) WHERE r_object_id='$value(r_object_id)') AND b.user_name=a.name"/>
+	</dql_query>
+</c2_xsl>

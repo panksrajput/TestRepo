@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_options new_format="true">
+	<object_name value=""/>
+	<title value=""/>
+	<subject value=""/>
+	<authors/>
+	<keywords/>
+	<a_status value=""/>
+	<a_content_type value=""/>
+	<log_entry value=""/>
+	<language_code value=""/>
+	<config_security_group value="admingroup"/>
+	<client_security_group value=""/>
+	<node_admin_security_group value=""/>
+	<forbidden_copy>
+		<repeating value="Controlled Documents"/>
+	</forbidden_copy>
+	<client_urls>
+		<repeating value="http://bldmsdotapp01:9090/D2-Config"/>
+		<repeating value="https://bldmsdev.biocon.com/D2"/>
+	</client_urls>
+	<enable_compare value="T"/>
+	<attribute_list_display_mode value="0"/>
+	<node_user_security_group value=""/>
+	<node_group_security_group value=""/>
+	<node_group_user_parent value="node_admin"/>
+	<node_group_display_all value="T"/>
+	<dfc_validator value="T"/>
+	<in_create_config/>
+	<url_allowed_actions/>
+	<lock_config value="F"/>
+	<logout_redirect_url value=""/>
+	<move_all_versions value="F"/>
+	<matrix_evaluation_mode value="0"/>
+	<default_application_name value=""/>
+	<allow_application_selection value="T"/>
+	<web_server_urls/>
+</d2_options>

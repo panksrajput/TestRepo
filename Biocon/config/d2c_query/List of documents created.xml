@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2c_query new_format="true" title="">
+	<object_name value="List of documents created"/>
+	<title value=""/>
+	<subject value=""/>
+	<authors/>
+	<keywords/>
+	<a_status value=""/>
+	<a_content_type value=""/>
+	<log_entry value=""/>
+	<language_code value=""/>
+	<all_versions value="F"/>
+	<condition value="( (r_creation_date &gt;= DATE('08/31/2021 18:30:00 UTC','mm/dd/yyyy hh:mm:ss') and r_creation_date is not nulldate)) and ( (folder('/Governance and Procedures', descend)))"/>
+	<folder_descend value="T"/>
+	<fulltext_condition value=""/>
+	<folder_path>
+		<repeating value="/Governance and Procedures"/>
+	</folder_path>
+	<searched_type value=""/>
+	<is_filter value="F"/>
+	<is_public value="T"/>
+	<col_name>
+		<repeating value="audit_actions"/>
+		<repeating value="applicable_sites"/>
+		<repeating value="approved_date"/>
+		<repeating value="approvers"/>
+		<repeating value="artifact_name"/>
+		<repeating value="audit_summary"/>
+		<repeating value="auditors"/>
+		<repeating value="auditted_area"/>
+		<repeating value="authors"/>
+		<repeating value="batch_expiration"/>
+		<repeating value="batch_num"/>
+		<repeating value="r_lock_owner"/>
+		<repeating value="r_lock_date"/>
+		<repeating value="cmo_supplier"/>
+		<repeating value="comments"/>
+		<repeating value="category"/>
+		<repeating value="r_creation_date"/>
+		<repeating value="r_creator_name"/>
+		<repeating value="audit_date"/>
+		<repeating value="event_date"/>
+		<repeating value="bio_department"/>
+		<repeating value="doc_coordinators"/>
+		<repeating value="document_id"/>
+		<repeating value="document_source"/>
+		<repeating value="document_type"/>
+		<repeating value="domain"/>
+		<repeating value="effective_date"/>
+		<repeating value="english_title"/>
+		<repeating value="equipment_id"/>
+		<repeating value="equipment_name"/>
+		<repeating value="expiration_date"/>
+		<repeating value="ext_audit_agency"/>
+		<repeating value="ext_audit_auditor"/>
+		<repeating value="primary_group"/>
+		<repeating value="wf_is_in_workflow"/>
+		<repeating value="bio_instrument_id"/>
+		<repeating value="bio_instrument_name"/>
+		<repeating value="int_audit_auditor"/>
+		<repeating value="investigation_summary"/>
+		<repeating value="investigation_investigator"/>
+		<repeating value="item_codes"/>
+		<repeating value="item_names"/>
+		<repeating value="item_types"/>
+		<repeating value="bio_lms_justification"/>
+		<repeating value="keywords"/>
+		<repeating value="document_language"/>
+		<repeating value="language_code"/>
+		<repeating value="last_periodic_review_date"/>
+		<repeating value="last_review_date"/>
+		<repeating value="r_lock_machine"/>
+		<repeating value="material_code"/>
+		<repeating value="material_name"/>
+		<repeating value="material_type"/>
+		<repeating value="r_modify_date"/>
+		<repeating value="r_modifier"/>
+		<repeating value="object_name"/>
+		<repeating value="bio_new_revise_reason"/>
+		<repeating value="next_periodic_review_date"/>
+		<repeating value="r_object_id"/>
+		<repeating value="owner_name"/>
+		<repeating value="periodic_review_due_date"/>
+		<repeating value="review_interval"/>
+		<repeating value="review_notif_recipients"/>
+		<repeating value="periodic_reviewers"/>
+		<repeating value="planned_effective_date"/>
+		<repeating value="previous_doc_number"/>
+		<repeating value="gmp_project_name"/>
+		<repeating value="qo_approvers"/>
+		<repeating value="event_initiator"/>
+		<repeating value="event_summary"/>
+		<repeating value="bio_lms_quality_notif_id"/>
+		<repeating value="qual_rec_number"/>
+		<repeating value="readers"/>
+		<repeating value="bio_lms_reason"/>
+		<repeating value="audit_deadline"/>
+		<repeating value="review_date"/>
+		<repeating value="periodic_review_interval"/>
+		<repeating value="review_notification_days"/>
+		<repeating value="review_start_days"/>
+		<repeating value="reviewers"/>
+		<repeating value="bio_domain_id"/>
+		<repeating value="sent_for_approval_date"/>
+		<repeating value="sent_for_review_date"/>
+		<repeating value="bio_sfg_item_code"/>
+		<repeating value="bio_sfg_item_name"/>
+		<repeating value="r_content_size"/>
+		<repeating value="sop_reference"/>
+		<repeating value="source_doc"/>
+		<repeating value="source_doc_number"/>
+		<repeating value="investigation_start_date"/>
+		<repeating value="a_status"/>
+		<repeating value="a_storage_type"/>
+		<repeating value="subgroup"/>
+		<repeating value="bio_sub_department"/>
+		<repeating value="subject"/>
+		<repeating value="supplier_name"/>
+		<repeating value="supplier_audit_contact"/>
+		<repeating value="bio_system_id"/>
+		<repeating value="system_name"/>
+		<repeating value="system_type"/>
+		<repeating value="document_template_name"/>
+		<repeating value="document_template_version"/>
+		<repeating value="title"/>
+		<repeating value="training_required"/>
+		<repeating value="r_object_type"/>
+		<repeating value="notification_list"/>
+		<repeating value="r_version_label"/>
+		<repeating value="r_is_virtual_doc"/>
+		<repeating value="withdraw_date"/>
+		<repeating value="withdraw_reason"/>
+	</col_name>
+	<order_by value=""/>
+	<order_by_direction value="Asc"/>
+	<migrate_version value="2"/>
+	<searched_types>
+		<repeating value="cd_quality_gmp"/>
+	</searched_types>
+	<logical/>
+	<bracket_open/>
+	<bracket_close/>
+	<operator>
+		<repeating value="isGreaterOrEqualsThan"/>
+	</operator>
+	<fulltext_operator value="all_words"/>
+	<fulltext_words value=""/>
+	<case_sensitive value="F"/>
+	<hidden_objects value="F"/>
+	<attr>
+		<repeating value="r_creation_date"/>
+	</attr>
+	<attr_value>
+		<repeating value="1630434600000"/>
+	</attr_value>
+	<facets/>
+	<configuration_name value=""/>
+	<configuration_type value=""/>
+	<previous_srch_terms/>
+</d2c_query>

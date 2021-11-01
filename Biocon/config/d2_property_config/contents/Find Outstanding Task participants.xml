@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dialog id="PropertiesDialog" buttons_right="false" focus="object_name" height="200" resizable="true" signoff_creation="false" signoff_edit="false" signoff_import="false" signoff_intention_dictionary="" signoff_intention_required="false" width="450">
+	<content>
+		<comment font_color="#000000" font_size="8pt" html_content="true" label_en="&lt;table cellspacing=0&gt;&lt;tr&gt;&lt;td&gt;This query form allows you to determine which users are assigned to act upon a document that is currently in a workflow.&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"/>
+		<comment html_content="true" label_en="&lt;table cellspacing=0&gt;&lt;tr&gt;&lt;td&gt;To use this query select a &lt;strong&gt;document name&lt;/strong&gt;.&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"/>
+		<combo-editable id="object_name" assistance_dql="select  object_name  from cd_controlled_doc  where r_object_id in(select r_component_id from dmi_package where r_workflow_id in (select r_object_id from dm_workflow where r_runtime_state = 1)) order by object_name" assistance_type="dql" asynchronous="true" condition_required_create="true" condition_required_edit="true" condition_required_import="true" control="true" label_en="Document Name"/>
+	</content>
+	<buttons>
+		<button id="buttonOk" action="validDialog()"/>
+		<button id="buttonCancel" action="cancelDialog()"/>
+	</buttons>
+</dialog>

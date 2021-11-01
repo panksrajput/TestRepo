@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_dictionary object_name="GMP Periodic Review Interval" title="Dictionary for GMP Periodic Review Interval" lock_config="false" parents_config="" application_names="OpenText Life Sciences Quality and Manufacturing Solution¬OpenText Life Sciences Medical Device Solution¬OpenText Life Sciences Medical Device for Quality and Manufacturing Solution¬Custom Configurations¬Biocon" security_group="biocon_dict_admin" search_group="" version="2" is_versioned="false" manual_order="false" create_view_option="false" is_dql="false" is_dql_cache="false" dql="" label_en="GMP Periodic Review Interval">
+	<d2_dictionary_value object_name="0 Days" is_enabled="true" order_no="0">
+		<alias name="interval" value="day"/>
+		<alias name="value" value="0"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="1 Month" is_enabled="true" order_no="0">
+		<alias name="interval" value="month"/>
+		<alias name="value" value="1"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="1 Year" is_enabled="true" order_no="0">
+		<alias name="interval" value="year"/>
+		<alias name="value" value="1"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="1095 Days" is_enabled="true" order_no="0">
+		<alias name="interval" value="day"/>
+		<alias name="value" value="1095"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="1825 Days" is_enabled="true" order_no="0">
+		<alias name="interval" value="day"/>
+		<alias name="value" value="1825"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="2 Months" is_enabled="true" order_no="0">
+		<alias name="interval" value="month"/>
+		<alias name="value" value="2"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="2 Years" is_enabled="true" order_no="0">
+		<alias name="interval" value="year"/>
+		<alias name="value" value="2"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="3 Years" is_enabled="true" order_no="0">
+		<alias name="interval" value="year"/>
+		<alias name="value" value="3"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="30 Days" is_enabled="true" order_no="0">
+		<alias name="interval" value="day"/>
+		<alias name="value" value="30"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="365 Days" is_enabled="true" order_no="0">
+		<alias name="interval" value="day"/>
+		<alias name="value" value="365"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="3650 Days" is_enabled="true" order_no="0">
+		<alias name="interval" value="day"/>
+		<alias name="value" value="3650"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="5 Years" is_enabled="true" order_no="0">
+		<alias name="interval" value="year"/>
+		<alias name="value" value="5"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="60 Days" is_enabled="true" order_no="0">
+		<alias name="interval" value="day"/>
+		<alias name="value" value="60"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="730 Days" is_enabled="true" order_no="0">
+		<alias name="interval" value="day"/>
+		<alias name="value" value="730"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="90 Days" is_enabled="true" order_no="0">
+		<alias name="interval" value="day"/>
+		<alias name="value" value="90"/>
+	</d2_dictionary_value>
+</d2_dictionary>

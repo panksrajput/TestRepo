@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="SpaceSchema.xsd">
+	<space>
+		<border-layout-container>
+			<data>
+				<border-layout-data layoutregion="WEST" maxSize="230" minSize="150" size="400" split="true"/>
+				<border-layout-data layoutregion="CENTER" size="500" split="true"/>
+				<border-layout-data layoutregion="EAST" maxSize="600" minSize="150" size="400" split="true"/>
+				<border-layout-data layoutregion="SOUTH" maxSize="500%" minSize="150" size="250" split="true"/>
+			</data>
+			<content>
+				<tab-container>
+					<content>
+						<widget config="WG Docbase browser"/>
+						<widget config="WG Facets"/>
+						<widget config="WG Predefined search"/>
+					</content>
+				</tab-container>
+				<border-layout-container>
+					<data>
+						<border-layout-data layoutregion="CENTER" size="55" split="false"/>
+						<border-layout-data layoutregion="SOUTH" size="55" split="false"/>
+					</data>
+					<content>
+						<tab-container>
+							<content>
+								<widget config="WG Doclist QnM"/>
+								<widget config="WG Favorites"/>
+								<widget config="WG MyDocs"/>
+								<widget config="WG Checkout"/>
+							</content>
+						</tab-container>
+					</content>
+				</border-layout-container>
+				<tab-container>
+					<content>
+						<widget config="Bio WG Brava Viewer CSR"/>
+						<widget config="WG Properties"/>
+						<widget config="WG Virtual document"/>
+					</content>
+				</tab-container>
+				<tab-container>
+					<content>
+						<widget config="WG Locations"/>
+						<widget config="WG Versions"/>
+						<widget config="WG Renditions"/>
+						<widget config="WG Relations"/>
+						<widget config="WG WF Overview"/>
+						<widget config="WG Recycle Bin"/>
+					</content>
+				</tab-container>
+			</content>
+		</border-layout-container>
+	</space>
+</root>

@@ -1,0 +1,807 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2lifecycle execute_actions_on_start="true" state_attribute="">
+	<state direct="false" entry="false" name="Draft">
+		<entry_conditions/>
+		<actions>
+			<applymethod argument="-event d2_change_state_success -context_user &quot;$USER&quot; -string_1 &quot;LC Transition&quot; -string_2 &quot;$lookup($value(a_status),Domain Document Status Display,$value(r_object_type))&quot; -string_3 &quot;$lookup(Draft,Domain Document Status Display,$value(r_object_type))&quot;" name="CDFAuditMethod"/>
+			<set name="a_status" value="Draft"/>
+			<set name="sent_for_approval_date" value=""/>
+			<set name="approved_date" value=""/>
+			<set name="effective_date" value=""/>
+			<set name="review_date" value=""/>
+			<set name="is_placeholder" value="F"/>
+			<applysecurity/>
+			<applymethod argument="-qualifier  &quot;cd_controlled_doc where r_object_id = (select child_id from dm_relation r where r.parent_id = '$value(r_object_id)' and r.relation_name = 'tech_transfer')&quot; -state_transition &quot;(notify copy changed)&quot; -auto_naming false -auto_linking false -security false -preserve_last_modifier true" name="CDFApplyD2ConfigurationsMethod"/>
+			<sendmail d2_mailing_config="Notify of document change state"/>
+		</actions>
+		<next_states>
+			<state action="" confirmation_en="" dialog="multi_On self-approving a CAT 3 document" event="" label_en="Self-Approve" name="Effective" type="promote"/>
+			<state action="" confirmation_en="" dialog="multi_On withdrawal of Cat 1-3 document - confirm" event="" label_en="" name="Withdrawn" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(Withdraw Other Versions)" type="promote"/>
+			<state action="" confirmation_en="" dialog="On purging interim Cat 1-3 versions - confirm" event="" label_en="" name="(Purge interim versions)" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="For Review" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(Ingested Document)" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(Update Security)" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(Start WF)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(End WF)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(notify copy changed)" signoff_intention_dictionary="1-GMP-APPROVE-REVIEW" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(version document)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="Reviewed" signoff_intention_dictionary="Approval Intention Codes" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="For Approval" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(Abort WF)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="multi_GMP Applicable Sites" event="" label_en="Update Applicable Sites" name="(Update Applicable Sites)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="checkin" label_en="" name="(Checkin)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(Update Properties)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" confirmation_ja="" dialog="" event="d2_import" label_en="" label_ja="" name="(Request Renditions)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(VDoc Reclassify)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="Reclassified" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(Import as Effective)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(Start SharePoint WF)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="In Collaboration" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(End SharePoint WF)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="Manage Notification Email List" event="" label_en="Manage Distribution List" name="(update email notification list)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+		</next_states>
+	</state>
+	<state direct="false" entry="false" name="(Draft with New Version)">
+		<entry_conditions/>
+		<actions>
+			<set name="a_status" value="Draft"/>
+			<set name="sent_for_approval_date" value=""/>
+			<set name="approved_date" value=""/>
+			<set name="effective_date" value=""/>
+			<set name="review_date" value=""/>
+			<set name="is_placeholder" value="F"/>
+			<applysecurity/>
+			<makeversion keep_symbolic_label="false" type="minor"/>
+			<renditionrequest/>
+			<applymethod argument="-qualifier  &quot;cd_controlled_doc where r_object_id = (select child_id from dm_relation r where r.parent_id = '$value(r_object_id)' and r.relation_name = 'tech_transfer')&quot; -state_transition &quot;(notify copy changed)&quot; -auto_naming false -auto_linking false -security false -preserve_last_modifier true" name="CDFApplyD2ConfigurationsMethod"/>
+			<sendmail d2_mailing_config="Notify of document change state"/>
+		</actions>
+		<next_states/>
+	</state>
+	<state direct="false" entry="false" name="For Review">
+		<entry_conditions>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate selected document and other documents from same workflow package is not locked"/>
+		</entry_conditions>
+		<actions>
+			<applymethod argument="-event d2_change_state_success -context_user &quot;$USER&quot; -string_1 &quot;LC Transition&quot; -string_2 &quot;$lookup($value(a_status),Domain Document Status Display,$value(r_object_type))&quot; -string_3 &quot;$lookup(For Review,Domain Document Status Display,$value(r_object_type))&quot;" name="CDFAuditMethod"/>
+			<set name="a_status" value="For Review"/>
+			<set name="sent_for_approval_date" value="$NOW"/>
+			<applysecurity/>
+			<renditionrequest/>
+			<applymethod argument="-qualifier  &quot;cd_controlled_doc where r_object_id = (select child_id from dm_relation r where r.parent_id = '$value(r_object_id)' and r.relation_name = 'tech_transfer')&quot; -state_transition &quot;(notify copy changed)&quot; -auto_naming false -auto_linking false -security false -preserve_last_modifier true" name="CDFApplyD2ConfigurationsMethod"/>
+			<sendmail d2_mailing_config="Notify of document change state"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(notify copy changed)" signoff_intention_dictionary="1-GMP-APPROVE-REVIEW" signoff_intention_required="false" signoff_required="false" type="promote"/>
+		</actions>
+		<next_states>
+			<state action="" confirmation_en="" dialog="On purging interim Cat 1-3 versions - confirm" event="" label_en="" name="(Purge interim versions)" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="Reviewed" type="promote"/>
+			<state action="checkin()" confirmation_en="" dialog="" event="" label_en="" name="Draft" type="demote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(Draft with New Version)" type="demote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="Withdrawn" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(Withdraw Other Versions)" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(Update Security)" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(Effective via Workflow)" signoff_intention_dictionary="Review Intention Codes" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(check annotations)" signoff_intention_dictionary="Approval Intention Codes" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(Abort WF)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="multi_GMP Applicable Sites" event="" label_en="" name="(Update Applicable Sites)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+		</next_states>
+	</state>
+	<state direct="false" entry="false" name="Reviewed">
+		<entry_conditions/>
+		<actions>
+			<applymethod argument="-event d2_change_state_success -context_user &quot;$USER&quot; -string_1 &quot;LC Transition&quot; -string_2 &quot;$lookup($value(a_status),Domain Document Status Display,$value(r_object_type))&quot; -string_3 &quot;$lookup(Reviewed,Domain Document Status Display,$value(r_object_type))&quot;" name="CDFAuditMethod"/>
+			<set name="a_status" value="Reviewed"/>
+			<applysecurity/>
+			<renditionrequest/>
+			<applymethod argument="-qualifier  &quot;cd_controlled_doc where r_object_id = (select child_id from dm_relation r where r.parent_id = '$value(r_object_id)' and r.relation_name = 'tech_transfer')&quot; -state_transition &quot;(notify copy changed)&quot; -auto_naming false -auto_linking false -security false -preserve_last_modifier true" name="CDFApplyD2ConfigurationsMethod"/>
+			<sendmail d2_mailing_config="Notify of document change state"/>
+		</actions>
+		<next_states>
+			<state action="" confirmation_en="" dialog="" event="checkin" label_en="" name="Draft" type="demote"/>
+			<state action="" confirmation_en="" dialog="multi_On self-approving a CAT 3 document" event="" label_en="Self Approve" name="Effective" type="promote"/>
+			<state action="" confirmation_en="" dialog="multi_On withdrawal of Cat 1-3 document - confirm" event="checkin" label_en="Withdraw document" name="Withdrawn" type="demote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(Withdraw Other Versions)" type="promote"/>
+			<state action="" confirmation_en="" dialog="On purging interim Cat 1-3 versions - confirm" event="" label_en="" name="(Purge interim versions)" type="promote"/>
+			<state action="" confirmation_en="" dialog="On cancelling the release of a Cat 3 document - confirm" event="" label_en="Revert to Draft" name="(Cancel release)" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="For Review" type="demote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(Update Security)" type="promote"/>
+			<state action="checkin()" confirmation_en="" dialog="" event="" label_en="" name="(Effective via Workflow)" signoff_intention_dictionary="Auto Inheritance Rule Update Modes" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(notify copy changed)" signoff_intention_dictionary="1-GMP-APPROVE-REVIEW" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(End WF)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="multi_GMP Applicable Sites" event="" label_en="Update Applicable Sites" name="(Update Applicable Sites)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="Manage Notification Email List" event="" label_en="Manage Distribution List" name="(update email notification list)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+		</next_states>
+	</state>
+	<state direct="false" entry="false" name="Effective">
+		<entry_conditions>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate CTS rendition of the document is created before going to next stage of workflow."/>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate user is an Author or Document Coordinator for the selected document"/>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate selected document is not checked-out"/>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate document does not have annotations"/>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate selected document is not involved in an active workflow"/>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate selected document is the CURRENT version"/>
+		</entry_conditions>
+		<actions>
+			<makeversion keep_symbolic_label="true" type="major_same_document"/>
+			<applymethod argument="-event d2_change_state_success -context_user &quot;$USER&quot; -string_1 &quot;LC Transition&quot; -string_2 &quot;$lookup($value(a_status),Domain Document Status Display,$value(r_object_type))&quot; -string_3 &quot;$lookup(Effective,Domain Document Status Display,$value(r_object_type))&quot;" name="CDFAuditMethod"/>
+			<set name="approved_date" value="$NOW"/>
+			<set name="a_status" value="Effective"/>
+			<applyparameters/>
+			<applysecurity/>
+			<changestateversion filter="a_status = 'Effective'" target_state="Superseded"/>
+			<applymethod argument="-qualifier  &quot;cd_controlled_doc where r_object_id = (select child_id from dm_relation r where r.parent_id = '$value(r_object_id)' and r.relation_name = 'tech_transfer')&quot; -state_transition &quot;(notify copy changed)&quot; -auto_naming false -auto_linking false -security false -preserve_last_modifier true" name="CDFApplyD2ConfigurationsMethod"/>
+			<applymethod argument="-mail_config &quot;Notify of document change state&quot; -email_attributes notification_email_list" fetchCurrent="false" name="CDFSendMailNotificationAsynchMethod"/>
+		</actions>
+		<next_states>
+			<state action="" confirmation_en="" dialog="" event="checkin" label_en="" name="(Version Effective back to Draft)" type="demote"/>
+			<state action="" confirmation_en="" dialog="multi_On suspending a Cat 1-3 document - confirm" event="" label_en="Suspend document" name="Suspended" type="promote"/>
+			<state action="" confirmation_en="" dialog="multi_On withdrawal of Cat 1-3 document - confirm" event="" label_en="Withdraw document" name="Withdrawn" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(Withdraw Other Versions)" type="promote"/>
+			<state action="" confirmation_en="" dialog="On purging interim Cat 1-3 versions - confirm" event="" label_en="Purge Interim Versions..." name="(Purge interim versions)" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="Superseded" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(Update Security)" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(End WF)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(notify copy changed)" signoff_intention_dictionary="1-GMP-APPROVE-REVIEW" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="multi_GMP Applicable Sites" event="" label_en="Update Applicable Sites" name="(Update Applicable Sites)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="multi_Set Planned Withdrawal date" event="" label_en="Update Planned Withdrawal date" name="(update planned withdrawal date)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(Withdrawn via LC Batch)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="Reclassified" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="Manage Notification Email List" event="" label_en="Manage Distribution List" name="(update email notification list)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="restrictedEditPseudo" event="" label_en="Restricted Edit" name="(RestrictedEdit)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+		</next_states>
+	</state>
+	<state direct="false" entry="false" name="Suspended">
+		<entry_conditions>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate user is an Author or Document Coordinator for the selected document"/>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate selected document is not involved in an active workflow"/>
+		</entry_conditions>
+		<actions>
+			<applymethod argument="-event d2_change_state_success -context_user &quot;$USER&quot; -string_1 &quot;LC Transition&quot; -string_2 &quot;$lookup($value(a_status),Domain Document Status Display,$value(r_object_type))&quot; -string_3 &quot;$lookup(Suspended,Domain Document Status Display,$value(r_object_type))&quot;" name="CDFAuditMethod"/>
+			<set name="a_status" value="Suspended"/>
+			<applysecurity/>
+			<renditionrequest/>
+			<applymethod argument="-if &quot;a_status='Effective'&quot; -event &quot;d2_properties_save&quot; -context_user &quot;$USER&quot; -attributes &quot;a_status&quot;" fetchCurrent="false" name="CDFAuditMethod"/>
+			<applymethod argument="-qualifier  &quot;cd_controlled_doc where r_object_id = (select child_id from dm_relation r where r.parent_id = '$value(r_object_id)' and r.relation_name = 'tech_transfer')&quot; -state_transition &quot;(notify copy changed)&quot; -auto_naming false -auto_linking false -security false -preserve_last_modifier true" name="CDFApplyD2ConfigurationsMethod"/>
+			<applymethod argument="-objectId &quot;$value(r_object_id)&quot; -service_url &quot;ControlledPrint/rest/controlledprint/prints/recall?_docbase=&lt;&lt;docbase&gt;&gt;&amp;_tmzOffset=&lt;&lt;tzoffset&gt;&gt;&quot; -dql &quot;SELECT document_id FROM cd_controlled_print WHERE document_id = '&lt;&lt;objid&gt;&gt;' AND  event_name = 'print' AND a_status = 'Printed'&quot; -reason &quot;Document Suspended&quot;" name="ControlledPrintRecallLCMethod"/>
+			<sendmail d2_mailing_config="Notify of document change state"/>
+		</actions>
+		<next_states>
+			<state action="" confirmation_en="" dialog="" event="checkin" label_en="" name="Draft" type="demote"/>
+			<state action="" confirmation_en="" dialog="multi_On reinstating a suspended document" event="" label_en="Reinstate as &quot;Effective/Approved/Final&quot; version" name="(Reinstate as effective)" type="demote"/>
+			<state action="" confirmation_en="" dialog="multi_On withdrawal of Cat 1-3 document - confirm" event="" label_en="Withdraw document" name="Withdrawn" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(Withdraw Other Versions)" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(Update Security)" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(notify copy changed)" signoff_intention_dictionary="1-GMP-APPROVE-REVIEW" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="multi_GMP Applicable Sites" event="" label_en="Update Applicable Sites" name="(Update Applicable Sites)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="Manage Notification Email List" event="" label_en="Manage Distribution List" name="(update email notification list)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+		</next_states>
+	</state>
+	<state direct="false" entry="false" name="Superseded">
+		<entry_conditions/>
+		<actions>
+			<applymethod argument="-event d2_change_state_success -context_user &quot;$USER&quot; -string_1 &quot;LC Transition&quot; -string_2 &quot;$lookup($value(a_status),Domain Document Status Display,$value(r_object_type))&quot; -string_3 &quot;$lookup(Superseded,Domain Document Status Display,$value(r_object_type))&quot;" name="CDFAuditMethod"/>
+			<set name="a_status" value="Superseded"/>
+			<set name="superseded_date" value="$NOW"/>
+			<applysecurity/>
+			<renditionrequest/>
+			<applymethod argument="-event &quot;d2_properties_save&quot; -context_user &quot;$USER&quot; -attributes &quot;a_status,superseded_date&quot;" fetchCurrent="false" name="CDFAuditMethod"/>
+			<applymethod argument="-qualifier  &quot;cd_controlled_doc where r_object_id = (select child_id from dm_relation r where r.parent_id = '$value(r_object_id)' and r.relation_name = 'tech_transfer')&quot; -state_transition &quot;(notify copy changed)&quot; -auto_naming false -auto_linking false -security false -preserve_last_modifier true" name="CDFApplyD2ConfigurationsMethod"/>
+			<applymethod argument="-objectId &quot;$value(r_object_id)&quot; -service_url &quot;ControlledPrint/rest/controlledprint/prints/recall?_docbase=&lt;&lt;docbase&gt;&gt;&amp;_tmzOffset=&lt;&lt;tzoffset&gt;&gt;&quot; -dql &quot;SELECT document_id FROM cd_controlled_print WHERE document_id = '&lt;&lt;objid&gt;&gt;' AND  event_name = 'print' AND a_status = 'Printed'&quot; -reason &quot;Document Superseded&quot;" name="ControlledPrintRecallLCMethod"/>
+			<sendmail d2_mailing_config="Notify of document change state"/>
+		</actions>
+		<next_states>
+			<state action="" confirmation_en="" dialog="multi_On withdrawal of Cat 1-3 document - confirm" event="" label_en="" name="Withdrawn" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(Withdraw Other Versions)" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(Update Security)" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(notify copy changed)" signoff_intention_dictionary="1-GMP-APPROVE-REVIEW" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="multi_GMP Applicable Sites" event="" label_en="" name="(Update Applicable Sites)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+		</next_states>
+	</state>
+	<state direct="false" entry="false" name="(update planned withdrawal date)">
+		<entry_conditions>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate user is an Author or Document Coordinator for the selected document"/>
+		</entry_conditions>
+		<actions>
+			<applyparameters/>
+			<applymethod argument="-if &quot;a_status='Effective'&quot; -string_1 &quot;$value(comments)&quot; -event &quot;d2_properties_save&quot; -context_user &quot;$USER&quot; -attributes &quot;planned_withdraw_date&quot;" fetchCurrent="false" name="CDFAuditMethod"/>
+			<set name="comments" value=""/>
+		</actions>
+		<next_states/>
+	</state>
+	<state direct="false" entry="false" name="Withdrawn">
+		<entry_conditions>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate user is a Document Coordinator for the selected document."/>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate selected document is not checked-out"/>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate selected document is not involved in an active workflow"/>
+		</entry_conditions>
+		<actions>
+			<applymethod argument="-event d2_change_state_success -context_user &quot;$USER&quot; -string_1 &quot;LC Transition&quot; -string_2 &quot;$lookup($value(a_status),Domain Document Status Display,$value(r_object_type))&quot; -string_3 &quot;$lookup(Withdrawn,Domain Document Status Display,$value(r_object_type))&quot;" name="CDFAuditMethod"/>
+			<set name="a_status" value="Withdrawn"/>
+			<set name="withdraw_date" value="$NOW"/>
+			<applysecurity/>
+			<changestateversion filter="" target_state="(Withdraw Other Versions)"/>
+			<renditionrequest/>
+			<applymethod argument="-if &quot;a_status='Effective'&quot; -string_1 &quot;$value(comments)&quot; -event &quot;d2_properties_save&quot; -context_user &quot;$USER&quot; -attributes &quot;withdraw_reason&quot;" fetchCurrent="false" name="CDFAuditMethod"/>
+			<applymethod argument="-if &quot;a_status='Effective'&quot; -event &quot;d2_properties_save&quot; -context_user &quot;$USER&quot; -attributes &quot;withdraw_date&quot;" fetchCurrent="false" name="CDFAuditMethod"/>
+			<applymethod argument="-qualifier  &quot;cd_controlled_doc where r_object_id = (select child_id from dm_relation r where r.parent_id = '$value(r_object_id)' and r.relation_name = 'tech_transfer')&quot; -state_transition &quot;(notify copy changed)&quot; -auto_naming false -auto_linking false -security false -preserve_last_modifier true" name="CDFApplyD2ConfigurationsMethod"/>
+			<applymethod argument="-objectId &quot;$value(r_object_id)&quot; -service_url &quot;ControlledPrint/rest/controlledprint/prints/recall?_docbase=&lt;&lt;docbase&gt;&gt;&amp;_tmzOffset=&lt;&lt;tzoffset&gt;&gt;&quot; -dql &quot;SELECT document_id FROM cd_controlled_print WHERE document_id = '&lt;&lt;objid&gt;&gt;' AND  event_name = 'print' AND a_status = 'Printed'&quot; -reason &quot;Document Withdrawn&quot;" name="ControlledPrintRecallLCMethod"/>
+			<sendmail d2_mailing_config="Notify of document change state"/>
+			<set name="comments" value=""/>
+		</actions>
+		<next_states>
+			<state action="" confirmation_en="" dialog="On purging interim Cat 1-3 versions - confirm" event="" label_en="Purge Interim Versions..." name="(Purge interim versions)" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="Draft" type="demote">
+				<transition_conditions>
+					<uniquenesscheck message_failed_en="" uniqueness="Validate user is an Author or Document Coordinator for the selected document"/>
+				</transition_conditions>
+			</state>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(Update Security)" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(notify copy changed)" signoff_intention_dictionary="1-GMP-APPROVE-REVIEW" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="multi_GMP Applicable Sites" event="" label_en="Update Applicable Sites" name="(Update Applicable Sites)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="On reverting a Cat 1-3 document to Draft - confirm" event="" label_en="Revert to Draft" name="(Version Withdrawn to Draft)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="Manage Notification Email List" event="" label_en="Manage Distribution List" name="(update email notification list)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+		</next_states>
+	</state>
+	<state direct="false" entry="false" name="(Withdrawn via LC Batch)">
+		<entry_conditions>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate selected document is not checked-out"/>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate selected document is not involved in an active workflow"/>
+		</entry_conditions>
+		<actions>
+			<applymethod argument="-event d2_change_state_success -context_user &quot;$USER&quot; -string_1 &quot;LC Transition&quot; -string_2 &quot;$lookup($value(a_status),Domain Document Status Display,$value(r_object_type))&quot; -string_3 &quot;$lookup(Withdrawn,Domain Document Status Display,$value(r_object_type))&quot;" name="CDFAuditMethod"/>
+			<set name="a_status" value="Withdrawn"/>
+			<set name="withdraw_date" value="$NOW"/>
+			<applysecurity/>
+			<changestateversion filter="" target_state="(Withdraw Other Versions)"/>
+			<renditionrequest/>
+			<applymethod argument="-qualifier  &quot;cd_controlled_doc where r_object_id = (select child_id from dm_relation r where r.parent_id = '$value(r_object_id)' and r.relation_name = 'tech_transfer')&quot; -state_transition &quot;(notify copy changed)&quot; -auto_naming false -auto_linking false -security false -preserve_last_modifier true" name="CDFApplyD2ConfigurationsMethod"/>
+			<applymethod argument="-objectId &quot;$value(r_object_id)&quot; -service_url &quot;ControlledPrint/rest/controlledprint/prints/recall?_docbase=&lt;&lt;docbase&gt;&gt;&amp;_tmzOffset=&lt;&lt;tzoffset&gt;&gt;&quot; -dql &quot;SELECT document_id FROM cd_controlled_print WHERE document_id = '&lt;&lt;objid&gt;&gt;' AND  event_name = 'print' AND a_status = 'Printed'&quot; -reason &quot;Document Withdrawn&quot;" name="ControlledPrintRecallLCMethod"/>
+			<sendmail d2_mailing_config="Notify of document change state"/>
+		</actions>
+		<next_states>
+			<state action="" confirmation_en="" dialog="On purging interim Cat 1-3 versions - confirm" event="" label_en="Purge Interim Versions..." name="(Purge interim versions)" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="Draft" type="demote">
+				<transition_conditions>
+					<uniquenesscheck message_failed_en="" uniqueness="Validate user is an Author or Document Coordinator for the selected document"/>
+				</transition_conditions>
+			</state>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(Update Security)" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(notify copy changed)" signoff_intention_dictionary="1-GMP-APPROVE-REVIEW" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="multi_GMP Applicable Sites" event="" label_en="Update Applicable Sites" name="(Update Applicable Sites)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="On reverting a Cat 1-3 document to Draft - confirm" event="" label_en="Revert to Draft" name="(Version Withdrawn to Draft)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+		</next_states>
+	</state>
+	<state direct="false" entry="false" name="(Withdraw Other Versions)">
+		<entry_conditions/>
+		<actions>
+			<applymethod argument="-event d2_change_state_success -context_user &quot;$USER&quot; -string_1 &quot;LC Transition&quot; -string_2 &quot;$lookup($value(a_status),Domain Document Status Display,$value(r_object_type))&quot; -string_3 &quot;$lookup(Withdrawn,Domain Document Status Display,$value(r_object_type))&quot;" name="CDFAuditMethod"/>
+			<set name="a_status" value="Withdrawn"/>
+			<set name="withdraw_date" value="$NOW"/>
+			<applysecurity/>
+			<renditionrequest/>
+			<applymethod argument="-if &quot;a_status='Effective'&quot; -event &quot;d2_properties_save&quot; -context_user &quot;$USER&quot; -attributes &quot;withdraw_date&quot;" fetchCurrent="false" name="CDFAuditMethod"/>
+			<applymethod argument="-qualifier  &quot;cd_controlled_doc where r_object_id = (select child_id from dm_relation r where r.parent_id = '$value(r_object_id)' and r.relation_name = 'tech_transfer')&quot; -state_transition &quot;(notify copy changed)&quot; -auto_naming false -auto_linking false -security false -preserve_last_modifier true" name="CDFApplyD2ConfigurationsMethod"/>
+			<applymethod argument="-objectId &quot;$value(r_object_id)&quot; -service_url &quot;ControlledPrint/rest/controlledprint/prints/recall?_docbase=&lt;&lt;docbase&gt;&gt;&amp;_tmzOffset=&lt;&lt;tzoffset&gt;&gt;&quot; -dql &quot;SELECT document_id FROM cd_controlled_print WHERE document_id = '&lt;&lt;objid&gt;&gt;' AND  event_name = 'print' AND a_status = 'Printed'&quot; -reason &quot;Document Withdrawn&quot;" name="ControlledPrintRecallLCMethod"/>
+			<sendmail d2_mailing_config="Notify of document change state"/>
+		</actions>
+		<next_states>
+			<state action="" confirmation_en="" dialog="On purging interim Cat 1-3 versions - confirm" event="" label_en="Purge Interim Versions..." name="(Purge interim versions)" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="Draft" type="demote">
+				<transition_conditions>
+					<uniquenesscheck message_failed_en="" uniqueness="Validate user is an Author or Document Coordinator for the selected document"/>
+				</transition_conditions>
+			</state>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(Update Security)" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(notify copy changed)" signoff_intention_dictionary="1-GMP-APPROVE-REVIEW" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="multi_GMP Applicable Sites" event="" label_en="Update Applicable Sites" name="(Update Applicable Sites)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="On reverting a Cat 1-3 document to Draft - confirm" event="" label_en="Revert to Draft" name="(Version Withdrawn to Draft)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+		</next_states>
+	</state>
+	<state direct="false" entry="false" name="(Purge interim versions)">
+		<entry_conditions>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate selected document is the CURRENT version"/>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate selected document is not checked-out"/>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate user is an Author or Document Coordinator for the selected document"/>
+		</entry_conditions>
+		<actions>
+			<destroyversions destroyannoted="false" filter="a_status in ('Draft', 'For Review', 'For Approval')"/>
+		</actions>
+		<next_states/>
+	</state>
+	<state direct="false" entry="false" name="(Cancel release)">
+		<entry_conditions>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate selected document is the CURRENT version"/>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate selected document is not checked-out"/>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate user is an Author or Document Coordinator for the selected document"/>
+		</entry_conditions>
+		<actions>
+			<set name="a_status" value="Draft"/>
+			<applysecurity/>
+			<applymethod argument="-qualifier  &quot;cd_controlled_doc where r_object_id = (select child_id from dm_relation r where r.parent_id = '$value(r_object_id)' and r.relation_name = 'tech_transfer')&quot; -state_transition &quot;(notify copy changed)&quot; -auto_naming false -auto_linking false -security false -preserve_last_modifier true" name="CDFApplyD2ConfigurationsMethod"/>
+			<sendmail d2_mailing_config="Notify of document change state"/>
+		</actions>
+		<next_states/>
+	</state>
+	<state direct="false" entry="true" name="(Init)">
+		<entry_conditions/>
+		<actions>
+			<applymethod argument="-file_name &quot;$value(original_file_name)&quot; -context_user &quot;$USER&quot; -post_transition &quot;$lookup($value(import_state),'Import States','Post Transition')&quot;" fetchCurrent="false" name="CDFInitializeArtifactMethod"/>
+			<applymethod argument="-if &quot;domain ='GMP' or domain='Med Device'&quot; -id $value(r_object_id) -query &quot;select alias_value as notification_list from d2_dictionary_value v,d2_dictionary d where v.dictionary_name = d.object_name and d.object_name = 'GMP Applicable Sites' and v.object_name in (select applicable_sites from cd_quality_gmp_approved where r_object_id = '$value(r_object_id)') and d.alias_name = 'doc_coordinators' and v.i_position = d.i_position and any alias_value is not nullstring order by alias_value ENABLE (ROW_BASED)&quot; -all_rows true -truncate true" fetchCurrent="false" name="CDFUpdateAttrsViaQueryMethod"/>
+			<applymethod argument="" fetchCurrent="false" name="CDFApplyDynamicSecurity"/>
+			<set name="consumer_importers" value=""/>
+			<applymethod argument="-query &quot;select r_object_id as notification_dist_list from cd_distribution_list where is_default=1 and (any domains='$value(domain)' or is_list_global=1) &quot; -all_rows true -ignore_duplicate_values  true -ignore_null_values true" fetchCurrent="false" name="CDFUpdateAttrsViaQueryMethod"/>
+		</actions>
+		<next_states>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="Draft" type="promote"/>
+		</next_states>
+	</state>
+	<state direct="false" entry="false" name="(Reinstate as effective)">
+		<entry_conditions>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate selected document is not checked-out"/>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate user is a Document Coordinator for the selected document."/>
+		</entry_conditions>
+		<actions>
+			<set name="approved_date" value="$NOW"/>
+			<applymethod argument="-event d2_change_state_success -context_user &quot;$USER&quot; -string_1 &quot;LC Transition&quot; -string_2 &quot;$lookup($value(a_status),Domain Document Status Display,$value(r_object_type))&quot; -string_3 &quot;$lookup(Effective,Domain Document Status Display,$value(r_object_type))&quot;" name="CDFAuditMethod"/>
+			<set name="a_status" value="Effective"/>
+			<applyparameters/>
+			<applysecurity/>
+			<applymethod argument="-qualifier  &quot;cd_controlled_doc where r_object_id = (select child_id from dm_relation r where r.parent_id = '$value(r_object_id)' and r.relation_name = 'tech_transfer')&quot; -state_transition &quot;(notify copy changed)&quot; -auto_naming false -auto_linking false -security false -preserve_last_modifier true" name="CDFApplyD2ConfigurationsMethod"/>
+			<applymethod argument="-mail_config &quot;Notify of document change state&quot; -email_attributes notification_email_list" fetchCurrent="false" name="CDFSendMailNotificationAsynchMethod"/>
+		</actions>
+		<next_states/>
+	</state>
+	<state direct="false" entry="false" name="(Reassign roles)">
+		<entry_conditions>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate user is an Author or Document Coordinator for the selected document"/>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate selected document is the CURRENT version"/>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate selected document is not checked-out"/>
+		</entry_conditions>
+		<actions>
+			<applyparameters/>
+			<applysecurity/>
+		</actions>
+		<next_states/>
+	</state>
+	<state direct="false" entry="false" name="(Ingested Document)">
+		<entry_conditions>
+			<attribute compare="not_eq" message_failed_en="Only documents not entered via Life Sciences Quality Management user interface can use this lifecycle state" name="document_source" value="0"/>
+		</entry_conditions>
+		<actions>
+			<launchworkflow d2_workflow_config="Review Ingested Document" name="Review Ingested Document $value(object_name) $NOW" note=""/>
+		</actions>
+		<next_states>
+			<state action="" confirmation_en="" dialog="multi_On self-approving a CAT 3 document" event="" label_en="Self-approve and make &quot;Effective&quot;" name="Effective" type="promote"/>
+			<state action="" confirmation_en="" dialog="multi_On withdrawal of Cat 1-3 document - confirm" event="" label_en="Withdraw document" name="Withdrawn" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(Withdraw Other Versions)" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="For Review" type="promote"/>
+		</next_states>
+	</state>
+	<state direct="false" entry="false" name="(Update Security)">
+		<entry_conditions/>
+		<actions>
+			<applyparameters/>
+			<applysecurity/>
+		</actions>
+		<next_states/>
+	</state>
+	<state direct="false" entry="false" name="(Version Effective back to Draft)">
+		<entry_conditions/>
+		<actions>
+			<set name="a_status" value="Draft"/>
+			<applymethod argument="-event d2_change_state_success -context_user &quot;$USER&quot; -string_1 &quot;LC Transition&quot; -string_2 &quot;$lookup($value(a_status),Domain Document Status Display,$value(r_object_type))&quot; -string_3 &quot;$lookup(Draft,Domain Document Status Display,$value(r_object_type))&quot;" name="CDFAuditMethod"/>
+			<set name="sent_for_approval_date" value=""/>
+			<set name="approved_date" value=""/>
+			<set name="effective_date" value=""/>
+			<set name="expiration_date" value=""/>
+			<set name="review_date" value=""/>
+			<applysecurity/>
+			<applymethod argument="-qualifier  &quot;cd_controlled_doc where r_object_id = (select child_id from dm_relation r where r.parent_id = '$value(r_object_id)' and r.relation_name = 'tech_transfer')&quot; -state_transition &quot;(notify copy changed)&quot; -auto_naming false -auto_linking false -security false -preserve_last_modifier true" name="CDFApplyD2ConfigurationsMethod"/>
+			<sendmail d2_mailing_config="Notify of document change state"/>
+			<set name="suppress_signature_page" value="false"/>
+		</actions>
+		<next_states/>
+	</state>
+	<state direct="false" entry="false" name="For Approval">
+		<entry_conditions>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate selected document and other documents from same workflow package is not locked"/>
+		</entry_conditions>
+		<actions>
+			<applymethod argument="-event d2_change_state_success -context_user &quot;$USER&quot; -string_1 &quot;LC Transition&quot; -string_2 &quot;$lookup($value(a_status),Domain Document Status Display,$value(r_object_type))&quot; -string_3 &quot;$lookup(For Approval,Domain Document Status Display,$value(r_object_type))&quot;" name="CDFAuditMethod"/>
+			<set name="a_status" value="For Approval"/>
+			<set name="sent_for_approval_date" value="$NOW"/>
+			<applysecurity/>
+			<renditionrequest/>
+			<applymethod argument="-qualifier  &quot;cd_controlled_doc where r_object_id = (select child_id from dm_relation r where r.parent_id = '$value(r_object_id)' and r.relation_name = 'tech_transfer')&quot; -state_transition &quot;(notify copy changed)&quot; -auto_naming false -auto_linking false -security false -preserve_last_modifier true" name="CDFApplyD2ConfigurationsMethod"/>
+			<sendmail d2_mailing_config="Notify of document change state"/>
+		</actions>
+		<next_states>
+			<state action="checkin()" confirmation_en="" dialog="" event="" label_en="" name="Draft" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="demote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(Draft with New Version)" type="demote"/>
+			<state action="" confirmation_en="" dialog="On purging interim Cat 1-3 versions - confirm" event="" label_en="" name="(Purge interim versions)" signoff_intention_dictionary="Boolean Values" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="Withdrawn" signoff_intention_dictionary="Approval Intention Codes" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(Withdraw Other Versions)" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(Update Security)" signoff_intention_dictionary="Auto Inheritance Rule Locked Object Policies" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(notify copy changed)" signoff_intention_dictionary="1-GMP-APPROVE-REVIEW" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(Effective via Workflow)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(Abort WF)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="multi_GMP Applicable Sites" event="" label_en="" name="(Update Applicable Sites)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+		</next_states>
+	</state>
+	<state direct="false" entry="false" name="(Effective via Workflow)">
+		<entry_conditions/>
+		<actions>
+			<makeversion keep_symbolic_label="true" type="major_same_document"/>
+			<applymethod argument="-event d2_change_state_success -context_user &quot;$USER&quot; -string_1 &quot;LC Transition&quot; -string_2 &quot;$lookup($value(a_status),Domain Document Status Display,$value(r_object_type))&quot; -string_3 &quot;$lookup(Effective,Domain Document Status Display,$value(r_object_type))&quot;" name="CDFAuditMethod"/>
+			<set name="a_status" value="Effective"/>
+			<set name="approved_date" value="$NOW"/>
+			<applyparameters/>
+			<applysecurity/>
+			<changestateversion filter="a_status = 'Effective'" target_state="Superseded"/>
+			<applymethod argument="-qualifier  &quot;cd_controlled_doc where r_object_id = (select child_id from dm_relation r where r.parent_id = '$value(r_object_id)' and r.relation_name = 'tech_transfer')&quot; -state_transition &quot;(notify copy changed)&quot; -auto_naming false -auto_linking false -security false -preserve_last_modifier true" name="CDFApplyD2ConfigurationsMethod"/>
+			<applymethod argument="-mail_config &quot;Notify of document change state&quot; -email_attributes notification_email_list" fetchCurrent="false" name="CDFSendMailNotificationAsynchMethod"/>
+		</actions>
+		<next_states>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(End WF)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+		</next_states>
+	</state>
+	<state direct="false" entry="false" name="(Start WF)">
+		<entry_conditions/>
+		<actions>
+			<set name="wf_is_in_workflow" value="true"/>
+			<applymethod argument="-id $value(r_object_id)  -query &quot;select object_name as wf_workflow_name from dm_workflow where r_object_id in (select r_workflow_id from dmi_package where any r_component_id='$value(r_object_id)') and r_runtime_state =1&quot; -ignore_null_values true -override true" name="CDFUpdateAttrsViaQueryMethod"/>
+			<applyparameters/>
+		</actions>
+		<next_states/>
+	</state>
+	<state direct="false" entry="false" name="(End WF)">
+		<entry_conditions>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate selected document and other documents from same workflow package is not locked"/>
+		</entry_conditions>
+		<actions>
+			<applyparameters/>
+			<applymethod argument="-target &quot;select r_object_id from cd_controlled_doc(all) where i_chronicle_id='$value(i_chronicle_id)' and wf_is_in_workflow=true&quot; -attr &quot;wf_is_in_workflow,wf_workflow_name&quot; -value &quot;false, &quot;" name="CDFSetAttributeMethod"/>
+			<setrepeating mode="reset" name="wf_authors" removeDuplicate="false" value=""/>
+			<setrepeating mode="reset" name="wf_reviewers" removeDuplicate="false" value=""/>
+			<setrepeating mode="reset" name="wf_approvers" removeDuplicate="false" value=""/>
+			<applyparameters/>
+			<applysecurity/>
+		</actions>
+		<next_states/>
+	</state>
+	<state direct="false" entry="false" name="(notify copy changed)">
+		<entry_conditions/>
+		<actions>
+			<sendmail d2_mailing_config="Send authors copy has changed notification - in copy"/>
+		</actions>
+		<next_states/>
+	</state>
+	<state direct="false" entry="false" name="(check annotations)">
+		<entry_conditions>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate document does not have annotations"/>
+		</entry_conditions>
+		<actions/>
+		<next_states>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="Reviewed" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+		</next_states>
+	</state>
+	<state direct="false" entry="false" name="(version document)">
+		<entry_conditions/>
+		<actions>
+			<makeversion keep_symbolic_label="false" type="minor"/>
+			<renditionrequest/>
+		</actions>
+		<next_states>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="Reviewed" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+		</next_states>
+	</state>
+	<state direct="false" entry="false" name="(Abort WF)">
+		<entry_conditions/>
+		<actions>
+			<applymethod argument="-event d2_change_state_success -context_user &quot;$USER&quot; -string_1 &quot;LC Transition&quot; -string_2 &quot;$lookup($value(a_status),Domain Document Status Display,$value(r_object_type))&quot; -string_3 &quot;$lookup(Draft,Domain Document Status Display,$value(r_object_type))&quot;" name="CDFAuditMethod"/>
+			<set name="a_status" value="Draft"/>
+			<set name="sent_for_approval_date" value=""/>
+			<set name="approved_date" value=""/>
+			<set name="effective_date" value=""/>
+			<set name="review_date" value=""/>
+			<set name="is_placeholder" value="F"/>
+			<setrepeating mode="reset" name="wf_authors" removeDuplicate="false" value=""/>
+			<setrepeating mode="reset" name="wf_reviewers" removeDuplicate="false" value=""/>
+			<setrepeating mode="reset" name="wf_approvers" removeDuplicate="false" value=""/>
+			<applysecurity/>
+			<applymethod argument="-target &quot;select r_object_id from cd_controlled_doc(all) where i_chronicle_id='$value(i_chronicle_id)' and wf_is_in_workflow=true&quot; -attr &quot;wf_is_in_workflow,wf_workflow_name&quot; -value &quot;false, &quot;" name="CDFSetAttributeMethod"/>
+			<applymethod argument="-qualifier  &quot;cd_controlled_doc where r_object_id = (select child_id from dm_relation r where r.parent_id = '$value(r_object_id)' and r.relation_name = 'tech_transfer')&quot; -state_transition &quot;(notify copy changed)&quot; -auto_naming false -auto_linking false -security false -preserve_last_modifier true" name="CDFApplyD2ConfigurationsMethod"/>
+			<makeversion keep_symbolic_label="false" type="minor"/>
+			<sendmail d2_mailing_config="Notify of document change state"/>
+		</actions>
+		<next_states/>
+	</state>
+	<state direct="false" entry="false" name="(Update Applicable Sites)">
+		<entry_conditions>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate user is a Document Coordinator for the selected document."/>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate selected document is not involved in an active workflow"/>
+		</entry_conditions>
+		<actions>
+			<applyparameters/>
+			<applymethod argument="-if &quot;a_status='Effective'&quot; -string_1 &quot;$value(comments)&quot; -event &quot;d2_properties_save&quot; -context_user &quot;$USER&quot; -attributes &quot;applicable_sites&quot;" fetchCurrent="false" name="CDFAuditMethod"/>
+			<applymethod argument="-if &quot;domain ='GMP' or domain='Med Device'&quot; -id $value(r_object_id) -query &quot;select alias_value as authors from d2_dictionary_value v,d2_dictionary d where v.dictionary_name = d.object_name and d.object_name = 'GMP Applicable Sites' and v.object_name in (select applicable_sites from cd_quality_gmp_approved where r_object_id = '$value(r_object_id)') and d.alias_name = 'authors' and v.i_position = d.i_position and any alias_value is not nullstring order by alias_value ENABLE (ROW_BASED)&quot; -all_rows true -truncate true" name="CDFUpdateAttrsViaQueryMethod"/>
+			<applymethod argument="-if &quot;domain ='GMP' or domain='Med Device'&quot; -id $value(r_object_id) -query &quot;select alias_value as approvers from d2_dictionary_value v,d2_dictionary d where v.dictionary_name = d.object_name and d.object_name = 'GMP Applicable Sites' and v.object_name in (select applicable_sites from cd_quality_gmp_approved where r_object_id = '$value(r_object_id)') and d.alias_name = 'approvers' and v.i_position = d.i_position and any alias_value is not nullstring order by alias_value ENABLE (ROW_BASED)&quot; -all_rows true -override true -truncate true" name="CDFUpdateAttrsViaQueryMethod"/>
+			<applymethod argument="-if &quot;domain ='GMP' or domain='Med Device'&quot; -id $value(r_object_id) -query &quot;select alias_value as readers from d2_dictionary_value v,d2_dictionary d where v.dictionary_name = d.object_name and d.object_name = 'GMP Applicable Sites' and v.object_name in (select applicable_sites from cd_quality_gmp_approved where r_object_id = '$value(r_object_id)') and d.alias_name = 'readers' and v.i_position = d.i_position and any alias_value is not nullstring order by alias_value ENABLE (ROW_BASED)&quot; -all_rows true -override true -truncate true" name="CDFUpdateAttrsViaQueryMethod"/>
+			<applymethod argument="-if &quot;domain ='GMP' or domain='Med Device'&quot; -id $value(r_object_id) -query &quot;select alias_value as auditors from d2_dictionary_value v,d2_dictionary d where v.dictionary_name = d.object_name and d.object_name = 'GMP Applicable Sites' and v.object_name in (select applicable_sites from cd_quality_gmp_approved where r_object_id = '$value(r_object_id)') and d.alias_name = 'auditors' and v.i_position = d.i_position and any alias_value is not nullstring order by alias_value ENABLE (ROW_BASED)&quot; -all_rows true -override true -truncate true" name="CDFUpdateAttrsViaQueryMethod"/>
+			<applymethod argument="-if &quot;domain ='GMP' or domain='Med Device'&quot; -id $value(r_object_id) -query &quot;select alias_value as reviewers from d2_dictionary_value v,d2_dictionary d where v.dictionary_name = d.object_name and d.object_name = 'GMP Applicable Sites' and v.object_name in (select applicable_sites from cd_quality_gmp_approved where r_object_id = '$value(r_object_id)') and d.alias_name = 'reviewers' and v.i_position = d.i_position and any alias_value is not nullstring order by alias_value ENABLE (ROW_BASED)&quot; -all_rows true -override true -truncate true" name="CDFUpdateAttrsViaQueryMethod"/>
+			<applymethod argument="-if &quot;domain ='GMP' or domain='Med Device'&quot; -id $value(r_object_id) -query &quot;select alias_value as qo_approvers from d2_dictionary_value v,d2_dictionary d where v.dictionary_name = d.object_name and d.object_name = 'GMP Applicable Sites' and v.object_name in (select applicable_sites from cd_quality_gmp_approved where r_object_id = '$value(r_object_id)') and d.alias_name = 'qo_approvers' and v.i_position = d.i_position and any alias_value is not nullstring order by alias_value ENABLE (ROW_BASED)&quot; -all_rows true -override true -truncate true" name="CDFUpdateAttrsViaQueryMethod"/>
+			<applymethod argument="-if &quot;domain ='GMP' or domain='Med Device'&quot; -id $value(r_object_id) -query &quot;select alias_value as doc_coordinators from d2_dictionary_value v,d2_dictionary d where v.dictionary_name = d.object_name and d.object_name = 'GMP Applicable Sites' and v.object_name in (select applicable_sites from cd_quality_gmp_approved where r_object_id = '$value(r_object_id)') and d.alias_name = 'doc_coordinators' and v.i_position = d.i_position and any alias_value is not nullstring order by alias_value ENABLE (ROW_BASED)&quot; -all_rows true -truncate true -apply_d2_configs true" name="CDFUpdateAttrsViaQueryMethod"/>
+			<applymethod argument="-if &quot;domain ='GMP' or domain='Med Device'&quot; -id $value(r_object_id) -query &quot;select alias_value as notification_list from d2_dictionary_value v,d2_dictionary d where v.dictionary_name = d.object_name and d.object_name = 'GMP Applicable Sites' and v.object_name in (select applicable_sites from cd_quality_gmp_approved where r_object_id = '$value(r_object_id)') and d.alias_name = 'doc_coordinators' and v.i_position = d.i_position and any alias_value is not nullstring order by alias_value ENABLE (ROW_BASED)&quot; -all_rows true -truncate true -apply_d2_configs true" fetchCurrent="false" name="CDFUpdateAttrsViaQueryMethod"/>
+			<set name="comments" value=""/>
+			<applysecurity/>
+		</actions>
+		<next_states/>
+	</state>
+	<state direct="false" entry="false" name="(Version Withdrawn to Draft)">
+		<entry_conditions>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate user is a Document Coordinator for the selected document."/>
+		</entry_conditions>
+		<actions>
+			<applyparameters/>
+			<set name="withdraw_reason" value=""/>
+			<set name="withdraw_date" value=""/>
+			<makeversion keep_symbolic_label="false" type="minor"/>
+			<set name="a_status" value="Draft"/>
+			<set name="sent_for_approval_date" value=""/>
+			<set name="approved_date" value=""/>
+			<set name="effective_date" value=""/>
+			<set name="review_date" value=""/>
+			<set name="is_placeholder" value="F"/>
+			<applysecurity/>
+			<applymethod argument="-if &quot;not exists (select * from dmi_package p, dm_workflow w where any p.r_component_id = '$value(r_object_id)' and p.r_workflow_id = w.r_object_id and w.r_runtime_state = 1)&quot; -attr  &quot;wf_is_in_workflow,wf_workflow_name&quot; -value &quot;false, &quot;" name="CDFSetAttributeMethod"/>
+			<renditionrequest/>
+			<applymethod argument="-qualifier  &quot;cd_controlled_doc where r_object_id = (select child_id from dm_relation r where r.parent_id = '$value(r_object_id)' and r.relation_name = 'tech_transfer')&quot; -state_transition &quot;(notify copy changed)&quot; -auto_naming false -auto_linking false -security false -preserve_last_modifier true" name="CDFApplyD2ConfigurationsMethod"/>
+			<sendmail d2_mailing_config="Notify of document change state"/>
+		</actions>
+		<next_states/>
+	</state>
+	<state direct="false" entry="false" name="(Checkin)">
+		<entry_conditions/>
+		<actions/>
+		<next_states/>
+	</state>
+	<state direct="false" entry="false" name="(Update Properties)">
+		<entry_conditions/>
+		<actions>
+			<applymethod argument="-if &quot;(item_type in ('Finished Good', 'Semi-finished Good') and item_code != previous_item_code)&quot; –event &quot;Update&quot;" fetchCurrent="false" name="CDFApplyAttributeInheritanceMethod"/>
+			<applymethod argument="-if &quot;artifact_name != prev_artifact_name&quot; -new false -apply_d2_configs false" fetchCurrent="false" name="CDFInitializeArtifactMethod"/>
+			<applyautonaming/>
+			<applyautolink/>
+			<applymethod argument="" fetchCurrent="false" name="CDFApplyDynamicSecurity"/>
+		</actions>
+		<next_states/>
+	</state>
+	<state direct="false" entry="false" name="(Request Renditions)">
+		<entry_conditions/>
+		<actions>
+			<renditionrequest/>
+			<applymethod argument="-forceRefresh true -waitForQueue true" fetchCurrent="false" name="C2RenditionMethod"/>
+		</actions>
+		<next_states/>
+	</state>
+	<state direct="false" entry="false" name="(Import as Effective)">
+		<entry_conditions/>
+		<actions>
+			<makeversion keep_symbolic_label="true" type="major_same_document"/>
+			<applymethod argument="-event d2_change_state_success -context_user &quot;$USER&quot; -string_1 &quot;LC Transition&quot; -string_2 &quot;$lookup($value(a_status),Domain Document Status Display,$value(r_object_type))&quot; -string_3 &quot;$lookup(Effective,Domain Document Status Display,$value(r_object_type))&quot;" fetchCurrent="false" name="CDFAuditMethod"/>
+			<set name="approved_date" value="$NOW"/>
+			<set name="a_status" value="Effective"/>
+			<applyparameters/>
+			<applysecurity/>
+			<changestateversion filter="a_status = 'Effective'" target_state="Superseded"/>
+			<applymethod argument="-qualifier  &quot;cd_controlled_doc where r_object_id = (select child_id from dm_relation r where r.parent_id = '$value(r_object_id)' and r.relation_name = 'tech_transfer')&quot; -state_transition &quot;(notify copy changed)&quot; -auto_naming false -auto_linking false -security false -preserve_last_modifier true" fetchCurrent="false" name="CDFApplyD2ConfigurationsMethod"/>
+			<applymethod argument="-query &quot;select r_object_id as notification_dist_list from cd_distribution_list where is_default=1 and (any domains='$value(domain)' or is_list_global=1) &quot; -all_rows true -ignore_duplicate_values  true -ignore_null_values true" fetchCurrent="false" name="CDFUpdateAttrsViaQueryMethod"/>
+			<setrepeating mode="reset" name="r_version_label" removeDuplicate="false" value=""/>
+			<applymethod argument="-if &quot;import_state like '%Effective%'&quot; -attr &quot;r_version_label[0],r_version_label[1]&quot; -value &quot;1.0,CURRENT&quot;" fetchCurrent="false" name="CDFSetAttributeMethod"/>
+			<set name="suppress_signature_page" value="T"/>
+			<applymethod argument="-mail_config &quot;Notify of document change state&quot; -email_attributes notification_email_list" fetchCurrent="false" name="CDFSendMailNotificationAsynchMethod"/>
+		</actions>
+		<next_states>
+			<state action="" confirmation_en="" dialog="" event="checkin" label_en="" name="(Version Effective back to Draft)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="demote"/>
+			<state action="" confirmation_en="" dialog="multi_On suspending a Cat 1-3 document - confirm" event="" label_en="Suspend document" name="Suspended" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="multi_On withdrawal of Cat 1-3 document - confirm" event="" label_en="Withdraw document" name="Withdrawn" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(Withdraw Other Versions)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="On purging interim Cat 1-3 versions - confirm" event="" label_en="Purge Interim Versions..." name="(Purge interim versions)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="Superseded" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(Update Security)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(End WF)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(notify copy changed)" signoff_intention_dictionary="1-GMP-APPROVE-REVIEW" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="multi_GMP Applicable Sites" event="" label_en="Update Applicable Sites" name="(Update Applicable Sites)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="multi_Set Planned Withdrawal date" event="" label_en="Update Planned Withdrawal date" name="(update planned withdrawal date)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(Withdrawn via LC Batch)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+		</next_states>
+	</state>
+	<state direct="false" entry="false" name="(VDoc Reclassify)">
+		<entry_conditions>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate selected document is not checked-out"/>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate user is an Author for the selected document"/>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate selected virtual document is not empty"/>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate selected virtual document can be reclassified"/>
+			<callmethod argument="-child_objects DIRECT -if_child &quot;a_status != 'Reclassified'&quot; -validate_child &quot;r_object_type in ($lookup('$value(r_object_type)','Object Type Mapping','Reclassification Object Types'));a_status in ($lookup('$value(r_object_type)','Object Type Mapping','Reclassification Document States'));r_lock_owner = ' ';r_immutable_flag = false;category = $value(category)&quot; -invalid_child_message &quot;invalid object type: @value(r_object_type);invalid lifecyle state: @value(a_status);checked out to user @value(r_lock_owner);not the latest (current) version;invalid lifecycle category (@value(category)) - not a category $value(category) document&quot; -validation_result_attr subject -run_as_server true -context_user &quot;$USER&quot;" fetchCurrent="true" message_failed_en="The virtual document ''$value(object_name)'' has documents that cannot be reclassified." name="CDFVirtualDocumentMethod"/>
+		</entry_conditions>
+		<actions>
+			<applyparameters/>
+			<set name="a_status" value="Reclassifying"/>
+			<applysecurity/>
+			<applymethod argument="-commit false -if_child &quot;a_status != 'Reclassified'&quot; -validate_child &quot;r_object_type in ($lookup('$value(r_object_type)','Object Type Mapping','Reclassification Object Types'));a_status in ($lookup('$value(r_object_type)','Object Type Mapping','Reclassification Document States'));r_lock_owner = ' ';r_immutable_flag = false;category = $value(category)&quot; -invalid_child_message &quot;invalid object type: @value(r_object_type);invalid lifecyle state: @value(a_status);checked out to user @value(r_lock_owner);not the latest (current) version;invalid lifecycle category (@value(category)) - not a category $value(category) document&quot; -record_parent_vdoc_id_in_child_attr reclassify_vdoc_object_id -transform_artifacts $value(transform_artifacts) -auto_inherit_config &quot;$value(auto_inherit_config_rule)&quot; -ignore_null_values $value(ignore_null_values) -child_state_transition &quot;Reclassified&quot; -vdoc_success_state_transition &quot;For Rec-Approval&quot; -vdoc_error_state_transition &quot;Draft&quot; -generate_report true -log_progress_in_attr log_entry -notify_on_success false -notify_on_error true -send_mail true -context_user &quot;$USER&quot;" fetchCurrent="false" name="CDFReclassifyArtifactsAsyncMethod"/>
+		</actions>
+		<next_states/>
+	</state>
+	<state direct="false" entry="false" name="Reclassified">
+		<entry_conditions/>
+		<actions>
+			<set name="a_status" value="Reclassified"/>
+			<applysecurity/>
+		</actions>
+		<next_states>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="Draft" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="demote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(Reclassified as Effective)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(Reclassified as Draft)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+		</next_states>
+	</state>
+	<state direct="false" entry="false" name="For Rec-Approval">
+		<entry_conditions/>
+		<actions>
+			<set name="a_status" value="For Rec-Approval"/>
+			<applysecurity/>
+		</actions>
+		<next_states>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="Draft" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="demote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(VDoc Reclassify)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="Rec-Approved" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(VDoc Approve Reclassification)" signoff_intention_dictionary="Reclassify Approval" signoff_intention_required="true" signoff_required="true" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(VDoc Reject Reclassification)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+		</next_states>
+	</state>
+	<state direct="false" entry="false" name="(VDoc Approve Reclassification)">
+		<entry_conditions>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate selected document is not checked-out"/>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate user is an Author for the selected document"/>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate selected virtual document is not empty"/>
+			<callmethod argument="-child_objects DIRECT -validate_child &quot;a_status = 'Reclassified';r_lock_owner = ' '&quot; -invalid_child_message &quot;invalid lifecyle state: @value(a_status);checked out to user @value(r_lock_owner)&quot; -validation_result_attr subject -run_as_server true -context_user &quot;$USER&quot;" fetchCurrent="true" message_failed_en="The virtual document ''$value(object_name)'' has documents that cannot be reclassified." name="CDFVirtualDocumentMethod"/>
+		</entry_conditions>
+		<actions>
+			<applymethod argument="-commit true -validate_child &quot;a_status = 'Reclassified'&quot; -invalid_child_message &quot;invalid lifecycle state '@value(a_status)' – state should be 'Reclassified'&quot; -auto_inherit_config &quot;$value(auto_inherit_config_rule)&quot; -ignore_null_values &quot;$value(ignore_null_values)&quot; -apply_to_all_versions &quot;$value(apply_to_all_versions)&quot; -audit_event &quot;Reclassified&quot; -child_state_transition &quot;(Reclassified as @value(previous_state))&quot; -vdoc_success_state_transition &quot;Rec-Approved&quot; -generate_report true -log_progress_in_attr log_entry -notify_on_success false -notify_on_error true -send_mail true -context_user &quot;$USER&quot;" fetchCurrent="false" name="CDFReclassifyArtifactsAsyncMethod"/>
+		</actions>
+		<next_states/>
+	</state>
+	<state direct="false" entry="false" name="(Reclassified as Draft)">
+		<entry_conditions/>
+		<actions>
+			<set name="a_status" value="Draft"/>
+			<applysecurity/>
+		</actions>
+		<next_states>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="Reclassified" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+		</next_states>
+	</state>
+	<state direct="false" entry="false" name="(Reclassified as Effective)">
+		<entry_conditions/>
+		<actions>
+			<makeversion keep_symbolic_label="false" type="major_same_document"/>
+			<set name="a_status" value="Effective"/>
+			<applysecurity/>
+			<changestateversion filter="a_status in('Effective','Suspended')" target_state="Superseded"/>
+			<renditionrequest/>
+			<applymethod argument="" fetchCurrent="false" name="C2RenditionMethod"/>
+		</actions>
+		<next_states>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="Reclassified" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+		</next_states>
+	</state>
+	<state direct="false" entry="false" name="Rec-Approved">
+		<entry_conditions/>
+		<actions>
+			<makeversion keep_symbolic_label="false" type="major"/>
+			<set name="a_status" value="Rec-Approved"/>
+			<applysecurity/>
+			<applymethod argument="-child_objects DIRECT -bind_children true -run_as_server true" fetchCurrent="false" name="CDFVirtualDocumentMethod"/>
+		</actions>
+		<next_states>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="For Rec-Approval" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+		</next_states>
+	</state>
+	<state direct="false" entry="false" name="(VDoc Reject Reclassification)">
+		<entry_conditions>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate selected document is not checked-out"/>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate user is an Author for the selected document"/>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate selected virtual document is not empty"/>
+			<callmethod argument="-child_objects DIRECT -validate_child &quot;a_status = 'Reclassified';r_lock_owner = ' '&quot; -invalid_child_message &quot;invalid lifecyle state: @value(a_status);checked out to user @value(r_lock_owner)&quot; -validation_result_attr subject -run_as_server true -context_user &quot;$USER&quot;" fetchCurrent="true" message_failed_en="The virtual document ''$value(object_name)'' has documents that cannot be reclassified." name="CDFVirtualDocumentMethod"/>
+		</entry_conditions>
+		<actions>
+			<set name="a_status" value="Draft"/>
+			<applysecurity/>
+			<applymethod argument="-child_objects DIRECT -if_child &quot;a_status = 'Reclassified'&quot; -delete true -delete_related &quot;CHILD:Reference Copy&quot; -run_as_server true -context_user &quot;$USER&quot; -apply_d2_auto_linking true" fetchCurrent="false" name="CDFVirtualDocumentMethod"/>
+		</actions>
+		<next_states>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="For Rec-Approval" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+		</next_states>
+	</state>
+	<state direct="false" entry="false" name="Reclassifying">
+		<entry_conditions/>
+		<actions/>
+		<next_states>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="For Rec-Approval" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+		</next_states>
+	</state>
+	<state direct="false" entry="false" name="(Start SharePoint WF)">
+		<entry_conditions/>
+		<actions>
+			<set name="wf_is_in_workflow" value="true"/>
+			<set name="wf_is_in_sp_workflow" value="true"/>
+			<applymethod argument="-id $value(r_object_id)  -query &quot;select object_name as wf_workflow_name from dm_workflow where r_object_id in (select r_workflow_id from dmi_package where any r_component_id='$value(r_object_id)') and r_runtime_state =1&quot; -ignore_null_values true -override true" fetchCurrent="false" name="CDFUpdateAttrsViaQueryMethod"/>
+		</actions>
+		<next_states/>
+	</state>
+	<state direct="false" entry="false" name="In Collaboration">
+		<entry_conditions/>
+		<actions>
+			<set name="a_status" value="In Collaboration"/>
+			<applysecurity/>
+		</actions>
+		<next_states>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(Demote to Draft)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(End SharePoint WF)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(Abort SP WF)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="Draft" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+		</next_states>
+	</state>
+	<state direct="false" entry="false" name="(Demote to Draft)">
+		<entry_conditions/>
+		<actions>
+			<set name="a_status" value="Draft"/>
+			<setrepeating mode="reset" name="wf_doc_coordinators" removeDuplicate="false" value=""/>
+			<setrepeating mode="reset" name="wf_reviewers" removeDuplicate="false" value=""/>
+			<setrepeating mode="reset" name="wf_approvers" removeDuplicate="false" value=""/>
+			<applysecurity/>
+		</actions>
+		<next_states/>
+	</state>
+	<state direct="false" entry="false" name="(End SharePoint WF)">
+		<entry_conditions/>
+		<actions>
+			<applymethod argument="-target &quot;select r_object_id from cd_controlled_doc(all) where i_chronicle_id='$value(i_chronicle_id)' and wf_is_in_workflow=true&quot; -attr &quot;wf_is_in_workflow,wf_is_in_sp_workflow,wf_workflow_name&quot; -value &quot;false,false, &quot;" fetchCurrent="false" name="CDFSetAttributeMethod"/>
+			<changestateversion filter="a_status='In Collaboration'" target_state="Draft"/>
+		</actions>
+		<next_states/>
+	</state>
+	<state direct="false" entry="false" name="(Abort SP WF)">
+		<entry_conditions/>
+		<actions>
+			<set name="a_status" value="Draft"/>
+			<setrepeating mode="reset" name="wf_doc_coordinators" removeDuplicate="false" value=""/>
+			<setrepeating mode="reset" name="wf_reviewers" removeDuplicate="false" value=""/>
+			<setrepeating mode="reset" name="wf_approvers" removeDuplicate="false" value=""/>
+			<applymethod argument="-target &quot;select r_object_id from cd_controlled_doc(all) where i_chronicle_id='$value(i_chronicle_id)' and wf_is_in_workflow=true&quot; -attr &quot;wf_is_in_workflow,wf_is_in_sp_workflow,wf_workflow_name&quot; -value &quot;false,false, &quot;" fetchCurrent="false" name="CDFSetAttributeMethod"/>
+			<applysecurity/>
+		</actions>
+		<next_states/>
+	</state>
+	<state direct="false" entry="false" name="(update email notification list)">
+		<entry_conditions>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate user is an Author or Document Coordinator for the selected document"/>
+		</entry_conditions>
+		<actions/>
+		<next_states/>
+	</state>
+	<state direct="false" entry="false" name="(RestrictedEdit)">
+		<entry_conditions>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate user is a Document Coordinator for the selected document or is an Admin"/>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate selected document is not checked-out"/>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate selected document is not involved in an active workflow including periodic and withdrawal WF"/>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate selected document is the CURRENT version"/>
+		</entry_conditions>
+		<actions>
+			<applyautolink/>
+			<applyautonaming/>
+			<applymethod argument="" fetchCurrent="false" name="CDFApplyDynamicSecurity"/>
+		</actions>
+		<next_states/>
+	</state>
+</d2lifecycle>

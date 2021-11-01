@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_documentset_switch object_name="d2_checkin_config">
+	<d2_documentset name="SharePoint Collaboration Documents" config="SharePoint Collaboration Checkin"/>
+	<d2_documentset name="Change Request¬Change Requests" config="Automatically check-in documents as new minor versions and request PDF renditions"/>
+	<d2_documentset name="Effective-Approved Documents¬Effective Cat 1 GMP Forms Documents" config="Automatically check-in documents as new minor versions and request PDF renditions"/>
+	<d2_documentset name="Effective-Approved Documents¬Effective Cat 1 GMP Non Form Documents" config="Automatically check-in documents as new minor versions and request PDF renditions"/>
+	<d2_documentset name="Effective-Approved Documents¬Effective Cat 2 GMP Documents" config="Automatically check-in documents as new minor versions and request PDF renditions"/>
+	<d2_documentset name="Effective-Approved Documents¬Effective Cat 3 Documents" config="Automatically check-in documents as new minor versions and request PDF renditions"/>
+	<d2_documentset name="Effective-Approved Documents¬Effective Cat 1-3 Documents" config="Require change note to be recorded for the next minor version"/>
+	<d2_documentset name="Controlled Documents¬Cat 1 Controlled Documents" config="Automatically check-in documents as new minor versions and request PDF renditions"/>
+	<d2_documentset name="Controlled Documents¬Cat 2 Controlled Documents" config="Automatically check-in documents as new minor versions and request PDF renditions"/>
+	<d2_documentset name="Controlled Documents¬Cat 3 Controlled Documents" config="Automatically check-in documents as new minor versions and request PDF renditions"/>
+	<d2_documentset name="Security Group Generator" config="Group Generator Checkin"/>
+	<d2_documentset name="Content Templates¬Quality in Manufacturing Content Templates" config="Automatically check-in documents as new minor versions and request PDF renditions"/>
+	<d2_documentset name="Content Templates¬Med Device Content Templates" config="Automatically check-in documents as new minor versions and request PDF renditions"/>
+	<switch_default config=""/>
+</d2_documentset_switch>

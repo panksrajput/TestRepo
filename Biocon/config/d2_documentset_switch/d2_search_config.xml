@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_documentset_switch object_name="d2_search_config">
+	<d2_documentset name="Life Sciences Managers¬GMP Manager" config="Life Sciences Quality and Manufacturing Search Configuration"/>
+	<d2_documentset name="Life Sciences Coordinators¬GMP Coordinators" config="Life Sciences Quality and Manufacturing Search Configuration"/>
+	<d2_documentset name="Life Sciences Authors¬GMP Authors" config="Life Sciences Quality and Manufacturing Search Configuration"/>
+	<d2_documentset name="Life Sciences Reviewers and Approvers¬GMP Reviewers" config="Life Sciences Quality and Manufacturing Search Configuration"/>
+	<d2_documentset name="Life Sciences Reviewers and Approvers¬GMP Approvers" config="Life Sciences Quality and Manufacturing Search Configuration"/>
+	<d2_documentset name="Life Sciences Reviewers and Approvers¬GMP QO Approvers" config="Life Sciences Quality and Manufacturing Search Configuration"/>
+	<d2_documentset name="Life Sciences Readers and Recipients¬GMP Readers" config="Life Sciences Quality and Manufacturing Search Configuration"/>
+	<switch_defaults/>
+</d2_documentset_switch>

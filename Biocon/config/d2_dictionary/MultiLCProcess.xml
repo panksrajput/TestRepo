@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_dictionary object_name="MultiLCProcess" title="" lock_config="false" parents_config="" application_names="OpenText Life Sciences eTMF Solution¬OpenText Life Sciences Medical Device for Quality and Manufacturing Solution¬OpenText Life Sciences Medical Device for Research and Development Solution¬OpenText Life Sciences Medical Device Solution¬OpenText Life Sciences Quality and Manufacturing Solution¬OpenText Life Sciences Research and Development Solution¬OpenText Life Sciences Submission Storage and Viewing" security_group="admingroup" search_group="admingroup" version="2" is_versioned="false" manual_order="false" create_view_option="true" is_dql="false" is_dql_cache="false" dql="" label_en="MultiLCProcess">
+	<d2_dictionary_value object_name="approvers" is_enabled="true" order_no="0">
+		<alias name="multi_Update Security Roles" value="1"/>
+		<alias name="Change Security Model" value=""/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="auditors" is_enabled="true" order_no="0">
+		<alias name="multi_Update Security Roles" value="1"/>
+		<alias name="Change Security Model" value=""/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="authors" is_enabled="true" order_no="0">
+		<alias name="multi_Update Security Roles" value="1"/>
+		<alias name="Change Security Model" value=""/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="comments" is_enabled="true" order_no="0">
+		<alias name="multi_Update Security Roles" value=""/>
+		<alias name="Change Security Model" value="1"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="doc_coordinators" is_enabled="true" order_no="0">
+		<alias name="multi_Update Security Roles" value="1"/>
+		<alias name="Change Security Model" value=""/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="readers" is_enabled="true" order_no="0">
+		<alias name="multi_Update Security Roles" value="1"/>
+		<alias name="Change Security Model" value=""/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="reviewers" is_enabled="true" order_no="0">
+		<alias name="multi_Update Security Roles" value="1"/>
+		<alias name="Change Security Model" value=""/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="security_model" is_enabled="true" order_no="0">
+		<alias name="multi_Update Security Roles" value=""/>
+		<alias name="Change Security Model" value="1"/>
+	</d2_dictionary_value>
+</d2_dictionary>

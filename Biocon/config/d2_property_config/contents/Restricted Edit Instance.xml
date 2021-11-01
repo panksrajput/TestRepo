@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dialog id="PropertiesDialog" auto_smartview_edit_mode="false" buttons_right="false" focus="" height="800" initial_invalid="false" resizable="false" signoff_creation="false" signoff_edit="false" signoff_import="false" signoff_intention_dictionary="" signoff_intention_required="false" width="1000">
+	<content>
+		<comment html_content="true" label_en="&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;font color=&quot;#646464&quot;&gt;An Instance is a rule to determine which attributes are Restricted Editable. Multiple instances can apply to a document.&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"/>
+		<text id="subject" condition_required_create="true" condition_required_edit="true" condition_required_import="true" label_en="Identifying Label"/>
+		<fieldset label_en="Restricted Edit Instance" no_border="false">
+			<label id="object_name" condition_visible_create="false" label_en="Object Name"/>
+			<combo id="rse_model_name" assistance_dql="select rse_model_name from rse_model order by rse_model_name" assistance_type="dql" asynchronous="true" autoselect_single="true" condition_required_create="true" condition_required_edit="true" condition_required_import="true" label_en="Model Name" query_delay="1" reinit_attributes="rse_pattern"/>
+			<combo id="rse_pattern" assistance_dql="select rse_patterns from rse_model where rse_model_name = '$value(rse_model_name)' order by rse_patterns" assistance_type="dql" condition_required_create="true" condition_required_edit="true" condition_required_import="true" label_en="Pattern for this instance"/>
+			<comment html_content="true" label_en="&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;font color=&quot;#646464&quot;&gt;Specifying an “Applicable Doctype” will limit the instance to that doctype (subtypes not included). Leaving blank will utilize the doctype set in the model and its subtypes.&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"/>
+			<list id="rse_doctypes" assistance_dql="select r_type_name from dmi_type_info where any r_supertype in (select rse_doctype from rse_model where rse_model_name = '$value(rse_model_name)')  order by r_type_name" assistance_type="dql" label_en="Applicable Doctype"/>
+			<label id="r_object_id" condition_visible_create="false" condition_visible_edit="false" condition_visible_import="false"/>
+		</fieldset>
+		<tabs>
+			<tab label_en="Configuration">
+				<comment html_content="true" label_en="&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;font color=&quot;#646464&quot;&gt;If an attribute is used in “Pattern values for this instance”, specify the attribute conditions below. Values must be delimited with a pipe, e.g. |value|value| (limit 1000 characters).&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"/>
+				<grid grid_height="150" label_en="Patterns and Values">
+					<combo id="rse_pattern_attributes" assistance_dql="select rse_pattern_attributes from rse_model where rse_model_name = '$value(rse_model_name)'" assistance_type="dql" cell_width="250" label_en="Attributes in Pattern"/>
+					<text id="rse_pattern_values" cell_width="500" label_en="Pattern values for this instance"/>
+				</grid>
+				<separator/>
+				<comment html_content="true" label_en="&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;font color=&quot;#646464&quot;&gt;If the same attribute is used in multiple instances, the least restrictive condition is used. Values must be delimited with a pipe, e.g. |value|value| for “Valid States”.&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;​"/>
+				<grid grid_height="250" label_en="Display Settings">
+					<combo id="rse_attribute_names" assistance_dql="select distinct attr_name  from dm_type where name in (select rse_doctypes from rse_instance where r_object_id = '$value(r_object_id)')  union select distinct attr_name  from dm_type where name = (select rse_doctype from rse_model where rse_model_name ='$value(rse_model_name)') order by 1" assistance_type="dql" cell_width="250" label_en="Attributes"/>
+					<text id="rse_attribute_states" cell_width="300" label_en="Valid States"/>
+					<combo id="rse_attribute_group_gen" assistance_dql="SELECT generator_name FROM lss_sec_group_gen WHERE folder('/Security/Group Generator') order by generator_name " assistance_type="dql" cell_width="250" label_en="Group Generator For Role Limitation"/>
+					<text id="rse_attribute_tag_values" label_en="Resolved Tag Values"/>
+				</grid>
+			</tab>
+			<tab label_en="System Information">
+				<grid>
+					<text id="rse_hashes" condition_enabled_create="false" condition_enabled_edit="false" condition_enabled_import="false"/>
+					<text id="rse_resolved_attributes" condition_enabled_create="false" condition_enabled_edit="false" condition_enabled_import="false"/>
+				</grid>
+			</tab>
+		</tabs>
+	</content>
+	<buttons>
+		<button id="buttonOk" action="validDialog()"/>
+		<button id="buttonCancel" action="cancelDialog()"/>
+	</buttons>
+</dialog>

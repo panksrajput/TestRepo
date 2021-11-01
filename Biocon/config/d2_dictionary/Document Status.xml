@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_dictionary object_name="Document Status" title="A list of states documents can transition to while moving through lifecycles and workflows" lock_config="false" parents_config="" application_names="OpenText Life Sciences Submission Storage and Viewing¬OpenText Life Sciences Research and Development Solution¬OpenText Life Sciences eTMF Solution¬OpenText Life Sciences Quality and Manufacturing Solution" security_group="admingroup" search_group="" version="2" is_versioned="false" manual_order="false" create_view_option="false" is_dql="false" is_dql_cache="false" dql="" label_en="Application Status">
+	<d2_dictionary_value object_name="Draft" is_enabled="true" order_no="0">
+		<locale name="en" value="Draft"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Effective" is_enabled="true" order_no="0">
+		<locale name="en" value="Effective"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Expired" is_enabled="true" order_no="0">
+		<locale name="en" value="Expired"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="For Approval" is_enabled="true" order_no="0">
+		<locale name="en" value="For Approval"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="For Review" is_enabled="true" order_no="0">
+		<locale name="en" value="For Review"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Historic" is_enabled="true" order_no="0">
+		<locale name="en" value="Historic"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Issued" is_enabled="true" order_no="0">
+		<locale name="en" value="Issued"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Not Issued" is_enabled="true" order_no="0">
+		<locale name="en" value="Not Issued"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Release Pending" is_enabled="true" order_no="0">
+		<locale name="en" value="Release Pending"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Reviewed" is_enabled="true" order_no="0">
+		<locale name="en" value="Reviewed"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Superseded" is_enabled="true" order_no="0">
+		<locale name="en" value="Superseded"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Suspended" is_enabled="true" order_no="0">
+		<locale name="en" value="Suspended"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Withdrawn" is_enabled="true" order_no="0">
+		<locale name="en" value="Withdrawn"/>
+	</d2_dictionary_value>
+</d2_dictionary>

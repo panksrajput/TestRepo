@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dialog id="PropertiesDialog" buttons_right="false" focus="" height="180" resizable="true" signoff_creation="false" signoff_edit="false" signoff_import="false" signoff_intention_dictionary="" signoff_intention_required="false" width="400">
+	<content>
+		<combo id="domain" assistance_dictionary="Document Domains" assistance_dictionary_alias="auto" assistance_type="dictionary" asynchronous="true" condition_required_create="true" condition_required_edit="true" condition_required_import="true" label_en="Domain"/>
+		<text id="keywords" label_en="Keywords"/>
+	</content>
+	<buttons>
+		<button id="buttonOk" action="validDialog()"/>
+		<button id="buttonCancel" action="cancelDialog()"/>
+	</buttons>
+</dialog>

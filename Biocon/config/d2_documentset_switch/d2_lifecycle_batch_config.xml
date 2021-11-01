@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_documentset_switch object_name="d2_lifecycle_batch_config">
+	<d2_documentset name="Change Request¬Close Change Request Candidate" config="Try to Close CR"/>
+	<d2_documentset name="Withdraw Documents¬Withdraw Cat 1 GMP Documents" config="Withdraw Category 1 Documents"/>
+	<d2_documentset name="Withdraw Documents¬Withdraw Cat 2 GMP Documents" config="Withdraw Category 2 Documents"/>
+	<d2_documentset name="Withdraw Documents¬Withdraw Cat 3 Med Device Documents" config="Withdraw Category 3 MedDevice Documents"/>
+	<d2_documentset name="Withdraw Documents¬Withdraw Cat 3 GMP Documents" config="Withdraw Category 3 Documents"/>
+	<d2_documentset name="Notify Users¬Notify Document Coordinators of deferred documents" config="Notify Document Coordinators: Notify to make document Effective"/>
+	<d2_documentset name="Notify Users¬Notify of Category 1 Periodic Review" config="Review Category 1 Documents"/>
+	<d2_documentset name="Notify Users¬Notify of Expiring Documents" config="Notify of Expiring Category 1 document"/>
+	<d2_documentset name="Notify Users¬Notify Ingested documents¬Notify of Ingested Category 1 Documents" config="Notify of Ingested Category 1 Documents"/>
+	<d2_documentset name="Notify Users¬Notify Ingested documents¬Notify of Ingested Category 2 Documents" config="Notify of Ingested Category 2 Documents"/>
+	<d2_documentset name="Notify Users¬Notify Ingested documents¬Notify of Ingested Category 3  Documents" config="Notify of Ingested Category 3 Documents"/>
+	<d2_documentset name="Expire Category 1 Document" config="Expire Category 1 Documents"/>
+	<d2_documentset name="Change Effective Document Status" config="Notify Document Coordinators: Notify of Expiring Documents"/>
+	<d2_documentset name="Send Document to Periodic Review workflow" config="Start Periodic Review Workflow"/>
+	<d2_documentset name="Expire Category 2 Document" config="Expire Category 2 Documents"/>
+	<d2_documentset name="Suspend Category 2 Document" config="Suspend Category 2 Documents"/>
+	<switch_default config=""/>
+</d2_documentset_switch>

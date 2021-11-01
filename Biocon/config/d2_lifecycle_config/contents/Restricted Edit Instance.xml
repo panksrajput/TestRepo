@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2lifecycle execute_actions_on_start="true" state_attribute="">
+	<state direct="false" entry="true" name="(init)">
+		<entry_conditions/>
+		<actions>
+			<set name="a_status" value="Active"/>
+			<applymethod argument="-attr_target rse_resolved_attributes -attr_hash rse_hashes -attr_value rse_pattern_values -attr_list rse_pattern_attributes -attr_expr rse_pattern -context_user &quot;$USER&quot;" fetchCurrent="false" name="CDFGenerateRSEHashes"/>
+		</actions>
+		<next_states/>
+	</state>
+	<state direct="false" entry="false" name="Active">
+		<entry_conditions/>
+		<actions/>
+		<next_states>
+			<state action="" confirmation_en="" dialog="" event="" label_en="Recalculate" name="(recalchash)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+		</next_states>
+	</state>
+	<state direct="false" entry="false" name="Missing Values">
+		<entry_conditions/>
+		<actions/>
+		<next_states>
+			<state action="" confirmation_en="" dialog="" event="" label_en="Re-evaluate" name="(init)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+		</next_states>
+	</state>
+	<state direct="false" entry="false" name="(recalchash)">
+		<entry_conditions/>
+		<actions>
+			<applymethod argument="-attr_target rse_resolved_attributes -attr_hash rse_hashes -attr_value rse_pattern_values -attr_list rse_pattern_attributes -attr_expr rse_pattern -context_user &quot;$USER&quot;" fetchCurrent="false" name="CDFGenerateRSEHashes"/>
+		</actions>
+		<next_states/>
+	</state>
+</d2lifecycle>

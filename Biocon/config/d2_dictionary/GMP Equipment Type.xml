@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_dictionary object_name="GMP Equipment Type" title="Dictionary for GMP Equipment Type" lock_config="false" parents_config="" application_names="OpenText Life Sciences Quality and Manufacturing Solution¬OpenText Life Sciences Medical Device Solution¬OpenText Life Sciences Medical Device for Quality and Manufacturing Solution¬Custom Configurations" security_group="admingroup" search_group="" version="2" is_versioned="false" manual_order="false" create_view_option="false" is_dql="false" is_dql_cache="false" dql="" label_en="GMP Equipment Type">
+	<d2_dictionary_value object_name="Ampoule and Vial Filling Machine" is_enabled="true" order_no="0">
+		<locale name="en" value="Ampoule and Vial Filling Machine"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Automatic 300 Holes Capsule Loading Machine" is_enabled="true" order_no="0">
+		<locale name="en" value="Automatic 300 Holes Capsule Loading Machine"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Automatic Capsule Printing Machine" is_enabled="true" order_no="0">
+		<locale name="en" value="Automatic Capsule Printing Machine"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Automatic Tablet Counting Machine" is_enabled="true" order_no="0">
+		<locale name="en" value="Automatic Tablet Counting Machine"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Automatic Tablet Printing Machine" is_enabled="true" order_no="0">
+		<locale name="en" value="Automatic Tablet Printing Machine"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Blister Packaging Machine" is_enabled="true" order_no="0">
+		<locale name="en" value="Blister Packaging Machine"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Capsule Counting and Packaging Machine" is_enabled="true" order_no="0">
+		<locale name="en" value="Capsule Counting and Packaging Machine"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Capsule Filling Machine" is_enabled="true" order_no="0">
+		<locale name="en" value="Capsule Filling Machine"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Capsule Inspection Polishing Machine" is_enabled="true" order_no="0">
+		<locale name="en" value="Capsule Inspection Polishing Machine"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Carton Sealing Machine" is_enabled="true" order_no="0">
+		<locale name="en" value="Carton Sealing Machine"/>
+	</d2_dictionary_value>
+</d2_dictionary>

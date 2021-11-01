@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_queryform_config new_format="true">
+	<object_name value="Find My Documents Query Form"/>
+	<title value="Allows a user to find documents that they have created or where they are an author"/>
+	<subject value=""/>
+	<authors/>
+	<keywords/>
+	<a_status value=""/>
+	<a_content_type value=""/>
+	<log_entry value=""/>
+	<language_code value=""/>
+	<application_names>
+		<repeating value="OpenText Life Sciences Medical Device Solution"/>
+		<repeating value="OpenText Life Sciences Medical Device for Quality and Manufacturing Solution"/>
+		<repeating value="OpenText Life Sciences Research and Development Solution"/>
+		<repeating value="OpenText Life Sciences eTMF Solution"/>
+		<repeating value="OpenText Life Sciences Quality and Manufacturing Solution"/>
+	</application_names>
+	<lock_config value="F"/>
+	<parents_config/>
+	<default_value value=""/>
+	<description value=""/>
+	<property_page value="Find My Documents Properties"/>
+	<locale>
+		<repeating value="en"/>
+	</locale>
+	<label>
+		<repeating value="Find My Documents"/>
+	</label>
+	<ignore_empty_attr value="F"/>
+	<dql_value value="SELECT object_name, title, a_status, r_modify_date, r_lock_owner, r_modifier FROM cd_controlled_doc SEARCH DOCUMENT CONTAINS '$value(keywords)' WHERE r_creator_name = USER ENABLE(RETURN_TOP 350, TRY_FTDQL_FIRST)"/>
+	<path value="/"/>
+	<add_mandatory_hidden value="T"/>
+	<add_user_pref value="T"/>
+	<facet_indent/>
+	<facet_position/>
+	<facet_sort/>
+	<is_facet/>
+	<is_xplore value="F"/>
+	<dictionary_name/>
+	<dql_qualification/>
+	<order_by value=""/>
+	<order_by_direction value="Asc"/>
+	<folder_path/>
+	<folder_descend value="F"/>
+	<col_name/>
+	<attr/>
+	<attr_value/>
+	<all_versions value="F"/>
+	<bracket_close/>
+	<bracket_open/>
+	<case_sensitive value="F"/>
+	<facets/>
+	<fulltext_operator value=""/>
+	<fulltext_words value=""/>
+	<logical/>
+	<operator/>
+	<type_name/>
+	<attr_name/>
+	<alias_locale_name/>
+</d2_queryform_config>

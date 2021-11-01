@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_dictionary object_name="Route of Administration List" title="List of paths by which a drug can come into contact with the body." lock_config="false" parents_config="" application_names="OpenText Life Sciences Submission Storage and Viewing¬OpenText Life Sciences Research and Development Solution¬OpenText Life Sciences eTMF Solution¬OpenText Life Sciences Quality and Manufacturing Solution¬OpenText Life Sciences Medical Device for Quality and Manufacturing Solution¬OpenText Life Sciences Medical Device Solution¬Custom Configurations" security_group="cd_regulatory_doc_coordinators" search_group="cd_regulatory_doc_coordinators" version="2" is_versioned="false" manual_order="false" create_view_option="false" is_dql="false" is_dql_cache="false" dql="" label_en="Route of Administration">
+	<d2_dictionary_value object_name="AURICULAR (OTIC)" is_enabled="true" order_no="0">
+		<alias name="alias" value="C38192"/>
+		<locale name="en" value="Auricular (Otic)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="BUCCAL" is_enabled="true" order_no="0">
+		<alias name="alias" value="C38193"/>
+		<locale name="en" value="Buccal"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="CONJUNCTIVAL" is_enabled="true" order_no="0">
+		<alias name="alias" value="C38194"/>
+		<locale name="en" value="Conjunctival"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="CUTANEOUS" is_enabled="true" order_no="0">
+		<alias name="alias" value="C38675"/>
+		<locale name="en" value="Cutaneous"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="DENTAL" is_enabled="true" order_no="0">
+		<alias name="alias" value="C38197"/>
+		<locale name="en" value="Dental"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="ELECTRO-OSMOSIS" is_enabled="true" order_no="0">
+		<alias name="alias" value="C38633"/>
+		<locale name="en" value="Electro-Osmosis"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="ENDOCERVICAL" is_enabled="true" order_no="0">
+		<alias name="alias" value="C38205"/>
+		<locale name="en" value="Endocervical"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="ENDOSINUSIAL" is_enabled="true" order_no="0">
+		<alias name="alias" value="C38206"/>
+		<locale name="en" value="Endosinusial"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="ENDOTRACHEAL" is_enabled="true" order_no="0">
+		<alias name="alias" value="C38208"/>
+		<locale name="en" value="Endotracheal"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="ENTERAL" is_enabled="true" order_no="0">
+		<alias name="alias" value="C38209"/>
+		<locale name="en" value="Enteral"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="EPIDURAL" is_enabled="true" order_no="0">
+		<alias name="alias" value="C38210"/>
+		<locale name="en" value="Epidural"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="EXTRA-AMNIOTIC" is_enabled="true" order_no="0">
+		<alias name="alias" value="C38211"/>
+		<locale name="en" value="Extra-Amniotic"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="EXTRACORPOREAL" is_enabled="true" order_no="0">
+		<alias name="alias" value="C38212"/>
+		<locale name="en" value="Extracorporeal"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="HEMODIALYSIS" is_enabled="true" order_no="0">
+		<alias name="alias" value="C38200"/>
+		<locale name="en" value="Hemodialysis"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="INFILTRATION" is_enabled="true" order_no="0">
+		<alias name="alias" value="C38215"/>
+		<locale name="en" value="Infiltration"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="INTERSTITIAL" is_enabled="true" order_no="0">
+		<alias name="alias" value="C38219"/>
+		<locale name="en" value="Interstitial"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="INTRA-ABDOMINAL" is_enabled="true" order_no="0">
+		<alias name="alias" value="C38220"/>
+		<locale name="en" value="Intra-Abdominal"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="INTRA-AMNIOTIC" is_enabled="true" order_no="0">
+		<alias name="alias" value="C38221"/>
+		<locale name="en" value="Intra-Amniotic"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="INTRA-ARTERIAL" is_enabled="true" order_no="0">
+		<alias name="alias" value="C38222"/>
+		<locale name="en" value="Intra-Arterial"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="INTRA-ARTICULAR" is_enabled="true" order_no="0">
+		<alias name="alias" value="C38223"/>
+		<locale name="en" value="Intra-Articular"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="INTRABILIARY" is_enabled="true" order_no="0">
+		<alias name="alias" value="C38224"/>
+		<locale name="en" value="Intrabiliary"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="INTRABRONCHIAL" is_enabled="true" order_no="0">
+		<alias name="alias" value="C38225"/>
+		<locale name="en" value="Intrabronchial"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="INTRABURSAL" is_enabled="true" order_no="0">
+		<alias name="alias" value="C38226"/>
+		<locale name="en" value="Intrabursal"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="INTRACARDIAC" is_enabled="true" order_no="0">
+		<alias name="alias" value="C38227"/>
+		<locale name="en" value="Intracardiac"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="INTRACARTILAGINOUS" is_enabled="true" order_no="0">
+		<alias name="alias" value="C38228"/>
+		<locale name="en" value="Intracartilaginous"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="INTRACAUDAL" is_enabled="true" order_no="0">
+		<alias name="alias" value="C38229"/>
+		<locale name="en" value="Intracaudal"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="INTRACAVERNOUS" is_enabled="true" order_no="0">
+		<alias name="alias" value="C38230"/>
+		<locale name="en" value="Intracavernous"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="INTRACAVITARY" is_enabled="true" order_no="0">
+		<alias name="alias" value="C38231"/>
+		<locale name="en" value="Intracavitary"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="INTRACEREBRAL" is_enabled="true" order_no="0">
+		<alias name="alias" value="C38232"/>
+		<locale name="en" value="Intracerebral"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="INTRACISTERNAL" is_enabled="true" order_no="0">
+		<alias name="alias" value="C38233"/>
+		<locale name="en" value="Intracisternal"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="INTRACORNEAL" is_enabled="true" order_no="0">
+		<alias name="alias" value="C38234"/>
+		<locale name="en" value="Intracorneal"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="INTRACORONAL (DENTAL)" is_enabled="true" order_no="0">
+		<alias name="alias" value="C38217"/>
+		<locale name="en" value="Intracoronal (Dental)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="INTRACORONARY" is_enabled="true" order_no="0">
+		<alias name="alias" value="C38218"/>
+		<locale name="en" value="Intracoronary"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="INTRACORPORUS CAVERNOSUM" is_enabled="true" order_no="0">
+		<alias name="alias" value="C38235"/>
+		<locale name="en" value="Intracorporus Cavernosum"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="INTRADERMAL" is_enabled="true" order_no="0">
+		<alias name="alias" value="C38238"/>
+		<locale name="en" value="Intradermal"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="INTRADISCAL" is_enabled="true" order_no="0">
+		<alias name="alias" value="C38239"/>
+		<locale name="en" value="Intradiscal"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="INTRADUCTAL" is_enabled="true" order_no="0">
+		<alias name="alias" value="C38240"/>
+		<locale name="en" value="Intraductal"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="INTRADUODENAL" is_enabled="true" order_no="0">
+		<alias name="alias" value="C38241"/>
+		<locale name="en" value="Intraduodenal"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="INTRADURAL" is_enabled="true" order_no="0">
+		<alias name="alias" value="C38242"/>
+		<locale name="en" value="Intradural"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="INTRAEPICARDIAL" is_enabled="true" order_no="0">
+		<alias name="alias" value="C79144"/>
+		<locale name="en" value="Intraepicardial"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="INTRAEPIDERMAL" is_enabled="true" order_no="0">
+		<alias name="alias" value="C38243"/>
+		<locale name="en" value="Intraepidermal"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="INTRAESOPHAGEAL" is_enabled="true" order_no="0">
+		<alias name="alias" value="C38245"/>
+		<locale name="en" value="Intraesophageal"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="INTRAGASTRIC" is_enabled="true" order_no="0">
+		<alias name="alias" value="C38246"/>
+		<locale name="en" value="Intragastric"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="INTRAGINGIVAL" is_enabled="true" order_no="0">
+		<alias name="alias" value="C38247"/>
+		<locale name="en" value="Intragingival"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="INTRAHEPATIC" is_enabled="true" order_no="0">
+		<alias name="alias" value="C38248"/>
+		<locale name="en" value="Intrahepatic"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="INTRAILEAL" is_enabled="true" order_no="0">
+		<alias name="alias" value="C38249"/>
+		<locale name="en" value="Intraileal"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="INTRALESIONAL" is_enabled="true" order_no="0">
+		<alias name="alias" value="C38250"/>
+		<locale name="en" value="Intralesional"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="INTRALINGUAL" is_enabled="true" order_no="0">
+		<alias name="alias" value="C79138"/>
+		<locale name="en" value="Intralingual"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="INTRALUMINAL" is_enabled="true" order_no="0">
+		<alias name="alias" value="C38251"/>
+		<locale name="en" value="Intraluminal"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="INTRALYMPHATIC" is_enabled="true" order_no="0">
+		<alias name="alias" value="C38252"/>
+		<locale name="en" value="Intralymphatic"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="INTRAMAMMARY" is_enabled="true" order_no="0">
+		<alias name="alias" value="C79137"/>
+		<locale name="en" value="Intramammary"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="INTRAMEDULLARY" is_enabled="true" order_no="0">
+		<alias name="alias" value="C38253"/>
+		<locale name="en" value="Intramedullary"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="INTRAMENINGEAL" is_enabled="true" order_no="0">
+		<alias name="alias" value="C38254"/>
+		<locale name="en" value="Intrameningeal"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="INTRAMUSCULAR" is_enabled="true" order_no="0">
+		<alias name="alias" value="C28161"/>
+		<locale name="en" value="Intramuscular"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="INTRANODAL" is_enabled="true" order_no="0">
+		<alias name="alias" value="C79141"/>
+		<locale name="en" value="Intranodal"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="INTRAOCULAR" is_enabled="true" order_no="0">
+		<alias name="alias" value="C38255"/>
+		<locale name="en" value="Intraocular"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="INTRAOMENTUM" is_enabled="true" order_no="0">
+		<alias name="alias" value="C79142"/>
+		<locale name="en" value="Intraomentum"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="INTRAOVARIAN" is_enabled="true" order_no="0">
+		<alias name="alias" value="C38256"/>
+		<locale name="en" value="Intraovarian"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="INTRAPERICARDIAL" is_enabled="true" order_no="0">
+		<alias name="alias" value="C38257"/>
+		<locale name="en" value="Intrapericardial"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="INTRAPERITONEAL" is_enabled="true" order_no="0">
+		<alias name="alias" value="C38258"/>
+		<locale name="en" value="Intraperitoneal"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="INTRAPLEURAL" is_enabled="true" order_no="0">
+		<alias name="alias" value="C38259"/>
+		<locale name="en" value="Intrapleural"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="INTRAPROSTATIC" is_enabled="true" order_no="0">
+		<alias name="alias" value="C38260"/>
+		<locale name="en" value="Intraprostatic"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="INTRAPULMONARY" is_enabled="true" order_no="0">
+		<alias name="alias" value="C38261"/>
+		<locale name="en" value="Intrapulmonary"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="INTRARUMINAL" is_enabled="true" order_no="0">
+		<alias name="alias" value="C79139"/>
+		<locale name="en" value="Intraruminal"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="INTRASINAL" is_enabled="true" order_no="0">
+		<alias name="alias" value="C38262"/>
+		<locale name="en" value="Intrasinal"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="INTRASPINAL" is_enabled="true" order_no="0">
+		<alias name="alias" value="C38263"/>
+		<locale name="en" value="Intraspinal"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="INTRASYNOVIAL" is_enabled="true" order_no="0">
+		<alias name="alias" value="C38264"/>
+		<locale name="en" value="Intrasynovial"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="INTRATENDINOUS" is_enabled="true" order_no="0">
+		<alias name="alias" value="C38265"/>
+		<locale name="en" value="Intratendinous"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="INTRATESTICULAR" is_enabled="true" order_no="0">
+		<alias name="alias" value="C38266"/>
+		<locale name="en" value="Intratesticular"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="INTRATHECAL" is_enabled="true" order_no="0">
+		<alias name="alias" value="C38267"/>
+		<locale name="en" value="Intrathecal"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="INTRATHORACIC" is_enabled="true" order_no="0">
+		<alias name="alias" value="C38207"/>
+		<locale name="en" value="Intrathoracic"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="INTRATUBULAR" is_enabled="true" order_no="0">
+		<alias name="alias" value="C38268"/>
+		<locale name="en" value="Intratubular"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="INTRATUMOR" is_enabled="true" order_no="0">
+		<alias name="alias" value="C38269"/>
+		<locale name="en" value="Intratumor"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="INTRATYMPANIC" is_enabled="true" order_no="0">
+		<alias name="alias" value="C38270"/>
+		<locale name="en" value="Intratympanic"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="INTRAUTERINE" is_enabled="true" order_no="0">
+		<alias name="alias" value="C38272"/>
+		<locale name="en" value="Intrauterine"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="INTRAVASCULAR" is_enabled="true" order_no="0">
+		<alias name="alias" value="C38273"/>
+		<locale name="en" value="Intravascular"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="INTRAVENOUS" is_enabled="true" order_no="0">
+		<alias name="alias" value="C38276"/>
+		<locale name="en" value="Intravenous"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="INTRAVENTRICULAR" is_enabled="true" order_no="0">
+		<alias name="alias" value="C38277"/>
+		<locale name="en" value="Intraventricular"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="INTRAVESICAL" is_enabled="true" order_no="0">
+		<alias name="alias" value="C38278"/>
+		<locale name="en" value="Intravesical"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="INTRAVITREAL" is_enabled="true" order_no="0">
+		<alias name="alias" value="C38280"/>
+		<locale name="en" value="Intravitreal"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="IONTOPHORESIS" is_enabled="true" order_no="0">
+		<alias name="alias" value="C38203"/>
+		<locale name="en" value="Iontophoresis"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="IRRIGATION" is_enabled="true" order_no="0">
+		<alias name="alias" value="C38281"/>
+		<locale name="en" value="Irrigation"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="LARYNGEAL" is_enabled="true" order_no="0">
+		<alias name="alias" value="C38282"/>
+		<locale name="en" value="Laryngeal"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="NASAL" is_enabled="true" order_no="0">
+		<alias name="alias" value="C38284"/>
+		<locale name="en" value="Nasal"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="NASOGASTRIC" is_enabled="true" order_no="0">
+		<alias name="alias" value="C38285"/>
+		<locale name="en" value="Nasogastric"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="NOT APPLICABLE" is_enabled="true" order_no="0">
+		<alias name="alias" value="C48623"/>
+		<locale name="en" value="Not Applicable"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="OCCLUSIVE DRESSING TECHNIQUE" is_enabled="true" order_no="0">
+		<alias name="alias" value="C38286"/>
+		<locale name="en" value="Occlusive Dressing Technique"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="OPHTHALMIC" is_enabled="true" order_no="0">
+		<alias name="alias" value="C38287"/>
+		<locale name="en" value="Ophthalmic"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="ORAL" is_enabled="true" order_no="0">
+		<alias name="alias" value="C38288"/>
+		<locale name="en" value="Oral"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="OROPHARYNGEAL" is_enabled="true" order_no="0">
+		<alias name="alias" value="C38289"/>
+		<locale name="en" value="Oropharyngeal"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="PARENTERAL" is_enabled="true" order_no="0">
+		<alias name="alias" value="C38291"/>
+		<locale name="en" value="Parenteral"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="PERCUTANEOUS" is_enabled="true" order_no="0">
+		<alias name="alias" value="C38676"/>
+		<locale name="en" value="Percutaneous"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="PERIARTICULAR" is_enabled="true" order_no="0">
+		<alias name="alias" value="C38292"/>
+		<locale name="en" value="Periarticular"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="PERIDURAL" is_enabled="true" order_no="0">
+		<alias name="alias" value="C38677"/>
+		<locale name="en" value="Peridural"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="PERINEURAL" is_enabled="true" order_no="0">
+		<alias name="alias" value="C38293"/>
+		<locale name="en" value="Perineural"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="PERIODONTAL" is_enabled="true" order_no="0">
+		<alias name="alias" value="C38294"/>
+		<locale name="en" value="Periodontal"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="RECTAL" is_enabled="true" order_no="0">
+		<alias name="alias" value="C38295"/>
+		<locale name="en" value="Rectal"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="RESPIRATORY (INHALATION)" is_enabled="true" order_no="0">
+		<alias name="alias" value="C38216"/>
+		<locale name="en" value="Respiratory (Inhalation)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="RETROBULBAR" is_enabled="true" order_no="0">
+		<alias name="alias" value="C38296"/>
+		<locale name="en" value="Retrobulbar"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="SOFT TISSUE" is_enabled="true" order_no="0">
+		<alias name="alias" value="C38198"/>
+		<locale name="en" value="Soft Tissue"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="SUBARACHNOID" is_enabled="true" order_no="0">
+		<alias name="alias" value="C38297"/>
+		<locale name="en" value="Subarachnoid"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="SUBCONJUNCTIVAL" is_enabled="true" order_no="0">
+		<alias name="alias" value="C38298"/>
+		<locale name="en" value="Subconjunctival"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="SUBCUTANEOUS" is_enabled="true" order_no="0">
+		<alias name="alias" value="C38299"/>
+		<locale name="en" value="Subcutaneous"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="SUBGINGIVAL" is_enabled="true" order_no="0">
+		<alias name="alias" value="C65103"/>
+		<locale name="en" value="Subgingival"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="SUBLINGUAL" is_enabled="true" order_no="0">
+		<alias name="alias" value="C38300"/>
+		<locale name="en" value="Sublingual"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="SUBMUCOSAL" is_enabled="true" order_no="0">
+		<alias name="alias" value="C38301"/>
+		<locale name="en" value="Submucosal"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="SUBRETINAL" is_enabled="true" order_no="0">
+		<alias name="alias" value="C79143"/>
+		<locale name="en" value="Subretinal"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="TOPICAL" is_enabled="true" order_no="0">
+		<alias name="alias" value="C38304"/>
+		<locale name="en" value="Topical"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="TRANSDERMAL" is_enabled="true" order_no="0">
+		<alias name="alias" value="C38305"/>
+		<locale name="en" value="Transdermal"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="TRANSENDOCARDIAL" is_enabled="true" order_no="0">
+		<alias name="alias" value="C79145"/>
+		<locale name="en" value="Transendocardial"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="TRANSMUCOSAL" is_enabled="true" order_no="0">
+		<alias name="alias" value="C38283"/>
+		<locale name="en" value="Transmucosal"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="TRANSPLACENTAL" is_enabled="true" order_no="0">
+		<alias name="alias" value="C38307"/>
+		<locale name="en" value="Transplacental"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="TRANSTRACHEAL" is_enabled="true" order_no="0">
+		<alias name="alias" value="C38308"/>
+		<locale name="en" value="Transtracheal"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="TRANSTYMPANIC" is_enabled="true" order_no="0">
+		<alias name="alias" value="C38309"/>
+		<locale name="en" value="Transtympanic"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="URETERAL" is_enabled="true" order_no="0">
+		<alias name="alias" value="C38312"/>
+		<locale name="en" value="Ureteral"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="URETHRAL" is_enabled="true" order_no="0">
+		<alias name="alias" value="C38271"/>
+		<locale name="en" value="Urethral"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="VAGINAL" is_enabled="true" order_no="0">
+		<alias name="alias" value="C38313"/>
+		<locale name="en" value="Vaginal"/>
+	</d2_dictionary_value>
+</d2_dictionary>

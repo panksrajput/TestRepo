@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<textWatermark>
+	<textValue>Controlled Print</textValue>
+	<fontName>helvetica</fontName>
+	<fontColor>#000066</fontColor>
+	<fontSize>20</fontSize>
+	<rotation>0.0</rotation>
+	<horizontalAlign>CENTER</horizontalAlign>
+	<verticalAlign>TOP</verticalAlign>
+	<opacity>50</opacity>
+</textWatermark>

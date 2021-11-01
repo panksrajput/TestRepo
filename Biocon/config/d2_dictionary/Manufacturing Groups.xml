@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_dictionary object_name="Manufacturing Groups" title="List of logical groupings for manufacturing documents." lock_config="false" parents_config="" application_names="OpenText Life Sciences Submission Storage and Viewing¬OpenText Life Sciences Research and Development Solution¬OpenText Life Sciences Quality and Manufacturing Solution" security_group="admingroup" search_group="admingroup" version="2" is_versioned="false" manual_order="false" create_view_option="false" is_dql="false" is_dql_cache="false" dql="" label_en="Document Type">
+	<d2_dictionary_value object_name="Certificate" is_enabled="true" order_no="0">
+		<locale name="en" value="Certificate"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Change Request" is_enabled="true" order_no="0">
+		<locale name="en" value="Change Request / Request for New Document"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Content Template" is_enabled="true" order_no="0">
+		<locale name="en" value="Content Template"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Directions" is_enabled="true" order_no="0">
+		<locale name="en" value="Directions"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Drawing" is_enabled="true" order_no="0">
+		<locale name="en" value="Drawing"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Form" is_enabled="true" order_no="0">
+		<locale name="en" value="Form"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Information Technology Document" is_enabled="true" order_no="0">
+		<locale name="en" value="Information Technology Document"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Materials Specification" is_enabled="true" order_no="0">
+		<locale name="en" value="Materials Specification"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Method" is_enabled="true" order_no="0">
+		<locale name="en" value="Method"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Packaging and Labeling" is_enabled="true" order_no="0">
+		<locale name="en" value="Packaging and Labeling"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Plant Drawing" is_enabled="true" order_no="0">
+		<locale name="en" value="Plant Drawing"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Product Specification" is_enabled="true" order_no="0">
+		<locale name="en" value="Product Specification"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Quality System Document" is_enabled="true" order_no="0">
+		<locale name="en" value="Quality System Document"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Record" is_enabled="true" order_no="0">
+		<locale name="en" value="Record"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Report" is_enabled="true" order_no="0">
+		<locale name="en" value="Report"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Specification" is_enabled="true" order_no="0">
+		<locale name="en" value="Specification"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Standard Operating Procedure" is_enabled="true" order_no="0">
+		<locale name="en" value="Standard Operating Procedure"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Testing Document" is_enabled="true" order_no="0">
+		<locale name="en" value="Testing Document"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Training Document" is_enabled="true" order_no="0">
+		<locale name="en" value="Training Document"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Validation Document" is_enabled="true" order_no="0">
+		<locale name="en" value="Validation Document"/>
+	</d2_dictionary_value>
+</d2_dictionary>

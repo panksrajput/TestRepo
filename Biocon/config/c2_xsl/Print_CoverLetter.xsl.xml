@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<c2_xsl new_format="true">
+	<object_name value="Print_CoverLetter.xsl"/>
+	<title value=""/>
+	<subject value=""/>
+	<authors/>
+	<keywords/>
+	<a_status value=""/>
+	<a_content_type value="xslfo"/>
+	<log_entry value=""/>
+	<language_code value=""/>
+	<dql_query>
+		<repeating value="select user_name, time_stamp, string_3, string_4, object_name from dm_audittrail where audited_obj_id= '$value(r_object_id)' and event_name = 'c2_controled_print' order by time_stamp desc ENABLE(FETCH_ALL_RESULTS 1)"/>
+		<repeating value="select effective_date from cd_controlled_doc where r_object_id ='$value(r_object_id)'"/>
+	</dql_query>
+</c2_xsl>

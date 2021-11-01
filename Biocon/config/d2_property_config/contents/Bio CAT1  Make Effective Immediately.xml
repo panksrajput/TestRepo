@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dialog id="PropertiesDialog" auto_smartview_edit_mode="false" buttons_right="false" focus="" height="250" initial_invalid="false" resizable="true" signoff_creation="false" signoff_edit="false" signoff_import="false" signoff_intention_dictionary="" signoff_intention_required="false" width="650">
+	<content>
+		<combo id="bio_lms_reason" assistance_dictionary="Bio Make Effective Reason" assistance_dictionary_alias="auto" assistance_type="dictionary" condition_required_create="true" condition_required_edit="true" condition_required_import="true"/>
+		<memo id="bio_lms_justification" condition_required_create="true" condition_required_edit="true" condition_required_import="true"/>
+		<memo id="bio_lms_quality_notif_id" advancedView_visible="false" condition_required_create="true" condition_required_edit="true" condition_required_import="true" condition_visible="(getValue(bio_lms_reason).equals('Conditionally document made effective with reference to Quality notification'))"/>
+	</content>
+	<buttons>
+		<button id="buttonOk" action="validDialog()"/>
+		<button id="buttonCancel" action="cancelDialog()"/>
+	</buttons>
+</dialog>

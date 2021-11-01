@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_mailing_config>
+	<add_attachment>true</add_attachment>
+	<rendition_formats/>
+	<list-recipient>
+		<recipient type="attribute">subject</recipient>
+	</list-recipient>
+	<list-subject>
+		<subject_en>Issued Prints due for reconciliation in the next 7 days</subject_en>
+	</list-subject>
+	<list-object>
+		<object_en>This email is to notify you that the following Issued Prints are due for reconciliation in the next 7 days. To reconcile or update the due date, go to Issued Print Reconciliation in the Print widget.</object_en>
+	</list-object>
+</d2_mailing_config>

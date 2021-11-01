@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x3_widget_config new_format="true">
+	<object_name value="WG EXT DIA Website"/>
+	<title value=""/>
+	<subject value=""/>
+	<authors/>
+	<keywords/>
+	<a_status value=""/>
+	<a_content_type value=""/>
+	<log_entry value=""/>
+	<language_code value=""/>
+	<module_type value="x3_widget_config"/>
+	<application_names>
+		<repeating value="OpenText Life Sciences Medical Device for Quality and Manufacturing Solution"/>
+		<repeating value="OpenText Life Sciences Medical Device for Research and Development Solution"/>
+		<repeating value="OpenText Life Sciences Medical Device Solution"/>
+		<repeating value="OpenText Life Sciences Submission Storage and Viewing"/>
+		<repeating value="OpenText Life Sciences Research and Development Solution"/>
+		<repeating value="OpenText Life Sciences eTMF Solution"/>
+		<repeating value="OpenText Life Sciences Quality and Manufacturing Solution"/>
+	</application_names>
+	<lock_config value="F"/>
+	<parents_config/>
+	<preview_x3_image value="CDF DIA Website Widget.png"/>
+	<label_locale>
+		<repeating value="en"/>
+		<repeating value="de"/>
+		<repeating value="es"/>
+		<repeating value="fr"/>
+		<repeating value="it"/>
+		<repeating value="ja"/>
+		<repeating value="ko"/>
+		<repeating value="pt"/>
+		<repeating value="ru"/>
+		<repeating value="sv"/>
+		<repeating value="zh"/>
+	</label_locale>
+	<label_value>
+		<repeating value="Website - Drug Information Association"/>
+		<repeating value=""/>
+		<repeating value=""/>
+		<repeating value=""/>
+		<repeating value=""/>
+		<repeating value=""/>
+		<repeating value=""/>
+		<repeating value=""/>
+		<repeating value=""/>
+		<repeating value=""/>
+		<repeating value=""/>
+	</label_value>
+	<desc_locale>
+		<repeating value="en"/>
+		<repeating value="de"/>
+		<repeating value="es"/>
+		<repeating value="fr"/>
+		<repeating value="it"/>
+		<repeating value="ja"/>
+		<repeating value="ko"/>
+		<repeating value="pt"/>
+		<repeating value="ru"/>
+		<repeating value="sv"/>
+		<repeating value="zh"/>
+	</desc_locale>
+	<desc_value>
+		<repeating value="Drug Information Association (DIA) Website"/>
+		<repeating value=""/>
+		<repeating value=""/>
+		<repeating value=""/>
+		<repeating value=""/>
+		<repeating value=""/>
+		<repeating value=""/>
+		<repeating value=""/>
+		<repeating value=""/>
+		<repeating value=""/>
+		<repeating value=""/>
+	</desc_value>
+	<widget_url value="http://www.diahome.org/"/>
+	<channel_name value=""/>
+	<widget_type value="ExternalWidget"/>
+	<query_form_name value=""/>
+	<is_oaj value="F"/>
+	<channel_names/>
+	<param_name/>
+	<param_value/>
+	<focus_events/>
+	<focus_event_params/>
+	<customize_columns value="F"/>
+	<columns/>
+	<use_col_for_assist value="F"/>
+	<is_unloadprotect value="F"/>
+</x3_widget_config>

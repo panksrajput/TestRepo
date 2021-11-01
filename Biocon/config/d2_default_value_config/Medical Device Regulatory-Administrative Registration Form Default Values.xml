@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_default_value_config new_format="true">
+	<object_name value="Medical Device Regulatory-Administrative Registration Form Default Values"/>
+	<title value="Default values for new Registration forms for Regulatory Admin."/>
+	<subject value=""/>
+	<authors/>
+	<keywords/>
+	<a_status value=""/>
+	<a_content_type value=""/>
+	<log_entry value=""/>
+	<language_code value=""/>
+	<object_type value="d2_default_value_config"/>
+	<lock_config value="F"/>
+	<parents_config/>
+	<attr_name>
+		<repeating value="application_num"/>
+		<repeating value="artifact_name"/>
+		<repeating value="auditors"/>
+		<repeating value="doc_coordinators"/>
+		<repeating value="domain"/>
+		<repeating value="form_managers"/>
+		<repeating value="form_users"/>
+		<repeating value="group_name"/>
+		<repeating value="object_name"/>
+		<repeating value="owner_name"/>
+		<repeating value="readers"/>
+		<repeating value="submission_import_mode"/>
+		<repeating value="submission_managers"/>
+		<repeating value="submission_users"/>
+	</attr_name>
+	<attr_value>
+		<repeating value="TBD"/>
+		<repeating value="Regulatory Application Registration Form"/>
+		<repeating value="cd_md_regulatory_doc_auditors"/>
+		<repeating value="cd_md_regulatory_doc_coordinators"/>
+		<repeating value="Device Regulatory/Administrative"/>
+		<repeating value="cd_md_regulatory_managers"/>
+		<repeating value="cd_md_regulatory"/>
+		<repeating value="cd_md_regulatory"/>
+		<repeating value="New Regulatory-Admin Registration Form"/>
+		<repeating value="$USER"/>
+		<repeating value="cd_md_regulatory_doc_readers"/>
+		<repeating value="All"/>
+		<repeating value="cd_md_submission_mgrs"/>
+		<repeating value="cd_md_submission_users"/>
+	</attr_value>
+	<application_names>
+		<repeating value="OpenText Life Sciences Quality and Manufacturing Solution"/>
+		<repeating value="OpenText Life Sciences Medical Device for Quality and Manufacturing Solution"/>
+		<repeating value="OpenText Life Sciences Medical Device for Research and Development Solution"/>
+		<repeating value="OpenText Life Sciences Medical Device Solution"/>
+		<repeating value="OpenText Life Sciences Submission Storage and Viewing"/>
+		<repeating value="OpenText Life Sciences Research and Development Solution"/>
+	</application_names>
+	<property_page value=""/>
+</d2_default_value_config>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2lifecycle execute_actions_on_start="true" state_attribute="a_status">
+	<state direct="false" entry="false" name="Active">
+		<entry_conditions>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate user is a Manager of the selected registration form"/>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate selected document is not checked-out"/>
+		</entry_conditions>
+		<actions>
+			<set name="a_status" value="Active"/>
+			<applysecurity/>
+		</actions>
+		<next_states>
+			<state action="" confirmation_en="OK to Deactivate this Registration Form?" dialog="" event="" label_en="Deactivate..." name="Inactive" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="Medical Device Submission Registration Form Properties" event="" label_en="Register Submission..." name="(Register Submission)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="Select Published Submissions Folder" event="" label_en="Select Published Submissions Folder..." name="(Set Publishing Folder)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="Change Application Number Properties" event="" label_en="Change Application Number..." name="(Change Application Number)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+		</next_states>
+	</state>
+	<state direct="false" entry="false" name="Inactive">
+		<entry_conditions>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate user is a Manager of the selected registration form"/>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate selected document is not checked-out"/>
+		</entry_conditions>
+		<actions>
+			<set name="a_status" value="Inactive"/>
+			<applysecurity/>
+		</actions>
+		<next_states>
+			<state action="" confirmation_en="OK to Activate this Registration Form?" dialog="" event="" label_en="Reactivate..." name="Active" type="promote"/>
+		</next_states>
+	</state>
+	<state direct="false" entry="true" name="(Init)">
+		<entry_conditions/>
+		<actions>
+			<set name="owner_name" value="admingroup"/>
+			<set name="a_status" value="Active"/>
+			<set name="enable_submission_import" value="T"/>
+			<setrepeating mode="append" name="product_codes" removeDuplicate="true" value="$value(product_code)"/>
+			<setrepeating mode="append" name="application_descriptions" removeDuplicate="true" value="$value(application_description)"/>
+			<setrepeating mode="append" name="application_numbers" removeDuplicate="true" value="$value(application_num)"/>
+			<setrepeating mode="append" name="regions" removeDuplicate="true" value="$value(region)"/>
+			<setrepeating mode="append" name="application_types" removeDuplicate="true" value="$value(application_type)"/>
+			<setrepeating mode="append" name="application_statuses" removeDuplicate="true" value="$value(application_status)"/>
+			<setrepeating mode="append" name="country_codes" removeDuplicate="true" value="$value(country_code)"/>
+			<setrepeating mode="append" name="health_authorities" removeDuplicate="true" value="$value(health_authority)"/>
+			<setrepeating mode="append" name="submission_procedure_types" removeDuplicate="true" value="$value(submission_procedure_type)"/>
+			<applysecurity/>
+			<setrepeating mode="append" name="promote_on_save_from" removeDuplicate="true" value="Active"/>
+			<setrepeating mode="append" name="promote_on_save_to" removeDuplicate="true" value="(Update Properties)"/>
+		</actions>
+		<next_states/>
+	</state>
+	<state direct="false" entry="false" name="(Register Submission)">
+		<entry_conditions>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate user is a Manager of the selected registration form"/>
+		</entry_conditions>
+		<actions>
+			<applyparameters/>
+			<applymethod argument="-id &quot;$value(r_object_id)&quot; -type &quot;cd_reg_submission_info&quot; -apply_d2_configs true -relation_type &quot;Regulatory Submission&quot; -copy_attrs &quot;application_description,is_ectd_submission,submission_number,submission_description,submission_type,submission_status,submission_date,is_imported,application_num,region,country_code,health_authority,dv_notified_body,application_type,domain,group_name,promote_on_save_from,promote_on_save_to,replace form_managers=submission_managers:$repeatingvalue(submission_managers),replace form_users=submission_users:$repeatingvalue(submission_users)&quot; -object_name &quot;@value(submission_number)&quot; -parent true -set_attrs &quot;artifact_name=Regulatory Submission Registration Form|a_status=Active&quot; -version &quot;1.0&quot; -context_user &quot;$USER&quot;" name="CDFCreateObjectMethod"/>
+			<set name="submission_number" value=""/>
+			<set name="submission_date" value=""/>
+		</actions>
+		<next_states/>
+	</state>
+	<state direct="false" entry="false" name="(Set Publishing Folder)">
+		<entry_conditions/>
+		<actions>
+			<applyparameters/>
+			<applymethod argument="-validate true -context_user &quot;$USER&quot;" name="SSVDiscoverSubmissionFoldersMethod"/>
+		</actions>
+		<next_states/>
+	</state>
+	<state direct="false" entry="false" name="(Change Application Number)">
+		<entry_conditions>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate user is a Manager of the selected registration form"/>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate selected document is not checked-out"/>
+		</entry_conditions>
+		<actions>
+			<applyparameters/>
+			<applymethod argument="-auto_inherit_config &quot;Change Application Number,Change Application Number for Submission Elements,Change Application Number for Submission Registration Form,Change Application Number for Submission Folders,Change Application Number for Submission Sub Folders&quot; -old_value &quot;$value(application_num)&quot; -new_value &quot;$value(a_special_app)&quot;" name="CDFApplyAttributeInheritanceAsynchMethod"/>
+			<applymethod argument="-event &quot;d2_properties_save&quot; -context_user &quot;$USER&quot; -attributes &quot;application_num&quot;" name="CDFAuditMethod"/>
+			<set name="a_special_app" value=""/>
+		</actions>
+		<next_states/>
+	</state>
+</d2lifecycle>

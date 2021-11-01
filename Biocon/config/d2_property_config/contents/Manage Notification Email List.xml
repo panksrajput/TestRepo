@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dialog id="PropertiesDialog" auto_smartview_edit_mode="false" buttons_right="false" focus="" height="400" initial_invalid="false" resizable="true" signoff_creation="false" signoff_edit="false" signoff_import="false" signoff_intention_dictionary="" signoff_intention_required="false" width="600">
+	<content>
+		<comment font_color="#646464" html_content="true" label_en="&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;font color=#646464&gt;&quot;Distribution list to notify&quot; and &quot;Emails from distribution list to notify&quot; will allow flexibility to email those outside of the standard groups when a document becomes Approved.&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"/>
+		<list id="notification_dist_list" assistance_dictionary="DQL - Distribution List - DLs" assistance_dictionary_alias="display_value" assistance_type="dictionary" label_en="Distribution list to notify" rows="6"/>
+		<list id="notification_email_list" assistance_dictionary="DQL - Distribution List - Users" assistance_dictionary_alias="auto" assistance_type="dictionary" label_en="Emails from distribution list to notify" rows="8"/>
+		<label id="domain" label_en="Domain of Document(s) Selected"/>
+	</content>
+	<buttons>
+		<button id="buttonOk" action="validDialog()"/>
+		<button id="buttonCancel" action="cancelDialog()"/>
+	</buttons>
+</dialog>

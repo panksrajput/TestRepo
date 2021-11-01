@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dialog id="PropertiesDialog" buttons_right="false" focus="" height="500" resizable="true" signoff_creation="false" signoff_edit="false" signoff_import="false" signoff_intention_dictionary="" signoff_intention_required="false" width="400">
+	<content>
+		<comment font_color="#C0C0C0" font_italic="false" html_content="true" label_en="&lt;center&gt;Tags are the cornerstone of the security model. They define how group names are constructed, and how role attributes are resolved.&lt;center&gt;"/>
+		<comment condition_visible_create="false" font_size="6pt" html_content="true" label_en="&lt;p&gt;&amp;nbsp;&lt;/p&gt;"/>
+		<label id="object_name" condition_visible_create="false"/>
+		<comment font_size="6pt" html_content="true" label_en="&lt;p&gt;&amp;nbsp;&lt;/p&gt;"/>
+		<comment font_color="#C0C0C0" html_content="true" label_en="Tag Definition Name is the name of the tag which will be used in both group generators and in models. Best if surrounded by “fencing” characters e.g. [] so as to eliminate possible false hits."/>
+		<text id="tag_name" condition_required_create="true" condition_required_edit="true" condition_required_import="true" label_en="Tag Definition Name"/>
+		<comment font_size="6pt" html_content="true" label_en="&lt;p&gt;&amp;nbsp;&lt;/p&gt;"/>
+		<comment font_color="#C0C0C0" label_en="Generator for the set of values. Currently supports “List” and “DQL”"/>
+		<combo id="source_type" assistance_dictionary="Security Tag Source" assistance_dictionary_alias="auto" assistance_type="dictionary" condition_required_create="true" condition_required_edit="true" label_en="Type of Source for Values"/>
+		<comment advancedView_visible="false" condition_visible="(getValue(source_type).equals('DQL'))" font_size="6pt" html_content="true" label_en="&lt;p&gt;&amp;nbsp;&lt;/p&gt;"/>
+		<comment advancedView_visible="false" condition_visible="(getValue(source_type).equals('DQL'))" font_color="#C0C0C0" html_content="true" label_en="DQL to generate a list of values"/>
+		<memo id="dql_string" advancedView_visible="false" condition_required_create="true" condition_required_edit="true" condition_visible="(getValue(source_type).equals('DQL'))" label_en="DQL for Tag Values"/>
+		<comment advancedView_visible="false" condition_visible="(getValue(source_type).equals('LIST'))" font_size="6pt" html_content="true" label_en="&lt;p&gt;&amp;nbsp;&lt;/p&gt;"/>
+		<comment advancedView_visible="false" condition_visible="(getValue(source_type).equals('LIST'))" font_color="#C0C0C0" html_content="true" label_en="List of valid values"/>
+		<list-editable id="list_values" advancedView_visible="false" condition_required_create="true" condition_required_edit="true" condition_required_import="true" condition_visible="(getValue(source_type).equals('LIST'))" label_en="List of Values" rows="4"/>
+		<comment font_size="6pt" html_content="true" label_en="&lt;p&gt;&amp;nbsp;&lt;/p&gt;"/>
+		<comment font_color="#C0C0C0" html_content="true" label_en="doc_type that uses this tag, which will contain the value to resolve when the tag is referenced"/>
+		<combo id="binding_type" assistance_dql="select name from dm_type order by name" assistance_type="dql" label_en="Binding Type"/>
+		<comment font_size="6pt" html_content="true" label_en="&lt;p&gt;&amp;nbsp;&lt;/p&gt;"/>
+		<comment font_color="#C0C0C0" html_content="true" label_en="Attributes that are used to determine values, if more than one is specified, it’s the union of the values."/>
+		<list-editable id="binding_attributes" label_en="Binding Attributes" rows="4"/>
+		<comment font_size="6pt" html_content="true" label_en="&lt;p&gt;&amp;nbsp;&lt;/p&gt;"/>
+		<comment font_color="#C0C0C0" html_content="true" label_en="Delimiter to use while generating group names"/>
+		<text id="tag_delimiter" label_en="Delimiter to Use in Group Name"/>
+	</content>
+	<buttons>
+		<button id="buttonOk" action="validDialog()"/>
+		<button id="buttonCancel" action="cancelDialog()"/>
+	</buttons>
+</dialog>

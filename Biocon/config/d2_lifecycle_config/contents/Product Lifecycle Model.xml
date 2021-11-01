@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2lifecycle execute_actions_on_start="true" state_attribute="a_status">
+	<state direct="false" entry="true" name="(Init)">
+		<entry_conditions/>
+		<actions>
+			<set name="owner_name" value="admingroup"/>
+			<setrepeating mode="append" name="form_managers" removeDuplicate="true" value="$USER"/>
+			<set name="a_status" value="Active"/>
+			<applysecurity/>
+			<applyparameters/>
+			<applymethod argument="-relation_type &quot;Referenced Product&quot; -parent true -target_objects &quot;select r_object_id from cd_product_info where product_code in ($repeatingvalue(referenced_product_codes))&quot; -permanent_link true" fetchCurrent="false" name="CDFCreateRelationMethod"/>
+			<applymethod argument="-auto_inherit_config &quot;'Refresh PRF Product References'&quot; -lock_context_object_while_processing true -context_user &quot;$USER&quot;" fetchCurrent="false" name="CDFApplyAttributeInheritanceMethod"/>
+			<applymethod argument="-auto_inherit_config &quot;'Add Derived Product Codes'&quot; -lock_context_object_while_processing true -context_user &quot;$USER&quot;" fetchCurrent="false" name="CDFApplyAttributeInheritanceAsynchMethod"/>
+		</actions>
+		<next_states>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="Active" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+		</next_states>
+	</state>
+	<state direct="false" entry="false" name="(protect)">
+		<entry_conditions>
+			<attribute compare="contains" message_failed_en="Cannot make the Product Registration Form protected because the Registration Form is created externally." name="external_system_attribute" value="F"/>
+		</entry_conditions>
+		<actions>
+			<set name="previous_state" value="$value(a_status)"/>
+			<set name="a_status" value="Working..."/>
+			<applymethod argument="-generator_name &quot;ProductGroups&quot; -hierarchy &quot;[product]&quot; -hierarchyfilter &quot;$value(product_code)&quot;" name="CDFGroupGeneratorMethod"/>
+			<applymethod argument="-generator_name &quot;AllDomainProductGroups&quot; -hierarchy &quot;[product]&quot; -hierarchyfilter &quot;$value(product_code)&quot;" fetchCurrent="false" name="CDFGroupGeneratorMethod"/>
+			<applymethod argument="-generator_name &quot;RDGroupsProduct&quot; -hierarchy &quot;[product]&quot; -hierarchyfilter &quot;$value(product_code)&quot;" fetchCurrent="false" name="CDFGroupGeneratorMethod"/>
+			<applymethod argument="-generator_name &quot;SecurityDocAdminProductGroups&quot; -hierarchy &quot;[product]&quot; -hierarchyfilter &quot;$value(product_code)&quot;" fetchCurrent="false" name="CDFGroupGeneratorMethod"/>
+			<applymethod argument="-auto_inherit_config &quot;Re-Apply Security on Folders&quot; -models &quot;'Open'&quot;" name="CDFApplyAttributeInheritanceMethod"/>
+			<applymethod argument="-auto_inherit_config &quot;Re-Apply Security on Documents&quot; -models &quot;'Open'&quot;" name="CDFApplyAttributeInheritanceMethod"/>
+			<set name="a_status" value="$value(previous_state)"/>
+			<set name="product_protection_code" value="PROTECTED"/>
+			<applymethod argument="-event &quot;d2_properties_save&quot; -context_user &quot;$USER&quot; -attributes &quot;comments, security_model, restrict_user, restrict_date&quot; -force true -string_1 &quot;Security&quot; -string_2 &quot;Protect Product&quot; -target &quot;select r_object_id from cd_common_ref_model where security_model in ('Product') and (restrict_user is null or restrict_user= ' ') and product_code = '$value(product_code)'&quot;" fetchCurrent="false" name="CDFAuditMethod"/>
+		</actions>
+		<next_states/>
+	</state>
+	<state direct="false" entry="false" name="(unprotect)">
+		<entry_conditions>
+			<attribute compare="contains" message_failed_en="Cannot make the Product Registration Form unprotected because the Registration Form is created externally." name="external_system_attribute" value="F"/>
+		</entry_conditions>
+		<actions>
+			<set name="previous_state" value="$value(a_status)"/>
+			<set name="a_status" value="Working..."/>
+			<applymethod argument="-auto_inherit_config &quot;Re-Apply Security on Folders&quot; -models &quot;'Product'&quot;" name="CDFApplyAttributeInheritanceAsynchMethod"/>
+			<applymethod argument="-auto_inherit_config &quot;Re-Apply Security on Documents&quot; -models &quot;'Product'&quot;" name="CDFApplyAttributeInheritanceMethod"/>
+			<set name="a_status" value="$value(previous_state)"/>
+			<set name="product_protection_code" value="UNPROTECTED"/>
+			<applymethod argument="-event &quot;d2_properties_save&quot; -context_user &quot;$USER&quot; -attributes &quot;comments, security_model, restrict_user, restrict_date&quot; -force true -string_1 &quot;Security&quot; -string_2 &quot;UnProtect Product&quot; -target &quot;select r_object_id from cd_common_ref_model where security_model in ('Open') and (restrict_user is null or restrict_user= ' ') and product_code = '$value(product_code)'&quot;" fetchCurrent="false" name="CDFAuditMethod"/>
+		</actions>
+		<next_states/>
+	</state>
+	<state direct="false" entry="false" name="Active">
+		<entry_conditions>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate user is a Manager of the selected registration form"/>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate selected document is not checked-out"/>
+			<attribute compare="contains" message_failed_en="Cannot change the state of Product Registration Form to Active because the Registration Form is created externally." name="external_system_attribute" value="F"/>
+		</entry_conditions>
+		<actions>
+			<set name="a_status" value="Active"/>
+			<applysecurity/>
+		</actions>
+		<next_states>
+			<state action="" confirmation_en="OK to change the status of this product from &quot;Active&quot; to &quot;Inactive&quot;? This will freeze the current set of &quot;Effective/Final&quot; documents for this product, preventing new documents related to this product from being made &quot;Effective/Final&quot;, unless the product registration is subsequently re-activated." dialog="" event="" label_en="Mark product as ''Inactive''" name="Inactive" type="promote"/>
+			<state action="" confirmation_en="" dialog="Change Product Code Properties" event="" label_en="Change Product Code..." name="(Change Product Code)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="Change Inherited Product Info Properties" event="" label_en="Update Product Info..." name="(Change Product Info)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(protect)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(unprotect)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="Register Product Aliases and Referenced Products" event="" label_en="Register Aliases / Referenced Products..." name="(Update Product References)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+		</next_states>
+	</state>
+	<state direct="false" entry="false" name="Inactive">
+		<entry_conditions>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate user is a Manager of the selected registration form"/>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate selected document is not checked-out"/>
+			<attribute compare="contains" message_failed_en="Cannot change the state of Product Registration Form to Inactive, because the Registration Form is created externally." name="external_system_attribute" value="F"/>
+		</entry_conditions>
+		<actions>
+			<set name="a_status" value="Inactive"/>
+			<applysecurity/>
+		</actions>
+		<next_states>
+			<state action="" confirmation_en="OK to change this product registration from &quot;Inactive&quot; back to &quot;Active&quot;? This will re-activate the product, enabling new documents related to this product to be made &quot;Effective/Final&quot;." dialog="" event="" label_en="Revert product to ''Active''" name="Active" type="promote"/>
+		</next_states>
+	</state>
+	<state direct="false" entry="false" name="(Change Product Info)">
+		<entry_conditions>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate user is a Manager of the selected registration form"/>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate selected document is not checked-out"/>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate product does not have locked Clinical Trials associated with it"/>
+			<attribute compare="contains" message_failed_en="Cannot change the Product Info because the Registration Form is created externally." name="external_system_attribute" value="F"/>
+		</entry_conditions>
+		<actions>
+			<applyparameters/>
+			<applymethod argument="-source &quot;add_product_compound_id,add_product_chemical_names,add_drug_substance_name,add_inn_names,add_product_generic_name&quot; -target &quot;product_compound_id,product_chemical_names,drug_substance_name,inn_names,product_generic_name&quot; -distinct true -clear true" name="CDFAppendRepeatingAttributesMethod"/>
+			<applymethod argument="-source &quot;add_product_trade_name,add_product_trade_country&quot; -target &quot;product_trade_name,product_trade_country&quot; -distinct true -clear true" name="CDFAppendRepeatingAttributesMethod"/>
+			<applymethod argument="-auto_inherit_config &quot;Update Product Info&quot; -product_code &quot;$value(product_code)&quot;" name="CDFApplyAttributeInheritanceAsynchMethod"/>
+		</actions>
+		<next_states/>
+	</state>
+	<state direct="false" entry="false" name="(Change Product Code)">
+		<entry_conditions>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate user is a Manager of the selected registration form"/>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate selected document is not checked-out"/>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate product does not have locked Clinical Trials associated with it"/>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate product does not have associated Regulatory Applications associated with it"/>
+			<attribute compare="contains" message_failed_en="The product code for $value(product_code) cannot be modified here, as this product registration is managed by an external system." name="external_system_attribute" value="F"/>
+		</entry_conditions>
+		<actions>
+			<applyparameters/>
+			<applymethod argument="-query &quot;select ' ' as a_special_app from dm_dbo.single_result_row_view where exists (select product_code from dm_dbo.product_info_view where upper(product_code) = upper('$value(a_special_app)') or upper(product_aliases) = upper('$value(a_special_app)'))&quot; -id &quot;$value(r_object_id)&quot; -override &quot;true&quot;" fetchCurrent="false" name="CDFUpdateAttrsViaQueryMethod"/>
+			<applymethod argument="-if &quot;a_special_app = ' '&quot; -message &quot;The attempt to change the product code on the Product Registration Form $value(object_name) was blocked, because the specified product code is used by another product, possibly as an alias.&quot; -event &quot;Change Product code&quot; -user_roles &quot;form_managers&quot; -other_users &quot;$value(r_last_modifier)&quot;" fetchCurrent="false" name="CDFNotifyUsersMethod"/>
+			<applymethod argument="-dql &quot;cd_clinical_trial_info where any secondary_products = '$value(product_code)'&quot; -attr secondary_products -old_value &quot;$value(product_code)&quot; -new_value &quot;$value(a_special_app)&quot; -if &quot;a_special_app != ' '&quot;" name="CDFUpdateRepeatingAttribute"/>
+			<applymethod argument="-auto_inherit_config &quot;Change Product Code,Change derived and referenced product codes&quot; -old_value &quot;$value(product_code)&quot; -new_value &quot;$value(a_special_app)&quot; -run_as_server true -context_user &quot;$USER&quot; -escape_csv_value true -if &quot;a_special_app != ' '&quot;" name="CDFApplyAttributeInheritanceMethod"/>
+			<applymethod argument="-event &quot;d2_properties_save&quot; -context_user &quot;$USER&quot; -attributes &quot;product_code&quot;  -if &quot;a_special_app != ' '&quot;" name="CDFAuditMethod"/>
+			<set name="a_special_app" value=""/>
+		</actions>
+		<next_states/>
+	</state>
+	<state direct="false" entry="false" name="(Update Product References)">
+		<entry_conditions>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate selected document is not checked-out"/>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate user is a Manager of the selected registration form"/>
+		</entry_conditions>
+		<actions>
+			<applyparameters/>
+			<applymethod argument="-relation_type &quot;Referenced Product&quot; -parent true -target_objects &quot;select r_object_id from cd_product_info where product_code in ($repeatingvalue(referenced_product_codes))&quot; -permanent_link true -reset_relations true" fetchCurrent="false" name="CDFCreateRelationMethod"/>
+			<applymethod argument="-auto_inherit_config &quot;'Refresh PRF Product References'&quot;-lock_context_object_while_processing true -run_as_server true -context_user &quot;$USER&quot;" fetchCurrent="false" name="CDFApplyAttributeInheritanceAsynchMethod"/>
+			<applymethod argument="-auto_inherit_config &quot;'Update Product Aliases and Referenced Product Codes'&quot;-lock_context_object_while_processing true -run_as_server true -context_user &quot;$USER&quot;" fetchCurrent="false" name="CDFApplyAttributeInheritanceMethod"/>
+			<applymethod argument="-auto_inherit_config &quot;'Add Derived Product Codes','Remove Derived Product Codes'&quot;-lock_context_object_while_processing true -run_as_server true -context_user &quot;$USER&quot;" fetchCurrent="false" name="CDFApplyAttributeInheritanceMethod"/>
+		</actions>
+		<next_states/>
+	</state>
+</d2lifecycle>

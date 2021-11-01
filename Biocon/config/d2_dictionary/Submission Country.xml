@@ -1,0 +1,1003 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_dictionary object_name="Submission Country" title="Names of the countries the submission is filed." lock_config="false" parents_config="" application_names="OpenText Life Sciences Medical Device for Quality and Manufacturing Solution¬OpenText Life Sciences Medical Device for Research and Development Solution¬OpenText Life Sciences Medical Device Solution¬OpenText Life Sciences Submission Storage and Viewing¬OpenText Life Sciences Research and Development Solution¬OpenText Life Sciences eTMF Solution¬OpenText Life Sciences Quality and Manufacturing Solution¬Custom Configurations" security_group="cd_regulatory_managers" search_group="cd_regulatory_managers" version="2" is_versioned="false" manual_order="false" create_view_option="false" is_dql="false" is_dql_cache="false" dql="" label_en="Health Authorities">
+	<d2_dictionary_value object_name="AD" is_enabled="true" order_no="0">
+		<alias name="Region" value="EU"/>
+		<locale name="en" value="Andorra"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="AE" is_enabled="true" order_no="0">
+		<alias name="Region" value="GCC"/>
+		<locale name="en" value="United Arab Emirates"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="AF" is_enabled="true" order_no="0">
+		<alias name="Region" value="ME"/>
+		<locale name="en" value="Afghanistan"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="AG" is_enabled="true" order_no="0">
+		<alias name="Region" value="CAC"/>
+		<locale name="en" value="Antigua and Barbuda"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="AI" is_enabled="true" order_no="0">
+		<alias name="Region" value="CAC"/>
+		<locale name="en" value="Anguilla"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="AL" is_enabled="true" order_no="0">
+		<alias name="Region" value="EU"/>
+		<locale name="en" value="Albania"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="AM" is_enabled="true" order_no="0">
+		<alias name="Region" value="EU"/>
+		<locale name="en" value="Armenia"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="AN" is_enabled="true" order_no="0">
+		<alias name="Region" value="CAC"/>
+		<locale name="en" value="Netherlands Antilles"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="AO" is_enabled="true" order_no="0">
+		<alias name="Region" value="EU"/>
+		<locale name="en" value="Angola"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="AQ" is_enabled="true" order_no="0">
+		<alias name="Region" value="ROW"/>
+		<locale name="en" value="Antarctica"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="AR" is_enabled="true" order_no="0">
+		<alias name="Region" value="SA"/>
+		<locale name="en" value="Argentina"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="AS" is_enabled="true" order_no="0">
+		<alias name="Region" value="OC"/>
+		<locale name="en" value="American Samoa"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="AT" is_enabled="true" order_no="0">
+		<alias name="Region" value="EU"/>
+		<locale name="en" value="Austria"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="AU" is_enabled="true" order_no="0">
+		<alias name="Region" value="OC"/>
+		<locale name="en" value="Australia"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="AW" is_enabled="true" order_no="0">
+		<alias name="Region" value="CAC"/>
+		<locale name="en" value="Aruba"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="AX" is_enabled="true" order_no="0">
+		<alias name="Region" value="EU"/>
+		<locale name="en" value="Aland Islands"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="AZ" is_enabled="true" order_no="0">
+		<alias name="Region" value="ME"/>
+		<locale name="en" value="Azerbaijan"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="BA" is_enabled="true" order_no="0">
+		<alias name="Region" value="EU"/>
+		<locale name="en" value="Bosnia and Herzegovina"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="BB" is_enabled="true" order_no="0">
+		<alias name="Region" value="CAC"/>
+		<locale name="en" value="Barbados"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="BD" is_enabled="true" order_no="0">
+		<alias name="Region" value="AP"/>
+		<locale name="en" value="Bangladesh"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="BE" is_enabled="true" order_no="0">
+		<alias name="Region" value="EU"/>
+		<locale name="en" value="Belgium"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="BF" is_enabled="true" order_no="0">
+		<alias name="Region" value="AF"/>
+		<locale name="en" value="Burkina Faso"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="BG" is_enabled="true" order_no="0">
+		<alias name="Region" value="EU"/>
+		<locale name="en" value="Bulgaria"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="BH" is_enabled="true" order_no="0">
+		<alias name="Region" value="GCC"/>
+		<locale name="en" value="Bahrain"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="BI" is_enabled="true" order_no="0">
+		<alias name="Region" value="AF"/>
+		<locale name="en" value="Burundi"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="BJ" is_enabled="true" order_no="0">
+		<alias name="Region" value="AF"/>
+		<locale name="en" value="Benin"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="BM" is_enabled="true" order_no="0">
+		<alias name="Region" value="NA"/>
+		<locale name="en" value="Bermuda"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="BN" is_enabled="true" order_no="0">
+		<alias name="Region" value="AP"/>
+		<locale name="en" value="Brunei Darussalam"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="BO" is_enabled="true" order_no="0">
+		<alias name="Region" value="SA"/>
+		<locale name="en" value="Bolivia"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="BR" is_enabled="true" order_no="0">
+		<alias name="Region" value="SA"/>
+		<locale name="en" value="Brazil"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="BS" is_enabled="true" order_no="0">
+		<alias name="Region" value="CAC"/>
+		<locale name="en" value="Bahamas"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="BT" is_enabled="true" order_no="0">
+		<alias name="Region" value="AP"/>
+		<locale name="en" value="Bhutan"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="BV" is_enabled="true" order_no="0">
+		<alias name="Region" value="ROW"/>
+		<locale name="en" value="Bouvet Island"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="BW" is_enabled="true" order_no="0">
+		<alias name="Region" value="AF"/>
+		<locale name="en" value="Botswana"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="BY" is_enabled="true" order_no="0">
+		<alias name="Region" value="EU"/>
+		<locale name="en" value="Belarus"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="BZ" is_enabled="true" order_no="0">
+		<alias name="Region" value="CAC"/>
+		<locale name="en" value="Belize"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="CA" is_enabled="true" order_no="0">
+		<alias name="Region" value="NA"/>
+		<locale name="en" value="Canada"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="CC" is_enabled="true" order_no="0">
+		<alias name="Region" value="OC"/>
+		<locale name="en" value="Cocos (Keeling) Islands"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="CD" is_enabled="true" order_no="0">
+		<alias name="Region" value="AF"/>
+		<locale name="en" value="Democratic Republic of the Congo"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="CF" is_enabled="true" order_no="0">
+		<alias name="Region" value="AF"/>
+		<locale name="en" value="Central African Republic"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="CG" is_enabled="true" order_no="0">
+		<alias name="Region" value="AF"/>
+		<locale name="en" value="Congo"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="CH" is_enabled="true" order_no="0">
+		<alias name="Region" value="EU"/>
+		<locale name="en" value="Switzerland"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="CI" is_enabled="true" order_no="0">
+		<alias name="Region" value="AF"/>
+		<locale name="en" value="Cote D'Ivoire (Ivory Coast)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="CK" is_enabled="true" order_no="0">
+		<alias name="Region" value="OCA"/>
+		<locale name="en" value="Cook Islands"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="CL" is_enabled="true" order_no="0">
+		<alias name="Region" value="SA"/>
+		<locale name="en" value="Chile"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="CM" is_enabled="true" order_no="0">
+		<alias name="Region" value="AF"/>
+		<locale name="en" value="Cameroon"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="CN" is_enabled="true" order_no="0">
+		<alias name="Region" value="AP"/>
+		<locale name="en" value="China"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="CO" is_enabled="true" order_no="0">
+		<alias name="Region" value="SA"/>
+		<locale name="en" value="Colombia"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="CR" is_enabled="true" order_no="0">
+		<alias name="Region" value="CAC"/>
+		<locale name="en" value="Costa Rica"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="CS" is_enabled="true" order_no="0">
+		<alias name="Region" value="EU"/>
+		<locale name="en" value="Serbia and Montenegro"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="CU" is_enabled="true" order_no="0">
+		<alias name="Region" value="CAC"/>
+		<locale name="en" value="Cuba"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="CV" is_enabled="true" order_no="0">
+		<alias name="Region" value="AF"/>
+		<locale name="en" value="Cape Verde"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="CX" is_enabled="true" order_no="0">
+		<alias name="Region" value="OCA"/>
+		<locale name="en" value="Christmas Island"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="CY" is_enabled="true" order_no="0">
+		<alias name="Region" value="EU"/>
+		<locale name="en" value="Cyprus"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="CZ" is_enabled="true" order_no="0">
+		<alias name="Region" value="EU"/>
+		<locale name="en" value="Czech Republic"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="DE" is_enabled="true" order_no="0">
+		<alias name="Region" value="EU"/>
+		<locale name="en" value="Germany"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="DJ" is_enabled="true" order_no="0">
+		<alias name="Region" value="AF"/>
+		<locale name="en" value="Djibouti"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="DK" is_enabled="true" order_no="0">
+		<alias name="Region" value="EU"/>
+		<locale name="en" value="Denmark"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="DM" is_enabled="true" order_no="0">
+		<alias name="Region" value="CAC"/>
+		<locale name="en" value="Dominica"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="DO" is_enabled="true" order_no="0">
+		<alias name="Region" value="CAC"/>
+		<locale name="en" value="Dominican Republic"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="DZ" is_enabled="true" order_no="0">
+		<alias name="Region" value="AF"/>
+		<locale name="en" value="Algeria"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="EC" is_enabled="true" order_no="0">
+		<alias name="Region" value="CAC"/>
+		<locale name="en" value="Ecuador"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="EE" is_enabled="true" order_no="0">
+		<alias name="Region" value="EU"/>
+		<locale name="en" value="Estonia"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="EG" is_enabled="true" order_no="0">
+		<alias name="Region" value="AF"/>
+		<locale name="en" value="Egypt"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="EH" is_enabled="true" order_no="0">
+		<alias name="Region" value="AF"/>
+		<locale name="en" value="Western Sahara"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="EL" is_enabled="true" order_no="0">
+		<alias name="Region" value="EU"/>
+		<locale name="en" value="Greece"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="ER" is_enabled="true" order_no="0">
+		<alias name="Region" value="AF"/>
+		<locale name="en" value="Eritrea"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="ES" is_enabled="true" order_no="0">
+		<alias name="Region" value="EU"/>
+		<locale name="en" value="Spain"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="ET" is_enabled="true" order_no="0">
+		<alias name="Region" value="AF"/>
+		<locale name="en" value="Ethiopia"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="EU" is_enabled="true" order_no="0">
+		<alias name="Region" value="EU"/>
+		<locale name="en" value="European Union"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="FI" is_enabled="true" order_no="0">
+		<alias name="Region" value="EU"/>
+		<locale name="en" value="Finland"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="FJ" is_enabled="true" order_no="0">
+		<alias name="Region" value="OCA"/>
+		<locale name="en" value="Fiji"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="FK" is_enabled="true" order_no="0">
+		<alias name="Region" value="SA"/>
+		<locale name="en" value="Falkland Islands (Malvinas)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="FM" is_enabled="true" order_no="0">
+		<alias name="Region" value="OCA"/>
+		<locale name="en" value="Federated States of Micronesia"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="FO" is_enabled="true" order_no="0">
+		<alias name="Region" value="EU"/>
+		<locale name="en" value="Faroe Islands"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="FR" is_enabled="true" order_no="0">
+		<alias name="Region" value="EU"/>
+		<locale name="en" value="France"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="FX" is_enabled="true" order_no="0">
+		<alias name="Region" value="EU"/>
+		<locale name="en" value="France, Metropolitan"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="GA" is_enabled="true" order_no="0">
+		<alias name="Region" value="AF"/>
+		<locale name="en" value="Gabon"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="GB" is_enabled="true" order_no="0">
+		<alias name="Region" value="EU"/>
+		<locale name="en" value="Great Britain (UK)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="GD" is_enabled="true" order_no="0">
+		<alias name="Region" value="CAC"/>
+		<locale name="en" value="Grenada"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="GE" is_enabled="true" order_no="0">
+		<alias name="Region" value="EU"/>
+		<locale name="en" value="Georgia"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="GF" is_enabled="true" order_no="0">
+		<alias name="Region" value="AF"/>
+		<locale name="en" value="French Guiana"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="GH" is_enabled="true" order_no="0">
+		<alias name="Region" value="AF"/>
+		<locale name="en" value="Ghana"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="GI" is_enabled="true" order_no="0">
+		<alias name="Region" value="EU"/>
+		<locale name="en" value="Gibraltar"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="GL" is_enabled="true" order_no="0">
+		<alias name="Region" value="EU"/>
+		<locale name="en" value="Greenland"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="GM" is_enabled="true" order_no="0">
+		<alias name="Region" value="AF"/>
+		<locale name="en" value="Gambia"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="GN" is_enabled="true" order_no="0">
+		<alias name="Region" value="AF"/>
+		<locale name="en" value="Guinea"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="GP" is_enabled="true" order_no="0">
+		<alias name="Region" value="CAC"/>
+		<locale name="en" value="Guadeloupe"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="GQ" is_enabled="true" order_no="0">
+		<alias name="Region" value="AF"/>
+		<locale name="en" value="Equatorial Guinea"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="GR" is_enabled="true" order_no="0">
+		<alias name="Region" value="EU"/>
+		<locale name="en" value="Greece"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="GS" is_enabled="true" order_no="0">
+		<alias name="Region" value="ROW"/>
+		<locale name="en" value="S. Georgia and S. Sandwich Islands"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="GT" is_enabled="true" order_no="0">
+		<alias name="Region" value="CAC"/>
+		<locale name="en" value="Guatemala"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="GU" is_enabled="true" order_no="0">
+		<alias name="Region" value="OCA"/>
+		<locale name="en" value="Guam"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="GW" is_enabled="true" order_no="0">
+		<alias name="Region" value="AF"/>
+		<locale name="en" value="Guinea-Bissau"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="GY" is_enabled="true" order_no="0">
+		<alias name="Region" value="SA"/>
+		<locale name="en" value="Guyana"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="HK" is_enabled="true" order_no="0">
+		<alias name="Region" value="AP"/>
+		<locale name="en" value="Hong Kong"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="HM" is_enabled="true" order_no="0">
+		<alias name="Region" value="ROW"/>
+		<locale name="en" value="Heard Island and McDonald Islands"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="HN" is_enabled="true" order_no="0">
+		<alias name="Region" value="CAC"/>
+		<locale name="en" value="Honduras"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="HR" is_enabled="true" order_no="0">
+		<alias name="Region" value="EU"/>
+		<locale name="en" value="Croatia (Hrvatska)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="HT" is_enabled="true" order_no="0">
+		<alias name="Region" value="CAC"/>
+		<locale name="en" value="Haiti"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="HU" is_enabled="true" order_no="0">
+		<alias name="Region" value="EU"/>
+		<locale name="en" value="Hungary"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="ID" is_enabled="true" order_no="0">
+		<alias name="Region" value="AP"/>
+		<locale name="en" value="Indonesia"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="IE" is_enabled="true" order_no="0">
+		<alias name="Region" value="EU"/>
+		<locale name="en" value="Ireland"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="IL" is_enabled="true" order_no="0">
+		<alias name="Region" value="ME"/>
+		<locale name="en" value="Israel"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="IN" is_enabled="true" order_no="0">
+		<alias name="Region" value="AP"/>
+		<locale name="en" value="India"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="IO" is_enabled="true" order_no="0">
+		<alias name="Region" value="ROW"/>
+		<locale name="en" value="British Indian Ocean Territory"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="IQ" is_enabled="true" order_no="0">
+		<alias name="Region" value="ME"/>
+		<locale name="en" value="Iraq"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="IR" is_enabled="true" order_no="0">
+		<alias name="Region" value="ME"/>
+		<locale name="en" value="Iran"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="IS" is_enabled="true" order_no="0">
+		<alias name="Region" value="EU"/>
+		<locale name="en" value="Iceland"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="IT" is_enabled="true" order_no="0">
+		<alias name="Region" value="EU"/>
+		<locale name="en" value="Italy"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="JM" is_enabled="true" order_no="0">
+		<alias name="Region" value="CAC"/>
+		<locale name="en" value="Jamaica"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="JO" is_enabled="true" order_no="0">
+		<alias name="Region" value="ME"/>
+		<locale name="en" value="Jordan"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="JP" is_enabled="true" order_no="0">
+		<alias name="Region" value="AP"/>
+		<locale name="en" value="Japan"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="KE" is_enabled="true" order_no="0">
+		<alias name="Region" value="AF"/>
+		<locale name="en" value="Kenya"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="KG" is_enabled="true" order_no="0">
+		<alias name="Region" value="ME"/>
+		<locale name="en" value="Kyrgyzstan"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="KH" is_enabled="true" order_no="0">
+		<alias name="Region" value="AP"/>
+		<locale name="en" value="Cambodia"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="KI" is_enabled="true" order_no="0">
+		<alias name="Region" value="OCA"/>
+		<locale name="en" value="Kiribati"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="KM" is_enabled="true" order_no="0">
+		<alias name="Region" value="AF"/>
+		<locale name="en" value="Comoros"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="KN" is_enabled="true" order_no="0">
+		<alias name="Region" value="CAC"/>
+		<locale name="en" value="Saint Kitts and Nevis"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="KP" is_enabled="true" order_no="0">
+		<alias name="Region" value="AP"/>
+		<locale name="en" value="Korea (North)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="KR" is_enabled="true" order_no="0">
+		<alias name="Region" value="AP"/>
+		<locale name="en" value="Korea (South)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="KW" is_enabled="true" order_no="0">
+		<alias name="Region" value="GCC"/>
+		<locale name="en" value="Kuwait"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="KY" is_enabled="true" order_no="0">
+		<alias name="Region" value="CAC"/>
+		<locale name="en" value="Cayman Islands"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="KZ" is_enabled="true" order_no="0">
+		<alias name="Region" value="ME"/>
+		<locale name="en" value="Kazakhstan"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="LA" is_enabled="true" order_no="0">
+		<alias name="Region" value="AP"/>
+		<locale name="en" value="Laos"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="LB" is_enabled="true" order_no="0">
+		<alias name="Region" value="ME"/>
+		<locale name="en" value="Lebanon"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="LC" is_enabled="true" order_no="0">
+		<alias name="Region" value="CAC"/>
+		<locale name="en" value="Saint Lucia"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="LI" is_enabled="true" order_no="0">
+		<alias name="Region" value="EU"/>
+		<locale name="en" value="Liechtenstein"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="LK" is_enabled="true" order_no="0">
+		<alias name="Region" value="AP"/>
+		<locale name="en" value="Sri Lanka"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="LR" is_enabled="true" order_no="0">
+		<alias name="Region" value="AF"/>
+		<locale name="en" value="Liberia"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="LS" is_enabled="true" order_no="0">
+		<alias name="Region" value="AF"/>
+		<locale name="en" value="Lesotho"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="LT" is_enabled="true" order_no="0">
+		<alias name="Region" value="EU"/>
+		<locale name="en" value="Lithuania"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="LU" is_enabled="true" order_no="0">
+		<alias name="Region" value="EU"/>
+		<locale name="en" value="Luxembourg"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="LV" is_enabled="true" order_no="0">
+		<alias name="Region" value="EU"/>
+		<locale name="en" value="Latvia"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="LY" is_enabled="true" order_no="0">
+		<alias name="Region" value="AF"/>
+		<locale name="en" value="Libya"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="MA" is_enabled="true" order_no="0">
+		<alias name="Region" value="AF"/>
+		<locale name="en" value="Morocco"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="MC" is_enabled="true" order_no="0">
+		<alias name="Region" value="EU"/>
+		<locale name="en" value="Monaco"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="MD" is_enabled="true" order_no="0">
+		<alias name="Region" value="EU"/>
+		<locale name="en" value="Moldova"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="MG" is_enabled="true" order_no="0">
+		<alias name="Region" value="AP"/>
+		<locale name="en" value="Madagascar"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="MH" is_enabled="true" order_no="0">
+		<alias name="Region" value="OCA"/>
+		<locale name="en" value="Marshall Islands"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="MK" is_enabled="true" order_no="0">
+		<alias name="Region" value="EU"/>
+		<locale name="en" value="Macedonia"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="ML" is_enabled="true" order_no="0">
+		<alias name="Region" value="AF"/>
+		<locale name="en" value="Mali"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="MM" is_enabled="true" order_no="0">
+		<alias name="Region" value="AP"/>
+		<locale name="en" value="Myanmar"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="MN" is_enabled="true" order_no="0">
+		<alias name="Region" value="AP"/>
+		<locale name="en" value="Mongolia"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="MO" is_enabled="true" order_no="0">
+		<alias name="Region" value="AP"/>
+		<locale name="en" value="Macao"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="MP" is_enabled="true" order_no="0">
+		<alias name="Region" value="OCA"/>
+		<locale name="en" value="Northern Mariana Islands"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="MQ" is_enabled="true" order_no="0">
+		<alias name="Region" value="CAC"/>
+		<locale name="en" value="Martinique"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="MR" is_enabled="true" order_no="0">
+		<alias name="Region" value="AF"/>
+		<locale name="en" value="Mauritania"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="MS" is_enabled="true" order_no="0">
+		<alias name="Region" value="CAC"/>
+		<locale name="en" value="Montserrat"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="MT" is_enabled="true" order_no="0">
+		<alias name="Region" value="EU"/>
+		<locale name="en" value="Malta"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="MU" is_enabled="true" order_no="0">
+		<alias name="Region" value="AP"/>
+		<locale name="en" value="Mauritius"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="MV" is_enabled="true" order_no="0">
+		<alias name="Region" value="AP"/>
+		<locale name="en" value="Maldives"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="MW" is_enabled="true" order_no="0">
+		<alias name="Region" value="AF"/>
+		<locale name="en" value="Malawi"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="MX" is_enabled="true" order_no="0">
+		<alias name="Region" value="CAC"/>
+		<locale name="en" value="Mexico"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="MY" is_enabled="true" order_no="0">
+		<alias name="Region" value="AP"/>
+		<locale name="en" value="Malaysia"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="MZ" is_enabled="true" order_no="0">
+		<alias name="Region" value="AF"/>
+		<locale name="en" value="Mozambique"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="NA" is_enabled="true" order_no="0">
+		<alias name="Region" value="AF"/>
+		<locale name="en" value="Namibia"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="NC" is_enabled="true" order_no="0">
+		<alias name="Region" value="OCA"/>
+		<locale name="en" value="New Caledonia"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="NE" is_enabled="true" order_no="0">
+		<alias name="Region" value="AF"/>
+		<locale name="en" value="Niger"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="NF" is_enabled="true" order_no="0">
+		<alias name="Region" value="OCA"/>
+		<locale name="en" value="Norfolk Island"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="NG" is_enabled="true" order_no="0">
+		<alias name="Region" value="AF"/>
+		<locale name="en" value="Nigeria"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="NI" is_enabled="true" order_no="0">
+		<alias name="Region" value="CAC"/>
+		<locale name="en" value="Nicaragua"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="NL" is_enabled="true" order_no="0">
+		<alias name="Region" value="EU"/>
+		<locale name="en" value="Netherlands"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="NO" is_enabled="true" order_no="0">
+		<alias name="Region" value="EU"/>
+		<locale name="en" value="Norway"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="NP" is_enabled="true" order_no="0">
+		<alias name="Region" value="AP"/>
+		<locale name="en" value="Nepal"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="NR" is_enabled="true" order_no="0">
+		<alias name="Region" value="NR"/>
+		<locale name="en" value="Global"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="NU" is_enabled="true" order_no="0">
+		<alias name="Region" value="OCA"/>
+		<locale name="en" value="Niue"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="NZ" is_enabled="true" order_no="0">
+		<alias name="Region" value="OCA"/>
+		<locale name="en" value="New Zealand (Aotearoa)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="OM" is_enabled="true" order_no="0">
+		<alias name="Region" value="GCC"/>
+		<locale name="en" value="Oman"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="PA" is_enabled="true" order_no="0">
+		<alias name="Region" value="CAC"/>
+		<locale name="en" value="Panama"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="PE" is_enabled="true" order_no="0">
+		<alias name="Region" value="SA"/>
+		<locale name="en" value="Peru"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="PF" is_enabled="true" order_no="0">
+		<alias name="Region" value="OCA"/>
+		<locale name="en" value="French Polynesia"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="PG" is_enabled="true" order_no="0">
+		<alias name="Region" value="OCA"/>
+		<locale name="en" value="Papua New Guinea"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="PH" is_enabled="true" order_no="0">
+		<alias name="Region" value="AP"/>
+		<locale name="en" value="Philippines"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="PK" is_enabled="true" order_no="0">
+		<alias name="Region" value="AP"/>
+		<locale name="en" value="Pakistan"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="PL" is_enabled="true" order_no="0">
+		<alias name="Region" value="EU"/>
+		<locale name="en" value="Poland"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="PM" is_enabled="true" order_no="0">
+		<alias name="Region" value="NA"/>
+		<locale name="en" value="Saint Pierre and Miquelon"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="PN" is_enabled="true" order_no="0">
+		<alias name="Region" value="OCA"/>
+		<locale name="en" value="Pitcairn"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="PR" is_enabled="true" order_no="0">
+		<alias name="Region" value="CAC"/>
+		<locale name="en" value="Puerto Rico"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="PS" is_enabled="true" order_no="0">
+		<alias name="Region" value="ME"/>
+		<locale name="en" value="Palestinian Territory"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="PT" is_enabled="true" order_no="0">
+		<alias name="Region" value="EU"/>
+		<locale name="en" value="Portugal"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="PW" is_enabled="true" order_no="0">
+		<alias name="Region" value="OCA"/>
+		<locale name="en" value="Palau"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="PY" is_enabled="true" order_no="0">
+		<alias name="Region" value="SA"/>
+		<locale name="en" value="Paraguay"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="QA" is_enabled="true" order_no="0">
+		<alias name="Region" value="GCC"/>
+		<locale name="en" value="Qatar"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="RE" is_enabled="true" order_no="0">
+		<alias name="Region" value="AP"/>
+		<locale name="en" value="Reunion"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="RO" is_enabled="true" order_no="0">
+		<alias name="Region" value="EU"/>
+		<locale name="en" value="Romania"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="RU" is_enabled="true" order_no="0">
+		<alias name="Region" value="RF"/>
+		<locale name="en" value="Russian Federation"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="RW" is_enabled="true" order_no="0">
+		<alias name="Region" value="AF"/>
+		<locale name="en" value="Rwanda"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="SA" is_enabled="true" order_no="0">
+		<alias name="Region" value="GCC"/>
+		<locale name="en" value="Saudi Arabia"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="SB" is_enabled="true" order_no="0">
+		<alias name="Region" value="OCA"/>
+		<locale name="en" value="Solomon Islands"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="SC" is_enabled="true" order_no="0">
+		<alias name="Region" value="AF"/>
+		<locale name="en" value="Seychelles"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="SD" is_enabled="true" order_no="0">
+		<alias name="Region" value="AF"/>
+		<locale name="en" value="Sudan"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="SE" is_enabled="true" order_no="0">
+		<alias name="Region" value="EU"/>
+		<locale name="en" value="Sweden"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="SG" is_enabled="true" order_no="0">
+		<alias name="Region" value="AP"/>
+		<locale name="en" value="Singapore"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="SH" is_enabled="true" order_no="0">
+		<alias name="Region" value="AF"/>
+		<locale name="en" value="Saint Helena"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="SI" is_enabled="true" order_no="0">
+		<alias name="Region" value="EU"/>
+		<locale name="en" value="Slovenia"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="SJ" is_enabled="true" order_no="0">
+		<alias name="Region" value="EU"/>
+		<locale name="en" value="Svalbard and Jan Mayen"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="SK" is_enabled="true" order_no="0">
+		<alias name="Region" value="EU"/>
+		<locale name="en" value="Slovakia"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="SL" is_enabled="true" order_no="0">
+		<alias name="Region" value="AF"/>
+		<locale name="en" value="Sierra Leone"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="SM" is_enabled="true" order_no="0">
+		<alias name="Region" value="EU"/>
+		<locale name="en" value="San Marino"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="SN" is_enabled="true" order_no="0">
+		<alias name="Region" value="AF"/>
+		<locale name="en" value="Senegal"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="SO" is_enabled="true" order_no="0">
+		<alias name="Region" value="AF"/>
+		<locale name="en" value="Somalia"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="SR" is_enabled="true" order_no="0">
+		<alias name="Region" value="SA"/>
+		<locale name="en" value="Suriname"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="ST" is_enabled="true" order_no="0">
+		<alias name="Region" value="AF"/>
+		<locale name="en" value="Sao Tome and Principe"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="SU" is_enabled="true" order_no="0">
+		<alias name="Region" value="RF"/>
+		<locale name="en" value="USSR (former)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="SV" is_enabled="true" order_no="0">
+		<alias name="Region" value="CAC"/>
+		<locale name="en" value="El Salvador"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="SY" is_enabled="true" order_no="0">
+		<alias name="Region" value="ME"/>
+		<locale name="en" value="Syria"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="SZ" is_enabled="true" order_no="0">
+		<alias name="Region" value="AF"/>
+		<locale name="en" value="Swaziland"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="TC" is_enabled="true" order_no="0">
+		<alias name="Region" value="NA"/>
+		<locale name="en" value="Turks and Caicos Islands"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="TD" is_enabled="true" order_no="0">
+		<alias name="Region" value="AF"/>
+		<locale name="en" value="Chad"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="TF" is_enabled="true" order_no="0">
+		<alias name="Region" value="ROW"/>
+		<locale name="en" value="French Southern Territories"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="TG" is_enabled="true" order_no="0">
+		<alias name="Region" value="AF"/>
+		<locale name="en" value="Togo"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="TH" is_enabled="true" order_no="0">
+		<alias name="Region" value="AP"/>
+		<locale name="en" value="Thailand"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="TJ" is_enabled="true" order_no="0">
+		<alias name="Region" value="AP"/>
+		<locale name="en" value="Tajikistan"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="TK" is_enabled="true" order_no="0">
+		<alias name="Region" value="OCA"/>
+		<locale name="en" value="Tokelau"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="TL" is_enabled="true" order_no="0">
+		<alias name="Region" value="AP"/>
+		<locale name="en" value="Timor-Leste"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="TM" is_enabled="true" order_no="0">
+		<alias name="Region" value="AP"/>
+		<locale name="en" value="Turkmenistan"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="TN" is_enabled="true" order_no="0">
+		<alias name="Region" value="AF"/>
+		<locale name="en" value="Tunisia"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="TO" is_enabled="true" order_no="0">
+		<alias name="Region" value="OCA"/>
+		<locale name="en" value="Tonga"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="TP" is_enabled="true" order_no="0">
+		<alias name="Region" value="AP"/>
+		<locale name="en" value="East Timor"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="TR" is_enabled="true" order_no="0">
+		<alias name="Region" value="EU"/>
+		<locale name="en" value="Turkey"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="TT" is_enabled="true" order_no="0">
+		<alias name="Region" value="CAC"/>
+		<locale name="en" value="Trinidad and Tobago"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="TV" is_enabled="true" order_no="0">
+		<alias name="Region" value="OCA"/>
+		<locale name="en" value="Tuvalu"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="TW" is_enabled="true" order_no="0">
+		<alias name="Region" value="AP"/>
+		<locale name="en" value="Taiwan"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="TZ" is_enabled="true" order_no="0">
+		<alias name="Region" value="AF"/>
+		<locale name="en" value="Tanzania"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="UA" is_enabled="true" order_no="0">
+		<alias name="Region" value="EU"/>
+		<locale name="en" value="Ukraine"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="UG" is_enabled="true" order_no="0">
+		<alias name="Region" value="AF"/>
+		<locale name="en" value="Uganda"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="UK" is_enabled="true" order_no="0">
+		<alias name="Region" value="EU"/>
+		<locale name="en" value="United Kingdom"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="UM" is_enabled="true" order_no="0">
+		<alias name="Region" value="NA"/>
+		<locale name="en" value="United States Minor Outlying Islands"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="US" is_enabled="true" order_no="0">
+		<alias name="Region" value="NA"/>
+		<locale name="en" value="United States of America"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="UY" is_enabled="true" order_no="0">
+		<alias name="Region" value="SA"/>
+		<locale name="en" value="Uruguay"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="UZ" is_enabled="true" order_no="0">
+		<alias name="Region" value="AP"/>
+		<locale name="en" value="Uzbekistan"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="VA" is_enabled="true" order_no="0">
+		<alias name="Region" value="EU"/>
+		<locale name="en" value="Vatican City State (Holy See)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="VC" is_enabled="true" order_no="0">
+		<alias name="Region" value="CAC"/>
+		<locale name="en" value="Saint Vincent and the Grenadines"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="VE" is_enabled="true" order_no="0">
+		<alias name="Region" value="SA"/>
+		<locale name="en" value="Venezuela"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="VG" is_enabled="true" order_no="0">
+		<alias name="Region" value="CAC"/>
+		<locale name="en" value="Virgin Islands (British)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="VI" is_enabled="true" order_no="0">
+		<alias name="Region" value="CAC"/>
+		<locale name="en" value="Virgin Islands (U.S.)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="VN" is_enabled="true" order_no="0">
+		<alias name="Region" value="AP"/>
+		<locale name="en" value="Viet Nam"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="VU" is_enabled="true" order_no="0">
+		<alias name="Region" value="OCA"/>
+		<locale name="en" value="Vanuatu"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="WF" is_enabled="true" order_no="0">
+		<alias name="Region" value="OCA"/>
+		<locale name="en" value="Wallis and Futuna"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="WS" is_enabled="true" order_no="0">
+		<alias name="Region" value="OCA"/>
+		<locale name="en" value="Samoa"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="XC" is_enabled="false" order_no="0">
+		<alias name="Region" value=""/>
+		<locale name="en" value="Common"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="XX" is_enabled="true" order_no="0">
+		<alias name="Region" value="GL"/>
+		<locale name="en" value="Global"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="YE" is_enabled="true" order_no="0">
+		<alias name="Region" value="ME"/>
+		<locale name="en" value="Yemen"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="YT" is_enabled="true" order_no="0">
+		<alias name="Region" value="AP"/>
+		<locale name="en" value="Mayotte"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="YU" is_enabled="true" order_no="0">
+		<alias name="Region" value="EU"/>
+		<locale name="en" value="Yugoslavia (former)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="ZA" is_enabled="true" order_no="0">
+		<alias name="Region" value="AF"/>
+		<locale name="en" value="South Africa"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="ZM" is_enabled="true" order_no="0">
+		<alias name="Region" value="AF"/>
+		<locale name="en" value="Zambia"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="ZR" is_enabled="true" order_no="0">
+		<alias name="Region" value="AF"/>
+		<locale name="en" value="Zaire (former)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="ZW" is_enabled="true" order_no="0">
+		<alias name="Region" value="AF"/>
+		<locale name="en" value="Zimbabwe"/>
+	</d2_dictionary_value>
+</d2_dictionary>

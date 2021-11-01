@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dialog id="PropertiesDialog" buttons_right="false" focus="" height="400" resizable="true" signoff_creation="false" signoff_edit="false" signoff_import="false" signoff_intention_dictionary="" signoff_intention_required="false" width="400">
+	<content>
+		<fieldset label_en="Set Planned Withdrawal Date">
+			<label id="object_name"/>
+			<label id="r_version_label"/>
+			<label id="a_status" assistance_dictionary="Domain Status DQL Dictionary" assistance_dictionary_alias="display_value" assistance_type="dictionary"/>
+			<separator/>
+			<text id="category" condition_visible_create="false" condition_visible_edit="false" condition_visible_import="false"/>
+			<date id="approved_date" advancedView_visible="false" condition_enabled_create="false" condition_enabled_edit="false" condition_enabled_import="false" condition_visible="(getValue(category).notEquals('1'))"/>
+			<date id="planned_effective_date" advancedView_visible="false" condition_enabled_create="false" condition_enabled_edit="false" condition_enabled_import="false" condition_visible="((getValue(category).equals('1'))&amp;&amp;(getValue(effective_date).equals('nulldate')))"/>
+			<date id="effective_date" advancedView_enabled="false" advancedView_visible="false" condition_enabled_create="false" condition_enabled_edit="false" condition_enabled_import="false" condition_visible="(getValue(category).equals('1'))"/>
+			<date id="planned_withdraw_date" advancedView_enabled="false" advancedView_required="false" condition_enabled="(getValue(a_status).equals('Effective'))" condition_enabled_create="false" condition_enabled_import="false" condition_validation="getValue(planned_withdraw_date).isGreaterOrEqualsThan('$TODAY')" validation_message_en="Please select future date for 'Planned Withdraw date'."/>
+			<memo id="withdraw_reason" advancedView_enabled="false" advancedView_visible="false" condition_enabled="(getValue(category).notEquals('1'))" condition_required_edit="true" condition_visible="(getValue(category).notEquals('1'))"/>
+			<memo id="comments" advancedView_enabled="false" advancedView_required="false" advancedView_visible="false" condition_enabled="((getValue(a_status).equals('Effective'))||(getValue(a_status).equals('Release Pending')))" condition_required="((getValue(a_status).equals('Release Pending'))||(getValue(a_status).equals('Effective')))" condition_required_edit="true" condition_visible="((getValue(a_status).equals('Effective'))||(getValue(a_status).equals('Release Pending')))" label_en="Reason For Change"/>
+		</fieldset>
+	</content>
+	<buttons>
+		<button id="buttonOk" action="validDialog()"/>
+		<button id="buttonCancel" action="cancelDialog()"/>
+	</buttons>
+</dialog>

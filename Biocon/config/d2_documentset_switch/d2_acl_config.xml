@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_documentset_switch object_name="d2_acl_config">
+	<d2_documentset name="Registration Forms¬Medical Device Registration Forms" config="Registration Form Security Model"/>
+	<d2_documentset name="Registration Forms¬Product Registration Forms" config="Registration Form Security Model"/>
+	<d2_documentset name="Registration Forms¬Medical Device Regulatory Submission Registration Form Context" config="Submission Registration Form Security"/>
+	<d2_documentset name="Registration Forms¬Medical Device Regulatory-Admin Registration Forms" config="Registration Form Security Model"/>
+	<d2_documentset name="Registration Forms¬Manufactured Item Registration Forms¬Item Registration Forms for Finished Goods without item code" config="Registration Form Security Model"/>
+	<d2_documentset name="Registration Forms¬Manufactured Item Registration Forms¬Item Registration Forms for Finished Goods" config="Registration Form Security Model"/>
+	<d2_documentset name="Registration Forms¬Manufactured Item Registration Forms¬Item Registration Forms for Semi-finished Goods without item code" config="Registration Form Security Model"/>
+	<d2_documentset name="Registration Forms¬Manufactured Item Registration Forms¬Item Registration Forms for Semi-finished Goods" config="Registration Form Security Model"/>
+	<d2_documentset name="Registration Forms¬Manufactured Item Registration Forms¬Item Registration Forms for Active Ingredients without item code" config="Registration Form Security Model"/>
+	<d2_documentset name="Registration Forms¬Manufactured Item Registration Forms¬Item Registration Forms for Active Ingredients" config="Registration Form Security Model"/>
+	<d2_documentset name="GMP Documents¬GMP Group Directive" config="GMP User Role Security"/>
+	<d2_documentset name="GMP Documents¬GMP Group Drawings" config="GMP User Role Security"/>
+	<d2_documentset name="GMP Documents¬GMP Group Executed Manufacturing" config="GMP User Role Security"/>
+	<d2_documentset name="GMP Documents¬GMP Group Executed Validation" config="GMP User Role Security"/>
+	<d2_documentset name="GMP Documents¬GMP Group Facility Records and Certificates" config="GMP User Role Security"/>
+	<d2_documentset name="GMP Documents¬GMP Group Form" config="GMP User Role Security"/>
+	<d2_documentset name="GMP Documents¬GMP Group Guideline" config="GMP User Role Security"/>
+	<d2_documentset name="GMP Documents¬GMP Group Program" config="GMP User Role Security"/>
+	<d2_documentset name="GMP Documents¬GMP Group Manuals" config="GMP User Role Security"/>
+	<d2_documentset name="GMP Documents¬GMP Group Master Manufacturing" config="GMP User Role Security"/>
+	<d2_documentset name="GMP Documents¬GMP Group Master Validation" config="GMP User Role Security"/>
+	<d2_documentset name="GMP Documents¬GMP Group Method" config="GMP User Role Security"/>
+	<d2_documentset name="GMP Documents¬GMP Group Packaging and Labeling" config="GMP User Role Security"/>
+	<d2_documentset name="GMP Documents¬GMP Group Policy" config="GMP User Role Security"/>
+	<d2_documentset name="GMP Documents¬GMP Group Project Documents" config="GMP User Role Security"/>
+	<d2_documentset name="GMP Documents¬GMP Group Quality Documents" config="GMP User Role Security"/>
+	<d2_documentset name="GMP Documents¬GMP Group Quality Manual" config="GMP User Role Security"/>
+	<d2_documentset name="GMP Documents¬GMP Group Records and Certificates" config="GMP User Role Security"/>
+	<d2_documentset name="GMP Documents¬GMP Group SOP" config="GMP User Role Security"/>
+	<d2_documentset name="GMP Documents¬GMP Group Specification" config="GMP User Role Security"/>
+	<d2_documentset name="GMP Documents¬GMP Group Training" config="GMP User Role Security"/>
+	<d2_documentset name="GMP Documents¬GMP Group Work Instruction" config="GMP User Role Security"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group External Audit" config="GMP User Role Security"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Internal Audit" config="GMP User Role Security"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Investigations" config="GMP User Role Security"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Quality Events" config="GMP User Role Security"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Quality Management" config="GMP User Role Security"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Quality Records" config="GMP User Role Security"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Quality Risk Documentation" config="GMP User Role Security"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Recalls" config="GMP User Role Security"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Site Master File" config="GMP User Role Security"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Supplier Audit" config="GMP User Role Security"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Protocol" config="GMP User Role Security"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Reports" config="GMP User Role Security"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Requirements" config="GMP User Role Security"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Reviews" config="GMP User Role Security"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Plans" config="GMP User Role Security"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Checklists" config="GMP User Role Security"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Matrix" config="GMP User Role Security"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Risk Documentation" config="GMP User Role Security"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group DHF" config="GMP User Role Security"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Bill Of Material" config="GMP User Role Security"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group DMR" config="GMP User Role Security"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Labeling" config="GMP User Role Security"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Drawings" config="GMP User Role Security"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Production Document" config="GMP User Role Security"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Customer Documents" config="GMP User Role Security"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Service Documents" config="GMP User Role Security"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Software Release" config="GMP User Role Security"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Preliminary Bill Of Material" config="GMP User Role Security"/>
+	<d2_documentset name="Med Device Documents¬Med Device DMR Group Specifications" config="GMP User Role Security"/>
+	<d2_documentset name="Med Device Documents¬Med Device DHF Group Specifications" config="GMP User Role Security"/>
+	<d2_documentset name="Med Device Documents¬Med Device Subgroup Parent" config="GMP User Role Security"/>
+	<d2_documentset name="Med Device Documents¬Med Device DMR Subgroup Index" config="GMP User Role Security"/>
+	<d2_documentset name="Med Device Documents¬Med Device DHF Subgroup Index" config="GMP User Role Security"/>
+	<d2_documentset name="Med Device Documents¬Med Device Subgroup Section" config="GMP User Role Security"/>
+	<d2_documentset name="Issued Print¬Issued Print Objects" config="Issued Print Security"/>
+	<d2_documentset name="Issued Print¬Issued Print Request Objects" config="Issued Print Request Security"/>
+	<d2_documentset name="Change Request¬Change Requests" config="Change Request Security Model"/>
+	<d2_documentset name="Controlled Documents¬Cat 1 Controlled Documents" config="Cat 1-3 Controlled Document Security Model"/>
+	<d2_documentset name="Controlled Documents¬Cat 2 Controlled Documents" config="Cat 1-3 Controlled Document Security Model"/>
+	<d2_documentset name="Controlled Documents¬Cat 3 Controlled Documents" config="Cat 1-3 Controlled Document Security Model"/>
+	<d2_documentset name="Controlled Documents¬Cat 4 Controlled Documents" config="Cat 4 Controlled Document Security Model"/>
+	<d2_documentset name="Auto Inheritance Configuration" config="System Configuration Object"/>
+	<d2_documentset name="Generic dm_folder property context¬Folders-Dynamic Security" config="Security Object Folder Security Model"/>
+	<d2_documentset name="Security Tag" config="Security Object Security Model"/>
+	<d2_documentset name="Security Group Generator" config="Security Object Security Model"/>
+	<d2_documentset name="Security Model" config="Security Object Security Model"/>
+	<d2_documentset name="Security Folder Model" config="Security Object Security Model"/>
+	<d2_documentset name="Security Shared" config="Security Object Security Model"/>
+	<d2_documentset name="Content Templates¬Quality in Manufacturing Content Templates" config="Content Template Security Model"/>
+	<d2_documentset name="Content Templates¬Med Device Content Templates" config="Content Template Security Model"/>
+	<d2_documentset name="Distribution List Folders" config="Distribution List"/>
+	<d2_documentset name="DistributionList" config="Distribution List"/>
+	<d2_documentset name="Restricted Edit Models" config="Restricted Edit Configs"/>
+	<d2_documentset name="Restricted Edit Instances" config="Restricted Edit Configs"/>
+	<d2_documentset name="Controlled Print Objects" config="Controlled Print Security"/>
+	<switch_default config=""/>
+</d2_documentset_switch>

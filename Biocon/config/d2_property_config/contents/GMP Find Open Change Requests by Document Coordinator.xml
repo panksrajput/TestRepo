@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dialog id="PropertiesDialog" buttons_right="false" focus="doc_coordinators" height="170" resizable="true" signoff_creation="false" signoff_edit="false" signoff_import="false" signoff_intention_dictionary="" signoff_intention_required="false" width="400">
+	<content>
+		<fieldset label_en="Find Open Change Requests by Document Coordinator" no_border="true">
+			<combo id="doc_coordinators" assistance_dql="select i_all_users_names from dm_group where any i_supergroups_names in (select alias_value from d2_dictionary_value where dictionary_name like 'GMP Applicable Sites' and any alias_value is not nullstring and alias_value like '%_coordinators' ENABLE(ROW_BASED))" assistance_type="dql" condition_required_create="true" condition_required_edit="true" condition_required_import="true" control="true"/>
+		</fieldset>
+	</content>
+	<buttons>
+		<button id="buttonOk" action="validDialog()"/>
+		<button id="buttonCancel" action="cancelDialog()"/>
+	</buttons>
+</dialog>

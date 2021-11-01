@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<delta>
+	<insert position-after="menuContextRelationsViewWithNativeAnnotations,separator2,menuDistributionLaunch,menuDistributionReport,menuDistributionStop,menuDistributionProperties,separator3,menuContextRelationsDestroy" position-before="menuContextRelationsView,menuContextRelationsDisplayVD,menuContextRelationsEdit,separator0,menuContextRelationsCheckin,menuContextRelationsCancelCheckout,separator1,menuContextRelationsLocate">
+		<menuitem id="menuCustom1390284700816" action="" label_en="Properties">
+			<dynamic-action class="com.emc.d2fs.dctm.ui.dynamicactions.actions.ShowDialog" dialog="PropertiesDialog"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.interfaces.IsConnected"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.typeparts.IsObjectId"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.typeparts.IsQueueItem" equals="false"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.interfaces.IsMultipleSelection" equals="false"/>
+		</menuitem>
+	</insert>
+	<modify id="menuContextRelationsDestroy">
+		<append>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.interfaces.IsParameterEquals" equals="false" parameter="relation_name" value="Regulatory Application Form"/>
+		</append>
+	</modify>
+</delta>

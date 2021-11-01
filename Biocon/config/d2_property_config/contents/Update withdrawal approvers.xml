@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dialog id="PropertiesDialog" buttons_right="false" focus="withdraw_reason" height="370" resizable="true" signoff_creation="false" signoff_edit="false" signoff_import="false" signoff_intention_dictionary="" signoff_intention_required="false" width="430">
+	<content>
+		<tabs>
+			<tab label_en="Update Withdrawal Workflow Approvers">
+				<text id="category" condition_enabled_create="false" condition_enabled_edit="false" condition_enabled_import="false" condition_visible_create="false" condition_visible_edit="false" condition_visible_import="false"/>
+				<text id="a_status" condition_enabled_create="false" condition_enabled_edit="false" condition_enabled_import="false" condition_visible_create="false" condition_visible_edit="false" condition_visible_import="false"/>
+				<separator/>
+				<list id="wf_approvers" assistance_dql="select i_all_users_names from dm_group where  any i_supergroups_names in ($repeatingvalue(approvers)) or any i_supergroups_names in ($repeatingvalue(qo_approvers)) union select group_name from dm_group where  any i_supergroups_names in ($repeatingvalue(approvers)) or any i_supergroups_names in ($repeatingvalue(qo_approvers)) order by 1;" assistance_type="dql" asynchronous="false" condition_required_edit="true" label_en="Withdrawal Approvers" rows="4" sorted="true"/>
+			</tab>
+		</tabs>
+	</content>
+	<buttons>
+		<button id="buttonOk" action="validDialog()"/>
+		<button id="buttonCancel" action="cancelDialog()"/>
+	</buttons>
+</dialog>

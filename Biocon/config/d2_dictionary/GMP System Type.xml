@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_dictionary object_name="GMP System Type" title="Dictionary for GMP System Type" lock_config="false" parents_config="" application_names="OpenText Life Sciences Quality and Manufacturing Solution¬OpenText Life Sciences Medical Device Solution¬OpenText Life Sciences Medical Device for Quality and Manufacturing Solution¬Custom Configurations" security_group="admingroup" search_group="" version="2" is_versioned="false" manual_order="false" create_view_option="false" is_dql="false" is_dql_cache="false" dql="" label_en="GMP System Type">
+	<d2_dictionary_value object_name="Distribution" is_enabled="true" order_no="0">
+		<locale name="en" value="Distribution"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Document Management" is_enabled="true" order_no="0">
+		<locale name="en" value="Document Management"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Finance and Expenditure" is_enabled="true" order_no="0">
+		<locale name="en" value="Finance and Expenditure"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Human Resources" is_enabled="true" order_no="0">
+		<locale name="en" value="Human Resources"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Laboratory Information" is_enabled="true" order_no="0">
+		<locale name="en" value="Laboratory Information"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Materials and Resource Planning" is_enabled="true" order_no="0">
+		<locale name="en" value="Materials and Resource Planning"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Process Management" is_enabled="true" order_no="0">
+		<locale name="en" value="Process Management"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Quality Management" is_enabled="true" order_no="0">
+		<locale name="en" value="Quality Management"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Weighing and Dispensing" is_enabled="true" order_no="0">
+		<locale name="en" value="Weighing and Dispensing"/>
+	</d2_dictionary_value>
+</d2_dictionary>

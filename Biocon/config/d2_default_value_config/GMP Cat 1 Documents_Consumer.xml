@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_default_value_config new_format="true">
+	<object_name value="GMP Cat 1 Documents_Consumer"/>
+	<title value=""/>
+	<subject value=""/>
+	<authors/>
+	<keywords/>
+	<a_status value=""/>
+	<a_content_type value=""/>
+	<log_entry value=""/>
+	<language_code value=""/>
+	<object_type value="d2_default_value_config"/>
+	<lock_config value="F"/>
+	<parents_config/>
+	<attr_name>
+		<repeating value="applicable_sites"/>
+		<repeating value="category"/>
+		<repeating value="consumer_importers"/>
+		<repeating value="document_language"/>
+		<repeating value="domain"/>
+		<repeating value="notification_list"/>
+		<repeating value="original_file_name"/>
+		<repeating value="review_notif_recipients"/>
+		<repeating value="training_required"/>
+		<repeating value="promote_on_save_from"/>
+		<repeating value="promote_on_save_to"/>
+	</attr_name>
+	<attr_value>
+		<repeating value="$dqlvalue(&quot;select locale_value from d2_dictionary_value where dictionary_name='GMP Applicable Sites' and alias_value in (select distinct g.group_name FROM dm_user u, dm_group g WHERE ANY g.i_all_users_names = u.user_name and r_is_group = 0 and u.user_name =USER and g.group_name like '%_users') and any locale_value is not nullstring order by locale_value ENABLE(ROW_BASED)&quot;)"/>
+		<repeating value="1"/>
+		<repeating value="$USER"/>
+		<repeating value="English"/>
+		<repeating value="GMP"/>
+		<repeating value="$dqlvalue(&quot;select alias_value from d2_dictionary_value where dictionary_name='GMP Applicable Sites' and object_name in (select locale_value from d2_dictionary_value where alias_value in (select distinct g.group_name FROM dm_user u, dm_group g WHERE ANY g.i_all_users_names = u.user_name and r_is_group = 0 and u.user_name =USER and g.group_name like '%_users') and any locale_value is not nullstring) and alias_value like '%coordinators' and any alias_value is not nullstring order by alias_value ENABLE(ROW_BASED)&quot;)"/>
+		<repeating value="$FILENAME"/>
+		<repeating value="$dqlvalue(&quot;select alias_value from d2_dictionary_value where dictionary_name='GMP Applicable Sites' and object_name in (select locale_value from d2_dictionary_value where alias_value in (select distinct g.group_name FROM dm_user u, dm_group g WHERE ANY g.i_all_users_names = u.user_name and r_is_group = 0 and u.user_name =USER and g.group_name like '%_users') and any locale_value is not nullstring) and alias_value like '%coordinators' and any alias_value is not nullstring order by alias_value ENABLE(ROW_BASED)&quot;)"/>
+		<repeating value="T"/>
+		<repeating value="Draft"/>
+		<repeating value="(Update Properties)"/>
+	</attr_value>
+	<application_names>
+		<repeating value="OpenText Life Sciences Medical Device Solution"/>
+		<repeating value="OpenText Life Sciences Medical Device for Quality and Manufacturing Solution"/>
+		<repeating value="OpenText Life Sciences Quality and Manufacturing Solution"/>
+	</application_names>
+	<property_page value=""/>
+</d2_default_value_config>

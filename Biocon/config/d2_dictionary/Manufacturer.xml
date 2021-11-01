@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_dictionary object_name="Manufacturer" title="List of Manufacturers" lock_config="false" parents_config="" application_names="OpenText Life Sciences Submission Storage and Viewing¬OpenText Life Sciences Research and Development Solution¬OpenText Life Sciences Quality and Manufacturing Solution¬Custom Configurations" security_group="cd_regulatory_doc_coordinators" search_group="cd_regulatory_doc_coordinators" version="2" is_versioned="false" manual_order="false" create_view_option="false" is_dql="false" is_dql_cache="false" dql="" label_en="Manufacturers">
+	<d2_dictionary_value object_name="Manufacturer1" is_enabled="true" order_no="0">
+		<locale name="en" value="Manufacturer1"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Manufacturer2" is_enabled="true" order_no="0">
+		<locale name="en" value="Manufacturer2"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Manufacturer3" is_enabled="true" order_no="0">
+		<locale name="en" value="Manufacturer3"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Manufacturer4" is_enabled="true" order_no="0">
+		<locale name="en" value="Manufacturer4"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Manufacturer5" is_enabled="true" order_no="0">
+		<locale name="en" value="Manufacturer5"/>
+	</d2_dictionary_value>
+</d2_dictionary>

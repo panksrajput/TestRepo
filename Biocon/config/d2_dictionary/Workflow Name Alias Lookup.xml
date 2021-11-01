@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_dictionary object_name="Workflow Name Alias Lookup" title="" lock_config="false" parents_config="" application_names="OpenText Life Sciences Submission Storage and Viewing¬OpenText Life Sciences Research and Development Solution¬OpenText Life Sciences Medical Device Solution¬OpenText Life Sciences Quality and Manufacturing Solution¬OpenText Life Sciences Medical Device for Research and Development Solution¬OpenText Life Sciences Medical Device for Quality and Manufacturing Solution¬OpenText Life Sciences eTMF Solution" security_group="admingroup" search_group="" version="2" is_versioned="false" manual_order="false" create_view_option="false" is_dql="false" is_dql_cache="false" dql="" label_en="">
+	<d2_dictionary_value object_name="Cat 1 Approve only Workflow Template[1-APPROVE]" is_enabled="true" order_no="0">
+		<alias name="lookup value" value="Approval Workflow"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Cat 1 GMP withdrawal WF" is_enabled="true" order_no="0">
+		<alias name="lookup value" value="Withdrawal Workflow"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Cat 1 Periodic Review[1-PERIODIC]" is_enabled="true" order_no="0">
+		<alias name="lookup value" value="Periodic Review Workflow"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Cat 1 Review Approve Workflow Template - Dynamic Performers [1-APPROVE-REVIEW]" is_enabled="true" order_no="0">
+		<alias name="lookup value" value="Review Approval Workflow"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Cat 1-3 Editing Workflow Template" is_enabled="true" order_no="0">
+		<alias name="lookup value" value="Collaborative Editing Workflow"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Cat 1-3 For Edit Workflow" is_enabled="true" order_no="0">
+		<alias name="lookup value" value="Authoring Edit Workflow"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Cat 2 Expiration Review[2-EXPIRY]" is_enabled="true" order_no="0">
+		<alias name="lookup value" value="Expiry Review Workflow"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Cat 2 Independently Approved without Release Pending - [2-APPROVE-REVIEW]" is_enabled="true" order_no="0">
+		<alias name="lookup value" value="Review Approval Workflow"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Cat 2 Independently Approved without Review and Release Pending - [2-APPROVE]" is_enabled="true" order_no="0">
+		<alias name="lookup value" value="Approval Workflow"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Cat 2 Review-Format-Approve Workflow – Dynamic Performers[2-FORMATTER]" is_enabled="true" order_no="0">
+		<alias name="lookup value" value="Format Review Approval Workflow"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Category 3 - Delegated Approval Workflow Template [3-APPROVE]" is_enabled="true" order_no="0">
+		<alias name="lookup value" value="Approval Workflow"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Category 3 - Self Approved [3-REVIEW]" is_enabled="true" order_no="0">
+		<alias name="lookup value" value="Self-Approval Workflow"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Change Request Approval Workflow" is_enabled="true" order_no="0">
+		<alias name="lookup value" value="Change Request Approval Workflow"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Change Request Review Approval Workflow" is_enabled="true" order_no="0">
+		<alias name="lookup value" value="Change Request Review Approval Workflow"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Content Template - Delegated Approval Workflow Template [TEMPLATE-APPROVE]" is_enabled="true" order_no="0">
+		<alias name="lookup value" value="Content Template Approval Workflow"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Controlled Recall External" is_enabled="false" order_no="0">
+		<alias name="lookup value" value="Controlled Print Recall External Workflow"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Controlled Recall Internal" is_enabled="false" order_no="0">
+		<alias name="lookup value" value="Controlled Print Recall Internal Workflow"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="GMP SharePoint Collaboration 1 Step" is_enabled="true" order_no="0">
+		<alias name="lookup value" value="SP Collaborative Editing Workflow"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="GMP SharePoint Collaboration 2 Step" is_enabled="true" order_no="0">
+		<alias name="lookup value" value="SP Collaborative Editing Workflow"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Ingest_Document" is_enabled="false" order_no="0">
+		<alias name="lookup value" value="Ingest Document Workflow"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="SharePoint Collaboration 1 Step" is_enabled="true" order_no="0">
+		<alias name="lookup value" value="SP Collaborative Editing Workflow"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="SharePoint Collaboration 2 Step" is_enabled="true" order_no="0">
+		<alias name="lookup value" value="SP Collaborative Editing Workflow"/>
+	</d2_dictionary_value>
+</d2_dictionary>

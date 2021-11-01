@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_dictionary object_name="Auto Inheritance Rule Locked Object Policies" title="Enables the rules for handling checked-out objects to be configured in auto-inheritance configurations." lock_config="false" parents_config="" application_names="OpenText Life Sciences Submission Storage and Viewing¬OpenText Life Sciences Research and Development Solution¬OpenText Life Sciences eTMF Solution¬OpenText Life Sciences Quality and Manufacturing Solution¬OpenText Life Sciences Medical Device for Quality and Manufacturing Solution¬OpenText Life Sciences Medical Device for Research and Development Solution" security_group="admingroup" search_group="" version="2" is_versioned="false" manual_order="true" create_view_option="false" is_dql="false" is_dql_cache="false" dql="" label_en="Auto Inheritance Rule Locked Object Policies">
+	<d2_dictionary_value object_name="0" is_enabled="true" order_no="0">
+		<locale name="en" value="Skip update (default)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="1" is_enabled="true" order_no="1">
+		<locale name="en" value="Force check-in"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="2" is_enabled="true" order_no="2">
+		<locale name="en" value="Bypass lock temporarily"/>
+	</d2_dictionary_value>
+</d2_dictionary>

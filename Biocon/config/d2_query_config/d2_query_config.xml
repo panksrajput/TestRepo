@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_query_config new_format="true">
+	<object_name value=""/>
+	<title value=""/>
+	<subject value=""/>
+	<authors/>
+	<keywords/>
+	<a_status value=""/>
+	<a_content_type value=""/>
+	<log_entry value=""/>
+	<language_code value=""/>
+	<object_type/>
+	<full_text_search_enabled value="T"/>
+	<return_top_max value="250"/>
+	<default_object_type value=""/>
+	<attr_name/>
+	<attr_type/>
+	<public_security_group/>
+	<object_type_dictionary value=""/>
+	<object_type_aliaslocale value=""/>
+	<async_search_max value="10"/>
+	<http_method value="POST"/>
+	<search_engine_type value="2"/>
+	<search_engine_url value=""/>
+	<search_extension_name/>
+	<search_extension_value/>
+	<search_extension_type/>
+	<count_max value="50"/>
+	<xslt_name value=""/>
+	<quick_search_all value="T"/>
+	<open_new_window value="F"/>
+	<is_facet_enabled value="T"/>
+	<is_dictionary_key_highlight value="F"/>
+	<is_ft_enabled_all_searches value="T"/>
+	<facet_max_number value="5"/>
+	<lock_config value="F"/>
+</d2_query_config>

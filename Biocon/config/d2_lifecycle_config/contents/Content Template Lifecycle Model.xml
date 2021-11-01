@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2lifecycle execute_actions_on_start="true" state_attribute="">
+	<state direct="false" entry="false" name="Draft">
+		<entry_conditions/>
+		<actions>
+			<applymethod argument="-event d2_change_state_success -context_user &quot;$USER&quot; -string_1 &quot;LC Transition&quot; -string_2 &quot;$lookup($value(a_status),Domain Document Status Display,$value(r_object_type))&quot; -string_3 &quot;$lookup(Draft,Domain Document Status Display,$value(r_object_type))&quot;" name="CDFAuditMethod"/>
+			<set name="a_status" value="Draft"/>
+			<applysecurity/>
+			<applymethod argument="-child_objects ALL -if_child &quot;a_status not in ('Effective', 'Withdrawn', 'Suspended', 'Superseded', '$value(a_status)') and r_lock_owner = ' '&quot; -apply_d2_security true -transition_child &quot;Draft&quot; -context_user &quot;$USER&quot; -run_as_server true -bind_children true" name="CDFVirtualDocumentMethod"/>
+		</actions>
+		<next_states>
+			<state action="" confirmation_en="" dialog="" event="" label_en="Withdraw document" name="Withdrawn" type="promote"/>
+			<state action="" confirmation_en="" dialog="On purging interim Cat 1-3 versions - confirm" event="" label_en="Purge interim versions" name="(Purge interim versions)" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="For Approval" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(Start WF)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(End WF)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(Abort WF)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="checkin" label_en="" name="(Set Current Binding)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(Withdraw Other Versions)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(Validate VDoc Template Spreadsheet)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="Validated" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="Invalid" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(Refresh Artifact Lists)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+		</next_states>
+	</state>
+	<state direct="false" entry="false" name="Effective">
+		<entry_conditions>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate user is an Author for the selected template"/>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate selected template is not checked-out"/>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate document does not have annotations"/>
+		</entry_conditions>
+		<actions>
+			<makeversion keep_symbolic_label="true" type="major_same_document"/>
+			<applymethod argument="-event d2_change_state_success -context_user &quot;$USER&quot; -string_1 &quot;LC Transition&quot; -string_2 &quot;$lookup($value(a_status),Domain Document Status Display,$value(r_object_type))&quot; -string_3 &quot;$lookup(Effective,Domain Document Status Display,$value(r_object_type))&quot;" name="CDFAuditMethod"/>
+			<set name="approved_date" value="$NOW"/>
+			<set name="a_status" value="Effective"/>
+			<applyparameters/>
+			<applysecurity/>
+			<changestateversion filter="a_status = 'Effective'" target_state="Superseded"/>
+			<applymethod argument="-child_objects ALL -if_child &quot;a_status not in ('Effective', 'Withdrawn', 'Suspended', 'Superseded', '$value(a_status)') and r_lock_owner = ' '&quot; -apply_d2_security true -transition_child &quot;Effective&quot; -context_user &quot;$USER&quot; -run_as_server true" name="CDFVirtualDocumentMethod"/>
+			<applymethod argument="-child_objects ALL -context_user &quot;$USER&quot; -run_as_server true -bind_children true -version_label &quot;@value(r_version_label[0])&quot;" name="CDFVirtualDocumentMethod"/>
+			<renditionrequest/>
+		</actions>
+		<next_states>
+			<state action="" confirmation_en="" dialog="On suspending a Cat 1-3 document - confirm" event="" label_en="Suspend document" name="Suspended" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="Withdraw document" name="Withdrawn" type="promote"/>
+			<state action="" confirmation_en="" dialog="On purging interim Cat 1-3 versions - confirm" event="" label_en="Purge interim versions" name="(Purge interim versions)" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="Superseded" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="checkin" label_en="" name="(Version Effective to Draft)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="demote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(End WF)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(Withdraw Other Versions)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+		</next_states>
+	</state>
+	<state direct="false" entry="false" name="Suspended">
+		<entry_conditions>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate selected template is not checked-out"/>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate user is an Author for the selected template"/>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate selected document is not involved in an active workflow"/>
+		</entry_conditions>
+		<actions>
+			<applymethod argument="-if &quot;a_status='Effective'&quot; -event d2_change_state_success -context_user &quot;$USER&quot; -string_1 &quot;LC Transition&quot; -string_2 &quot;$lookup($value(a_status),Domain Document Status Display,$value(r_object_type))&quot; -string_3 &quot;$lookup(Suspended,Domain Document Status Display,$value(r_object_type))&quot;" name="CDFAuditMethod"/>
+			<set name="a_status" value="Suspended"/>
+			<applysecurity/>
+			<renditionrequest/>
+		</actions>
+		<next_states>
+			<state action="" confirmation_en="" dialog="" event="checkin" label_en="" name="Draft" type="demote"/>
+			<state action="" confirmation_en="" dialog="On reinstating a Cat 3 suspended document - set readers / review date" event="" label_en="Reinstate as &quot;Effective/Approved/Final&quot; version" name="(Reinstate as effective)" type="demote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="Withdraw document" name="Withdrawn" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(Withdraw Other Versions)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+		</next_states>
+	</state>
+	<state direct="false" entry="false" name="Superseded">
+		<entry_conditions/>
+		<actions>
+			<applymethod argument="-event d2_change_state_success -context_user &quot;$USER&quot; -string_1 &quot;LC Transition&quot; -string_2 &quot;$lookup($value(a_status),Domain Document Status Display,$value(r_object_type))&quot; -string_3 &quot;$lookup(Superseded,Domain Document Status Display,$value(r_object_type))&quot;" name="CDFAuditMethod"/>
+			<set name="a_status" value="Superseded"/>
+			<set name="superseded_date" value="$NOW"/>
+			<applysecurity/>
+			<applymethod argument="-event &quot;d2_properties_save&quot; -context_user &quot;$USER&quot; -attributes &quot;superseded_date&quot;" fetchCurrent="false" name="CDFAuditMethod"/>
+			<renditionrequest/>
+		</actions>
+		<next_states>
+			<state action="" confirmation_en="" dialog="On withdrawal of Cat 1-3 document - confirm" event="" label_en="" name="Withdrawn" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(Withdraw Other Versions)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+		</next_states>
+	</state>
+	<state direct="false" entry="false" name="Withdrawn">
+		<entry_conditions>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate selected template is not checked-out"/>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate user is an Author for the selected template"/>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate selected document is not involved in an active workflow"/>
+		</entry_conditions>
+		<actions>
+			<applymethod argument="-event d2_change_state_success -context_user &quot;$USER&quot; -string_1 &quot;LC Transition&quot; -string_2 &quot;$lookup($value(a_status),Domain Document Status Display,$value(r_object_type))&quot; -string_3 &quot;$lookup(Withdrawn,Domain Document Status Display,$value(r_object_type))&quot;" name="CDFAuditMethod"/>
+			<set name="a_status" value="Withdrawn"/>
+			<applysecurity/>
+			<applymethod argument="-if &quot;a_status='Effective'&quot; -string_1 &quot;$value(comments)&quot; -event &quot;d2_properties_save&quot; -context_user &quot;$USER&quot; -attributes &quot;withdraw_reason&quot;" fetchCurrent="false" name="CDFAuditMethod"/>
+			<applymethod argument="-if &quot;a_status='Effective'&quot; -event &quot;d2_properties_save&quot; -context_user &quot;$USER&quot; -attributes &quot;withdraw_date&quot;" fetchCurrent="false" name="CDFAuditMethod"/>
+			<changestateversion filter="" target_state="(Withdraw Other Versions)"/>
+			<renditionrequest/>
+			<set name="comments" value=""/>
+		</actions>
+		<next_states>
+			<state action="" confirmation_en="" dialog="On purging interim Cat 1-3 versions - confirm" event="" label_en="Purge interim versions" name="(Purge interim versions)" type="promote"/>
+			<state action="" confirmation_en="" dialog="On reverting a Cat 1-3 document to Draft - confirm" event="" label_en="Revert to ''Draft''" name="(Version Withdrawn to Draft)" type="demote"/>
+		</next_states>
+	</state>
+	<state direct="false" entry="false" name="(Purge interim versions)">
+		<entry_conditions>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate selected template is the CURRENT version"/>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate selected template is not checked-out"/>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate user is an Author for the selected template"/>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate template has interim versions"/>
+		</entry_conditions>
+		<actions>
+			<destroyversions destroyannoted="false" filter="a_status in ('Draft', 'For Review', 'Reviewed', 'Withdrawn')"/>
+		</actions>
+		<next_states/>
+	</state>
+	<state direct="false" entry="true" name="(Init)">
+		<entry_conditions/>
+		<actions>
+			<set name="owner_name" value="admingroup"/>
+			<setrepeating mode="append" name="authors" removeDuplicate="true" value="$USER"/>
+			<set name="a_status" value="Draft"/>
+			<setrepeating mode="append" name="wf_process_list" removeDuplicate="true" value="TEMPLATE-APPROVE"/>
+			<applymethod argument="-if &quot;copy_file_name=1&quot;  -attr &quot;title&quot; -value &quot;$substring($quotedvalue(original_file_name),1,$if($lastposition($quotedvalue(original_file_name),'.')=0,$length($quotedvalue(original_file_name)),$dec($lastposition($quotedvalue(original_file_name),'.'))))&quot;" name="CDFSetAttributeMethod"/>
+			<set name="copy_file_name" value="false"/>
+			<applysecurity/>
+			<vdchildren disable_actions="empty" target_state="(Init)"/>
+			<applymethod argument="-if &quot;a_content_type = 'vdts'&quot; -operation init -permitted_object_types &quot;$repeatingvalue(vdoc_component_object_types)&quot; -context_user &quot;$USER&quot;" fetchCurrent="false" name="CDFVirtualDocumentAssemblerMethod"/>
+		</actions>
+		<next_states>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="Draft" type="promote"/>
+		</next_states>
+	</state>
+	<state direct="false" entry="false" name="(Reinstate as effective)">
+		<entry_conditions/>
+		<actions>
+			<set name="approved_date" value="$NOW"/>
+			<applymethod argument="-event d2_change_state_success -context_user &quot;$USER&quot; -string_1 &quot;LC Transition&quot; -string_2 &quot;$lookup($value(a_status),Domain Document Status Display,$value(r_object_type))&quot; -string_3 &quot;$lookup(Effective,Domain Document Status Display,$value(r_object_type))&quot;" name="CDFAuditMethod"/>
+			<set name="a_status" value="Effective"/>
+			<applyparameters/>
+			<applysecurity/>
+			<applymethod argument="-child_objects ALL -if_child &quot;a_status not in ('Effective', 'Withdrawn', 'Suspended', 'Superseded', '$value(a_status)') and r_lock_owner = ' '&quot; -apply_d2_security true -transition_child &quot;(Reinstate as effective)&quot; -context_user &quot;$USER&quot; -run_as_server true" name="CDFVirtualDocumentMethod"/>
+			<applymethod argument="-child_objects ALL -context_user &quot;$USER&quot; -run_as_server true -bind_children true -version_label &quot;@value(r_version_label[0])&quot;" name="CDFVirtualDocumentMethod"/>
+		</actions>
+		<next_states/>
+	</state>
+	<state direct="false" entry="false" name="For Approval">
+		<entry_conditions/>
+		<actions>
+			<applymethod argument="-event d2_change_state_success -context_user &quot;$USER&quot; -string_1 &quot;LC Transition&quot; -string_2 &quot;$lookup($value(a_status),Domain Document Status Display,$value(r_object_type))&quot; -string_3 &quot;$lookup(For Approval,Domain Document Status Display,$value(r_object_type))&quot;" name="CDFAuditMethod"/>
+			<set name="a_status" value="For Approval"/>
+			<set name="sent_for_approval_date" value="$NOW"/>
+			<applysecurity/>
+			<applymethod argument="-child_objects ALL -if_child &quot;a_status not in ('Effective', 'Withdrawn', 'Suspended', 'Superseded', '$value(a_status)') and r_lock_owner = ' '&quot; -apply_d2_security true -transition_child &quot;For Approval&quot; -context_user &quot;$USER&quot; -run_as_server true -bind_children true" name="CDFVirtualDocumentMethod"/>
+		</actions>
+		<next_states>
+			<state action="checkin()" confirmation_en="" dialog="" event="" label_en="" name="Draft" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="demote"/>
+			<state action="" confirmation_en="" dialog="On purging interim Cat 1-3 versions - confirm" event="" label_en="Purge interim versions" name="(Purge interim versions)" signoff_intention_dictionary="Boolean Values" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="On withdrawal of Cat 1-3 document - confirm" event="" label_en="" name="Withdrawn" signoff_intention_dictionary="Approval Intention Codes" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="Effective" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(Effective via Workflow)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(Abort WF)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(Withdraw Other Versions)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+		</next_states>
+	</state>
+	<state direct="false" entry="false" name="(Effective via Workflow)">
+		<entry_conditions/>
+		<actions>
+			<applyparameters/>
+			<makeversion keep_symbolic_label="true" type="major_same_document"/>
+			<applymethod argument="-event d2_change_state_success -context_user &quot;$USER&quot; -string_1 &quot;LC Transition&quot; -string_2 &quot;$lookup($value(a_status),Domain Document Status Display,$value(r_object_type))&quot; -string_3 &quot;$lookup(Effective,Domain Document Status Display,$value(r_object_type))&quot;" name="CDFAuditMethod"/>
+			<set name="a_status" value="Effective"/>
+			<set name="approved_date" value="$NOW"/>
+			<applysecurity/>
+			<changestateversion filter="a_status = 'Effective'" target_state="Superseded"/>
+			<applymethod argument="-child_objects ALL -if_child &quot;a_status not in ('Effective', 'Withdrawn', 'Suspended', 'Superseded', '$value(a_status)') and r_lock_owner = ' '&quot; -apply_d2_security true -transition_child &quot;(Effective via Workflow)&quot; -context_user &quot;$USER&quot; -run_as_server true" name="CDFVirtualDocumentMethod"/>
+			<applymethod argument="-child_objects ALL -context_user &quot;$USER&quot; -run_as_server true -bind_children true -version_label &quot;@value(r_version_label[0])&quot;" name="CDFVirtualDocumentMethod"/>
+		</actions>
+		<next_states/>
+	</state>
+	<state direct="false" entry="false" name="(Version Effective to Draft)">
+		<entry_conditions/>
+		<actions>
+			<set name="a_status" value="Draft"/>
+			<setrepeating mode="append" name="authors" removeDuplicate="true" value="$USER"/>
+			<applysecurity/>
+			<applymethod argument="-child_objects ALL -context_user &quot;$USER&quot; -run_as_server true -bind_children true" name="CDFVirtualDocumentMethod"/>
+		</actions>
+		<next_states/>
+	</state>
+	<state direct="false" entry="false" name="(Start WF)">
+		<entry_conditions/>
+		<actions>
+			<applyparameters/>
+			<applymethod argument="-child_objects ALL -if_child &quot;a_status not in ('Effective', 'Withdrawn', 'Suspended', 'Superseded', '$value(a_status)') and r_lock_owner = ' '&quot; -copy_attrs &quot;authors,approvers&quot; -apply_d2_security true -context_user &quot;$USER&quot; -run_as_server true" name="CDFVirtualDocumentMethod"/>
+			<set name="wf_is_in_workflow" value="true"/>
+			<applymethod argument="-id $value(r_object_id)  -query &quot;select object_name as wf_workflow_name from dm_workflow where r_object_id in (select r_workflow_id from dmi_package where any r_component_id='$value(r_object_id)') and r_runtime_state =1&quot; -ignore_null_values true -override true" name="CDFUpdateAttrsViaQueryMethod"/>
+		</actions>
+		<next_states/>
+	</state>
+	<state direct="false" entry="false" name="(End WF)">
+		<entry_conditions/>
+		<actions>
+			<applymethod argument="-target &quot;select r_object_id from cd_content_template(all) where i_chronicle_id='$value(i_chronicle_id)' and wf_is_in_workflow=true&quot; -attr &quot;wf_is_in_workflow,wf_workflow_name&quot; -value &quot;false, &quot;" name="CDFSetAttributeMethod"/>
+		</actions>
+		<next_states/>
+	</state>
+	<state direct="false" entry="false" name="(Abort WF)">
+		<entry_conditions/>
+		<actions>
+			<applymethod argument="-event d2_change_state_success -context_user &quot;$USER&quot; -string_1 &quot;LC Transition&quot; -string_2 &quot;$lookup($value(a_status),Domain Document Status Display,$value(r_object_type))&quot; -string_3 &quot;$lookup(Draft,Domain Document Status Display,$value(r_object_type))&quot;" name="CDFAuditMethod"/>
+			<set name="a_status" value="Draft"/>
+			<applysecurity/>
+			<applymethod argument="-target &quot;select r_object_id from cd_content_template(all) where i_chronicle_id='$value(i_chronicle_id)' and wf_is_in_workflow=true&quot; -attr &quot;wf_is_in_workflow,wf_workflow_name&quot; -value &quot;false, &quot;" name="CDFSetAttributeMethod"/>
+			<applymethod argument="-child_objects ALL -if_child &quot;a_status not in ('Effective', 'Withdrawn', 'Suspended', 'Superseded', '$value(a_status)') and r_lock_owner = ' '&quot; -apply_d2_security true -transition_child &quot;Draft&quot; -context_user &quot;$USER&quot; -run_as_server true -bind_children true" name="CDFVirtualDocumentMethod"/>
+		</actions>
+		<next_states/>
+	</state>
+	<state direct="false" entry="false" name="(Set Current Binding)">
+		<entry_conditions/>
+		<actions>
+			<applymethod argument="-child_objects ALL -context_user &quot;$USER&quot; -run_as_server true -bind_children true" name="CDFVirtualDocumentMethod"/>
+		</actions>
+		<next_states/>
+	</state>
+	<state direct="false" entry="false" name="(Set Specific Binding)">
+		<entry_conditions/>
+		<actions>
+			<applymethod argument="-child_objects ALL -context_user &quot;$USER&quot; -run_as_server true -bind_children true -version_label &quot;@value(r_version_label[0])&quot;" name="CDFVirtualDocumentMethod"/>
+		</actions>
+		<next_states/>
+	</state>
+	<state direct="false" entry="false" name="(Version Withdrawn to Draft)">
+		<entry_conditions>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate user is an Author for the selected template"/>
+		</entry_conditions>
+		<actions>
+			<makeversion keep_symbolic_label="false" type="minor"/>
+			<set name="a_status" value="Draft"/>
+			<applysecurity/>
+			<applymethod argument="-child_objects ALL -context_user &quot;$USER&quot; -run_as_server true -bind_children true" name="CDFVirtualDocumentMethod"/>
+		</actions>
+		<next_states/>
+	</state>
+	<state direct="false" entry="false" name="(Withdraw Other Versions)">
+		<entry_conditions/>
+		<actions>
+			<applymethod argument="-event d2_change_state_success -context_user &quot;$USER&quot; -string_1 &quot;LC Transition&quot; -string_2 &quot;$lookup($value(a_status),Domain Document Status Display,$value(r_object_type))&quot; -string_3 &quot;$lookup(Withdrawn,Domain Document Status Display,$value(r_object_type))&quot;" name="CDFAuditMethod"/>
+			<set name="a_status" value="Withdrawn"/>
+			<applymethod argument="-event &quot;d2_properties_save&quot; -context_user &quot;$USER&quot; -attributes &quot;withdraw_date&quot;" fetchCurrent="false" name="CDFAuditMethod"/>
+			<applysecurity/>
+			<renditionrequest/>
+		</actions>
+		<next_states/>
+	</state>
+	<state direct="false" entry="false" name="(Update Properties)">
+		<entry_conditions/>
+		<actions>
+			<applymethod argument="-if &quot;a_content_type = 'vdts'&quot; -operation init -permitted_object_types &quot;$repeatingvalue(vdoc_component_object_types)&quot; -context_user &quot;$USER&quot;" fetchCurrent="false" name="CDFVirtualDocumentAssemblerMethod"/>
+		</actions>
+		<next_states/>
+	</state>
+	<state direct="false" entry="false" name="(Validate VDoc Template Spreadsheet)">
+		<entry_conditions>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate user is an Author for the selected template"/>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate selected template is not checked-out"/>
+		</entry_conditions>
+		<actions>
+			<applyparameters/>
+			<applymethod argument="-operation validate -permitted_object_types &quot;$repeatingvalue(vdoc_component_object_types)&quot; -context_user &quot;$USER&quot; -post_transition_on_success &quot;Validated&quot; -post_transition_on_error &quot;Invalid&quot; -vdoc_is_study_related &quot;$value(vdoc_is_study_related)&quot;" fetchCurrent="false" name="CDFVirtualDocumentAssemblerMethod"/>
+		</actions>
+		<next_states/>
+	</state>
+	<state direct="false" entry="false" name="Validated">
+		<entry_conditions/>
+		<actions>
+			<set name="a_status" value="Validated"/>
+		</actions>
+		<next_states>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="For Approval" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+		</next_states>
+	</state>
+	<state direct="false" entry="false" name="Invalid">
+		<entry_conditions/>
+		<actions>
+			<set name="a_status" value="Invalid"/>
+		</actions>
+		<next_states>
+			<state action="" confirmation_en="" dialog="" event="checkin" label_en="" name="Draft" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+		</next_states>
+	</state>
+	<state direct="false" entry="false" name="(Refresh Artifact Lists)">
+		<entry_conditions/>
+		<actions>
+			<applymethod argument="-if &quot;a_content_type = 'vdts'&quot; -operation init -permitted_object_types &quot;$repeatingvalue(vdoc_component_object_types)&quot; -record_schema_format_in_attribute excel_schema_format -context_user &quot;$USER&quot; -vdoc_is_study_related &quot;$value(vdoc_is_study_related)&quot;" fetchCurrent="false" name="CDFVirtualDocumentAssemblerMethod"/>
+		</actions>
+		<next_states/>
+	</state>
+</d2lifecycle>

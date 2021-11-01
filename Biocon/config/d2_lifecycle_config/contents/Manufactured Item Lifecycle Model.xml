@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2lifecycle execute_actions_on_start="true" state_attribute="a_status">
+	<state direct="false" entry="false" name="Active">
+		<entry_conditions>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate user is a Manager of the selected registration form"/>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate selected document is not checked-out"/>
+		</entry_conditions>
+		<actions>
+			<set name="a_status" value="Active"/>
+			<applysecurity/>
+		</actions>
+		<next_states>
+			<state action="" confirmation_en="OK to change the item registration form to &quot;Inactive&quot;? This will prevent users from creating and approving documents related to this item, unless the form is re-activated." dialog="" event="" label_en="Deactivate..." name="Inactive" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(Update Properties)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+		</next_states>
+	</state>
+	<state direct="false" entry="false" name="Inactive">
+		<entry_conditions>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate user is a Manager of the selected registration form"/>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate selected document is not checked-out"/>
+		</entry_conditions>
+		<actions>
+			<set name="a_status" value="Inactive"/>
+			<applysecurity/>
+		</actions>
+		<next_states>
+			<state action="" confirmation_en="OK to change the item registration form to &quot;Active&quot;? This will allow users to create and approve documents related to this item." dialog="" event="" label_en="Reactivate..." name="Active" type="demote"/>
+		</next_states>
+	</state>
+	<state direct="false" entry="true" name="(Init)">
+		<entry_conditions/>
+		<actions>
+			<set name="owner_name" value="admingroup"/>
+			<setrepeating mode="append" name="form_managers" removeDuplicate="true" value="$USER"/>
+			<set name="a_status" value="Active"/>
+			<applymethod argument="-attr &quot;promote_on_save_from,promote_on_save_to&quot; -value &quot;Active,(Update Properties)&quot;" fetchCurrent="false" name="CDFSetAttributeMethod"/>
+			<applymethod argument="-if &quot;domain ='GMP' or domain='Med Device'&quot; -id $value(r_object_id) -query &quot;select alias_value as review_notif_recipients from d2_dictionary_value v,d2_dictionary d where v.dictionary_name = d.object_name and d.object_name = 'GMP Applicable Sites' and v.object_name in (select applicable_sites from cd_manuf_item_info where r_object_id = '$value(r_object_id)') and d.alias_name = 'doc_coordinators' and v.i_position = d.i_position and any alias_value is not nullstring order by alias_value ENABLE (ROW_BASED)&quot; -all_rows true -truncate true -apply_d2_configs true" fetchCurrent="false" name="CDFUpdateAttrsViaQueryMethod"/>
+			<applymethod argument="" fetchCurrent="false" name="CDFApplyAttributeInheritanceMethod"/>
+			<applysecurity/>
+		</actions>
+		<next_states>
+			<state action="" confirmation_en="" dialog="" event="" label_en="Mark as ''Active''" name="Active" type="promote"/>
+		</next_states>
+	</state>
+	<state direct="false" entry="false" name="(Update Properties)">
+		<entry_conditions/>
+		<actions>
+			<applymethod argument="-if &quot;domain ='GMP' or domain='Med Device'&quot; -id $value(r_object_id) -query &quot;select alias_value as review_notif_recipients from d2_dictionary_value v,d2_dictionary d where v.dictionary_name = d.object_name and d.object_name = 'GMP Applicable Sites' and v.object_name in (select applicable_sites from cd_manuf_item_info where r_object_id = '$value(r_object_id)') and d.alias_name = 'doc_coordinators' and v.i_position = d.i_position and any alias_value is not nullstring order by alias_value ENABLE (ROW_BASED)&quot; -all_rows true -truncate true -apply_d2_configs true" fetchCurrent="false" name="CDFUpdateAttrsViaQueryMethod"/>
+			<applymethod argument="-event &quot;Update&quot;" fetchCurrent="false" name="CDFApplyAttributeInheritanceMethod"/>
+		</actions>
+		<next_states/>
+	</state>
+</d2lifecycle>

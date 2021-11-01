@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dialog id="PropertiesDialog" buttons_right="false" focus="planned_effective_date" height="460" resizable="true" signoff_creation="false" signoff_edit="false" signoff_import="false" signoff_intention_dictionary="" signoff_intention_required="false" width="500">
+	<content>
+		<tabs>
+			<tab label_en="Set document effectivity period">
+				<label id="r_object_type" condition_visible_create="false" condition_visible_edit="false" condition_visible_import="false"/>
+				<date id="planned_effective_date" condition_validation="getValue(planned_effective_date).isGreaterOrEqualsThan('$TODAY')" label_en="Planned Effective date" validation_message_en="Please select future date for 'Planned Effective date'."/>
+				<date id="effective_date" condition_enabled_create="false" condition_enabled_edit="false" condition_enabled_import="false" condition_required="1=1" condition_validation="getValue(effective_date).isGreaterOrEqualsThan('$TODAY')" label_en="Effective date" validation_message_en="Please select future date for 'Effective from date'."/>
+				<date id="expiration_date" advancedView_enabled="false" advancedView_visible="false" condition_enabled="(getValue(category).equals('2'))" condition_enabled_create="false" condition_enabled_edit="false" condition_enabled_import="false" condition_required="1=1" condition_validation="getValue(expiration_date).isGreaterThan('$TODAY')&amp;&amp;getValue(expiration_date).isGreaterThan('getValue(effective_date)')" condition_visible="(getValue(category).equals('2'))" condition_visible_create="false" condition_visible_edit="false" condition_visible_import="false" label_en="To expiry date" validation_message_en="Please select date after 'Effective from date' for 'To expiry date'."/>
+				<date id="planned_withdraw_date" condition_validation="getValue(planned_withdraw_date).isGreaterOrEqualsThan('$TODAY')" validation_message_en="Please select future date for 'Planned Withdraw date'."/>
+				<comment font_bold="true" font_color="#CC0000" label_en="Note:"/>
+				<comment html_content="true" label_en="&lt;table cellspacing=0&gt;&lt;tr&gt;&lt;td&gt;When the document is due to become Effective, a new major version will be created that can be read by the appropriate users.&lt;strong&gt;This operation will be audited.&lt;/strong&gt; The document will remain Effective until it is Suspended, Withdrawn or Superseded by a new Effective version. The system will automatically transition the document to Effective on the specified Planned Effective Date. This date can be modified at a later time or left blank. The document can be manually promoted to Effective by an authorized user at any time.&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"/>
+				<comment advancedView_visible="false" condition_visible="(getValue(r_object_type).equals('cd_change_request'))" font_color="#000000" html_content="true" label_en="&lt;table cellspacing=0&gt;&lt;tr&gt;&lt;td&gt;The documents attached to this Change Request will also be made effective, accordingly.&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"/>
+			</tab>
+			<tab label_en="Set periodic review">
+				<label id="category" condition_enabled_create="false" condition_enabled_edit="false" condition_enabled_import="false" label_en="Category"/>
+				<label id="a_status" assistance_dictionary="Domain Status DQL Dictionary" assistance_dictionary_alias="display_value" assistance_type="dictionary" condition_enabled_create="false" condition_enabled_edit="false" condition_enabled_import="false" label_en="Document Status"/>
+				<list id="applicable_sites" asynchronous="true" condition_enabled_create="false" condition_enabled_edit="false" condition_enabled_import="false" condition_visible_create="false" condition_visible_edit="false" condition_visible_import="false" sorted="true"/>
+				<combo id="periodic_review_interval" advancedView_visible="false" asynchronous="false" condition_enabled_edit="false" condition_enabled_import="false" condition_visible="(getValue(category).equals('1'))" label_en="Periodic Review Interval"/>
+				<date id="periodic_review_due_date" advancedView_enabled="false" condition_enabled="(getValue(periodic_review_interval).contains(' '))" condition_enabled_create="false" condition_enabled_edit="false" condition_enabled_import="false" condition_validation="getValue(periodic_review_due_date).isGreaterOrEqualsThan('$TODAY')" label_en="Periodic Review Due Date"/>
+				<combo id="review_start_days" assistance_dictionary="GMP Periodic Review Interval" assistance_dictionary_alias="auto" assistance_type="dictionary" condition_required_create="true" condition_required_edit="true" condition_required_import="true" label_en="Periodic Review Start Days"/>
+				<comment font_italic="true" font_size="7pt" html_content="true" label_en="&lt;table cellspacing=0&gt;&lt;tr&gt;&lt;td&gt;The system will add the Periodic Review Interval to the Effective Date of this document to generate the Periodic Review Due Date.  The Periodic Review Start Days determines how many days prior to the Due Date that the system will automatically initiate the Periodic Review Workflow.&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"/>
+				<list-editable id="review_notif_recipients" assistance_dql="select i_all_users_names from dm_group where  any i_supergroups_names in ($repeatingvalue(doc_coordinators)) union select group_name from dm_group where  any i_supergroups_names in ($repeatingvalue(doc_coordinators)) union select user_name from dm_user where user_name in ($repeatingvalue(doc_coordinators)) order by 1;" assistance_type="dql" asynchronous="true" condition_required_create="true" condition_required_edit="true" condition_required_import="true" label_en="Periodic Review Recipients" rows="4" sorted="true"/>
+				<list id="doc_coordinators" asynchronous="true" condition_enabled_create="false" condition_enabled_edit="false" condition_enabled_import="false" condition_visible_create="false" condition_visible_edit="false" condition_visible_import="false" sorted="true"/>
+			</tab>
+			<tab label_en="Set readers">
+				<comment html_content="true" label_en="&lt;table cellspacing=0&gt;&lt;tr&gt;&lt;td&gt;Select the additional user groups and / or individual users who will be able to read the document &lt;em&gt;after&lt;/em&gt; it has become ''Effective/Final'' (while it remains ''Effective/Final'').&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"/>
+				<list id="readers" assistance_dql="select groups_names from dm_group where any i_supergroups_names='$value(group_name)_doc_readers' union select users_names from dm_group where any i_supergroups_names='$value(group_name)_doc_readers' union select group_name from dm_group where group_name = '$value(group_name)_doc_readers' union select i_all_users_names from dm_group where any i_supergroups_names in (select alias_value from d2_dictionary_value where dictionary_name like 'GMP Applicable Sites' and any alias_value is not nullstring and alias_value like '%_readers' and object_name in ($repeatingvalue(applicable_sites)) ENABLE(ROW_BASED)) union select group_name from dm_group where any i_supergroups_names in (select alias_value from d2_dictionary_value where dictionary_name like 'GMP Applicable Sites' and any alias_value is not nullstring and alias_value like '%_readers' and object_name in ($repeatingvalue(applicable_sites)) ENABLE(ROW_BASED))" assistance_type="dql" rows="6" sorted="true"/>
+				<comment/>
+			</tab>
+		</tabs>
+	</content>
+	<buttons>
+		<button id="buttonOk" action="validDialog()"/>
+		<button id="buttonCancel" action="cancelDialog()"/>
+	</buttons>
+</dialog>

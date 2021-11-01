@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2lifecycle execute_actions_on_start="true" state_attribute="a_status">
+	<state direct="false" entry="false" name="Active">
+		<entry_conditions>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate user is a Manager of the selected registration form"/>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate selected document is not checked-out"/>
+		</entry_conditions>
+		<actions>
+			<set name="a_status" value="Active"/>
+			<applysecurity/>
+			<applymethod argument="-target &quot;select r_object_id from cd_clinical_site_info where clinical_trial_id = '$value(clinical_trial_id)' and country_code = '$value(country_code)'&quot; -attr a_status -value &quot;Active&quot; -override true" name="CDFSetAttributeMethod"/>
+		</actions>
+		<next_states>
+			<state action="" confirmation_en="OK to Deactivate this Registration Form?" dialog="" event="" label_en="Deactivate..." name="Inactive" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="Do you want to delete the registered submission?" dialog="" event="" label_en="Delete" name="Delete" signoff_intention_dictionary="Boolean Values" signoff_intention_required="true" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(Update Properties)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+		</next_states>
+	</state>
+	<state direct="false" entry="false" name="Inactive">
+		<entry_conditions>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate user is a Manager of the selected registration form"/>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate selected document is not checked-out"/>
+		</entry_conditions>
+		<actions>
+			<set name="a_status" value="Inactive"/>
+			<applysecurity/>
+			<applymethod argument="-target &quot;select r_object_id from cd_clinical_site_info where clinical_trial_id = '$value(clinical_trial_id)' and country_code = '$value(country_code)'&quot; -attr a_status -value &quot;Inactive&quot; -override true" name="CDFSetAttributeMethod"/>
+		</actions>
+		<next_states>
+			<state action="" confirmation_en="OK to Activate this Registration Form?" dialog="" event="" label_en="Reactivate..." name="Active" type="promote"/>
+			<state action="" confirmation_en="Do you want to delete the registered submission?" dialog="" event="" label_en="Delete" name="Delete" signoff_intention_dictionary="Boolean Values" signoff_intention_required="false" signoff_required="false" type="promote"/>
+		</next_states>
+	</state>
+	<state direct="false" entry="true" name="(Init)">
+		<entry_conditions/>
+		<actions>
+			<set name="owner_name" value="admingroup"/>
+			<set name="a_status" value="Active"/>
+			<applysecurity/>
+			<setrepeating mode="append" name="promote_on_save_from" removeDuplicate="true" value="Active"/>
+			<setrepeating mode="append" name="promote_on_save_to" removeDuplicate="true" value="(Update Properties)"/>
+		</actions>
+		<next_states/>
+	</state>
+	<state direct="false" entry="false" name="Delete">
+		<entry_conditions>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate user is a Manager of the selected registration form"/>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate selected document is not checked-out"/>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate Registered Submission Registration Form has no associated documents"/>
+		</entry_conditions>
+		<actions>
+			<set name="a_is_hidden" value="true"/>
+			<applymethod argument="" name="CDFDeleteObjectAsynchMethod"/>
+		</actions>
+		<next_states/>
+	</state>
+	<state direct="false" entry="false" name="(Update Properties)">
+		<entry_conditions/>
+		<actions>
+			<applyparameters/>
+			<applyautonaming/>
+			<applymethod argument="-qualifier cd_reg_submission_info -auto_naming true" name="CDFApplyD2ConfigurationsMethod"/>
+			<applymethod argument="-id &quot;$value(r_object_id)&quot; -target &quot;select r_object_id from cd_reg_admin_activity_info where any application_descriptions = '$value(application_description)'&quot; -attr submission_statuses,submission_dates -matching_row &quot;application_descriptions=$value(application_description)&quot; -value &quot;$quotedvalue(submission_status),$quotedvalue(submission_date)&quot;" name="CDFSetAttributeMethod"/>
+			<applymethod argument="-id &quot;$value(r_object_id)&quot; -event &quot;Submission access roles updated&quot; -string_1 &quot;$value(object_name)&quot; -string_2 &quot;$value(r_object_type)&quot; -context_user &quot;$USER&quot;" name="CDFAuditMethod"/>
+			<applymethod argument="-event &quot;Update&quot;" name="CDFApplyAttributeInheritanceMethod"/>
+		</actions>
+		<next_states/>
+	</state>
+</d2lifecycle>

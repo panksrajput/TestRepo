@@ -1,0 +1,621 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_dictionary object_name="GMP Subgroups" title="Dictionary for GMP Substance Code" lock_config="false" parents_config="" application_names="OpenText Life Sciences Quality and Manufacturing Solution¬OpenText Life Sciences Medical Device Solution¬OpenText Life Sciences Medical Device for Quality and Manufacturing Solution¬Biocon" security_group="admingroup" search_group="" version="2" is_versioned="false" manual_order="false" create_view_option="false" is_dql="false" is_dql_cache="false" dql="" label_en="Subgroup">
+	<d2_dictionary_value object_name="Artwork" is_enabled="true" order_no="0">
+		<locale name="en" value="Artwork"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Assembly" is_enabled="true" order_no="0">
+		<locale name="en" value="Assembly"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Assessments - Regulations" is_enabled="true" order_no="0">
+		<locale name="en" value="Assessments - Regulations"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Assessments - Standards" is_enabled="true" order_no="0">
+		<locale name="en" value="Assessments - Standards"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Audit Report" is_enabled="true" order_no="0">
+		<locale name="en" value="Audit Report"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Audit Supporting Documents" is_enabled="true" order_no="0">
+		<locale name="en" value="Audit Supporting Documents"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Booklet" is_enabled="true" order_no="0">
+		<locale name="en" value="Booklet"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Building" is_enabled="true" order_no="0">
+		<locale name="en" value="Building"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Change Request" is_enabled="true" order_no="0">
+		<locale name="en" value="Change Request"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Cliche" is_enabled="true" order_no="0">
+		<locale name="en" value="Cliche"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Clinical" is_enabled="true" order_no="0">
+		<locale name="en" value="Clinical"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Commercial Operation" is_enabled="true" order_no="0">
+		<locale name="en" value="Commercial Operation"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Commodity" is_enabled="true" order_no="0">
+		<locale name="en" value="Commodity"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Communication" is_enabled="true" order_no="0">
+		<locale name="en" value="Communication"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Component" is_enabled="true" order_no="0">
+		<locale name="en" value="Component"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Computer Systems" is_enabled="true" order_no="0">
+		<locale name="en" value="Computer Systems"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Computerized System" is_enabled="true" order_no="0">
+		<locale name="en" value="Computerized System"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Container Closure" is_enabled="true" order_no="0">
+		<locale name="en" value="Container Closure"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Course Material" is_enabled="true" order_no="0">
+		<locale name="en" value="Course Material"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Customer Management" is_enabled="true" order_no="0">
+		<locale name="en" value="Customer Management"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Customer Records" is_enabled="true" order_no="0">
+		<locale name="en" value="Customer Records"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Development" is_enabled="true" order_no="0">
+		<locale name="en" value="Development"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Device" is_enabled="true" order_no="0">
+		<locale name="en" value="Device"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="DFMEA" is_enabled="true" order_no="0">
+		<locale name="en" value="DFMEA"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Discovery" is_enabled="true" order_no="0">
+		<locale name="en" value="Discovery"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Drawing" is_enabled="true" order_no="0">
+		<locale name="en" value="Drawing"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Electrical" is_enabled="true" order_no="0">
+		<locale name="en" value="Electrical"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Engineering Manual" is_enabled="true" order_no="0">
+		<locale name="en" value="Engineering Manual"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Equipment" is_enabled="true" order_no="0">
+		<locale name="en" value="Equipment"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Equipment Manual" is_enabled="true" order_no="0">
+		<locale name="en" value="Equipment Manual"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Executed Manufacturing Document Active Ingredient" is_enabled="true" order_no="0">
+		<locale name="en" value="Executed Manufacturing Document - Active Ingredient"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Executed Manufacturing Document Finished Good" is_enabled="true" order_no="0">
+		<locale name="en" value="Executed Manufacturing Document - Finished Good"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Executed Manufacturing Document Product" is_enabled="false" order_no="0">
+		<locale name="en" value="Executed Manufacturing Document - Product"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Executed Manufacturing Document Semi-finished Good" is_enabled="true" order_no="0">
+		<locale name="en" value="Executed Manufacturing Document - Semi-finished Good"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Executed Manufacturing Document Substance" is_enabled="false" order_no="0">
+		<locale name="en" value="Executed Manufacturing Document - Substance"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Executed Validation Active Ingredient" is_enabled="true" order_no="0">
+		<locale name="en" value="Executed Validation - Active Ingredient"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Executed Validation Equipment" is_enabled="true" order_no="0">
+		<locale name="en" value="Executed Validation - Equipment"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Executed Validation Finished Good" is_enabled="true" order_no="0">
+		<locale name="en" value="Executed Validation - Finished Good"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Executed Validation Material" is_enabled="true" order_no="0">
+		<locale name="en" value="Executed Validation - Material"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Executed Validation Product" is_enabled="false" order_no="0">
+		<locale name="en" value="Executed Validation - Product"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Executed Validation QC Instrument" is_enabled="true" order_no="0">
+		<locale name="en" value="Executed Validation - QC Instrument"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Executed Validation Semi-finished Good" is_enabled="true" order_no="0">
+		<locale name="en" value="Executed Validation - Semi-finished Good"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Executed Validation Substance" is_enabled="false" order_no="0">
+		<locale name="en" value="Executed Validation - Substance"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Executed Validation System" is_enabled="true" order_no="0">
+		<locale name="en" value="Executed Validation - System"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Facility" is_enabled="true" order_no="0">
+		<locale name="en" value="Facility"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Facility and Engineering" is_enabled="true" order_no="0">
+		<locale name="en" value="Facility and Engineering"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="FMEA" is_enabled="true" order_no="0">
+		<locale name="en" value="FMEA"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Foil" is_enabled="true" order_no="0">
+		<locale name="en" value="Foil"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Form" is_enabled="true" order_no="0">
+		<locale name="en" value="Form"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="General" is_enabled="true" order_no="0">
+		<locale name="en" value="General"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="General Management" is_enabled="true" order_no="0">
+		<locale name="en" value="General Management"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="General Records" is_enabled="true" order_no="0">
+		<locale name="en" value="General Records"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="GMP Certificate" is_enabled="true" order_no="0">
+		<locale name="en" value="GMP Certificate"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Health, Environment and Safety" is_enabled="true" order_no="0">
+		<locale name="en" value="Health, Environment and Safety"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="HVAC" is_enabled="true" order_no="0">
+		<locale name="en" value="HVAC"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Index" is_enabled="true" order_no="0">
+		<locale name="en" value="Index"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Information Technology" is_enabled="true" order_no="0">
+		<locale name="en" value="Information Technology"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Inventory Management" is_enabled="true" order_no="0">
+		<locale name="en" value="Inventory Management"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Investigation  Finished Good" is_enabled="false" order_no="0">
+		<locale name="en" value="Investigation - Finished Good"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Investigation  Product" is_enabled="false" order_no="0">
+		<locale name="en" value="Investigation - Product"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Investigation Active Ingredient" is_enabled="true" order_no="0">
+		<locale name="en" value="Investigation Active Ingredient"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Investigation Equipment" is_enabled="true" order_no="0">
+		<locale name="en" value="Investigation Equipment"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Investigation Finished Good" is_enabled="true" order_no="0">
+		<locale name="en" value="Investigation Finished Good"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Investigation General" is_enabled="true" order_no="0">
+		<locale name="en" value="Investigation General"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Investigation Material" is_enabled="true" order_no="0">
+		<locale name="en" value="Investigation Material"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Investigation Semi-finished Good" is_enabled="false" order_no="0">
+		<locale name="en" value="Investigation - Semi-finished Good"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Investigation Substance" is_enabled="false" order_no="0">
+		<locale name="en" value="Investigation - Substance"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Investigation System" is_enabled="true" order_no="0">
+		<locale name="en" value="Investigation System"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Label" is_enabled="true" order_no="0">
+		<locale name="en" value="Label"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Labeling Control" is_enabled="true" order_no="0">
+		<locale name="en" value="Labeling Control"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Laboratory" is_enabled="true" order_no="0">
+		<locale name="en" value="Laboratory"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Laboratory Control" is_enabled="true" order_no="0">
+		<locale name="en" value="Laboratory Control"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Laminate" is_enabled="true" order_no="0">
+		<locale name="en" value="Laminate"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Legal Affairs" is_enabled="true" order_no="0">
+		<locale name="en" value="Legal Affairs"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Manufacturing" is_enabled="true" order_no="0">
+		<locale name="en" value="Manufacturing"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Marketing Authorization" is_enabled="true" order_no="0">
+		<locale name="en" value="Marketing Authorization"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Master Manufacturing Document Active Ingredient" is_enabled="true" order_no="0">
+		<locale name="en" value="Master Manufacturing Document - Active Ingredient"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Master Manufacturing Document Finished Good" is_enabled="true" order_no="0">
+		<locale name="en" value="Master Manufacturing Document - Finished Good"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Master Manufacturing Document Product" is_enabled="false" order_no="0">
+		<locale name="en" value="Master Manufacturing Document - Product"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Master Manufacturing Document Semi-finished Good" is_enabled="true" order_no="0">
+		<locale name="en" value="Master Manufacturing Document - Semi-finished Good"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Master Manufacturing Document Substance" is_enabled="false" order_no="0">
+		<locale name="en" value="Master Manufacturing Document - Substance"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Material" is_enabled="true" order_no="0">
+		<locale name="en" value="Material"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Medical Affairs" is_enabled="true" order_no="0">
+		<locale name="en" value="Medical Affairs"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Method Active Ingredient" is_enabled="true" order_no="0">
+		<locale name="en" value="Method - Active Ingredient"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Method Finished Good" is_enabled="true" order_no="0">
+		<locale name="en" value="Method - Finished Good"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Method General" is_enabled="true" order_no="0">
+		<locale name="en" value="Method - General"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Method Material" is_enabled="true" order_no="0">
+		<locale name="en" value="Method - Material"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Method Product" is_enabled="false" order_no="0">
+		<locale name="en" value="Method - Product"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Method Semi-finished Good" is_enabled="true" order_no="0">
+		<locale name="en" value="Method - Semi-finished Good"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Method Substance" is_enabled="false" order_no="0">
+		<locale name="en" value="Method - Substance"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Nonclinical" is_enabled="true" order_no="0">
+		<locale name="en" value="Nonclinical"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Operations" is_enabled="true" order_no="0">
+		<locale name="en" value="Operations"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Organizational Charts" is_enabled="true" order_no="0">
+		<locale name="en" value="Organizational Charts"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Organizational Personnel and Training" is_enabled="true" order_no="0">
+		<locale name="en" value="Organizational, Personnel and Training"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Other" is_enabled="true" order_no="0">
+		<locale name="en" value="Other"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Other Manual" is_enabled="true" order_no="0">
+		<locale name="en" value="Other Manual"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Package" is_enabled="true" order_no="0">
+		<locale name="en" value="Package"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Packaging" is_enabled="true" order_no="0">
+		<locale name="en" value="Packaging"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Packaging Directions" is_enabled="true" order_no="0">
+		<locale name="en" value="Packaging Directions"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Packaging IOP" is_enabled="true" order_no="0">
+		<locale name="en" value="Packaging IOP"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Packaging Materials Summary" is_enabled="true" order_no="0">
+		<locale name="en" value="Packaging Materials Summary"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Pallet" is_enabled="true" order_no="0">
+		<locale name="en" value="Pallet"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Parent" is_enabled="true" order_no="0">
+		<locale name="en" value="Parent"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Patient Information Leaflet" is_enabled="true" order_no="0">
+		<locale name="en" value="Patient Information Leaflet"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Piping and Instrumentation" is_enabled="true" order_no="0">
+		<locale name="en" value="Piping and Instrumentation"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Primary Container" is_enabled="true" order_no="0">
+		<locale name="en" value="Primary Container"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Printed Supplies Notice" is_enabled="true" order_no="0">
+		<locale name="en" value="Printed Supplies Notice"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Procedure" is_enabled="true" order_no="0">
+		<locale name="en" value="Procedure"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Product Safety" is_enabled="true" order_no="0">
+		<locale name="en" value="Product Safety"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Production Areas" is_enabled="true" order_no="0">
+		<locale name="en" value="Production Areas"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Project Configuration" is_enabled="true" order_no="0">
+		<locale name="en" value="Project Configuration"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Project Design" is_enabled="true" order_no="0">
+		<locale name="en" value="Project Design"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Project Management" is_enabled="true" order_no="0">
+		<locale name="en" value="Project Management"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Project Planning" is_enabled="true" order_no="0">
+		<locale name="en" value="Project Planning"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Project Procedure" is_enabled="true" order_no="0">
+		<locale name="en" value="Project Procedure"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Project Quality" is_enabled="true" order_no="0">
+		<locale name="en" value="Project Quality"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Project Report" is_enabled="true" order_no="0">
+		<locale name="en" value="Project Report"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Project Requirements" is_enabled="true" order_no="0">
+		<locale name="en" value="Project Requirements"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Project Risk" is_enabled="true" order_no="0">
+		<locale name="en" value="Project Risk"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Project Specification" is_enabled="true" order_no="0">
+		<locale name="en" value="Project Specification"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Project Test" is_enabled="true" order_no="0">
+		<locale name="en" value="Project Test"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Punch" is_enabled="true" order_no="0">
+		<locale name="en" value="Punch"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Purchasing" is_enabled="true" order_no="0">
+		<locale name="en" value="Purchasing"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Quality Active Ingredient" is_enabled="true" order_no="0">
+		<locale name="en" value="Quality - Active Ingredient"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Quality Agreement" is_enabled="true" order_no="0">
+		<locale name="en" value="Quality Agreement"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Quality Assurance" is_enabled="true" order_no="0">
+		<locale name="en" value="Quality Assurance"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Quality Control" is_enabled="true" order_no="0">
+		<locale name="en" value="Quality Control"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Quality Event Active Ingredient" is_enabled="true" order_no="0">
+		<locale name="en" value="Quality Event Active Ingredient"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Quality Event Equipment" is_enabled="true" order_no="0">
+		<locale name="en" value="Quality Event Equipment"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Quality Event Finished Good" is_enabled="true" order_no="0">
+		<locale name="en" value="Quality Event Finished Good"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Quality Event General" is_enabled="true" order_no="0">
+		<locale name="en" value="Quality Event General"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Quality Event Material" is_enabled="true" order_no="0">
+		<locale name="en" value="Quality Event Material"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Quality Event Product" is_enabled="true" order_no="0">
+		<locale name="en" value="Quality Event - Product"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Quality Event Substance" is_enabled="true" order_no="0">
+		<locale name="en" value="Quality Event - Substance"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Quality Event System" is_enabled="true" order_no="0">
+		<locale name="en" value="Quality Event System"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Quality Finished Good" is_enabled="true" order_no="0">
+		<locale name="en" value="Quality - Finished Good"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Quality Manual" is_enabled="true" order_no="0">
+		<locale name="en" value="Quality Manual"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Quality Mgmt Review - Finished Good" is_enabled="true" order_no="0">
+		<locale name="en" value="Quality Mgmt Review - Finished Good"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Quality Mgmt Review - General" is_enabled="true" order_no="0">
+		<locale name="en" value="Quality Mgmt Review - General"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Quality Operations" is_enabled="true" order_no="0">
+		<locale name="en" value="Quality Operations"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Quality Planning" is_enabled="true" order_no="0">
+		<locale name="en" value="Quality Planning"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Quality Product" is_enabled="false" order_no="0">
+		<locale name="en" value="Quality - Product"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Quality Semi-finished Good" is_enabled="true" order_no="0">
+		<locale name="en" value="Quality - Semi-finished Good"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Quality Substance" is_enabled="false" order_no="0">
+		<locale name="en" value="Quality - Substance"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Quality System" is_enabled="true" order_no="0">
+		<locale name="en" value="Quality System"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Questionnaire" is_enabled="true" order_no="0">
+		<locale name="en" value="Questionnaire"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Recall Active Ingredient" is_enabled="true" order_no="0">
+		<locale name="en" value="Recall Active Ingredient"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Recall Finished Good" is_enabled="true" order_no="0">
+		<locale name="en" value="Recall Finished Good"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Recall Product" is_enabled="true" order_no="0">
+		<locale name="en" value="Recall - Product"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Recall Substance" is_enabled="true" order_no="0">
+		<locale name="en" value="Recall- Substance"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Record Active Ingredient" is_enabled="true" order_no="0">
+		<locale name="en" value="Record - Active Ingredient"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Record Equipment" is_enabled="true" order_no="0">
+		<locale name="en" value="Record - Equipment"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Record Finished Good" is_enabled="true" order_no="0">
+		<locale name="en" value="Record - Finished Good"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Record Material" is_enabled="true" order_no="0">
+		<locale name="en" value="Record - Material"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Record Product" is_enabled="false" order_no="0">
+		<locale name="en" value="Record - Product"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Record Semi-finished Good" is_enabled="true" order_no="0">
+		<locale name="en" value="Record - Semi-finished Good"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Record Substance" is_enabled="false" order_no="0">
+		<locale name="en" value="Record - Substance"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Reference Material" is_enabled="true" order_no="0">
+		<locale name="en" value="Reference Material"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Regulatory" is_enabled="true" order_no="0">
+		<locale name="en" value="Regulatory"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Research" is_enabled="true" order_no="0">
+		<locale name="en" value="Research"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Risk Assessment" is_enabled="true" order_no="0">
+		<locale name="en" value="Risk Assessment"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Risk Documentation" is_enabled="true" order_no="0">
+		<locale name="en" value="Risk Documentation"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Risk Management Plan" is_enabled="true" order_no="0">
+		<locale name="en" value="Risk Management Plan"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Risk Reports" is_enabled="true" order_no="0">
+		<locale name="en" value="Risk Reports"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Safety" is_enabled="true" order_no="0">
+		<locale name="en" value="Safety"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Sales Management" is_enabled="true" order_no="0">
+		<locale name="en" value="Sales Management"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Sales Operations" is_enabled="true" order_no="0">
+		<locale name="en" value="Sales Operations"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Sales Records" is_enabled="true" order_no="0">
+		<locale name="en" value="Sales Records"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Sample Packaging" is_enabled="true" order_no="0">
+		<locale name="en" value="Sample Packaging"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Section" is_enabled="true" order_no="0">
+		<locale name="en" value="Section"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Service Manual" is_enabled="true" order_no="0">
+		<locale name="en" value="Service Manual"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Site Master File" is_enabled="true" order_no="0">
+		<locale name="en" value="Site Master File"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Software" is_enabled="true" order_no="0">
+		<locale name="en" value="Software"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Specification Active Ingredient" is_enabled="true" order_no="0">
+		<locale name="en" value="Specification - Active Ingredient"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Specification Finished Good" is_enabled="true" order_no="0">
+		<locale name="en" value="Specification - Finished Good"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Specification General" is_enabled="true" order_no="0">
+		<locale name="en" value="Specification General"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Specification Material" is_enabled="true" order_no="0">
+		<locale name="en" value="Specification - Material"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Specification Product" is_enabled="false" order_no="0">
+		<locale name="en" value="Specification - Product"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Specification Semi-finished Good" is_enabled="true" order_no="0">
+		<locale name="en" value="Specification - Semi-finished Good"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Specification Substance" is_enabled="false" order_no="0">
+		<locale name="en" value="Specification - Substance"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Subassembly" is_enabled="true" order_no="0">
+		<locale name="en" value="Subassembly"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="subgrouptest" is_enabled="true" order_no="0">
+		<locale name="en" value="subgrouptest"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Supplier Audit Report" is_enabled="true" order_no="0">
+		<locale name="en" value="Supplier Audit Report"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Supplier Audit Supporting Documents" is_enabled="true" order_no="0">
+		<locale name="en" value="Supplier Audit Supporting Documents"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Supplier Management" is_enabled="true" order_no="0">
+		<locale name="en" value="Supplier Management"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Supplier Questionnaire" is_enabled="true" order_no="0">
+		<locale name="en" value="Supplier Questionnaire"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Supplier Records" is_enabled="true" order_no="0">
+		<locale name="en" value="Supplier Records"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Supply Chain Management" is_enabled="true" order_no="0">
+		<locale name="en" value="Supply Chain Management"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Supporting Documents" is_enabled="true" order_no="0">
+		<locale name="en" value="Supporting Documents"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="System Manual" is_enabled="true" order_no="0">
+		<locale name="en" value="System Manual"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Systems" is_enabled="true" order_no="0">
+		<locale name="en" value="Systems"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Third Party, Contracting and Alliances" is_enabled="true" order_no="0">
+		<locale name="en" value="Third Party, Contracting and Alliances"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Training Assessment" is_enabled="true" order_no="0">
+		<locale name="en" value="Training Assessment"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Training Record" is_enabled="true" order_no="0">
+		<locale name="en" value="Training Record"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="User Manual" is_enabled="true" order_no="0">
+		<locale name="en" value="User Manual"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Validation" is_enabled="true" order_no="0">
+		<locale name="en" value="Validation"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Validation Active Ingredient" is_enabled="true" order_no="0">
+		<locale name="en" value="Validation - Active Ingredient"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Validation Equipment" is_enabled="true" order_no="0">
+		<locale name="en" value="Validation - Equipment"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Validation Finished Good" is_enabled="true" order_no="0">
+		<locale name="en" value="Validation - Finished Good"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Validation Material" is_enabled="true" order_no="0">
+		<locale name="en" value="Validation - Material"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Validation Product" is_enabled="false" order_no="0">
+		<locale name="en" value="Validation- Product"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Validation QC Instrument" is_enabled="true" order_no="0">
+		<locale name="en" value="Validation - QC Instrument"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Validation Semi-finished Good" is_enabled="true" order_no="0">
+		<locale name="en" value="Validation - Semi-finished Good"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Validation Substance" is_enabled="false" order_no="0">
+		<locale name="en" value="Validation - Substance"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Validation System" is_enabled="true" order_no="0">
+		<locale name="en" value="Validation - System"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Water Systems" is_enabled="true" order_no="0">
+		<locale name="en" value="Water Systems"/>
+	</d2_dictionary_value>
+</d2_dictionary>

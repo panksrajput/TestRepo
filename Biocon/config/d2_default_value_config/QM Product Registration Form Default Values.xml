@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_default_value_config new_format="true">
+	<object_name value="QM Product Registration Form Default Values"/>
+	<title value=""/>
+	<subject value=""/>
+	<authors/>
+	<keywords/>
+	<a_status value=""/>
+	<a_content_type value=""/>
+	<log_entry value=""/>
+	<language_code value=""/>
+	<object_type value="d2_default_value_config"/>
+	<lock_config value="F"/>
+	<parents_config/>
+	<attr_name>
+		<repeating value="domain"/>
+		<repeating value="form_managers"/>
+		<repeating value="form_users"/>
+		<repeating value="object_name"/>
+		<repeating value="tmf_scope"/>
+	</attr_name>
+	<attr_value>
+		<repeating value="Product Management"/>
+		<repeating value="$USER"/>
+		<repeating value="cd_gmp_all_users"/>
+		<repeating value="New Product Registration Form"/>
+		<repeating value="Product"/>
+	</attr_value>
+	<application_names>
+		<repeating value="OpenText Life Sciences Quality and Manufacturing Solution"/>
+	</application_names>
+	<property_page value=""/>
+</d2_default_value_config>

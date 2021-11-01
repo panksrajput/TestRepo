@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dialog id="PropertiesDialog" auto_smartview_edit_mode="false" buttons_right="false" focus="a_special_app" height="280" initial_invalid="false" resizable="true" signoff_creation="false" signoff_edit="false" signoff_import="false" signoff_intention_dictionary="" signoff_intention_required="false" width="500">
+	<content>
+		<fieldset label_en="Change Product Code">
+			<label id="product_code" label_en="From"/>
+			<text id="a_special_app" advancedView_enabled="false" condition_enabled="(getValue(validate).equals('false'))" condition_required_create="true" condition_required_edit="true" condition_required_import="true" label_en="To" reinit_attributes="verify_product_code"/>
+			<boolean id="validate" control="true" label_en="Click Here To Validate"/>
+			<comment advancedView_visible="false" condition_visible="(getValue(validate).equals('true'))" font_color="#646464" label_en="Uncheck this box again to modify the new product code."/>
+			<combo id="validation_result" advancedView_visible="false" assistance_dql="select 'OK' from dm_dbo.single_result_row_view where '$value(a_special_app)' != ' ' and not exists (select product_code from dm_dbo.product_info_view where upper(product_code) = upper('$value(a_special_app)') or upper(product_aliases) = upper('$value(a_special_app)')) union select 'INVALID - product code exists' from dm_dbo.single_result_row_view where exists (select product_code from dm_dbo.product_info_view where upper(product_code) = upper('$value(a_special_app)')) union select 'INVALID - product alias exists' from dm_dbo.single_result_row_view where exists (select product_code from dm_dbo.product_info_view where upper(product_aliases) = upper('$value(a_special_app)')) union select 'INVALID - New product code must be specified.' from dm_dbo.single_result_row_view where '$value(a_special_app)' = ' '" assistance_type="dql" condition_enabled_create="false" condition_enabled_edit="false" condition_enabled_import="false" condition_visible="(getValue(validate).equals('true'))" control="true" label_en="Validation Result"/>
+			<comment advancedView_visible="false" condition_visible="((getValue(validate).equals('true'))&amp;&amp;(getValue(validation_result).equals('OK')))" font_color="#646464" label_en="Click on the OK button below to apply this change."/>
+		</fieldset>
+	</content>
+	<buttons>
+		<button id="buttonOk" action="validDialog()" advancedView_enabled="false" advancedView_visible="false" condition_enabled="((getValue(validate).equals('true'))&amp;&amp;(getValue(validation_result).equals('OK')))" condition_visible="((getValue(validate).equals('true'))&amp;&amp;(getValue(validation_result).equals('OK')))"/>
+		<button id="buttonCancel" action="cancelDialog()"/>
+	</buttons>
+</dialog>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dialog id="PropertiesDialog" buttons_right="false" focus="" height="600" resizable="true" signoff_creation="false" signoff_edit="false" signoff_import="false" signoff_intention_dictionary="" signoff_intention_required="false" width="800">
+	<content>
+		<tabs>
+			<tab label_en="Device">
+				<combo id="dv_device_id" assistance_dictionary="Device ID" assistance_dictionary_alias="en" assistance_type="dictionary" asynchronous="false" condition_enabled_create="false" condition_enabled_import="false" condition_required_create="true" condition_required_edit="true" condition_required_import="true" label_en="Device ID"/>
+				<combo id="dv_device_family" assistance_dql="select distinct dv_device_family from cd_product_info where a_status='Active' order by 1" assistance_type="dql" asynchronous="true" condition_enabled_create="false" condition_enabled_import="false" label_en="Device Family"/>
+				<combo id="dv_device_subfamily" assistance_dql="select distinct(dv_device_subfamily) from cd_product_info where dv_device_family ='$value(dv_device_family)' and a_status='Active' order by dv_device_subfamily" assistance_type="dql" asynchronous="false" autoselect_single="true" condition_enabled_create="false" condition_enabled_import="false" label_en="Device Subfamily"/>
+				<grid>
+					<combo id="dv_device_code" assistance_dql="select distinct dv_device_code from cd_product_info where dv_device_subfamily ='$value(dv_device_subfamily)' and a_status='Active' order by 1" assistance_type="dql" asynchronous="false" autoselect_single="true" cell_width="180" condition_enabled_create="false" condition_enabled_import="false" label_en="Device Code"/>
+					<combo id="dv_device_name" assistance_dql="select distinct dv_device_name from cd_product_info where any dv_device_code ='$value(dv_device_code)' and a_status='Active' order by 1" assistance_type="dql" asynchronous="false" autoselect_single="true" cell_width="180" condition_enabled_create="false" condition_enabled_import="false" label_en="Device Name"/>
+				</grid>
+			</tab>
+			<tab label_en="Regulatory App Info">
+				<grid>
+					<combo id="application_descriptions" assistance_dictionary="Regulatory Application Forms with Registered Family and Subfamily" assistance_dictionary_alias="auto" assistance_type="dictionary" asynchronous="true" autoselect_single="true" cell_width="180" condition_enabled_create="false" condition_enabled_import="false"/>
+					<combo id="submission_descriptions" assistance_dql="select distinct submission_description from cd_reg_submission_info where application_description='$value(application_descriptions)' and a_status='Active' order by 1" assistance_type="dql" asynchronous="true" autoselect_single="true" cell_width="180" condition_enabled_create="false" condition_enabled_import="false"/>
+					<combo id="submission_types" assistance_dql="select distinct submission_type from cd_reg_submission_info where submission_description='$value(submission_descriptions)' and a_status='Active' order by 1" assistance_type="dql" asynchronous="true" autoselect_single="true" cell_width="180" condition_enabled_create="false" condition_enabled_import="false"/>
+					<combo id="submission_numbers" assistance_dql="select distinct submission_number from cd_reg_submission_info where submission_description='$value(submission_descriptions)' and submission_type='$value(submission_types)'  order by 1" assistance_type="dql" asynchronous="true" autoselect_single="true" cell_width="180" condition_enabled_create="false" condition_enabled_import="false"/>
+				</grid>
+			</tab>
+		</tabs>
+	</content>
+	<buttons>
+		<button id="buttonOk" action="validDialog()"/>
+		<button id="buttonCancel" action="cancelDialog()"/>
+	</buttons>
+</dialog>

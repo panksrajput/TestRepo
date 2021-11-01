@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dialog id="PropertiesDialog" buttons_right="false" focus="" height="350" resizable="true" signoff_creation="false" signoff_edit="false" signoff_import="false" signoff_intention_dictionary="" signoff_intention_required="false" width="600">
+	<content>
+		<fieldset label_en="Comments">
+			<memo id="comments" condition_required_create="true" condition_required_edit="true" condition_required_import="true" rows="6"/>
+			<comment html_content="true" label_en="&lt;table cellspacing=0&gt;&lt;tr&gt;&lt;td&gt;Please provide comments for reverting change request ''$value(object_name)'' to Draft. &lt;strong&gt;This action will be audited.&lt;/strong&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"/>
+			<comment font_bold="true" label_en="OK to continue?"/>
+		</fieldset>
+	</content>
+	<buttons>
+		<button id="buttonOk" action="validDialog()"/>
+		<button id="buttonCancel" action="cancelDialog()"/>
+	</buttons>
+</dialog>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dialog id="PropertiesDialog" buttons_right="false" focus="" height="350" initial_invalid="false" resizable="true" signoff_creation="false" signoff_edit="false" signoff_import="false" signoff_intention_dictionary="" signoff_intention_required="false" width="500">
+	<content>
+		<fieldset label_en="Reinstate suspended document">
+			<comment html_content="true" label_en="&lt;table cellspacing=0&gt;&lt;tr&gt;&lt;td&gt;This will reinstate the selected suspended documents to ''Effective/Approved/Final''. They can then be read by the appropriate users. &lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"/>
+			<comment font_bold="true" html_content="true" label_en="&lt;table cellspacing=0&gt;This operation will be audited.&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"/>
+			<comment html_content="true" label_en="&lt;table cellspacing=0&gt;Document(s) will remain ''Effective/Approved/Final'' until suspended, withdrawn, or superseded by a later ''Effective/Approved/Final'' version.&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"/>
+			<comment font_bold="true" label_en="OK to continue?"/>
+		</fieldset>
+	</content>
+	<buttons>
+		<button id="buttonOk" action="validDialog()"/>
+		<button id="buttonCancel" action="cancelDialog()"/>
+	</buttons>
+</dialog>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_lifecycle_batch_config>
+	<lifecycle>Cat 2 Controlled Document Lifecycle Model</lifecycle>
+	<targetstate>Suspended</targetstate>
+	<operation>promote</operation>
+	<list-attributes/>
+</d2_lifecycle_batch_config>

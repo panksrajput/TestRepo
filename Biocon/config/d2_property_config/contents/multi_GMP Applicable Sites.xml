@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dialog id="PropertiesDialog" buttons_right="false" focus="" height="250" initial_invalid="false" resizable="true" signoff_creation="false" signoff_edit="false" signoff_import="false" signoff_intention_dictionary="" signoff_intention_required="false" width="400">
+	<content>
+		<fieldset label_en="Update Applicable Sites">
+			<list id="applicable_sites" assistance_dictionary="GMP Applicable Sites" assistance_dictionary_alias="auto" assistance_type="dictionary" asynchronous="true" condition_required_create="true" condition_required_edit="true" condition_required_import="true" rows="4" sorted="true"/>
+			<memo id="comments" advancedView_enabled="false" advancedView_required="false" advancedView_visible="false" condition_enabled="((getValue(a_status).equals('Effective'))||(getValue(a_status).equals('Release Pending'))||(getValue(a_status).equals('#####')))" condition_required="((getValue(a_status).equals('Effective'))||(getValue(a_status).equals('Release Pending'))||(getValue(a_status).equals('#####')))" condition_required_edit="true" condition_visible="((getValue(a_status).equals('Effective'))||(getValue(a_status).equals('Release Pending'))||(getValue(a_status).equals('#####')))" label_en="Reason For Change"/>
+			<label id="a_status" condition_visible_create="false" condition_visible_edit="false" condition_visible_import="false"/>
+		</fieldset>
+	</content>
+	<buttons>
+		<button id="buttonOk" action="validDialog()"/>
+		<button id="buttonCancel" action="cancelDialog()"/>
+	</buttons>
+</dialog>

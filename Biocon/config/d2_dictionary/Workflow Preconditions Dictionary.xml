@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_dictionary object_name="Workflow Preconditions Dictionary" title="Workflow Preconditions Dictionary" lock_config="false" parents_config="SharePoint Connector Property Fields" application_names="OpenText Life Sciences eTMF Solution¬OpenText Life Sciences Medical Device for Quality and Manufacturing Solution¬OpenText Life Sciences Medical Device for Research and Development Solution¬OpenText Life Sciences Medical Device Solution¬OpenText Life Sciences Quality and Manufacturing Solution¬OpenText Life Sciences Research and Development Solution¬OpenText Life Sciences Submission Storage and Viewing" security_group="admingroup" search_group="admingroup" version="2" is_versioned="false" manual_order="false" create_view_option="false" is_dql="false" is_dql_cache="false" dql="" label_en="">
+	<d2_dictionary_value object_name="Cat 1 Approve Site Performers [1-GMP-APPROVE]" is_enabled="true" order_no="0">
+		<alias name="Launch Workflow" value="(chk for valid approvers-1-GMP)"/>
+		<alias name="Update Performer" value="(chk for valid approvers-1-GMP)"/>
+		<alias name="Delegate Task" value="(chk for valid approvers-1-GMP)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Cat 1 Approve Site Performers [1-GMP-APPROVE] noSig" is_enabled="true" order_no="0">
+		<alias name="Launch Workflow" value="(chk for valid approvers-1-GMP)"/>
+		<alias name="Update Performer" value="(chk for valid approvers-1-GMP)"/>
+		<alias name="Delegate Task" value="(chk for valid approvers-1-GMP)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Cat 1 Review Approve Site Performers [1-GMP-REVIEW-APPROVE]" is_enabled="true" order_no="0">
+		<alias name="Launch Workflow" value="(chk for valid approvers-1-GMP)"/>
+		<alias name="Update Performer" value="(chk for valid approvers-1-GMP)"/>
+		<alias name="Delegate Task" value="(chk for valid approvers-1-GMP)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Cat 1 Review Approve Site Performers [1-GMP-REVIEW-APPROVE] noSig" is_enabled="true" order_no="0">
+		<alias name="Launch Workflow" value="(chk for valid approvers-1-GMP)"/>
+		<alias name="Update Performer" value="(chk for valid approvers-1-GMP)"/>
+		<alias name="Delegate Task" value="(chk for valid approvers-1-GMP)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Cat 2 Approve Only 2 Step Workflow[2-APPROVE-2-STEP]" is_enabled="true" order_no="0">
+		<alias name="Launch Workflow" value="(chk for valid approvers-2-step)"/>
+		<alias name="Update Performer" value="(chk for valid approvers-2-step)"/>
+		<alias name="Delegate Task" value="(chk for valid approvers-2-step)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Cat 2 Approve Only 2 Step Workflow[2-APPROVE-2-STEP] noSig" is_enabled="true" order_no="0">
+		<alias name="Launch Workflow" value="(chk for valid approvers-2-step)"/>
+		<alias name="Update Performer" value="(chk for valid approvers-2-step)"/>
+		<alias name="Delegate Task" value="(chk for valid approvers-2-step)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Cat 2 GMP Direct Approval Site Performers [2-GMP-APPROVE]" is_enabled="true" order_no="0">
+		<alias name="Launch Workflow" value="(chk for valid approvers)"/>
+		<alias name="Update Performer" value="(chk for valid approvers)"/>
+		<alias name="Delegate Task" value="(chk for valid approvers)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Cat 2 GMP Direct Approval Site Performers [2-GMP-APPROVE] noSig" is_enabled="true" order_no="0">
+		<alias name="Launch Workflow" value="(chk for valid approvers)"/>
+		<alias name="Update Performer" value="(chk for valid approvers)"/>
+		<alias name="Delegate Task" value="(chk for valid approvers)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Cat 2 Independently Approved without Release Pending - [2-APPROVE-REVIEW]" is_enabled="true" order_no="0">
+		<alias name="Launch Workflow" value="(chk for valid approvers)"/>
+		<alias name="Update Performer" value="(chk for valid approvers)"/>
+		<alias name="Delegate Task" value="(chk for valid approvers)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Cat 2 Independently Approved without Release Pending - [2-APPROVE-REVIEW] noSig" is_enabled="true" order_no="0">
+		<alias name="Launch Workflow" value="(chk for valid approvers)"/>
+		<alias name="Update Performer" value="(chk for valid approvers)"/>
+		<alias name="Delegate Task" value="(chk for valid approvers)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Cat 2 Independently Approved without Review and Release Pending - [2-APPROVE]" is_enabled="true" order_no="0">
+		<alias name="Launch Workflow" value="(chk for valid approvers)"/>
+		<alias name="Update Performer" value="(chk for valid approvers)"/>
+		<alias name="Delegate Task" value="(chk for valid approvers)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Cat 2 Independently Approved without Review and Release Pending - [2-APPROVE] noSig" is_enabled="true" order_no="0">
+		<alias name="Launch Workflow" value="(chk for valid approvers)"/>
+		<alias name="Update Performer" value="(chk for valid approvers)"/>
+		<alias name="Delegate Task" value="(chk for valid approvers)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Cat 3 GMP Delegated Approved [3-GMP-APPROVE]" is_enabled="true" order_no="0">
+		<alias name="Launch Workflow" value="(chk for valid approvers)"/>
+		<alias name="Update Performer" value="(chk for valid approvers)"/>
+		<alias name="Delegate Task" value="(chk for valid approvers)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Cat 3 GMP Delegated Approved [3-GMP-APPROVE] noSig" is_enabled="true" order_no="0">
+		<alias name="Launch Workflow" value="(chk for valid approvers)"/>
+		<alias name="Update Performer" value="(chk for valid approvers)"/>
+		<alias name="Delegate Task" value="(chk for valid approvers)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="GMP SharePoint Collaboration 2 Step" is_enabled="true" order_no="0">
+		<alias name="Launch Workflow" value="(validate SP 2-step performers)"/>
+		<alias name="Update Performer" value=""/>
+		<alias name="Delegate Task" value=""/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="SharePoint Collaboration 2 Step" is_enabled="true" order_no="0">
+		<alias name="Launch Workflow" value="(validate SP 2-step performers)"/>
+		<alias name="Update Performer" value=""/>
+		<alias name="Delegate Task" value=""/>
+	</d2_dictionary_value>
+</d2_dictionary>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_property_config new_format="true">
+	<object_name value="On cancelling the release of a Cat 3 document - confirm"/>
+	<title value="Enables the Authors to revert a Cat 3 reviewed document to 'Draft' for further changes."/>
+	<subject value=""/>
+	<authors/>
+	<keywords/>
+	<a_status value=""/>
+	<a_content_type value="xml"/>
+	<log_entry value=""/>
+	<language_code value=""/>
+	<application_names>
+		<repeating value="OpenText Life Sciences Medical Device for Quality and Manufacturing Solution"/>
+		<repeating value="OpenText Life Sciences Medical Device Solution"/>
+		<repeating value="OpenText Life Sciences Submission Storage and Viewing"/>
+		<repeating value="OpenText Life Sciences Research and Development Solution"/>
+		<repeating value="OpenText Life Sciences eTMF Solution"/>
+		<repeating value="OpenText Life Sciences Quality and Manufacturing Solution"/>
+	</application_names>
+	<lock_config value="F"/>
+	<parents_config/>
+	<for_type value="cd_controlled_doc"/>
+	<multi_panel value="F"/>
+	<smart_version value=""/>
+	<mobile_version value=""/>
+</d2_property_config>

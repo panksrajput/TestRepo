@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_dictionary object_name="GMP Language" title="Dictionary for GMP Language" lock_config="false" parents_config="" application_names="OpenText Life Sciences Quality and Manufacturing Solution¬OpenText Life Sciences Medical Device Solution¬OpenText Life Sciences Medical Device for Quality and Manufacturing Solution¬Custom Configurations¬Biocon" security_group="biocon_dict_admin" search_group="biocon_dict_admin" version="2" is_versioned="false" manual_order="false" create_view_option="false" is_dql="false" is_dql_cache="false" dql="" label_en="GMP Language">
+	<d2_dictionary_value object_name="English" is_enabled="true" order_no="0">
+		<locale name="en" value="English"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Hindi" is_enabled="true" order_no="0">
+		<locale name="en" value="Hindi"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Kannada" is_enabled="true" order_no="0">
+		<locale name="en" value="Kannada"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Telugu" is_enabled="true" order_no="0">
+		<locale name="en" value="Telugu"/>
+	</d2_dictionary_value>
+</d2_dictionary>

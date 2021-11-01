@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_dictionary object_name="Application Procedure Type" title="" lock_config="false" parents_config="" application_names="OpenText Life Sciences Submission Storage and Viewing¬OpenText Life Sciences Research and Development Solution¬OpenText Life Sciences Quality and Manufacturing Solution" security_group="admingroup" search_group="admingroup" version="2" is_versioned="false" manual_order="false" create_view_option="false" is_dql="false" is_dql_cache="false" dql="" label_en="Application Procedure Type">
+	<d2_dictionary_value object_name="Centralized" is_enabled="true" order_no="0">
+		<locale name="en" value="Centralised"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Decentralized" is_enabled="true" order_no="0">
+		<locale name="en" value="Decentralised"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="MRP" is_enabled="true" order_no="0">
+		<locale name="en" value="Mutual Recognition Procedure"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="National" is_enabled="true" order_no="0">
+		<locale name="en" value="National"/>
+	</d2_dictionary_value>
+</d2_dictionary>

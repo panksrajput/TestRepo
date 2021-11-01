@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_mailing_config>
+	<add_attachment>false</add_attachment>
+	<rendition_formats/>
+	<list-recipient>
+		<recipient type="group">biocon_lms_service_failure</recipient>
+	</list-recipient>
+	<list-subject>
+		<subject_en>LMS Service Error</subject_en>
+	</list-subject>
+	<list-object>
+		<object_en>Records push to LMS from DMS has been failed. Kindly check the logs and table for failed records.</object_en>
+	</list-object>
+</d2_mailing_config>

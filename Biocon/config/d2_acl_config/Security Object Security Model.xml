@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_acl_config new_format="true">
+	<object_name value="Security Object Security Model"/>
+	<title value=""/>
+	<subject value=""/>
+	<authors/>
+	<keywords/>
+	<a_status value=""/>
+	<a_content_type value=""/>
+	<log_entry value=""/>
+	<language_code value=""/>
+	<module_type value="d2_acl_config"/>
+	<application_names>
+		<repeating value="OpenText Life Sciences eTMF Solution"/>
+		<repeating value="OpenText Life Sciences Medical Device for Quality and Manufacturing Solution"/>
+		<repeating value="OpenText Life Sciences Medical Device for Research and Development Solution"/>
+		<repeating value="OpenText Life Sciences Medical Device Solution"/>
+		<repeating value="OpenText Life Sciences Quality and Manufacturing Solution"/>
+		<repeating value="OpenText Life Sciences Research and Development Solution"/>
+		<repeating value="OpenText Life Sciences Submission Storage and Viewing"/>
+	</application_names>
+	<lock_config value="F"/>
+	<parents_config/>
+	<accessor_permit>
+		<repeating value="3"/>
+		<repeating value="7"/>
+		<repeating value="6"/>
+		<repeating value="7"/>
+		<repeating value="6"/>
+		<repeating value="3"/>
+	</accessor_permit>
+	<accessor_xpermit>
+		<repeating value="3"/>
+		<repeating value="3"/>
+		<repeating value="3"/>
+		<repeating value="2031616"/>
+		<repeating value="3"/>
+		<repeating value="3"/>
+	</accessor_xpermit>
+	<accessor_name>
+		<repeating value="dm_world"/>
+		<repeating value="dm_owner"/>
+		<repeating value="%reserve_user"/>
+		<repeating value="cd_admingroup"/>
+		<repeating value="lsssec_admin"/>
+		<repeating value="lsssec_admin"/>
+	</accessor_name>
+	<condition_attr_name>
+		<repeating value=""/>
+		<repeating value=""/>
+		<repeating value=""/>
+		<repeating value=""/>
+		<repeating value="a_status"/>
+		<repeating value=""/>
+	</condition_attr_name>
+	<condition_attr_value>
+		<repeating value=""/>
+		<repeating value=""/>
+		<repeating value=""/>
+		<repeating value=""/>
+		<repeating value="Active"/>
+		<repeating value=""/>
+	</condition_attr_value>
+	<accessor_irm_permit>
+		<repeating value=""/>
+		<repeating value=""/>
+		<repeating value=""/>
+		<repeating value=""/>
+		<repeating value=""/>
+		<repeating value=""/>
+	</accessor_irm_permit>
+</d2_acl_config>

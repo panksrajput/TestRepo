@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_documentset_switch object_name="d2_pdfrender_config">
+	<switch_defaults>
+		<default>ADTS PDF Rendition</default>
+		<default>ADTS Thumbnail Rendition</default>
+	</switch_defaults>
+</d2_documentset_switch>

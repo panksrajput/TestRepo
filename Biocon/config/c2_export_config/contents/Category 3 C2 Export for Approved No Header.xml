@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<C2>
+	<merge_annotations>false</merge_annotations>
+	<options>
+		<version>0</version>
+		<fullCompression>false</fullCompression>
+		<viewerPreferences>
+			<pageLayout>PageLayoutSinglePage</pageLayout>
+			<pageMode>PageModeUseNone</pageMode>
+			<onStartPage/>
+			<fitWindow>false</fitWindow>
+			<centerWindow>false</centerWindow>
+			<fullscreen>false</fullscreen>
+			<hideToolbar>false</hideToolbar>
+			<hideMenubar>false</hideMenubar>
+			<hideWindowUI>false</hideWindowUI>
+		</viewerPreferences>
+		<encryption>
+			<strength/>
+			<userPassword/>
+			<ownerPassword/>
+		</encryption>
+		<permissions>
+			<AllowPrinting>false</AllowPrinting>
+			<AllowModifyContents>true</AllowModifyContents>
+			<AllowCopy>false</AllowCopy>
+			<AllowModifyAnnotations>true</AllowModifyAnnotations>
+		</permissions>
+		<meta>
+			<title/>
+			<subject/>
+			<author/>
+			<keywords/>
+		</meta>
+	</options>
+	<content/>
+	<merge>
+		<core>
+			<id>core</id>
+			<title/>
+		</core>
+	</merge>
+	<stamp>
+		<layer>
+			<file>Bio Export Info.pdf</file>
+		</layer>
+		<layer>
+			<file>Bio Export Validity Status Info Only.pdf</file>
+		</layer>
+		<textWatermark>
+			<file>Uncontrolled</file>
+		</textWatermark>
+	</stamp>
+</C2>

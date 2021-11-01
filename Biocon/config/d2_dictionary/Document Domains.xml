@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_dictionary object_name="Document Domains" title="List of functional areas or disciplines in which a document is created." lock_config="false" parents_config="" application_names="OpenText Life Sciences Medical Device for Research and Development Solution¬OpenText Life Sciences Medical Device Solution¬OpenText Life Sciences Submission Storage and Viewing¬OpenText Life Sciences Research and Development Solution¬OpenText Life Sciences eTMF Solution¬OpenText Life Sciences Quality and Manufacturing Solution" security_group="admingroup" search_group="admingroup" version="2" is_versioned="false" manual_order="false" create_view_option="false" is_dql="false" is_dql_cache="false" dql="" label_en="Document Domain">
+	<d2_dictionary_value object_name="Ad Promo" is_enabled="true" order_no="0"/>
+	<d2_dictionary_value object_name="Change Request" is_enabled="true" order_no="0"/>
+	<d2_dictionary_value object_name="Clinical" is_enabled="true" order_no="0"/>
+	<d2_dictionary_value object_name="Clinical TMF" is_enabled="true" order_no="0"/>
+	<d2_dictionary_value object_name="Device Clinical" is_enabled="true" order_no="0"/>
+	<d2_dictionary_value object_name="Device Non Clinical" is_enabled="true" order_no="0"/>
+	<d2_dictionary_value object_name="Device Regulatory" is_enabled="true" order_no="0"/>
+	<d2_dictionary_value object_name="General" is_enabled="true" order_no="0"/>
+	<d2_dictionary_value object_name="GMP" is_enabled="true" order_no="0"/>
+	<d2_dictionary_value object_name="Labeling" is_enabled="false" order_no="0"/>
+	<d2_dictionary_value object_name="Manufacturing" is_enabled="true" order_no="0"/>
+	<d2_dictionary_value object_name="Med Device" is_enabled="true" order_no="0"/>
+	<d2_dictionary_value object_name="Non-Clinical" is_enabled="true" order_no="0"/>
+	<d2_dictionary_value object_name="Procedures" is_enabled="true" order_no="0"/>
+	<d2_dictionary_value object_name="Quality" is_enabled="true" order_no="0"/>
+	<d2_dictionary_value object_name="Regulatory Correspondence" is_enabled="false" order_no="0"/>
+	<d2_dictionary_value object_name="Regulatory/Administrative" is_enabled="true" order_no="0"/>
+	<d2_dictionary_value object_name="Safety" is_enabled="false" order_no="0"/>
+</d2_dictionary>

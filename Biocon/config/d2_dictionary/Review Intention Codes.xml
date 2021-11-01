@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_dictionary object_name="Review Intention Codes" title="Intention that can be selected by a document reviewer when a Control Category 1 or 2 document is reviewed." lock_config="false" parents_config="" application_names="OpenText Life Sciences Submission Storage and Viewing¬OpenText Life Sciences Research and Development Solution¬OpenText Life Sciences eTMF Solution¬OpenText Life Sciences Quality and Manufacturing Solution¬OpenText Life Sciences Medical Device for Quality and Manufacturing Solution¬OpenText Life Sciences Medical Device Solution¬Custom Configurations¬Biocon" security_group="biocon_dict_admin" search_group="biocon_dict_admin" version="2" is_versioned="false" manual_order="false" create_view_option="false" is_dql="false" is_dql_cache="false" dql="" label_en="Review Intention Codes">
+	<d2_dictionary_value object_name="I have reviewed - Cross Functional Team" is_enabled="true" order_no="0">
+		<locale name="en" value="I have reviewed - Cross Functional Team"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="I have reviewed - QA department" is_enabled="true" order_no="0">
+		<locale name="en" value="I have reviewed - QA department"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="I have reviewed - User department" is_enabled="true" order_no="0">
+		<locale name="en" value="I have reviewed - User department"/>
+	</d2_dictionary_value>
+</d2_dictionary>

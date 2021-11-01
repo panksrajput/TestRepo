@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_lifecycle_batch_config>
+	<lifecycle>Med Device Cat 3 Controlled Document Lifecycle</lifecycle>
+	<targetstate>(Withdrawn Via LC Batch)</targetstate>
+	<operation>promote</operation>
+	<list-attributes/>
+</d2_lifecycle_batch_config>

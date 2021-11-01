@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_link_config new_format="true">
+	<object_name value="Manufacturing General Documents"/>
+	<title value="Autolink configuration for Manufacturing General documents.&#13;&#10;{bio_department} added"/>
+	<subject value=""/>
+	<authors/>
+	<keywords/>
+	<a_status value=""/>
+	<a_content_type value=""/>
+	<log_entry value=""/>
+	<language_code value=""/>
+	<module_type value="d2_link_config"/>
+	<application_names>
+		<repeating value="OpenText Life Sciences Quality and Manufacturing Solution"/>
+		<repeating value="Biocon"/>
+	</application_names>
+	<lock_config value="F"/>
+	<parents_config/>
+	<path>
+		<repeating value="/Manufacturing/$value(applicable_sites)/$value(primary_group)/General/$value(artifact_name)"/>
+	</path>
+	<undefined_label value="Undefined"/>
+	<undefined_concat value="F"/>
+	<linked_repeating value="F"/>
+	<type>
+		<repeating value="/dm_cabinet/dm_folder/dm_folder/dm_folder/dm_folder"/>
+	</type>
+	<first_repeating value="F"/>
+	<is_home_cabinet>
+		<repeating value="F"/>
+	</is_home_cabinet>
+	<acl>
+		<repeating value="//GMP Site Folder Security Model/GMP Folder Security/GMP Folder Security/GMP Folder Security"/>
+	</acl>
+	<default_value>
+		<repeating value="/////"/>
+	</default_value>
+	<regexp_name/>
+	<regexp_pattern/>
+	<regexp_replace/>
+	<apply_on_all_versions value="T"/>
+</d2_link_config>

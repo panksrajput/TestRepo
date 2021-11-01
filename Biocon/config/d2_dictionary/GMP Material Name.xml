@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_dictionary object_name="GMP Material Name" title="Dictionary for GMP Material Name" lock_config="false" parents_config="" application_names="OpenText Life Sciences Quality and Manufacturing Solution¬OpenText Life Sciences Medical Device Solution¬OpenText Life Sciences Medical Device for Quality and Manufacturing Solution¬Custom Configurations" security_group="admingroup" search_group="" version="2" is_versioned="false" manual_order="false" create_view_option="false" is_dql="false" is_dql_cache="false" dql="" label_en="GMP Material Name">
+	<d2_dictionary_value object_name="Ascorbic Acid" is_enabled="true" order_no="0">
+		<locale name="en" value="Ascorbic Acid"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Aspartame" is_enabled="true" order_no="0">
+		<locale name="en" value="Aspartame"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Bronopol BP/USP" is_enabled="true" order_no="0">
+		<locale name="en" value="Bronopol BP/USP"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Calcium Gluconate" is_enabled="true" order_no="0">
+		<locale name="en" value="Calcium Gluconate"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Calcium Lactate" is_enabled="true" order_no="0">
+		<locale name="en" value="Calcium Lactate"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Citric Acid" is_enabled="true" order_no="0">
+		<locale name="en" value="Citric Acid"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Cross Carmellose Sodium" is_enabled="true" order_no="0">
+		<locale name="en" value="Cross Carmellose Sodium"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Glycerine" is_enabled="true" order_no="0">
+		<locale name="en" value="Glycerin"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="HPMC" is_enabled="true" order_no="0">
+		<locale name="en" value="HPMC"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Liquid Glucose" is_enabled="true" order_no="0">
+		<locale name="en" value="Liquid Glucose"/>
+	</d2_dictionary_value>
+</d2_dictionary>

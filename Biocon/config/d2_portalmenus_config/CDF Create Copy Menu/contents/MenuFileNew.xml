@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<delta>
+	<delete id="menuFileNewDocument"/>
+	<modify id="menuFileNewFolder" hidden="true"/>
+	<modify id="menuFileNewCabinet" hidden="true"/>
+	<modify id="menuFileNewUser" hidden="true"/>
+	<modify id="menuFileNewGroup" hidden="true"/>
+</delta>

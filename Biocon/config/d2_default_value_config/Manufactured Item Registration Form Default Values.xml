@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_default_value_config new_format="true">
+	<object_name value="Manufactured Item Registration Form Default Values"/>
+	<title value="Default value template for Manufactured Item Registration Form"/>
+	<subject value=""/>
+	<authors/>
+	<keywords/>
+	<a_status value=""/>
+	<a_content_type value=""/>
+	<log_entry value=""/>
+	<language_code value=""/>
+	<object_type value="d2_default_value_config"/>
+	<lock_config value="F"/>
+	<parents_config/>
+	<attr_name>
+		<repeating value="a_application_type"/>
+		<repeating value="domain"/>
+		<repeating value="form_managers"/>
+		<repeating value="form_users"/>
+		<repeating value="object_name"/>
+	</attr_name>
+	<attr_value>
+		<repeating value="LSQM-D2"/>
+		<repeating value="Product Management"/>
+		<repeating value="$USER"/>
+		<repeating value="cd_gmp_all_users,cd_gmp_item_registration_group"/>
+		<repeating value="New Item Registration Form"/>
+	</attr_value>
+	<application_names>
+		<repeating value="OpenText Life Sciences Quality and Manufacturing Solution"/>
+		<repeating value="OpenText Life Sciences Medical Device for Quality and Manufacturing Solution"/>
+		<repeating value="OpenText Life Sciences Medical Device Solution"/>
+	</application_names>
+	<property_page value=""/>
+</d2_default_value_config>

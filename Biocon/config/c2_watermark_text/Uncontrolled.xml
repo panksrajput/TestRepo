@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<c2_watermark_text new_format="true">
+	<object_name value="Uncontrolled"/>
+	<title value=""/>
+	<subject value=""/>
+	<authors/>
+	<keywords/>
+	<a_status value=""/>
+	<a_content_type value="xml"/>
+	<log_entry value=""/>
+	<language_code value=""/>
+	<opacity value="50"/>
+	<vertical_align value="CENTER"/>
+	<horizontal_align value="RIGHT"/>
+	<font_color value="#FF0000"/>
+	<font_size value="40"/>
+	<rotation value="270"/>
+	<font_name value="helvetica"/>
+	<text_value value="Uncontrolled Copy"/>
+</c2_watermark_text>

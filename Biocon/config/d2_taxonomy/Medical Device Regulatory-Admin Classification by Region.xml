@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_taxonomy object_name="Medical Device Regulatory-Admin Classification by Region" is_versioned="false" title="The Medical Device Regulatory Admin classification at the region level." lock_config="false" parents_config="" application_names="OpenText Life Sciences Quality and Manufacturing Solution¬OpenText Life Sciences Medical Device for Quality and Manufacturing Solution¬OpenText Life Sciences Medical Device for Research and Development Solution¬OpenText Life Sciences Medical Device Solution¬OpenText Life Sciences Submission Storage and Viewing¬OpenText Life Sciences Research and Development Solution" security_group="admingroup">
+	<level position="0" name="Geographic Regions"/>
+	<level position="1" name="Submission Country"/>
+	<level position="2" name="Health Authorities"/>
+	<path value="CA/CA/BGTD"/>
+	<path value="CA/CA/BREC"/>
+	<path value="CA/CA/CBR"/>
+	<path value="CA/CA/CPRA"/>
+	<path value="CA/CA/HPFB"/>
+	<path value="CA/CA/MHPD"/>
+	<path value="CA/CA/TPD"/>
+	<path value="EU/BE/DGMP"/>
+	<path value="EU/BE/EMEA"/>
+	<path value="EU/DE/EMEA"/>
+	<path value="EU/DE/BfArM"/>
+	<path value="EU/DE/PEI"/>
+	<path value="EU/DK/DKMA"/>
+	<path value="EU/DK/EMEA"/>
+	<path value="EU/ES/AM"/>
+	<path value="EU/ES/EMEA"/>
+	<path value="EU/FR/AFSSPS"/>
+	<path value="EU/FR/EMEA"/>
+	<path value="EU/IE/EMEA"/>
+	<path value="EU/IE/IMB"/>
+	<path value="EU/IT/EMEA"/>
+	<path value="EU/IT/MoH-Italy"/>
+	<path value="EU/NL/EMEA"/>
+	<path value="EU/NL/MEB"/>
+	<path value="EU/PT/EMEA"/>
+	<path value="EU/PT/INFARMED"/>
+	<path value="EU/UK/EMEA"/>
+	<path value="EU/UK/MHRA"/>
+	<path value="JP/JP/NIHS"/>
+	<path value="US/US/FDA"/>
+</d2_taxonomy>

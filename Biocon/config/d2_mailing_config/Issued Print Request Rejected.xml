@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_mailing_config new_format="true">
+	<object_name value="Issued Print Request Rejected"/>
+	<title value="A requested print has been rejected"/>
+	<subject value=""/>
+	<authors/>
+	<keywords/>
+	<a_status value=""/>
+	<a_content_type value="xml"/>
+	<log_entry value=""/>
+	<language_code value=""/>
+	<application_names>
+		<repeating value="OpenText Life Sciences Quality and Manufacturing Solution"/>
+	</application_names>
+	<lock_config value="F"/>
+	<parents_config/>
+</d2_mailing_config>

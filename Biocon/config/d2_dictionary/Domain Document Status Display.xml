@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_dictionary object_name="Domain Document Status Display" title="" lock_config="false" parents_config="" application_names="OpenText Life Sciences Submission Storage and Viewing¬OpenText Life Sciences Research and Development Solution¬OpenText Life Sciences eTMF Solution¬OpenText Life Sciences Quality and Manufacturing Solution¬OpenText Life Sciences Medical Device for Quality and Manufacturing Solution¬OpenText Life Sciences Medical Device for Research and Development Solution" security_group="admingroup" search_group="" version="2" is_versioned="false" manual_order="false" create_view_option="false" is_dql="false" is_dql_cache="false" dql="" label_en="Application Status">
+	<d2_dictionary_value object_name="CIP" is_enabled="true" order_no="0">
+		<alias name="generic" value=""/>
+		<alias name="cd_non_clinical" value=""/>
+		<alias name="cd_clinical" value=""/>
+		<alias name="cd_submission_element" value=""/>
+		<alias name="cd_reg_admin" value=""/>
+		<alias name="cd_quality_gmp_effective" value=""/>
+		<alias name="cd_quality_gmp_approved" value=""/>
+		<alias name="cd_reg_correspondence" value=""/>
+		<alias name="cd_clinical_tmf_doc" value=""/>
+		<alias name="cd_quality" value=""/>
+		<alias name="cd_content_template" value=""/>
+		<alias name="cd_core_reg_labeling_doc" value=""/>
+		<alias name="cd_app_reg_labeling_doc" value=""/>
+		<alias name="cd_reg_ad_promo" value=""/>
+		<alias name="cd_safety" value=""/>
+		<alias name="cd_change_request" value="CIP"/>
+		<locale name="en" value=""/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Closed" is_enabled="true" order_no="0">
+		<alias name="generic" value=""/>
+		<alias name="cd_non_clinical" value=""/>
+		<alias name="cd_clinical" value=""/>
+		<alias name="cd_submission_element" value=""/>
+		<alias name="cd_reg_admin" value=""/>
+		<alias name="cd_quality_gmp_effective" value=""/>
+		<alias name="cd_quality_gmp_approved" value=""/>
+		<alias name="cd_reg_correspondence" value=""/>
+		<alias name="cd_clinical_tmf_doc" value=""/>
+		<alias name="cd_quality" value=""/>
+		<alias name="cd_content_template" value=""/>
+		<alias name="cd_core_reg_labeling_doc" value=""/>
+		<alias name="cd_app_reg_labeling_doc" value=""/>
+		<alias name="cd_reg_ad_promo" value=""/>
+		<alias name="cd_safety" value=""/>
+		<alias name="cd_change_request" value="Closed"/>
+		<locale name="en" value=""/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Draft" is_enabled="true" order_no="0">
+		<alias name="generic" value="Draft"/>
+		<alias name="cd_non_clinical" value="Draft"/>
+		<alias name="cd_clinical" value="Draft"/>
+		<alias name="cd_submission_element" value="Draft"/>
+		<alias name="cd_reg_admin" value="Draft"/>
+		<alias name="cd_quality_gmp_effective" value="Draft"/>
+		<alias name="cd_quality_gmp_approved" value="Draft"/>
+		<alias name="cd_reg_correspondence" value="Draft"/>
+		<alias name="cd_clinical_tmf_doc" value="Draft"/>
+		<alias name="cd_quality" value="Draft"/>
+		<alias name="cd_content_template" value="Draft"/>
+		<alias name="cd_core_reg_labeling_doc" value="Draft"/>
+		<alias name="cd_app_reg_labeling_doc" value="Draft"/>
+		<alias name="cd_reg_ad_promo" value="Draft"/>
+		<alias name="cd_safety" value="Draft"/>
+		<alias name="cd_change_request" value="Draft"/>
+		<locale name="en" value="Draft"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Effective" is_enabled="true" order_no="0">
+		<alias name="generic" value="Approved/Final/Effective"/>
+		<alias name="cd_non_clinical" value="Approved"/>
+		<alias name="cd_clinical" value="Approved"/>
+		<alias name="cd_submission_element" value="Approved"/>
+		<alias name="cd_reg_admin" value="Approved"/>
+		<alias name="cd_quality_gmp_effective" value="Effective"/>
+		<alias name="cd_quality_gmp_approved" value="Approved"/>
+		<alias name="cd_reg_correspondence" value="Approved"/>
+		<alias name="cd_clinical_tmf_doc" value="Final"/>
+		<alias name="cd_quality" value="Approved"/>
+		<alias name="cd_content_template" value="Approved"/>
+		<alias name="cd_core_reg_labeling_doc" value="Approved"/>
+		<alias name="cd_app_reg_labeling_doc" value="Approved"/>
+		<alias name="cd_reg_ad_promo" value="Approved"/>
+		<alias name="cd_safety" value="Approved"/>
+		<alias name="cd_change_request" value=""/>
+		<locale name="en" value="Effective"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Expired" is_enabled="true" order_no="0">
+		<alias name="generic" value="Expired"/>
+		<alias name="cd_non_clinical" value="Expired"/>
+		<alias name="cd_clinical" value="Expired"/>
+		<alias name="cd_submission_element" value="Expired"/>
+		<alias name="cd_reg_admin" value="Expired"/>
+		<alias name="cd_quality_gmp_effective" value="Expired"/>
+		<alias name="cd_quality_gmp_approved" value="Expired"/>
+		<alias name="cd_reg_correspondence" value="Expired"/>
+		<alias name="cd_clinical_tmf_doc" value="Expired"/>
+		<alias name="cd_quality" value="Expired"/>
+		<alias name="cd_content_template" value="Expired"/>
+		<alias name="cd_core_reg_labeling_doc" value="Expired"/>
+		<alias name="cd_app_reg_labeling_doc" value="Expired"/>
+		<alias name="cd_reg_ad_promo" value=""/>
+		<alias name="cd_safety" value="Expired"/>
+		<alias name="cd_change_request" value=""/>
+		<locale name="en" value="Expired"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="For Approval" is_enabled="true" order_no="0">
+		<alias name="generic" value="For Approval"/>
+		<alias name="cd_non_clinical" value="For Approval"/>
+		<alias name="cd_clinical" value="For Approval"/>
+		<alias name="cd_submission_element" value="For Approval"/>
+		<alias name="cd_reg_admin" value="For Approval"/>
+		<alias name="cd_quality_gmp_effective" value="For Approval"/>
+		<alias name="cd_quality_gmp_approved" value="For Approval"/>
+		<alias name="cd_reg_correspondence" value="For Approval"/>
+		<alias name="cd_clinical_tmf_doc" value="For Approval"/>
+		<alias name="cd_quality" value="For Approval"/>
+		<alias name="cd_content_template" value="For Approval"/>
+		<alias name="cd_core_reg_labeling_doc" value="For Approval"/>
+		<alias name="cd_app_reg_labeling_doc" value="For Approval"/>
+		<alias name="cd_reg_ad_promo" value="For Approval"/>
+		<alias name="cd_safety" value="For Approval"/>
+		<alias name="cd_change_request" value="For Approval"/>
+		<locale name="en" value="For Approval"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="For Rec-Approval" is_enabled="true" order_no="0">
+		<alias name="generic" value="For Rec-Approval"/>
+		<alias name="cd_non_clinical" value="For Rec-Approval"/>
+		<alias name="cd_clinical" value="For Rec-Approval"/>
+		<alias name="cd_submission_element" value="For Rec-Approval"/>
+		<alias name="cd_reg_admin" value="For Rec-Approval"/>
+		<alias name="cd_quality_gmp_effective" value="For Rec-Approval"/>
+		<alias name="cd_quality_gmp_approved" value="For Rec-Approval"/>
+		<alias name="cd_reg_correspondence" value="For Rec-Approval"/>
+		<alias name="cd_clinical_tmf_doc" value="For Rec-Approval"/>
+		<alias name="cd_quality" value="For Rec-Approval"/>
+		<alias name="cd_content_template" value="For Rec-Approval"/>
+		<alias name="cd_core_reg_labeling_doc" value="For Rec-Approval"/>
+		<alias name="cd_app_reg_labeling_doc" value="For Rec-Approval"/>
+		<alias name="cd_reg_ad_promo" value="For Rec-Approval"/>
+		<alias name="cd_safety" value="For Rec-Approval"/>
+		<alias name="cd_change_request" value="For Rec-Approval"/>
+		<locale name="en" value="For Reclassification Approval"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="For Review" is_enabled="true" order_no="0">
+		<alias name="generic" value="For Review"/>
+		<alias name="cd_non_clinical" value="For Review"/>
+		<alias name="cd_clinical" value="For Review"/>
+		<alias name="cd_submission_element" value="For Review"/>
+		<alias name="cd_reg_admin" value="For Review"/>
+		<alias name="cd_quality_gmp_effective" value="For Review"/>
+		<alias name="cd_quality_gmp_approved" value="For Review"/>
+		<alias name="cd_reg_correspondence" value="For Review"/>
+		<alias name="cd_clinical_tmf_doc" value="For Review"/>
+		<alias name="cd_quality" value="For Review"/>
+		<alias name="cd_content_template" value="For Review"/>
+		<alias name="cd_core_reg_labeling_doc" value="For Review"/>
+		<alias name="cd_app_reg_labeling_doc" value="For Review"/>
+		<alias name="cd_reg_ad_promo" value="For Review"/>
+		<alias name="cd_safety" value="For Review"/>
+		<alias name="cd_change_request" value="For Review"/>
+		<locale name="en" value="For Review"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Format Review" is_enabled="true" order_no="0">
+		<alias name="generic" value="Format Review"/>
+		<alias name="cd_non_clinical" value="Format Review"/>
+		<alias name="cd_clinical" value="Format Review"/>
+		<alias name="cd_submission_element" value="Format Review"/>
+		<alias name="cd_reg_admin" value="Format Review"/>
+		<alias name="cd_quality_gmp_effective" value="Format Review"/>
+		<alias name="cd_quality_gmp_approved" value="Format Review"/>
+		<alias name="cd_reg_correspondence" value="Format Review"/>
+		<alias name="cd_clinical_tmf_doc" value="Format Review"/>
+		<alias name="cd_quality" value="Format Review"/>
+		<alias name="cd_content_template" value="Format Review"/>
+		<alias name="cd_core_reg_labeling_doc" value="Format Review"/>
+		<alias name="cd_app_reg_labeling_doc" value="Format Review"/>
+		<alias name="cd_reg_ad_promo" value="Format Review"/>
+		<alias name="cd_safety" value="Format Review"/>
+		<alias name="cd_change_request" value=""/>
+		<locale name="en" value="Format Review"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Historic" is_enabled="true" order_no="0">
+		<alias name="generic" value="Historic"/>
+		<alias name="cd_non_clinical" value="Historic"/>
+		<alias name="cd_clinical" value="Historic"/>
+		<alias name="cd_submission_element" value="Historic"/>
+		<alias name="cd_reg_admin" value="Historic"/>
+		<alias name="cd_quality_gmp_effective" value="Historic"/>
+		<alias name="cd_quality_gmp_approved" value="Historic"/>
+		<alias name="cd_reg_correspondence" value="Historic"/>
+		<alias name="cd_clinical_tmf_doc" value="Historic"/>
+		<alias name="cd_quality" value="Historic"/>
+		<alias name="cd_content_template" value="Historic"/>
+		<alias name="cd_core_reg_labeling_doc" value="Historic"/>
+		<alias name="cd_app_reg_labeling_doc" value="Historic"/>
+		<alias name="cd_reg_ad_promo" value=""/>
+		<alias name="cd_safety" value="Historic"/>
+		<alias name="cd_change_request" value=""/>
+		<locale name="en" value="Historic"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Imported-Final" is_enabled="true" order_no="0">
+		<alias name="generic" value="Imported as Final"/>
+		<alias name="cd_non_clinical" value="Imported as Final"/>
+		<alias name="cd_clinical" value="Imported as Final"/>
+		<alias name="cd_submission_element" value="Imported as Final"/>
+		<alias name="cd_reg_admin" value="Imported as Final"/>
+		<alias name="cd_quality_gmp_effective" value=""/>
+		<alias name="cd_quality_gmp_approved" value=""/>
+		<alias name="cd_reg_correspondence" value="Imported as Final"/>
+		<alias name="cd_clinical_tmf_doc" value="Imported as Final"/>
+		<alias name="cd_quality" value="Imported as Final"/>
+		<alias name="cd_content_template" value="Imported as Final"/>
+		<alias name="cd_core_reg_labeling_doc" value="Imported as Final"/>
+		<alias name="cd_app_reg_labeling_doc" value="Imported as Final"/>
+		<alias name="cd_reg_ad_promo" value="Imported as Final"/>
+		<alias name="cd_safety" value="Imported as Final"/>
+		<alias name="cd_change_request" value=""/>
+		<locale name="en" value="Imported as Final"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Index" is_enabled="true" order_no="0">
+		<alias name="generic" value=""/>
+		<alias name="cd_non_clinical" value=""/>
+		<alias name="cd_clinical" value=""/>
+		<alias name="cd_submission_element" value=""/>
+		<alias name="cd_reg_admin" value=""/>
+		<alias name="cd_quality_gmp_effective" value=""/>
+		<alias name="cd_quality_gmp_approved" value=""/>
+		<alias name="cd_reg_correspondence" value=""/>
+		<alias name="cd_clinical_tmf_doc" value="Index"/>
+		<alias name="cd_quality" value=""/>
+		<alias name="cd_content_template" value=""/>
+		<alias name="cd_core_reg_labeling_doc" value=""/>
+		<alias name="cd_app_reg_labeling_doc" value=""/>
+		<alias name="cd_reg_ad_promo" value=""/>
+		<alias name="cd_safety" value=""/>
+		<alias name="cd_change_request" value=""/>
+		<locale name="en" value="Index"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Invalid" is_enabled="true" order_no="0">
+		<alias name="generic" value="Invalid"/>
+		<alias name="cd_non_clinical" value="Invalid"/>
+		<alias name="cd_clinical" value="Invalid"/>
+		<alias name="cd_submission_element" value="Invalid"/>
+		<alias name="cd_reg_admin" value="Invalid"/>
+		<alias name="cd_quality_gmp_effective" value="Invalid"/>
+		<alias name="cd_quality_gmp_approved" value="Invalid"/>
+		<alias name="cd_reg_correspondence" value="Invalid"/>
+		<alias name="cd_clinical_tmf_doc" value="Invalid"/>
+		<alias name="cd_quality" value="Invalid"/>
+		<alias name="cd_content_template" value="Invalid"/>
+		<alias name="cd_core_reg_labeling_doc" value="Invalid"/>
+		<alias name="cd_app_reg_labeling_doc" value="Invalid"/>
+		<alias name="cd_reg_ad_promo" value="Invalid"/>
+		<alias name="cd_safety" value="Invalid"/>
+		<alias name="cd_change_request" value="Invalid"/>
+		<locale name="en" value="Invalid"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Issued" is_enabled="true" order_no="0">
+		<alias name="generic" value="Issued"/>
+		<alias name="cd_non_clinical" value="Issued"/>
+		<alias name="cd_clinical" value="Issued"/>
+		<alias name="cd_submission_element" value="Issued"/>
+		<alias name="cd_reg_admin" value="Issued"/>
+		<alias name="cd_quality_gmp_effective" value="Issued"/>
+		<alias name="cd_quality_gmp_approved" value="Issued"/>
+		<alias name="cd_reg_correspondence" value="Issued"/>
+		<alias name="cd_clinical_tmf_doc" value="Issued"/>
+		<alias name="cd_quality" value="Issued"/>
+		<alias name="cd_content_template" value="Issued"/>
+		<alias name="cd_core_reg_labeling_doc" value="Issued"/>
+		<alias name="cd_app_reg_labeling_doc" value="Issued"/>
+		<alias name="cd_reg_ad_promo" value=""/>
+		<alias name="cd_safety" value="Issued"/>
+		<alias name="cd_change_request" value=""/>
+		<locale name="en" value="Issued"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Not Issued" is_enabled="true" order_no="0">
+		<alias name="generic" value="Not Issued"/>
+		<alias name="cd_non_clinical" value="Not Issued"/>
+		<alias name="cd_clinical" value="Not Issued"/>
+		<alias name="cd_submission_element" value="Not Issued"/>
+		<alias name="cd_reg_admin" value="Not Issued"/>
+		<alias name="cd_quality_gmp_effective" value="Not Issued"/>
+		<alias name="cd_quality_gmp_approved" value="Not Issued"/>
+		<alias name="cd_reg_correspondence" value="Not Issued"/>
+		<alias name="cd_clinical_tmf_doc" value="Not Issued"/>
+		<alias name="cd_quality" value="Not Issued"/>
+		<alias name="cd_content_template" value="Not Issued"/>
+		<alias name="cd_core_reg_labeling_doc" value="Not Issued"/>
+		<alias name="cd_app_reg_labeling_doc" value="Not Issued"/>
+		<alias name="cd_reg_ad_promo" value=""/>
+		<alias name="cd_safety" value="Not Issued"/>
+		<alias name="cd_change_request" value=""/>
+		<locale name="en" value="Not Issued"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Omitted" is_enabled="true" order_no="0">
+		<alias name="generic" value=""/>
+		<alias name="cd_non_clinical" value=""/>
+		<alias name="cd_clinical" value=""/>
+		<alias name="cd_submission_element" value=""/>
+		<alias name="cd_reg_admin" value=""/>
+		<alias name="cd_quality_gmp_effective" value=""/>
+		<alias name="cd_quality_gmp_approved" value=""/>
+		<alias name="cd_reg_correspondence" value=""/>
+		<alias name="cd_clinical_tmf_doc" value="Omitted"/>
+		<alias name="cd_quality" value=""/>
+		<alias name="cd_content_template" value=""/>
+		<alias name="cd_core_reg_labeling_doc" value=""/>
+		<alias name="cd_app_reg_labeling_doc" value=""/>
+		<alias name="cd_reg_ad_promo" value=""/>
+		<alias name="cd_safety" value=""/>
+		<alias name="cd_change_request" value=""/>
+		<locale name="en" value="Omitted"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Optional" is_enabled="true" order_no="0">
+		<alias name="generic" value=""/>
+		<alias name="cd_non_clinical" value=""/>
+		<alias name="cd_clinical" value=""/>
+		<alias name="cd_submission_element" value=""/>
+		<alias name="cd_reg_admin" value=""/>
+		<alias name="cd_quality_gmp_effective" value=""/>
+		<alias name="cd_quality_gmp_approved" value=""/>
+		<alias name="cd_reg_correspondence" value=""/>
+		<alias name="cd_clinical_tmf_doc" value="Optional"/>
+		<alias name="cd_quality" value=""/>
+		<alias name="cd_content_template" value=""/>
+		<alias name="cd_core_reg_labeling_doc" value=""/>
+		<alias name="cd_app_reg_labeling_doc" value=""/>
+		<alias name="cd_reg_ad_promo" value=""/>
+		<alias name="cd_safety" value=""/>
+		<alias name="cd_change_request" value=""/>
+		<locale name="en" value="Optional"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Quality Check" is_enabled="true" order_no="0">
+		<alias name="generic" value=""/>
+		<alias name="cd_non_clinical" value=""/>
+		<alias name="cd_clinical" value="Quality Check"/>
+		<alias name="cd_submission_element" value=""/>
+		<alias name="cd_reg_admin" value=""/>
+		<alias name="cd_quality_gmp_effective" value=""/>
+		<alias name="cd_quality_gmp_approved" value=""/>
+		<alias name="cd_reg_correspondence" value=""/>
+		<alias name="cd_clinical_tmf_doc" value="Quality Check"/>
+		<alias name="cd_quality" value=""/>
+		<alias name="cd_content_template" value=""/>
+		<alias name="cd_core_reg_labeling_doc" value=""/>
+		<alias name="cd_app_reg_labeling_doc" value=""/>
+		<alias name="cd_reg_ad_promo" value=""/>
+		<alias name="cd_safety" value=""/>
+		<alias name="cd_change_request" value=""/>
+		<locale name="en" value="Quality Check"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Rec-Approved" is_enabled="true" order_no="0">
+		<alias name="generic" value="Rec-Approved"/>
+		<alias name="cd_non_clinical" value="Rec-Approved"/>
+		<alias name="cd_clinical" value="Rec-Approved"/>
+		<alias name="cd_submission_element" value="Rec-Approved"/>
+		<alias name="cd_reg_admin" value="Rec-Approved"/>
+		<alias name="cd_quality_gmp_effective" value="Rec-Approved"/>
+		<alias name="cd_quality_gmp_approved" value="Rec-Approved"/>
+		<alias name="cd_reg_correspondence" value="Rec-Approved"/>
+		<alias name="cd_clinical_tmf_doc" value="Rec-Approved"/>
+		<alias name="cd_quality" value="Rec-Approved"/>
+		<alias name="cd_content_template" value="Rec-Approved"/>
+		<alias name="cd_core_reg_labeling_doc" value="Rec-Approved"/>
+		<alias name="cd_app_reg_labeling_doc" value="Rec-Approved"/>
+		<alias name="cd_reg_ad_promo" value="Rec-Approved"/>
+		<alias name="cd_safety" value="Rec-Approved"/>
+		<alias name="cd_change_request" value="Rec-Approved"/>
+		<locale name="en" value="Reclassification Approved"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Reclassified" is_enabled="true" order_no="0">
+		<alias name="generic" value="Reclassified"/>
+		<alias name="cd_non_clinical" value="Reclassified"/>
+		<alias name="cd_clinical" value="Reclassified"/>
+		<alias name="cd_submission_element" value="Reclassified"/>
+		<alias name="cd_reg_admin" value="Reclassified"/>
+		<alias name="cd_quality_gmp_effective" value="Reclassified"/>
+		<alias name="cd_quality_gmp_approved" value="Reclassified"/>
+		<alias name="cd_reg_correspondence" value="Reclassified"/>
+		<alias name="cd_clinical_tmf_doc" value="Reclassified"/>
+		<alias name="cd_quality" value="Reclassified"/>
+		<alias name="cd_content_template" value="Reclassified"/>
+		<alias name="cd_core_reg_labeling_doc" value="Reclassified"/>
+		<alias name="cd_app_reg_labeling_doc" value="Reclassified"/>
+		<alias name="cd_reg_ad_promo" value="Reclassified"/>
+		<alias name="cd_safety" value="Reclassified"/>
+		<alias name="cd_change_request" value="Reclassified"/>
+		<locale name="en" value="Reclassified"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Recommended" is_enabled="true" order_no="0">
+		<alias name="generic" value=""/>
+		<alias name="cd_non_clinical" value=""/>
+		<alias name="cd_clinical" value=""/>
+		<alias name="cd_submission_element" value=""/>
+		<alias name="cd_reg_admin" value=""/>
+		<alias name="cd_quality_gmp_effective" value=""/>
+		<alias name="cd_quality_gmp_approved" value=""/>
+		<alias name="cd_reg_correspondence" value=""/>
+		<alias name="cd_clinical_tmf_doc" value="Recommended"/>
+		<alias name="cd_quality" value=""/>
+		<alias name="cd_content_template" value=""/>
+		<alias name="cd_core_reg_labeling_doc" value=""/>
+		<alias name="cd_app_reg_labeling_doc" value=""/>
+		<alias name="cd_reg_ad_promo" value=""/>
+		<alias name="cd_safety" value=""/>
+		<alias name="cd_change_request" value=""/>
+		<locale name="en" value="Recommended"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Release Pending" is_enabled="true" order_no="0">
+		<alias name="generic" value="Release Pending"/>
+		<alias name="cd_non_clinical" value="Release Pending"/>
+		<alias name="cd_clinical" value="Release Pending"/>
+		<alias name="cd_submission_element" value="Release Pending"/>
+		<alias name="cd_reg_admin" value="Release Pending"/>
+		<alias name="cd_quality_gmp_effective" value="Release Pending"/>
+		<alias name="cd_quality_gmp_approved" value="Release Pending"/>
+		<alias name="cd_reg_correspondence" value="Release Pending"/>
+		<alias name="cd_clinical_tmf_doc" value="Release Pending"/>
+		<alias name="cd_quality" value="Release Pending"/>
+		<alias name="cd_content_template" value="Release Pending"/>
+		<alias name="cd_core_reg_labeling_doc" value="Release Pending"/>
+		<alias name="cd_app_reg_labeling_doc" value="Release Pending"/>
+		<alias name="cd_reg_ad_promo" value=""/>
+		<alias name="cd_safety" value="Release Pending"/>
+		<alias name="cd_change_request" value=""/>
+		<locale name="en" value="Release Pending"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Required" is_enabled="true" order_no="0">
+		<alias name="generic" value=""/>
+		<alias name="cd_non_clinical" value=""/>
+		<alias name="cd_clinical" value=""/>
+		<alias name="cd_submission_element" value=""/>
+		<alias name="cd_reg_admin" value=""/>
+		<alias name="cd_quality_gmp_effective" value=""/>
+		<alias name="cd_quality_gmp_approved" value=""/>
+		<alias name="cd_reg_correspondence" value=""/>
+		<alias name="cd_clinical_tmf_doc" value="Required"/>
+		<alias name="cd_quality" value=""/>
+		<alias name="cd_content_template" value=""/>
+		<alias name="cd_core_reg_labeling_doc" value=""/>
+		<alias name="cd_app_reg_labeling_doc" value=""/>
+		<alias name="cd_reg_ad_promo" value=""/>
+		<alias name="cd_safety" value=""/>
+		<alias name="cd_change_request" value=""/>
+		<locale name="en" value="Required"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Reviewed" is_enabled="true" order_no="0">
+		<alias name="generic" value="Reviewed"/>
+		<alias name="cd_non_clinical" value="Reviewed"/>
+		<alias name="cd_clinical" value="Reviewed"/>
+		<alias name="cd_submission_element" value="Reviewed"/>
+		<alias name="cd_reg_admin" value="Reviewed"/>
+		<alias name="cd_quality_gmp_effective" value="Reviewed"/>
+		<alias name="cd_quality_gmp_approved" value="Reviewed"/>
+		<alias name="cd_reg_correspondence" value="Reviewed"/>
+		<alias name="cd_clinical_tmf_doc" value="Reviewed"/>
+		<alias name="cd_quality" value="Reviewed"/>
+		<alias name="cd_content_template" value="Reviewed"/>
+		<alias name="cd_core_reg_labeling_doc" value="Reviewed"/>
+		<alias name="cd_app_reg_labeling_doc" value="Reviewed"/>
+		<alias name="cd_reg_ad_promo" value=""/>
+		<alias name="cd_safety" value="Reviewed"/>
+		<alias name="cd_change_request" value=""/>
+		<locale name="en" value="Reviewed"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Superseded" is_enabled="true" order_no="0">
+		<alias name="generic" value="Superseded"/>
+		<alias name="cd_non_clinical" value="Superseded"/>
+		<alias name="cd_clinical" value="Superseded"/>
+		<alias name="cd_submission_element" value="Superseded"/>
+		<alias name="cd_reg_admin" value="Superseded"/>
+		<alias name="cd_quality_gmp_effective" value="Superseded"/>
+		<alias name="cd_quality_gmp_approved" value="Superseded"/>
+		<alias name="cd_reg_correspondence" value="Superseded"/>
+		<alias name="cd_clinical_tmf_doc" value="Superseded"/>
+		<alias name="cd_quality" value="Superseded"/>
+		<alias name="cd_content_template" value="Superseded"/>
+		<alias name="cd_core_reg_labeling_doc" value="Superseded"/>
+		<alias name="cd_app_reg_labeling_doc" value="Superseded"/>
+		<alias name="cd_reg_ad_promo" value="Superseded"/>
+		<alias name="cd_safety" value="Superseded"/>
+		<alias name="cd_change_request" value=""/>
+		<locale name="en" value="Superseded"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Suspended" is_enabled="true" order_no="0">
+		<alias name="generic" value="Suspended"/>
+		<alias name="cd_non_clinical" value="Suspended"/>
+		<alias name="cd_clinical" value="Suspended"/>
+		<alias name="cd_submission_element" value="Suspended"/>
+		<alias name="cd_reg_admin" value="Suspended"/>
+		<alias name="cd_quality_gmp_effective" value="Suspended"/>
+		<alias name="cd_quality_gmp_approved" value="Suspended"/>
+		<alias name="cd_reg_correspondence" value="Suspended"/>
+		<alias name="cd_clinical_tmf_doc" value="Suspended"/>
+		<alias name="cd_quality" value="Suspended"/>
+		<alias name="cd_content_template" value="Suspended"/>
+		<alias name="cd_core_reg_labeling_doc" value="Suspended"/>
+		<alias name="cd_app_reg_labeling_doc" value="Suspended"/>
+		<alias name="cd_reg_ad_promo" value="Suspended"/>
+		<alias name="cd_safety" value="Suspended"/>
+		<alias name="cd_change_request" value=""/>
+		<locale name="en" value="Suspended"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Withdrawn" is_enabled="true" order_no="0">
+		<alias name="generic" value="Withdrawn"/>
+		<alias name="cd_non_clinical" value="Withdrawn"/>
+		<alias name="cd_clinical" value="Withdrawn"/>
+		<alias name="cd_submission_element" value="Withdrawn"/>
+		<alias name="cd_reg_admin" value="Withdrawn"/>
+		<alias name="cd_quality_gmp_effective" value="Withdrawn"/>
+		<alias name="cd_quality_gmp_approved" value="Withdrawn"/>
+		<alias name="cd_reg_correspondence" value="Withdrawn"/>
+		<alias name="cd_clinical_tmf_doc" value="Withdrawn"/>
+		<alias name="cd_quality" value="Withdrawn"/>
+		<alias name="cd_content_template" value="Withdrawn"/>
+		<alias name="cd_core_reg_labeling_doc" value="Withdrawn"/>
+		<alias name="cd_app_reg_labeling_doc" value="Withdrawn"/>
+		<alias name="cd_reg_ad_promo" value="Withdrawn"/>
+		<alias name="cd_safety" value="Withdrawn"/>
+		<alias name="cd_change_request" value=""/>
+		<locale name="en" value="Withdrawn"/>
+	</d2_dictionary_value>
+</d2_dictionary>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_mailing_config>
+	<add_attachment>false</add_attachment>
+	<rendition_formats/>
+	<list-recipient>
+		<recipient type="attribute">wf_authors</recipient>
+	</list-recipient>
+	<list-subject>
+		<subject_en>The copy of the document $value(source_doc) has been created</subject_en>
+	</list-subject>
+	<list-object>
+		<object_en>Please look at the related copies and take appropriate action.</object_en>
+	</list-object>
+</d2_mailing_config>

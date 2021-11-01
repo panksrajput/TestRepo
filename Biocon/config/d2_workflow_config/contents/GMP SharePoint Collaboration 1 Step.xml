@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_workflow_config>
+	<workflow_label_en/>
+	<activity-list>
+		<activity lifecycle="Cat 1-3 SP Collaborative Editing Lifecycle" method="D2WFLifeCycleMethod" target_state="(Demote to Draft)" transition_type="promote" value="Demote to Draft"/>
+		<activity lifecycle="Cat 1-3 SP Collaborative Editing Lifecycle" method="D2WFLifeCycleMethod" target_state="In Collaboration" transition_type="promote" value="Promote to For Collaboration"/>
+		<activity lifecycle="Cat 1-3 SP Collaborative Editing Lifecycle" method="D2WFLifeCycleMethod" target_state="(Start SharePoint WF)" transition_type="promote" value="Start WF"/>
+		<activity audit_acquired="true" audit_response="true" check_lifecycle="false" delegate_dql="select g.i_all_users_names from dm_group g, dm_user u where any g.i_supergroups_names in (select alias_value from d2_dictionary_value where dictionary_name like 'GMP Applicable Sites' and any alias_value is not nullstring and  (alias_value like '%_authors' or alias_value like '%_reviewers') and object_name in ($repeatingvalue(applicable_sites)) ENABLE(ROW_BASED)) and any g.i_all_users_names = u.user_name and u.user_state = 0 order by 1" delegate_type="dql" display_task="false" mandatory_forward_comment="false" value="Initiate"/>
+		<activity method="CDFWorkflowNotificationMethod" value="Finish"/>
+		<activity alias_name="collaborators" audit_acquired="true" audit_response="true" check_lifecycle="true" custom_alias_list="collaborators" delegate_dql="select g.i_all_users_names from dm_group g, dm_user u where any g.i_supergroups_names in (select alias_value from d2_dictionary_value where dictionary_name like 'GMP Applicable Sites' and any alias_value is not nullstring and (alias_value like '%_authors' or alias_value like '%_reviewers')and object_name in ($repeatingvalue(applicable_sites)) ENABLE(ROW_BASED)) and any g.i_all_users_names = u.user_name and u.user_state = 0 order by 1" delegate_type="dql" display_task="true" is_pseudo_task="true" mandatory_forward_comment="true" task_accept_labels_en="Edits Complete" task_duration="14" task_instructions_en="Please review the attached document and edit / annotate it as and where appropriate. When finished, mark this task as ''Edits Complete'' to return the document with your comments and changes." task_subject_en="Collaborating: &quot;$value(object_name)&quot;" value="Collaborate">
+			<follow-up delay="5" message_en="You are invited to participate in the collaboration. The due date to complete the work is within 5 days. Please finalize your updates and complete Collaboration task." subject_en="Complete your collaboration task" task_owner="true"/>
+			<follow-up delay="3" message_en="You are invited to participate in the collaboration. The due date to complete the work is within 3 days. Please finalize your updates and complete Collaboration task." subject_en="Complete your collaboration task" task_owner="true"/>
+		</activity>
+		<activity method="SharePointConnectorCreateSite" value="Create SharePoint Site"/>
+		<activity method="SharePointConnectorCloseSite" value="Close SharePoint Site"/>
+		<activity method="dm_noop_auto_method_java" value="Start"/>
+		<activity lifecycle="Cat 1-3 SP Collaborative Editing Lifecycle" method="D2WFLifeCycleMethod" target_state="(End SharePoint WF)" transition_type="promote" value="End WF"/>
+		<activity alias_name="supervisor" audit_acquired="true" audit_response="true" value="NoOp"/>
+	</activity-list>
+	<workflow abort_apply_on_attachments="false" abort_lifecycle="Cat 1-3 SP Collaborative Editing Lifecycle" abort_target_state="(Abort SP WF)"/>
+	<entry_conditions>
+		<uniquenesscheck message_failed_en="" uniqueness="Validate selected document is not checked-out"/>
+		<uniquenesscheck message_failed_en="" uniqueness="Validate selected document is the CURRENT version"/>
+		<uniquenesscheck message_failed_en="" uniqueness="Validate user is an Author for the selected document"/>
+		<uniquenesscheck message_failed_en="" uniqueness="Validate selected document is not involved in an active workflow"/>
+		<uniquenesscheck message_failed_en="" uniqueness="Validate selected document is a Draft document"/>
+		<attribute compare="contains" message_failed_en="" name="wf_process_list" value="SP-COLLABORATION-1-STEP"/>
+	</entry_conditions>
+	<dialog height="500" width="570">
+		<list id="collaborators" assistance_dql="select g.i_all_users_names from dm_group g, dm_user u where any g.i_supergroups_names in (select alias_value from d2_dictionary_value where dictionary_name like 'GMP Applicable Sites' and any alias_value is not nullstring and (alias_value like '%_authors' or alias_value like '%_reviewers')and object_name in ($repeatingvalue(applicable_sites)) ENABLE(ROW_BASED)) and any g.i_all_users_names = u.user_name and u.user_state = 0 order by 1" assistance_type="dql" label_en="Collaborators" linked_attribute="wf_reviewers" required_values_count_min="1" requiredOnStartup="true" rows="4" sorted="true"/>
+		<combo id="supervisor" assistance_dql="select USER from dm_dbo.single_result_row_view" assistance_type="dql" label_en="Supervisor" linked_attribute="wf_approvers" readOnlyOnStartup="true" value="$USER"/>
+	</dialog>
+</d2_workflow_config>

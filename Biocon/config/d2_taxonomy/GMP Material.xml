@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_taxonomy object_name="GMP Material" is_versioned="false" title="This is taxonomy for GMP Material" lock_config="false" parents_config="" application_names="OpenText Life Sciences Medical Device for Quality and Manufacturing Solution¬OpenText Life Sciences Quality and Manufacturing Solution¬OpenText Life Sciences Medical Device Solution¬Custom Configurations" security_group="admingroup">
+	<level position="0" name="GMP Material Name"/>
+	<level position="1" name="GMP Material Code"/>
+	<path value="Ascorbic Acid/MAT000001"/>
+	<path value="Aspartame/MAT000002"/>
+	<path value="Calcium Gluconate/MAT000004"/>
+	<path value="Calcium Lactate/MAT000005"/>
+	<path value="Citric Acid/MAT000006"/>
+	<path value="Cross Carmellose Sodium/MAT000007"/>
+	<path value="Glycerine/MAT000008"/>
+	<path value="HPMC/MAT000009"/>
+</d2_taxonomy>

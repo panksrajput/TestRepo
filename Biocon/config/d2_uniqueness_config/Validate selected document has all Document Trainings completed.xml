@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_uniqueness_config new_format="true">
+	<object_name value="Validate selected document has all Document Trainings completed"/>
+	<title value="This condition verifies for the selected CAT1 document all Document Trainings has completed."/>
+	<subject value=""/>
+	<authors/>
+	<keywords/>
+	<a_status value=""/>
+	<a_content_type value=""/>
+	<log_entry value=""/>
+	<language_code value=""/>
+	<module_type value="d2_uniqueness_config"/>
+	<application_names>
+		<repeating value="OpenText Life Sciences Medical Device for Quality and Manufacturing Solution"/>
+		<repeating value="OpenText Life Sciences Medical Device Solution"/>
+		<repeating value="OpenText Life Sciences Quality and Manufacturing Solution"/>
+	</application_names>
+	<lock_config value="F"/>
+	<parents_config/>
+	<warning_message>
+		<repeating value="The selected document ''$value(object_name)'' has pending training tasks that must be completed prior to making the document Effective."/>
+	</warning_message>
+	<warning_locale>
+		<repeating value="en"/>
+	</warning_locale>
+	<warning_position>
+		<repeating value="0"/>
+	</warning_position>
+	<qualification>
+		<repeating value="dm_dbo.single_result_row_view where exists (select * from cd_training_record r, cd_controlled_doc (all) d where d.r_object_id = '$value(r_object_id)' and d.training_before_effective = true and r.document_id = d.r_object_id and r.a_status='Pending')"/>
+	</qualification>
+</d2_uniqueness_config>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_lifecycle_config new_format="true">
+	<object_name value="Medical Device Regulatory-Admin Lifecycle Model"/>
+	<title value="Used to track the progress of a Regulatory Administration Forms, and to prevent documents from being made 'Effective' while the Device Registration Form is in a 'frozen' state."/>
+	<subject value=""/>
+	<authors/>
+	<keywords/>
+	<a_status value=""/>
+	<a_content_type value="xml"/>
+	<log_entry value=""/>
+	<language_code value=""/>
+	<application_names>
+		<repeating value="OpenText Life Sciences Quality and Manufacturing Solution"/>
+		<repeating value="OpenText Life Sciences Medical Device for Quality and Manufacturing Solution"/>
+		<repeating value="OpenText Life Sciences Medical Device for Research and Development Solution"/>
+		<repeating value="OpenText Life Sciences Medical Device Solution"/>
+		<repeating value="OpenText Life Sciences Submission Storage and Viewing"/>
+		<repeating value="OpenText Life Sciences Research and Development Solution"/>
+	</application_names>
+	<lock_config value="F"/>
+	<parents_config/>
+</d2_lifecycle_config>

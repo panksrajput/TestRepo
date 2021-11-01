@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<delta>
+	<insert position-after="menuCustom1392767163051,menuCustom1392850060360,menuCustom1393009985799,separator0,menuHelpMonitoring,menuHelpAbout" position-before="menuHelpContents">
+		<menuitem id="menuCustom1410330011234" action="url==/d2ls/LSSSV-UG/index.html" label_en="SSV Help">
+			<dynamic-action class="com.emc.d2fs.dctm.ui.dynamicactions.events.Publish" event="D2_ACTION_OPEN_URL"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.objects.Predicate" value="cd_solution_registry where any solution_id in ('lssuite', 'lsssv')"/>
+		</menuitem>
+	</insert>
+	<insert position-after="menuCustom1392850060360,menuCustom1393009985799,separator0,menuHelpMonitoring,menuHelpAbout" position-before="menuHelpContents,menuCustom1410330011234">
+		<menuitem id="menuCustom1392767163051" action="url==/d2ls/LSQM-UG/index.html" label_en="Q&amp;M Help">
+			<dynamic-action class="com.emc.d2fs.dctm.ui.dynamicactions.events.Publish" event="D2_ACTION_OPEN_URL"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.objects.Predicate" value="cd_solution_registry where any solution_id in ('lssuite', 'lsqm')"/>
+		</menuitem>
+	</insert>
+	<insert position-after="menuCustom1393009985799,separator0,menuHelpMonitoring,menuHelpAbout" position-before="menuHelpContents,menuCustom1410330011234,menuCustom1392767163051">
+		<menuitem id="menuCustom1392850060360" action="url==/d2ls/LSRD-UG/index.html" label_en="R&amp;D Help">
+			<dynamic-action class="com.emc.d2fs.dctm.ui.dynamicactions.events.Publish" event="D2_ACTION_OPEN_URL"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.objects.Predicate" value="cd_solution_registry where any solution_id in ('lssuite', 'lsrd')"/>
+		</menuitem>
+	</insert>
+	<insert position-after="separator0,menuHelpMonitoring,menuHelpAbout" position-before="menuHelpContents,menuCustom1410330011234,menuCustom1392767163051,menuCustom1392850060360">
+		<menuitem id="menuCustom1393009985799" action="url==/d2ls/LSTMF-UG/index.html" label_en="eTMF Help">
+			<dynamic-action class="com.emc.d2fs.dctm.ui.dynamicactions.events.Publish" event="D2_ACTION_OPEN_URL"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.objects.Predicate" value="cd_solution_registry where any solution_id in ('lssuite', 'lstmf')"/>
+		</menuitem>
+	</insert>
+</delta>

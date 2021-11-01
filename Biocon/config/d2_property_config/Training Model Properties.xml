@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_property_config new_format="true">
+	<object_name value="Training Model Properties"/>
+	<title value=""/>
+	<subject value=""/>
+	<authors/>
+	<keywords/>
+	<a_status value=""/>
+	<a_content_type value="xml"/>
+	<log_entry value=""/>
+	<language_code value=""/>
+	<application_names>
+		<repeating value="OpenText Life Sciences Quality and Manufacturing Solution"/>
+	</application_names>
+	<lock_config value="F"/>
+	<parents_config/>
+	<for_type value="cd_training_model"/>
+	<multi_panel value="F"/>
+	<smart_version value=""/>
+	<mobile_version value=""/>
+</d2_property_config>

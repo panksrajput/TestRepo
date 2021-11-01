@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_uniqueness_config new_format="true">
+	<object_name value="Validate user is a member of cd_controlled_print_recallers group"/>
+	<title value="Ensures the user is allowed to carry out certain privileged operations restricted to Controlled Print Coordinators Recallers group."/>
+	<subject value=""/>
+	<authors/>
+	<keywords/>
+	<a_status value=""/>
+	<a_content_type value=""/>
+	<log_entry value=""/>
+	<language_code value=""/>
+	<module_type value="d2_uniqueness_config"/>
+	<application_names>
+		<repeating value="OpenText Life Sciences Quality and Manufacturing Solution"/>
+	</application_names>
+	<lock_config value="F"/>
+	<parents_config/>
+	<warning_message>
+		<repeating value="You need to be a member of the Controlled Print Coordinators Recallers group (cd_controlled_print_recallers) in order to use this function."/>
+	</warning_message>
+	<warning_locale>
+		<repeating value="en"/>
+	</warning_locale>
+	<warning_position>
+		<repeating value="0"/>
+	</warning_position>
+	<qualification>
+		<repeating value="dm_dbo.single_result_row_view where not exists (select group_name from dm_group where group_name = 'cd_controlled_print_recallers' and any i_all_users_names = '$USER')"/>
+	</qualification>
+</d2_uniqueness_config>

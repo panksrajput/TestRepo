@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_documentset_switch object_name="d2_uniqueness_config">
+	<d2_documentset name="Registration Forms¬Medical Device Registration Forms" config="Validate device code is unique on a Medical Device Registration Form"/>
+	<d2_documentset name="Registration Forms¬Medical Device Registration Forms" config="Validate medical device family and subfamily is unique"/>
+	<d2_documentset name="Registration Forms¬Product Registration Forms" config="Validate product code is unique"/>
+	<d2_documentset name="Registration Forms¬Medical Device Regulatory-Admin Registration Forms" config="Validate Regulatory Application Form Description is unique"/>
+	<d2_documentset name="Registration Forms¬Manufactured Item Registration Forms¬Item Registration Forms for Finished Goods without item code" config="Validate manufactured item code is unique"/>
+	<d2_documentset name="Registration Forms¬Manufactured Item Registration Forms¬Item Registration Forms for Finished Goods" config="Validate manufactured item code is unique"/>
+	<d2_documentset name="Registration Forms¬Manufactured Item Registration Forms¬Item Registration Forms for Semi-finished Goods without item code" config="Validate manufactured item code is unique"/>
+	<d2_documentset name="Registration Forms¬Manufactured Item Registration Forms¬Item Registration Forms for Semi-finished Goods" config="Validate manufactured item code is unique"/>
+	<d2_documentset name="Registration Forms¬Manufactured Item Registration Forms¬Item Registration Forms for Active Ingredients without item code" config="Validate manufactured item code is unique"/>
+	<d2_documentset name="Registration Forms¬Manufactured Item Registration Forms¬Item Registration Forms for Active Ingredients" config="Validate manufactured item code is unique"/>
+	<d2_documentset name="Promote Document to Effective" config="Validate selected document is not involved in an active workflow"/>
+	<d2_documentset name="DistributionList" config="Validate distribution list name is unique"/>
+	<d2_documentset name="Restricted Edit Models" config="Restricted Edit Model Name"/>
+	<switch_defaults/>
+</d2_documentset_switch>

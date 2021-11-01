@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dialog id="PropertiesDialog" buttons_right="false" focus="a_special_app" height="250" resizable="true" signoff_creation="false" signoff_edit="false" signoff_import="false" signoff_intention_dictionary="" signoff_intention_required="false" width="500">
+	<content>
+		<fieldset label_en="Combine Product Codes">
+			<label id="product_code" label_en="Combine documents for product"/>
+			<combo id="a_special_app" assistance_dql="select distinct product_code from cd_product_info where product_code != '$value(product_code)' order by 1" assistance_type="dql" condition_required_create="true" condition_required_edit="true" condition_required_import="true" label_en="Into"/>
+			<comment advancedView_visible="false" condition_visible="(getValue(a_special_app).notEquals(''))" html_content="true" label_en="&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;font color=#646464&gt;Are you sure you want to combine ''$value(product_code)'' with this product?&lt;/font&gt; &lt;font color=#FF0000&gt;** CAUTION - the product registration for ''$value(product_code)'' will be removed - this operation is irreversible.&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"/>
+			<boolean id="confirmation" advancedView_visible="false" condition_visible="(getValue(a_special_app).notEquals(''))" control="true" label_en="Click here to confirm the operation"/>
+			<comment advancedView_visible="false" condition_visible="(getValue(confirmation).equals('true'))" font_color="#646464" html_content="true" label_en="&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;font color=#646464&gt;Click on OK to combine these products. This process runs in the background. You can refresh the display periodically by clicking on the ''Product Library'' folder in the browser tree; when the process is complete, the product registration for ''$value(product_code)'' will disappear.&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"/>
+			<separator/>
+		</fieldset>
+	</content>
+	<buttons>
+		<button id="buttonOk" action="validDialog()" advancedView_enabled="false" advancedView_visible="false" condition_visible="(getValue(confirmation).equals('true'))"/>
+		<button id="buttonCancel" action="cancelDialog()"/>
+	</buttons>
+</dialog>

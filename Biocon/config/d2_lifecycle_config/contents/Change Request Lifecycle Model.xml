@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2lifecycle execute_actions_on_start="true" state_attribute="">
+	<state direct="false" entry="true" name="(Init)">
+		<entry_conditions/>
+		<actions>
+			<set name="r_is_virtual_doc" value="1"/>
+			<set name="owner_name" value="admingroup"/>
+			<setrepeating mode="append" name="authors" removeDuplicate="true" value="$USER"/>
+			<set name="a_status" value="Draft"/>
+			<setrepeating mode="append" name="wf_process_list" removeDuplicate="true" value="CR-REVIEW-APPROVE"/>
+			<setrepeating mode="append" name="wf_process_list" removeDuplicate="true" value="CR-APPROVE"/>
+			<setrepeating mode="append" name="wf_process_list" removeDuplicate="true" value="1-COLLABORATION"/>
+			<setrepeating mode="append" name="wf_signature_list" removeDuplicate="true" value="APPROVESIG"/>
+			<applymethod argument="-if &quot;domain ='GMP' or domain='Med Device'&quot; -id $value(r_object_id) -query &quot;select alias_value as authors from d2_dictionary_value v,d2_dictionary d where v.dictionary_name = d.object_name and d.object_name = 'GMP Applicable Sites' and v.object_name in (select applicable_sites from cd_change_request where r_object_id = '$value(r_object_id)') and d.alias_name = 'authors' and v.i_position = d.i_position and any alias_value is not nullstring order by alias_value ENABLE (ROW_BASED)&quot; -all_rows true -truncate true" name="CDFUpdateAttrsViaQueryMethod"/>
+			<applymethod argument="-if &quot;domain ='GMP' or domain='Med Device'&quot; -id $value(r_object_id) -query &quot;select alias_value as approvers from d2_dictionary_value v,d2_dictionary d where v.dictionary_name = d.object_name and d.object_name = 'GMP Applicable Sites' and v.object_name in (select applicable_sites from cd_change_request where r_object_id = '$value(r_object_id)') and d.alias_name = 'approvers' and v.i_position = d.i_position and any alias_value is not nullstring order by alias_value ENABLE (ROW_BASED)&quot; -all_rows true -override true" name="CDFUpdateAttrsViaQueryMethod"/>
+			<applymethod argument="-if &quot;domain ='GMP' or domain='Med Device'&quot; -id $value(r_object_id) -query &quot;select alias_value as auditors from d2_dictionary_value v,d2_dictionary d where v.dictionary_name = d.object_name and d.object_name = 'GMP Applicable Sites' and v.object_name in (select applicable_sites from cd_change_request where r_object_id = '$value(r_object_id)') and d.alias_name = 'auditors' and v.i_position = d.i_position and any alias_value is not nullstring order by alias_value ENABLE (ROW_BASED)&quot; -all_rows true -override true" name="CDFUpdateAttrsViaQueryMethod"/>
+			<applymethod argument="-if &quot;domain ='GMP' or domain='Med Device'&quot; -id $value(r_object_id) -query &quot;select alias_value as reviewers from d2_dictionary_value v,d2_dictionary d where v.dictionary_name = d.object_name and d.object_name = 'GMP Applicable Sites' and v.object_name in (select applicable_sites from cd_change_request where r_object_id = '$value(r_object_id)') and d.alias_name = 'reviewers' and v.i_position = d.i_position and any alias_value is not nullstring order by alias_value ENABLE (ROW_BASED)&quot; -all_rows true -override true" name="CDFUpdateAttrsViaQueryMethod"/>
+			<applymethod argument="-if &quot;domain ='GMP' or domain='Med Device'&quot; -id $value(r_object_id) -query &quot;select alias_value as qo_approvers from d2_dictionary_value v,d2_dictionary d where v.dictionary_name = d.object_name and d.object_name = 'GMP Applicable Sites' and v.object_name in (select applicable_sites from cd_change_request where r_object_id = '$value(r_object_id)') and d.alias_name = 'qo_approvers' and v.i_position = d.i_position and any alias_value is not nullstring order by alias_value ENABLE (ROW_BASED)&quot; -all_rows true -override true" name="CDFUpdateAttrsViaQueryMethod"/>
+			<applymethod argument="-if &quot;domain ='GMP' or domain='Med Device'&quot; -id $value(r_object_id) -query &quot;select alias_value as doc_coordinators from d2_dictionary_value v,d2_dictionary d where v.dictionary_name = d.object_name and d.object_name = 'GMP Applicable Sites' and v.object_name in (select applicable_sites from cd_change_request where r_object_id = '$value(r_object_id)') and d.alias_name = 'doc_coordinators' and v.i_position = d.i_position and any alias_value is not nullstring order by alias_value ENABLE (ROW_BASED)&quot; -all_rows true -override true" name="CDFUpdateAttrsViaQueryMethod"/>
+			<applymethod argument="-if &quot;domain ='GMP' or domain='Med Device'&quot; -id $value(r_object_id) -query &quot;select alias_value as readers from d2_dictionary_value v,d2_dictionary d where v.dictionary_name = d.object_name and d.object_name = 'GMP Applicable Sites' and v.object_name in (select applicable_sites from cd_change_request where r_object_id = '$value(r_object_id)') and d.alias_name = 'readers' and v.i_position = d.i_position and any alias_value is not nullstring order by alias_value ENABLE (ROW_BASED)&quot; -all_rows true -override true" name="CDFUpdateAttrsViaQueryMethod"/>
+			<applymethod argument="-if &quot;copy_file_name=1&quot;  -attr &quot;title&quot; -value &quot;$substring($quotedvalue(original_file_name),1,$if($lastposition($quotedvalue(original_file_name),'.')=0,$length($quotedvalue(original_file_name)),$dec($lastposition($quotedvalue(original_file_name),'.'))))&quot;" name="CDFSetAttributeMethod"/>
+			<set name="copy_file_name" value="false"/>
+			<applysecurity/>
+		</actions>
+		<next_states>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="Draft" type="promote"/>
+		</next_states>
+	</state>
+	<state direct="false" entry="false" name="Draft">
+		<entry_conditions/>
+		<actions>
+			<set name="sent_for_approval_date" value=""/>
+			<set name="sent_for_review_date" value=""/>
+			<set name="closed_date" value=""/>
+			<set name="a_status" value="Draft"/>
+			<applysecurity/>
+			<applyparameters/>
+			<applyautolink/>
+		</actions>
+		<next_states>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="For Review" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="For Approval" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="checkin" label_en="" name="(Checkin)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(Start WF)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(End WF)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(version document)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(Abort WF)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="multi_GMP Applicable Sites" event="" label_en="Update Applicable Sites" name="(Update Applicable Sites)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" confirmation_ja="" dialog="" event="d2_import" label_en="" label_ja="" name="(Request Renditions)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(Start SharePoint WF)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="In Collaboration" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(End SharePoint WF)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+		</next_states>
+	</state>
+	<state direct="false" entry="false" name="For Review">
+		<entry_conditions>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate selected document and other documents from same workflow package is not locked"/>
+		</entry_conditions>
+		<actions>
+			<set name="a_status" value="For Review"/>
+			<set name="sent_for_review_date" value="$NOW"/>
+			<applysecurity/>
+			<applyautolink/>
+		</actions>
+		<next_states>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="Draft" type="demote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="For Approval" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(check annotations)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(Abort WF)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="GMP Applicable Sites" event="" label_en="" name="(Update Applicable Sites)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(WF Reselect Approvers)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+		</next_states>
+	</state>
+	<state direct="false" entry="false" name="For Approval">
+		<entry_conditions>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate user is not the sole Approver of the selected document"/>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate selected document and other documents from same workflow package is not locked"/>
+		</entry_conditions>
+		<actions>
+			<set name="a_status" value="For Approval"/>
+			<set name="sent_for_approval_date" value="$NOW"/>
+			<applysecurity/>
+			<applyautolink/>
+		</actions>
+		<next_states>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="Draft" type="demote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="CIP" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(Abort WF)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="GMP Applicable Sites" event="" label_en="" name="(Update Applicable Sites)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+		</next_states>
+	</state>
+	<state direct="false" entry="false" name="Closed">
+		<entry_conditions>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate selected document is the CURRENT version"/>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate selected document is not checked-out"/>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate user is a Document Coordinator for the selected document."/>
+			<attribute compare="not_eq" message_failed_en="One or more SOP documents did not reach their target state. Please make sure all the affected documents associated to the CR reach their target state and try again." name="affected_doc_final" value="false"/>
+		</entry_conditions>
+		<actions>
+			<makeversion keep_symbolic_label="true" type="major_same_document"/>
+			<set name="closed_date" value="$NOW"/>
+			<set name="a_status" value="Closed"/>
+			<applymethod argument="-if &quot;not exists (select * from dmi_package p, dm_workflow w where any p.r_component_id = '$value(r_object_id)' and p.r_workflow_id = w.r_object_id and w.r_runtime_state = 1)&quot; -attr  &quot;wf_is_in_workflow,wf_workflow_name&quot; -value &quot;false, &quot;" name="CDFSetAttributeMethod"/>
+			<applysecurity/>
+			<applyautolink/>
+			<applymethod argument="-if &quot;select '1' as result from dm_dbo.single_result_row_view where '$value(a_status)'='Closed'&quot; -package_item true -workflow_prefix &quot;Change Request&quot; -operation &quot;resume_gated&quot; -event_name &quot;bypass_cr_ack&quot; -event_message &quot;Bypass ACK CR is Closed&quot; -context_user &quot;$USER&quot;" name="CDFWorkflowManagerMethod"/>
+			<destroyversions destroyannoted="false" filter="a_status in ('Draft', 'For Review', 'For Approval')"/>
+		</actions>
+		<next_states>
+			<state action="" confirmation_en="" dialog="" event="checkin" label_en="" name="Draft" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="Purge Interim Versions..." name="(Purge interim versions)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="multi_GMP Applicable Sites" event="" label_en="Update Applicable Sites" name="(Update Applicable Sites)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(End WF)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+		</next_states>
+	</state>
+	<state direct="false" entry="false" name="(Checkin)">
+		<entry_conditions/>
+		<actions>
+			<applyparameters/>
+			<applymethod argument="-if_child &quot;(domain='GMP' or domain='Med Device') and category='1'&quot; -if  &quot;r_lock_owner is nullstring&quot;" name="CDFUpdateChangeRequestAttributesMethod"/>
+		</actions>
+		<next_states/>
+	</state>
+	<state direct="false" entry="false" name="CIP">
+		<entry_conditions>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate user is not the sole Approver of the selected document"/>
+		</entry_conditions>
+		<actions>
+			<set name="a_status" value="CIP"/>
+			<set name="approved_date" value="$NOW"/>
+			<applysecurity/>
+			<applyautolink/>
+		</actions>
+		<next_states>
+			<state action="" confirmation_en="" dialog="On reverting change request to Draft - Comments" event="" label_en="Revert to Draft" name="(Send to Draft)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="Close Change Request..." name="Closed" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="Draft" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="demote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(End WF)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(Abort WF)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="multi_GMP Applicable Sites" event="" label_en="Update Applicable Sites" name="(Update Applicable Sites)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="restrictedEditPseudo" event="" label_en="Restricted Edit" name="(RestrictedEdit)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+		</next_states>
+	</state>
+	<state direct="false" entry="false" name="(Send to Draft)">
+		<entry_conditions>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate user is an Author or Document Coordinator for the selected document"/>
+			<callmethod argument="" message_failed_en="Cannot send Change Request back to Draft. One or more documents are in an approval workflow or have reached their final state." name="CDFValidateChangeRequestRevertToDraft"/>
+		</entry_conditions>
+		<actions>
+			<applyparameters/>
+			<set name="sent_for_approval_date" value=""/>
+			<set name="sent_for_review_date" value=""/>
+			<set name="closed_date" value=""/>
+			<set name="a_status" value="Draft"/>
+			<applymethod argument="-event d2_properties_save -context_user &quot;$USER&quot; -attributes &quot;comments&quot;&quot;" name="CDFAuditMethod"/>
+			<applymethod argument="-if &quot;select '1' as result from dm_dbo.single_result_row_view where '$value(a_status)'='Closed'&quot; -package_item true -workflow_prefix &quot;Change Request&quot; -operation &quot;resume_gated&quot; -event_name &quot;bypass_cr_ack&quot; -event_message &quot;Bypass ACK CR is Closed&quot; -context_user &quot;$USER&quot;" name="CDFWorkflowManagerMethod"/>
+			<applysecurity/>
+			<applyautolink/>
+			<sendmail d2_mailing_config="Notify requestors CR reverted to draft"/>
+			<makeversion keep_symbolic_label="false" type="minor"/>
+		</actions>
+		<next_states/>
+	</state>
+	<state direct="false" entry="false" name="(Start WF)">
+		<entry_conditions/>
+		<actions>
+			<set name="wf_is_in_workflow" value="true"/>
+			<applymethod argument="-id $value(r_object_id)  -query &quot;select object_name as wf_workflow_name from dm_workflow where r_object_id in (select r_workflow_id from dmi_package where any r_component_id='$value(r_object_id)') and r_runtime_state =1&quot; -ignore_null_values true -override true" name="CDFUpdateAttrsViaQueryMethod"/>
+			<applyparameters/>
+		</actions>
+		<next_states/>
+	</state>
+	<state direct="false" entry="false" name="(End WF)">
+		<entry_conditions>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate selected document and other documents from same workflow package is not locked"/>
+		</entry_conditions>
+		<actions>
+			<applyparameters/>
+			<setrepeating mode="reset" name="wf_authors" removeDuplicate="false" value=""/>
+			<setrepeating mode="reset" name="wf_authors_review" removeDuplicate="false" value=""/>
+			<setrepeating mode="reset" name="wf_approvers" removeDuplicate="false" value=""/>
+			<setrepeating mode="reset" name="wf_reviewers" removeDuplicate="false" value=""/>
+			<applymethod argument="-target &quot;select r_object_id from cd_controlled_doc(all) where i_chronicle_id='$value(i_chronicle_id)' and wf_is_in_workflow=true&quot; -attr &quot;wf_is_in_workflow,wf_workflow_name&quot; -value &quot;false, &quot;" name="CDFSetAttributeMethod"/>
+			<applysecurity/>
+		</actions>
+		<next_states/>
+	</state>
+	<state direct="false" entry="false" name="(check annotations)">
+		<entry_conditions>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate document does not have annotations"/>
+		</entry_conditions>
+		<actions/>
+		<next_states>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="For Approval" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+		</next_states>
+	</state>
+	<state direct="false" entry="false" name="(version document)">
+		<entry_conditions/>
+		<actions>
+			<makeversion keep_symbolic_label="false" type="minor"/>
+			<renditionrequest/>
+		</actions>
+		<next_states>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="For Approval" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+		</next_states>
+	</state>
+	<state direct="false" entry="false" name="(Purge interim versions)">
+		<entry_conditions>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate selected document is not checked-out"/>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate selected document is the CURRENT version"/>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate user is an Author or Document Coordinator for the selected document"/>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate Cat 1-3 document has interim versions"/>
+		</entry_conditions>
+		<actions>
+			<destroyversions destroyannoted="false" filter="a_status in ('Draft', 'For Review', 'For Approval', 'Withdrawn')"/>
+		</actions>
+		<next_states/>
+	</state>
+	<state direct="false" entry="false" name="(Abort WF)">
+		<entry_conditions/>
+		<actions>
+			<set name="sent_for_approval_date" value=""/>
+			<set name="sent_for_review_date" value=""/>
+			<set name="closed_date" value=""/>
+			<set name="a_status" value="Draft"/>
+			<setrepeating mode="reset" name="wf_authors" removeDuplicate="false" value=""/>
+			<setrepeating mode="reset" name="wf_reviewers" removeDuplicate="false" value=""/>
+			<setrepeating mode="reset" name="wf_authors_review" removeDuplicate="false" value=""/>
+			<setrepeating mode="reset" name="wf_approvers" removeDuplicate="false" value=""/>
+			<applymethod argument="-target &quot;select r_object_id from cd_controlled_doc(all) where i_chronicle_id='$value(i_chronicle_id)' and wf_is_in_workflow=true&quot; -attr &quot;wf_is_in_workflow,wf_workflow_name&quot; -value &quot;false, &quot;" name="CDFSetAttributeMethod"/>
+			<applysecurity/>
+			<applyparameters/>
+			<applyautolink/>
+			<makeversion keep_symbolic_label="false" type="minor"/>
+		</actions>
+		<next_states/>
+	</state>
+	<state direct="false" entry="false" name="(Update Applicable Sites)">
+		<entry_conditions>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate user is a Document Coordinator for the selected document."/>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate selected document is not involved in an active workflow"/>
+		</entry_conditions>
+		<actions>
+			<applyparameters/>
+			<applymethod argument="-if &quot;domain ='GMP' or domain='Med Device'&quot; -id $value(r_object_id) -query &quot;select alias_value as authors from d2_dictionary_value v,d2_dictionary d where v.dictionary_name = d.object_name and d.object_name = 'GMP Applicable Sites' and v.object_name in (select applicable_sites from cd_change_request where r_object_id = '$value(r_object_id)') and d.alias_name = 'authors' and v.i_position = d.i_position and any alias_value is not nullstring order by alias_value ENABLE (ROW_BASED)&quot; -all_rows true -truncate true" name="CDFUpdateAttrsViaQueryMethod"/>
+			<applymethod argument="-if &quot;domain ='GMP' or domain='Med Device'&quot; -id $value(r_object_id) -query &quot;select alias_value as approvers from d2_dictionary_value v,d2_dictionary d where v.dictionary_name = d.object_name and d.object_name = 'GMP Applicable Sites' and v.object_name in (select applicable_sites from cd_change_request where r_object_id = '$value(r_object_id)') and d.alias_name = 'approvers' and v.i_position = d.i_position and any alias_value is not nullstring order by alias_value ENABLE (ROW_BASED)&quot; -all_rows true -override true -truncate true" name="CDFUpdateAttrsViaQueryMethod"/>
+			<applymethod argument="-if &quot;domain ='GMP' or domain='Med Device'&quot; -id $value(r_object_id) -query &quot;select alias_value as readers from d2_dictionary_value v,d2_dictionary d where v.dictionary_name = d.object_name and d.object_name = 'GMP Applicable Sites' and v.object_name in (select applicable_sites from cd_change_request where r_object_id = '$value(r_object_id)') and d.alias_name = 'readers' and v.i_position = d.i_position and any alias_value is not nullstring order by alias_value ENABLE (ROW_BASED)&quot; -all_rows true -override true -truncate true" name="CDFUpdateAttrsViaQueryMethod"/>
+			<applymethod argument="-if &quot;domain ='GMP' or domain='Med Device'&quot; -id $value(r_object_id) -query &quot;select alias_value as auditors from d2_dictionary_value v,d2_dictionary d where v.dictionary_name = d.object_name and d.object_name = 'GMP Applicable Sites' and v.object_name in (select applicable_sites from cd_change_request where r_object_id = '$value(r_object_id)') and d.alias_name = 'auditors' and v.i_position = d.i_position and any alias_value is not nullstring order by alias_value ENABLE (ROW_BASED)&quot; -all_rows true -override true -truncate true" name="CDFUpdateAttrsViaQueryMethod"/>
+			<applymethod argument="-if &quot;domain ='GMP' or domain='Med Device'&quot; -id $value(r_object_id) -query &quot;select alias_value as reviewers from d2_dictionary_value v,d2_dictionary d where v.dictionary_name = d.object_name and d.object_name = 'GMP Applicable Sites' and v.object_name in (select applicable_sites from cd_change_request where r_object_id = '$value(r_object_id)') and d.alias_name = 'reviewers' and v.i_position = d.i_position and any alias_value is not nullstring order by alias_value ENABLE (ROW_BASED)&quot; -all_rows true -override true -truncate true" name="CDFUpdateAttrsViaQueryMethod"/>
+			<applymethod argument="-if &quot;domain ='GMP' or domain='Med Device'&quot; -id $value(r_object_id) -query &quot;select alias_value as qo_approvers from d2_dictionary_value v,d2_dictionary d where v.dictionary_name = d.object_name and d.object_name = 'GMP Applicable Sites' and v.object_name in (select applicable_sites from cd_change_request where r_object_id = '$value(r_object_id)') and d.alias_name = 'qo_approvers' and v.i_position = d.i_position and any alias_value is not nullstring order by alias_value ENABLE (ROW_BASED)&quot; -all_rows true -override true -truncate true" name="CDFUpdateAttrsViaQueryMethod"/>
+			<applymethod argument="-if &quot;domain ='GMP' or domain='Med Device'&quot; -id $value(r_object_id) -query &quot;select alias_value as doc_coordinators from d2_dictionary_value v,d2_dictionary d where v.dictionary_name = d.object_name and d.object_name = 'GMP Applicable Sites' and v.object_name in (select applicable_sites from cd_change_request where r_object_id = '$value(r_object_id)') and d.alias_name = 'doc_coordinators' and v.i_position = d.i_position and any alias_value is not nullstring order by alias_value ENABLE (ROW_BASED)&quot; -all_rows true -truncate true -apply_d2_configs true" name="CDFUpdateAttrsViaQueryMethod"/>
+			<applysecurity/>
+		</actions>
+		<next_states/>
+	</state>
+	<state direct="false" entry="false" name="(WF Reselect Approvers)">
+		<entry_conditions>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate user is not the sole Approver of the selected document"/>
+		</entry_conditions>
+		<actions/>
+		<next_states/>
+	</state>
+	<state direct="false" entry="false" name="(Request Renditions)">
+		<entry_conditions/>
+		<actions>
+			<renditionrequest/>
+			<applymethod argument="-forceRefresh true -waitForQueue true" fetchCurrent="false" name="C2RenditionMethod"/>
+		</actions>
+		<next_states/>
+	</state>
+	<state direct="false" entry="false" name="(Start SharePoint WF)">
+		<entry_conditions/>
+		<actions>
+			<set name="wf_is_in_workflow" value="true"/>
+			<set name="wf_is_in_sp_workflow" value="true"/>
+			<applymethod argument="-id $value(r_object_id)  -query &quot;select object_name as wf_workflow_name from dm_workflow where r_object_id in (select r_workflow_id from dmi_package where any r_component_id='$value(r_object_id)') and r_runtime_state =1&quot; -ignore_null_values true -override true" fetchCurrent="false" name="CDFUpdateAttrsViaQueryMethod"/>
+		</actions>
+		<next_states/>
+	</state>
+	<state direct="false" entry="false" name="In Collaboration">
+		<entry_conditions/>
+		<actions>
+			<set name="a_status" value="In Collaboration"/>
+			<applysecurity/>
+		</actions>
+		<next_states>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(Demote to Draft)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(End SharePoint WF)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(Abort SP WF)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="Draft" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+		</next_states>
+	</state>
+	<state direct="false" entry="false" name="(Demote to Draft)">
+		<entry_conditions/>
+		<actions>
+			<set name="a_status" value="Draft"/>
+			<setrepeating mode="reset" name="wf_approvers" removeDuplicate="false" value=""/>
+			<setrepeating mode="reset" name="wf_reviewers" removeDuplicate="false" value=""/>
+			<setrepeating mode="reset" name="wf_doc_coordinators" removeDuplicate="false" value=""/>
+			<applysecurity/>
+		</actions>
+		<next_states/>
+	</state>
+	<state direct="false" entry="false" name="(End SharePoint WF)">
+		<entry_conditions/>
+		<actions>
+			<applymethod argument="-target &quot;select r_object_id from cd_controlled_doc(all) where i_chronicle_id='$value(i_chronicle_id)' and wf_is_in_workflow=true&quot; -attr &quot;wf_is_in_workflow,wf_is_in_sp_workflow,wf_workflow_name&quot; -value &quot;false,false, &quot;" fetchCurrent="false" name="CDFSetAttributeMethod"/>
+			<changestateversion filter="a_status='In Collaboration'" target_state="Draft"/>
+		</actions>
+		<next_states/>
+	</state>
+	<state direct="false" entry="false" name="(Abort SP WF)">
+		<entry_conditions/>
+		<actions>
+			<set name="a_status" value="Draft"/>
+			<setrepeating mode="reset" name="wf_doc_coordinators" removeDuplicate="false" value=""/>
+			<setrepeating mode="reset" name="wf_reviewers" removeDuplicate="false" value=""/>
+			<setrepeating mode="reset" name="wf_approvers" removeDuplicate="false" value=""/>
+			<applymethod argument="-target &quot;select r_object_id from cd_controlled_doc(all) where i_chronicle_id='$value(i_chronicle_id)' and wf_is_in_workflow=true&quot; -attr &quot;wf_is_in_workflow,wf_is_in_sp_workflow,wf_workflow_name&quot; -value &quot;false,false, &quot;" fetchCurrent="false" name="CDFSetAttributeMethod"/>
+			<applysecurity/>
+		</actions>
+		<next_states/>
+	</state>
+	<state direct="false" entry="false" name="(RestrictedEdit)">
+		<entry_conditions>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate user is a Document Coordinator for the selected document or is an Admin"/>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate selected document is not checked-out"/>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate selected document is not involved in an active workflow including periodic and withdrawal WF"/>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate selected document is the CURRENT version"/>
+		</entry_conditions>
+		<actions>
+			<applyautolink/>
+			<applyautonaming/>
+			<applymethod argument="" fetchCurrent="false" name="CDFApplyDynamicSecurity"/>
+		</actions>
+		<next_states/>
+	</state>
+</d2lifecycle>

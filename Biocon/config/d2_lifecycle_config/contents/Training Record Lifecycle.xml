@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2lifecycle execute_actions_on_start="true" state_attribute="">
+	<state direct="false" entry="true" name="Pending">
+		<entry_conditions/>
+		<actions>
+			<set name="a_status" value="Pending"/>
+			<set name="reject_reason" value=""/>
+			<set name="exempted_reason" value=""/>
+			<sendmail d2_mailing_config="Pending Training Notification"/>
+		</actions>
+		<next_states>
+			<state action="" confirmation_en="" dialog="" event="" label_en="Complete..." name="Completed" signoff_intention_dictionary="Document Training eSignature Reason Codes" signoff_intention_required="true" signoff_required="true" type="promote"/>
+			<state action="" confirmation_en="" dialog="On rejecting training" event="" label_en="Reject..." name="Rejected" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(training is overdue)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+		</next_states>
+	</state>
+	<state direct="false" entry="false" name="Rejected">
+		<entry_conditions>
+			<attribute compare="eq" message_failed_en="Only the user assigned to the training task can reject training." name="user_name" value="$USER"/>
+		</entry_conditions>
+		<actions>
+			<set name="a_status" value="Rejected"/>
+			<set name="training_completed_date" value="$NOW"/>
+			<set name="reinstated_reason" value=""/>
+			<applymethod argument="-id &quot;$value(r_object_id)&quot; -event &quot;ls_training_rejected&quot; -context_user &quot;$USER&quot; -string_1 &quot;$value(reject_reason)&quot;" fetchCurrent="false" name="CDFAuditMethod"/>
+			<applymethod argument="-query &quot;select doc_coordinators as keywords from cd_quality_gmp (all) where r_object_id = '$value(document_id)'&quot; -ignore_null_values true -truncate true -all_rows true" fetchCurrent="false" name="CDFUpdateAttrsViaQueryMethod"/>
+			<sendmail d2_mailing_config="Reject Training Notification"/>
+			<setrepeating mode="reset" name="keywords" removeDuplicate="false" value=""/>
+		</actions>
+		<next_states>
+			<state action="" confirmation_en="" dialog="On exempt training" event="" label_en="Confirm Training Not Required..." name="(Confirm Training not Required)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="On sending rejected training back to training" event="" label_en="Training Is Required..." name="(Training is required)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="Pending" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+		</next_states>
+	</state>
+	<state direct="false" entry="false" name="Completed">
+		<entry_conditions>
+			<attribute compare="eq" message_failed_en="Only the user assigned to the training task can complete training." name="user_name" value="$USER"/>
+		</entry_conditions>
+		<actions>
+			<set name="a_status" value="Completed"/>
+			<set name="training_completed_date" value="$NOW"/>
+		</actions>
+		<next_states>
+			<state action="" confirmation_en="" dialog="On retrain" event="" label_en="Retrain..." name="(Retrain)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+		</next_states>
+	</state>
+	<state direct="false" entry="false" name="Exempted">
+		<entry_conditions/>
+		<actions>
+			<set name="a_status" value="Exempted"/>
+			<applymethod argument="-id &quot;$value(r_object_id)&quot; -event &quot;ls_training_exempted&quot; -context_user &quot;$USER&quot; -string_1 &quot;$value(exempted_reason)&quot;" fetchCurrent="false" name="CDFAuditMethod"/>
+		</actions>
+		<next_states>
+			<state action="" confirmation_en="" dialog="" event="" label_en="Training Is Required..." name="(Training is required)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+		</next_states>
+	</state>
+	<state direct="false" entry="false" name="(Confirm Training not Required)">
+		<entry_conditions>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate User Is Training coordinator"/>
+			<attribute compare="not_eq" message_failed_en="You cannot Exempt yourself from training. Another training coordinator must perform this task." name="user_name" value="$USER"/>
+		</entry_conditions>
+		<actions>
+			<set name="a_status" value="Exempted"/>
+		</actions>
+		<next_states/>
+	</state>
+	<state direct="false" entry="false" name="(Training is required)">
+		<entry_conditions>
+			<uniquenesscheck message_failed_en="" uniqueness="Validate User Is Training coordinator"/>
+			<attribute compare="not_eq" message_failed_en="You cannot perform this action since the training record is assigned to you. Another training coordinator must perform this task." name="user_name" value="$USER"/>
+		</entry_conditions>
+		<actions>
+			<set name="training_completed_date" value=""/>
+			<applymethod argument="-id &quot;$value(r_object_id)&quot; -event &quot;ls_training_reinstated&quot; -context_user &quot;$USER&quot; -string_1 &quot;$value(reinstated_reason)&quot;" fetchCurrent="false" name="CDFAuditMethod"/>
+			<applymethod argument="-qualifier &quot;cd_training_record where r_object_id='$value(r_object_id)'&quot; -state_transition Pending -auto_naming false -auto_linking false -security false" fetchCurrent="false" name="CDFApplyD2ConfigurationsMethod"/>
+		</actions>
+		<next_states/>
+	</state>
+	<state direct="false" entry="false" name="(Retrain)">
+		<entry_conditions>
+			<uniquenesscheck message_failed_en="Only the training coordinator can do this." uniqueness="Validate User Is Training coordinator"/>
+			<attribute compare="eq" message_failed_en="The training record must be current." name="is_historic" value="F"/>
+		</entry_conditions>
+		<actions>
+			<applymethod argument="" fetchCurrent="false" name="DocumentTrainingRetrainMethod"/>
+			<sendmail d2_mailing_config="Pending Training Notification"/>
+		</actions>
+		<next_states/>
+	</state>
+	<state direct="false" entry="false" name="(training is pending)">
+		<entry_conditions/>
+		<actions>
+			<set name="a_status" value="Pending"/>
+			<set name="training_started_date" value="$NOW"/>
+			<set name="training_completed_date" value=""/>
+			<sendmail d2_mailing_config="Pending Training Notification"/>
+		</actions>
+		<next_states/>
+	</state>
+	<state direct="false" entry="false" name="(training is overdue)">
+		<entry_conditions/>
+		<actions>
+			<set name="is_overdue" value="T"/>
+			<sendmail d2_mailing_config="Overdue Training Notification"/>
+		</actions>
+		<next_states/>
+	</state>
+	<state direct="false" entry="false" name="Excluded">
+		<entry_conditions/>
+		<actions>
+			<set name="a_status" value="Excluded"/>
+		</actions>
+		<next_states/>
+	</state>
+	<state direct="false" entry="false" name="New">
+		<entry_conditions/>
+		<actions/>
+		<next_states>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="Pending" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+		</next_states>
+	</state>
+</d2lifecycle>

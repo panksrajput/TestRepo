@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_dictionary object_name="Periodic Review Intention Codes" title="Intention that can be selected by a document reviewer when a Control Category 1 document is reviewed by reviewers during Periodic Review Process." lock_config="false" parents_config="" application_names="OpenText Life Sciences Quality and Manufacturing Solution¬OpenText Life Sciences Medical Device Solution¬OpenText Life Sciences Medical Device for Quality and Manufacturing Solution¬Custom Configurations¬Biocon" security_group="biocon_dict_admin" search_group="biocon_dict_admin" version="2" is_versioned="false" manual_order="false" create_view_option="false" is_dql="false" is_dql_cache="false" dql="" label_en="Periodic Review Intention Codes">
+	<d2_dictionary_value object_name="Reviewed and no revision required" is_enabled="true" order_no="0">
+		<locale name="en" value="Reviewed and no revision required"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Reviewed and revision required" is_enabled="true" order_no="0">
+		<locale name="en" value="Reviewed and revision required"/>
+	</d2_dictionary_value>
+</d2_dictionary>

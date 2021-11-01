@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2lifecycle execute_actions_on_start="true" state_attribute="">
+	<state direct="false" entry="false" name="Draft">
+		<entry_conditions/>
+		<actions/>
+		<next_states>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="For Review" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="For Approval" type="promote"/>
+			<state action="" confirmation_en="" dialog="On withdrawal of Cat 1-3 document - confirm" event="" label_en="" name="Withdrawn" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(Purge interim versions)" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(Update Security)" type="promote"/>
+			<state action="" confirmation_en="" dialog="Associate Regulatory Admin Application Forms Properties" event="" label_en="" name="(Associate Reg-Admin Application)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="Format Review" signoff_intention_dictionary="Approval Intention Codes" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(Start WF)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(End WF)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(Abort WF)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(prmote to For Approval)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(version document)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(chk for valid approvers)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+		</next_states>
+	</state>
+	<state direct="false" entry="false" name="(Draft with New Version)">
+		<entry_conditions/>
+		<actions/>
+		<next_states/>
+	</state>
+	<state direct="false" entry="false" name="For Review">
+		<entry_conditions/>
+		<actions/>
+		<next_states>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(Purge interim versions)" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="checkin" label_en="" name="Draft" type="demote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="For Approval" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="Withdrawn" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(Update Security)" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="Format Review" signoff_intention_dictionary="Approval Intention Codes" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(Abort WF)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(prmote to For Approval)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(check annotations)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+		</next_states>
+	</state>
+	<state direct="false" entry="false" name="For Approval">
+		<entry_conditions/>
+		<actions/>
+		<next_states>
+			<state action="" confirmation_en="" dialog="" event="checkin" label_en="" name="Draft" type="demote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(Draft with New Version)" type="demote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(Purge interim versions)" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="Release Pending" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="Withdrawn" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(Update Security)" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="Effective" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(Abort WF)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(prmote to make Effective)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(validate entry for Effective)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(chk for valid approvers)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+		</next_states>
+	</state>
+	<state direct="false" entry="false" name="Release Pending">
+		<entry_conditions/>
+		<actions/>
+		<next_states>
+			<state action="" confirmation_en="" dialog="On making a Cat 2 document Effective - set Readers / effectivity parameters" event="" label_en="" name="Effective" type="promote">
+				<transition_conditions>
+					<uniquenesscheck message_failed_en="" uniqueness="Validate user is a Document Coordinator for the selected document."/>
+				</transition_conditions>
+			</state>
+			<state action="" confirmation_en="" dialog="On withdrawal of Cat 1-3 document - confirm" event="" label_en="" name="Withdrawn" type="promote"/>
+			<state action="" confirmation_en="" dialog="On cancelling the release of a Cat 1-2 document - confirm" event="" label_en="" name="(Cancel release)" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(Prep Document)" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(Ingested Document)" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="checkin" label_en="" name="Draft" type="demote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(Draft with New Version)" type="demote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(Update Security)" type="promote"/>
+			<state action="" confirmation_en="" dialog="Associate Regulatory Admin Application Forms Properties" event="" label_en="" name="(Associate Reg-Admin Application)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(Abort WF)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+		</next_states>
+	</state>
+	<state direct="false" entry="false" name="Effective">
+		<entry_conditions/>
+		<actions/>
+		<next_states>
+			<state action="" confirmation_en="" dialog="" event="checkin" label_en="" name="(Version Effective to Draft)" type="demote"/>
+			<state action="" confirmation_en="" dialog="On suspending a Cat 1-3 document - confirm" event="" label_en="" name="Suspended" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="Superseded" type="promote"/>
+			<state action="" confirmation_en="" dialog="On withdrawal of Cat 1-3 document - confirm" event="" label_en="" name="Withdrawn" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(Update Security)" type="promote"/>
+			<state action="" confirmation_en="" dialog="Associate Regulatory Admin Application Forms Properties" event="" label_en="" name="(Associate Reg-Admin Application)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="Update Regulatory Labeling Status Properties" event="" label_en="" name="(Update Labeling Status)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(End WF)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="Expired" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+		</next_states>
+	</state>
+	<state direct="false" entry="false" name="Expired">
+		<entry_conditions/>
+		<actions/>
+		<next_states/>
+	</state>
+	<state direct="false" entry="false" name="Suspended">
+		<entry_conditions/>
+		<actions/>
+		<next_states>
+			<state action="" confirmation_en="" dialog="" event="checkin" label_en="" name="Draft" type="demote"/>
+			<state action="" confirmation_en="" dialog="On making a Cat 2 document Effective - set Readers / effectivity parameters - Generic" event="" label_en="" name="(Reinstate as effective)" type="demote"/>
+			<state action="" confirmation_en="" dialog="On withdrawal of Cat 1-3 document - confirm" event="" label_en="" name="Withdrawn" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(Update Security)" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="Superseded" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+		</next_states>
+	</state>
+	<state direct="false" entry="false" name="Superseded">
+		<entry_conditions/>
+		<actions/>
+		<next_states>
+			<state action="" confirmation_en="" dialog="On withdrawal of Cat 1-3 document - confirm" event="" label_en="" name="Withdrawn" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(Update Security)" type="promote"/>
+		</next_states>
+	</state>
+	<state direct="false" entry="false" name="Withdrawn">
+		<entry_conditions/>
+		<actions/>
+		<next_states>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="Draft" type="demote">
+				<transition_conditions>
+					<uniquenesscheck message_failed_en="" uniqueness="Validate user is an Author or Document Coordinator for the selected document"/>
+				</transition_conditions>
+			</state>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(Update Security)" type="promote"/>
+		</next_states>
+	</state>
+	<state direct="false" entry="false" name="(Purge interim versions)">
+		<entry_conditions/>
+		<actions/>
+		<next_states/>
+	</state>
+	<state direct="false" entry="false" name="(Cancel release)">
+		<entry_conditions/>
+		<actions/>
+		<next_states/>
+	</state>
+	<state direct="false" entry="true" name="(Init)">
+		<entry_conditions/>
+		<actions/>
+		<next_states>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="Draft" type="promote"/>
+		</next_states>
+	</state>
+	<state direct="false" entry="false" name="(Review Pending)">
+		<entry_conditions/>
+		<actions/>
+		<next_states>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="Draft" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="Effective" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="Suspended" type="promote"/>
+		</next_states>
+	</state>
+	<state direct="false" entry="false" name="(Reinstate as effective)">
+		<entry_conditions/>
+		<actions/>
+		<next_states/>
+	</state>
+	<state direct="false" entry="false" name="(Prep Document)">
+		<entry_conditions/>
+		<actions/>
+		<next_states>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="Effective" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(End WF)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+		</next_states>
+	</state>
+	<state direct="false" entry="false" name="(Ingested Document)">
+		<entry_conditions/>
+		<actions/>
+		<next_states>
+			<state action="" confirmation_en="" dialog="On making a Cat 2 document Effective - set Readers / effectivity parameters" event="" label_en="" name="Effective" type="promote"/>
+			<state action="" confirmation_en="" dialog="On cancelling the release of a Cat 1-2 document - confirm" event="" label_en="" name="(Cancel release)" type="promote"/>
+		</next_states>
+	</state>
+	<state direct="false" entry="false" name="(Update Security)">
+		<entry_conditions/>
+		<actions/>
+		<next_states/>
+	</state>
+	<state direct="false" entry="false" name="(Version Effective to Draft)">
+		<entry_conditions/>
+		<actions/>
+		<next_states/>
+	</state>
+	<state direct="false" entry="false" name="(Associate Reg-Admin Application)">
+		<entry_conditions/>
+		<actions/>
+		<next_states>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="Draft" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="Release Pending" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="Effective" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+		</next_states>
+	</state>
+	<state direct="false" entry="false" name="(Update Labeling Status)">
+		<entry_conditions/>
+		<actions/>
+		<next_states/>
+	</state>
+	<state direct="false" entry="false" name="Format Review">
+		<entry_conditions/>
+		<actions/>
+		<next_states>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(Purge interim versions)" signoff_intention_dictionary="Approval Intention Codes" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="Draft" signoff_intention_dictionary="Approval Intention Codes" signoff_intention_required="false" signoff_required="false" type="demote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="For Approval" signoff_intention_dictionary="Approval Intention Codes" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="Withdrawn" signoff_intention_dictionary="Approval Intention Codes" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(Update Security)" signoff_intention_dictionary="Approval Intention Codes" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(Draft with New Version)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="demote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(prmote to For Approval)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(Abort WF)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+		</next_states>
+	</state>
+	<state direct="false" entry="false" name="(Start WF)">
+		<entry_conditions/>
+		<actions/>
+		<next_states/>
+	</state>
+	<state direct="false" entry="false" name="(End WF)">
+		<entry_conditions/>
+		<actions/>
+		<next_states/>
+	</state>
+	<state direct="false" entry="false" name="(Abort WF)">
+		<entry_conditions/>
+		<actions/>
+		<next_states/>
+	</state>
+	<state direct="false" entry="false" name="(prmote to For Approval)">
+		<entry_conditions/>
+		<actions/>
+		<next_states/>
+	</state>
+	<state direct="false" entry="false" name="(prmote to make Effective)">
+		<entry_conditions/>
+		<actions/>
+		<next_states/>
+	</state>
+	<state direct="false" entry="false" name="(validate entry for Effective)">
+		<entry_conditions/>
+		<actions/>
+		<next_states>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(validate entry for Effective)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+		</next_states>
+	</state>
+	<state direct="false" entry="false" name="(check annotations)">
+		<entry_conditions/>
+		<actions/>
+		<next_states/>
+	</state>
+	<state direct="false" entry="false" name="(version document)">
+		<entry_conditions/>
+		<actions/>
+		<next_states/>
+	</state>
+	<state direct="false" entry="false" name="(chk for valid approvers)">
+		<entry_conditions/>
+		<actions/>
+		<next_states/>
+	</state>
+</d2lifecycle>

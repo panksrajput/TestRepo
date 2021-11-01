@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_dictionary object_name="GMP Material Type" title="Dictionary for GMP Material Type" lock_config="false" parents_config="" application_names="OpenText Life Sciences Quality and Manufacturing Solution¬OpenText Life Sciences Medical Device Solution¬OpenText Life Sciences Medical Device for Quality and Manufacturing Solution¬Custom Configurations¬Biocon" security_group="biocon_dict_admin" search_group="biocon_dict_admin" version="2" is_versioned="false" manual_order="false" create_view_option="false" is_dql="false" is_dql_cache="false" dql="" label_en="GMP Material Type">
+	<d2_dictionary_value object_name="Lab Consumables" is_enabled="true" order_no="0">
+		<locale name="en" value="Lab Consumables"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Not Applicable" is_enabled="true" order_no="0">
+		<locale name="en" value="Not Applicable"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Packing Material" is_enabled="true" order_no="0">
+		<locale name="en" value="Packing Material"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Raw Material" is_enabled="true" order_no="0">
+		<locale name="en" value="Raw Material"/>
+	</d2_dictionary_value>
+</d2_dictionary>

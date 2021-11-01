@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_bin_options new_format="true">
+	<object_name value=""/>
+	<title value=""/>
+	<subject value=""/>
+	<authors/>
+	<keywords/>
+	<a_status value=""/>
+	<a_content_type value=""/>
+	<log_entry value=""/>
+	<language_code value=""/>
+	<can_empty_recycle_bin value="F"/>
+	<administration_group value="cd_admingroup"/>
+	<max_user_recycle_bin_size value="200"/>
+	<max_global_recycle_bin_size value="200"/>
+	<max_size_alert_recipient value="cd_admingroup"/>
+	<lock_config value="F"/>
+</d2_bin_options>

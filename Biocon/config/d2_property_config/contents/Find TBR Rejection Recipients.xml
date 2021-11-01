@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dialog id="PropertiesDialog" buttons_right="false" focus="" height="250" resizable="true" signoff_creation="false" signoff_edit="false" signoff_import="false" signoff_intention_dictionary="" signoff_intention_required="false" width="420">
+	<content>
+		<fieldset label_en="Find Readers rejected their TBR Task for a Document" no_border="true">
+			<combo-editable id="doc_name" assistance_dql="select distinct object_name from cd_quality_gmp_effective(all) where category=1" assistance_type="dql" asynchronous="true" condition_required_edit="true" control="true" label_en="Document Name"/>
+			<combo id="doc_version" advancedView_enabled="false" advancedView_required="false" advancedView_visible="false" assistance_dql="select distinct r_version_label as label from cd_quality_gmp_effective(all) where i_position = -1 and object_name like '%$value(doc_name)%' and a_status in ('Effective','Release Pending','Superseded','Withdrawn','Suspended')  order by 1 enable(ROW_BASED) " assistance_type="dql" condition_enabled="(getValue(doc_name).notEquals(''))" condition_required="(getValue(doc_name).notEquals(''))" condition_required_edit="true" condition_visible="(getValue(doc_name).notEquals(''))" control="true" label_en="Document Version"/>
+			<comment advancedView_visible="false" condition_visible="(getValue(doc_name).notEquals(''))" font_color="#FF0000" html_content="true" label_en="&lt;table cellspacing=0 color=red&gt;&lt;tr&gt;&lt;td&gt;Note, You can select document versions with status in &quot;Effective, Superseded, Release Pending, Suspended, Withdrawn&quot;.&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"/>
+		</fieldset>
+	</content>
+	<buttons>
+		<button id="buttonOk" action="validDialog()" advancedView_enabled="false" reinit_enabled="true"/>
+		<button id="buttonCancel" action="cancelDialog()"/>
+	</buttons>
+</dialog>

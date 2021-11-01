@@ -1,0 +1,819 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_dictionary object_name="Regulatory Submission Type" title="" lock_config="false" parents_config="" application_names="OpenText Life Sciences Medical Device for Quality and Manufacturing Solution¬OpenText Life Sciences Medical Device for Research and Development Solution¬OpenText Life Sciences Medical Device Solution¬OpenText Life Sciences Quality and Manufacturing Solution¬OpenText Life Sciences Submission Storage and Viewing¬OpenText Life Sciences Research and Development Solution" security_group="admingroup" search_group="admingroup" version="2" is_versioned="false" manual_order="false" create_view_option="false" is_dql="false" is_dql_cache="false" dql="" label_en="Document Types">
+	<d2_dictionary_value object_name="ABNDS" is_enabled="true" order_no="0">
+		<locale name="en" value="ABNDS"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="ABSNDS" is_enabled="true" order_no="0">
+		<locale name="en" value="ABSNDS"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="ADMIN" is_enabled="true" order_no="0">
+		<locale name="en" value="ADMIN"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Amendment" is_enabled="true" order_no="0">
+		<locale name="en" value="Amendment"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="ANDS" is_enabled="true" order_no="0">
+		<locale name="en" value="ANDS"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Annual Reassessment" is_enabled="true" order_no="0">
+		<locale name="en" value="Annual Reassessment"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Annual Report" is_enabled="true" order_no="0">
+		<locale name="en" value="Annual Report"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="a-ph-abridge" is_enabled="true" order_no="0">
+		<locale name="en" value="Pharmaceutics - Abridge application"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="a-ph-generic" is_enabled="true" order_no="0">
+		<locale name="en" value="Pharmaceutics - Generic"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="a-ph-house" is_enabled="true" order_no="0">
+		<locale name="en" value="House Hold Remedies"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="a-ph-newce" is_enabled="true" order_no="0">
+		<locale name="en" value="Pharmaceutics - New Chemical Entity"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="a-ph-newcomb" is_enabled="true" order_no="0">
+		<locale name="en" value="Pharmaceutics - New Combination"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="a-ph-newdosage" is_enabled="true" order_no="0">
+		<locale name="en" value="Pharmaceutics - New Dosage Form"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="a-ph-newgen" is_enabled="true" order_no="0">
+		<locale name="en" value="Pharmaceutics - New Generic"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="a-ph-newothers" is_enabled="true" order_no="0">
+		<locale name="en" value="Pharmaceutics - New Medicinal Product (Others)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="a-ph-newroute" is_enabled="true" order_no="0">
+		<locale name="en" value="Pharmaceutics - New Route of Administration"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="a-ph-newse" is_enabled="true" order_no="0">
+		<locale name="en" value="Pharmaceutics - New Salt or Ester of Existing Active Ingredient"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="arbitration" is_enabled="true" order_no="0">
+		<locale name="en" value="Arbitration"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Article 58" is_enabled="true" order_no="0">
+		<locale name="en" value="Article 58"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="ASMF" is_enabled="true" order_no="0">
+		<locale name="en" value="ASMF"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="asmf" is_enabled="true" order_no="0">
+		<locale name="en" value="Active Substance Master File"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="b-bio-abridge" is_enabled="true" order_no="0">
+		<locale name="en" value="Biologics - Abridge application"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="b-bio-biosimilar" is_enabled="true" order_no="0">
+		<locale name="en" value="Biologics - Biosimilar Product"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="b-bio-biotech" is_enabled="true" order_no="0">
+		<locale name="en" value="Biologics - Biotechnology Product"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="b-bio-blood" is_enabled="true" order_no="0">
+		<locale name="en" value="Biologics - Blood and Plasma Derived Product"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="b-bio-cell" is_enabled="true" order_no="0">
+		<locale name="en" value="Biologics - Cell- and Tissue- Based Therapy Product"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="b-bio-others" is_enabled="true" order_no="0">
+		<locale name="en" value="Biologics - Others"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="b-bio-vaccine" is_enabled="true" order_no="0">
+		<locale name="en" value="Biologics - Vaccine"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="bgd" is_enabled="true" order_no="0">
+		<locale name="en" value="New Marketing Authorization Application - Generic Drug"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="bgn" is_enabled="true" order_no="0">
+		<locale name="en" value="New Marketing Authorization Application - Generic Narcotics"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="bgv" is_enabled="true" order_no="0">
+		<locale name="en" value="New Marketing Authorization Application - Generic Vitamin Drug"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="bla" is_enabled="true" order_no="0">
+		<locale name="en" value="New Marketing Authorization Application - Biological Allergen"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="blb" is_enabled="true" order_no="0">
+		<locale name="en" value="New Marketing Authorization Application - Biological Blood Product"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="bld" is_enabled="true" order_no="0">
+		<locale name="en" value="New Marketing Authorization Application - Biological Drug"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="bls" is_enabled="true" order_no="0">
+		<locale name="en" value="New Marketing Authorization Application - Biological Bio-similar"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="blv" is_enabled="true" order_no="0">
+		<locale name="en" value="New Marketing Authorization Application - Biological Vaccine"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="cancellation" is_enabled="true" order_no="0">
+		<locale name="en" value="Cancellation of a Registered Product"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="cep" is_enabled="true" order_no="0">
+		<locale name="en" value="CEP application"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Chemistry Manufacturing Controls Supplement" is_enabled="true" order_no="0">
+		<locale name="en" value="Chemistry Manufacturing Controls Supplement"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="clin-data-pub-fv" is_enabled="true" order_no="0">
+		<locale name="en" value="Clinical data for publication – Final Version"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="clin-data-pub-rp" is_enabled="true" order_no="0">
+		<locale name="en" value="Clinical data for publication – Redacted Proposal"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="co-marketing" is_enabled="true" order_no="0">
+		<locale name="en" value="Co-Marketing - Application for authorisation of a Co-Marketing Medicinal Product"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="cond-specific-obligation" is_enabled="true" order_no="0">
+		<locale name="en" value="Conditional Specific Obligation"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Corrigendum" is_enabled="true" order_no="0">
+		<locale name="en" value="Corrigendum"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="corrigendum" is_enabled="true" order_no="0">
+		<locale name="en" value="Correction of  Errors Detected in a Sequence"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="CTA" is_enabled="true" order_no="0">
+		<locale name="en" value="CTA"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="CTA-A" is_enabled="true" order_no="0">
+		<locale name="en" value="CTA-A"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="c-vet-bio" is_enabled="true" order_no="0">
+		<locale name="en" value="Veterinary - Biologics"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="c-vet-generic" is_enabled="true" order_no="0">
+		<locale name="en" value="Veterinary - Generic Medicinal Product"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="c-vet-newgeneric" is_enabled="true" order_no="0">
+		<locale name="en" value="Veterinary - New Generic Medicinal Product"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="c-vet-newprod" is_enabled="true" order_no="0">
+		<locale name="en" value="Veterinary - New Medicinal Product"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="c-vet-premixed" is_enabled="true" order_no="0">
+		<locale name="en" value="Veterinary - Medicated Premixed"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="DIN" is_enabled="true" order_no="0">
+		<locale name="en" value="DIN"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="dmf" is_enabled="true" order_no="0">
+		<locale name="en" value="Drug Master File"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="d-traditional" is_enabled="true" order_no="0">
+		<locale name="en" value="Traditional Medicinal Product"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="eas" is_enabled="true" order_no="0">
+		<locale name="en" value="EAS - Application for 5 years Data Protection"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Efficacy Supplement" is_enabled="true" order_no="0">
+		<locale name="en" value="Efficacy Supplement"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Establishment Description Supplement" is_enabled="true" order_no="0">
+		<locale name="en" value="Establishment Description Supplement"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Extension" is_enabled="true" order_no="0">
+		<locale name="en" value="Extension"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="extension" is_enabled="true" order_no="0">
+		<locale name="en" value="Line Extension"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="fdast10" is_enabled="true" order_no="0">
+		<locale name="en" value="Periodic Safety Reports"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="fdast6" is_enabled="true" order_no="0">
+		<locale name="en" value="Product Correspondence"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="fdast7" is_enabled="true" order_no="0">
+		<locale name="en" value="Postmarketing Requirements or Postmarketing Commitments"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="fdast8" is_enabled="true" order_no="0">
+		<locale name="en" value="Promotional Labeling Advertising"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="fdast9" is_enabled="true" order_no="0">
+		<locale name="en" value="IND Safety Reports"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Follow Up Measure" is_enabled="true" order_no="0">
+		<locale name="en" value="Follow Up Measure"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="follow-up" is_enabled="true" order_no="0">
+		<locale name="en" value="Follow-up"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="fum" is_enabled="true" order_no="0">
+		<locale name="en" value="Follow-up Measure"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="f-var-major" is_enabled="true" order_no="0">
+		<locale name="en" value="Variation - Major Variation (MaV)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="f-var-minor-n" is_enabled="true" order_no="0">
+		<locale name="en" value="Variation - Minor Variation (MiV-N)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="f-var-minor-pa" is_enabled="true" order_no="0">
+		<locale name="en" value="Variation - Minor Variation (MiV-PA)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="f-var-others" is_enabled="true" order_no="0">
+		<locale name="en" value="Variation - Others"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="g-clin-authamend" is_enabled="true" order_no="0">
+		<locale name="en" value="Clinical Trial Authorization Amendments"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="g-clin-authapp" is_enabled="true" order_no="0">
+		<locale name="en" value="Clinical Trial Authorization Application"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="h-pv" is_enabled="true" order_no="0">
+		<locale name="en" value="Pharmacovigilance"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="hrd" is_enabled="true" order_no="0">
+		<locale name="en" value="New Marketing Authorization Application - Herbal Drug"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="h-review-smph" is_enabled="true" order_no="0">
+		<locale name="en" value="Review of SMP Application"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="IND" is_enabled="true" order_no="0">
+		<locale name="en" value="IND"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="initial-maa" is_enabled="true" order_no="0">
+		<locale name="en" value="Initial Marketing Authorisation"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="i-tmf" is_enabled="true" order_no="0">
+		<locale name="en" value="Tissue Master File"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="i-vamf" is_enabled="true" order_no="0">
+		<locale name="en" value="Vaccine Antigen Master File"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="k-emergency" is_enabled="true" order_no="0">
+		<locale name="en" value="Emergency Used Application"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="k-orphan" is_enabled="true" order_no="0">
+		<locale name="en" value="Orphan Drug Application"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Labeling Supplement" is_enabled="true" order_no="0">
+		<locale name="en" value="Labeling Supplement"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="l-consult" is_enabled="true" order_no="0">
+		<locale name="en" value="Consultative Application"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Lifting Suspension" is_enabled="true" order_no="0">
+		<locale name="en" value="Lifting Suspension"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="maa" is_enabled="true" order_no="0">
+		<locale name="en" value="Marketing Authorisation"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="mnd" is_enabled="true" order_no="0">
+		<locale name="en" value="New Marketing Authorization Application - New Drug"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="na-bs" is_enabled="true" order_no="0">
+		<locale name="en" value="New Application - Biosimilar"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="na-bws" is_enabled="true" order_no="0">
+		<locale name="en" value="New Application: Known Active Substance"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="na-cams" is_enabled="true" order_no="0">
+		<locale name="en" value="New Application - Complementary and Alternative Medicines"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="na-cu" is_enabled="true" order_no="0">
+		<locale name="en" value="New Application - Call-up"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="na-gen" is_enabled="true" order_no="0">
+		<locale name="en" value="New Application - Generics"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="na-ie" is_enabled="true" order_no="0">
+		<locale name="en" value="New Application - New Indication"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="na-ms" is_enabled="true" order_no="0">
+		<locale name="en" value="New Application - Multisource"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="na-nas" is_enabled="true" order_no="0">
+		<locale name="en" value="New Application: New Active Substance"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="na-nce-b" is_enabled="true" order_no="0">
+		<locale name="en" value="New Chemical Entity - Biological"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="na-nce-ph" is_enabled="true" order_no="0">
+		<locale name="en" value="New Chemical Entity – Pharmaceutical"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="na-nde" is_enabled="true" order_no="0">
+		<locale name="en" value="New Application - New Dosage Recommendation"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="na-ndo" is_enabled="true" order_no="0">
+		<locale name="en" value="New Application - New Dosage Strength"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="na-ngf" is_enabled="true" order_no="0">
+		<locale name="en" value="New Application: New Galenic Form"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="na-nko" is_enabled="true" order_no="0">
+		<locale name="en" value="New Application: New Combination"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="NC" is_enabled="true" order_no="0">
+		<locale name="en" value="NC"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="NDS" is_enabled="true" order_no="0">
+		<locale name="en" value="NDS"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="new-bio" is_enabled="true" order_no="0">
+		<locale name="en" value="New Marketing Authorization Application - Biological Products"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="new-gen" is_enabled="true" order_no="0">
+		<locale name="en" value="New Marketing Authorization Application - Generics"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="new-hea" is_enabled="true" order_no="0">
+		<locale name="en" value="New Marketing Authorization Application - Health Products"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="new-her" is_enabled="true" order_no="0">
+		<locale name="en" value="New Marketing Authorization Application - Herbal Products"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="new-nce" is_enabled="true" order_no="0">
+		<locale name="en" value="New Marketing Authorization Application - New Chemical Entity"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="new-rad" is_enabled="true" order_no="0">
+		<locale name="en" value="New Marketing Authorization Application - Radiopharmaceuticals"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="new-vet" is_enabled="true" order_no="0">
+		<locale name="en" value="New Marketing Authorization Application - Veterinary"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="nnd" is_enabled="true" order_no="0">
+		<locale name="en" value="New Marketing Authorization Application - New Narcotics"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="none" is_enabled="true" order_no="0">
+		<locale name="en" value="The submission is not a regulatory activity"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="notification" is_enabled="true" order_no="0">
+		<locale name="en" value="Notification - Variations requiring a notification procedure"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Notification 61-3" is_enabled="true" order_no="0">
+		<locale name="en" value="Notification 61-3"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="nvd" is_enabled="true" order_no="0">
+		<locale name="en" value="New Marketing Authorization Application - New Vitamin Drug"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="ord" is_enabled="true" order_no="0">
+		<locale name="en" value="New Marketing Authorization Application - Originator Drug"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Original Application" is_enabled="true" order_no="0">
+		<locale name="en" value="Original Application"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="orn" is_enabled="true" order_no="0">
+		<locale name="en" value="New Marketing Authorization Application - Originator Narcotics"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="orphan-fasttrack" is_enabled="true" order_no="0">
+		<locale name="en" value="Application for Recognition of Orphan Drug Status or Fast Track Status"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="orv" is_enabled="true" order_no="0">
+		<locale name="en" value="New Marketing Authorization Application - Originator Vitamin Drug"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Other" is_enabled="true" order_no="0">
+		<locale name="en" value="Other"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="paed-45" is_enabled="true" order_no="0">
+		<locale name="en" value="Paediatric Submission, Article 45"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="paed-7-8-30" is_enabled="true" order_no="0">
+		<locale name="en" value="Paediatric Submission, Article 7, 8 or 30 of the Regulation"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="paed-article-29" is_enabled="true" order_no="0">
+		<locale name="en" value="Paediatric Submission, Article 29"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="paed-article-46" is_enabled="true" order_no="0">
+		<locale name="en" value="Paediatric Submission, Article 46"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="pam-anx" is_enabled="true" order_no="0">
+		<locale name="en" value="Annex II Condition Related to a Post-Authorisation Measure"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="pam-capa" is_enabled="true" order_no="0">
+		<locale name="en" value="Corrective Action - Preventive Action"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="pam-leg" is_enabled="true" order_no="0">
+		<locale name="en" value="Legally Binding Measure Related to a Post-Authorisation Measure"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="pam-mea" is_enabled="true" order_no="0">
+		<locale name="en" value="Additional Pharmacovigilance Activity in the Risk-Management Plan"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="pam-p45" is_enabled="true" order_no="0">
+		<locale name="en" value="Paediatric Submissions Related to a Post-Authorisation Measure - Par 45"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="pam-p46" is_enabled="true" order_no="0">
+		<locale name="en" value="Paediatric Submissions Related to a Post-Authorisation Measure - Par 46"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="pam-paes" is_enabled="true" order_no="0">
+		<locale name="en" value="Submission of a Post-Authorisation Efficacy Study"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="pam-rec" is_enabled="true" order_no="0">
+		<locale name="en" value="Recommendation Related to a Post-Authorisation Measure"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="pam-sda" is_enabled="true" order_no="0">
+		<locale name="en" value="Cumulative Review Following a Request Originating from a PSUR or a Signal Evaluation"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="pam-sob" is_enabled="true" order_no="0">
+		<locale name="en" value="Specific Obligation Related to a Post-Authorisation Measure"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="pass107n" is_enabled="true" order_no="0">
+		<locale name="en" value="Submission of a Post-Authorisation Safety Study Protocol"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="pass107q" is_enabled="true" order_no="0">
+		<locale name="en" value="Submission of a Post-Authorisation Safety Study Report"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="pbrer" is_enabled="true" order_no="0">
+		<locale name="en" value="Periodic Benefit Risk Evaluation Report"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="pi" is_enabled="true" order_no="0">
+		<locale name="en" value="PI - Parallel Import"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="pmf" is_enabled="true" order_no="0">
+		<locale name="en" value="Plasma Master File"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="post-reg-biol" is_enabled="true" order_no="0">
+		<locale name="en" value="Post-registration - Biologicals and Biosimilars"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="post-reg-cams" is_enabled="true" order_no="0">
+		<locale name="en" value="Post-registration - Complementary and Alternative Medicines"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="post-reg-cl" is_enabled="true" order_no="0">
+		<locale name="en" value="Post-registration - Clinical"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="post-reg-hcr" is_enabled="true" order_no="0">
+		<locale name="en" value="Post-registration - Applicant Transfer, Name and Address Change of Applicant"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="post-reg-insp" is_enabled="true" order_no="0">
+		<locale name="en" value="Post-registration - Inspectorate"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="post-reg-pa" is_enabled="true" order_no="0">
+		<locale name="en" value="Post-registration - Pharmaceutical and Analytical"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="post-reg-pa-insp" is_enabled="true" order_no="0">
+		<locale name="en" value="Post-registration - Pharmaceutical and Analytical and Inspectorate"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="post-reg-pn" is_enabled="true" order_no="0">
+		<locale name="en" value="Post-registration - Proprietary Name change application"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="post-reg-pn-update" is_enabled="true" order_no="0">
+		<locale name="en" value="Post-registration - Updates Following a Proprietary Name Change approval"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="pre-reg-biol" is_enabled="true" order_no="0">
+		<locale name="en" value="Response to Pre-reg Recommendation - Biological committee response"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="pre-reg-cams" is_enabled="true" order_no="0">
+		<locale name="en" value="Response to Pre-reg Recommendation - Complementary and Alternative Medicines"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="pre-reg-cl" is_enabled="true" order_no="0">
+		<locale name="en" value="Response to Pre-reg Recommendation - Clinical"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="pre-reg-cr" is_enabled="true" order_no="0">
+		<locale name="en" value="Response to Pre-reg Recommendation - Response to Council resolutions"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="pre-reg-insp" is_enabled="true" order_no="0">
+		<locale name="en" value="Response to Pre-reg Recommendation - Inspectorate"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="pre-reg-pa" is_enabled="true" order_no="0">
+		<locale name="en" value="Response to Pre-reg Recommendation - Pharmaceutical and Analytical"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="pre-reg-pa-insp" is_enabled="true" order_no="0">
+		<locale name="en" value="Response to Pre-reg Recommendation - Pharmaceutical and Analytical and Inspectorate"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="pre-reg-pn" is_enabled="true" order_no="0">
+		<locale name="en" value="Response to Pre-reg Recommendation - Proprietary Name"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="pre-reg-sch" is_enabled="true" order_no="0">
+		<locale name="en" value="Response to Pre-reg Recommendation - Scheduling"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Presubmission" is_enabled="true" order_no="0">
+		<locale name="en" value="Presubmission"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="PSUR" is_enabled="true" order_no="0">
+		<locale name="en" value="PSUR"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="psur" is_enabled="true" order_no="0">
+		<locale name="en" value="PSUR: Submission of PSUR"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="psusa" is_enabled="true" order_no="0">
+		<locale name="en" value="PSUR Single Assessment Procedure"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Referral" is_enabled="true" order_no="0">
+		<locale name="en" value="Referral"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="referral-107i" is_enabled="true" order_no="0">
+		<locale name="en" value="Referral under Article 107i"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="referral-16c1c" is_enabled="true" order_no="0">
+		<locale name="en" value="Referral under Article 16c-1c"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="referral-16c4" is_enabled="true" order_no="0">
+		<locale name="en" value="Referral under Article 16c-4"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="referral-20" is_enabled="true" order_no="0">
+		<locale name="en" value="Referral under Article 20"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="referral-294" is_enabled="true" order_no="0">
+		<locale name="en" value="Referral under Article 29-4"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="referral-29p" is_enabled="true" order_no="0">
+		<locale name="en" value="Referral under Article 29 paediatric"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="referral-30" is_enabled="true" order_no="0">
+		<locale name="en" value="Referral under Article 30"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="referral-31" is_enabled="true" order_no="0">
+		<locale name="en" value="Referral under Article 31"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="referral-35" is_enabled="true" order_no="0">
+		<locale name="en" value="Referral under Article 35"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="referral-53" is_enabled="true" order_no="0">
+		<locale name="en" value="Referral under Article 53"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="referral-5-3" is_enabled="true" order_no="0">
+		<locale name="en" value="Referral under Article 5 (3)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Reformat" is_enabled="true" order_no="0">
+		<locale name="en" value="Reformat"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="reformat" is_enabled="true" order_no="0">
+		<locale name="en" value="Reformat: A baseline eCTD submission containing no content change and not subject to review"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Regulatory Correspondence" is_enabled="true" order_no="0">
+		<locale name="en" value="Regulatory Correspondence"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Regulatory Submission" is_enabled="true" order_no="0">
+		<locale name="en" value="Regulatory Submission"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Renewal" is_enabled="true" order_no="0">
+		<locale name="en" value="Renewal"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="renewal" is_enabled="true" order_no="0">
+		<locale name="en" value="Renewal - Yearly or 5-Yearly"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="responses" is_enabled="true" order_no="0">
+		<locale name="en" value="Response to Validation Issues or Response to Questions"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Resubmission" is_enabled="true" order_no="0">
+		<locale name="en" value="Resubmission"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="rmp" is_enabled="true" order_no="0">
+		<locale name="en" value="Risk Management Plan"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="rnr" is_enabled="true" order_no="0">
+		<locale name="en" value="New Marketing Authorization Application - Radiopharmaceutical Non-Radioactive Components (kits)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="rrp" is_enabled="true" order_no="0">
+		<locale name="en" value="New Marketing Authorization Application - Radiopharmaceutical Ready-for-use Radioactive Product"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="rup" is_enabled="true" order_no="0">
+		<locale name="en" value="Repeat Use Procedure"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="safety" is_enabled="true" order_no="0">
+		<locale name="en" value="Safety"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="SANDS" is_enabled="true" order_no="0">
+		<locale name="en" value="SANDS"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="seq-type-1" is_enabled="true" order_no="0">
+		<locale name="en" value="A - NCE New Chemical Entity"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="seq-type-10" is_enabled="true" order_no="0">
+		<locale name="en" value="F - Major Variation - New Route of Administration"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="seq-type-11" is_enabled="true" order_no="0">
+		<locale name="en" value="F - Major Variation - Change in Patient Group"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="seq-type-12" is_enabled="true" order_no="0">
+		<locale name="en" value="F - Major Variation - Change of Dosage"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="seq-type-13" is_enabled="true" order_no="0">
+		<locale name="en" value="G - Minor Variation, New Register Entry - Change of Formulation"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="seq-type-14" is_enabled="true" order_no="0">
+		<locale name="en" value="G - Minor Variation, New Register Entry - New Container Type"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="seq-type-15" is_enabled="true" order_no="0">
+		<locale name="en" value="Change of Tradename"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="seq-type-16" is_enabled="true" order_no="0">
+		<locale name="en" value="H - Minor Variation, Not Resulting in a New Register Entry"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="seq-type-17" is_enabled="true" order_no="0">
+		<locale name="en" value="J - PI Change requiring evaluation"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="seq-type-18" is_enabled="true" order_no="0">
+		<locale name="en" value="K - PI Change without Data"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="seq-type-19" is_enabled="true" order_no="0">
+		<locale name="en" value="Rolling Review"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="seq-type-2" is_enabled="true" order_no="0">
+		<locale name="en" value="A - NCE New Salt or Ester of Existing Active Ingredient"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="seq-type-20" is_enabled="true" order_no="0">
+		<locale name="en" value="OTC - N1"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="seq-type-21" is_enabled="true" order_no="0">
+		<locale name="en" value="OTC - N2"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="seq-type-22" is_enabled="true" order_no="0">
+		<locale name="en" value="OTC - N3"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="seq-type-23" is_enabled="true" order_no="0">
+		<locale name="en" value="OTC - N4"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="seq-type-24" is_enabled="true" order_no="0">
+		<locale name="en" value="OTC - N5"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="seq-type-25" is_enabled="true" order_no="0">
+		<locale name="en" value="OTC - C1"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="seq-type-26" is_enabled="true" order_no="0">
+		<locale name="en" value="OTC - C2"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="seq-type-27" is_enabled="true" order_no="0">
+		<locale name="en" value="OTC - C3"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="seq-type-28" is_enabled="true" order_no="0">
+		<locale name="en" value="OTC - C4"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="seq-type-29" is_enabled="true" order_no="0">
+		<locale name="en" value="OTC - New Active Ingredient"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="seq-type-3" is_enabled="true" order_no="0">
+		<locale name="en" value="A - NCE Similar Biological Medicinal Product"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="seq-type-30" is_enabled="true" order_no="0">
+		<locale name="en" value="Ingredient - New"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="seq-type-31" is_enabled="true" order_no="0">
+		<locale name="en" value="Ingredient - Variation"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="seq-type-32" is_enabled="true" order_no="0">
+		<locale name="en" value="Complementary Medicine - New"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="seq-type-33" is_enabled="true" order_no="0">
+		<locale name="en" value="Complementary Medicine - Variation"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="seq-type-34" is_enabled="true" order_no="0">
+		<locale name="en" value="Biologicals - Class 1"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="seq-type-35" is_enabled="true" order_no="0">
+		<locale name="en" value="Biologicals - Class 2"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="seq-type-36" is_enabled="true" order_no="0">
+		<locale name="en" value="Biologicals - Class 3"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="seq-type-37" is_enabled="true" order_no="0">
+		<locale name="en" value="Biologicals - Class 4"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="seq-type-38" is_enabled="true" order_no="0">
+		<locale name="en" value="Biologicals - Variation"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="seq-type-39" is_enabled="true" order_no="0">
+		<locale name="en" value="Medical Devices"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="seq-type-4" is_enabled="true" order_no="0">
+		<locale name="en" value="B - New Combination"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="seq-type-40" is_enabled="true" order_no="0">
+		<locale name="en" value="ASMF - DMF"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="seq-type-42" is_enabled="true" order_no="0">
+		<locale name="en" value="Tissue Master File - TMF"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="seq-type-43" is_enabled="true" order_no="0">
+		<locale name="en" value="Biological Master File - BMF"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="seq-type-44" is_enabled="true" order_no="0">
+		<locale name="en" value="Pharmacovigilance"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="seq-type-46" is_enabled="true" order_no="0">
+		<locale name="en" value="Baseline"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="seq-type-5" is_enabled="true" order_no="0">
+		<locale name="en" value="C - Extension of Indication"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="seq-type-50" is_enabled="true" order_no="0">
+		<locale name="en" value="Pre-Submission Meeting Documentation"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="seq-type-51" is_enabled="true" order_no="0">
+		<locale name="en" value="Pre-Submission Planning Form"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="seq-type-52" is_enabled="true" order_no="0">
+		<locale name="en" value="Undefined Regulatory Activity"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="seq-type-53" is_enabled="true" order_no="0">
+		<locale name="en" value="9D-1 - Correction of Register Entry"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="seq-type-54" is_enabled="true" order_no="0">
+		<locale name="en" value="9D-2 - Safety Related Request"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="seq-type-55" is_enabled="true" order_no="0">
+		<locale name="en" value="9D-3 - Change to PI"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="seq-type-56" is_enabled="true" order_no="0">
+		<locale name="en" value="Change of Sponsor"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="seq-type-57" is_enabled="true" order_no="0">
+		<locale name="en" value="Product Withdrawal"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="seq-type-58" is_enabled="true" order_no="0">
+		<locale name="en" value="Provisional registration - TGA initiated variation"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="seq-type-59" is_enabled="true" order_no="0">
+		<locale name="en" value="Notification"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="seq-type-6" is_enabled="true" order_no="0">
+		<locale name="en" value="D - New Generic Medicine"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="seq-type-60" is_enabled="true" order_no="0">
+		<locale name="en" value="CN"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="seq-type-61" is_enabled="true" order_no="0">
+		<locale name="en" value="Extension of provisional registration"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="seq-type-62" is_enabled="true" order_no="0">
+		<locale name="en" value="Duplicate"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="seq-type-7" is_enabled="true" order_no="0">
+		<locale name="en" value="E - Additional Tradename"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="seq-type-8" is_enabled="true" order_no="0">
+		<locale name="en" value="F - Major Variation - New Strength"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="seq-type-9" is_enabled="true" order_no="0">
+		<locale name="en" value="F - Major Variation - New Dosage Form"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="SNDS" is_enabled="true" order_no="0">
+		<locale name="en" value="SNDS"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Specific Obligation" is_enabled="true" order_no="0">
+		<locale name="en" value="Specific Obligation"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Supplemental Info" is_enabled="true" order_no="0">
+		<locale name="en" value="Supplemental Info"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="supplemental-info" is_enabled="true" order_no="0">
+		<locale name="en" value="Supplemental information (could include, for example, response to content validation issues or answers to question)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="transfer" is_enabled="true" order_no="0">
+		<locale name="en" value="Transfer - Transfer of a MA, Change Applicant Name, Change Applicant Address"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Transfer MA" is_enabled="true" order_no="0">
+		<locale name="en" value="Transfer MA"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Urgent Safety Restriction" is_enabled="true" order_no="0">
+		<locale name="en" value="Urgent Safety Restriction"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="vam" is_enabled="true" order_no="0">
+		<locale name="en" value="New Marketing Authorization Application - Value Added Medicine"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Var Nat" is_enabled="true" order_no="0">
+		<locale name="en" value="Var Nat"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Var Type1a" is_enabled="true" order_no="0">
+		<locale name="en" value="Var Type 1a"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Var Type1b" is_enabled="true" order_no="0">
+		<locale name="en" value="Var Type 1b"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Var Type2" is_enabled="true" order_no="0">
+		<locale name="en" value="Var Type 2"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="var-authorisation-admin" is_enabled="true" order_no="0">
+		<locale name="en" value="Var Authorisation Admin"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="var-authorisation-scientific" is_enabled="true" order_no="0">
+		<locale name="en" value="Var Authorisation Scientific"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="var-n1" is_enabled="true" order_no="0">
+		<locale name="en" value="Notification without pricing"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="var-n2" is_enabled="true" order_no="0">
+		<locale name="en" value="Notification with pricing"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="var-pi" is_enabled="true" order_no="0">
+		<locale name="en" value="VAR PI - Variations requiring authorisation of the product information"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="var-ra" is_enabled="true" order_no="0">
+		<locale name="en" value="Registration Department Approval"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="var-tca" is_enabled="true" order_no="0">
+		<locale name="en" value="Technical Committee Approval"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="var-type1" is_enabled="true" order_no="0">
+		<locale name="en" value="Variation Type I"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="var-type1ain" is_enabled="true" order_no="0">
+		<locale name="en" value="Variation Type IAIN"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="var-type2" is_enabled="true" order_no="0">
+		<locale name="en" value="Variation Type II"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="vtr" is_enabled="true" order_no="0">
+		<locale name="en" value="New Marketing Authorization Application - Veterinary Drug"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Withdrawal" is_enabled="true" order_no="0">
+		<locale name="en" value="Withdrawal"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="withdrawal" is_enabled="true" order_no="0">
+		<locale name="en" value="Withdrawal During Assessment or Withdrawal of MA"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="z-undefined-regact" is_enabled="true" order_no="0">
+		<locale name="en" value="Undefined Regulatory Activity"/>
+	</d2_dictionary_value>
+</d2_dictionary>

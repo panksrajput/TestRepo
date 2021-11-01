@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_create_config object_name="Document Training Model" title="Creation Profile for Document Training Models" lock_config="false" parents_config="" application_names="OpenText Life Sciences Medical Device for Quality and Manufacturing Solution¬OpenText Life Sciences Quality and Manufacturing Solution¬OpenText Life Sciences Medical Device Solution" condition_group_name="cd_gmp_coordinators" for_linked_document="false" is_for_creation="true" is_for_import="false" is_for_import_mobile="false" for_paste_multi="false" for_paste_single="false" config_properties="" skip_edit_content="true" inheritance_hidden="true" inheritance_properties="false" inheritance_content="false" inheritance_vd="false" block_inheritance_mod="false" label_en="Document Training Model">
+	<header dictionary_name="New Document" attr_name="training_model"/>
+	<row type_name="cd_training_model" property_config="Training Model Properties" o2_config="" start_version="1.0" attr_inheritance="" lifecycle="" default_value="Document Training Model Default Values" workflow="" dictionary_value="New Document"/>
+</d2_create_config>

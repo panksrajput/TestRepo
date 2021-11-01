@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_documentset new_format="true">
+	<object_name value="Medical Device Regulatory-Admin Registration Forms"/>
+	<title value="These are used to provide default properties for Regulatory-Admin documents."/>
+	<subject value=""/>
+	<authors/>
+	<keywords/>
+	<a_status value=""/>
+	<a_content_type value=""/>
+	<log_entry value=""/>
+	<language_code value=""/>
+	<dql_where value="domain = 'Device Regulatory/Administrative'"/>
+	<order_no value="3"/>
+	<dql_from>
+		<repeating value="cd_reg_admin_info"/>
+	</dql_from>
+	<group_names/>
+	<application_names>
+		<repeating value="OpenText Life Sciences Quality and Manufacturing Solution"/>
+		<repeating value="OpenText Life Sciences Medical Device for Quality and Manufacturing Solution"/>
+		<repeating value="OpenText Life Sciences Medical Device for Research and Development Solution"/>
+		<repeating value="OpenText Life Sciences Medical Device Solution"/>
+		<repeating value="OpenText Life Sciences Submission Storage and Viewing"/>
+		<repeating value="OpenText Life Sciences Research and Development Solution"/>
+	</application_names>
+	<user_agent value=""/>
+	<parent_names>
+		<repeating value="Registration Forms"/>
+	</parent_names>
+	<parent_order_no>
+		<repeating value="11"/>
+	</parent_order_no>
+	<lock_config value="F"/>
+	<parents_config/>
+</d2_documentset>

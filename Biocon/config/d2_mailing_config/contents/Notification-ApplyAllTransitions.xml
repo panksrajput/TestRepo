@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_mailing_config>
+	<add_attachment>false</add_attachment>
+	<rendition_formats/>
+	<list-recipient>
+		<recipient type="attribute">title</recipient>
+	</list-recipient>
+	<list-subject>
+		<subject_en/>
+	</list-subject>
+	<list-object>
+		<object_en>&lt;html&gt;&lt;head&gt;&lt;style&gt; body { font-family: helvetica, arial, sans-serif; font-size: 12px; } .title { font-size: 14px; font-weight: bold; } .preamble { margin-top: 12px; margin-bottom: 12px; } table, th { border: 1px solid black; border-collapse: collapse; padding: 6px; text-align: left; } table th.Errors { background-color: red; color: white; } th.Successes{ background-color: green; color: white; } table th.Warnings { background-color: Orange; color: white; } table tr:nth-child(even) { background-color: #eee; } table tr:nth-child(odd) { background-color:#fff; } .textdata { border: 1px solid black; border-collapse: collapse; padding: 6px; text-align: left; } .nontextdata { border: 1px solid black; border-collapse: collapse; padding: 6px; text-align: right; } .rowcount { font-style: italic; margin-top: 12px; }&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;p&gt;
+		${doc.getSysObject().getObjectName()}[${doc.getSysObject().getObjectId()}] - v.${doc.getSysObject().getImplicitVersionLabel()}&lt;p&gt;&lt;@table map=customArgs.processingMapsSuccess class=customArgs.tableHeaderSuccess displayFlag=customArgs.displaySuccess/&gt;&lt;@table map=customArgs.processingMapsError class=customArgs.tableHeaderError displayFlag=customArgs.displayError/&gt;&lt;@table map=customArgs.processingMapsWarning class=customArgs.tableHeaderWarning displayFlag=customArgs.displayWarning/&gt;&lt;#if (customArgs.generalError??) &gt;&lt;#assign hasMessages=&quot;true&quot;&gt;
+			General Error&lt;br&gt;&lt;table border=1&gt;&lt;tr&gt;&lt;th class=&quot;Errors&quot;&gt;Error Message&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;${customArgs.generalError}&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/#if&gt;&lt;#macro table map class displayFlag&gt;&lt;#if (map?size &gt; 0) &amp;&amp; displayFlag &gt;&lt;#assign hasMessages=&quot;true&quot;&gt;
+				${class}&lt;br&gt;&lt;table border=1&gt;&lt;tr&gt;&lt;th class=${class}&gt;ID/Version&lt;/th&gt;&lt;th class=${class}&gt;Message&lt;/th&gt;&lt;/tr&gt;&lt;#list map as theID,theMessage&gt;&lt;tr&gt;&lt;td&gt;${theID}&lt;/td&gt;&lt;td nowrap&gt;${theMessage!&quot;none&quot;}&lt;/td&gt;&lt;/tr&gt;&lt;/#list&gt;&lt;/table&gt;&lt;/#if&gt;&lt;/#macro&gt;&lt;#if (!hasMessages??)&gt;
+			!~NO CONTENT~!&lt;/#if&gt;&lt;/body&gt;&lt;/html&gt;</object_en>
+	</list-object>
+</d2_mailing_config>

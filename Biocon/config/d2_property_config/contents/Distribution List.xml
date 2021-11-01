@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dialog id="PropertiesDialog" auto_smartview_edit_mode="false" buttons_right="false" focus="" height="500" initial_invalid="false" resizable="true" signoff_creation="false" signoff_edit="false" signoff_import="false" signoff_intention_dictionary="" signoff_intention_required="false" width="600">
+	<content>
+		<text id="object_name" condition_required_create="true" condition_required_edit="true" label_en="Distribution List Name"/>
+		<memo id="title" label_en="Description"/>
+		<list id="domains" assistance_dql="select locale_value from d2_dictionary_value where  dictionary_name='Distribution list Domains' and alias_value in (select distinct g.group_name FROM dm_user u, dm_group g WHERE ANY g.i_all_users_names = USER and g.group_name like 'dl_%') and any locale_value is not nullstring order by locale_value ENABLE(ROW_BASED)" assistance_type="dql" condition_required_create="true" condition_required_edit="true" label_en="Domains" rows="4"/>
+		<tabs>
+			<tab label_en="List Settings">
+				<grid label_en="Emails">
+					<text id="email_names" cell_width="250" label_en="Email Name"/>
+					<text id="email_addresses" cell_width="320" condition_validation="^[a-zA-Z0-9.!#$%&amp;'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$" label_en="Email Address" validation_message_en="Please enter a valid email address"/>
+				</grid>
+				<boolean id="is_list_global" label_en="Global List"/>
+				<boolean id="is_user_global" label_en="Global Users"/>
+				<boolean id="is_default" label_en="Default List"/>
+			</tab>
+		</tabs>
+	</content>
+	<buttons>
+		<button id="buttonOk" action="validDialog()"/>
+		<button id="buttonCancel" action="cancelDialog()"/>
+	</buttons>
+</dialog>

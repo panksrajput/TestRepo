@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x3_graphic_config new_format="true">
+	<object_name value="Life Sciences Themed Graphics"/>
+	<title value="The icon set for the Life Sciences Solution"/>
+	<subject value=""/>
+	<authors/>
+	<keywords/>
+	<a_status value=""/>
+	<a_content_type value=""/>
+	<log_entry value=""/>
+	<language_code value=""/>
+	<module_type value="x3_graphic_config"/>
+	<application_names>
+		<repeating value="OpenText Life Sciences eTMF Solution"/>
+		<repeating value="OpenText Life Sciences Quality and Manufacturing Solution"/>
+		<repeating value="OpenText Life Sciences Research and Development Solution"/>
+		<repeating value="OpenText Life Sciences Submission Storage and Viewing"/>
+		<repeating value="OpenText Life Sciences Medical Device for Quality and Manufacturing Solution"/>
+	</application_names>
+	<lock_config value="F"/>
+	<parents_config/>
+	<icon_format_image>
+		<repeating value="placeholder_16.png"/>
+		<repeating value="pdf_preview.gif"/>
+		<repeating value="tmf_placeholder_missing_optional_16.png"/>
+		<repeating value="tmf_placeholder_complete_16.png"/>
+		<repeating value="tmf_placeholder_plus_16.png"/>
+		<repeating value="tmf_placeholder_future_16.png"/>
+		<repeating value="tmf_placeholder_missing_16.png"/>
+		<repeating value="clinical_trial_reg_form_graphic.png"/>
+		<repeating value="clinical_trial_reg_form_graphic.png"/>
+		<repeating value="clinical_trial_reg_form_graphic.png"/>
+		<repeating value="cd_config_16-1.png"/>
+		<repeating value="cd_config_16-1.png"/>
+		<repeating value="cd_config_16-1.png"/>
+		<repeating value="pdf_preview.gif"/>
+		<repeating value="xml_preview.gif"/>
+		<repeating value="csv_format.gif"/>
+		<repeating value="word_macro_format.png"/>
+		<repeating value="excel8book_16.gif"/>
+	</icon_format_image>
+	<thumbnail_format_image>
+		<repeating value="placeholder_64.png"/>
+		<repeating value="pdf_preview_64.gif"/>
+		<repeating value="tmf_placeholder_missing_optional_64.png"/>
+		<repeating value="tmf_placeholder_complete_64.png"/>
+		<repeating value="tmf_placeholder_plus_64.png"/>
+		<repeating value="tmf_placeholder_future_64.png"/>
+		<repeating value="tmf_placeholder_missing_64.png"/>
+		<repeating value="clinical_trial_reg_form.png"/>
+		<repeating value="clinical_trial_reg_form.png"/>
+		<repeating value="clinical_trial_reg_form.png"/>
+		<repeating value="cd_config_64-1.png"/>
+		<repeating value="cd_config_64-1.png"/>
+		<repeating value="cd_config_64-1.png"/>
+		<repeating value="pdf_preview_64.gif"/>
+		<repeating value="xml_preview_64.gif"/>
+		<repeating value="csv_format_64.gif"/>
+		<repeating value="word_macro_format.png"/>
+		<repeating value="excel8book_32.gif"/>
+	</thumbnail_format_image>
+	<image_format_label>
+		<repeating value="tmf_placeholder"/>
+		<repeating value="pdf_signed"/>
+		<repeating value="tmf_placeholder_missing_optional"/>
+		<repeating value="tmf_placeholder_complete"/>
+		<repeating value="tmf_placeholder_complete_plus"/>
+		<repeating value="tmf_placeholder_future"/>
+		<repeating value="tmf_placeholder_missing"/>
+		<repeating value="excel_tmf_file_plan"/>
+		<repeating value="tmf_file_plan_xlsm"/>
+		<repeating value="tmf_file_plan_xlsx"/>
+		<repeating value="excel_tmf_bulk_upload_metadata"/>
+		<repeating value="tmf_bulk_upload_metadata_xlsm"/>
+		<repeating value="tmf_bulk_upload_metadata_xlsx"/>
+		<repeating value="pdf_preview"/>
+		<repeating value="xml_preview"/>
+		<repeating value="csv"/>
+		<repeating value="msw12me"/>
+		<repeating value="vdts"/>
+	</image_format_label>
+	<icon_type_image>
+		<repeating value="clinical_trial_reg_form_graphic.png"/>
+		<repeating value="project_reg_form_graphic.png"/>
+		<repeating value="country_reg_form_graphic.png"/>
+		<repeating value="product_reg_form_graphic.png"/>
+		<repeating value="site_reg_form_graphic.png"/>
+		<repeating value="registration_regulatory-admin_16.png"/>
+		<repeating value="cd_config_16-1.png"/>
+		<repeating value="cd_config_16-1.png"/>
+		<repeating value="registration_preclinicalstudy_16.png"/>
+		<repeating value="reference_16.png"/>
+		<repeating value="cd_reg_submission_info_16.png"/>
+		<repeating value="cd_reg_admin_activity_16.png"/>
+		<repeating value="orange_folders_16.png"/>
+		<repeating value="dm_cabinet_16.png"/>
+		<repeating value="nees_folder_16.png"/>
+		<repeating value="ectd_folder_16.png"/>
+		<repeating value="training_record-16.png"/>
+	</icon_type_image>
+	<thumbnail_type_image>
+		<repeating value="clinical_trial_reg_form.png"/>
+		<repeating value="project_reg_form.png"/>
+		<repeating value="country_reg_form.png"/>
+		<repeating value="product_reg_form.png"/>
+		<repeating value="site_reg_form.png"/>
+		<repeating value="registration_regulatory-admin_64.png"/>
+		<repeating value="cd_config_64-1.png"/>
+		<repeating value="cd_config_64-1.png"/>
+		<repeating value="registration_preclinicalstudy_64.png"/>
+		<repeating value="reference_64.png"/>
+		<repeating value="cd_reg_submission_info_64.png"/>
+		<repeating value="cd_reg_admin_activity_64.png"/>
+		<repeating value="orange_folders_64.png"/>
+		<repeating value="dm_cabinet_64.png"/>
+		<repeating value="nees_folder_64.png"/>
+		<repeating value="ectd_folder_64.png"/>
+		<repeating value="training_record-64.png"/>
+	</thumbnail_type_image>
+	<image_type_label>
+		<repeating value="cd_clinical_trial_info"/>
+		<repeating value="cd_quality_project_info"/>
+		<repeating value="cd_clinical_country_info"/>
+		<repeating value="cd_product_info"/>
+		<repeating value="cd_clinical_site_info"/>
+		<repeating value="cd_reg_admin_info"/>
+		<repeating value="cd_auto_inherit_config"/>
+		<repeating value="cd_delete_config"/>
+		<repeating value="cd_non_clinical_study_info"/>
+		<repeating value="cd_clinical_tmf_doc_ref"/>
+		<repeating value="cd_reg_submission_info"/>
+		<repeating value="cd_reg_admin_activity_info"/>
+		<repeating value="dm_folder"/>
+		<repeating value="dm_cabinet"/>
+		<repeating value="cd_nees_submission_folder"/>
+		<repeating value="cd_ectd_submission_folder"/>
+		<repeating value="cd_training_record"/>
+	</image_type_label>
+	<attr_name>
+		<repeating value="wf_is_in_workflow"/>
+		<repeating value="wf_is_in_workflow"/>
+	</attr_name>
+	<attr_value>
+		<repeating value="1"/>
+		<repeating value="0"/>
+	</attr_value>
+	<attr_icon>
+		<repeating value="Flag-icon.png"/>
+		<repeating value="transparent_1pixel.png"/>
+	</attr_icon>
+	<attr_color>
+		<repeating value="000000"/>
+		<repeating value="FFFFFF"/>
+	</attr_color>
+	<is_attr_icon_only>
+		<repeating value="T"/>
+		<repeating value="T"/>
+	</is_attr_icon_only>
+</x3_graphic_config>

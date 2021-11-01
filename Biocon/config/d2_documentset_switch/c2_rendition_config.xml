@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_documentset_switch object_name="c2_rendition_config">
+	<d2_documentset name="Change Request¬Change Request in CIP Suppressing Overlays" config="C2 Change Request Signature Page for QM with Populated Overlay"/>
+	<d2_documentset name="Change Request¬Change Request in CIP" config="C2 Change Request Signature Page for QM"/>
+	<d2_documentset name="C2 Signature page for QM Non CAT 1 Suppressing Overlays" config="C2 Approved Signature page for QM with Populated Overlay"/>
+	<d2_documentset name="C2 Signature page for QM Non CAT 1" config="C2 Approved Signature page for QM"/>
+	<d2_documentset name="C2 Signature Page for QM CAT1 Suppressing Overlays" config="C2 Effective Signature page for QM with Populated Overlay"/>
+	<d2_documentset name="C2 Signature Page for QM CAT1" config="C2 Effective Signature page for QM"/>
+	<switch_default config=""/>
+</d2_documentset_switch>

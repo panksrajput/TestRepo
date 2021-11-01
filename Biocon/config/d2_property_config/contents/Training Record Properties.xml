@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dialog id="PropertiesDialog" buttons_right="false" focus="" height="800" resizable="true" signoff_creation="false" signoff_edit="false" signoff_import="false" signoff_intention_dictionary="" signoff_intention_required="false" width="800">
+	<content>
+		<tabs>
+			<tab label_en="Info">
+				<text id="object_name"/>
+				<text id="document_title"/>
+				<text id="document_version"/>
+				<text id="user_name"/>
+				<text id="user_login_name"/>
+				<list id="training_keys" rows="4"/>
+				<text id="training_coordinators"/>
+				<separator/>
+				<date id="training_started_date"/>
+				<date id="training_due_date"/>
+				<date id="training_completed_date"/>
+				<separator/>
+				<text id="reject_reason"/>
+				<text id="exempted_reason"/>
+				<text id="reinstated_reason"/>
+				<separator/>
+				<boolean id="is_historic"/>
+				<boolean id="is_overdue"/>
+				<boolean id="is_paused"/>
+				<boolean id="is_suspended"/>
+				<text id="a_status"/>
+			</tab>
+		</tabs>
+	</content>
+	<buttons>
+		<button id="buttonOk" action="validDialog()"/>
+		<button id="buttonCancel" action="cancelDialog()"/>
+	</buttons>
+</dialog>

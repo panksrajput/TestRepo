@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dialog id="PropertiesDialog" buttons_right="false" focus="" height="300" initial_invalid="false" resizable="true" signoff_creation="false" signoff_edit="false" signoff_import="false" signoff_intention_dictionary="" signoff_intention_required="false" width="400">
+	<content>
+		<fieldset label_en="Self-approve document">
+			<comment html_content="true" label_en="&lt;table cellspacing=0&gt;&lt;tr&gt;&lt;td&gt;This will create a new major version of the selected document(s) that are ''Effective/Approved/Final''.&lt;br/&gt;&lt;br/&gt; &lt;b&gt;This operation will be audited.&lt;/b&gt;&lt;br/&gt; &lt;br/&gt;Document(s) will remain ''Effective/Approved/Final'' until suspended, withdrawn, or superseded by a later ''Effective/Approved/Final'' version.&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"/>
+			<comment font_bold="true" label_en="OK to continue?"/>
+		</fieldset>
+	</content>
+	<buttons>
+		<button id="buttonOk" action="validDialog()"/>
+		<button id="buttonCancel" action="cancelDialog()"/>
+	</buttons>
+</dialog>

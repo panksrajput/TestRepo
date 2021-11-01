@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_dictionary object_name="Manufacturing Subgroups" title="Categories of documents within a manufacturing group." lock_config="false" parents_config="" application_names="OpenText Life Sciences Submission Storage and Viewing¬OpenText Life Sciences Research and Development Solution¬OpenText Life Sciences Quality and Manufacturing Solution" security_group="admingroup" search_group="admingroup" version="2" is_versioned="false" manual_order="false" create_view_option="false" is_dql="false" is_dql_cache="false" dql="" label_en="Manufacturing Subgroups">
+	<d2_dictionary_value object_name="Action Form" is_enabled="true" order_no="0">
+		<locale name="en" value="Action Form"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Agreement" is_enabled="true" order_no="0">
+		<locale name="en" value="Agreement"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Analytical" is_enabled="true" order_no="0">
+		<locale name="en" value="Analytical"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Annual Review" is_enabled="true" order_no="0">
+		<locale name="en" value="Annual Review"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Artwork" is_enabled="true" order_no="0">
+		<locale name="en" value="Artwork"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Assembly" is_enabled="true" order_no="0">
+		<locale name="en" value="Assembly"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Audit Commitment" is_enabled="true" order_no="0">
+		<locale name="en" value="Audit Commitment"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Booklet" is_enabled="true" order_no="0">
+		<locale name="en" value="Booklet"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Calibration" is_enabled="true" order_no="0">
+		<locale name="en" value="Calibration"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Calibration Specification" is_enabled="true" order_no="0">
+		<locale name="en" value="Calibration Specification"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Carton" is_enabled="true" order_no="0">
+		<locale name="en" value="Carton"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Cleaning Record" is_enabled="true" order_no="0">
+		<locale name="en" value="Cleaning Record"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Cliché" is_enabled="true" order_no="0">
+		<locale name="en" value="Cliché"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Clinical" is_enabled="true" order_no="0">
+		<locale name="en" value="Clinical"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Commercial Operation" is_enabled="true" order_no="0">
+		<locale name="en" value="Commercial Operation"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Commodity" is_enabled="true" order_no="0">
+		<locale name="en" value="Commodity"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Communication" is_enabled="true" order_no="0">
+		<locale name="en" value="Communication"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Company name QA Declaration" is_enabled="true" order_no="0">
+		<locale name="en" value="Company name QA Declaration"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Computerized System" is_enabled="true" order_no="0">
+		<locale name="en" value="Computerized System"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Configurations" is_enabled="true" order_no="0">
+		<locale name="en" value="Configurations"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Customer Specifications" is_enabled="true" order_no="0">
+		<locale name="en" value="Customer Specifications"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Development" is_enabled="true" order_no="0">
+		<locale name="en" value="Development"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Diagrams" is_enabled="true" order_no="0">
+		<locale name="en" value="Diagrams"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Discovery" is_enabled="true" order_no="0">
+		<locale name="en" value="Discovery"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Distribution Record" is_enabled="true" order_no="0">
+		<locale name="en" value="Distribution Record"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Electrical" is_enabled="true" order_no="0">
+		<locale name="en" value="Electrical"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Electronic Batch Record" is_enabled="true" order_no="0">
+		<locale name="en" value="Electronic Batch Record"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Environmental" is_enabled="true" order_no="0">
+		<locale name="en" value="Environmental"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Equipment" is_enabled="true" order_no="0">
+		<locale name="en" value="Equipment"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Equipment Specification" is_enabled="true" order_no="0">
+		<locale name="en" value="Equipment Specification"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Executed Production and Control Record" is_enabled="true" order_no="0">
+		<locale name="en" value="Executed Production and Control Record"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="External" is_enabled="true" order_no="0">
+		<locale name="en" value="External"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="External Master Production and Control Record" is_enabled="true" order_no="0">
+		<locale name="en" value="External Master Production and Control Record"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="External Specification" is_enabled="true" order_no="0">
+		<locale name="en" value="External Specification"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Facilities" is_enabled="true" order_no="0">
+		<locale name="en" value="Facilities"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Facility" is_enabled="true" order_no="0">
+		<locale name="en" value="Facility"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Facility, Equipment and Engineering" is_enabled="true" order_no="0">
+		<locale name="en" value="Facility, Equipment and Engineering"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Foil" is_enabled="true" order_no="0">
+		<locale name="en" value="Foil"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Formulation and Process Specifications" is_enabled="true" order_no="0">
+		<locale name="en" value="Formulation and Process Specifications"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Formulation Specification" is_enabled="true" order_no="0">
+		<locale name="en" value="Formulation Specification"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="General" is_enabled="true" order_no="0">
+		<locale name="en" value="General"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="General Specification" is_enabled="true" order_no="0">
+		<locale name="en" value="General Specification"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="GMP Certificates" is_enabled="true" order_no="0">
+		<locale name="en" value="GMP Certificates"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Guideline" is_enabled="true" order_no="0">
+		<locale name="en" value="Guideline"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Health, Environment and Safety" is_enabled="true" order_no="0">
+		<locale name="en" value="Health, Environment and Safety"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="HVAC" is_enabled="true" order_no="0">
+		<locale name="en" value="HVAC"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="IT Standards" is_enabled="true" order_no="0">
+		<locale name="en" value="IT Standards"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="IT Supplier Evaluation" is_enabled="true" order_no="0">
+		<locale name="en" value="IT Supplier Evaluation"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Label" is_enabled="true" order_no="0">
+		<locale name="en" value="Label"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Labeling Control" is_enabled="true" order_no="0">
+		<locale name="en" value="Labeling Control"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Labeling Specification" is_enabled="true" order_no="0">
+		<locale name="en" value="Labeling Specification"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Laboratory Control" is_enabled="true" order_no="0">
+		<locale name="en" value="Laboratory Control"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Laboratory Record" is_enabled="true" order_no="0">
+		<locale name="en" value="Laboratory Record"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Laminate" is_enabled="true" order_no="0">
+		<locale name="en" value="Laminate"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Logbook" is_enabled="true" order_no="0">
+		<locale name="en" value="Logbook"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Logistical Process" is_enabled="true" order_no="0">
+		<locale name="en" value="Logistical Process"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Maintenance Record" is_enabled="true" order_no="0">
+		<locale name="en" value="Maintenance Record"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Manfacturing IOP Specification" is_enabled="true" order_no="0">
+		<locale name="en" value="Manufacturing IOP Specification"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Manufacturing" is_enabled="true" order_no="0">
+		<locale name="en" value="Manufacturing"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Manufacturing Directions" is_enabled="true" order_no="0">
+		<locale name="en" value="Manufacturing Directions"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Manufacturing Process" is_enabled="true" order_no="0">
+		<locale name="en" value="Manufacturing Process"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Master Production and Control Record" is_enabled="true" order_no="0">
+		<locale name="en" value="Master Production and Control Record"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Material" is_enabled="true" order_no="0">
+		<locale name="en" value="Material"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Material Safety Data Sheet" is_enabled="true" order_no="0">
+		<locale name="en" value="Material Safety Data Sheet"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Material Specification" is_enabled="true" order_no="0">
+		<locale name="en" value="Material Specification"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Materials Control" is_enabled="true" order_no="0">
+		<locale name="en" value="Materials Control"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Mechanical" is_enabled="true" order_no="0">
+		<locale name="en" value="Mechanical"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Microbiological" is_enabled="true" order_no="0">
+		<locale name="en" value="Microbiological"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Nonclinical" is_enabled="true" order_no="0">
+		<locale name="en" value="Nonclinical"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Non-Printed Material Specifications" is_enabled="true" order_no="0">
+		<locale name="en" value="Non-Printed Material Specifications"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Non-Rendered Form" is_enabled="true" order_no="0">
+		<locale name="en" value="Non-Rendered Form"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Organizational, Personnel and Training" is_enabled="true" order_no="0">
+		<locale name="en" value="Organizational, Personnel and Training"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Other" is_enabled="true" order_no="0">
+		<locale name="en" value="Other"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Package" is_enabled="true" order_no="0">
+		<locale name="en" value="Package"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Packaging" is_enabled="true" order_no="0">
+		<locale name="en" value="Packaging"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Packaging Directions" is_enabled="true" order_no="0">
+		<locale name="en" value="Packaging Directions"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Packaging Inspection" is_enabled="true" order_no="0">
+		<locale name="en" value="Packaging Inspection"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Packaging IOP" is_enabled="true" order_no="0">
+		<locale name="en" value="Packaging IOP"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Packaging Materials Summary" is_enabled="true" order_no="0">
+		<locale name="en" value="Packaging Materials Summary"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Packaging Specification" is_enabled="true" order_no="0">
+		<locale name="en" value="Packaging Specification"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Pallet" is_enabled="true" order_no="0">
+		<locale name="en" value="Pallet"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Patient Information Leaflet" is_enabled="true" order_no="0">
+		<locale name="en" value="Patient Information Leaflet"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Personnel and Training Record" is_enabled="true" order_no="0">
+		<locale name="en" value="Personnel and Training Record"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Pharmacovigilance" is_enabled="true" order_no="0">
+		<locale name="en" value="Pharmacovigilance"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Piping and Instrumentation Diagram" is_enabled="true" order_no="0">
+		<locale name="en" value="Piping and Instrumentation Diagram"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Policy" is_enabled="true" order_no="0">
+		<locale name="en" value="Policy"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Primary Container" is_enabled="true" order_no="0">
+		<locale name="en" value="Primary Container"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Printed Material Specifications" is_enabled="true" order_no="0">
+		<locale name="en" value="Printed Material Specifications"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Printed Supplies Control Notice" is_enabled="true" order_no="0">
+		<locale name="en" value="Printed Supplies Control Notice"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Process" is_enabled="true" order_no="0">
+		<locale name="en" value="Process"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Process Flow Diagram" is_enabled="true" order_no="0">
+		<locale name="en" value="Process Flow Diagram"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Process Materials" is_enabled="true" order_no="0">
+		<locale name="en" value="Process Materials"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Process Specification" is_enabled="true" order_no="0">
+		<locale name="en" value="Process Specification"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Product Control Specifications" is_enabled="true" order_no="0">
+		<locale name="en" value="Product Control Specifications"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Product Specification" is_enabled="true" order_no="0">
+		<locale name="en" value="Product Specification"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Production and Control Record" is_enabled="true" order_no="0">
+		<locale name="en" value="Production and Control Record"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Production and Control Record Template" is_enabled="true" order_no="0">
+		<locale name="en" value="Production and Control Record Template"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Production Record" is_enabled="true" order_no="0">
+		<locale name="en" value="Production Record"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Project Package" is_enabled="true" order_no="0">
+		<locale name="en" value="Project Package"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Protocol Package" is_enabled="true" order_no="0">
+		<locale name="en" value="Protocol Package"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Punch" is_enabled="true" order_no="0">
+		<locale name="en" value="Punch"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Purchasing Specification" is_enabled="true" order_no="0">
+		<locale name="en" value="Purchasing Specification"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Qualifications" is_enabled="true" order_no="0">
+		<locale name="en" value="Qualifications"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Quality Certificates" is_enabled="true" order_no="0">
+		<locale name="en" value="Quality Certificates"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Quality System" is_enabled="true" order_no="0">
+		<locale name="en" value="Quality System"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Quality System Manual" is_enabled="true" order_no="0">
+		<locale name="en" value="Quality System Manual"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Raw and Manufactured Material Specifications" is_enabled="true" order_no="0">
+		<locale name="en" value="Raw and Manufactured Material Specifications"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Reference Standards" is_enabled="true" order_no="0">
+		<locale name="en" value="Reference Standards"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Regulatory" is_enabled="true" order_no="0">
+		<locale name="en" value="Regulatory"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Release Record" is_enabled="true" order_no="0">
+		<locale name="en" value="Release Record"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Safety Specifications" is_enabled="true" order_no="0">
+		<locale name="en" value="Safety Specifications"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Sample Packaging" is_enabled="true" order_no="0">
+		<locale name="en" value="Sample Packaging"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Sampling Plans - Commodities" is_enabled="true" order_no="0">
+		<locale name="en" value="Sampling Plans - Commodities"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Sampling Plans - Product Control" is_enabled="true" order_no="0">
+		<locale name="en" value="Sampling Plans - Product Control"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Sampling Plans - Raw and Manufactured Materials" is_enabled="true" order_no="0">
+		<locale name="en" value="Sampling Plans - Raw and Manufactured Materials"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Specification Template" is_enabled="true" order_no="0">
+		<locale name="en" value="Specification Template"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Stability" is_enabled="true" order_no="0">
+		<locale name="en" value="Stability"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Stability Protocols - Product Control" is_enabled="true" order_no="0">
+		<locale name="en" value="Stability Protocols - Product Control"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Stability Protocols - Raw and Manufactured Materials" is_enabled="true" order_no="0">
+		<locale name="en" value="Stability Protocols - Raw and Manufactured Materials"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Standard" is_enabled="true" order_no="0">
+		<locale name="en" value="Standard"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Standard Laboratory Practices" is_enabled="true" order_no="0">
+		<locale name="en" value="Standard Laboratory Practices"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Supplier Certificate" is_enabled="true" order_no="0">
+		<locale name="en" value="Supplier Certificate"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Supplier Evaluation" is_enabled="true" order_no="0">
+		<locale name="en" value="Supplier Evaluation"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Supplier Specifications" is_enabled="true" order_no="0">
+		<locale name="en" value="Supplier Specifications"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Supporting Document" is_enabled="true" order_no="0">
+		<locale name="en" value="Supporting Document"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Supporting Process Directions" is_enabled="true" order_no="0">
+		<locale name="en" value="Supporting Process Directions"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Systems" is_enabled="true" order_no="0">
+		<locale name="en" value="Systems"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Technical" is_enabled="true" order_no="0">
+		<locale name="en" value="Technical"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Template" is_enabled="true" order_no="0">
+		<locale name="en" value="Template"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Test Methods" is_enabled="true" order_no="0">
+		<locale name="en" value="Test Methods"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Testing IOP" is_enabled="true" order_no="0">
+		<locale name="en" value="Testing IOP"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Third Party, Contracting and Alliances" is_enabled="true" order_no="0">
+		<locale name="en" value="Third Party, Contracting and Alliances"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Training Module" is_enabled="true" order_no="0">
+		<locale name="en" value="Training Module"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Validation Form" is_enabled="true" order_no="0">
+		<locale name="en" value="Validation Form"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Validation Package" is_enabled="true" order_no="0">
+		<locale name="en" value="Validation Package"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Validation Plan" is_enabled="true" order_no="0">
+		<locale name="en" value="Validation Plan"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Validation Protocol" is_enabled="true" order_no="0">
+		<locale name="en" value="Validation Protocol"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Validation Report" is_enabled="true" order_no="0">
+		<locale name="en" value="Validation Report"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Validation Study" is_enabled="true" order_no="0">
+		<locale name="en" value="Validation Study"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Water" is_enabled="true" order_no="0">
+		<locale name="en" value="Water"/>
+	</d2_dictionary_value>
+</d2_dictionary>

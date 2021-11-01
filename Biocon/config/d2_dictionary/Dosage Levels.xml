@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_dictionary object_name="Dosage Levels" title="List of standard dosage levels that can be selected in non-clinical studies." lock_config="false" parents_config="" application_names="OpenText Life Sciences Submission Storage and Viewing¬OpenText Life Sciences Research and Development Solution¬OpenText Life Sciences eTMF Solution¬OpenText Life Sciences Quality and Manufacturing Solution¬Custom Configurations" security_group="cd_clinical_doc_coordinators" search_group="" version="2" is_versioned="false" manual_order="true" create_view_option="false" is_dql="false" is_dql_cache="false" dql="" label_en="Dosage Level">
+	<d2_dictionary_value object_name="5mg" is_enabled="true" order_no="0">
+		<locale name="en" value="5mg"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="10mg" is_enabled="true" order_no="1">
+		<locale name="en" value="10mg"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="50mg" is_enabled="true" order_no="2">
+		<locale name="en" value="50mg"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="100mg" is_enabled="true" order_no="3">
+		<locale name="en" value="100mg"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="150mg" is_enabled="true" order_no="4">
+		<locale name="en" value="150mg"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="200mg" is_enabled="true" order_no="5">
+		<locale name="en" value="200mg"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="250mg" is_enabled="true" order_no="6">
+		<locale name="en" value="250mg"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="300mg" is_enabled="true" order_no="7">
+		<locale name="en" value="300mg"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="350mg" is_enabled="true" order_no="8">
+		<locale name="en" value="350mg"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="400mg" is_enabled="true" order_no="9">
+		<locale name="en" value="400mg"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="450mg" is_enabled="true" order_no="10">
+		<locale name="en" value="450mg"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="500mg" is_enabled="true" order_no="11">
+		<locale name="en" value="500mg"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="550mg" is_enabled="true" order_no="12">
+		<locale name="en" value="550mg"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="600mg" is_enabled="true" order_no="13">
+		<locale name="en" value="600mg"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="650mg" is_enabled="true" order_no="14">
+		<locale name="en" value="650mg"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="700mg" is_enabled="true" order_no="15">
+		<locale name="en" value="700mg"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="750mg" is_enabled="true" order_no="16">
+		<locale name="en" value="750mg"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="800mg" is_enabled="true" order_no="17">
+		<locale name="en" value="800mg"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="850mg" is_enabled="true" order_no="18">
+		<locale name="en" value="850mg"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="900mg" is_enabled="true" order_no="19">
+		<locale name="en" value="900mg"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="950mg" is_enabled="true" order_no="20">
+		<locale name="en" value="950mg"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="1000mg" is_enabled="true" order_no="21">
+		<locale name="en" value="1000mg"/>
+	</d2_dictionary_value>
+</d2_dictionary>

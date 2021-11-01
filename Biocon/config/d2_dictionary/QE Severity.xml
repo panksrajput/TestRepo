@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_dictionary object_name="QE Severity" title="" lock_config="false" parents_config="" application_names="OpenText Life Sciences Quality and Manufacturing Solution¬Custom Configurations" security_group="biocon_dict_admin" search_group="biocon_dict_admin" version="2" is_versioned="false" manual_order="false" create_view_option="false" is_dql="false" is_dql_cache="false" dql="" label_en="QE Severity">
+	<d2_dictionary_value object_name="Level 1 Event" is_enabled="true" order_no="0">
+		<locale name="en" value="Level 1 Event"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Level 2 Event" is_enabled="true" order_no="0">
+		<locale name="en" value="Level 2 Event"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Level 3 Event" is_enabled="true" order_no="0">
+		<locale name="en" value="Level 3 Event"/>
+	</d2_dictionary_value>
+</d2_dictionary>

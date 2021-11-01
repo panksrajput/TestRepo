@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_dictionary object_name="GMP System Name" title="Dictionary for GMP System Name" lock_config="false" parents_config="" application_names="OpenText Life Sciences Quality and Manufacturing Solution¬OpenText Life Sciences Medical Device Solution¬OpenText Life Sciences Medical Device for Quality and Manufacturing Solution¬Custom Configurations¬Biocon" security_group="biocon_dict_admin" search_group="biocon_dict_admin" version="2" is_versioned="false" manual_order="false" create_view_option="false" is_dql="false" is_dql_cache="false" dql="" label_en="GMP System Name">
+	<d2_dictionary_value object_name="Cleaning Validation System (eResidue Pro)" is_enabled="true" order_no="0">
+		<locale name="en" value="Cleaning Validation System (eResidue Pro)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Document Management System" is_enabled="true" order_no="0">
+		<locale name="en" value="Document Management System"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Empower 3" is_enabled="true" order_no="0">
+		<locale name="en" value="Empower 3"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Lorenz Docubridge" is_enabled="true" order_no="0">
+		<locale name="en" value="Lorenz Docubridge"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Newtronic ICDAS" is_enabled="true" order_no="0">
+		<locale name="en" value="Newtronic ICDAS"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Not Applicable" is_enabled="true" order_no="0">
+		<locale name="en" value="Not Applicable"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="NOVA LIMS (Environmental Monitoring)" is_enabled="true" order_no="0">
+		<locale name="en" value="NOVA LIMS (Environmental Monitoring)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="NOVA LIMS (Stability)" is_enabled="true" order_no="0">
+		<locale name="en" value="NOVA LIMS (Stability)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="OpenLab ECM" is_enabled="true" order_no="0">
+		<locale name="en" value="OpenLab ECM"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Process Control System" is_enabled="true" order_no="0">
+		<locale name="en" value="Process Control System"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="SAP ECC" is_enabled="true" order_no="0">
+		<locale name="en" value="SAP ECC"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="SAP PI 7.50" is_enabled="true" order_no="0">
+		<locale name="en" value="SAP PI 7.50"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Testo (Data Logger Monitoring)" is_enabled="true" order_no="0">
+		<locale name="en" value="Testo (Data Logger Monitoring)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Valgenesis - Validation Life Cycle Management System" is_enabled="true" order_no="0">
+		<locale name="en" value="Valgenesis - Validation Life Cycle Management System"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Validation Learning Management System (SAP Success Factor)" is_enabled="true" order_no="0">
+		<locale name="en" value="Validation Learning Management System (SAP Success Factor)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Waters NuGenesis LMS SDMS (Scientific Data Management System)" is_enabled="true" order_no="0">
+		<locale name="en" value="Waters NuGenesis LMS SDMS (Scientific Data Management System)"/>
+	</d2_dictionary_value>
+</d2_dictionary>

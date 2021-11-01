@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dialog id="PropertiesDialog" buttons_right="false" focus="" height="350" initial_invalid="false" resizable="true" signoff_creation="false" signoff_edit="false" signoff_import="false" signoff_intention_dictionary="" signoff_intention_required="false" width="1000">
+	<content>
+		<fieldset label_en="Reclassify Attached Documents">
+			<text id="object_name" condition_enabled_create="false" condition_enabled_edit="false" condition_enabled_import="false" label_en="Parent Virtual Document"/>
+			<text id="artifact_name" condition_enabled_create="false" condition_enabled_edit="false" condition_enabled_import="false"/>
+			<comment html_content="true" label_en="&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;font color=#646464&gt;OK to revert the reclassified documents attached to &quot;$value(object_name)&quot; to the previous versions, to undo the reclassification? &lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"/>
+		</fieldset>
+	</content>
+	<buttons>
+		<button id="buttonOk" action="validDialog()"/>
+		<button id="buttonCancel" action="cancelDialog()"/>
+	</buttons>
+</dialog>

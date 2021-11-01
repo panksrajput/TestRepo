@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_documentset_switch object_name="cd_controlledprint_profiles">
+	<d2_documentset name="Controlled Documents¬Cat 1 Controlled Documents" config="CP - Cat 1 Document"/>
+	<d2_documentset name="Controlled Documents¬Cat 1 Controlled Documents" config="CP - Cat 1 Document - Imported as Effective"/>
+	<d2_documentset name="Controlled Documents¬Cat 1 Controlled Documents" config="CP - Cat 1 Form"/>
+	<d2_documentset name="Controlled Documents¬Cat 1 Controlled Documents" config="CP - Cat 1 Form - Imported as Effective"/>
+	<d2_documentset name="Controlled Documents¬Cat 1 Controlled Documents" config="Issue Print Profile"/>
+	<d2_documentset name="Controlled Documents¬Cat 1 Controlled Documents" config="Issued Print - Document"/>
+	<d2_documentset name="Controlled Documents¬Cat 1 Controlled Documents" config="Issued Print - Document - Batch Number"/>
+	<d2_documentset name="Controlled Documents¬Cat 1 Controlled Documents" config="Issued Print Profile - Batch Number"/>
+	<d2_documentset name="Controlled Documents¬Cat 2 Controlled Documents" config="CP - Cat 2/3"/>
+	<d2_documentset name="Controlled Documents¬Cat 2 Controlled Documents" config="CP - Cat 2/3 Suppress Overlays"/>
+	<d2_documentset name="Controlled Documents¬Cat 2 Controlled Documents" config="Issue Print Profile"/>
+	<d2_documentset name="Controlled Documents¬Cat 2 Controlled Documents" config="Issued Print - Document"/>
+	<d2_documentset name="Controlled Documents¬Cat 2 Controlled Documents" config="Issued Print - Document - Batch Number"/>
+	<d2_documentset name="Controlled Documents¬Cat 2 Controlled Documents" config="Issued Print Profile - Batch Number"/>
+	<d2_documentset name="Controlled Documents¬Cat 3 Controlled Documents" config="Issue Print Profile"/>
+	<d2_documentset name="Controlled Documents¬Cat 3 Controlled Documents" config="Issued Print Profile - Batch Number"/>
+	<switch_defaults/>
+</d2_documentset_switch>

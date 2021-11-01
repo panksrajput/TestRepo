@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dialog id="PropertiesDialog" buttons_right="false" focus="" height="680" initial_invalid="true" resizable="true" signoff_creation="false" signoff_edit="false" signoff_import="false" signoff_intention_dictionary="" signoff_intention_required="false" width="800">
+	<content>
+		<fieldset label_en="Regulatory-Admin Registration Form">
+			<tabs>
+				<tab label_en="Regulatory Application Info">
+					<combo id="dv_device_family" assistance_dql="SELECT DISTINCT dv_device_family FROM cd_product_info WHERE a_status != 'Inactive' AND dv_device_family != ' ' ORDER BY 1" assistance_type="dql" asynchronous="false" autoselect_single="true" condition_enabled_edit="false" condition_required_create="true" condition_required_edit="true" condition_required_import="true"/>
+					<combo id="dv_device_subfamily" assistance_dql="SELECT DISTINCT dv_device_subfamily FROM cd_product_info WHERE a_status != 'Inactive' AND dv_device_family = '$value(dv_device_family)' AND dv_device_subfamily != ' ' ORDER BY 1" assistance_type="dql" asynchronous="true" autoselect_single="true" condition_enabled_edit="false" condition_required_create="true" condition_required_edit="true" condition_required_import="true" reinit_attributes="clinical_trial_id"/>
+					<list id="dv_device_code" assistance_dql="SELECT DISTINCT dv_device_code FROM cd_product_info WHERE a_status != 'Inactive' AND dv_device_family = '$value(dv_device_family)' AND dv_device_subfamily = '$value(dv_device_subfamily)' AND ANY dv_device_code != ' ' ORDER BY 1 enable (ROW_BASED)" assistance_type="dql" asynchronous="true" condition_enabled_edit="false" condition_required_create="true" condition_required_edit="true" condition_required_import="true" rows="6" sorted="true"/>
+					<list id="dv_project_name" assistance_dictionary="Device Project Name" assistance_dictionary_alias="auto" assistance_type="dictionary" asynchronous="false" condition_enabled_edit="false" condition_required_create="true" condition_required_edit="true" condition_required_import="true" rows="6" sorted="true"/>
+					<text id="application_description" condition_enabled_edit="false" condition_required_create="true" condition_required_edit="true" condition_required_import="true" condition_validation="^\S[^&lt;&gt;*/|\\?:]*\S$" label_en="Application Description" validation_message_en="Special characters, leading and trailing spaces must not be used."/>
+					<text id="application_num" condition_enabled_edit="false" condition_required_create="true" condition_required_edit="true" condition_required_import="true" label_en="Application Number"/>
+					<combo id="application_status" assistance_dictionary="Application Status" assistance_dictionary_alias="en" assistance_type="dictionary" asynchronous="false" autoselect_single="true" condition_required_create="true" condition_required_edit="true" condition_required_import="true" label_en="Application Status"/>
+					<separator/>
+					<combo id="region" assistance_dictionary="Geographic Regions" assistance_dictionary_alias="en" assistance_taxo_attrib_after="country_code" assistance_taxonomy="Medical Device Regulatory-Admin Classification by Region" assistance_type="taxonomy" asynchronous="false" autoselect_single="true" condition_enabled_edit="false" condition_required_create="true" condition_required_edit="true" condition_required_import="true"/>
+					<combo id="country_code" assistance_dictionary="Submission Country" assistance_dictionary_alias="en" assistance_taxo_attrib_after="health_authority" assistance_taxonomy="Medical Device Regulatory-Admin Classification by Region" assistance_type="taxonomy" asynchronous="false" autoselect_single="true" condition_enabled_edit="false" condition_required_create="true" condition_required_edit="true" condition_required_import="true" label_en="Submission Country" reinit_attributes="submission_type1"/>
+					<combo id="health_authority" advancedView_visible="false" assistance_dictionary="Health Authorities" assistance_dictionary_alias="en" assistance_taxonomy="Medical Device Regulatory-Admin Classification by Region" assistance_type="taxonomy" asynchronous="false" autoselect_single="true" condition_enabled_edit="false" condition_required_create="true" condition_required_edit="true" condition_required_import="true" condition_visible="((getValue(region).notEquals('EU'))&amp;&amp;(getValue(region).notEquals('')))" label_en="Health Authority"/>
+					<combo id="dv_notified_body" advancedView_visible="false" assistance_dql="select v.alias_value, v.locale_value from  d2_dictionary d , d2_dictionary_value v where v.object_name like '%$value(country_code)' and d.object_name = v.dictionary_name and d.object_name ='Medical Device Notified Bodies' and d.alias_name= 'Notified Body Code' and v.i_position = d.i_position ORDER BY locale_value enable (ROW_BASED)" assistance_type="dql" asynchronous="false" autoselect_single="true" condition_enabled_edit="false" condition_required_create="true" condition_required_edit="true" condition_required_import="true" condition_visible="(getValue(region).equals('EU'))"/>
+					<combo id="application_type" assistance_dictionary="Medical Device Application Type" assistance_dictionary_alias="auto" assistance_type="dictionary" asynchronous="false" autoselect_single="true" condition_enabled_edit="false" condition_required_create="true" condition_required_edit="true" condition_required_import="true" label_en="Application Type"/>
+					<comment condition_visible_create="false" condition_visible_import="false" font_color="#646464" html_content="true" label_en="&lt;table cellpacing=0&gt;&lt;tr&gt;&lt;td&gt;&lt;font color=#646464&gt;&lt;strong&gt;Note: &lt;/strong&gt;Changes to these settings will not affect existing documents - they will only apply to new documents.&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"/>
+				</tab>
+				<tab label_en="Access Control">
+					<tabs>
+						<tab label_en="Application Access Control">
+							<list id="form_managers" assistance_dql="select groups_names from dm_group where any i_supergroups_names IN ('cd_md_regulatory_managers') union select users_names from dm_group where any i_supergroups_names IN ('cd_md_regulatory_managers') union select group_name from dm_group where group_name IN ('cd_md_regulatory_managers')" assistance_type="dql" asynchronous="false" condition_required_create="true" condition_required_edit="true" label_en="Application Managers" rows="4" sorted="true"/>
+							<comment font_color="#000000" html_content="true" label_en="&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;font color=#646464&gt;These users will be responsible for managing properties in this form.&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"/>
+							<list id="form_users" assistance_dql="select groups_names from dm_group where any i_supergroups_names IN ('cd_md_regulatory') union select users_names from dm_group where any i_supergroups_names IN ('cd_md_regulatory') union select group_name from dm_group where group_name IN ('cd_md_regulatory')" assistance_type="dql" asynchronous="false" label_en="Application Users" sorted="true"/>
+							<comment font_color="#000000" html_content="true" label_en="&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;font color=#646464&gt;These users will be able to read this form and create documents related to this Regulatory Application, and assign documents to this Regulatory Application.&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"/>
+						</tab>
+						<tab label_en="Submission Access Control">
+							<list id="submission_managers" assistance_dql="select groups_names from dm_group where any i_supergroups_names IN ('cd_md_submission_mgrs') union select users_names from dm_group where any i_supergroups_names IN ('cd_md_submission_mgrs') union select group_name from dm_group where group_name IN ('cd_md_submission_mgrs')" assistance_type="dql" asynchronous="false" condition_required_create="true" condition_required_edit="true" label_en="Submission Managers" rows="4" sorted="true"/>
+							<comment html_content="true" label_en="&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;font color=#646464&gt;These users can read and manage access to imported submissions of this application by default.&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"/>
+							<comment html_content="true" label_en="&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;font color=#646464&gt;Access to individual submissions can be restricted via the Submission Registration Form settings, where necessary.&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"/>
+							<list id="submission_users" assistance_dql="select groups_names from dm_group where any i_supergroups_names IN ('cd_md_submission_users') union select users_names from dm_group where any i_supergroups_names IN ('cd_md_submission_users') union select group_name from dm_group where group_name IN ('cd_md_submission_users')" assistance_type="dql" asynchronous="false" rows="8" sorted="true"/>
+							<comment html_content="true" label_en="&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;font color=#646464&gt;These users can read imported submission folders and documents for this application by default.&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"/>
+						</tab>
+					</tabs>
+				</tab>
+				<tab label_en="Default Users / Groups">
+					<tabs>
+						<tab label_en="Document Coordinators">
+							<list id="doc_coordinators" assistance_dql="select groups_names from dm_group where any i_supergroups_names IN ('cd_md_regulatory_doc_coordinators') union select users_names from dm_group where any i_supergroups_names IN ('cd_md_regulatory_doc_coordinators') union select group_name from dm_group where group_name IN ('cd_md_regulatory_doc_coordinators')" assistance_type="dql" asynchronous="false" label_en="Document Coordinators" rows="4" sorted="true"/>
+							<comment font_color="#646464" html_content="true" label_en="&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;font color=#646464&gt;These users have the ability to manually change the status of documents created in relation to this application.&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"/>
+						</tab>
+						<tab advancedView_visible="false" label_en="Reviewers">
+							<list id="reviewers" advancedView_visible="false" assistance_dql="select groups_names from dm_group where any i_supergroups_names IN ('cd_md_regulatory_doc_reviewers') union select users_names from dm_group where any i_supergroups_names IN ('cd_md_regulatory_doc_reviewers') union select group_name from dm_group where group_name IN ('cd_md_regulatory_doc_reviewers')" assistance_type="dql" asynchronous="false" label_en="Default Document Reviewers" rows="4" sorted="true"/>
+							<comment font_color="#646464" html_content="true" label_en="&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;font color=#646464&gt;These users will be prepopulated as Reviewers and/or co-Authors on Collaborative and Review workflows for documents created in relation to this Regulatory Application.&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"/>
+						</tab>
+						<tab advancedView_visible="false" label_en="Approvers">
+							<list id="approvers" assistance_dql="select groups_names from dm_group where any i_supergroups_names IN ('cd_md_regulatory_doc_approvers') union select users_names from dm_group where any i_supergroups_names IN ('cd_md_regulatory_doc_approvers') union select group_name from dm_group where group_name IN ('cd_md_regulatory_doc_approvers')" assistance_type="dql" asynchronous="false" label_en="Default Document Approvers" rows="4" sorted="true"/>
+							<comment font_color="#646464" html_content="true" label_en="&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;font color=#646464&gt;These users will be prepopulated as Approvers on workflows for documents created in relation to this Regulatory Application.&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"/>
+						</tab>
+						<tab label_en="Readers">
+							<list id="readers" assistance_dql="select groups_names from dm_group where any i_supergroups_names IN ('cd_md_regulatory_doc_readers') union select users_names from dm_group where any i_supergroups_names IN ('cd_md_regulatory_doc_readers') union select group_name from dm_group where group_name IN ('cd_md_regulatory_doc_readers')" assistance_type="dql" asynchronous="false" label_en="Default Document Readers" rows="4" sorted="true"/>
+							<comment font_color="#646464" html_content="true" label_en="&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;font color=#646464&gt;These users will have Read Only Access to finalized documents created in relation to this Regulatory Application.&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"/>
+						</tab>
+						<tab label_en="Auditors">
+							<list id="auditors" assistance_dql="select groups_names from dm_group where any i_supergroups_names IN ('cd_md_regulatory_doc_auditors') union select users_names from dm_group where any i_supergroups_names IN ('cd_md_regulatory_doc_auditors') union select group_name from dm_group where group_name IN ('cd_md_regulatory_doc_auditors')" assistance_type="dql" asynchronous="false" rows="4" sorted="true"/>
+							<comment html_content="true" label_en="&lt;table cellspacing=0&gt;&lt;tr&gt;&lt;td&gt;&lt;font color=#646464&gt;These users are responsible for carrying out internal audits on documents related to this device.&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"/>
+						</tab>
+					</tabs>
+					<comment condition_visible_create="false" condition_visible_import="false" font_color="#646464" html_content="true" label_en="&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;font color=#646464&gt;&lt;strong&gt;Note: &lt;/strong&gt;Changes to these settings will not affect existing documents - they will only apply to new documents.&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"/>
+				</tab>
+				<tab condition_visible_create="false" condition_visible_import="false" label_en="Form Info">
+					<label id="object_name"/>
+					<label id="domain" condition_visible_create="false" condition_visible_edit="false" condition_visible_import="false"/>
+					<label id="r_object_type"/>
+					<label id="r_version_label"/>
+					<label id="a_status"/>
+					<label id="owner_name"/>
+					<label id="a_content_type"/>
+					<label id="r_full_content_size"/>
+					<separator/>
+					<columns count="2">
+						<label id="r_creator_name"/>
+						<date id="r_creation_date" condition_enabled_create="false" condition_enabled_edit="false" condition_enabled_import="false"/>
+						<label id="r_modifier"/>
+						<date id="r_modify_date" condition_enabled_create="false" condition_enabled_edit="false" condition_enabled_import="false"/>
+						<label id="r_lock_owner"/>
+						<date id="r_lock_date" condition_enabled_create="false" condition_enabled_edit="false" condition_enabled_import="false"/>
+					</columns>
+				</tab>
+			</tabs>
+		</fieldset>
+	</content>
+	<buttons>
+		<button id="buttonOk" action="validDialog()"/>
+		<button id="buttonCancel" action="cancelDialog()"/>
+	</buttons>
+</dialog>

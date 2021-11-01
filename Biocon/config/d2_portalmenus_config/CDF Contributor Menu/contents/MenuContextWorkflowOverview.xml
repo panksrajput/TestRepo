@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<delta>
+	<modify id="menuContextAbortWorkflow">
+		<delete class="com.emc.d2fs.dctm.ui.conditions.workflows.IsWorkflowSupervisor"/>
+	</modify>
+	<modify id="menuContextUpdatePerformer">
+		<replace class="com.emc.d2fs.dctm.ui.conditions.workflows.IsWorkflowSupervisor">
+			<condition all_valid="true" class="com.emc.d2fs.dctm.ui.conditions.objects.Predicate" equals="true" showifinvalid="true" value="dm_docbase_config where exists (select distinct d.r_object_id from dm_relation r, dm_workflow wf, dmi_package p, cd_controlled_doc(all) d LEFT OUTER JOIN lss_sec_shared_attribute s on s.r_object_id=d.security_shared_id where r.parent_id = '$value(r_object_id)' and r.relation_name = 'D2_WF_TRACKER_WORKFLOW' and wf.r_object_id = r.child_id and p.r_workflow_id = r.child_id and any p.r_component_id = d.r_object_id and (('$USER' = wf.supervisor_name) or ANY d.wf_doc_coordinators = '$USER' or any d.wf_doc_coordinators IN (select group_name from dm_group where ANY i_all_users_names = '$USER') or ( ANY d.doc_coordinators ='$USER') or any d.doc_coordinators in (SELECT group_name FROM dm_group WHERE any i_all_users_names = '$USER') or (any s.doc_coordinators IN (select group_name from dm_group where ANY i_all_users_names = '$USER') or any s.doc_coordinators = '$USER')))"/>
+		</replace>
+	</modify>
+</delta>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_taxonomy object_name="GMP Training Role by Applicable Area" is_versioned="false" title="GMP Training Role by Applicable Area" lock_config="false" parents_config="" application_names="OpenText Life Sciences Quality and Manufacturing Solution¬Custom Configurations¬Biocon" security_group="admingroup">
+	<level position="0" name="GMP Applicable Areas"/>
+	<level position="1" name="GMP Training Roles"/>
+</d2_taxonomy>

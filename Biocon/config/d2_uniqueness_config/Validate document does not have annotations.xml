@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_uniqueness_config new_format="true">
+	<object_name value="Validate document does not have annotations"/>
+	<title value="Ensures a document does not have outstanding PDF annotations or native annotations to be taken into account before it is made 'Effective'."/>
+	<subject value=""/>
+	<authors/>
+	<keywords/>
+	<a_status value=""/>
+	<a_content_type value=""/>
+	<log_entry value=""/>
+	<language_code value=""/>
+	<module_type value="d2_uniqueness_config"/>
+	<application_names>
+		<repeating value="OpenText Life Sciences Medical Device for Quality and Manufacturing Solution"/>
+		<repeating value="OpenText Life Sciences Submission Storage and Viewing"/>
+		<repeating value="OpenText Life Sciences Research and Development Solution"/>
+		<repeating value="OpenText Life Sciences eTMF Solution"/>
+		<repeating value="OpenText Life Sciences Quality and Manufacturing Solution"/>
+	</application_names>
+	<lock_config value="F"/>
+	<parents_config/>
+	<warning_message>
+		<repeating value="This document still has annotations on it (see ''Relations'' tab for details). Before making the document ''Effective/Final'', delete the annotations, or revise the document to take account of the annotation comments and resubmit it for review / approval as appropriate. (''Effective/Final'' versions of documents should not contain annotations, as these are not part of the approved content.)"/>
+	</warning_message>
+	<warning_locale>
+		<repeating value="en"/>
+	</warning_locale>
+	<warning_position>
+		<repeating value="0"/>
+	</warning_position>
+	<qualification>
+		<repeating value="dm_dbo.single_result_row_view where exists (select parent_id from dm_relation where parent_id = '$value(r_object_id)' and (relation_name = 'DM_ANNOTATE' or relation_name = 'D2_ANNOTATE'))"/>
+	</qualification>
+</d2_uniqueness_config>

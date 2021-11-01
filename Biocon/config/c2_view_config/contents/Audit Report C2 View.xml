@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<C2>
+	<merge_annotations>false</merge_annotations>
+	<options>
+		<version>0</version>
+		<fullCompression>false</fullCompression>
+		<viewerPreferences>
+			<pageLayout>PageLayoutSinglePage</pageLayout>
+			<pageMode>PageModeUseNone</pageMode>
+			<onStartPage>AuditReport</onStartPage>
+			<fitWindow>true</fitWindow>
+			<centerWindow>false</centerWindow>
+			<fullscreen>false</fullscreen>
+			<hideToolbar>false</hideToolbar>
+			<hideMenubar>false</hideMenubar>
+			<hideWindowUI>false</hideWindowUI>
+		</viewerPreferences>
+		<encryption>
+			<strength/>
+			<userPassword/>
+			<ownerPassword/>
+		</encryption>
+		<permissions>
+			<AllowPrinting>true</AllowPrinting>
+			<AllowModifyContents>false</AllowModifyContents>
+			<AllowCopy>false</AllowCopy>
+			<AllowModifyAnnotations>false</AllowModifyAnnotations>
+		</permissions>
+		<meta>
+			<title/>
+			<subject/>
+			<author/>
+			<keywords/>
+		</meta>
+	</options>
+	<content>
+		<xsl>
+			<id>Audit Report</id>
+			<title/>
+			<page_number>0</page_number>
+			<includeBookmarks>true</includeBookmarks>
+			<file>AuditReport.xsl</file>
+			<param_PageTitle>Audit Report</param_PageTitle>
+			<param_event_name>event_name</param_event_name>
+			<param_user_name>intiating user</param_user_name>
+			<param_time_stamp>time_stamp</param_time_stamp>
+			<param_string_1>string_1</param_string_1>
+			<param_string_2>string_2</param_string_2>
+			<param_string_3>string_3</param_string_3>
+			<param_string_4>string_4</param_string_4>
+			<param_string_5>string_5</param_string_5>
+			<param_attribute_list>attribute_list</param_attribute_list>
+			<param_version_label>version_label</param_version_label>
+		</xsl>
+	</content>
+	<merge>
+		<core>
+			<id>core</id>
+			<title/>
+		</core>
+	</merge>
+	<stamp/>
+</C2>

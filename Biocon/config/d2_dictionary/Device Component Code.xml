@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_dictionary object_name="Device Component Code" title="Component Codes used for Medical Devices" lock_config="false" parents_config="" application_names="OpenText Life Sciences Research and Development Solution¬OpenText Life Sciences Submission Storage and Viewing¬OpenText Life Sciences Medical Device for Research and Development Solution¬OpenText Life Sciences Medical Device Solution¬OpenText Life Sciences Quality and Manufacturing Solution¬Custom Configurations" security_group="admingroup" search_group="admingroup" version="2" is_versioned="false" manual_order="false" create_view_option="false" is_dql="false" is_dql_cache="false" dql="" label_en="Device Component Code">
+	<d2_dictionary_value object_name="Component Code1" is_enabled="true" order_no="0">
+		<locale name="en" value="Component Code1"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Component Code2" is_enabled="true" order_no="0">
+		<locale name="en" value="Component Code2"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Component Code3" is_enabled="true" order_no="0">
+		<locale name="en" value="Component Code3"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Component Code4" is_enabled="true" order_no="0">
+		<locale name="en" value="Component Code4"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Component Code5" is_enabled="true" order_no="0">
+		<locale name="en" value="Component Code5"/>
+	</d2_dictionary_value>
+</d2_dictionary>

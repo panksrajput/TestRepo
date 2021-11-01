@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_dictionary object_name="System Parameters" title="Enables distributed / multi-threaded server method processing." lock_config="false" parents_config="" application_names="OpenText Life Sciences Medical Device for Quality and Manufacturing Solution¬OpenText Life Sciences Submission Storage and Viewing¬OpenText Life Sciences eTMF Solution¬OpenText Life Sciences Quality and Manufacturing Solution¬OpenText Life Sciences Research and Development Solution" security_group="admingroup" search_group="admingroup" version="2" is_versioned="false" manual_order="false" create_view_option="false" is_dql="false" is_dql_cache="false" dql="" label_en="">
+	<d2_dictionary_value object_name="content_servers" is_enabled="true" order_no="0">
+		<alias name="Value" value="bioconqmdev"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="controlled_print_server_base_url" is_enabled="true" order_no="0">
+		<alias name="Value" value="https://bldmsdev.biocon.com"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="controlled_print_stamp" is_enabled="true" order_no="0">
+		<alias name="Value" value="overlay"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="controlled_print_statuses" is_enabled="true" order_no="0">
+		<alias name="Value" value="Approved,Effective"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="d2_core_method_trace_level" is_enabled="true" order_no="0">
+		<alias name="Value" value="0"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="d2_url" is_enabled="true" order_no="0">
+		<alias name="Value" value="https://bldmsdev.biocon.com/D2"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="distributed_processing_threshold" is_enabled="true" order_no="0">
+		<alias name="Value" value="100"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="document_training_historic_folder_path" is_enabled="true" order_no="0">
+		<alias name="Value" value="/Document Training/Historic"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="document_training_statuses" is_enabled="true" order_no="0">
+		<alias name="Value" value="Release Pending,Effective"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="issued_print_allow_self_approval" is_enabled="true" order_no="0">
+		<alias name="Value" value="false"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="issued_print_statuses" is_enabled="true" order_no="0">
+		<alias name="Value" value="Approved,Effective"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="max_threads" is_enabled="true" order_no="0">
+		<alias name="Value" value="5"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="shared_folder" is_enabled="true" order_no="0">
+		<alias name="Value" value=""/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="source_object_pdf_docinfo_field" is_enabled="true" order_no="0">
+		<alias name="Value" value=""/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="source_object_pdf_multipleIDs_delimiter" is_enabled="true" order_no="0">
+		<alias name="Value" value=""/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="tbo_pdf_fuse_format" is_enabled="true" order_no="0">
+		<alias name="Value" value="pdf_signed"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="use_private_sessions" is_enabled="true" order_no="0">
+		<alias name="Value" value="true"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="xmlviewer_url" is_enabled="true" order_no="0">
+		<alias name="Value" value="https://bldmsdev.biocon.com"/>
+	</d2_dictionary_value>
+</d2_dictionary>

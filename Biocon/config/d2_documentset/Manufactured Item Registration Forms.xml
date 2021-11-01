@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_documentset new_format="true">
+	<object_name value="Manufactured Item Registration Forms"/>
+	<title value=""/>
+	<subject value=""/>
+	<authors/>
+	<keywords/>
+	<a_status value=""/>
+	<a_content_type value=""/>
+	<log_entry value=""/>
+	<language_code value=""/>
+	<dql_where value=""/>
+	<order_no value="6"/>
+	<dql_from>
+		<repeating value="cd_manuf_item_info"/>
+	</dql_from>
+	<group_names/>
+	<application_names>
+		<repeating value="OpenText Life Sciences Quality and Manufacturing Solution"/>
+	</application_names>
+	<user_agent value=""/>
+	<parent_names>
+		<repeating value="Registration Forms"/>
+	</parent_names>
+	<parent_order_no>
+		<repeating value="15"/>
+	</parent_order_no>
+	<lock_config value="F"/>
+	<parents_config/>
+</d2_documentset>

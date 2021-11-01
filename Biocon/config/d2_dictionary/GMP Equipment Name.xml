@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_dictionary object_name="GMP Equipment Name" title="Dictionary for GMP Equipment Name" lock_config="false" parents_config="" application_names="OpenText Life Sciences Quality and Manufacturing Solution¬OpenText Life Sciences Medical Device Solution¬OpenText Life Sciences Medical Device for Quality and Manufacturing Solution¬Custom Configurations" security_group="admingroup" search_group="" version="2" is_versioned="false" manual_order="false" create_view_option="false" is_dql="false" is_dql_cache="false" dql="" label_en="GMP Equipment Name">
+	<d2_dictionary_value object_name="Ackley CP-200" is_enabled="true" order_no="0">
+		<locale name="en" value="Ackley CP-200"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Ackley TP-500" is_enabled="true" order_no="0">
+		<locale name="en" value="Ackley TP-500"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Capsuline Pro600" is_enabled="true" order_no="0">
+		<locale name="en" value="Capsuline Pro/600"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="KDP-1" is_enabled="true" order_no="0">
+		<locale name="en" value="KDP-1"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Kinex 700" is_enabled="true" order_no="0">
+		<locale name="en" value="Kinex 700"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Model ALP-16" is_enabled="true" order_no="0">
+		<locale name="en" value="Model ALP-16"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Pharma Chem" is_enabled="true" order_no="0">
+		<locale name="en" value="Pharma Chem"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="PLB-32" is_enabled="true" order_no="0">
+		<locale name="en" value="PLB-32"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Primera Label" is_enabled="true" order_no="0">
+		<locale name="en" value="Primera Label"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="ProPack B9X12" is_enabled="true" order_no="0">
+		<locale name="en" value="ProPack B9X12"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="ROTA M400" is_enabled="true" order_no="0">
+		<locale name="en" value="ROTA M400"/>
+	</d2_dictionary_value>
+</d2_dictionary>

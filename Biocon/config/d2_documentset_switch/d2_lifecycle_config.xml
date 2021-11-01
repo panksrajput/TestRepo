@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_documentset_switch object_name="d2_lifecycle_config">
+	<d2_documentset name="Registration Forms¬Medical Device Registration Forms" config="Medical Device Lifecycle Model"/>
+	<d2_documentset name="Registration Forms¬Product Registration Forms" config="Product Lifecycle Model"/>
+	<d2_documentset name="Registration Forms¬Product Registration Forms" config="Product Protection"/>
+	<d2_documentset name="Registration Forms¬Medical Device Regulatory Submission Registration Form Context" config="Medical Device Regulatory Submission Registration Form Lifecycle"/>
+	<d2_documentset name="Registration Forms¬Medical Device Regulatory-Admin Registration Forms" config="Medical Device Regulatory-Admin Lifecycle Model"/>
+	<d2_documentset name="Registration Forms¬Manufactured Item Registration Forms¬Item Registration Forms for Finished Goods without item code" config="Manufactured Item Lifecycle Model"/>
+	<d2_documentset name="Registration Forms¬Manufactured Item Registration Forms¬Item Registration Forms for Finished Goods" config="Manufactured Item Lifecycle Model"/>
+	<d2_documentset name="Registration Forms¬Manufactured Item Registration Forms¬Item Registration Forms for Semi-finished Goods without item code" config="Manufactured Item Lifecycle Model"/>
+	<d2_documentset name="Registration Forms¬Manufactured Item Registration Forms¬Item Registration Forms for Semi-finished Goods" config="Manufactured Item Lifecycle Model"/>
+	<d2_documentset name="Registration Forms¬Manufactured Item Registration Forms¬Item Registration Forms for Active Ingredients without item code" config="Manufactured Item Lifecycle Model"/>
+	<d2_documentset name="Registration Forms¬Manufactured Item Registration Forms¬Item Registration Forms for Active Ingredients" config="Manufactured Item Lifecycle Model"/>
+	<d2_documentset name="Training Records" config="Training Record Lifecycle"/>
+	<d2_documentset name="GMP Documents¬GMP Group Directive" config="Cat 1-3 Collaborative Editing Lifecycle Model"/>
+	<d2_documentset name="GMP Documents¬GMP Group Directive" config="QM Cat 1 Controlled Document Lifecycle"/>
+	<d2_documentset name="GMP Documents¬GMP Group Drawings" config="Cat 1-3 Collaborative Editing Lifecycle Model"/>
+	<d2_documentset name="GMP Documents¬GMP Group Drawings" config="QM Cat 3 Controlled Document Lifecycle"/>
+	<d2_documentset name="GMP Documents¬GMP Group Executed Manufacturing" config="Cat 1-3 Collaborative Editing Lifecycle Model"/>
+	<d2_documentset name="GMP Documents¬GMP Group Executed Manufacturing" config="QM Cat 3 Controlled Document Lifecycle"/>
+	<d2_documentset name="GMP Documents¬GMP Group Executed Validation" config="Cat 1-3 Collaborative Editing Lifecycle Model"/>
+	<d2_documentset name="GMP Documents¬GMP Group Executed Validation" config="QM Cat 3 Controlled Document Lifecycle"/>
+	<d2_documentset name="GMP Documents¬GMP Group Facility Records and Certificates" config="Cat 1-3 Collaborative Editing Lifecycle Model"/>
+	<d2_documentset name="GMP Documents¬GMP Group Facility Records and Certificates" config="QM Cat 3 Controlled Document Lifecycle"/>
+	<d2_documentset name="GMP Documents¬GMP Group Form" config="Cat 1-3 Collaborative Editing Lifecycle Model"/>
+	<d2_documentset name="GMP Documents¬GMP Group Form" config="QM Cat 1 Controlled Document Lifecycle"/>
+	<d2_documentset name="GMP Documents¬GMP Group Guideline" config="Cat 1-3 Collaborative Editing Lifecycle Model"/>
+	<d2_documentset name="GMP Documents¬GMP Group Guideline" config="QM Cat 1 Controlled Document Lifecycle"/>
+	<d2_documentset name="GMP Documents¬GMP Group Program" config="Cat 1-3 Collaborative Editing Lifecycle Model"/>
+	<d2_documentset name="GMP Documents¬GMP Group Program" config="QM Cat 1 Controlled Document Lifecycle"/>
+	<d2_documentset name="GMP Documents¬GMP Group Manuals" config="Cat 1-3 Collaborative Editing Lifecycle Model"/>
+	<d2_documentset name="GMP Documents¬GMP Group Manuals" config="QM Cat 3 Controlled Document Lifecycle"/>
+	<d2_documentset name="GMP Documents¬GMP Group Master Manufacturing" config="Cat 1-3 Collaborative Editing Lifecycle Model"/>
+	<d2_documentset name="GMP Documents¬GMP Group Master Manufacturing" config="QM Cat 1 Controlled Document Lifecycle"/>
+	<d2_documentset name="GMP Documents¬GMP Group Master Validation" config="Cat 1-3 Collaborative Editing Lifecycle Model"/>
+	<d2_documentset name="GMP Documents¬GMP Group Master Validation" config="QM Cat 2 Controlled Document Lifecycle"/>
+	<d2_documentset name="GMP Documents¬GMP Group Method" config="Cat 1-3 Collaborative Editing Lifecycle Model"/>
+	<d2_documentset name="GMP Documents¬GMP Group Method" config="QM Cat 1 Controlled Document Lifecycle"/>
+	<d2_documentset name="GMP Documents¬GMP Group Packaging and Labeling" config="Cat 1-3 Collaborative Editing Lifecycle Model"/>
+	<d2_documentset name="GMP Documents¬GMP Group Packaging and Labeling" config="QM Cat 1 Controlled Document Lifecycle"/>
+	<d2_documentset name="GMP Documents¬GMP Group Policy" config="Cat 1-3 Collaborative Editing Lifecycle Model"/>
+	<d2_documentset name="GMP Documents¬GMP Group Policy" config="QM Cat 1 Controlled Document Lifecycle"/>
+	<d2_documentset name="GMP Documents¬GMP Group Project Documents" config="Cat 1-3 Collaborative Editing Lifecycle Model"/>
+	<d2_documentset name="GMP Documents¬GMP Group Project Documents" config="QM Cat 3 Controlled Document Lifecycle"/>
+	<d2_documentset name="GMP Documents¬GMP Group Quality Documents" config="Cat 1-3 Collaborative Editing Lifecycle Model"/>
+	<d2_documentset name="GMP Documents¬GMP Group Quality Documents" config="QM Cat 3 Controlled Document Lifecycle"/>
+	<d2_documentset name="GMP Documents¬GMP Group Quality Manual" config="Cat 1-3 Collaborative Editing Lifecycle Model"/>
+	<d2_documentset name="GMP Documents¬GMP Group Quality Manual" config="QM Cat 1 Controlled Document Lifecycle"/>
+	<d2_documentset name="GMP Documents¬GMP Group Records and Certificates" config="Cat 1-3 Collaborative Editing Lifecycle Model"/>
+	<d2_documentset name="GMP Documents¬GMP Group Records and Certificates" config="QM Cat 3 Controlled Document Lifecycle"/>
+	<d2_documentset name="GMP Documents¬GMP Group SOP" config="Cat 1-3 Collaborative Editing Lifecycle Model"/>
+	<d2_documentset name="GMP Documents¬GMP Group SOP" config="QM Cat 1 Controlled Document Lifecycle"/>
+	<d2_documentset name="GMP Documents¬GMP Group Specification" config="Cat 1-3 Collaborative Editing Lifecycle Model"/>
+	<d2_documentset name="GMP Documents¬GMP Group Specification" config="QM Cat 1 Controlled Document Lifecycle"/>
+	<d2_documentset name="GMP Documents¬GMP Group Training" config="Cat 1-3 Collaborative Editing Lifecycle Model"/>
+	<d2_documentset name="GMP Documents¬GMP Group Training" config="QM Cat 3 Controlled Document Lifecycle"/>
+	<d2_documentset name="GMP Documents¬GMP Group Work Instruction" config="Cat 1-3 Collaborative Editing Lifecycle Model"/>
+	<d2_documentset name="GMP Documents¬GMP Group Work Instruction" config="QM Cat 1 Controlled Document Lifecycle"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group External Audit" config="Cat 1-3 Collaborative Editing Lifecycle Model"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group External Audit" config="QM Cat 3 Controlled Document Lifecycle"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Internal Audit¬Bio GMP QMA Group Internal Audit - Audit Report" config="Cat 1-3 Collaborative Editing Lifecycle Model"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Internal Audit¬Bio GMP QMA Group Internal Audit - Audit Report" config="QM Cat 2 Controlled Document Lifecycle"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Internal Audit¬Bio GMP QMA Group Internal Audit - Audit Supporting Documents" config="Cat 1-3 Collaborative Editing Lifecycle Model"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Internal Audit¬Bio GMP QMA Group Internal Audit - Audit Supporting Documents" config="QM Cat 2 Controlled Document Lifecycle"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Internal Audit¬Bio GMP QMA Group Internal Audit - Form" config="Cat 1-3 Collaborative Editing Lifecycle Model"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Internal Audit¬Bio GMP QMA Group Internal Audit - Form" config="QM Cat 3 Controlled Document Lifecycle"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Investigations" config="Cat 1-3 Collaborative Editing Lifecycle Model"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Investigations" config="QM Cat 2 Controlled Document Lifecycle"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Quality Events" config="Cat 1-3 Collaborative Editing Lifecycle Model"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Quality Events" config="QM Cat 2 Controlled Document Lifecycle"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Quality Management¬GMP QMA Subgroup QM Customer Management" config="Cat 1-3 Collaborative Editing Lifecycle Model"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Quality Management¬GMP QMA Subgroup QM Customer Management" config="QM Cat 3 Controlled Document Lifecycle"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Quality Management¬GMP QMA Subgroup QM General Management" config="Cat 1-3 Collaborative Editing Lifecycle Model"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Quality Management¬GMP QMA Subgroup QM General Management" config="QM Cat 3 Controlled Document Lifecycle"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Quality Management¬GMP QMA Subgroup QM Quality Agreement" config="Cat 1-3 Collaborative Editing Lifecycle Model"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Quality Management¬GMP QMA Subgroup QM Quality Agreement" config="QM Cat 3 Controlled Document Lifecycle"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Quality Management¬GMP QMA Subgroup QM Quality Mgmt Review - General" config="Cat 1-3 Collaborative Editing Lifecycle Model"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Quality Management¬GMP QMA Subgroup QM Quality Mgmt Review - General" config="QM Cat 2 Controlled Document Lifecycle"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Quality Management¬GMP QMA Subgroup QM Quality Mgmt Review - Finished Good" config="Cat 1-3 Collaborative Editing Lifecycle Model"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Quality Management¬GMP QMA Subgroup QM Quality Mgmt Review - Finished Good" config="QM Cat 3 Controlled Document Lifecycle"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Quality Management¬GMP QMA Subgroup QM Quality Planning" config="Cat 1-3 Collaborative Editing Lifecycle Model"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Quality Management¬GMP QMA Subgroup QM Quality Planning" config="QM Cat 3 Controlled Document Lifecycle"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Quality Management¬GMP QMA Subgroup QM Sales Management" config="Cat 1-3 Collaborative Editing Lifecycle Model"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Quality Management¬GMP QMA Subgroup QM Sales Management" config="QM Cat 3 Controlled Document Lifecycle"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Quality Management¬GMP QMA Subgroup QM Supplier Management" config="Cat 1-3 Collaborative Editing Lifecycle Model"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Quality Management¬GMP QMA Subgroup QM Supplier Management" config="QM Cat 3 Controlled Document Lifecycle"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Quality Records" config="Cat 1-3 Collaborative Editing Lifecycle Model"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Quality Records" config="QM Cat 3 Controlled Document Lifecycle"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Quality Risk Documentation" config="Cat 1-3 Collaborative Editing Lifecycle Model"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Quality Risk Documentation" config="QM Cat 2 Controlled Document Lifecycle"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Recalls" config="Cat 1-3 Collaborative Editing Lifecycle Model"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Recalls" config="QM Cat 2 Controlled Document Lifecycle"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Site Master File" config="Cat 1-3 Collaborative Editing Lifecycle Model"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Site Master File" config="QM Cat 1 Controlled Document Lifecycle"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Supplier Audit¬Bio GMP QMA Group Supplier Audit - Form" config="Cat 1-3 Collaborative Editing Lifecycle Model"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Supplier Audit¬Bio GMP QMA Group Supplier Audit - Form" config="QM Cat 2 Controlled Document Lifecycle"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Supplier Audit¬Bio GMP QMA Group Supplier Audit - Supplier Audit Report" config="Cat 1-3 Collaborative Editing Lifecycle Model"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Supplier Audit¬Bio GMP QMA Group Supplier Audit - Supplier Audit Report" config="QM Cat 2 Controlled Document Lifecycle"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Supplier Audit¬Bio GMP QMA Group Supplier Audit - Supplier Audit Supporting Documents" config="Cat 1-3 Collaborative Editing Lifecycle Model"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Supplier Audit¬Bio GMP QMA Group Supplier Audit - Supplier Audit Supporting Documents" config="QM Cat 3 Controlled Document Lifecycle"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Supplier Audit¬Bio GMP QMA Group Supplier Audit - Supplier Questionnaire" config="Cat 1-3 Collaborative Editing Lifecycle Model"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Supplier Audit¬Bio GMP QMA Group Supplier Audit - Supplier Questionnaire" config="QM Cat 3 Controlled Document Lifecycle"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Protocol" config="Cat 1-3 Collaborative Editing Lifecycle Model"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Protocol" config="QM Cat 2 Controlled Document Lifecycle"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Reports" config="Cat 1-3 Collaborative Editing Lifecycle Model"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Reports" config="QM Cat 2 Controlled Document Lifecycle"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Requirements" config="Cat 1-3 Collaborative Editing Lifecycle Model"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Requirements" config="QM Cat 2 Controlled Document Lifecycle"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Reviews" config="Cat 1-3 Collaborative Editing Lifecycle Model"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Reviews" config="QM Cat 2 Controlled Document Lifecycle"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Plans" config="Cat 1-3 Collaborative Editing Lifecycle Model"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Plans" config="QM Cat 2 Controlled Document Lifecycle"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Checklists" config="Cat 1-3 Collaborative Editing Lifecycle Model"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Checklists" config="QM Cat 2 Controlled Document Lifecycle"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Matrix" config="Cat 1-3 Collaborative Editing Lifecycle Model"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Matrix" config="QM Cat 2 Controlled Document Lifecycle"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Risk Documentation" config="Cat 1-3 Collaborative Editing Lifecycle Model"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Risk Documentation" config="QM Cat 2 Controlled Document Lifecycle"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group DHF" config="Cat 1-3 Collaborative Editing Lifecycle Model"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group DHF" config="QM Cat 2 Controlled Document Lifecycle"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Bill Of Material" config="Cat 1-3 Collaborative Editing Lifecycle Model"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Bill Of Material" config="QM Cat 1 Controlled Document Lifecycle"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group DMR" config="Cat 1-3 Collaborative Editing Lifecycle Model"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group DMR" config="QM Cat 1 Controlled Document Lifecycle"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Labeling" config="Cat 1-3 Collaborative Editing Lifecycle Model"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Labeling" config="QM Cat 1 Controlled Document Lifecycle"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Drawings" config="Cat 1-3 Collaborative Editing Lifecycle Model"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Drawings" config="QM Cat 1 Controlled Document Lifecycle"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Production Document" config="Cat 1-3 Collaborative Editing Lifecycle Model"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Production Document" config="QM Cat 1 Controlled Document Lifecycle"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Customer Documents" config="Cat 1-3 Collaborative Editing Lifecycle Model"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Customer Documents" config="QM Cat 1 Controlled Document Lifecycle"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Service Documents" config="Cat 1-3 Collaborative Editing Lifecycle Model"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Service Documents" config="QM Cat 1 Controlled Document Lifecycle"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Software Release" config="Cat 1-3 Collaborative Editing Lifecycle Model"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Software Release" config="QM Cat 2 Controlled Document Lifecycle"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Preliminary Bill Of Material" config="Cat 1-3 Collaborative Editing Lifecycle Model"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Preliminary Bill Of Material" config="QM Cat 2 Controlled Document Lifecycle"/>
+	<d2_documentset name="Med Device Documents¬Med Device DMR Group Specifications" config="Cat 1-3 Collaborative Editing Lifecycle Model"/>
+	<d2_documentset name="Med Device Documents¬Med Device DMR Group Specifications" config="QM Cat 1 Controlled Document Lifecycle"/>
+	<d2_documentset name="Med Device Documents¬Med Device DHF Group Specifications" config="Cat 1-3 Collaborative Editing Lifecycle Model"/>
+	<d2_documentset name="Med Device Documents¬Med Device DHF Group Specifications" config="QM Cat 2 Controlled Document Lifecycle"/>
+	<d2_documentset name="Med Device Documents¬Med Device Subgroup Parent" config="Cat 1-3 Collaborative Editing Lifecycle Model"/>
+	<d2_documentset name="Med Device Documents¬Med Device Subgroup Parent" config="Med Device Cat 3 Controlled Document Lifecycle"/>
+	<d2_documentset name="Med Device Documents¬Med Device DMR Subgroup Index" config="Cat 1-3 Collaborative Editing Lifecycle Model"/>
+	<d2_documentset name="Med Device Documents¬Med Device DMR Subgroup Index" config="QM Cat 1 Controlled Document Lifecycle"/>
+	<d2_documentset name="Med Device Documents¬Med Device DHF Subgroup Index" config="Cat 1-3 Collaborative Editing Lifecycle Model"/>
+	<d2_documentset name="Med Device Documents¬Med Device DHF Subgroup Index" config="QM Cat 2 Controlled Document Lifecycle"/>
+	<d2_documentset name="Med Device Documents¬Med Device Subgroup Section" config="Cat 1-3 Collaborative Editing Lifecycle Model"/>
+	<d2_documentset name="Med Device Documents¬Med Device Subgroup Section" config="Med Device Cat 3 Controlled Document Lifecycle"/>
+	<d2_documentset name="Issued Print¬Issued Print Objects" config="Issued Print"/>
+	<d2_documentset name="Issued Print¬Issued Print Request Objects" config="Issued Print Request"/>
+	<d2_documentset name="Change Request¬Change Requests" config="Cat 1-3 Collaborative Editing Lifecycle Model"/>
+	<d2_documentset name="Change Request¬Change Requests" config="Change Request Lifecycle Model"/>
+	<d2_documentset name="Controlled Documents¬Cat 2 Controlled Documents" config="Cat 1-3 Collaborative Editing Lifecycle Model"/>
+	<d2_documentset name="Controlled Documents¬Cat 3 Controlled Documents" config="Cat 1-3 Collaborative Editing Lifecycle Model"/>
+	<d2_documentset name="Controlled Documents¬Cat 4 Controlled Documents" config="Cat 4 Controlled Document Lifecycle Model"/>
+	<d2_documentset name="Recall Objects" config="Recall Object Lifecycle"/>
+	<d2_documentset name="Security Tag" config="Security Lifecycle Model"/>
+	<d2_documentset name="Security Group Generator" config="Group Generator Lifecycle Model"/>
+	<d2_documentset name="Security Model" config="Security Lifecycle Model"/>
+	<d2_documentset name="Security Folder Model" config="Security Lifecycle Model"/>
+	<d2_documentset name="Security Shared" config="Security Lifecycle Model"/>
+	<d2_documentset name="Content Templates¬Quality in Manufacturing Content Templates" config="Content Template Lifecycle Model"/>
+	<d2_documentset name="Content Templates¬Med Device Content Templates" config="Content Template Lifecycle Model"/>
+	<d2_documentset name="DistributionList" config="Distribution List"/>
+	<d2_documentset name="Restricted Edit Instances" config="Restricted Edit Instance"/>
+	<switch_defaults/>
+</d2_documentset_switch>

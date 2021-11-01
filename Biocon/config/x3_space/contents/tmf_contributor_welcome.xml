@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="SpaceSchema.xsd">
+	<space>
+		<border-layout-container>
+			<data>
+				<border-layout-data layoutregion="CENTER" split="true"/>
+			</data>
+			<content>
+				<widget config="WG EXT TMF Contributor Welcome"/>
+			</content>
+		</border-layout-container>
+	</space>
+</root>

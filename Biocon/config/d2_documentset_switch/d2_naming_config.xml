@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_documentset_switch object_name="d2_naming_config">
+	<d2_documentset name="Registration Forms¬Medical Device Registration Forms" config="Medical Device Registration Form Auto Naming"/>
+	<d2_documentset name="Registration Forms¬Product Registration Forms" config="Product Registration Form Auto Naming"/>
+	<d2_documentset name="Registration Forms¬Medical Device Regulatory Submission Registration Form Context" config="Medical Device Regulatory Submission Registration Form Auto Naming"/>
+	<d2_documentset name="Registration Forms¬Medical Device Regulatory-Admin Registration Forms" config="Medical Device Regulatory Admin Registration Form Auto Naming"/>
+	<d2_documentset name="Registration Forms¬Manufactured Item Registration Forms¬Item Registration Forms for Finished Goods without item code" config="_Document_ID"/>
+	<d2_documentset name="Registration Forms¬Manufactured Item Registration Forms¬Item Registration Forms for Finished Goods without item code" config="Manufactured Item Registration Forms Auto Naming"/>
+	<d2_documentset name="Registration Forms¬Manufactured Item Registration Forms¬Item Registration Forms for Finished Goods without item code" config="Manufacturing Finished Good Item Code Auto Naming"/>
+	<d2_documentset name="Registration Forms¬Manufactured Item Registration Forms¬Item Registration Forms for Finished Goods" config="_Document_ID"/>
+	<d2_documentset name="Registration Forms¬Manufactured Item Registration Forms¬Item Registration Forms for Finished Goods" config="Manufactured Item Registration Forms Auto Naming"/>
+	<d2_documentset name="Registration Forms¬Manufactured Item Registration Forms¬Item Registration Forms for Semi-finished Goods without item code" config="_Document_ID"/>
+	<d2_documentset name="Registration Forms¬Manufactured Item Registration Forms¬Item Registration Forms for Semi-finished Goods without item code" config="Manufactured Item Registration Forms Auto Naming"/>
+	<d2_documentset name="Registration Forms¬Manufactured Item Registration Forms¬Item Registration Forms for Semi-finished Goods without item code" config="Manufacturing Semi-Finished Good Item Code Auto Naming"/>
+	<d2_documentset name="Registration Forms¬Manufactured Item Registration Forms¬Item Registration Forms for Semi-finished Goods" config="_Document_ID"/>
+	<d2_documentset name="Registration Forms¬Manufactured Item Registration Forms¬Item Registration Forms for Semi-finished Goods" config="Manufactured Item Registration Forms Auto Naming"/>
+	<d2_documentset name="Registration Forms¬Manufactured Item Registration Forms¬Item Registration Forms for Active Ingredients without item code" config="_Document_ID"/>
+	<d2_documentset name="Registration Forms¬Manufactured Item Registration Forms¬Item Registration Forms for Active Ingredients without item code" config="Manufactured Item Registration Forms Auto Naming"/>
+	<d2_documentset name="Registration Forms¬Manufactured Item Registration Forms¬Item Registration Forms for Active Ingredients without item code" config="Manufacturing Active Ingredient Item Code Auto Naming"/>
+	<d2_documentset name="Registration Forms¬Manufactured Item Registration Forms¬Item Registration Forms for Active Ingredients" config="_Document_ID"/>
+	<d2_documentset name="Registration Forms¬Manufactured Item Registration Forms¬Item Registration Forms for Active Ingredients" config="Manufactured Item Registration Forms Auto Naming"/>
+	<d2_documentset name="GMP Documents¬GMP Group Directive" config="_Document_ID"/>
+	<d2_documentset name="GMP Documents¬GMP Group Directive" config="GMP Group Directive"/>
+	<d2_documentset name="GMP Documents¬GMP Group Drawings" config="_Document_ID"/>
+	<d2_documentset name="GMP Documents¬GMP Group Drawings" config="GMP Group Drawings"/>
+	<d2_documentset name="GMP Documents¬GMP Group Executed Manufacturing¬GMP Subgroup Exec Manu Finished Good" config="_Document_ID"/>
+	<d2_documentset name="GMP Documents¬GMP Group Executed Manufacturing¬GMP Subgroup Exec Manu Finished Good" config="GMP Group Executed Manufacturing"/>
+	<d2_documentset name="GMP Documents¬GMP Group Executed Manufacturing¬GMP Subgroup Exec Manu Semi-finished Good" config="_Document_ID"/>
+	<d2_documentset name="GMP Documents¬GMP Group Executed Manufacturing¬GMP Subgroup Exec Manu Semi-finished Good" config="GMP Group Executed Manufacturing Semi-finished"/>
+	<d2_documentset name="GMP Documents¬GMP Group Executed Manufacturing¬GMP Subgroup Exec Manu Active Ingredient" config="_Document_ID"/>
+	<d2_documentset name="GMP Documents¬GMP Group Executed Manufacturing¬GMP Subgroup Exec Manu Active Ingredient" config="GMP Group Executed Manufacturing"/>
+	<d2_documentset name="GMP Documents¬GMP Group Executed Validation" config="_Document_ID"/>
+	<d2_documentset name="GMP Documents¬GMP Group Executed Validation" config="GMP Group Executed Validation"/>
+	<d2_documentset name="GMP Documents¬GMP Group Facility Records and Certificates" config="_Document_ID"/>
+	<d2_documentset name="GMP Documents¬GMP Group Facility Records and Certificates" config="GMP Group Facility Records and Certificates"/>
+	<d2_documentset name="GMP Documents¬GMP Group Form" config="_Document_ID"/>
+	<d2_documentset name="GMP Documents¬GMP Group Form" config="GMP Group Form"/>
+	<d2_documentset name="GMP Documents¬GMP Group Guideline" config="_Document_ID"/>
+	<d2_documentset name="GMP Documents¬GMP Group Guideline" config="GMP Group Guideline"/>
+	<d2_documentset name="GMP Documents¬GMP Group Program" config="_Document_ID"/>
+	<d2_documentset name="GMP Documents¬GMP Group Program" config="GMP Group Program"/>
+	<d2_documentset name="GMP Documents¬GMP Group Manuals" config="_Document_ID"/>
+	<d2_documentset name="GMP Documents¬GMP Group Manuals" config="GMP Group Manuals"/>
+	<d2_documentset name="GMP Documents¬GMP Group Master Manufacturing" config="_Document_ID"/>
+	<d2_documentset name="GMP Documents¬GMP Group Master Manufacturing" config="GMP Group Master Manufacturing"/>
+	<d2_documentset name="GMP Documents¬GMP Group Master Validation" config="_Document_ID"/>
+	<d2_documentset name="GMP Documents¬GMP Group Master Validation" config="GMP Group Master Validation"/>
+	<d2_documentset name="GMP Documents¬GMP Group Method" config="_Document_ID"/>
+	<d2_documentset name="GMP Documents¬GMP Group Method" config="GMP Group Method"/>
+	<d2_documentset name="GMP Documents¬GMP Group Packaging and Labeling" config="_Document_ID"/>
+	<d2_documentset name="GMP Documents¬GMP Group Packaging and Labeling" config="GMP Group Packaging and Labeling"/>
+	<d2_documentset name="GMP Documents¬GMP Group Policy" config="_Document_ID"/>
+	<d2_documentset name="GMP Documents¬GMP Group Policy" config="GMP Group Policy"/>
+	<d2_documentset name="GMP Documents¬GMP Group Project Documents" config="_Document_ID"/>
+	<d2_documentset name="GMP Documents¬GMP Group Project Documents" config="GMP Group Project Documents"/>
+	<d2_documentset name="GMP Documents¬GMP Group Quality Documents" config="_Document_ID"/>
+	<d2_documentset name="GMP Documents¬GMP Group Quality Documents" config="GMP Group Quality Documents"/>
+	<d2_documentset name="GMP Documents¬GMP Group Quality Manual" config="_Document_ID"/>
+	<d2_documentset name="GMP Documents¬GMP Group Quality Manual" config="GMP Group Quality Manual"/>
+	<d2_documentset name="GMP Documents¬GMP Group Records and Certificates" config="_Document_ID"/>
+	<d2_documentset name="GMP Documents¬GMP Group Records and Certificates" config="GMP Group Records and Certificates"/>
+	<d2_documentset name="GMP Documents¬GMP Group SOP" config="_Document_ID"/>
+	<d2_documentset name="GMP Documents¬GMP Group SOP" config="GMP Group SOP"/>
+	<d2_documentset name="GMP Documents¬GMP Group Specification" config="_Document_ID"/>
+	<d2_documentset name="GMP Documents¬GMP Group Specification" config="GMP Group Specification"/>
+	<d2_documentset name="GMP Documents¬GMP Group Training" config="_Document_ID"/>
+	<d2_documentset name="GMP Documents¬GMP Group Training" config="GMP Group Training"/>
+	<d2_documentset name="GMP Documents¬GMP Group Work Instruction" config="_Document_ID"/>
+	<d2_documentset name="GMP Documents¬GMP Group Work Instruction" config="GMP Group Work Instruction"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group External Audit" config="_Document_ID"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group External Audit" config="GMP QMA Group Audit"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Internal Audit" config="_Document_ID"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Internal Audit" config="GMP QMA Group Audit"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Investigations" config="_Document_ID"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Investigations" config="GMP QMA Group Investigations"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Quality Events" config="_Document_ID"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Quality Events" config="GMP QMA Group Quality Events"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Quality Management" config="_Document_ID"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Quality Management" config="GMP QMA Group Quality Management"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Quality Records" config="_Document_ID"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Quality Records" config="GMP QMA Group Quality Records"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Quality Risk Documentation" config="_Document_ID"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Quality Risk Documentation" config="GMP QMA Group Quality Risk Documentation"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Recalls" config="_Document_ID"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Recalls" config="GMP QMA Group Recalls"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Site Master File" config="_Document_ID"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Site Master File" config="GMP QMA Group Site Master File"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Supplier Audit" config="_Document_ID"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Supplier Audit" config="GMP QMA Group Audit"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Protocol" config="_Document_ID"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Protocol" config="Med Device Documents"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Reports" config="_Document_ID"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Reports" config="Med Device Documents"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Requirements" config="_Document_ID"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Requirements" config="Med Device Documents"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Reviews" config="_Document_ID"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Reviews" config="Med Device Documents"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Plans" config="_Document_ID"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Plans" config="Med Device Documents"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Checklists" config="_Document_ID"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Checklists" config="Med Device Documents"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Matrix" config="_Document_ID"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Matrix" config="Med Device Documents"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Risk Documentation" config="_Document_ID"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Risk Documentation" config="Med Device Documents"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group DHF" config="_Document_ID"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group DHF" config="Med Device Documents"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Bill Of Material" config="_Document_ID"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Bill Of Material" config="Med Device Documents"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group DMR" config="_Document_ID"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group DMR" config="Med Device Documents"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Labeling" config="_Document_ID"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Labeling" config="Med Device Documents"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Drawings" config="_Document_ID"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Drawings" config="Med Device Documents"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Production Document" config="_Document_ID"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Production Document" config="Med Device Documents"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Customer Documents" config="_Document_ID"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Customer Documents" config="Med Device Documents"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Service Documents" config="_Document_ID"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Service Documents" config="Med Device Documents"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Software Release" config="_Document_ID"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Software Release" config="Med Device Documents"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Preliminary Bill Of Material" config="_Document_ID"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Preliminary Bill Of Material" config="Med Device Documents"/>
+	<d2_documentset name="Med Device Documents¬Med Device DMR Group Specifications" config="_Document_ID"/>
+	<d2_documentset name="Med Device Documents¬Med Device DMR Group Specifications" config="Med Device Documents"/>
+	<d2_documentset name="Med Device Documents¬Med Device DHF Group Specifications" config="_Document_ID"/>
+	<d2_documentset name="Med Device Documents¬Med Device DHF Group Specifications" config="Med Device Documents"/>
+	<d2_documentset name="Med Device Documents¬Med Device Subgroup Parent" config="_Document_ID"/>
+	<d2_documentset name="Med Device Documents¬Med Device DMR Subgroup Index" config="_Document_ID"/>
+	<d2_documentset name="Med Device Documents¬Med Device DMR Subgroup Index" config="Med Device Index Documents"/>
+	<d2_documentset name="Med Device Documents¬Med Device DHF Subgroup Index" config="_Document_ID"/>
+	<d2_documentset name="Med Device Documents¬Med Device DHF Subgroup Index" config="Med Device Index Documents"/>
+	<d2_documentset name="Change Request¬Change Requests" config="_Document_ID"/>
+	<d2_documentset name="Change Request¬Change Requests" config="Change Request Auto Naming"/>
+	<d2_documentset name="Controlled Documents¬Cat 1 Controlled Documents" config="_Document_ID"/>
+	<d2_documentset name="Controlled Documents¬Cat 2 Controlled Documents" config="_Document_ID"/>
+	<d2_documentset name="Controlled Documents¬Cat 3 Controlled Documents" config="_Document_ID"/>
+	<d2_documentset name="Security Tag" config="Security Tag Auto Naming"/>
+	<d2_documentset name="Security Group Generator" config="Security Group Generator Auto Naming"/>
+	<d2_documentset name="Security Model" config="Security Model Auto Naming"/>
+	<d2_documentset name="Security Folder Model" config="Security Folder Model Auto Naming"/>
+	<d2_documentset name="Security Shared" config="Security Shared Auto Naming"/>
+	<d2_documentset name="Restricted Edit Models" config="Restricted Edit Model"/>
+	<d2_documentset name="Restricted Edit Instances" config="Restricted Edit Instance"/>
+	<switch_defaults/>
+</d2_documentset_switch>

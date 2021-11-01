@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_dictionary object_name="D2 Workflow Audit Lookup" title="" lock_config="false" parents_config="" application_names="OpenText Life Sciences eTMF Solution¬OpenText Life Sciences Medical Device for Quality and Manufacturing Solution¬OpenText Life Sciences Medical Device for Research and Development Solution¬OpenText Life Sciences Medical Device Solution¬OpenText Life Sciences Quality and Manufacturing Solution¬OpenText Life Sciences Research and Development Solution¬OpenText Life Sciences Submission Storage and Viewing" security_group="admingroup" search_group="" version="2" is_versioned="false" manual_order="false" create_view_option="true" is_dql="false" is_dql_cache="false" dql="" label_en="">
+	<d2_dictionary_value object_name="d2_workflow_aborted" is_enabled="true" order_no="0">
+		<alias name="lookup" value="Aborted"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="d2_workflow_acquired_task" is_enabled="true" order_no="0">
+		<alias name="lookup" value="Acquired"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="d2_workflow_added_note" is_enabled="true" order_no="0">
+		<alias name="lookup" value="Note Added"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="d2_workflow_added_pseudo_task" is_enabled="true" order_no="0">
+		<alias name="lookup" value="Pseudo Task Added"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="d2_workflow_auto_aborted" is_enabled="true" order_no="0">
+		<alias name="lookup" value="Auto Aborted"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="d2_workflow_auto_acquired_task" is_enabled="true" order_no="0">
+		<alias name="lookup" value="Auto Acquired"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="d2_workflow_auto_delegated_task" is_enabled="true" order_no="0">
+		<alias name="lookup" value="Auto Delegated"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="d2_workflow_auto_forwarded_task" is_enabled="true" order_no="0">
+		<alias name="lookup" value="Auto Forwarded"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="d2_workflow_auto_rejected_task" is_enabled="true" order_no="0">
+		<alias name="lookup" value="Auto Rejected"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="d2_workflow_auto_sent_mail" is_enabled="true" order_no="0">
+		<alias name="lookup" value="Auto Sent Mail"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="d2_workflow_delegated_task" is_enabled="true" order_no="0">
+		<alias name="lookup" value="Delegated"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="d2_workflow_forwarded_task" is_enabled="true" order_no="0">
+		<alias name="lookup" value="Finished"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="d2_workflow_received_mail" is_enabled="true" order_no="0">
+		<alias name="lookup" value="Received Mail"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="d2_workflow_rejected_task" is_enabled="true" order_no="0">
+		<alias name="lookup" value="Rejected"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="d2_workflow_removed_pseudo_task" is_enabled="true" order_no="0">
+		<alias name="lookup" value="Pseudo Task Removed"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="d2_workflow_scheduled" is_enabled="true" order_no="0">
+		<alias name="lookup" value="Scheduled"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="d2_workflow_send_mail_failed" is_enabled="true" order_no="0">
+		<alias name="lookup" value="Mail Failed"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="d2_workflow_sent_mail" is_enabled="true" order_no="0">
+		<alias name="lookup" value="Mail Sent"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="d2_workflow_signoff" is_enabled="true" order_no="0">
+		<alias name="lookup" value="Signoff"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="d2_workflow_started" is_enabled="true" order_no="0">
+		<alias name="lookup" value="Started"/>
+	</d2_dictionary_value>
+</d2_dictionary>

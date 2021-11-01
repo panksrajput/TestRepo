@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_workflow_config new_format="true">
+	<object_name value="Bio Cat 1 Review Approve Site Performers [1-GMP-REVIEW-APPROVE]"/>
+	<title value=""/>
+	<subject value=""/>
+	<authors/>
+	<keywords/>
+	<a_status value=""/>
+	<a_content_type value="xml"/>
+	<log_entry value=""/>
+	<language_code value=""/>
+	<application_names>
+		<repeating value="OpenText Life Sciences Medical Device for Quality and Manufacturing Solution"/>
+		<repeating value="OpenText Life Sciences Quality and Manufacturing Solution"/>
+		<repeating value="OpenText Life Sciences Medical Device Solution"/>
+		<repeating value="Biocon"/>
+	</application_names>
+	<lock_config value="F"/>
+	<parents_config>
+		<repeating value="Cat 1 Review Approve Site Performers [1-GMP-REVIEW-APPROVE]"/>
+	</parents_config>
+	<associated_dm_process value="Bio Cat 1 Review Approve Workflow Template - [1-APPROVE-REVIEW]"/>
+</d2_workflow_config>

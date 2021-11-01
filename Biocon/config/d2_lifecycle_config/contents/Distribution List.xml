@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2lifecycle execute_actions_on_start="true" state_attribute="">
+	<state direct="false" entry="true" name="Active">
+		<entry_conditions/>
+		<actions>
+			<setproperties>
+				<set name="a_status" value="Active"/>
+			</setproperties>
+			<setproperties>
+				<setrepeating mode="append" name="promote_on_save_from" removeDuplicate="false" value="Active"/>
+				<setrepeating mode="append" name="promote_on_save_to" removeDuplicate="false" value="(Update)"/>
+			</setproperties>
+			<setrepeating mode="append" name="authors" removeDuplicate="false" value="$USER"/>
+			<applymethod argument="-model DLDomains" fetchCurrent="false" name="CDFApplyDynamicSecurity"/>
+		</actions>
+		<next_states>
+			<state action="" confirmation_en="" dialog="" event="" label_en="" name="(Update)" signoff_intention_dictionary="" signoff_intention_required="false" signoff_required="false" type="promote"/>
+		</next_states>
+	</state>
+	<state direct="false" entry="false" name="(Update)">
+		<entry_conditions/>
+		<actions>
+			<applymethod argument="" fetchCurrent="false" name="CDFApplyDynamicSecurity"/>
+		</actions>
+		<next_states/>
+	</state>
+</d2lifecycle>

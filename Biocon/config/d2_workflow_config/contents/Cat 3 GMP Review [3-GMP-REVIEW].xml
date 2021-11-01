@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_workflow_config>
+	<workflow_label_en>Cat 3 GMP Submit for Review...</workflow_label_en>
+	<activity-list>
+		<activity lifecycle="Cat 3 Controlled Document Lifecycle Model" method="D2WFLifeCycleMethod" target_state="For Review" task_subject_en="Change to For Review" transition_type="promote" value="change to For Review"/>
+		<activity lifecycle="QM Cat 3 Controlled Document Lifecycle" method="D2WFLifeCycleMethod" target_state="(check annotations)" task_subject_en="check for document annotations" transition_type="promote" value="chk annotations"/>
+		<activity lifecycle="QM Cat 3 Controlled Document Lifecycle" method="D2WFLifeCycleMethod" target_state="(version document)" task_subject_en="Skip For Review and mark as Reviewed" transition_type="promote" value="version the document"/>
+		<activity alias_name="authors" audit_acquired="true" audit_response="true" check_lifecycle="true" delegate_dql="select g.i_all_users_names from dm_group g, dm_user u where any g.i_supergroups_names in (select alias_value from d2_dictionary_value where dictionary_name like 'GMP Applicable Sites' and any alias_value is not nullstring and alias_value like '%_authors' and object_name in ($repeatingvalue(applicable_sites)) ENABLE(ROW_BASED)) and any g.i_all_users_names = u.user_name and u.user_state = 0" delegate_type="dql" display_task="true" is_pseudo_task="true" task_accept_labels_en="Resend" task_category_en="$value(a_status)" task_instructions_en="Please make any necessary changes to &quot;$value(object_name)&quot; and 'Resend' the task to resubmit for approval." task_reject_labels_en="End Workflow" task_subject_en="&quot;$value(object_name)&quot; was rejected" value="Draft"/>
+		<activity method="CDFWorkflowNotificationMethod" value="Finish"/>
+		<activity lifecycle="Cat 3 Controlled Document Lifecycle Model" method="D2WFLifeCycleMethod" target_state="Reviewed" task_subject_en="Change to Reviewed" transition_type="promote" value="change to Reviewed"/>
+		<activity method="dm_noop_auto_method_java" value="Start"/>
+		<activity audit_acquired="true" audit_response="true" value="Initiate"/>
+		<activity lifecycle="Cat 3 Controlled Document Lifecycle Model" method="D2WFLifeCycleMethod" target_state="(Start WF)" task_subject_en="Start WF" transition_type="promote" value="Start WF"/>
+		<activity alias_name="reviewers" audit_acquired="true" audit_response="true" check_lifecycle="false" delegate_dql="select g.i_all_users_names from dm_group g, dm_user u where any g.i_supergroups_names in (select alias_value from d2_dictionary_value where dictionary_name like 'GMP Applicable Sites' and any alias_value is not nullstring and alias_value like '%_reviewers' and object_name in ($repeatingvalue(applicable_sites)) ENABLE(ROW_BASED)) and any g.i_all_users_names = u.user_name and u.user_state = 0" delegate_type="dql" display_task="true" is_pseudo_task="true" mandatory_reject_comment="true" task_accept_labels_en="Reviewed Without Comments" task_category_en="$value(a_status)" task_duration="30" task_instructions_en="The attached document requires your attention to review. If you accept the document use 'Reviewed Without Comments' to move the document forward. If you do not accept the document use 'Reviewed With Comments' to send it back to Draft." task_reject_labels_en="Reviewed With Comments" task_subject_en="&quot;$value(object_name)&quot; is ready for your Review" value="For Review">
+			<follow-up delay="0" message_en="30 days have passed since this task was sent to you. Please review &quot;$value(object_name)&quot; to determine if the document should be accepted and moved forward for further approval. Please note that the document authors have been notified." subject_en="There is a task outstanding for the following document &quot;$value(object_name)&quot;" task_owner="true"/>
+			<follow-up delay="0" message_en="The reviewers $value(wf_reviewers) have been notified that they have a task for the document &quot;$value(object_name)&quot;, which has been outstanding for 30 days. If this document needs to be expedited please contact the reviewers directly." recipient_alias="authors" recipient_other="true" recipient_type="alias" subject_en="&quot;$value(object_name)&quot; has been outstanding for 30 days."/>
+		</activity>
+		<activity lifecycle="Cat 3 Controlled Document Lifecycle Model" method="D2WFLifeCycleMethod" target_state="(End WF)" task_subject_en="End WF" transition_type="promote" value="End WF"/>
+		<activity lifecycle="Cat 3 Controlled Document Lifecycle Model" method="D2WFLifeCycleMethod" target_state="Draft" task_subject_en="Change to Draft" transition_type="demote" value="change to Draft"/>
+		<activity lifecycle="QM Cat 3 Controlled Document Lifecycle" method="D2WFLifeCycleMethod" target_state="Draft" task_subject_en="Demote to Draft with Annotations" transition_type="demote" value="send to Authors with annotations"/>
+	</activity-list>
+	<workflow abort_apply_on_attachments="false" abort_lifecycle="Cat 3 Controlled Document Lifecycle Model" abort_target_state="(Abort WF)"/>
+	<entry_conditions>
+		<uniquenesscheck message_failed_en="" uniqueness="Validate CTS rendition of the document is created before going to next stage of workflow."/>
+		<uniquenesscheck message_failed_en="" uniqueness="Validate selected document is a Draft document"/>
+		<uniquenesscheck message_failed_en="" uniqueness="Validate selected document is not checked-out"/>
+		<uniquenesscheck message_failed_en="" uniqueness="Validate selected document is the CURRENT version"/>
+		<uniquenesscheck message_failed_en="" uniqueness="Validate user is an Author for the selected document"/>
+		<uniquenesscheck message_failed_en="" uniqueness="Validate selected document is not involved in an active workflow"/>
+		<attribute compare="eq" message_failed_en="The Process List is not updated correctly. Hence document cannot be sent to the workflow." name="wf_process_list" value="3-GMP-REVIEW"/>
+	</entry_conditions>
+	<dialog height="500" width="600">
+		<list id="authors" assistance_dql="select g.i_all_users_names from dm_user u, dm_group g where any g.i_supergroups_names in (select alias_value from d2_dictionary_value where dictionary_name like 'GMP Applicable Sites' and any alias_value is not nullstring and alias_value like '%_authors' and object_name in ($repeatingvalue(applicable_sites)) ENABLE(ROW_BASED)) AND ANY g.i_all_users_names = u.user_name and u.user_state = 0 order by g.i_all_users_names" assistance_type="dql" asynchronous="true" label_en="Document Authors" linked_attribute="wf_authors" required_values_count_min="1" requiredOnStartup="true" rows="4" sorted="true" value="$USER"/>
+		<list id="reviewers" assistance_dql="select g.i_all_users_names from dm_user u, dm_group g where any g.i_supergroups_names in (select alias_value from d2_dictionary_value where dictionary_name like 'GMP Applicable Sites' and any alias_value is not nullstring and alias_value like '%_reviewers' and object_name in ($repeatingvalue(applicable_sites)) ENABLE(ROW_BASED)) AND ANY g.i_all_users_names = u.user_name and u.user_state = 0  order by g.i_all_users_names " assistance_type="dql" asynchronous="true" label_en="Document Reviewers" linked_attribute="wf_reviewers" required_values_count_min="1" requiredOnStartup="true" rows="4" sorted="true"/>
+	</dialog>
+</d2_workflow_config>

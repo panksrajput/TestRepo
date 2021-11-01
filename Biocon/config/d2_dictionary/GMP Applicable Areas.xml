@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_dictionary object_name="GMP Applicable Areas" title="Dictionary for GMP Applicable Areas and Audited Areas" lock_config="false" parents_config="" application_names="OpenText Life Sciences Quality and Manufacturing Solution¬Custom Configurations" security_group="biocon_dict_admin" search_group="biocon_dict_admin" version="2" is_versioned="false" manual_order="false" create_view_option="false" is_dql="false" is_dql_cache="false" dql="" label_en="GMP Applicable Areas">
+	<d2_dictionary_value object_name="Administration" is_enabled="true" order_no="0">
+		<locale name="en" value="Administration"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="BRM" is_enabled="true" order_no="0">
+		<locale name="en" value="BRM"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Central Engineering – Lab Engineering" is_enabled="true" order_no="0">
+		<locale name="en" value="Central Engineering – Lab Engineering"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Central Engineering – Utility" is_enabled="true" order_no="0">
+		<locale name="en" value="Central Engineering – Utility"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Corporate Quality Assurance" is_enabled="true" order_no="0">
+		<locale name="en" value="Corporate Quality Assurance"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="EAM" is_enabled="true" order_no="0">
+		<locale name="en" value="EAM"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="EHS – ETP" is_enabled="true" order_no="0">
+		<locale name="en" value="EHS – ETP"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="EHS – General EHS" is_enabled="true" order_no="0">
+		<locale name="en" value="EHS – General EHS"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="EHS – RO" is_enabled="true" order_no="0">
+		<locale name="en" value="EHS – RO"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="EHS – SAF" is_enabled="true" order_no="0">
+		<locale name="en" value="EHS – SAF"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="EHS – WTP" is_enabled="true" order_no="0">
+		<locale name="en" value="EHS – WTP"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="HR" is_enabled="true" order_no="0">
+		<locale name="en" value="HR"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="INFO-TECH" is_enabled="true" order_no="0">
+		<locale name="en" value="INFO-TECH"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Instrumentation" is_enabled="true" order_no="0">
+		<locale name="en" value="Instrumentation"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Packaging" is_enabled="true" order_no="0">
+		<locale name="en" value="Packaging"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Production – A1" is_enabled="true" order_no="0">
+		<locale name="en" value="Production – A1"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Production – A2" is_enabled="true" order_no="0">
+		<locale name="en" value="Production – A2"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Production – C1" is_enabled="true" order_no="0">
+		<locale name="en" value="Production – C1"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Production – C1AB" is_enabled="true" order_no="0">
+		<locale name="en" value="Production – C1AB"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Production – C1C" is_enabled="true" order_no="0">
+		<locale name="en" value="Production – C1C"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Production – C1E" is_enabled="true" order_no="0">
+		<locale name="en" value="Production – C1E"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Production – C2" is_enabled="true" order_no="0">
+		<locale name="en" value="Production – C2"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Production – C3" is_enabled="true" order_no="0">
+		<locale name="en" value="Production – C3"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Production – D1" is_enabled="true" order_no="0">
+		<locale name="en" value="Production – D1"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Production – D2" is_enabled="true" order_no="0">
+		<locale name="en" value="Production – D2"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Production – D3" is_enabled="true" order_no="0">
+		<locale name="en" value="Production – D3"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Production – D4" is_enabled="true" order_no="0">
+		<locale name="en" value="Production – D4"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Production – Dispatch Production" is_enabled="true" order_no="0">
+		<locale name="en" value="Production – Dispatch Production"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Production – KiloLab" is_enabled="true" order_no="0">
+		<locale name="en" value="Production – KiloLab"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Production – OQT" is_enabled="true" order_no="0">
+		<locale name="en" value="Production – OQT"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Production – PE LAB" is_enabled="true" order_no="0">
+		<locale name="en" value="Production – PE LAB"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Production – PEAL" is_enabled="true" order_no="0">
+		<locale name="en" value="Production – PEAL"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Production – PETT" is_enabled="true" order_no="0">
+		<locale name="en" value="Production – PETT"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Production – R1" is_enabled="true" order_no="0">
+		<locale name="en" value="Production – R1"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Production/Manufacturing" is_enabled="true" order_no="0">
+		<locale name="en" value="Production/Manufacturing"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Projects" is_enabled="true" order_no="0">
+		<locale name="en" value="Projects"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Quality Assurance" is_enabled="true" order_no="0">
+		<locale name="en" value="Quality Assurance"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Quality Control" is_enabled="true" order_no="0">
+		<locale name="en" value="Quality Control"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Quality Control – Microbiology" is_enabled="true" order_no="0">
+		<locale name="en" value="Quality Control – Microbiology"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="SCM" is_enabled="true" order_no="0">
+		<locale name="en" value="SCM"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Warehouse" is_enabled="true" order_no="0">
+		<locale name="en" value="Warehouse"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Warehouse – FG Warehouse" is_enabled="true" order_no="0">
+		<locale name="en" value="Warehouse – FG Warehouse"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Warehouse – W1" is_enabled="true" order_no="0">
+		<locale name="en" value="Warehouse – W1"/>
+	</d2_dictionary_value>
+</d2_dictionary>

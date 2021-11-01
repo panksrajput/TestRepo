@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_documentset_switch object_name="d2_checkout_config">
+	<d2_documentset name="Release Pending Cat 1 Controlled Documents" config="Disable Checkout for Release Pending documents"/>
+	<d2_documentset name="Reclassified Documents" config="Disable check-out for reclassified documents"/>
+	<d2_documentset name="Documents that have a copy" config="Disallow checkout for documents with copies"/>
+	<d2_documentset name="Document is not current version" config="Disable Checkout for Non-Current versions"/>
+	<d2_documentset name="DistributionList" config="Prevent Checkout"/>
+	<switch_default config=""/>
+</d2_documentset_switch>

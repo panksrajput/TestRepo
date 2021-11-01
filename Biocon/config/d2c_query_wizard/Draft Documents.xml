@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2c_query_wizard new_format="true" title="">
+	<object_name value="Draft Documents"/>
+	<title value=""/>
+	<subject value=""/>
+	<authors/>
+	<keywords/>
+	<a_status value=""/>
+	<a_content_type value=""/>
+	<log_entry value=""/>
+	<language_code value=""/>
+	<all_versions value="T"/>
+	<condition value=" UPPER(a_status) = UPPER('Draft')"/>
+	<folder_descend value="T"/>
+	<fulltext_condition value=""/>
+	<folder_path/>
+	<searched_type value=""/>
+	<is_filter value="F"/>
+	<is_public value="T"/>
+	<col_name>
+		<repeating value="object_name"/>
+		<repeating value="title"/>
+		<repeating value="cd_common_ref_model.domain"/>
+		<repeating value="cd_common_ref_model.product_code"/>
+		<repeating value="cd_common_ref_model.r_version_label"/>
+		<repeating value="a_status"/>
+		<repeating value="r_modify_date"/>
+		<repeating value="r_modifier"/>
+	</col_name>
+	<order_by value=""/>
+	<order_by_direction value="Asc"/>
+	<migrate_version value="2"/>
+	<searched_types>
+		<repeating value="cd_quality_gmp"/>
+	</searched_types>
+	<logical/>
+	<bracket_open/>
+	<bracket_close/>
+	<operator>
+		<repeating value="equals"/>
+	</operator>
+	<fulltext_operator value="all_words"/>
+	<fulltext_words value=""/>
+	<case_sensitive value="F"/>
+	<hidden_objects value="F"/>
+	<attr>
+		<repeating value="a_status"/>
+	</attr>
+	<attr_value>
+		<repeating value="Draft"/>
+	</attr_value>
+	<facets/>
+	<configuration_name value=""/>
+	<configuration_type value=""/>
+	<previous_srch_terms/>
+</d2c_query_wizard>

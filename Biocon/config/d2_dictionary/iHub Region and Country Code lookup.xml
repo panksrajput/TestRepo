@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_dictionary object_name="iHub Region and Country Code lookup" title="" lock_config="false" parents_config="" application_names="OpenText Life Sciences eTMF Solution¬OpenText Life Sciences Medical Device for Quality and Manufacturing Solution¬OpenText Life Sciences Medical Device for Research and Development Solution¬OpenText Life Sciences Medical Device Solution¬OpenText Life Sciences Quality and Manufacturing Solution¬OpenText Life Sciences Research and Development Solution¬OpenText Life Sciences Submission Storage and Viewing" security_group="admingroup" search_group="admingroup" version="2" is_versioned="false" manual_order="false" create_view_option="true" is_dql="false" is_dql_cache="false" dql="" label_en="">
+	<d2_dictionary_value object_name="AE" is_enabled="true" order_no="0">
+		<alias name="Country" value="United Arab Emirates"/>
+		<alias name="Region Code" value="ME"/>
+		<alias name="Region" value="Middle East"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="AF" is_enabled="true" order_no="0">
+		<alias name="Country" value="Afghanistan"/>
+		<alias name="Region Code" value="ME"/>
+		<alias name="Region" value="Middle East"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="AL" is_enabled="true" order_no="0">
+		<alias name="Country" value="Albania"/>
+		<alias name="Region Code" value="EU"/>
+		<alias name="Region" value="Europe"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="AM" is_enabled="true" order_no="0">
+		<alias name="Country" value="Armenia"/>
+		<alias name="Region Code" value="ME"/>
+		<alias name="Region" value="Middle East"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="AO" is_enabled="true" order_no="0">
+		<alias name="Country" value="Angola"/>
+		<alias name="Region Code" value="AF"/>
+		<alias name="Region" value="Africa"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="AR" is_enabled="true" order_no="0">
+		<alias name="Country" value="Argentina"/>
+		<alias name="Region Code" value="SA"/>
+		<alias name="Region" value="South America"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="AT" is_enabled="true" order_no="0">
+		<alias name="Country" value="Austria"/>
+		<alias name="Region Code" value="EU"/>
+		<alias name="Region" value="Europe"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="AU" is_enabled="true" order_no="0">
+		<alias name="Country" value="Australia"/>
+		<alias name="Region Code" value="AP"/>
+		<alias name="Region" value="AP-J"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="AZ" is_enabled="true" order_no="0">
+		<alias name="Country" value="Azerbaijan"/>
+		<alias name="Region Code" value="ME"/>
+		<alias name="Region" value="Middle East"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="BD" is_enabled="true" order_no="0">
+		<alias name="Country" value="Bangladesh"/>
+		<alias name="Region Code" value="AP"/>
+		<alias name="Region" value="AP-J"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="BE" is_enabled="true" order_no="0">
+		<alias name="Country" value="Belgium"/>
+		<alias name="Region Code" value="EU"/>
+		<alias name="Region" value="Europe"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="BG" is_enabled="true" order_no="0">
+		<alias name="Country" value="Bulgaria"/>
+		<alias name="Region Code" value="EU"/>
+		<alias name="Region" value="Europe"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="BH" is_enabled="true" order_no="0">
+		<alias name="Country" value="Bahrain"/>
+		<alias name="Region Code" value="ME"/>
+		<alias name="Region" value="Middle East"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="BO" is_enabled="true" order_no="0">
+		<alias name="Country" value="Bolivia"/>
+		<alias name="Region Code" value="SA"/>
+		<alias name="Region" value="South America"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="BR" is_enabled="true" order_no="0">
+		<alias name="Country" value="Brazil"/>
+		<alias name="Region Code" value="SA"/>
+		<alias name="Region" value="South America"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="BZ" is_enabled="true" order_no="0">
+		<alias name="Country" value="Belize"/>
+		<alias name="Region Code" value="NC"/>
+		<alias name="Region" value="North America"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="CA" is_enabled="true" order_no="0">
+		<alias name="Country" value="Canada"/>
+		<alias name="Region Code" value="NC"/>
+		<alias name="Region" value="North America"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="CH" is_enabled="true" order_no="0">
+		<alias name="Country" value="Switzerland"/>
+		<alias name="Region Code" value="EU"/>
+		<alias name="Region" value="Europe"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="CI" is_enabled="true" order_no="0">
+		<alias name="Country" value="Cote dIvoire"/>
+		<alias name="Region Code" value="AF"/>
+		<alias name="Region" value="Africa"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="CL" is_enabled="true" order_no="0">
+		<alias name="Country" value="Chile"/>
+		<alias name="Region Code" value="SA"/>
+		<alias name="Region" value="South America"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="CN" is_enabled="true" order_no="0">
+		<alias name="Country" value="China"/>
+		<alias name="Region Code" value="AP"/>
+		<alias name="Region" value="AP-J"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="CO" is_enabled="true" order_no="0">
+		<alias name="Country" value="Colombia"/>
+		<alias name="Region Code" value="SA"/>
+		<alias name="Region" value="South America"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="CR" is_enabled="true" order_no="0">
+		<alias name="Country" value="Costa Rica"/>
+		<alias name="Region Code" value="NC"/>
+		<alias name="Region" value="North America"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="CU" is_enabled="true" order_no="0">
+		<alias name="Country" value="Cuba"/>
+		<alias name="Region Code" value="NC"/>
+		<alias name="Region" value="North America"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="CZ" is_enabled="true" order_no="0">
+		<alias name="Country" value="Czech Republic"/>
+		<alias name="Region Code" value="EU"/>
+		<alias name="Region" value="Europe"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="DE" is_enabled="true" order_no="0">
+		<alias name="Country" value="Germany"/>
+		<alias name="Region Code" value="EU"/>
+		<alias name="Region" value="Europe"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="DK" is_enabled="true" order_no="0">
+		<alias name="Country" value="Denmark"/>
+		<alias name="Region Code" value="EU"/>
+		<alias name="Region" value="Europe"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="DZ" is_enabled="true" order_no="0">
+		<alias name="Country" value="Algeria"/>
+		<alias name="Region Code" value="AF"/>
+		<alias name="Region" value="Africa"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="EC" is_enabled="true" order_no="0">
+		<alias name="Country" value="Ecuador"/>
+		<alias name="Region Code" value="SA"/>
+		<alias name="Region" value="South America"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="EG" is_enabled="true" order_no="0">
+		<alias name="Country" value="Egypt"/>
+		<alias name="Region Code" value="AF"/>
+		<alias name="Region" value="Africa"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="ES" is_enabled="true" order_no="0">
+		<alias name="Country" value="Spain"/>
+		<alias name="Region Code" value="EU"/>
+		<alias name="Region" value="Europe"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="ET" is_enabled="true" order_no="0">
+		<alias name="Country" value="Ethiopia"/>
+		<alias name="Region Code" value="AF"/>
+		<alias name="Region" value="Africa"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="FI" is_enabled="true" order_no="0">
+		<alias name="Country" value="Finland"/>
+		<alias name="Region Code" value="EU"/>
+		<alias name="Region" value="Europe"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="FR" is_enabled="true" order_no="0">
+		<alias name="Country" value="France"/>
+		<alias name="Region Code" value="EU"/>
+		<alias name="Region" value="Europe"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="GB" is_enabled="true" order_no="0">
+		<alias name="Country" value="United Kingdom"/>
+		<alias name="Region Code" value="EU"/>
+		<alias name="Region" value="Europe"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="GR" is_enabled="true" order_no="0">
+		<alias name="Country" value="Greece"/>
+		<alias name="Region Code" value="EU"/>
+		<alias name="Region" value="Europe"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="GT" is_enabled="true" order_no="0">
+		<alias name="Country" value="Guatemala"/>
+		<alias name="Region Code" value="NC"/>
+		<alias name="Region" value="North America"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="HN" is_enabled="true" order_no="0">
+		<alias name="Country" value="Honduras"/>
+		<alias name="Region Code" value="NC"/>
+		<alias name="Region" value="North America"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="HU" is_enabled="true" order_no="0">
+		<alias name="Country" value="Hungary"/>
+		<alias name="Region Code" value="EU"/>
+		<alias name="Region" value="Europe"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="ID" is_enabled="true" order_no="0">
+		<alias name="Country" value="Indonesia"/>
+		<alias name="Region Code" value="AP"/>
+		<alias name="Region" value="AP-J"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="IE" is_enabled="true" order_no="0">
+		<alias name="Country" value="Ireland"/>
+		<alias name="Region Code" value="EU"/>
+		<alias name="Region" value="Europe"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="IL" is_enabled="true" order_no="0">
+		<alias name="Country" value="Israel"/>
+		<alias name="Region Code" value="ME"/>
+		<alias name="Region" value="Middle East"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="IN" is_enabled="true" order_no="0">
+		<alias name="Country" value="India"/>
+		<alias name="Region Code" value="AP"/>
+		<alias name="Region" value="AP-J"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="IQ" is_enabled="true" order_no="0">
+		<alias name="Country" value="Iraq"/>
+		<alias name="Region Code" value="ME"/>
+		<alias name="Region" value="Middle East"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="IR" is_enabled="true" order_no="0">
+		<alias name="Country" value="Iran"/>
+		<alias name="Region Code" value="ME"/>
+		<alias name="Region" value="Middle East"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="IS" is_enabled="true" order_no="0">
+		<alias name="Country" value="Iceland"/>
+		<alias name="Region Code" value="EU"/>
+		<alias name="Region" value="Europe"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="IT" is_enabled="true" order_no="0">
+		<alias name="Country" value="Italy"/>
+		<alias name="Region Code" value="EU"/>
+		<alias name="Region" value="Europe"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="JM" is_enabled="true" order_no="0">
+		<alias name="Country" value="Jamaica"/>
+		<alias name="Region Code" value="NC"/>
+		<alias name="Region" value="North America"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="JO" is_enabled="true" order_no="0">
+		<alias name="Country" value="Jordan"/>
+		<alias name="Region Code" value="ME"/>
+		<alias name="Region" value="Middle East"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="JP" is_enabled="true" order_no="0">
+		<alias name="Country" value="Japan"/>
+		<alias name="Region Code" value="AP"/>
+		<alias name="Region" value="AP-J"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="KE" is_enabled="true" order_no="0">
+		<alias name="Country" value="Kenya"/>
+		<alias name="Region Code" value="AF"/>
+		<alias name="Region" value="Africa"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="KG" is_enabled="true" order_no="0">
+		<alias name="Country" value="Kyrgyzstan"/>
+		<alias name="Region Code" value="ME"/>
+		<alias name="Region" value="Middle East"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="KH" is_enabled="true" order_no="0">
+		<alias name="Country" value="Cambodia"/>
+		<alias name="Region Code" value="AP"/>
+		<alias name="Region" value="AP-J"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="KR" is_enabled="true" order_no="0">
+		<alias name="Country" value="South Korea"/>
+		<alias name="Region Code" value="AP"/>
+		<alias name="Region" value="AP-J"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="KW" is_enabled="true" order_no="0">
+		<alias name="Country" value="Kuwait"/>
+		<alias name="Region Code" value="ME"/>
+		<alias name="Region" value="Middle East"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="KZ" is_enabled="true" order_no="0">
+		<alias name="Country" value="Kazakhstan"/>
+		<alias name="Region Code" value="AP"/>
+		<alias name="Region" value="AP-J"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="LB" is_enabled="true" order_no="0">
+		<alias name="Country" value="Lebanon"/>
+		<alias name="Region Code" value="ME"/>
+		<alias name="Region" value="Middle East"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="LT" is_enabled="true" order_no="0">
+		<alias name="Country" value="Lithuania"/>
+		<alias name="Region Code" value="EU"/>
+		<alias name="Region" value="Europe"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="LV" is_enabled="true" order_no="0">
+		<alias name="Country" value="Latvia"/>
+		<alias name="Region Code" value="EU"/>
+		<alias name="Region" value="Europe"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="LY" is_enabled="true" order_no="0">
+		<alias name="Country" value="Libya"/>
+		<alias name="Region Code" value="AF"/>
+		<alias name="Region" value="Africa"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="MA" is_enabled="true" order_no="0">
+		<alias name="Country" value="Morocco"/>
+		<alias name="Region Code" value="AF"/>
+		<alias name="Region" value="Africa"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="MN" is_enabled="true" order_no="0">
+		<alias name="Country" value="Mongolia"/>
+		<alias name="Region Code" value="AP"/>
+		<alias name="Region" value="AP-J"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="MX" is_enabled="true" order_no="0">
+		<alias name="Country" value="Mexico"/>
+		<alias name="Region Code" value="NC"/>
+		<alias name="Region" value="North America"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="MY" is_enabled="true" order_no="0">
+		<alias name="Country" value="Malaysia"/>
+		<alias name="Region Code" value="AP"/>
+		<alias name="Region" value="AP-J"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="NG" is_enabled="true" order_no="0">
+		<alias name="Country" value="Nigeria"/>
+		<alias name="Region Code" value="AF"/>
+		<alias name="Region" value="Africa"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="NL" is_enabled="true" order_no="0">
+		<alias name="Country" value="Netherlands"/>
+		<alias name="Region Code" value="EU"/>
+		<alias name="Region" value="Europe"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="NO" is_enabled="true" order_no="0">
+		<alias name="Country" value="Norway"/>
+		<alias name="Region Code" value="EU"/>
+		<alias name="Region" value="Europe"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="NZ" is_enabled="true" order_no="0">
+		<alias name="Country" value="New Zealand"/>
+		<alias name="Region Code" value="AP"/>
+		<alias name="Region" value="AP-J"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="OM" is_enabled="true" order_no="0">
+		<alias name="Country" value="Oman"/>
+		<alias name="Region Code" value="ME"/>
+		<alias name="Region" value="Middle East"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="PA" is_enabled="true" order_no="0">
+		<alias name="Country" value="Panama"/>
+		<alias name="Region Code" value="NC"/>
+		<alias name="Region" value="North America"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="PE" is_enabled="true" order_no="0">
+		<alias name="Country" value="Peru"/>
+		<alias name="Region Code" value="SA"/>
+		<alias name="Region" value="South America"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="PG" is_enabled="true" order_no="0">
+		<alias name="Country" value="Papua New Guinea"/>
+		<alias name="Region Code" value="AP"/>
+		<alias name="Region" value="AP-J"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="PH" is_enabled="true" order_no="0">
+		<alias name="Country" value="Philippines"/>
+		<alias name="Region Code" value="AP"/>
+		<alias name="Region" value="AP-J"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="PK" is_enabled="true" order_no="0">
+		<alias name="Country" value="Pakistan"/>
+		<alias name="Region Code" value="ME"/>
+		<alias name="Region" value="Middle East"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="PL" is_enabled="true" order_no="0">
+		<alias name="Country" value="Poland"/>
+		<alias name="Region Code" value="EU"/>
+		<alias name="Region" value="Europe"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="PY" is_enabled="true" order_no="0">
+		<alias name="Country" value="Paraguay"/>
+		<alias name="Region Code" value="SA"/>
+		<alias name="Region" value="South America"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="QA" is_enabled="true" order_no="0">
+		<alias name="Country" value="Qatar"/>
+		<alias name="Region Code" value="ME"/>
+		<alias name="Region" value="Middle East"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="RO" is_enabled="true" order_no="0">
+		<alias name="Country" value="Romania"/>
+		<alias name="Region Code" value="EU"/>
+		<alias name="Region" value="Europe"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="RU" is_enabled="true" order_no="0">
+		<alias name="Country" value="Russia"/>
+		<alias name="Region Code" value="EU"/>
+		<alias name="Region" value="Europe"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="SA" is_enabled="true" order_no="0">
+		<alias name="Country" value="Saudi Arabia"/>
+		<alias name="Region Code" value="ME"/>
+		<alias name="Region" value="Middle East"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="SE" is_enabled="true" order_no="0">
+		<alias name="Country" value="Sweden"/>
+		<alias name="Region Code" value="EU"/>
+		<alias name="Region" value="Europe"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="SG" is_enabled="true" order_no="0">
+		<alias name="Country" value="Singapore"/>
+		<alias name="Region Code" value="AP"/>
+		<alias name="Region" value="AP-J"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="SI" is_enabled="true" order_no="0">
+		<alias name="Country" value="Slovenia"/>
+		<alias name="Region Code" value="EU"/>
+		<alias name="Region" value="Europe"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="SK" is_enabled="true" order_no="0">
+		<alias name="Country" value="Slovakia"/>
+		<alias name="Region Code" value="EU"/>
+		<alias name="Region" value="Europe"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="SY" is_enabled="true" order_no="0">
+		<alias name="Country" value="Syria"/>
+		<alias name="Region Code" value="ME"/>
+		<alias name="Region" value="Middle East"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="TH" is_enabled="true" order_no="0">
+		<alias name="Country" value="Thailand"/>
+		<alias name="Region Code" value="AP"/>
+		<alias name="Region" value="AP-J"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="TJ" is_enabled="true" order_no="0">
+		<alias name="Country" value="Tajikistan"/>
+		<alias name="Region Code" value="ME"/>
+		<alias name="Region" value="Middle East"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="TM" is_enabled="true" order_no="0">
+		<alias name="Country" value="Turkmenistan"/>
+		<alias name="Region Code" value="ME"/>
+		<alias name="Region" value="Middle East"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="TN" is_enabled="true" order_no="0">
+		<alias name="Country" value="Tunisia"/>
+		<alias name="Region Code" value="AF"/>
+		<alias name="Region" value="Africa"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="TR" is_enabled="true" order_no="0">
+		<alias name="Country" value="Turkey"/>
+		<alias name="Region Code" value="ME"/>
+		<alias name="Region" value="Middle East"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="TW" is_enabled="true" order_no="0">
+		<alias name="Country" value="Taiwan"/>
+		<alias name="Region Code" value="AP"/>
+		<alias name="Region" value="AP-J"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="UA" is_enabled="true" order_no="0">
+		<alias name="Country" value="Ukraine"/>
+		<alias name="Region Code" value="EU"/>
+		<alias name="Region" value="Europe"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="UG" is_enabled="true" order_no="0">
+		<alias name="Country" value="Uganda"/>
+		<alias name="Region Code" value="AF"/>
+		<alias name="Region" value="Africa"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="US" is_enabled="true" order_no="0">
+		<alias name="Country" value="United States of America"/>
+		<alias name="Region Code" value="NC"/>
+		<alias name="Region" value="North America"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="UY" is_enabled="true" order_no="0">
+		<alias name="Country" value="Uruguay"/>
+		<alias name="Region Code" value="SA"/>
+		<alias name="Region" value="South America"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="UZ" is_enabled="true" order_no="0">
+		<alias name="Country" value="Uzbekistan"/>
+		<alias name="Region Code" value="ME"/>
+		<alias name="Region" value="Middle East"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="VN" is_enabled="true" order_no="0">
+		<alias name="Country" value="Viet Nam"/>
+		<alias name="Region Code" value="AP"/>
+		<alias name="Region" value="AP-J"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="YE" is_enabled="true" order_no="0">
+		<alias name="Country" value="Yemen"/>
+		<alias name="Region Code" value="ME"/>
+		<alias name="Region" value="Middle East"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="ZA" is_enabled="true" order_no="0">
+		<alias name="Country" value="South Africa"/>
+		<alias name="Region Code" value="AF"/>
+		<alias name="Region" value="Africa"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="ZW" is_enabled="true" order_no="0">
+		<alias name="Country" value="Zimbabwe"/>
+		<alias name="Region Code" value="AF"/>
+		<alias name="Region" value="Africa"/>
+	</d2_dictionary_value>
+</d2_dictionary>

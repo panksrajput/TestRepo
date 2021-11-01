@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dialog id="PropertiesDialog" auto_smartview_edit_mode="false" buttons_right="false" focus="" height="500" initial_invalid="false" resizable="true" signoff_creation="false" signoff_edit="false" signoff_import="false" signoff_intention_dictionary="" signoff_intention_required="false" width="850">
+	<content>
+		<label id="object_name" condition_enabled_create="false" condition_enabled_edit="false" condition_enabled_import="false" label_en="Zip"/>
+		<label id="r_version_label" condition_enabled_create="false" condition_enabled_edit="false" condition_enabled_import="false"/>
+		<list-radio id="zip_file_content" advancedView_visible="false" assistance_dictionary="Zip File Content Options" assistance_dictionary_alias="en" assistance_type="dictionary" condition_visible="(getValue(a_status).equals('Draft'))" label_en="Include" line="true"/>
+		<boolean id="zip_flattened" label_en="Zip / unzip all files into the same folder"/>
+		<boolean id="zip_with_position_index_nos" label_en="Include Outline Heading Number prefixes in the zip file / folder names"/>
+		<boolean id="zip_with_version_numbers" label_en="Include document version number suffixes in the zip file names"/>
+		<combo id="zip_manifest_tmpl_obj_id" assistance_dql="select r_object_id as name, object_name as display_value from dm_document where folder ('/System/CDF/Vdoc Zip Manifest Templates') order by 2" assistance_type="dql" autoselect_single="true" label_en="Table of Contents Format to use for zip file manifest"/>
+		<list-editable id="notification_list" rows="3"/>
+		<comment label_en="Select the users / groups to be notified when the zip file is ready for download. You will be added to the notification list automatically."/>
+		<combo id="zip_file_exists" assistance_dql="select 'Y' from dmr_content where any parent_id = '$value(r_object_id)' and full_format = 'zip'" assistance_type="dql" autoselect_single="true" condition_visible_create="false" condition_visible_edit="false" condition_visible_import="false" control="true"/>
+		<comment advancedView_visible="false" condition_visible="(getValue(zip_file_exists).equals('Y'))" html_content="true" label_en="This virtual document already has a zip file. To view the existing zip file, click &lt;strong&gt;Cancel&lt;/strong&gt; and go to the &lt;strong&gt;Renditions&lt;/strong&gt; tab. To replace the zip file with a new zip, click &lt;strong&gt;OK&lt;/strong&gt;."/>
+		<text id="a_status" condition_enabled_create="false" condition_enabled_edit="false" condition_enabled_import="false" condition_visible_create="false" condition_visible_edit="false" condition_visible_import="false"/>
+	</content>
+	<buttons>
+		<button id="buttonOk" action="validDialog()"/>
+		<button id="buttonCancel" action="cancelDialog()"/>
+	</buttons>
+</dialog>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_dictionary object_name="Regulatory-Admin Subgroups" title="Within the Regulatory/Administrative domain, categories of documents within a group, usually based on CTD module subsets." lock_config="false" parents_config="" application_names="OpenText Life Sciences Research and Development Solution¬OpenText Life Sciences Quality and Manufacturing Solution¬OpenText Life Sciences Medical Device for Quality and Manufacturing Solution¬OpenText Life Sciences Medical Device Solution" security_group="admingroup" search_group="admingroup" version="2" is_versioned="false" manual_order="false" create_view_option="false" is_dql="false" is_dql_cache="false" dql="" label_en="Regulatory/Administrative Subgroups">
+	<d2_dictionary_value object_name="Ad Hoc Regulatory safety Reports" is_enabled="true" order_no="0">
+		<locale name="en" value="Ad Hoc Regulatory safety Reports"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Additional Data and Response to Questions" is_enabled="true" order_no="0">
+		<locale name="en" value="Additional Data and Response to Questions"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Administrative Information" is_enabled="true" order_no="0">
+		<locale name="en" value="Administrative Information"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Annual Report" is_enabled="true" order_no="0">
+		<locale name="en" value="Annual Report"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Applicant Information" is_enabled="true" order_no="0">
+		<locale name="en" value="Applicant Information"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Application Form" is_enabled="true" order_no="0">
+		<locale name="en" value="Application Form"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Application Information" is_enabled="true" order_no="0">
+		<locale name="en" value="Application Information"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Application Status" is_enabled="true" order_no="0">
+		<locale name="en" value="Application Status"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Application Withdrawal" is_enabled="true" order_no="0">
+		<locale name="en" value="Application Withdrawal"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Contact-Sponsor-Applicant Information" is_enabled="true" order_no="0">
+		<locale name="en" value="Contact-Sponsor-Applicant Information"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Correspondence Regarding Meetings" is_enabled="true" order_no="0">
+		<locale name="en" value="Correspondence Regarding Meetings"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Cover Letter" is_enabled="true" order_no="0">
+		<locale name="en" value="Cover Letter"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Dispute Resolution" is_enabled="true" order_no="0">
+		<locale name="en" value="Dispute Resolution"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Environmental Risk Assessment" is_enabled="true" order_no="0">
+		<locale name="en" value="Environmental Risk Assessment"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Fast Track" is_enabled="true" order_no="0">
+		<locale name="en" value="Fast Track"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Fast Track Designation Withdrawal Request" is_enabled="true" order_no="0">
+		<locale name="en" value="Fast Track Designation Withdrawal Request"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Information about the Experts" is_enabled="true" order_no="0">
+		<locale name="en" value="Information about the Experts"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Information Amendment" is_enabled="true" order_no="0">
+		<locale name="en" value="Information Amendment"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Information amendment (info not covered under modules 2-5)" is_enabled="true" order_no="0">
+		<locale name="en" value="Information amendment (info not covered under modules 2-5)"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Information relating to Orphan Market Exclusivity" is_enabled="true" order_no="0">
+		<locale name="en" value="Information relating to Orphan Market Exclusivity"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Labeling" is_enabled="true" order_no="0">
+		<locale name="en" value="Labeling"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Listed Drug Labeling" is_enabled="true" order_no="0">
+		<locale name="en" value="Listed Drug Labeling"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Other Correspondence" is_enabled="true" order_no="0">
+		<locale name="en" value="Other Correspondence"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Patent and Exclusivity" is_enabled="true" order_no="0">
+		<locale name="en" value="Patent and Exclusivity"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Pediatric Administrative Information" is_enabled="true" order_no="0">
+		<locale name="en" value="Pediatric Administrative Information"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Product Name and Classification" is_enabled="true" order_no="0">
+		<locale name="en" value="Product Name and Classification"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Promotional Material" is_enabled="true" order_no="0">
+		<locale name="en" value="Promotional Material"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="References" is_enabled="true" order_no="0">
+		<locale name="en" value="References"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Regulatory Approval" is_enabled="true" order_no="0">
+		<locale name="en" value="Regulatory Approval"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Regulatory Correspondence" is_enabled="true" order_no="0">
+		<locale name="en" value="Regulatory Correspondence"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Regulatory Meetings" is_enabled="true" order_no="0">
+		<locale name="en" value="Regulatory Meetings"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Regulatory Submission EU CTA" is_enabled="true" order_no="0">
+		<locale name="en" value="Regulatory Submission EU CTA"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Risk Management Plans" is_enabled="true" order_no="0">
+		<locale name="en" value="Risk Management Plans"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Special Protocol Assessment Request" is_enabled="true" order_no="0">
+		<locale name="en" value="Special Protocol Assessment Request"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Specific Requirements for Different Types of Applications" is_enabled="true" order_no="0">
+		<locale name="en" value="Specific Requirements for Different Types of Applications"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Sponsor Address" is_enabled="true" order_no="0">
+		<locale name="en" value="Sponsor Address"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Sponsor Agent" is_enabled="true" order_no="0">
+		<locale name="en" value="Sponsor Agent"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Summaries" is_enabled="true" order_no="0">
+		<locale name="en" value="Summaries"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Table of Contents" is_enabled="true" order_no="0">
+		<locale name="en" value="Table of Contents"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Virtual Documents" is_enabled="true" order_no="0">
+		<locale name="en" value="Virtual Documents"/>
+	</d2_dictionary_value>
+</d2_dictionary>

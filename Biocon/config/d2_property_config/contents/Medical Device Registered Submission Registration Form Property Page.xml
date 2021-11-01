@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dialog id="PropertiesDialog" buttons_right="false" focus="application_description" height="650" resizable="true" signoff_creation="false" signoff_edit="false" signoff_import="false" signoff_intention_dictionary="" signoff_intention_required="false" width="750">
+	<content>
+		<tabs>
+			<tab label_en="Submission Info">
+				<text id="application_description" condition_enabled_create="false" condition_enabled_edit="false" condition_enabled_import="false"/>
+				<boolean id="is_ectd_submission" condition_enabled_create="false" condition_enabled_edit="false" condition_enabled_import="false" condition_visible_create="false" condition_visible_edit="false" condition_visible_import="false"/>
+				<text id="submission_number" advancedView_enabled="false" condition_enabled_create="false" condition_enabled_edit="false" condition_enabled_import="false" condition_required_create="true" condition_required_edit="true" condition_required_import="true"/>
+				<text id="submission_description" condition_enabled_create="false" condition_enabled_edit="false" condition_enabled_import="false"/>
+				<combo id="submission_type" advancedView_enabled="false" assistance_dictionary="Regulatory Submission Type" assistance_dictionary_alias="auto" assistance_type="dictionary" asynchronous="true" condition_enabled="(getValue(submission_type).equals(''))" condition_enabled_create="false" condition_enabled_import="false" condition_required_create="true" condition_required_import="true"/>
+				<combo id="submission_status" assistance_dictionary="Submission Status" assistance_dictionary_alias="en" assistance_type="dictionary" asynchronous="true" condition_enabled_create="false" condition_enabled_import="false" condition_required_create="true" condition_required_edit="true" condition_required_import="true"/>
+				<date id="submission_date" condition_enabled_create="false" condition_enabled_import="false"/>
+				<boolean id="is_imported" condition_enabled_create="false" condition_enabled_edit="false" condition_enabled_import="false" label_en="Imported"/>
+				<date id="submission_import_date" advancedView_visible="false" condition_enabled_create="false" condition_enabled_edit="false" condition_enabled_import="false" condition_visible="(getValue(is_imported).equals('true'))" label_en="Date Imported"/>
+				<text id="submission_file_count" advancedView_visible="false" condition_enabled_create="false" condition_enabled_edit="false" condition_enabled_import="false" condition_visible="(getValue(is_imported).equals('true'))" label_en="Files"/>
+				<text id="submission_file_size_mb" advancedView_visible="false" condition_enabled_create="false" condition_enabled_edit="false" condition_enabled_import="false" condition_visible="(getValue(is_imported).equals('true'))" label_en="Size in Megabytes"/>
+				<text id="submission_import_time_str" advancedView_enabled="false" advancedView_visible="false" condition_enabled_create="false" condition_enabled_edit="false" condition_enabled_import="false" condition_visible="(getValue(is_imported).equals('true'))" label_en="Time taken to import"/>
+			</tab>
+			<tab label_en="Application Info">
+				<text id="application_num" condition_enabled_create="false" condition_enabled_edit="false" condition_enabled_import="false"/>
+				<combo id="region" assistance_dictionary="Geographic Regions" assistance_dictionary_alias="en" assistance_type="dictionary" asynchronous="true" condition_enabled_create="false" condition_enabled_edit="false" condition_enabled_import="false"/>
+				<combo id="country_code" assistance_dictionary="Submission Country" assistance_dictionary_alias="en" assistance_type="dictionary" asynchronous="true" condition_enabled_create="false" condition_enabled_edit="false" condition_enabled_import="false" label_en="Submission Country"/>
+				<combo id="health_authority" advancedView_visible="false" assistance_dictionary="Health Authorities" assistance_dictionary_alias="en" assistance_type="dictionary" asynchronous="true" condition_enabled_create="false" condition_enabled_edit="false" condition_enabled_import="false" condition_visible="((getValue(region).notEquals('EU'))&amp;&amp;(getValue(region).notEquals('')))"/>
+				<combo id="dv_notified_body" advancedView_visible="false" assistance_dql="select v.alias_value, v.locale_value from  d2_dictionary d , d2_dictionary_value v where v.object_name like '%$value(country_code)' and d.object_name = v.dictionary_name and d.object_name ='Medical Device Notified Bodies' and d.alias_name= 'Notified Body Code' and v.i_position = d.i_position ORDER BY locale_value enable (ROW_BASED)" assistance_type="dql" asynchronous="true" condition_enabled_create="false" condition_enabled_edit="false" condition_enabled_import="false" condition_visible="(getValue(region).equals('EU'))"/>
+				<combo id="application_type" assistance_dictionary="Application Type" assistance_dictionary_alias="auto" assistance_type="dictionary" asynchronous="true" condition_enabled_create="false" condition_enabled_edit="false" condition_enabled_import="false"/>
+			</tab>
+			<tab label_en="Access Control">
+				<list id="form_managers" assistance_dql="select groups_names from dm_group where any i_supergroups_names IN ('cd_md_submission_mgrs') union select users_names from dm_group where any i_supergroups_names IN ('cd_md_submission_mgrs') union select group_name from dm_group where group_name IN ('cd_md_submission_mgrs')" assistance_type="dql" asynchronous="true" condition_required_create="true" condition_required_edit="true" label_en="Submission Managers" rows="4" sorted="true"/>
+				<comment font_color="#000000" html_content="true" label_en="&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;font color=#646464&gt;These users will be responsible for managing access to this submission. Add the relevant Managers to the Regulatory Affairs group (cd_dc_regulatory_mgrs) if necessary.&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"/>
+				<list id="form_users" assistance_dql="select groups_names from dm_group where any i_supergroups_names IN ('cd_md_submission_users') union select users_names from dm_group where any i_supergroups_names IN ('cd_md_submission_users') union select group_name from dm_group where group_name IN ('cd_md_submission_users')" assistance_type="dql" asynchronous="true" label_en="Submission Users" rows="8" sorted="true"/>
+				<comment font_color="#000000" html_content="true" label_en="&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;font color=#646464&gt;These users have read-only access to the submission folders and documents.&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"/>
+				<separator advancedView_visible="false" condition_visible="(getValue(is_imported).equals('true'))" condition_visible_create="false" condition_visible_import="false"/>
+				<comment advancedView_visible="false" condition_visible="(getValue(is_imported).equals('true'))" condition_visible_create="false" condition_visible_import="false" html_content="true" label_en="&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;font color=#646464&gt;Clicking on ‘OK’ will reset the security on the archived submission folders and documents, overriding any local restrictions that are currently in force.&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"/>
+			</tab>
+		</tabs>
+	</content>
+	<buttons>
+		<button id="buttonOk" action="validDialog()" advancedView_visible="false"/>
+		<button id="buttonCancel" action="cancelDialog()"/>
+	</buttons>
+</dialog>

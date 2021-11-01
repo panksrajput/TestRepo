@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="SpaceSchema.xsd">
+	<space>
+		<border-layout-container>
+			<data>
+				<border-layout-data layoutregion="WEST" minSize="150" size=".50" split="true"/>
+				<border-layout-data layoutregion="CENTER" split="true"/>
+				<border-layout-data layoutregion="EAST" minSize="150" size=".44" split="true"/>
+			</data>
+			<content>
+				<border-layout-container>
+					<data>
+						<border-layout-data layoutregion="NORTH" size="200" split="true"/>
+						<border-layout-data layoutregion="CENTER" split="true"/>
+						<border-layout-data layoutregion="SOUTH" size="200" split="true"/>
+					</data>
+					<content>
+						<tab-container>
+							<content>
+								<widget config="WG eTMF Investigator Sites"/>
+							</content>
+						</tab-container>
+						<tab-container>
+							<content>
+								<widget config="WG eTMF Investigator Placeholder"/>
+							</content>
+						</tab-container>
+						<tab-container>
+							<content>
+								<widget config="WG eTMF Investigator Documents"/>
+							</content>
+						</tab-container>
+					</content>
+				</border-layout-container>
+				<tab-container>
+					<content>
+						<widget config="WG Properties"/>
+						<widget config="WG EXT LSCI LSS Doc Viewer (Browse)"/>
+						<widget config="WG eTMF Documents for Indexing for a PH Doclist"/>
+					</content>
+				</tab-container>
+			</content>
+		</border-layout-container>
+	</space>
+</root>

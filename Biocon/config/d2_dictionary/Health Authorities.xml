@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_dictionary object_name="Health Authorities" title="Names of the country-specific health authority responsible for ensuring the safety and effectiveness of drugs, biologics, vaccines, and/or medical devices." lock_config="false" parents_config="" application_names="OpenText Life Sciences Medical Device for Quality and Manufacturing Solution¬OpenText Life Sciences Medical Device for Research and Development Solution¬OpenText Life Sciences Medical Device Solution¬OpenText Life Sciences Submission Storage and Viewing¬OpenText Life Sciences Research and Development Solution¬OpenText Life Sciences Quality and Manufacturing Solution¬Custom Configurations" security_group="cd_regulatory_doc_coordinators" search_group="cd_regulatory_doc_coordinators" version="2" is_versioned="false" manual_order="true" create_view_option="false" is_dql="false" is_dql_cache="false" dql="" label_en="Health Authorities">
+	<d2_dictionary_value object_name="AFSSPS" is_enabled="false" order_no="0">
+		<locale name="en" value="AFSSPS - Agence Francaise de Securite Sanitaire des Produits de Sante"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="AM" is_enabled="true" order_no="1">
+		<locale name="en" value="AM - Agencia Espaniola del Medicamento"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="AOMP" is_enabled="true" order_no="2">
+		<locale name="en" value="AOMP - Agency for Medicinal Products"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="BGTD" is_enabled="true" order_no="3">
+		<locale name="en" value="BGTD - Biologics and Genetic Therapies Directorate"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="BREC" is_enabled="true" order_no="4">
+		<locale name="en" value="BREC - Biologics and Radiopharmaceuticals Evaluation Centre"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="CBR" is_enabled="true" order_no="5">
+		<locale name="en" value="CBR - Centre for Biologics Research"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="CPRA" is_enabled="true" order_no="6">
+		<locale name="en" value="CPRA - Centre for Policy and Regulatory Affairs"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="DKMA" is_enabled="true" order_no="7">
+		<locale name="en" value="DKMA - Danish Medicines Agency"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="DoH" is_enabled="true" order_no="8">
+		<locale name="en" value="DoH - Department of Health"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="DGMP" is_enabled="true" order_no="9">
+		<locale name="en" value="DGMP - Directorate-General Medicinal Products"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="DFM" is_enabled="true" order_no="10">
+		<locale name="en" value="DFM - Division de la Farmacie et des Medicamentes"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="DI" is_enabled="true" order_no="11">
+		<locale name="en" value="DI - Drug Institute"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="EC" is_enabled="true" order_no="12">
+		<locale name="en" value="EC - Ethics Committee"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="EMEA" is_enabled="true" order_no="13">
+		<locale name="en" value="EMA - European Agency for the Evaluation of Medicinal Products"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="BfArM" is_enabled="true" order_no="14">
+		<locale name="en" value="BfArM - Federal Institute for Drugs and Medical Devices"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="FMLHSA" is_enabled="true" order_no="15">
+		<locale name="en" value="FMLHSA - Federal Ministry of Labour, Health and Social Affairs"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="FDA" is_enabled="true" order_no="16">
+		<locale name="en" value="FDA - Food and Drug Administration"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="HPFB" is_enabled="true" order_no="17">
+		<locale name="en" value="HPFB - Health Products and Food Branch"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="IMCA" is_enabled="true" order_no="18">
+		<locale name="en" value="IMCA - Icelandic Medicines Control Agency"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="IOPH" is_enabled="true" order_no="19">
+		<locale name="en" value="IOPH - Institute of Public Health"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="ANMAT" is_enabled="true" order_no="20">
+		<locale name="en" value="ANMAT - Instituto Nacional de Medicamentos"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="INFARMED" is_enabled="true" order_no="21">
+		<locale name="en" value="INFARMED - Instituto National da Farmacia e do Medicamento"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="IOCM" is_enabled="true" order_no="22">
+		<locale name="en" value="IOCM - Intercantonal Office for the Control of Medicines"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="IMB" is_enabled="true" order_no="23">
+		<locale name="en" value="IMB - Irish Medicines Board"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="IMOH" is_enabled="true" order_no="24">
+		<locale name="en" value="IMOH - Israeli Ministry of Health"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="MHPD" is_enabled="true" order_no="25">
+		<locale name="en" value="MHPD - Marketed Health Products Directorate"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="MPA" is_enabled="true" order_no="26">
+		<locale name="en" value="MPA - Medical Products Agency"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="MHRA" is_enabled="true" order_no="27">
+		<locale name="en" value="MHRA - Medicines and Healthcare Products Regulatory Agency"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="MedSafe" is_enabled="true" order_no="28">
+		<locale name="en" value="MedSafe - Medicines and Medical Devices Safety Authority"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="MEB" is_enabled="true" order_no="29">
+		<locale name="en" value="MEB - Medicines Evaluation Board"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="MoH-Italy" is_enabled="true" order_no="30">
+		<locale name="en" value="MoH-Italy - Ministry of Health"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="MOHW" is_enabled="true" order_no="31">
+		<locale name="en" value="MOHW - Ministry of Health and Welfare"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="MoHGPS" is_enabled="true" order_no="32">
+		<locale name="en" value="MoHGPS - Ministry of Health Government Pharmaceutical Services"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="NAM" is_enabled="true" order_no="33">
+		<locale name="en" value="NAM - National Agency for Medicines"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="NDI" is_enabled="true" order_no="34">
+		<locale name="en" value="NDI - National Drug Institute"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="NIHS" is_enabled="true" order_no="35">
+		<locale name="en" value="NIHS - National Institute of Health Sciences"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="OGYI" is_enabled="true" order_no="36">
+		<locale name="en" value="OGYI - National Institute of Pharmacy"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="NMA" is_enabled="true" order_no="37">
+		<locale name="en" value="NMA - National Medicines Agency"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="EOF" is_enabled="true" order_no="38">
+		<locale name="en" value="EOF - National Organization for Medicines"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="NoMA" is_enabled="true" order_no="39">
+		<locale name="en" value="NoMA - Norwegian Medicines Agency"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="PEI" is_enabled="true" order_no="40">
+		<locale name="en" value="PEI - Paul Ehrlich Institut"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="SADC" is_enabled="true" order_no="41">
+		<locale name="en" value="SADC - State Agency of Drug Control"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="SDI" is_enabled="true" order_no="42">
+		<locale name="en" value="SDI - State Drug Inspectorate"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="SMCA" is_enabled="true" order_no="43">
+		<locale name="en" value="SMCA - State Medicines Control Agency"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="TGA" is_enabled="true" order_no="44">
+		<locale name="en" value="TGA - Therapeutic Goods Administration"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="TPD" is_enabled="true" order_no="45">
+		<locale name="en" value="TPD - Therapeutic Products Directorate"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="DCGI" is_enabled="true" order_no="46">
+		<locale name="en" value="DCGI - Drugs Controller General of India"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="ANVISA" is_enabled="true" order_no="47">
+		<locale name="en" value="ANVISA - National Health Surveillance Agency"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="FR-AFSSAPS" is_enabled="true" order_no="48">
+		<locale name="en" value="AFSSAPS - Agence Francaise de Securite Sanitaire des Produits de Sante"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="ES-AGEMED" is_enabled="true" order_no="49">
+		<locale name="en" value="Spain - Agencia Española de Medicamentos y Productos Sanitarios"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="ES-AEMPS" is_enabled="true" order_no="50">
+		<locale name="en" value="Spain - Agencia Española de Medicamentos y Productos Sanitarios"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="EU-EMA" is_enabled="true" order_no="51">
+		<locale name="en" value="EMA - European Medicines Agency"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="AT-AGES" is_enabled="true" order_no="52">
+		<locale name="en" value="Austria - AGES - PharmMed LCM"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="BE-FAMHP" is_enabled="true" order_no="53">
+		<locale name="en" value="Belgium - Agence Fédérale des Médicaments et des Produits de Santé"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="BG-BDA" is_enabled="true" order_no="54">
+		<locale name="en" value="Bulgaria - Bulgarian Drug Agency"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="BG-NVS" is_enabled="true" order_no="55">
+		<locale name="en" value="Bulgaria - Institute for Control of Veterinary Products"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="CY-VS" is_enabled="true" order_no="56">
+		<locale name="en" value="Cyprus - Ministry of Health Pharmaceutical Services"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="CY-PHS" is_enabled="true" order_no="57">
+		<locale name="en" value="Cyprus - Pharmaceutical Services, Ministry of Health"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="CZ-SUKL" is_enabled="true" order_no="58">
+		<locale name="en" value="Czech Rep - State Institut für Drug Control"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="CZ-USKVBL" is_enabled="true" order_no="59">
+		<locale name="en" value="Czech Rep - Institute for State Control of Veterinary Biologicals and Medicaments"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="DE-BVL" is_enabled="true" order_no="60">
+		<locale name="en" value="Germany - Bundesamt für Verbraucherschutz und Lebensmittelsicherheit, Ref. 301"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="DE-PEI" is_enabled="true" order_no="61">
+		<locale name="en" value="Germany - Paul-Ehrlich Institut"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="EE-SAM" is_enabled="true" order_no="62">
+		<locale name="en" value="Estonia - State Agency of Medicines"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="EL-EOF" is_enabled="true" order_no="63">
+		<locale name="en" value="Greece - EOF - National Drug Organisation"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="FI-FIMEA" is_enabled="true" order_no="64">
+		<locale name="en" value="Finland - Finnish Medicines Agency"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="FR-ANMV" is_enabled="true" order_no="65">
+		<locale name="en" value="France - ANMV - Agence Nationale du Médicament Vétérinaire, Agence Française de Sécurité Sanitaire des Aliments"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="FR-ANSM" is_enabled="true" order_no="66">
+		<locale name="en" value="France - ANSM - Agence national de sécurité du médicament et des produits de santé"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="HR-HALMED" is_enabled="true" order_no="67">
+		<locale name="en" value="Croatia - Croatian Agency for Medicinal Products and Medical Devices"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="HU-IVMP" is_enabled="true" order_no="68">
+		<locale name="en" value="Hungary - National Institut of Pharmacy"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="HU-OGYI" is_enabled="true" order_no="69">
+		<locale name="en" value="Hungary - Institute for Veterinary Medicinal Products"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="IE-DAFF" is_enabled="true" order_no="70">
+		<locale name="en" value="Ireland - Dept of Agriculture and Food"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="IE-HPRA" is_enabled="true" order_no="71">
+		<locale name="en" value="Ireland - The Health Products Regulatory Authority"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="IT-AIFA" is_enabled="true" order_no="72">
+		<locale name="en" value="Italy - Agenzia Italiana del Farmaco"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="IT-LMV" is_enabled="true" order_no="73">
+		<locale name="en" value="Italy - Laboratorio di Medicina Veterinaria, Istituto Superiore di Sanità"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="IT-SPV" is_enabled="true" order_no="74">
+		<locale name="en" value="Italy - Ministero della Salute, Direzione Generale della Sanità Pubblica Veterinaria"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="LI-LLV" is_enabled="true" order_no="75">
+		<locale name="en" value="Liechtenstein - Kontrollstelle für Arzneimittel beim Amt für Lebensmittelkontrolle und Veterinärwesen"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="LT-VVPI" is_enabled="true" order_no="76">
+		<locale name="en" value="Lithuania - Lithuanian State Inspection on Veterinary Preparations"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="LT-VMVT" is_enabled="true" order_no="77">
+		<locale name="en" value="Lithuania - State Food and Veterinary Service"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="LU-MINSANT" is_enabled="true" order_no="78">
+		<locale name="en" value="Luxembourg - Direction de la Santé Villa Louvigny Division de la Pharmacie et des Medicaments"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="LV-ZVA" is_enabled="true" order_no="79">
+		<locale name="en" value="Latvia - State Agency of Medicines"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="MT-MRU" is_enabled="true" order_no="80">
+		<locale name="en" value="Malta - Medicines Regulatory Unit"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="MT-MEDAUTH" is_enabled="true" order_no="81">
+		<locale name="en" value="Malta - Medicines Authority Divizjoni Tas-Sahha Bezzjoni Ghar-Regolazzjoni Tal-Medicini"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="NL-MEB" is_enabled="true" order_no="82">
+		<locale name="en" value="Netherlands - College ter Beoordeling van Geneesmiddelen Medicines Evaluation Board"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="PL-URPL" is_enabled="true" order_no="83">
+		<locale name="en" value="Poland - Office for Registration of Medicinal Products, Medical Devices and Biocidal Products"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="PT-DGV" is_enabled="true" order_no="84">
+		<locale name="en" value="Portugal - DGV - Direcção Geral de Veterinária, Divisão de Meios de Defesa da Saúde Animal"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="PT-INFARMED" is_enabled="true" order_no="85">
+		<locale name="en" value="Portugal - INFARMED - Instituto Nacional da Farmácia e do Medicamento Parque da Saúde de Lisboa"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="RO-ANMMD" is_enabled="true" order_no="86">
+		<locale name="en" value="Romania- National Agency for Medicines and Medical Devices"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="SE-MPA" is_enabled="true" order_no="87">
+		<locale name="en" value="Sweden - Medical Products Agency"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="SI-JAZMP" is_enabled="true" order_no="88">
+		<locale name="en" value="Slovenia - Agencija za zdravila in medicinske pripmocke"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="SK-SIDC" is_enabled="true" order_no="89">
+		<locale name="en" value="Slovak Rep - State Institute for Drug Control"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="SK-USKVBL" is_enabled="true" order_no="90">
+		<locale name="en" value="Slovak Rep - Institute for State Control of Veterinary Biologicals and Medicaments Biovetská 34"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="UK-MHRA" is_enabled="true" order_no="91">
+		<locale name="en" value="Medicines and Healthcare products Regulatory Agency, Market Towers"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="UK-VMD" is_enabled="true" order_no="92">
+		<locale name="en" value="VMD - Veterinary Medicines Directorate"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="EU-EDQM" is_enabled="true" order_no="93">
+		<locale name="en" value="Spain - European Directorate for the Quality of Medicines and HealthCare"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="AE-MOH" is_enabled="true" order_no="94">
+		<locale name="en" value="UAE - Ministry of Health"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="BH-MOH" is_enabled="true" order_no="95">
+		<locale name="en" value="BAHRAIN - Ministry of Health"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="KW-MOH" is_enabled="true" order_no="96">
+		<locale name="en" value="KUWAIT - Ministry of Health"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="OM-MOH" is_enabled="true" order_no="97">
+		<locale name="en" value="OMAN - Ministry of Health"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="QA-NHA" is_enabled="true" order_no="98">
+		<locale name="en" value="QATAR - National Health Authority"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="SA-SFDA" is_enabled="true" order_no="99">
+		<locale name="en" value="KSA  - Saudi Food and Drug Authority"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="YE-MOPHP" is_enabled="true" order_no="100">
+		<locale name="en" value="Republic of Yemen - Ministry of Public Health and Population"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="MCC" is_enabled="true" order_no="101">
+		<locale name="en" value="Medicines Control Council"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="JO-JFDA" is_enabled="true" order_no="102">
+		<locale name="en" value="JO - Jordan Food &amp; Drug Authority"/>
+	</d2_dictionary_value>
+</d2_dictionary>

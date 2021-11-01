@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="SpaceSchema.xsd">
+	<space>
+		<border-layout-container>
+			<data>
+				<border-layout-data layoutregion="CENTER" size="0.7"/>
+				<border-layout-data layoutregion="EAST" size="0.3"/>
+			</data>
+			<content>
+				<tab-container>
+					<content>
+						<widget config="WG Doclist Training"/>
+					</content>
+				</tab-container>
+				<tab-container>
+					<content>
+						<widget config="WG EXT Training Document Preview"/>
+					</content>
+				</tab-container>
+			</content>
+		</border-layout-container>
+	</space>
+</root>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<C2>
+	<merge_annotations>false</merge_annotations>
+	<options>
+		<version>0</version>
+		<fullCompression>false</fullCompression>
+		<viewerPreferences>
+			<pageLayout>PageLayoutSinglePage</pageLayout>
+			<pageMode>PageModeUseNone</pageMode>
+			<onStartPage/>
+			<fitWindow>false</fitWindow>
+			<centerWindow>false</centerWindow>
+			<fullscreen>false</fullscreen>
+			<hideToolbar>true</hideToolbar>
+			<hideMenubar>true</hideMenubar>
+			<hideWindowUI>true</hideWindowUI>
+		</viewerPreferences>
+		<encryption>
+			<strength/>
+			<userPassword/>
+			<ownerPassword/>
+		</encryption>
+		<permissions>
+			<AllowPrinting>true</AllowPrinting>
+			<AllowModifyContents>false</AllowModifyContents>
+			<AllowCopy>false</AllowCopy>
+			<AllowModifyAnnotations>false</AllowModifyAnnotations>
+		</permissions>
+		<meta>
+			<title/>
+			<subject/>
+			<author/>
+			<keywords/>
+		</meta>
+	</options>
+	<content/>
+	<merge>
+		<core>
+			<id>core</id>
+			<title/>
+		</core>
+	</merge>
+	<stamp>
+		<layer>
+			<file>Bio Version Label Header Only.pdf</file>
+		</layer>
+		<textWatermark>
+			<file>Lifecycle Status</file>
+			<startPage/>
+			<endPage/>
+		</textWatermark>
+		<layer>
+			<file>Bio Page number.pdf</file>
+			<startPage/>
+			<endPage/>
+		</layer>
+	</stamp>
+</C2>

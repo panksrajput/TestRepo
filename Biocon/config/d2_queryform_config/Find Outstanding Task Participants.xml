@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_queryform_config new_format="true">
+	<object_name value="Find Outstanding Task Participants"/>
+	<title value="Find users which has outstanding tasks."/>
+	<subject value=""/>
+	<authors/>
+	<keywords/>
+	<a_status value=""/>
+	<a_content_type value=""/>
+	<log_entry value=""/>
+	<language_code value=""/>
+	<application_names>
+		<repeating value="OpenText Life Sciences Medical Device Solution"/>
+		<repeating value="OpenText Life Sciences Medical Device for Quality and Manufacturing Solution"/>
+		<repeating value="OpenText Life Sciences Research and Development Solution"/>
+		<repeating value="OpenText Life Sciences eTMF Solution"/>
+		<repeating value="OpenText Life Sciences Quality and Manufacturing Solution"/>
+	</application_names>
+	<lock_config value="F"/>
+	<parents_config/>
+	<default_value value=""/>
+	<description value=""/>
+	<property_page value="Find Outstanding Task participants"/>
+	<locale>
+		<repeating value="en"/>
+	</locale>
+	<label>
+		<repeating value="Find Outstanding Task Participants"/>
+	</label>
+	<ignore_empty_attr value="F"/>
+	<dql_value value="select distinct q.name as Recipient, q.task_state as Status, object_name, q.task_name, q.task_subject, q.supervisor_name as SupervisorName, q.sent_by, q.date_sent, q.actual_start_date, q.due_date, q.item_type as task_type, dm_document.r_object_id, dm_document.a_content_type, dm_document.r_lock_owner, dm_document.r_is_virtual_doc from dm_document, dmi_queue_item q, dm_workflow w, dmi_package p where q.router_id = w.r_object_id and p.r_workflow_id = w.r_object_id and p.r_component_chron_id = dm_document.i_chronicle_id and dm_document.object_name like '%$value(object_name)%' and q.delete_flag = false order by dm_document.object_name,q.name enable (ROW_BASED)"/>
+	<path value="/"/>
+	<add_mandatory_hidden value="F"/>
+	<add_user_pref value="F"/>
+	<facet_indent/>
+	<facet_position/>
+	<facet_sort/>
+	<is_facet/>
+	<is_xplore value="F"/>
+	<dictionary_name/>
+	<dql_qualification/>
+	<order_by value=""/>
+	<order_by_direction value=""/>
+	<folder_path/>
+	<folder_descend value="F"/>
+	<col_name/>
+	<attr/>
+	<attr_value/>
+	<all_versions value="F"/>
+	<bracket_close/>
+	<bracket_open/>
+	<case_sensitive value="F"/>
+	<facets/>
+	<fulltext_operator value=""/>
+	<fulltext_words value=""/>
+	<logical/>
+	<operator/>
+	<type_name/>
+	<attr_name/>
+	<alias_locale_name/>
+</d2_queryform_config>

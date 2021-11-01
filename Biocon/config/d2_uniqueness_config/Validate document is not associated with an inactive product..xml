@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_uniqueness_config new_format="true">
+	<object_name value="Validate document is not associated with an inactive product."/>
+	<title value="Used to prevent documents from being made ''Effective'' while the relevant Product Registration Form is in a ''frozen'' state (i.e.''Inactive'')."/>
+	<subject value=""/>
+	<authors/>
+	<keywords/>
+	<a_status value=""/>
+	<a_content_type value=""/>
+	<log_entry value=""/>
+	<language_code value=""/>
+	<module_type value="d2_uniqueness_config"/>
+	<application_names>
+		<repeating value="OpenText Life Sciences eTMF Solution"/>
+		<repeating value="OpenText Life Sciences Medical Device for Quality and Manufacturing Solution"/>
+		<repeating value="OpenText Life Sciences Medical Device for Research and Development Solution"/>
+		<repeating value="OpenText Life Sciences Medical Device Solution"/>
+		<repeating value="OpenText Life Sciences Quality and Manufacturing Solution"/>
+		<repeating value="OpenText Life Sciences Research and Development Solution"/>
+		<repeating value="OpenText Life Sciences Submission Storage and Viewing"/>
+	</application_names>
+	<lock_config value="F"/>
+	<parents_config/>
+	<warning_message>
+		<repeating value="This document cannot be made ''Effective/Final'' at this time, because it relates to a product ($value(product_code)) that's Inactive. If necessary, you should contact the relevant Product Manager(s) to arrange for the product registration to be re-activated, so you can make this document ''Effective/Final''."/>
+	</warning_message>
+	<warning_locale>
+		<repeating value="en"/>
+	</warning_locale>
+	<warning_position>
+		<repeating value="0"/>
+	</warning_position>
+	<qualification>
+		<repeating value="cd_product_info where product_code = '$value(product_code)' and a_status= 'Inactive' and product_code != ' ' and domain ='Product Management'"/>
+	</qualification>
+</d2_uniqueness_config>

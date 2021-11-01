@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dialog id="PropertiesDialog" auto_smartview_edit_mode="false" buttons_right="false" focus="applyAllVersions" height="500" initial_invalid="false" resizable="true" signoff_creation="false" signoff_edit="false" signoff_import="false" signoff_intention_dictionary="" signoff_intention_required="false" width="400">
+	<content>
+		<tabs>
+			<tab label_en="BPU">
+				<boolean id="applyAllVersions" control="true" label_en="Apply update to all versions"/>
+				<combo id="reReason" assistance_dictionary="BPU Reasons" assistance_dictionary_alias="auto" assistance_type="dictionary" condition_required_edit="true" control="true" label_en="Reason for BPU Update"/>
+				<tabs>
+					<tab label_en="Document Information">
+						<columns count="2">
+							<text id="thisDocumentName" condition_enabled_edit="false" control="true" label_en="Name of this Document"/>
+							<text id="referencePropertyPage" condition_enabled_edit="false" control="true" label_en="Using Property Page"/>
+						</columns>
+						<text id="thisDocument" condition_enabled_create="false" condition_enabled_edit="false" condition_enabled_import="false" condition_visible_edit="false" control="true" label_en="ID of this document"/>
+						<list id="otherDocuments" control="true" label_en="Other Documents to Update" rows="6"/>
+						<list id="leftOutDocuments" condition_enabled_create="false" control="true" label_en="Documents not being processed" rows="4"/>
+					</tab>
+					<tab label_en="DQL Controls"/>
+				</tabs>
+			</tab>
+		</tabs>
+	</content>
+	<buttons>
+		<button id="buttonOk" action="validDialog()"/>
+		<button id="buttonCancel" action="cancelDialog()"/>
+	</buttons>
+</dialog>

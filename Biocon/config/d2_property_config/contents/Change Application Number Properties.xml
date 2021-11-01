@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dialog id="PropertiesDialog" buttons_right="false" focus="" height="300" resizable="true" signoff_creation="false" signoff_edit="false" signoff_import="false" signoff_intention_dictionary="" signoff_intention_required="false" width="550">
+	<content>
+		<fieldset label_en="Change Application Number">
+			<label id="application_description"/>
+			<label id="application_num" label_en="From"/>
+			<text id="a_special_app" condition_required_create="true" condition_required_edit="true" condition_required_import="true" label_en="To"/>
+			<comment html_content="true" label_en="&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;font color=#646464&gt;Click on &lt;strong&gt;OK&lt;/strong&gt; to apply these settings to the relevant documents.&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"/>
+		</fieldset>
+	</content>
+	<buttons>
+		<button id="buttonOk" action="validDialog()" advancedView_visible="false"/>
+		<button id="buttonCancel" action="cancelDialog()"/>
+	</buttons>
+</dialog>

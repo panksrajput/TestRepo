@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="SpaceSchema.xsd">
+	<space>
+		<border-layout-container>
+			<data>
+				<border-layout-data layoutregion="WEST" maxSize="1000" minSize="400" size=".40" split="true"/>
+				<border-layout-data layoutregion="CENTER" split="true"/>
+			</data>
+			<content>
+				<border-layout-container>
+					<data>
+						<border-layout-data layoutregion="NORTH" maxSize="800" size=".6" split="true"/>
+						<border-layout-data layoutregion="CENTER" maxSize="800" split="true"/>
+					</data>
+					<content>
+						<tab-container>
+							<content>
+								<widget config="WG EXT RnD SSV Open WF Task Report"/>
+							</content>
+						</tab-container>
+						<tab-container>
+							<content>
+								<widget config="WG EXT RnD SSV Submission Dashboard"/>
+							</content>
+						</tab-container>
+					</content>
+				</border-layout-container>
+				<border-layout-container>
+					<data>
+						<border-layout-data layoutregion="NORTH" maxSize="800" size=".6" split="true"/>
+						<border-layout-data layoutregion="CENTER" split="true"/>
+					</data>
+					<content>
+						<tab-container>
+							<content>
+								<widget config="WG EXT RnD SSV WF Status Report"/>
+							</content>
+						</tab-container>
+						<tab-container>
+							<content>
+								<widget config="WG EXT RnD SSV Document Template Report"/>
+							</content>
+						</tab-container>
+					</content>
+				</border-layout-container>
+			</content>
+		</border-layout-container>
+	</space>
+</root>

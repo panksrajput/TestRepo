@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<delta>
+	<modify id="MenuDocumentC2RecallPrint" hidden="true">
+		<append>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.permits.IsUserInGroup" value="cd_c2_printers"/>
+		</append>
+	</modify>
+</delta>

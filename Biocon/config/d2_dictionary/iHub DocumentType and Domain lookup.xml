@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_dictionary object_name="iHub DocumentType and Domain lookup" title="Dictionary for DocumentType and Domain lookup" lock_config="false" parents_config="" application_names="OpenText Life Sciences Medical Device for Quality and Manufacturing Solution¬OpenText Life Sciences Medical Device for Research and Development Solution¬OpenText Life Sciences Medical Device Solution¬OpenText Life Sciences Quality and Manufacturing Solution¬OpenText Life Sciences Research and Development Solution¬OpenText Life Sciences Submission Storage and Viewing¬OpenText Life Sciences eTMF Solution" security_group="admingroup" search_group="" version="2" is_versioned="false" manual_order="false" create_view_option="false" is_dql="false" is_dql_cache="false" dql="" label_en="">
+	<d2_dictionary_value object_name="cd_app_reg_labeling_doc" is_enabled="true" order_no="0">
+		<alias name="lookup value" value="Labeling"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="cd_change_request" is_enabled="true" order_no="0">
+		<alias name="lookup value" value="Change Request"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="cd_clinical" is_enabled="true" order_no="0">
+		<alias name="lookup value" value="Clinical"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="cd_clinical_tmf_doc" is_enabled="true" order_no="0">
+		<alias name="lookup value" value="Clinical TMF"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="cd_core_reg_labeling_doc" is_enabled="true" order_no="0">
+		<alias name="lookup value" value="Labeling"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="cd_non_clinical" is_enabled="true" order_no="0">
+		<alias name="lookup value" value="Non-Clinical"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="cd_quality" is_enabled="true" order_no="0">
+		<alias name="lookup value" value="Quality"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="cd_quality_gmp_approved" is_enabled="true" order_no="0">
+		<alias name="lookup value" value="GMP"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="cd_quality_gmp_effective" is_enabled="true" order_no="0">
+		<alias name="lookup value" value="GMP"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="cd_reg_ad_promo" is_enabled="true" order_no="0">
+		<alias name="lookup value" value="Ad Promo"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="cd_reg_admin" is_enabled="true" order_no="0">
+		<alias name="lookup value" value="Regulatory/Administrative"/>
+	</d2_dictionary_value>
+</d2_dictionary>

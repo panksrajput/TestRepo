@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_documentset_switch object_name="d2_queryform_config">
+	<d2_documentset name="Life Sciences Managers¬Controlled Document Admin Roles" config="Find all Deactivated Users"/>
+	<d2_documentset name="Life Sciences Managers¬Controlled Document Admin Roles" config="Find Delete Audit Events"/>
+	<d2_documentset name="Life Sciences Managers¬Controlled Document Admin Roles" config="Find Effective Documents by Domain"/>
+	<d2_documentset name="Life Sciences Managers¬Controlled Document Admin Roles" config="Find Effective Query Form"/>
+	<d2_documentset name="Life Sciences Managers¬Controlled Document Admin Roles" config="Find My Documents Query Form"/>
+	<d2_documentset name="Life Sciences Managers¬Controlled Document Admin Roles" config="Find Outstanding Task Participants"/>
+	<d2_documentset name="Life Sciences Managers¬Controlled Document Admin Roles" config="Show Current Workflow Progress"/>
+	<d2_documentset name="Life Sciences Managers¬GMP Manager" config="Find Delete Audit Events"/>
+	<d2_documentset name="Life Sciences Managers¬GMP Manager" config="Find Effective Documents by Domain"/>
+	<d2_documentset name="Life Sciences Managers¬GMP Manager" config="Find Effective Query Form"/>
+	<d2_documentset name="Life Sciences Managers¬GMP Manager" config="Find My Documents Query Form"/>
+	<d2_documentset name="Life Sciences Managers¬GMP Manager" config="Find Outstanding Task Participants"/>
+	<d2_documentset name="Life Sciences Managers¬GMP Manager" config="Find Product Info"/>
+	<d2_documentset name="Life Sciences Managers¬GMP Manager" config="Find Product-Related Documents"/>
+	<d2_documentset name="Life Sciences Managers¬GMP Manager" config="Show Current Workflow Progress"/>
+	<d2_documentset name="Life Sciences Managers¬Business Administrators" config="Find Delete Audit Events"/>
+	<d2_documentset name="Life Sciences Managers¬Business Administrators" config="Find Effective Documents by Domain"/>
+	<d2_documentset name="Life Sciences Managers¬Business Administrators" config="Find Effective Query Form"/>
+	<d2_documentset name="Life Sciences Managers¬Business Administrators" config="Find My Documents Query Form"/>
+	<d2_documentset name="Life Sciences Managers¬Business Administrators" config="Find Outstanding Task Participants"/>
+	<d2_documentset name="Life Sciences Managers¬Business Administrators" config="Show Current Workflow Progress"/>
+	<d2_documentset name="Life Sciences Coordinators¬GMP Coordinators" config="Bio All site based users list"/>
+	<d2_documentset name="Life Sciences Coordinators¬GMP Coordinators" config="Find all Deactivated Users"/>
+	<d2_documentset name="Life Sciences Coordinators¬GMP Coordinators" config="Find Documents in a specific workflow"/>
+	<d2_documentset name="Life Sciences Coordinators¬GMP Coordinators" config="Find Documents rejected in Periodic WF"/>
+	<d2_documentset name="Life Sciences Coordinators¬GMP Coordinators" config="Find Documents Scheduled for Withdrawal"/>
+	<d2_documentset name="Life Sciences Coordinators¬GMP Coordinators" config="Find Effective Query Form"/>
+	<d2_documentset name="Life Sciences Coordinators¬GMP Coordinators" config="Find GMP-Med Device withdrawn documents"/>
+	<d2_documentset name="Life Sciences Coordinators¬GMP Coordinators" config="Find Manufactured Item"/>
+	<d2_documentset name="Life Sciences Coordinators¬GMP Coordinators" config="Find My Documents Query Form"/>
+	<d2_documentset name="Life Sciences Coordinators¬GMP Coordinators" config="Find Outstanding Task Participants"/>
+	<d2_documentset name="Life Sciences Coordinators¬GMP Coordinators" config="Find Product Info"/>
+	<d2_documentset name="Life Sciences Coordinators¬GMP Coordinators" config="Find Product-Related Documents"/>
+	<d2_documentset name="Life Sciences Coordinators¬GMP Coordinators" config="Show Current Workflow Progress"/>
+	<d2_documentset name="Life Sciences Authors¬GMP Authors" config="Find Documents in a specific workflow"/>
+	<d2_documentset name="Life Sciences Authors¬GMP Authors" config="Find Documents rejected in Periodic WF"/>
+	<d2_documentset name="Life Sciences Authors¬GMP Authors" config="Find Documents Scheduled for Withdrawal"/>
+	<d2_documentset name="Life Sciences Authors¬GMP Authors" config="Find Effective Query Form"/>
+	<d2_documentset name="Life Sciences Authors¬GMP Authors" config="Find GMP-Med Device withdrawn documents"/>
+	<d2_documentset name="Life Sciences Authors¬GMP Authors" config="Find Manufactured Item"/>
+	<d2_documentset name="Life Sciences Authors¬GMP Authors" config="Find My Documents Query Form"/>
+	<d2_documentset name="Life Sciences Authors¬GMP Authors" config="Find Outstanding Task Participants"/>
+	<d2_documentset name="Life Sciences Authors¬GMP Authors" config="Find Product Info"/>
+	<d2_documentset name="Life Sciences Authors¬GMP Authors" config="Find Product-Related Documents"/>
+	<d2_documentset name="Life Sciences Authors¬GMP Authors" config="Show Current Workflow Progress"/>
+	<d2_documentset name="Life Sciences Reviewers and Approvers¬GMP Reviewers" config="Find Outstanding Task Participants"/>
+	<d2_documentset name="Life Sciences Reviewers and Approvers¬GMP Reviewers" config="Show Current Workflow Progress"/>
+	<d2_documentset name="Life Sciences Reviewers and Approvers¬GMP Approvers" config="Find Outstanding Task Participants"/>
+	<d2_documentset name="Life Sciences Reviewers and Approvers¬GMP Approvers" config="Show Current Workflow Progress"/>
+	<d2_documentset name="Life Sciences Reviewers and Approvers¬GMP QO Approvers" config="Find Outstanding Task Participants"/>
+	<d2_documentset name="Life Sciences Reviewers and Approvers¬GMP QO Approvers" config="Show Current Workflow Progress"/>
+	<switch_defaults/>
+</d2_documentset_switch>

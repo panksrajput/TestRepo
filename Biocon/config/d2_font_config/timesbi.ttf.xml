@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_font_config new_format="true">
+	<object_name value="timesbi.ttf"/>
+	<title value=""/>
+	<subject value=""/>
+	<authors/>
+	<keywords/>
+	<a_status value=""/>
+	<a_content_type value="ttf"/>
+	<log_entry value=""/>
+	<language_code value=""/>
+	<lock_config value="F"/>
+	<parents_config/>
+	<font_family_name value="Times New Roman"/>
+	<font_name value="Times New Roman Bold Italic"/>
+	<font_label value="Times New Roman Bold Italic"/>
+</d2_font_config>

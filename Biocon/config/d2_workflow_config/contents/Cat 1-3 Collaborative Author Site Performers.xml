@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_workflow_config>
+	<workflow_label_en>For collaborative editing...</workflow_label_en>
+	<activity-list>
+		<activity audit_acquired="true" audit_response="true" value="Initiate"/>
+		<activity method="dm_noop_auto_method_java" task_subject_en="Start the editing workflow" value="Start"/>
+		<activity lifecycle="Cat 1-3 Collaborative Editing Lifecycle Model" method="D2WFLifeCycleMethod" target_state="(Start WF)" task_subject_en="Start Workflow" transition_type="promote" value="Start WF"/>
+		<activity alias_name="Editors" audit_acquired="true" audit_response="true" check_lifecycle="true" delegate_dql="select g.i_all_users_names from dm_group g, dm_user u where any g.i_supergroups_names in (select alias_value from d2_dictionary_value where dictionary_name like 'GMP Applicable Sites' and any alias_value is not nullstring and (alias_value like '%_authors' or alias_value like '%_reviewers')and object_name in ($repeatingvalue(applicable_sites)) enable(ROW_BASED)) AND ANY g.i_all_users_names NOT IN ($repeatingvalue(wf_reviewers)) and any g.i_all_users_names = u.user_name and u.user_state = 0 order by 1" delegate_type="dql" display_task="true" is_pseudo_task="true" mandatory_forward_comment="true" task_accept_labels_en="Edits Complete" task_category_en="$value(a_status)" task_instructions_en="Please review the attached document and edit / annotate it as and where appropriate. When finished, mark this task as ''Edits Complete'' to return the document with your comments and changes." task_subject_en="Editing: &quot;$value(object_name)&quot;" value="Edit document"/>
+		<activity audit_acquired="true" audit_response="true" check_lifecycle="true" delegate_dql="select g.i_all_users_names from dm_group g, dm_user u where any g.i_supergroups_names in (select alias_value from d2_dictionary_value where dictionary_name like 'GMP Applicable Sites' and any alias_value is not nullstring and alias_value like '%_authors' and object_name in ($repeatingvalue(applicable_sites)))  AND ANY g.i_all_users_names NOT IN ('$USER') and any g.i_all_users_names = u.user_name and u.user_state = 0 union select g.i_all_users_names from dm_group g, dm_user u where any g.i_supergroups_names in (select alias_value from d2_dictionary_value where dictionary_name like 'GMP Applicable Sites' and any alias_value is not nullstring and alias_value like '%_coordinators' and object_name in ($repeatingvalue(applicable_sites))) AND ANY g.i_all_users_names NOT IN ('$USER') and any g.i_all_users_names = u.user_name and u.user_state = 0 ENABLE(ROW_BASED) " delegate_type="dql" display_task="true" task_accept_labels_en="Changes Consolidated" task_category_en="$value(a_status)" task_instructions_en="Please incorporate the changes and comments into this document made by the Reviewers ($value(wf_reviewers)). When finished, mark this task as ''Changes Consolidated''. You can then decide whether to return the document to the Reviewers for further comments and revisions, or to finish the editing workflow.&lt;br&gt;&lt;br&gt;When the editing workflow is finished and the document is ready for issue, you can send it for formal review / approval in a separate workflow. If you are allowed to self-approve this document, you can do so via the ''Document / Lifecycle / Self-approve as Effective version'' menu. (If this menu is not available, the document must be formally-reviewed / approved before it becomes ''Effective'')." task_subject_en="Editing: &quot;$value(object_name)&quot;" value="Incorporate changes"/>
+		<activity method="dm_noop_auto_method" task_subject_en="Return the document to the Reviewers" value="Return to Editors"/>
+		<activity method="CDFWorkflowNotificationMethod" task_subject_en="Finish the editing workflow" value="Finish"/>
+		<activity apply_on_attachments="false" lifecycle="Cat 1-3 Collaborative Editing Lifecycle Model" method="D2WFLifeCycleMethod" target_state="(End collab WF)" task_subject_en="End Workflow" transition_type="promote" value="End WF"/>
+	</activity-list>
+	<workflow abort_apply_on_attachments="false" abort_lifecycle="Cat 1-3 Collaborative Editing Lifecycle Model" abort_target_state="(End collab WF)"/>
+	<entry_conditions>
+		<uniquenesscheck message_failed_en="" uniqueness="Validate selected document is not checked-out"/>
+		<uniquenesscheck message_failed_en="" uniqueness="Validate selected document is the CURRENT version"/>
+		<uniquenesscheck message_failed_en="" uniqueness="Validate user is an Author for the selected document"/>
+		<uniquenesscheck message_failed_en="" uniqueness="Validate selected document is not involved in an active workflow including periodic and withdrawal WF"/>
+		<uniquenesscheck message_failed_en="" uniqueness="Validate selected document is a Draft document"/>
+		<attribute compare="contains" message_failed_en="The Process List is not updated correctly. Hence document cannot be sent to the workflow." name="wf_process_list" value="COLLABORATION"/>
+	</entry_conditions>
+	<dialog height="380" width="600">
+		<fieldset label_en="Send for collaborative editing">
+			<comment label_en="Select the people who should review and edit this document."/>
+			<list id="Editors" assistance_dql="select g.i_all_users_names from dm_group g, dm_user u where any g.i_supergroups_names in (select alias_value from d2_dictionary_value where dictionary_name like 'GMP Applicable Sites' and any alias_value is not nullstring and (alias_value like '%_authors' or alias_value like '%_reviewers')and object_name in ($repeatingvalue(applicable_sites)) ENABLE(ROW_BASED)) and any g.i_all_users_names = u.user_name and u.user_state = 0 order by 1" assistance_type="dql" label_en="Reviewers / Editors" linked_attribute="wf_reviewers" required_values_count_min="1" requiredOnStartup="true" rows="4" sorted="true"/>
+		</fieldset>
+	</dialog>
+</d2_workflow_config>

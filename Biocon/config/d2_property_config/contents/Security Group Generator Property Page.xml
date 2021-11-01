@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dialog id="PropertiesDialog" buttons_right="false" focus="" height="750" resizable="true" signoff_creation="false" signoff_edit="false" signoff_import="false" signoff_intention_dictionary="" signoff_intention_required="false" width="600">
+	<content>
+		<comment font_color="#C0C0C0" html_content="true" label_en="&lt;center&gt;Group generators are used to &quot;Generate groups&quot;, &quot;Set up group parents&quot; and &quot;Identify patterns for group names used in security models&quot;&lt;center&gt;"/>
+		<comment condition_visible_create="false" font_color="#C0C0C0" font_size="6pt" html_content="true" label_en="&lt;p&gt; &lt;/p&gt;"/>
+		<label id="object_name" condition_visible_create="false"/>
+		<comment font_size="6pt" html_content="true" label_en="&lt;p&gt; &lt;/p&gt;"/>
+		<comment font_color="#C0C0C0" html_content="true" label_en="This is the name that will be used in models to identify which groups should be assigned by combining the pattern in the group generator and the value(s) of the document attribute set in the tag."/>
+		<text id="generator_name" condition_enabled_group="lsssec_admin" label_en="Name of the Generator"/>
+		<comment font_size="6pt" html_content="true" label_en="&lt;p&gt;&amp;nbsp;&lt;/p&gt;"/>
+		<comment font_color="#C0C0C0" font_size="10pt" html_content="true" label_en="Tags specified in the hierarchy are resolved and replaced within this string. This will then generate a group (if used during generation) or resolve to a specific group name to be used within a model."/>
+		<text id="pattern" condition_enabled_group="lsssec_admin" label_en="Pattern for Group Generation"/>
+		<comment font_size="6pt" html_content="true" label_en="&lt;p&gt;&amp;nbsp;&lt;/p&gt;"/>
+		<comment font_color="#C0C0C0" html_content="true" label_en="The names of the generators for the groups that contain the groups generated here."/>
+		<list id="generator_parents" assistance_dql="select generator_name from lss_sec_group_gen where generator_name &lt;&gt; '$value(generator_name)' and generator_name not in (select generator_name from lss_sec_group_gen where any generator_parents = '$value(generator_name)') order by generator_name" assistance_type="dql" condition_enabled_group="lsssec_admin" rows="4"/>
+		<comment font_size="6pt" html_content="true" label_en="&lt;p&gt;&amp;nbsp;&lt;/p&gt;"/>
+		<comment font_bold="false" font_color="#C0C0C0" html_content="true" label_en="Check the &quot;Use parent Generators for patterns&quot; checkbox to have the group generator use the defined parent generators pattern. Otherwise add your own parent patterns as needed."/>
+		<boolean id="use_gen_pattern" advancedView_enabled="false" condition_enabled_group="lsssec_admin" label_en="Use parent Generators for patterns"/>
+		<comment advancedView_visible="false" condition_visible="(getValue(use_gen_pattern).equals('false'))" font_size="6pt" html_content="true" label_en="&lt;p&gt;&amp;nbsp;&lt;/p&gt;"/>
+		<comment advancedView_visible="false" condition_visible="(getValue(use_gen_pattern).equals('false'))" font_color="#C0C0C0" html_content="true" label_en="The pattern of the parent which will resolve based on the values for the current group – and then use that value as a parent group."/>
+		<list-editable id="pattern_parents" advancedView_visible="false" condition_enabled_group="lsssec_admin" condition_visible="(getValue(use_gen_pattern).equals('false'))" label_en="Parent Patterns" rows="4"/>
+		<comment font_size="6pt" html_content="true" label_en="&lt;p&gt;&amp;nbsp;&lt;/p&gt;"/>
+		<comment font_color="#C0C0C0" label_en="Pattern for the group that can invoke group administration from this group generator"/>
+		<text id="pattern_admin" condition_enabled_group="lsssec_admin" label_en="Pattern for group admin group"/>
+		<comment font_size="6pt" html_content="true" label_en="&lt;p&gt;&amp;nbsp;&lt;/p&gt;"/>
+		<comment font_color="#C0C0C0" html_content="true" label_en="The list of tags used in the generator, in the order they should be processed."/>
+		<list id="hierarchies" assistance_dql="select tag_name from lss_sec_tagdef order by tag_name" assistance_type="dql" condition_enabled_group="lsssec_admin" label_en="Hierarchy of Tag Processing" rows="4"/>
+		<comment font_size="6pt" html_content="true" label_en="&lt;p&gt;&amp;nbsp;&lt;/p&gt;"/>
+		<comment font_color="#C0C0C0" html_content="true" label_en="Flag indicating if this generator should show up in the model pages."/>
+		<boolean id="is_selectable" condition_enabled_group="lsssec_admin" label_en="Can be used in Security Models"/>
+	</content>
+	<buttons>
+		<button id="buttonOk" action="validDialog()" condition_enabled_group="lsssec_admin"/>
+		<button id="buttonCancel" action="cancelDialog()"/>
+	</buttons>
+</dialog>

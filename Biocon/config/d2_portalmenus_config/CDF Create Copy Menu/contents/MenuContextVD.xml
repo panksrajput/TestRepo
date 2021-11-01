@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<delta>
+	<replace id="separator3">
+		<separator id="separator4"/>
+	</replace>
+	<modify id="menuContextVDConvertToVd">
+		<append>
+			<condition all_valid="true" class="com.emc.d2fs.dctm.ui.conditions.objects.HasAttrValue" equals="false" property="category" value="1"/>
+		</append>
+	</modify>
+	<modify id="menuContextVDConvertToSimpleDoc">
+		<append>
+			<condition all_valid="true" class="com.emc.d2fs.dctm.ui.conditions.objects.Predicate" equals="false" value="dm_dbo.single_result_row_view where exists (select * from cd_controlled_doc where wf_is_in_workflow=true and r_object_id = '$value(r_object_id)')"/>
+		</append>
+	</modify>
+	<modify id="menuContextVDSetBinding">
+		<append>
+			<condition all_valid="true" class="com.emc.d2fs.dctm.ui.conditions.objects.HasAttrValue" equals="false" property="category" value="1"/>
+		</append>
+	</modify>
+</delta>

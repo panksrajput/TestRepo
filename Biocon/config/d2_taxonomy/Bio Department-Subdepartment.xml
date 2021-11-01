@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_taxonomy object_name="Bio Department-Subdepartment" is_versioned="false" title="Taxonomy containing Department Subdepartment mapping" lock_config="false" parents_config="" application_names="Biocon¬Custom Configurations" security_group="biocon_dict_admin">
+	<level position="0" name="Bio Department"/>
+	<level position="1" name="Bio SubDepartment"/>
+	<path value="Administration/NA"/>
+	<path value="BRM/NA"/>
+	<path value="Central Engineering/Lab Engineering"/>
+	<path value="Central Engineering/Utility"/>
+	<path value="Corporate Quality Assurance/NA"/>
+	<path value="EAM/NA"/>
+	<path value="EHS/ETP"/>
+	<path value="EHS/General EHS"/>
+	<path value="EHS/RO"/>
+	<path value="EHS/SAF"/>
+	<path value="EHS/WTP"/>
+	<path value="INFO-TECH/NA"/>
+	<path value="Instrumentation/NA"/>
+	<path value="Production/A1"/>
+	<path value="Production/A2"/>
+	<path value="Production/C1"/>
+	<path value="Production/C1AB"/>
+	<path value="Production/C1C"/>
+	<path value="Production/C1E"/>
+	<path value="Production/C2"/>
+	<path value="Production/C3"/>
+	<path value="Production/D1"/>
+	<path value="Production/D2"/>
+	<path value="Production/D3"/>
+	<path value="Production/D4"/>
+	<path value="Production/Dispatch Production"/>
+	<path value="Production/KiloLab"/>
+	<path value="Production/PE LAB"/>
+	<path value="Production/PEAL"/>
+	<path value="Production/PETT"/>
+	<path value="Production/PROD-OQT"/>
+	<path value="Production/R1"/>
+	<path value="Projects/NA"/>
+	<path value="Quality Assurance/NA"/>
+	<path value="Quality Control/NA"/>
+	<path value="Quality Control Microbiology/NA"/>
+	<path value="SCM/NA"/>
+	<path value="Warehouse/FG Warehouse"/>
+	<path value="Warehouse/W1"/>
+</d2_taxonomy>

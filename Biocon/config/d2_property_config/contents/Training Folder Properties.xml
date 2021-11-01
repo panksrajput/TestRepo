@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dialog id="PropertiesDialog" buttons_right="false" focus="" height="800" resizable="true" signoff_creation="false" signoff_edit="false" signoff_import="false" signoff_intention_dictionary="" signoff_intention_required="false" width="850">
+	<content>
+		<tabs>
+			<tab label_en="Info">
+				<text id="object_name"/>
+				<text id="training_group"/>
+				<text id="training_coordinators"/>
+			</tab>
+			<tab label_en="User Information">
+				<grid grid_height="800">
+					<text id="user_login_name" cell_width="200"/>
+					<text id="user_name" cell_width="200"/>
+					<text id="user_status" cell_width="200"/>
+				</grid>
+			</tab>
+			<tab label_en="Document Information">
+				<grid grid_height="800">
+					<text id="document_id" cell_width="150"/>
+					<text id="document_name" cell_width="150"/>
+					<text id="document_title" cell_width="200"/>
+					<text id="document_version"/>
+					<text id="document_status" cell_width="150"/>
+				</grid>
+			</tab>
+		</tabs>
+	</content>
+	<buttons>
+		<button id="buttonOk" action="validDialog()"/>
+		<button id="buttonCancel" action="cancelDialog()"/>
+	</buttons>
+</dialog>

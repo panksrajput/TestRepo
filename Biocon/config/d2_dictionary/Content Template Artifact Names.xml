@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_dictionary object_name="Content Template Artifact Names" title="Dictionary for Content Template Artifact Names" lock_config="false" parents_config="" application_names="OpenText Life Sciences Submission Storage and Viewing¬OpenText Life Sciences Research and Development Solution¬OpenText Life Sciences Quality and Manufacturing Solution¬OpenText Life Sciences eTMF Solution" security_group="admingroup" search_group="admingroup" version="2" is_versioned="false" manual_order="true" create_view_option="false" is_dql="false" is_dql_cache="false" dql="" label_en="Document Type">
+	<d2_dictionary_value object_name="Clinical Content Template" is_enabled="true" order_no="0">
+		<locale name="en" value="Clinical Content Template"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Non-Clinical Content Template" is_enabled="true" order_no="1">
+		<locale name="en" value="Non-Clinical Content Template"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Quality Content Template" is_enabled="true" order_no="2">
+		<locale name="en" value="Quality Content Template"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Regulatory Content Template" is_enabled="true" order_no="3">
+		<locale name="en" value="Regulatory Admin Content Template"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Safety Content Template" is_enabled="true" order_no="4">
+		<locale name="en" value="Safety Content Template"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Regulatory Labeling Content Template" is_enabled="true" order_no="5">
+		<locale name="en" value="Regulatory Labeling Content Template"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Content Template" is_enabled="true" order_no="6">
+		<locale name="en" value="General Content Template"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Regulatory Correspondence Template" is_enabled="true" order_no="7">
+		<locale name="en" value="Regulatory Correspondence Template"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="GMP Content Template" is_enabled="true" order_no="8">
+		<locale name="en" value="GMP Content Template"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Regulatory Ad Promo Template" is_enabled="true" order_no="9">
+		<locale name="en" value="Regulatory Ad Promo Template"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Med Device Content Template" is_enabled="true" order_no="10">
+		<locale name="en" value="Medical Device Content Template"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Med Device Clinical Content Template" is_enabled="true" order_no="11">
+		<locale name="en" value="Medical Device Clinical Content Template"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Med Device Non Clinical Content Template" is_enabled="true" order_no="12">
+		<locale name="en" value="Medical Device Non Clinical Content Template"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Med Device Regulatory Content Template" is_enabled="true" order_no="13">
+		<locale name="en" value="Medical Device Regulatory Content Template"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Global Content Template" is_enabled="true" order_no="14">
+		<locale name="en" value="Global Content Template"/>
+	</d2_dictionary_value>
+</d2_dictionary>

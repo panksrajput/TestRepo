@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_audit_config new_format="true">
+	<object_name value="Auditing of Recall Objects"/>
+	<title value="Auditing of Controlled Print Recall Objects while on workflows"/>
+	<subject value=""/>
+	<authors/>
+	<keywords/>
+	<a_status value=""/>
+	<a_content_type value=""/>
+	<log_entry value=""/>
+	<language_code value=""/>
+	<module_type value="d2_audit_config"/>
+	<application_names>
+		<repeating value="OpenText Life Sciences eTMF Solution"/>
+		<repeating value="OpenText Life Sciences Quality and Manufacturing Solution"/>
+		<repeating value="OpenText Life Sciences Research and Development Solution"/>
+		<repeating value="OpenText Life Sciences Submission Storage and Viewing"/>
+	</application_names>
+	<lock_config value="F"/>
+	<parents_config/>
+	<audited_events>
+		<repeating value="d2_workflow_signoff"/>
+	</audited_events>
+	<audited_properties/>
+	<displayed_events>
+		<repeating value="d2_workflow_signoff"/>
+	</displayed_events>
+	<hide_documentum_events value="F"/>
+	<extended_display value="F"/>
+	<audited_properties_old/>
+	<audited_properties_delta/>
+</d2_audit_config>

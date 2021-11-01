@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x3_widget_config new_format="true">
+	<object_name value="WG EXT PDF Viewer 2"/>
+	<title value="PDF viewer widget."/>
+	<subject value=""/>
+	<authors/>
+	<keywords/>
+	<a_status value=""/>
+	<a_content_type value=""/>
+	<log_entry value=""/>
+	<language_code value=""/>
+	<module_type value="x3_widget_config"/>
+	<application_names>
+		<repeating value="OpenText Life Sciences Medical Device for Quality and Manufacturing Solution"/>
+		<repeating value="OpenText Life Sciences Medical Device for Research and Development Solution"/>
+		<repeating value="OpenText Life Sciences Medical Device Solution"/>
+		<repeating value="OpenText Life Sciences Submission Storage and Viewing"/>
+		<repeating value="OpenText Life Sciences Research and Development Solution"/>
+		<repeating value="OpenText Life Sciences eTMF Solution"/>
+		<repeating value="OpenText Life Sciences Quality and Manufacturing Solution"/>
+	</application_names>
+	<lock_config value="F"/>
+	<parents_config/>
+	<preview_x3_image value="SSV Leaf Doc Preview Widget.png"/>
+	<label_locale>
+		<repeating value="en"/>
+		<repeating value="fr"/>
+	</label_locale>
+	<label_value>
+		<repeating value="Document Viewer 2"/>
+		<repeating value=""/>
+	</label_value>
+	<desc_locale>
+		<repeating value="en"/>
+		<repeating value="fr"/>
+	</desc_locale>
+	<desc_value>
+		<repeating value="Document Viewer widget that does not refresh to show the content of the selected document until the user selects &quot;View in Viewer2&quot;. This widget can be used to provide a side-by-side view of the content of two documents."/>
+		<repeating value=""/>
+	</desc_value>
+	<widget_url value="/XMLViewer/DocViewer.html?widget_id=viewer2&amp;workspaceView=Compare&amp;initMessage=Select_a_document_for_comparison_in_Viewer_2&amp;docbase=$DOCBASE&amp;locale=en&amp;username=$LOGIN&amp;useC2Overlays=true&amp;config=WG_EXT_PDF_Viewer_2"/>
+	<channel_name value=""/>
+	<widget_type value="ExternalWidget"/>
+	<query_form_name value=""/>
+	<is_oaj value="T"/>
+	<channel_names>
+		<repeating value="D2_EVENT_SELECT_OBJECT"/>
+	</channel_names>
+	<param_name/>
+	<param_value/>
+	<focus_events>
+		<repeating value="D2_EVENT_CUSTOM"/>
+	</focus_events>
+	<focus_event_params>
+		<repeating value="widget_id==viewer2"/>
+	</focus_event_params>
+	<customize_columns value="F"/>
+	<columns/>
+	<use_col_for_assist value="F"/>
+	<is_unloadprotect value="F"/>
+</x3_widget_config>

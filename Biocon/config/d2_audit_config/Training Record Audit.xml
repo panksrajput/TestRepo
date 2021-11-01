@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_audit_config new_format="true">
+	<object_name value="Training Record Audit"/>
+	<title value=""/>
+	<subject value=""/>
+	<authors/>
+	<keywords/>
+	<a_status value=""/>
+	<a_content_type value=""/>
+	<log_entry value=""/>
+	<language_code value=""/>
+	<module_type value="d2_audit_config"/>
+	<application_names>
+		<repeating value="OpenText Life Sciences Quality and Manufacturing Solution"/>
+	</application_names>
+	<lock_config value="F"/>
+	<parents_config/>
+	<audited_events>
+		<repeating value="d2_change_state"/>
+		<repeating value="d2_change_state_failed"/>
+		<repeating value="d2_change_state_signoff"/>
+		<repeating value="d2_change_state_success"/>
+		<repeating value="d2_destroy"/>
+		<repeating value="d2_edit"/>
+		<repeating value="d2_properties_save"/>
+		<repeating value="ls_training_exempted"/>
+		<repeating value="ls_training_reinstated"/>
+		<repeating value="ls_training_rejected"/>
+	</audited_events>
+	<audited_properties>
+		<repeating value="a_status"/>
+		<repeating value="is_historic"/>
+		<repeating value="is_overdue"/>
+		<repeating value="is_paused"/>
+		<repeating value="is_suspended"/>
+	</audited_properties>
+	<displayed_events>
+		<repeating value="d2_change_state"/>
+		<repeating value="d2_change_state_failed"/>
+		<repeating value="d2_change_state_signoff"/>
+		<repeating value="d2_change_state_success"/>
+		<repeating value="d2_destroy"/>
+		<repeating value="d2_edit"/>
+		<repeating value="d2_properties_save"/>
+		<repeating value="ls_training_exempted"/>
+		<repeating value="ls_training_reinstated"/>
+		<repeating value="ls_training_rejected"/>
+	</displayed_events>
+	<hide_documentum_events value="F"/>
+	<extended_display value="F"/>
+	<audited_properties_old>
+		<repeating value="F"/>
+		<repeating value="F"/>
+		<repeating value="F"/>
+		<repeating value="F"/>
+		<repeating value="F"/>
+	</audited_properties_old>
+	<audited_properties_delta>
+		<repeating value="F"/>
+		<repeating value="F"/>
+		<repeating value="F"/>
+		<repeating value="F"/>
+		<repeating value="F"/>
+	</audited_properties_delta>
+</d2_audit_config>

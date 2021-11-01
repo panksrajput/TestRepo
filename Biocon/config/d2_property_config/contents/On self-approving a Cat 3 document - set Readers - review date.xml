@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dialog id="PropertiesDialog" buttons_right="false" focus="" height="580" resizable="true" signoff_creation="false" signoff_edit="false" signoff_import="false" signoff_intention_dictionary="" signoff_intention_required="false" width="400">
+	<content>
+		<fieldset label_en="Self-approve document">
+			<label id="domain" condition_visible_create="false" condition_visible_edit="false" condition_visible_import="false"/>
+			<label id="r_object_type" condition_visible_create="false" condition_visible_edit="false" condition_visible_import="false"/>
+			<label id="group_name" condition_visible_create="false" condition_visible_edit="false" condition_visible_import="false"/>
+			<label id="applicable_sites" condition_visible_create="false" condition_visible_edit="false" condition_visible_import="false"/>
+			<comment font_bold="true" font_color="#CC0000" label_en="Note:"/>
+			<comment html_content="true" label_en="&lt;table cellspacing=0&gt;&lt;tr&gt;&lt;td&gt;This will create a new major version of ''$value(object_name)'' that is ''Effective/Approved/Final''. &lt;strong&gt;This operation will be audited.&lt;/strong&gt; The document will remain ''Effective/Approved/Final'' until it is suspended, withdrawn, or superseded by a later ''Effective/Approved/Final'' version.&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"/>
+			<comment advancedView_visible="false" condition_visible="(getValue(r_object_type).equals('cd_change_request'))" html_content="true" label_en="&lt;table cellspacing=0&gt;&lt;tr&gt;&lt;td&gt;The documents attached to this Change Request will also be made ''Effective'', accordingly.&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"/>
+			<comment advancedView_enabled="false" advancedView_visible="false" condition_enabled="(getValue(domain).equals('GMP'))" condition_visible="(getValue(domain).equals('GMP'))" html_content="true" label_en="&lt;table cellspacing=0&gt;&lt;tr&gt;&lt;td&gt;Before making the document ''Effective/Approved/Final'', ensure that any approved change requests have been completed, as and where applicable.&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"/>
+			<comment html_content="true" label_en="&lt;table cellspacing=0&gt;&lt;tr&gt;&lt;td&gt;Select the user groups and / or individual users who will be able to read this document while it is ''Effective/Approved/Final''.&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"/>
+			<list id="readers" assistance_dql="select groups_names from dm_group where any i_supergroups_names='$value(group_name)_doc_readers' union select users_names from dm_group where any i_supergroups_names='$value(group_name)_doc_readers' union select group_name from dm_group where group_name = '$value(group_name)_doc_readers' union select i_all_users_names from dm_group where any i_supergroups_names in (select alias_value from d2_dictionary_value where dictionary_name like 'GMP Applicable Sites' and any alias_value is not nullstring and alias_value like '%_readers' and object_name in ($repeatingvalue(applicable_sites)) ENABLE(ROW_BASED)) union select group_name from dm_group where any i_supergroups_names in (select alias_value from d2_dictionary_value where dictionary_name like 'GMP Applicable Sites' and any alias_value is not nullstring and alias_value like '%_readers' and object_name in ($repeatingvalue(applicable_sites)) ENABLE(ROW_BASED))" assistance_type="dql" asynchronous="true" loadOnOpening="true" reinit_enabled="false" sorted="true"/>
+			<comment advancedView_visible="false" condition_visible="(getValue(domain).notEquals('GMP'))" label_en="You can also set an optional review date for this document."/>
+			<date id="review_date" advancedView_visible="false" condition_validation="getValue(review_date).isGreaterOrEqualsThan('$TODAY')" condition_visible="((getValue(domain).notEquals('GMP'))&amp;&amp;(getValue(domain).notEquals('Med Device')))" validation_message_en="Review Date of the document must be greater than or equals to today's Date."/>
+			<date id="planned_withdraw_date" condition_validation="getValue(planned_withdraw_date).isGreaterOrEqualsThan('$TODAY')" validation_message_en="Please select future date for 'Planned Withdraw date'."/>
+		</fieldset>
+	</content>
+	<buttons>
+		<button id="buttonOk" action="validDialog()"/>
+		<button id="buttonCancel" action="cancelDialog()"/>
+	</buttons>
+</dialog>

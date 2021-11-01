@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dialog id="PropertiesDialog" auto_smartview_edit_mode="false" buttons_right="false" focus="" height="500" initial_invalid="false" resizable="true" signoff_creation="false" signoff_edit="false" signoff_import="false" signoff_intention_dictionary="" signoff_intention_required="false" width="400">
+	<content>
+		<fieldset label_en="Restricted Edit Model">
+			<text id="rse_model_name" condition_enabled_edit="false" condition_required_create="true" condition_required_edit="true" condition_required_import="true" label_en="Model Name"/>
+			<combo id="rse_doctype" assistance_dql="select r_type_name from dmi_type_info where any r_supertype = 'cd_controlled_doc' and r_type_name like 'cd_%'" assistance_type="dql" condition_required_create="true" condition_required_edit="true" condition_required_import="true" label_en="DocType"/>
+			<comment html_content="true" label_en="&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;font color=&quot;#646464&quot;&gt;Patterns limit a model to specific values. Use a fixed string('ALL') to denote no specific pattern or use the text entry format of '|$ value(attribute)|' to use specific attributes.​&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"/>
+			<list-editable id="rse_patterns" condition_required_create="true" condition_required_edit="true" condition_required_import="true" label_en="Patterns"/>
+			<comment html_content="true" label_en="&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;font color=&quot;#646464&quot;&gt;For each attribute specified in Patterns, the corresponding attribute name must be added to the Attributes field.&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"/>
+			<list id="rse_pattern_attributes" assistance_dql="select attr_name  from dm_type where name = '$value(rse_doctype)' order by attr_name " assistance_type="dql" label_en="Attributes"/>
+		</fieldset>
+	</content>
+	<buttons>
+		<button id="buttonOk" action="validDialog()"/>
+		<button id="buttonCancel" action="cancelDialog()"/>
+	</buttons>
+</dialog>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_documentset_switch object_name="d2_inheritance_config">
+	<d2_documentset name="Registration Forms¬Medical Device Registration Forms" config="Inherit device information only"/>
+	<d2_documentset name="Registration Forms¬Product Registration Forms" config="Inherit product information only"/>
+	<d2_documentset name="Registration Forms¬Medical Device Regulatory-Admin Registration Forms" config="Medical Device Regulatory Admin Registration Form Inheritance"/>
+	<d2_documentset name="Registration Forms¬Manufactured Item Registration Forms¬Item Registration Forms for Finished Goods without item code" config="Inherit manufactured item properties"/>
+	<d2_documentset name="Registration Forms¬Manufactured Item Registration Forms¬Item Registration Forms for Finished Goods" config="Inherit manufactured item properties"/>
+	<d2_documentset name="Registration Forms¬Manufactured Item Registration Forms¬Item Registration Forms for Semi-finished Goods without item code" config="Inherit manufactured item properties"/>
+	<d2_documentset name="Registration Forms¬Manufactured Item Registration Forms¬Item Registration Forms for Semi-finished Goods" config="Inherit manufactured item properties"/>
+	<d2_documentset name="Registration Forms¬Manufactured Item Registration Forms¬Item Registration Forms for Active Ingredients without item code" config="Inherit manufactured item properties"/>
+	<d2_documentset name="Registration Forms¬Manufactured Item Registration Forms¬Item Registration Forms for Active Ingredients" config="Inherit manufactured item properties"/>
+	<d2_documentset name="GMP Documents¬GMP Group Directive" config="Inherit GMP Information and Default Role Settings"/>
+	<d2_documentset name="GMP Documents¬GMP Group Drawings" config="Inherit GMP Information and Default Role Settings"/>
+	<d2_documentset name="GMP Documents¬GMP Group Executed Manufacturing" config="Inherit GMP Information and Default Role Settings"/>
+	<d2_documentset name="GMP Documents¬GMP Group Executed Validation" config="Inherit GMP Information and Default Role Settings"/>
+	<d2_documentset name="GMP Documents¬GMP Group Facility Records and Certificates" config="Inherit GMP Information and Default Role Settings"/>
+	<d2_documentset name="GMP Documents¬GMP Group Form" config="Inherit GMP Information and Default Role Settings"/>
+	<d2_documentset name="GMP Documents¬GMP Group Guideline" config="Inherit GMP Information and Default Role Settings"/>
+	<d2_documentset name="GMP Documents¬GMP Group Program" config="Inherit GMP Information and Default Role Settings"/>
+	<d2_documentset name="GMP Documents¬GMP Group Manuals" config="Inherit GMP Information and Default Role Settings"/>
+	<d2_documentset name="GMP Documents¬GMP Group Master Manufacturing" config="Inherit GMP Information and Default Role Settings"/>
+	<d2_documentset name="GMP Documents¬GMP Group Master Validation" config="Inherit GMP Information and Default Role Settings"/>
+	<d2_documentset name="GMP Documents¬GMP Group Method" config="Inherit GMP Information and Default Role Settings"/>
+	<d2_documentset name="GMP Documents¬GMP Group Packaging and Labeling" config="Inherit GMP Information and Default Role Settings"/>
+	<d2_documentset name="GMP Documents¬GMP Group Policy" config="Inherit GMP Information and Default Role Settings"/>
+	<d2_documentset name="GMP Documents¬GMP Group Project Documents" config="Inherit GMP Information and Default Role Settings"/>
+	<d2_documentset name="GMP Documents¬GMP Group Quality Documents" config="Inherit GMP Information and Default Role Settings"/>
+	<d2_documentset name="GMP Documents¬GMP Group Quality Manual" config="Inherit GMP Information and Default Role Settings"/>
+	<d2_documentset name="GMP Documents¬GMP Group Records and Certificates" config="Inherit GMP Information and Default Role Settings"/>
+	<d2_documentset name="GMP Documents¬GMP Group SOP" config="Inherit GMP Information and Default Role Settings"/>
+	<d2_documentset name="GMP Documents¬GMP Group Specification" config="Inherit GMP Information and Default Role Settings"/>
+	<d2_documentset name="GMP Documents¬GMP Group Training" config="Inherit GMP Information and Default Role Settings"/>
+	<d2_documentset name="GMP Documents¬GMP Group Work Instruction" config="Inherit GMP Information and Default Role Settings"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group External Audit" config="Inherit GMP Information and Default Role Settings"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Internal Audit" config="Inherit GMP Information and Default Role Settings"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Investigations" config="Inherit GMP Information and Default Role Settings"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Quality Events" config="Inherit GMP Information and Default Role Settings"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Quality Management" config="Inherit GMP Information and Default Role Settings"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Quality Records" config="Inherit GMP Information and Default Role Settings"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Quality Risk Documentation" config="Inherit GMP Information and Default Role Settings"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Recalls" config="Inherit GMP Information and Default Role Settings"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Site Master File" config="Inherit GMP Information and Default Role Settings"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Supplier Audit" config="Inherit GMP Information and Default Role Settings"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Protocol" config="Inherit GMP Information and Default Role Settings"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Reports" config="Inherit GMP Information and Default Role Settings"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Requirements" config="Inherit GMP Information and Default Role Settings"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Reviews" config="Inherit GMP Information and Default Role Settings"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Plans" config="Inherit GMP Information and Default Role Settings"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Checklists" config="Inherit GMP Information and Default Role Settings"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Matrix" config="Inherit GMP Information and Default Role Settings"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Risk Documentation" config="Inherit GMP Information and Default Role Settings"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group DHF" config="Inherit GMP Information and Default Role Settings"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Bill Of Material" config="Inherit GMP Information and Default Role Settings"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group DMR" config="Inherit GMP Information and Default Role Settings"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Labeling" config="Inherit GMP Information and Default Role Settings"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Drawings" config="Inherit GMP Information and Default Role Settings"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Production Document" config="Inherit GMP Information and Default Role Settings"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Customer Documents" config="Inherit GMP Information and Default Role Settings"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Service Documents" config="Inherit GMP Information and Default Role Settings"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Software Release" config="Inherit GMP Information and Default Role Settings"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Preliminary Bill Of Material" config="Inherit GMP Information and Default Role Settings"/>
+	<d2_documentset name="Med Device Documents¬Med Device DMR Group Specifications" config="Inherit GMP Information and Default Role Settings"/>
+	<d2_documentset name="Med Device Documents¬Med Device DHF Group Specifications" config="Inherit GMP Information and Default Role Settings"/>
+	<d2_documentset name="Med Device Documents¬Med Device Subgroup Parent" config="Inherit GMP Information and Default Role Settings"/>
+	<d2_documentset name="Med Device Documents¬Med Device DMR Subgroup Index" config="Inherit GMP Information and Default Role Settings"/>
+	<d2_documentset name="Med Device Documents¬Med Device DHF Subgroup Index" config="Inherit GMP Information and Default Role Settings"/>
+	<d2_documentset name="Med Device Documents¬Med Device Subgroup Section" config="Inherit GMP Information and Default Role Settings"/>
+	<switch_default config=""/>
+</d2_documentset_switch>

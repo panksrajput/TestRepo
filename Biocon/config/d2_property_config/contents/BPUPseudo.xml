@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dialog id="PropertiesDialog" auto_smartview_edit_mode="false" buttons_right="false" focus="" height="400" initial_invalid="false" resizable="true" signoff_creation="false" signoff_edit="false" signoff_import="false" signoff_intention_dictionary="" signoff_intention_required="false" width="600">
+	<content>
+		<comment condition_visible_create="false" condition_visible_edit="false" condition_visible_import="false" label_en="This is a pseudo page used for bulk imports - it should never be displayed."/>
+		<fieldset condition_visible_create="false" condition_visible_edit="false" label_en="bpuEnabled">
+			<comment font_color="#FF3300" font_size="18pt" html_content="true" label_en="The document being used for the basis of this Bulk Property Update ($value(object_name))&lt;br&gt;is configured for a property page that is currently unavailable for this operation. Please select another document as the reference for the operation. $value(thisPageName)"/>
+			<text id="thisPageName" condition_enabled_create="false" condition_enabled_edit="false" control="true" label_en="Property Page being used"/>
+		</fieldset>
+		<fieldset condition_visible_create="false" condition_visible_edit="false" label_en="security">
+			<comment font_color="#FF0033" font_size="18pt" html_content="true" label_en="You need to be a member of the Bulk Properties Update group (cd_can_bulk_prop_update) in order to use this function."/>
+			<label id="preConditionDQL" condition_visible_create="false" condition_visible_edit="false" control="true" label_en="select count(*) from dm_dbo.single_result_row_view where not exists (select group_name from dm_group where group_name = 'cd_can_bulk_prop_update' and any i_all_users_names = '$USER')"/>
+		</fieldset>
+		<fieldset condition_visible_create="false" condition_visible_edit="false" label_en="List of read only attributes - add as unbound labels with attribute name and a readOnly label">
+			<label id="title" control="true" label_en="readOnly"/>
+			<label id="labeling_status" control="true" label_en="readOnly"/>
+		</fieldset>
+		<fieldset condition_enabled_create="false" condition_enabled_edit="false" condition_visible_create="false" condition_visible_edit="false" label_en="Other information">
+			<label id="dialogTitle" control="true" label_en="Bulk property update - %s"/>
+		</fieldset>
+	</content>
+	<buttons>
+		<button id="buttonOk" action="validDialog()" condition_enabled_create="false" condition_enabled_edit="false" condition_visible_create="false" condition_visible_edit="false"/>
+		<button id="buttonCancel" action="cancelDialog()"/>
+	</buttons>
+</dialog>

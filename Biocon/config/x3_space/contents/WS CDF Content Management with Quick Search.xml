@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="SpaceSchema.xsd">
+	<space>
+		<border-layout-container>
+			<data>
+				<border-layout-data layoutregion="WEST" maxSize="500" minSize="150" size="260" split="true"/>
+				<border-layout-data layoutregion="CENTER" split="true"/>
+				<border-layout-data layoutregion="SOUTH" maxSize="500" minSize="50" size="120" split="true"/>
+				<border-layout-data layoutregion="EAST" maxSize="800" minSize="150" size="400" split="true"/>
+			</data>
+			<content>
+				<accordion-container>
+					<content>
+						<widget config="WG Docbase browser"/>
+						<widget config="WG Predefined search"/>
+						<widget config="WG Favorites"/>
+						<widget config="WG Checkout"/>
+					</content>
+				</accordion-container>
+				<tab-container>
+					<content>
+						<widget config="WG Doclist"/>
+					</content>
+				</tab-container>
+				<tab-container>
+					<content>
+						<widget config="WG Locations"/>
+						<widget config="WG Versions"/>
+						<widget config="WG Renditions"/>
+						<widget config="WG Relations"/>
+						<widget config="WG Audit"/>
+					</content>
+				</tab-container>
+				<border-layout-container>
+					<data>
+						<border-layout-data layoutregion="NORTH" size="70" split="false"/>
+						<border-layout-data layoutregion="CENTER" split="true"/>
+					</data>
+					<content>
+						<widget config="WG Quick search"/>
+						<tab-container>
+							<content>
+								<widget config="WG EXT LSCI LSS Doc Viewer (Browse)"/>
+								<widget config="WG Properties"/>
+							</content>
+						</tab-container>
+					</content>
+				</border-layout-container>
+			</content>
+		</border-layout-container>
+	</space>
+</root>

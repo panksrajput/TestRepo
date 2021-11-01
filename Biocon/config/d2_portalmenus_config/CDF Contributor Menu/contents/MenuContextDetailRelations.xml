@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<delta>
+	<insert position-after="menuContextRelationsViewWithNativeAnnotations,separator2,menuDistributionLaunch,menuDistributionReport,menuDistributionStop,menuDistributionProperties,separator3,menuContextRelationsDestroy" position-before="menuContextRelationsView,menuContextRelationsDisplayVD,menuContextRelationsEdit,separator0,menuContextRelationsCheckin,menuContextRelationsCancelCheckout,separator1,menuContextRelationsLocate">
+		<menuitem id="menuCustom1390282103602" action="" label_en="Properties">
+			<dynamic-action class="com.emc.d2fs.dctm.ui.dynamicactions.actions.ShowDialog" dialog="PropertiesDialog"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.interfaces.IsConnected"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.typeparts.IsObjectId"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.typeparts.IsQueueItem" equals="false"/>
+			<condition class="com.emc.d2fs.dctm.ui.conditions.interfaces.IsMultipleSelection" equals="false"/>
+		</menuitem>
+	</insert>
+	<modify id="menuContextRelationsDestroy">
+		<insert position-after="com.emc.d2fs.dctm.ui.conditions.objects.Predicate" position-before="com.emc.d2fs.dctm.ui.dynamicactions.events.Publish,com.emc.d2fs.dctm.ui.conditions.permits.HasClientCapability,com.emc.d2fs.dctm.ui.conditions.typeparts.IsObjectType">
+			<condition class="com.emc.d2fs.dctm.ui.conditions.interfaces.IsParameterEquals" equals="false" parameter="relation_name" value="Regulatory Application Form"/>
+		</insert>
+		<append>
+			<condition all_valid="true" class="com.emc.d2fs.dctm.ui.conditions.objects.Predicate" equals="true" value="dm_dbo.single_result_row_view where not exists (select * from dm_relation where relation_name ='TMF Product-level Placeholder' and parent_id ='$value(r_object_id)')"/>
+		</append>
+	</modify>
+</delta>

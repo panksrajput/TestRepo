@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dialog id="PropertiesDialog" auto_smartview_edit_mode="false" buttons_right="false" focus="" height="650" initial_invalid="false" resizable="false" signoff_creation="false" signoff_edit="false" signoff_import="false" signoff_intention_dictionary="" signoff_intention_required="false" width="750">
+	<content>
+		<fieldset label_en="Manufactured Item Registration Form">
+			<tabs>
+				<tab advancedView_enabled="false" label_en="Item Info">
+					<text id="item_code" advancedView_enabled="false" condition_enabled="(getValue(reference_count).isLessOrEqualsThan('0'))" condition_required_create="true" condition_required_edit="true"/>
+					<combo id="item_type" advancedView_enabled="false" assistance_dictionary="GMP Manufactured Item Type" assistance_dictionary_alias="auto" assistance_type="dictionary" condition_enabled="(getValue(reference_count).isLessOrEqualsThan('0'))" condition_required_create="true" condition_required_edit="true" condition_required_import="true"/>
+					<combo id="product_code" advancedView_enabled="false" advancedView_required="false" assistance_dql="select distinct product_code from cd_product_info where a_status = 'Active' and product_code != ' '" assistance_type="dql" autoselect_single="true" condition_enabled="(getValue(reference_count).isLessOrEqualsThan('0'))" label_en="R&amp;D Product Code (where applicable)" reinit_attributes="item_name"/>
+					<combo-editable id="item_name" advancedView_enabled="false" assistance_dql="select distinct drug_substance_name from cd_product_info where '$value(item_type)' = 'Active Ingredient' and product_code = '$value(product_code)' and drug_substance_name != '' union select distinct product_generic_name from cd_product_info where '$value(item_type)' != 'Active Ingredient' and product_code = '$value(product_code)' and drug_substance_name != '' union select distinct product_trade_name from cd_product_info where '$value(item_type)' != 'Active Ingredient' and product_code = '$value(product_code)' and drug_substance_name != '' order by 1 enable(ROW_BASED)" assistance_type="dql" autoselect_single="true" condition_enabled="(getValue(reference_count).isLessOrEqualsThan('0'))" condition_required_create="true" condition_required_edit="true" condition_required_import="true"/>
+					<list-editable id="applicable_sites" advancedView_enabled="false" assistance_dictionary="GMP Applicable Sites" assistance_dictionary_alias="en" assistance_type="dictionary" condition_enabled="(getValue(reference_count).isLessOrEqualsThan('0'))" condition_required_create="true" condition_required_edit="true" condition_required_import="true" rows="5"/>
+					<text id="a_status" condition_enabled_create="false" condition_enabled_edit="false" condition_enabled_import="false" condition_visible_create="false" condition_visible_import="false"/>
+					<text id="r_modifier" condition_enabled_create="false" condition_enabled_edit="false" condition_enabled_import="false" condition_visible_create="false" condition_visible_import="false"/>
+					<date id="r_modify_date" condition_enabled_create="false" condition_enabled_edit="false" condition_enabled_import="false" condition_visible_create="false" condition_visible_import="false"/>
+					<text id="a_application_type" condition_enabled_create="false" condition_enabled_edit="false" condition_enabled_import="false" condition_visible_create="false" condition_visible_edit="false" condition_visible_import="false"/>
+					<combo id="reference_count" assistance_dql="select count(*) from dm_dbo.cdv_quality_gmp_item_code_refs where item_code = '$value(item_code)' and r_object_id !='$value(r_object_id)' and a_status not in ('Withdrawn', 'Inactive') AND NOT EXISTS(select r_object_id from cd_manuf_item_info where item_code='$value(item_code)' and r_object_id!='$value(r_object_id)')" assistance_type="dql" autoselect_single="true" condition_enabled_create="false" condition_enabled_edit="false" condition_enabled_import="false" condition_visible_create="false" condition_visible_edit="false" condition_visible_import="false" control="true"/>
+				</tab>
+				<tab advancedView_enabled="false" advancedView_visible="false" condition_visible="((getValue(item_type).equals('Finished Good'))||(getValue(item_type).equals('Semi-finished Good')))" label_en="Active Ingredient" reinit_visible="false">
+					<fieldset advancedView_enabled="false" condition_enabled="(getValue(reference_count).isLessOrEqualsThan('0'))" label_en="Active Pharmaceutical Ingredients">
+						<grid advancedView_enabled="false">
+							<combo id="api_item_codes" assistance_dql="select item_code from cd_manuf_item_info where item_code != '$value(item_code)' and item_type = 'Active Ingredient' and a_status = 'Active' order by 1" assistance_type="dql" cell_width="300"/>
+							<combo id="api_item_names" assistance_dql="select item_name from cd_manuf_item_info where item_code = '$value(api_item_codes)'  order by 1" assistance_type="dql" cell_width="300" condition_enabled_create="false" condition_enabled_edit="false" condition_enabled_import="false"/>
+						</grid>
+					</fieldset>
+				</tab>
+				<tab advancedView_enabled="false" advancedView_visible="false" condition_visible="((getValue(item_type).equals('Finished Good'))||(getValue(item_type).equals('Semi-finished Good')))" label_en="Semi-finished Goods">
+					<fieldset advancedView_enabled="false" condition_enabled="(getValue(reference_count).isLessOrEqualsThan('0'))" label_en="Other semi-finished goods included in this item">
+						<grid advancedView_enabled="false">
+							<combo id="sfg_item_codes" assistance_dql="select item_code from cd_manuf_item_info where item_code != '$value(item_code)' and item_type = 'Semi-finished Good' and a_status = 'Active' order by 1" assistance_type="dql" cell_width="300"/>
+							<combo id="sfg_item_names" assistance_dql="select item_name from cd_manuf_item_info where item_code = '$value(sfg_item_codes)' " assistance_type="dql" condition_enabled_create="false" condition_enabled_edit="false" condition_enabled_import="false"/>
+						</grid>
+					</fieldset>
+				</tab>
+				<tab label_en="Access Control">
+					<list id="form_managers" assistance_dql="select groups_names from dm_group where any i_supergroups_names = 'cd_gmp_item_registration_group' union select users_names from dm_group where any i_supergroups_names = 'cd_gmp_item_registration_group' union select group_name from dm_group where group_name = 'cd_gmp_item_registration_group'" assistance_type="dql" asynchronous="false" label_en="Form Managers" rows="4" sorted="true"/>
+					<comment font_color="#646464" html_content="true" label_en="&lt;table cellspacing=0&gt;&lt;tr&gt;&lt;td&gt;&lt;font color=#646464&gt;These users will be responsible for managing the Manufactured Item information and Default Role settings in this form.&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"/>
+					<separator/>
+					<list id="form_users" assistance_dql="select groups_names from dm_group where any i_supergroups_names IN ('cd_gmp_all_users','cd_gmp_item_registration_group') union select users_names from dm_group where any i_supergroups_names IN ('cd_gmp_all_users','cd_gmp_item_registration_group') union select group_name from dm_group where group_name IN ('cd_gmp_all_users','cd_gmp_item_registration_group') " assistance_type="dql" asynchronous="false" label_en="Primary User Group(s)" rows="4" sorted="true"/>
+					<comment font_color="#646464" html_content="true" label_en="&lt;table cellspacing=0&gt;&lt;tr&gt;&lt;td&gt;&lt;font color=#646464&gt;These users will be able to read this form and create documents related to this Manufactured Item.&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"/>
+				</tab>
+			</tabs>
+		</fieldset>
+	</content>
+	<buttons>
+		<button id="buttonOk" action="validDialog()"/>
+		<button id="buttonCancel" action="cancelDialog()"/>
+	</buttons>
+</dialog>

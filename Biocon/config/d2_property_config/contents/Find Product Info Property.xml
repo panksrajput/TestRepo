@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dialog id="PropertiesDialog" auto_smartview_edit_mode="false" buttons_right="false" focus="" height="300" initial_invalid="false" resizable="true" signoff_creation="false" signoff_edit="false" signoff_import="false" signoff_intention_dictionary="" signoff_intention_required="false" width="650">
+	<content>
+		<combo-editable id="product_code" assistance_dictionary="DQL - General - All available product codes" assistance_dictionary_alias="auto" assistance_type="dictionary" label_en="Product code / compound ID is or contains "/>
+		<text id="subject" label_en="Active ingredient / chemical name / INN is or contains"/>
+		<text id="title" label_en="Trade name / generic name is or contains"/>
+		<list id="product_trade_country" assistance_dictionary="Submission Country" assistance_dictionary_alias="en" assistance_type="dictionary" label_en="Marketed in country / countries" rows="4"/>
+		<comment html_content="true" label_en="&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;font color=#646464&gt;All fields are case-sensitive.&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"/>
+	</content>
+	<buttons>
+		<button id="buttonOk" action="validDialog()"/>
+		<button id="buttonCancel" action="cancelDialog()"/>
+	</buttons>
+</dialog>

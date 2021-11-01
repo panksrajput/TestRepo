@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_link_config new_format="true">
+	<object_name value="Security Folder Model Auto Link"/>
+	<title value=""/>
+	<subject value=""/>
+	<authors/>
+	<keywords/>
+	<a_status value=""/>
+	<a_content_type value=""/>
+	<log_entry value=""/>
+	<language_code value=""/>
+	<module_type value="d2_link_config"/>
+	<application_names>
+		<repeating value="OpenText Life Sciences eTMF Solution"/>
+		<repeating value="OpenText Life Sciences Medical Device for Quality and Manufacturing Solution"/>
+		<repeating value="OpenText Life Sciences Medical Device for Research and Development Solution"/>
+		<repeating value="OpenText Life Sciences Medical Device Solution"/>
+		<repeating value="OpenText Life Sciences Quality and Manufacturing Solution"/>
+		<repeating value="OpenText Life Sciences Research and Development Solution"/>
+		<repeating value="OpenText Life Sciences Submission Storage and Viewing"/>
+	</application_names>
+	<lock_config value="F"/>
+	<parents_config/>
+	<path>
+		<repeating value="/Security/Folder Model"/>
+	</path>
+	<undefined_label value="Undefined"/>
+	<undefined_concat value="F"/>
+	<linked_repeating value="F"/>
+	<type>
+		<repeating value="/dm_cabinet/dm_folder"/>
+	</type>
+	<first_repeating value="F"/>
+	<is_home_cabinet>
+		<repeating value="F"/>
+	</is_home_cabinet>
+	<acl>
+		<repeating value="/Security Object Folder Security Model/Security Object Folder Security Model"/>
+	</acl>
+	<default_value>
+		<repeating value="//"/>
+	</default_value>
+	<regexp_name/>
+	<regexp_pattern/>
+	<regexp_replace/>
+	<apply_on_all_versions value="F"/>
+</d2_link_config>

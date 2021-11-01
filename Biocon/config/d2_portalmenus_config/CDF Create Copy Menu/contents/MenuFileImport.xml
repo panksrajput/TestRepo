@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<delta>
+	<modify id="menuFileImportDocument">
+		<append>
+			<condition all_valid="true" class="com.emc.d2fs.dctm.ui.conditions.objects.Predicate" equals="false" value="dm_dbo.single_result_row_view where exists (select * from cd_controlled_doc where r_lock_owner != ' ' and r_object_type in('cd_clinical_trial_info','cd_clinical_tmf_doc') and r_object_id = '$value(r_object_id)')"/>
+		</append>
+	</modify>
+	<modify id="menuFileImportRendition">
+		<move class="com.emc.d2fs.dctm.ui.conditions.typeparts.IsObjectType" position-after="com.emc.d2fs.dctm.ui.conditions.interfaces.IsConnected,com.emc.d2fs.dctm.ui.conditions.typeparts.IsDocument,com.emc.d2fs.dctm.ui.conditions.permits.HasClientCapability,com.emc.d2fs.dctm.ui.conditions.objects.HasContent,com.emc.d2fs.dctm.ui.conditions.actions.CheckoutByAndPermitLevel,com.emc.d2fs.dctm.ui.conditions.interfaces.IsMultipleSelection" position-before="com.emc.d2fs.dctm.ui.dynamicactions.actions.Rendition"/>
+	</modify>
+	<modify id="menuFileImportAsVersion">
+		<move class="com.emc.d2fs.dctm.ui.conditions.typeparts.IsObjectType" position-after="com.emc.d2fs.dctm.ui.conditions.interfaces.IsConnected,com.emc.d2fs.dctm.ui.conditions.permits.HasClientCapability,com.emc.d2fs.dctm.ui.conditions.permits.HasPermit,com.emc.d2fs.dctm.ui.conditions.typeparts.IsSysObject,com.emc.d2fs.dctm.ui.conditions.typeparts.IsFolder,com.emc.d2fs.dctm.ui.conditions.typeparts.IsCabinet,com.emc.d2fs.dctm.ui.conditions.actions.CheckoutByAndPermitLevel,com.emc.d2fs.dctm.ui.conditions.interfaces.IsMultipleSelection,com.emc.d2fs.dctm.ui.conditions.objects.Predicate,com.emc.d2fs.dctm.ui.conditions.objects.HasAttrValue" position-before="com.emc.d2fs.dctm.ui.dynamicactions.actions.Checkin"/>
+		<insert position-after="com.emc.d2fs.dctm.ui.conditions.objects.HasAttrValue" position-before="com.emc.d2fs.dctm.ui.dynamicactions.actions.Checkin,com.emc.d2fs.dctm.ui.conditions.typeparts.IsObjectType,com.emc.d2fs.dctm.ui.conditions.interfaces.IsConnected,com.emc.d2fs.dctm.ui.conditions.permits.HasClientCapability,com.emc.d2fs.dctm.ui.conditions.permits.HasPermit,com.emc.d2fs.dctm.ui.conditions.typeparts.IsSysObject,com.emc.d2fs.dctm.ui.conditions.typeparts.IsFolder,com.emc.d2fs.dctm.ui.conditions.typeparts.IsCabinet,com.emc.d2fs.dctm.ui.conditions.actions.CheckoutByAndPermitLevel,com.emc.d2fs.dctm.ui.conditions.interfaces.IsMultipleSelection">
+			<condition all_valid="true" class="com.emc.d2fs.dctm.ui.conditions.objects.Predicate" equals="false" value="dm_dbo.single_result_row_view where exists(SELECT * FROM dm_workflow WHERE r_object_id IN (SELECT r_workflow_id FROM dmi_package WHERE ANY r_component_id = '$value(r_object_id)') AND r_runtime_state='1' AND object_name LIKE 'Cat 1 GMP withdrawal%') or exists (select * from cd_controlled_doc where r_object_id='$value(r_object_id)' and a_status = 'Effective' and can_be_withdrawn = true and planned_withdraw_date is not nulldate) or exists (select * from cd_controlled_doc where r_lock_owner != ' ' and r_object_type in('cd_clinical_trial_info','cd_clinical_tmf_doc') and r_object_id = '$value(r_object_id)')"/>
+		</insert>
+		<append>
+			<condition all_valid="true" class="com.emc.d2fs.dctm.ui.conditions.objects.HasAttrValue" property="is_placeholder" value="F"/>
+		</append>
+	</modify>
+</delta>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dialog id="PropertiesDialog" buttons_right="false" focus="" height="300" resizable="true" signoff_creation="false" signoff_edit="false" signoff_import="false" signoff_intention_dictionary="" signoff_intention_required="false" width="400">
+	<content>
+		<fieldset label_en="Reject Training">
+			<text id="document_name" condition_enabled_create="false" condition_enabled_edit="false" condition_enabled_import="false"/>
+			<text id="document_title" condition_enabled_create="false" condition_enabled_edit="false" condition_enabled_import="false"/>
+			<text id="training_keys" condition_enabled_create="false" condition_enabled_edit="false" condition_enabled_import="false"/>
+			<combo id="reject_reason" assistance_dictionary="GMP Training Reject Reasons" assistance_dictionary_alias="en" assistance_type="dictionary" condition_required_create="true" condition_required_edit="true" condition_required_import="true"/>
+		</fieldset>
+	</content>
+	<buttons>
+		<button id="buttonOk" action="validDialog()"/>
+		<button id="buttonCancel" action="cancelDialog()"/>
+	</buttons>
+</dialog>

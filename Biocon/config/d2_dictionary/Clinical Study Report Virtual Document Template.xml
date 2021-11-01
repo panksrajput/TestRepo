@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_dictionary object_name="Clinical Study Report Virtual Document Template" title="" lock_config="false" parents_config="" application_names="OpenText Life Sciences eTMF Solution¬OpenText Life Sciences Medical Device for Quality and Manufacturing Solution¬OpenText Life Sciences Medical Device for Research and Development Solution¬OpenText Life Sciences Quality and Manufacturing Solution¬OpenText Life Sciences Research and Development Solution¬OpenText Life Sciences Submission Storage and Viewing" security_group="admingroup" search_group="admingroup" version="2" is_versioned="false" manual_order="false" create_view_option="false" is_dql="false" is_dql_cache="false" dql="" label_en="Clinical Study Report Virtual Document Template">
+	<d2_dictionary_value object_name="1" is_enabled="false" order_no="0">
+		<alias name="Label (en)" value="Clinical Study Report Body Assembly"/>
+		<alias name="Artifact Name" value="Clinical Study Report Body Assembly"/>
+		<alias name="Template" value=""/>
+		<alias name="Object Type" value=""/>
+		<alias name="Folder Path" value=""/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="1.01" is_enabled="false" order_no="0">
+		<alias name="Label (en)" value="Clinical Study Report Synopsis"/>
+		<alias name="Artifact Name" value="Clinical Study Report Synopsis"/>
+		<alias name="Template" value="Synopsis"/>
+		<alias name="Object Type" value=""/>
+		<alias name="Folder Path" value=""/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="1.02" is_enabled="false" order_no="0">
+		<alias name="Label (en)" value="Clinical Study Report Body"/>
+		<alias name="Artifact Name" value="Clinical Study Report Body"/>
+		<alias name="Template" value="Report Body"/>
+		<alias name="Object Type" value=""/>
+		<alias name="Folder Path" value=""/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="16" is_enabled="false" order_no="0">
+		<alias name="Label (en)" value="Clinical Study Report Appendix Assembly"/>
+		<alias name="Artifact Name" value="Clinical Study Report Appendix Assembly"/>
+		<alias name="Template" value=""/>
+		<alias name="Object Type" value=""/>
+		<alias name="Folder Path" value=""/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="16.01" is_enabled="false" order_no="0">
+		<alias name="Label (en)" value="16.1 - Study Information"/>
+		<alias name="Artifact Name" value="16.1 - Study Information"/>
+		<alias name="Template" value=""/>
+		<alias name="Object Type" value=""/>
+		<alias name="Folder Path" value=""/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="16.01.01" is_enabled="false" order_no="0">
+		<alias name="Label (en)" value="16.1.1 - Study Protocol Template"/>
+		<alias name="Artifact Name" value="16.1.1 - Study Protocol Template"/>
+		<alias name="Template" value="Protocol"/>
+		<alias name="Object Type" value=""/>
+		<alias name="Folder Path" value=""/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="16.01.02" is_enabled="false" order_no="0">
+		<alias name="Label (en)" value="16.1.2 - Sample CRF"/>
+		<alias name="Artifact Name" value="16.1.2 - Sample CRF"/>
+		<alias name="Template" value="Sample Case Report Form"/>
+		<alias name="Object Type" value=""/>
+		<alias name="Folder Path" value=""/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="16.01.03" is_enabled="false" order_no="0">
+		<alias name="Label (en)" value="16.1.3 - List of IECs and IRBs"/>
+		<alias name="Artifact Name" value="16.1.3 - List of IECs and IRBs"/>
+		<alias name="Template" value="List of IECs and IRBs"/>
+		<alias name="Object Type" value=""/>
+		<alias name="Folder Path" value=""/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="16.01.04" is_enabled="false" order_no="0">
+		<alias name="Label (en)" value="16.1.4 - List of Investigators"/>
+		<alias name="Artifact Name" value="16.1.4 - List of Investigators"/>
+		<alias name="Template" value="List and description of investigators and sites"/>
+		<alias name="Object Type" value=""/>
+		<alias name="Folder Path" value=""/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="16.01.05" is_enabled="false" order_no="0">
+		<alias name="Label (en)" value="16.1.5 - Documentation of Statistical Methods"/>
+		<alias name="Artifact Name" value="16.1.5 - Documentation of Statistical Methods"/>
+		<alias name="Template" value="Statistical analysis plan"/>
+		<alias name="Object Type" value=""/>
+		<alias name="Folder Path" value=""/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="16.01.06" is_enabled="false" order_no="0">
+		<alias name="Label (en)" value="16.1.6 - Documentation of Inter Laboratory Procedures"/>
+		<alias name="Artifact Name" value="16.1.6 - Documentation of Inter Laboratory Procedures"/>
+		<alias name="Template" value="Interlaboratory standardization methods"/>
+		<alias name="Object Type" value=""/>
+		<alias name="Folder Path" value=""/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="16.01.07" is_enabled="false" order_no="0">
+		<alias name="Label (en)" value="16.1.7 - Publications Referenced in Report"/>
+		<alias name="Artifact Name" value="16.1.7 - Publications Referenced in Report"/>
+		<alias name="Template" value="Publication"/>
+		<alias name="Object Type" value=""/>
+		<alias name="Folder Path" value=""/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="16.01.08" is_enabled="false" order_no="0">
+		<alias name="Label (en)" value="16.1.8 - Publications Based on Study"/>
+		<alias name="Artifact Name" value="16.1.8 - Publications Based on Study"/>
+		<alias name="Template" value="Publications based on study"/>
+		<alias name="Object Type" value=""/>
+		<alias name="Folder Path" value=""/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="16.02" is_enabled="false" order_no="0">
+		<alias name="Label (en)" value="16.2 - Patient Data Listings"/>
+		<alias name="Artifact Name" value="16.2 - Patient Data Listings"/>
+		<alias name="Template" value=""/>
+		<alias name="Object Type" value=""/>
+		<alias name="Folder Path" value=""/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="16.02.01" is_enabled="false" order_no="0">
+		<alias name="Label (en)" value="16.2.1 - Discontinued Patients"/>
+		<alias name="Artifact Name" value="16.2.1 - Discontinued Patients"/>
+		<alias name="Template" value="Discontinued Patients Listing"/>
+		<alias name="Object Type" value=""/>
+		<alias name="Folder Path" value=""/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="16.02.02" is_enabled="false" order_no="0">
+		<alias name="Label (en)" value="16.2.2 - Protocol Deviations"/>
+		<alias name="Artifact Name" value="16.2.2 - Protocol Deviations"/>
+		<alias name="Template" value="Protocol Deviation Listing"/>
+		<alias name="Object Type" value=""/>
+		<alias name="Folder Path" value=""/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="16.02.03" is_enabled="false" order_no="0">
+		<alias name="Label (en)" value="16.2.3 - Patients Excluded"/>
+		<alias name="Artifact Name" value="16.2.3 - Patients Excluded"/>
+		<alias name="Template" value="Patients Excluded from Efficacy Analysis Listing"/>
+		<alias name="Object Type" value=""/>
+		<alias name="Folder Path" value=""/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="16.02.04" is_enabled="false" order_no="0">
+		<alias name="Label (en)" value="16.2.4 - Demographic Data"/>
+		<alias name="Artifact Name" value="16.2.4 - Demographic Data"/>
+		<alias name="Template" value="Demographic Data Listing"/>
+		<alias name="Object Type" value=""/>
+		<alias name="Folder Path" value=""/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="16.02.05" is_enabled="false" order_no="0">
+		<alias name="Label (en)" value="16.2.5 - Compliance Information"/>
+		<alias name="Artifact Name" value="16.2.5 - Compliance Information"/>
+		<alias name="Template" value="Compliance and/or Drug Concentration Data Listing"/>
+		<alias name="Object Type" value=""/>
+		<alias name="Folder Path" value=""/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="16.02.06" is_enabled="false" order_no="0">
+		<alias name="Label (en)" value="16.2.6 - Individual Efficacy Response Data"/>
+		<alias name="Artifact Name" value="16.2.6 - Individual Efficacy Response Data"/>
+		<alias name="Template" value="Individual Efficacy Response Data Listing"/>
+		<alias name="Object Type" value=""/>
+		<alias name="Folder Path" value=""/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="16.02.07" is_enabled="false" order_no="0">
+		<alias name="Label (en)" value="16.2.7 - Adverse Event Listing"/>
+		<alias name="Artifact Name" value="16.2.7 - Adverse Event Listing"/>
+		<alias name="Template" value="Adverse Event Listings"/>
+		<alias name="Object Type" value=""/>
+		<alias name="Folder Path" value=""/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="16.02.08" is_enabled="false" order_no="0">
+		<alias name="Label (en)" value="16.2.8 - Listing of Lab Values by Patient"/>
+		<alias name="Artifact Name" value="16.2.8 - Listing of Lab Values by Patient"/>
+		<alias name="Template" value="Individual subject data listing"/>
+		<alias name="Object Type" value=""/>
+		<alias name="Folder Path" value=""/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="16.03" is_enabled="false" order_no="0">
+		<alias name="Label (en)" value="16.3 - Case Report Forms"/>
+		<alias name="Artifact Name" value="16.3 - Case Report Forms"/>
+		<alias name="Template" value=""/>
+		<alias name="Object Type" value=""/>
+		<alias name="Folder Path" value=""/>
+	</d2_dictionary_value>
+</d2_dictionary>

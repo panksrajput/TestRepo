@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dialog id="PropertiesDialog" buttons_right="false" focus="" height="680" resizable="false" signoff_creation="false" signoff_edit="false" signoff_import="false" signoff_intention_dictionary="" signoff_intention_required="false" width="825">
+	<content>
+		<fieldset label_en="Change Product Information">
+			<label id="product_code"/>
+			<separator/>
+			<grid condition_enabled_create="false" condition_enabled_edit="false" condition_enabled_import="false" grid_height="100">
+				<text id="product_compound_id" cell_width="120"/>
+				<text id="product_chemical_names" cell_width="150"/>
+				<text id="drug_substance_name" cell_width="150"/>
+				<text id="inn_names" cell_width="120"/>
+				<text id="product_generic_name" cell_width="120"/>
+			</grid>
+			<grid grid_height="100">
+				<text id="add_product_compound_id" cell_width="120"/>
+				<text id="add_product_chemical_names" cell_width="150"/>
+				<text id="add_drug_substance_name" cell_width="150"/>
+				<text id="add_inn_names" cell_width="120"/>
+				<text id="add_product_generic_name" cell_width="120"/>
+			</grid>
+			<grid condition_enabled_create="false" condition_enabled_edit="false" condition_enabled_import="false" grid_height="100">
+				<text id="product_trade_name" cell_width="320"/>
+				<combo-editable id="product_trade_country" assistance_dictionary="Submission Country" assistance_dictionary_alias="auto" assistance_type="dictionary" cell_width="320"/>
+			</grid>
+			<grid grid_height="100">
+				<text id="add_product_trade_name" cell_width="320"/>
+				<combo id="add_product_trade_country" assistance_dictionary="Submission Country" assistance_dictionary_alias="auto" assistance_type="dictionary" cell_width="320"/>
+			</grid>
+			<comment html_content="true" label_en="&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;font color=#646464&gt;Click on &lt;strong&gt;OK&lt;/strong&gt; to apply these settings to the relevant documents.&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"/>
+			<comment html_content="true" label_en="&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;font color=#646464&gt;&lt;strong&gt;Note:&lt;/strong&gt; Every property in the repeating group MUST BE populated with the value in order for the change to take effect. Enter NA for values that are not available at this time.&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"/>
+		</fieldset>
+	</content>
+	<buttons>
+		<button id="buttonOk" action="validDialog()"/>
+		<button id="buttonCancel" action="cancelDialog()"/>
+	</buttons>
+</dialog>

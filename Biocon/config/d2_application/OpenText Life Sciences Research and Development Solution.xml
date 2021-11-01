@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_application new_format="true">
+	<object_name value="OpenText Life Sciences Research and Development Solution"/>
+	<title value=""/>
+	<subject value=""/>
+	<authors/>
+	<keywords/>
+	<a_status value=""/>
+	<a_content_type value=""/>
+	<log_entry value=""/>
+	<language_code value=""/>
+	<object_type value="d2_application"/>
+	<lock_config value="F"/>
+	<parents_config/>
+	<accessor_name/>
+	<accessor_permit>
+		<repeating value="context_create_modify_destroy"/>
+		<repeating value="context_drag_drop"/>
+		<repeating value="context_check"/>
+	</accessor_permit>
+	<label_locale/>
+	<label_value/>
+	<app_parameter value=""/>
+	<is_included_at_login value="T"/>
+</d2_application>

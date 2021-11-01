@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="SpaceSchema.xsd">
+	<space>
+		<border-layout-container>
+			<data>
+				<border-layout-data layoutregion="WEST" maxSize="1000" minSize="400" size=".5" split="true"/>
+				<border-layout-data layoutregion="CENTER" split="true"/>
+			</data>
+			<content>
+				<border-layout-container>
+					<data>
+						<border-layout-data layoutregion="NORTH" maxSize="1000" size=".6" split="true"/>
+						<border-layout-data layoutregion="CENTER" split="true"/>
+					</data>
+					<content>
+						<tab-container>
+							<content>
+								<widget config="WG Docbase browser"/>
+								<widget config="WG eTMF Find Trial Documents"/>
+								<widget config="WG eTMF Find Trial Registrations"/>
+								<widget config="WG Predefined search"/>
+								<widget config="WG Recycle Bin"/>
+							</content>
+						</tab-container>
+						<tab-container>
+							<content>
+								<widget config="WG Doclist"/>
+								<widget config="WG Favorites"/>
+							</content>
+						</tab-container>
+					</content>
+				</border-layout-container>
+				<tab-container>
+					<content>
+						<widget config="WG EXT LSCI LSS Doc Viewer (Browse)"/>
+						<widget config="WG Properties"/>
+						<widget config="WG Audit"/>
+						<widget config="WG Locations"/>
+						<widget config="WG Versions"/>
+					</content>
+				</tab-container>
+			</content>
+		</border-layout-container>
+	</space>
+</root>

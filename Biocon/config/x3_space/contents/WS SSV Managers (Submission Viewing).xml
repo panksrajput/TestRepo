@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="SpaceSchema.xsd">
+	<space>
+		<border-layout-container>
+			<data>
+				<border-layout-data layoutregion="WEST" minSize="150" size=".42" split="true"/>
+				<border-layout-data layoutregion="CENTER" minSize="150" split="true"/>
+				<border-layout-data layoutregion="EAST" minSize="150" size=".33" split="true"/>
+			</data>
+			<content>
+				<border-layout-container>
+					<data>
+						<border-layout-data layoutregion="NORTH" minSize="150" size=".75" split="true"/>
+						<border-layout-data layoutregion="CENTER" minSize="150" size=".25" split="true"/>
+					</data>
+					<content>
+						<accordion-container>
+							<content>
+								<widget config="WG SSV Find Regulatory Application Registration Forms"/>
+								<widget config="WG SSV Chronology Report"/>
+								<widget config="WG SSV Find Submissions"/>
+								<widget config="WG SSV Find Regulatory Correspondence Documents"/>
+								<widget config="WG SSV Find Submission Documents"/>
+								<widget config="WG Favorites"/>
+							</content>
+						</accordion-container>
+						<tab-container>
+							<content>
+								<widget config="WG Doclist SSV"/>
+							</content>
+						</tab-container>
+					</content>
+				</border-layout-container>
+				<tab-container>
+					<content>
+						<widget config="WG EXT LSCI Submission History View"/>
+						<widget config="WG EXT LSCI Study Tagging File Navigator"/>
+						<widget config="WG Properties"/>
+					</content>
+				</tab-container>
+				<tab-container>
+					<content>
+						<widget config="WG EXT LSCI SSV Leaf Element Viewer"/>
+						<widget config="WG Related Files"/>
+						<widget config="WG Virtual document"/>
+					</content>
+				</tab-container>
+			</content>
+		</border-layout-container>
+	</space>
+</root>

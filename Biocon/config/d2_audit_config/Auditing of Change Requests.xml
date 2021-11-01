@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_audit_config new_format="true">
+	<object_name value="Auditing of Change Requests"/>
+	<title value="Lists the D2 events that are audited for Change Requests (CRQs)."/>
+	<subject value=""/>
+	<authors/>
+	<keywords/>
+	<a_status value=""/>
+	<a_content_type value=""/>
+	<log_entry value=""/>
+	<language_code value=""/>
+	<module_type value="d2_audit_config"/>
+	<application_names>
+		<repeating value="OpenText Life Sciences Medical Device Solution"/>
+		<repeating value="OpenText Life Sciences Medical Device for Quality and Manufacturing Solution"/>
+		<repeating value="OpenText Life Sciences Quality and Manufacturing Solution"/>
+	</application_names>
+	<lock_config value="F"/>
+	<parents_config/>
+	<audited_events>
+		<repeating value="d2_bin_restore_antecedant"/>
+		<repeating value="d2_bin_restore_rendition"/>
+		<repeating value="d2_bin_restore_version"/>
+		<repeating value="d2_change_state_failed"/>
+		<repeating value="d2_change_state_success"/>
+		<repeating value="d2_checkin"/>
+		<repeating value="d2_create"/>
+		<repeating value="d2_delegation_delegated_task"/>
+		<repeating value="d2_delegation_undo_delegated_task"/>
+		<repeating value="d2_destroy"/>
+		<repeating value="d2_destroy_failed"/>
+		<repeating value="d2_import"/>
+		<repeating value="d2_mass_update"/>
+		<repeating value="d2_properties_save"/>
+		<repeating value="d2_relation_create"/>
+		<repeating value="d2_relation_destroy"/>
+		<repeating value="d2_workflow_aborted"/>
+		<repeating value="d2_workflow_acquired_task"/>
+		<repeating value="d2_workflow_added_note"/>
+		<repeating value="d2_workflow_added_pseudo_task"/>
+		<repeating value="d2_workflow_auto_aborted"/>
+		<repeating value="d2_workflow_auto_acquired_task"/>
+		<repeating value="d2_workflow_auto_delegated_task"/>
+		<repeating value="d2_workflow_auto_forwarded_task"/>
+		<repeating value="d2_workflow_auto_rejected_task"/>
+		<repeating value="d2_workflow_auto_sent_mail"/>
+		<repeating value="d2_workflow_delegated_task"/>
+		<repeating value="d2_workflow_forwarded_task"/>
+		<repeating value="d2_workflow_received_mail"/>
+		<repeating value="d2_workflow_rejected_task"/>
+		<repeating value="d2_workflow_removed_pseudo_task"/>
+		<repeating value="d2_workflow_scheduled"/>
+		<repeating value="d2_workflow_send_mail_failed"/>
+		<repeating value="d2_workflow_sent_mail"/>
+		<repeating value="d2_workflow_signoff"/>
+		<repeating value="d2_workflow_started"/>
+	</audited_events>
+	<audited_properties>
+		<repeating value="approvers"/>
+		<repeating value="authors"/>
+		<repeating value="comments"/>
+		<repeating value="doc_coordinators"/>
+		<repeating value="reviewers"/>
+	</audited_properties>
+	<displayed_events>
+		<repeating value="d2_bin_restore_antecedant"/>
+		<repeating value="d2_bin_restore_rendition"/>
+		<repeating value="d2_bin_restore_version"/>
+		<repeating value="d2_change_state_failed"/>
+		<repeating value="d2_change_state_success"/>
+		<repeating value="d2_checkin"/>
+		<repeating value="d2_create"/>
+		<repeating value="d2_delegation_delegated_task"/>
+		<repeating value="d2_delegation_undo_delegated_task"/>
+		<repeating value="d2_destroy"/>
+		<repeating value="d2_destroy_failed"/>
+		<repeating value="d2_import"/>
+		<repeating value="d2_mass_update"/>
+		<repeating value="d2_properties_save"/>
+		<repeating value="d2_relation_create"/>
+		<repeating value="d2_relation_destroy"/>
+		<repeating value="d2_workflow_aborted"/>
+		<repeating value="d2_workflow_acquired_task"/>
+		<repeating value="d2_workflow_added_note"/>
+		<repeating value="d2_workflow_added_pseudo_task"/>
+		<repeating value="d2_workflow_auto_aborted"/>
+		<repeating value="d2_workflow_auto_acquired_task"/>
+		<repeating value="d2_workflow_auto_delegated_task"/>
+		<repeating value="d2_workflow_auto_forwarded_task"/>
+		<repeating value="d2_workflow_auto_rejected_task"/>
+		<repeating value="d2_workflow_auto_sent_mail"/>
+		<repeating value="d2_workflow_delegated_task"/>
+		<repeating value="d2_workflow_forwarded_task"/>
+		<repeating value="d2_workflow_received_mail"/>
+		<repeating value="d2_workflow_rejected_task"/>
+		<repeating value="d2_workflow_removed_pseudo_task"/>
+		<repeating value="d2_workflow_scheduled"/>
+		<repeating value="d2_workflow_send_mail_failed"/>
+		<repeating value="d2_workflow_sent_mail"/>
+		<repeating value="d2_workflow_signoff"/>
+		<repeating value="d2_workflow_started"/>
+	</displayed_events>
+	<hide_documentum_events value="F"/>
+	<extended_display value="F"/>
+	<audited_properties_old>
+		<repeating value="F"/>
+		<repeating value="F"/>
+		<repeating value="F"/>
+		<repeating value="F"/>
+		<repeating value="F"/>
+	</audited_properties_old>
+	<audited_properties_delta>
+		<repeating value="F"/>
+		<repeating value="F"/>
+		<repeating value="F"/>
+		<repeating value="F"/>
+		<repeating value="F"/>
+	</audited_properties_delta>
+</d2_audit_config>

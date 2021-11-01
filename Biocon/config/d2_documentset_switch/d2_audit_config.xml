@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_documentset_switch object_name="d2_audit_config">
+	<d2_documentset name="Registration Forms¬Medical Device Registration Forms" config="Auditing of registration form changes"/>
+	<d2_documentset name="Registration Forms¬Product Registration Forms" config="Auditing of registration form changes"/>
+	<d2_documentset name="Registration Forms¬Medical Device Regulatory Submission Registration Form Context" config="Auditing of registration form changes"/>
+	<d2_documentset name="Registration Forms¬Medical Device Regulatory-Admin Registration Forms" config="Auditing of registration form changes"/>
+	<d2_documentset name="Registration Forms¬Manufactured Item Registration Forms" config="Auditing of registration form changes"/>
+	<d2_documentset name="Training Records" config="Training Record Audit"/>
+	<d2_documentset name="GMP Documents¬GMP Group Directive" config="Auditing of Cat 1 Controlled Documents"/>
+	<d2_documentset name="GMP Documents¬GMP Group Drawings" config="Auditing of Cat 3 Controlled Documents"/>
+	<d2_documentset name="GMP Documents¬GMP Group Executed Manufacturing" config="Auditing of Cat 3 Controlled Documents"/>
+	<d2_documentset name="GMP Documents¬GMP Group Executed Validation" config="Auditing of Cat 3 Controlled Documents"/>
+	<d2_documentset name="GMP Documents¬GMP Group Facility Records and Certificates" config="Auditing of Cat 3 Controlled Documents"/>
+	<d2_documentset name="GMP Documents¬GMP Group Form" config="Auditing of Cat 1 Controlled Documents"/>
+	<d2_documentset name="GMP Documents¬GMP Group Guideline" config="Auditing of Cat 1 Controlled Documents"/>
+	<d2_documentset name="GMP Documents¬GMP Group Program" config="Auditing of Cat 1 Controlled Documents"/>
+	<d2_documentset name="GMP Documents¬GMP Group Manuals" config="Auditing of Cat 2 Controlled Documents"/>
+	<d2_documentset name="GMP Documents¬GMP Group Master Manufacturing" config="Auditing of Cat 1 Controlled Documents"/>
+	<d2_documentset name="GMP Documents¬GMP Group Master Validation" config="Auditing of Cat 2 Controlled Documents"/>
+	<d2_documentset name="GMP Documents¬GMP Group Method" config="Auditing of Cat 1 Controlled Documents"/>
+	<d2_documentset name="GMP Documents¬GMP Group Packaging and Labeling" config="Auditing of Cat 1 Controlled Documents"/>
+	<d2_documentset name="GMP Documents¬GMP Group Policy" config="Auditing of Cat 1 Controlled Documents"/>
+	<d2_documentset name="GMP Documents¬GMP Group Project Documents" config="Auditing of Cat 2 Controlled Documents"/>
+	<d2_documentset name="GMP Documents¬GMP Group Quality Documents" config="Auditing of Cat 2 Controlled Documents"/>
+	<d2_documentset name="GMP Documents¬GMP Group Quality Manual" config="Auditing of Cat 1 Controlled Documents"/>
+	<d2_documentset name="GMP Documents¬GMP Group Records and Certificates" config="Auditing of Cat 3 Controlled Documents"/>
+	<d2_documentset name="GMP Documents¬GMP Group SOP" config="Auditing of Cat 1 Controlled Documents"/>
+	<d2_documentset name="GMP Documents¬GMP Group Specification" config="Auditing of Cat 1 Controlled Documents"/>
+	<d2_documentset name="GMP Documents¬GMP Group Training" config="Auditing of Cat 2 Controlled Documents"/>
+	<d2_documentset name="GMP Documents¬GMP Group Work Instruction" config="Auditing of Cat 1 Controlled Documents"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group External Audit" config="Auditing of Cat 2 Controlled Documents"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Internal Audit" config="Auditing of Cat 2 Controlled Documents"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Investigations" config="Auditing of Cat 2 Controlled Documents"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Quality Events" config="Auditing of Cat 2 Controlled Documents"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Quality Management" config="Auditing of Cat 2 Controlled Documents"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Quality Records" config="Auditing of Cat 3 Controlled Documents"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Quality Risk Documentation" config="Auditing of Cat 2 Controlled Documents"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Recalls" config="Auditing of Cat 2 Controlled Documents"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Site Master File" config="Auditing of Cat 2 Controlled Documents"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Supplier Audit" config="Auditing of Cat 2 Controlled Documents"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Protocol" config="Auditing of Cat 2 Controlled Documents"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Reports" config="Auditing of Cat 2 Controlled Documents"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Requirements" config="Auditing of Cat 2 Controlled Documents"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Reviews" config="Auditing of Cat 2 Controlled Documents"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Plans" config="Auditing of Cat 2 Controlled Documents"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Checklists" config="Auditing of Cat 2 Controlled Documents"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Matrix" config="Auditing of Cat 2 Controlled Documents"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Risk Documentation" config="Auditing of Cat 2 Controlled Documents"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group DHF" config="Auditing of Cat 2 Controlled Documents"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Bill Of Material" config="Auditing of Cat 1 Controlled Documents"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group DMR" config="Auditing of Cat 1 Controlled Documents"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Labeling" config="Auditing of Cat 1 Controlled Documents"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Drawings" config="Auditing of Cat 1 Controlled Documents"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Production Document" config="Auditing of Cat 1 Controlled Documents"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Customer Documents" config="Auditing of Cat 1 Controlled Documents"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Service Documents" config="Auditing of Cat 1 Controlled Documents"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Software Release" config="Auditing of Cat 1 Controlled Documents"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Preliminary Bill Of Material" config="Auditing of Cat 2 Controlled Documents"/>
+	<d2_documentset name="Med Device Documents¬Med Device DMR Group Specifications" config="Auditing of Cat 1 Controlled Documents"/>
+	<d2_documentset name="Med Device Documents¬Med Device DHF Group Specifications" config="Auditing of Cat 2 Controlled Documents"/>
+	<d2_documentset name="Med Device Documents¬Med Device Subgroup Parent" config="Auditing of Cat 3 Controlled Documents"/>
+	<d2_documentset name="Med Device Documents¬Med Device DMR Subgroup Index" config="Auditing of Cat 1 Controlled Documents"/>
+	<d2_documentset name="Med Device Documents¬Med Device DHF Subgroup Index" config="Auditing of Cat 2 Controlled Documents"/>
+	<d2_documentset name="Med Device Documents¬Med Device Subgroup Section" config="Auditing of Cat 3 Controlled Documents"/>
+	<d2_documentset name="Change Request¬Change Request in CIP" config="Auditing of Change Requests"/>
+	<d2_documentset name="Change Request¬Open Change Request Candidate" config="Auditing of Change Requests"/>
+	<d2_documentset name="Change Request¬Change Requests" config="Auditing of Change Requests"/>
+	<d2_documentset name="Controlled Documents¬Cat 1 Controlled Documents" config="Auditing of Cat 1 Controlled Documents"/>
+	<d2_documentset name="Controlled Documents¬Cat 2 Controlled Documents" config="Auditing of Cat 2 Controlled Documents"/>
+	<d2_documentset name="Controlled Documents¬Cat 3 Controlled Documents" config="Auditing of Cat 3 Controlled Documents"/>
+	<d2_documentset name="Controlled Documents¬Cat 4 Controlled Documents" config="Auditing of Cat 4 Controlled Documents"/>
+	<d2_documentset name="Recall Objects" config="Auditing of Recall Objects"/>
+	<d2_documentset name="Security Tag" config="Auditing of Security Models"/>
+	<d2_documentset name="Security Group Generator" config="Auditing of Security Models"/>
+	<d2_documentset name="Security Model" config="Auditing of Security Models"/>
+	<d2_documentset name="Security Folder Model" config="Auditing of Security Models"/>
+	<d2_documentset name="Security Shared" config="Auditing of Security Models"/>
+	<d2_documentset name="Content Templates¬Quality in Manufacturing Content Templates" config="Auditing of Cat 2 Controlled Documents"/>
+	<d2_documentset name="Content Templates¬Med Device Content Templates" config="Auditing of Cat 2 Controlled Documents"/>
+	<switch_default config=""/>
+</d2_documentset_switch>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_link_config new_format="true">
+	<object_name value="Manufactured Item Registration Forms  for Active Ingredients Auto Link"/>
+	<title value="Auto link configuration for Manufactured Item Registration Forms  for Active Ingredient"/>
+	<subject value=""/>
+	<authors/>
+	<keywords/>
+	<a_status value=""/>
+	<a_content_type value=""/>
+	<log_entry value=""/>
+	<language_code value=""/>
+	<module_type value="d2_link_config"/>
+	<application_names>
+		<repeating value="OpenText Life Sciences Quality and Manufacturing Solution"/>
+		<repeating value="OpenText Life Sciences Medical Device Solution"/>
+		<repeating value="OpenText Life Sciences Medical Device for Quality and Manufacturing Solution"/>
+	</application_names>
+	<lock_config value="F"/>
+	<parents_config/>
+	<path>
+		<repeating value="/Manufactured Items Library/Active Ingredients/$value(applicable_sites)/$value(item_name.Manufacturing Item first letter.first_letter)"/>
+	</path>
+	<undefined_label value="Undefined"/>
+	<undefined_concat value="F"/>
+	<linked_repeating value="F"/>
+	<type>
+		<repeating value="/dm_cabinet/dm_folder/dm_folder/dm_folder"/>
+	</type>
+	<first_repeating value="F"/>
+	<is_home_cabinet>
+		<repeating value="F"/>
+	</is_home_cabinet>
+	<acl>
+		<repeating value="/Manufactured Item Folder Security Model/Manufactured Item Folder Security Model/Manufactured Item Folder Security Model/Manufactured Item Folder Security Model"/>
+	</acl>
+	<default_value>
+		<repeating value="////"/>
+	</default_value>
+	<regexp_name/>
+	<regexp_pattern/>
+	<regexp_replace/>
+	<apply_on_all_versions value="T"/>
+</d2_link_config>

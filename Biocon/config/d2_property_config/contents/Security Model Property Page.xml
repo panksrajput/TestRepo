@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dialog id="PropertiesDialog" buttons_right="false" focus="" height="500" resizable="true" signoff_creation="false" signoff_edit="false" signoff_import="false" signoff_intention_dictionary="" signoff_intention_required="false" width="800">
+	<content>
+		<comment font_color="#C0C0C0" html_content="true" label_en="&lt;center&gt;Security models are used to define rules for setting role attributes on documents&lt;/center&gt;"/>
+		<comment condition_visible_create="false" font_size="6pt" html_content="true" label_en="&lt;p&gt;&amp;nbsp;&lt;/p&gt;"/>
+		<label id="object_name" condition_visible_create="false"/>
+		<comment font_size="6pt" html_content="true" label_en="&lt;p&gt;&amp;nbsp;&lt;/p&gt;"/>
+		<comment font_color="#C0C0C0" html_content="true" label_en="This is the name that is used to refer to the model."/>
+		<text id="security_model" condition_required_create="true" condition_required_edit="true"/>
+		<comment font_size="6pt" html_content="true" label_en="&lt;p&gt;&amp;nbsp;&lt;/p&gt;"/>
+		<comment font_color="#C0C0C0" html_content="true" label_en="What is this model used for, can be used to ensure it is selectable only for its intended use."/>
+		<combo id="model_type" assistance_dictionary="Security Model Type" assistance_dictionary_alias="auto" assistance_type="dictionary" label_en="Type of Model"/>
+		<comment font_size="6pt" html_content="true" label_en="&lt;p&gt;&amp;nbsp;&lt;/p&gt;"/>
+		<comment font_color="#C0C0C0" html_content="true" label_en="Groups from this generator (once resolved) can alter the role attributes on the document"/>
+		<combo id="admin_document" assistance_dql="select generator_name from lss_sec_group_gen where is_selectable = 1 order by 1" assistance_type="dql" asynchronous="false" autoselect_single="false" label_en="Group For Document Admin"/>
+		<comment font_size="6pt" html_content="true" label_en="&lt;p&gt;&amp;nbsp;&lt;/p&gt;"/>
+		<comment font_color="#C0C0C0" html_content="true" label_en="The attributes that the document admin can modify"/>
+		<text id="admin_attribute_list" label_en="List of Modifiable Document Attributes"/>
+		<comment font_size="6pt" html_content="true" label_en="&lt;p&gt;&amp;nbsp;&lt;/p&gt;"/>
+		<comment font_color="#C0C0C0" html_content="true" label_en="Groups from this generator (once resolved) can alter the model for this document via the change model action. Generally the target models would be restricted models."/>
+		<combo id="admin_model" assistance_dql="select generator_name from lss_sec_group_gen where is_selectable = 1 order by 1" assistance_type="dql" asynchronous="false" autoselect_single="false" label_en="Group For Model Admin"/>
+		<comment font_size="6pt" html_content="true" label_en="&lt;p&gt;&amp;nbsp;&lt;/p&gt;"/>
+		<comment font_color="#C0C0C0" html_content="true" label_en="A CDF expression that when resolved represents a value that would be the same for documents that should use the same shared key generator."/>
+		<text id="key_generator" label_en="Shared Key Generator"/>
+		<comment font_size="6pt" html_content="true" label_en="&lt;p&gt;&amp;nbsp;&lt;/p&gt;"/>
+		<comment font_color="#C0C0C0" html_content="true" label_en="0 means that this model is only used by resolving on the reference model. Other numbers are used to filter the list when the user opts to restrict the document and picks an associated restriction level."/>
+		<text id="restriction_level" label_en="Restriction Level"/>
+		<comment font_size="6pt" html_content="true" label_en="&lt;p&gt;&amp;nbsp;&lt;/p&gt;"/>
+		<comment font_color="#C0C0C0" label_en="Clear out attributes that may have been set by other models. No need to include Attributes that are set by the model - those are cleared automatically."/>
+		<columns count="2">
+			<list id="clear_document_attributes" assistance_dql="select distinct attr_name from dm_type where attr_repeating = 1 and attr_name not like '_/_%' escape '/' order by 1 enable (ROW_BASED) " assistance_type="dql" label_en="Attributes to clear from the document" rows="4"/>
+			<list id="clear_shared_attributes" assistance_dql="select distinct attr_name from dm_type where attr_repeating = 1 and attr_name not like '_/_%' escape '/' order by 1 enable (ROW_BASED) " assistance_type="dql" label_en="Attributes to clear from the shared object" rows="4"/>
+		</columns>
+		<comment font_size="6pt" html_content="true" label_en="&lt;p&gt;&amp;nbsp;&lt;/p&gt;"/>
+		<comment font_color="#C0C0C0" html_content="true" label_en="Attribute Settings"/>
+		<grid grid_height="200">
+			<combo id="attr_shared_local" assistance_dictionary="Security Attribute Type" assistance_dictionary_alias="auto" assistance_type="dictionary" label_en="Attribute Location"/>
+			<combo id="attr_names" assistance_dql="select distinct attr_name from dm_type where attr_repeating = 1 and attr_name not like '_/_%' escape '/' order by 1 enable (ROW_BASED) " assistance_type="dql" label_en="Role Attribute"/>
+			<combo id="attr_groups" assistance_dql="select generator_name from lss_sec_group_gen where is_selectable = 1 order by 1" assistance_type="dql" cell_width="400" label_en="Group Generator"/>
+			<text id="attr_resolvedtags" label_en="Resolved Tag"/>
+		</grid>
+		<comment font_size="6pt" html_content="true" label_en="&lt;p&gt;&amp;nbsp;&lt;/p&gt;"/>
+		<comment font_color="#C0C0C0" html_content="true" label_en="Folder Model Settings"/>
+		<grid>
+			<combo id="folder_model_name" assistance_dql="select security_folder_model from lss_sec_secfolder" assistance_type="dql" label_en="Folder Model"/>
+			<text id="folder_model_filter" label_en="Filter"/>
+		</grid>
+	</content>
+	<buttons>
+		<button id="buttonOk" action="validDialog()"/>
+		<button id="buttonCancel" action="cancelDialog()"/>
+	</buttons>
+</dialog>

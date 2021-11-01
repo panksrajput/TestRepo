@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_documentset_switch object_name="d2_template_config">
+	<d2_documentset name="Registration Forms¬Medical Device Registration Forms" config="No Content Required"/>
+	<d2_documentset name="Registration Forms¬Product Registration Forms" config="No Content Required"/>
+	<d2_documentset name="Registration Forms¬Medical Device Regulatory-Admin Registration Forms" config="No Content Required"/>
+	<d2_documentset name="Registration Forms¬Manufactured Item Registration Forms¬Item Registration Forms for Finished Goods without item code" config="No Content Required"/>
+	<d2_documentset name="Registration Forms¬Manufactured Item Registration Forms¬Item Registration Forms for Finished Goods" config="No Content Required"/>
+	<d2_documentset name="Registration Forms¬Manufactured Item Registration Forms¬Item Registration Forms for Semi-finished Goods without item code" config="No Content Required"/>
+	<d2_documentset name="Registration Forms¬Manufactured Item Registration Forms¬Item Registration Forms for Semi-finished Goods" config="No Content Required"/>
+	<d2_documentset name="Registration Forms¬Manufactured Item Registration Forms¬Item Registration Forms for Active Ingredients without item code" config="No Content Required"/>
+	<d2_documentset name="Registration Forms¬Manufactured Item Registration Forms¬Item Registration Forms for Active Ingredients" config="No Content Required"/>
+	<d2_documentset name="GMP Documents¬GMP Group Directive" config="GMP Content Templates"/>
+	<d2_documentset name="GMP Documents¬GMP Group Drawings" config="GMP Content Templates"/>
+	<d2_documentset name="GMP Documents¬GMP Group Executed Manufacturing" config="GMP Content Templates"/>
+	<d2_documentset name="GMP Documents¬GMP Group Executed Validation" config="GMP Content Templates"/>
+	<d2_documentset name="GMP Documents¬GMP Group Facility Records and Certificates" config="GMP Content Templates"/>
+	<d2_documentset name="GMP Documents¬GMP Group Form" config="GMP Content Templates"/>
+	<d2_documentset name="GMP Documents¬GMP Group Guideline" config="GMP Content Templates"/>
+	<d2_documentset name="GMP Documents¬GMP Group Program" config="GMP Content Templates"/>
+	<d2_documentset name="GMP Documents¬GMP Group Manuals" config="GMP Content Templates"/>
+	<d2_documentset name="GMP Documents¬GMP Group Master Manufacturing" config="GMP Content Templates"/>
+	<d2_documentset name="GMP Documents¬GMP Group Master Validation" config="GMP Content Templates"/>
+	<d2_documentset name="GMP Documents¬GMP Group Method" config="GMP Content Templates"/>
+	<d2_documentset name="GMP Documents¬GMP Group Packaging and Labeling" config="GMP Content Templates"/>
+	<d2_documentset name="GMP Documents¬GMP Group Policy" config="GMP Content Templates"/>
+	<d2_documentset name="GMP Documents¬GMP Group Project Documents" config="GMP Content Templates"/>
+	<d2_documentset name="GMP Documents¬GMP Group Quality Documents" config="GMP Content Templates"/>
+	<d2_documentset name="GMP Documents¬GMP Group Quality Manual" config="GMP Content Templates"/>
+	<d2_documentset name="GMP Documents¬GMP Group Records and Certificates" config="GMP Content Templates"/>
+	<d2_documentset name="GMP Documents¬GMP Group SOP" config="GMP Content Templates"/>
+	<d2_documentset name="GMP Documents¬GMP Group Specification" config="GMP Content Templates"/>
+	<d2_documentset name="GMP Documents¬GMP Group Training" config="GMP Content Templates"/>
+	<d2_documentset name="GMP Documents¬GMP Group Work Instruction" config="GMP Content Templates"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group External Audit" config="GMP Content Templates"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Internal Audit" config="GMP Content Templates"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Investigations" config="GMP Content Templates"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Quality Events" config="GMP Content Templates"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Quality Management" config="GMP Content Templates"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Quality Records" config="GMP Content Templates"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Quality Risk Documentation" config="GMP Content Templates"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Recalls" config="GMP Content Templates"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Site Master File" config="GMP Content Templates"/>
+	<d2_documentset name="GMP Documents¬GMP QMA Group Supplier Audit" config="GMP Content Templates"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Protocol" config="Med Device Content Templates"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Reports" config="Med Device Content Templates"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Requirements" config="Med Device Content Templates"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Reviews" config="Med Device Content Templates"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Plans" config="Med Device Content Templates"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Checklists" config="Med Device Content Templates"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Matrix" config="Med Device Content Templates"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Risk Documentation" config="Med Device Content Templates"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group DHF" config="Med Device Content Templates"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Bill Of Material" config="Med Device Content Templates"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group DMR" config="Med Device Content Templates"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Labeling" config="Med Device Content Templates"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Drawings" config="Med Device Content Templates"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Production Document" config="Med Device Content Templates"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Customer Documents" config="Med Device Content Templates"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Service Documents" config="Med Device Content Templates"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Software Release" config="Med Device Content Templates"/>
+	<d2_documentset name="Med Device Documents¬Med Device Group Preliminary Bill Of Material" config="Med Device Content Templates"/>
+	<d2_documentset name="Med Device Documents¬Med Device DMR Group Specifications" config="Med Device Content Templates"/>
+	<d2_documentset name="Med Device Documents¬Med Device DHF Group Specifications" config="Med Device Content Templates"/>
+	<d2_documentset name="Med Device Documents¬Med Device Subgroup Parent" config="Med Device Content Templates"/>
+	<d2_documentset name="Med Device Documents¬Med Device DMR Subgroup Index" config="Med Device Content Templates"/>
+	<d2_documentset name="Med Device Documents¬Med Device DHF Subgroup Index" config="Med Device Content Templates"/>
+	<d2_documentset name="Med Device Documents¬Med Device Subgroup Section" config="Med Device Content Templates"/>
+	<d2_documentset name="Med Device Documents¬Med Device Subgroup Device" config="Med Device Content Templates"/>
+	<d2_documentset name="Med Device Documents¬Med Device Subgroup Subassembly" config="Med Device Content Templates"/>
+	<d2_documentset name="Med Device Documents¬Med Device Subgroup Component" config="Med Device Content Templates"/>
+	<d2_documentset name="Med Device Documents¬Med Device Subgroup Equipment" config="Med Device Content Templates"/>
+	<d2_documentset name="Med Device Documents¬Med Device Subgroup Material" config="Med Device Content Templates"/>
+	<d2_documentset name="Med Device Documents¬Med Device Subgroup General" config="Med Device Content Templates"/>
+	<d2_documentset name="Med Device Documents¬Med Device Subgroup Software" config="Med Device Content Templates"/>
+	<d2_documentset name="Change Request" config="GMP Content Templates"/>
+	<d2_documentset name="Content Templates¬Quality in Manufacturing Content Templates" config="Blank Word Document Templates"/>
+	<d2_documentset name="Content Templates¬Med Device Content Templates" config="Blank Word Document Templates"/>
+	<switch_default config=""/>
+</d2_documentset_switch>

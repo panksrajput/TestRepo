@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dialog id="PropertiesDialog" buttons_right="false" focus="" height="500" resizable="true" signoff_creation="false" signoff_edit="false" signoff_import="false" signoff_intention_dictionary="" signoff_intention_required="false" width="400">
+	<content>
+		<fieldset label_en="Info">
+			<text id="object_name" advancedView_enabled="false" condition_enabled_create="false" condition_enabled_edit="false" condition_enabled_import="false"/>
+			<text id="title"/>
+			<text id="subject"/>
+			<list-editable id="keywords" label_en="Keywords" rows="6"/>
+			<text id="owner_name" label_en="Owner Name"/>
+			<separator/>
+			<label id="r_creation_date" label_en="Created"/>
+			<label id="r_creator_name" label_en="Creator Name"/>
+			<label id="r_modify_date" label_en="Modified"/>
+			<label id="r_modifier" label_en="Modified By"/>
+		</fieldset>
+	</content>
+	<buttons>
+		<button id="buttonOk" action="validDialog()"/>
+		<button id="buttonCancel" action="cancelDialog()"/>
+	</buttons>
+</dialog>

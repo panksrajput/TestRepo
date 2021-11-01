@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dialog id="PropertiesDialog" buttons_right="false" focus="" height="500" resizable="true" signoff_creation="false" signoff_edit="false" signoff_import="false" signoff_intention_dictionary="" signoff_intention_required="false" width="600">
+	<content>
+		<list id="authors" advancedView_visible="false" condition_enabled_create="false" condition_enabled_edit="false" condition_enabled_import="false" condition_visible="(getValue(authors).notEquals(''))" rows="3"/>
+		<list id="reviewers" advancedView_visible="false" condition_enabled_create="false" condition_enabled_edit="false" condition_enabled_import="false" condition_visible="(getValue(reviewers).notEquals(''))" rows="3"/>
+		<list id="approvers" advancedView_visible="false" condition_enabled_create="false" condition_enabled_edit="false" condition_enabled_import="false" condition_visible="(getValue(approvers).notEquals(''))" rows="3"/>
+		<list id="doc_coordinators" advancedView_visible="false" condition_enabled_create="false" condition_enabled_edit="false" condition_enabled_import="false" condition_visible="(getValue(doc_coordinators).notEquals(''))" rows="3"/>
+		<list id="doc_specialists" advancedView_visible="false" assistance_dictionary="DQL - General Non-GMP - Dynamic Security - Document Specialists" assistance_type="dictionary" asynchronous="true" condition_visible="(getValue(doc_specialists).notEquals(''))" rows="4" sorted="true"/>
+		<list id="readers" advancedView_visible="false" condition_enabled_create="false" condition_enabled_edit="false" condition_enabled_import="false" condition_visible="(getValue(readers).notEquals(''))" rows="3"/>
+		<list id="auditors" advancedView_visible="false" condition_enabled_create="false" condition_enabled_edit="false" condition_enabled_import="false" condition_visible="(getValue(auditors).notEquals(''))" rows="3"/>
+		<list id="review_notif_recipients" advancedView_visible="false" condition_enabled_create="false" condition_enabled_edit="false" condition_enabled_import="false" condition_visible="(getValue(review_notif_recipients).notEquals(''))" rows="3"/>
+		<list id="select_authors" advancedView_visible="false" condition_enabled_create="false" condition_enabled_edit="false" condition_enabled_import="false" condition_visible="(getValue(select_authors).notEquals(''))" label_en="Select Authors" rows="3"/>
+		<list id="select_reviewers" advancedView_visible="false" condition_enabled_create="false" condition_enabled_edit="false" condition_enabled_import="false" condition_visible="(getValue(select_reviewers).notEquals(''))" label_en="Select Reviewers" rows="3"/>
+		<list id="select_approvers" advancedView_visible="false" condition_enabled_create="false" condition_enabled_edit="false" condition_enabled_import="false" condition_visible="(getValue(select_approvers).notEquals(''))" label_en="Select Approvers" rows="3"/>
+		<list id="select_doc_coordinators" advancedView_visible="false" condition_enabled_create="false" condition_enabled_edit="false" condition_enabled_import="false" condition_visible="(getValue(select_doc_coordinators).notEquals(''))" label_en="Select Coordinators" rows="3"/>
+		<list id="select_doc_specialists" advancedView_visible="false" assistance_dictionary="DQL - General Non-GMP - Dynamic Security - Document Specialists" assistance_type="dictionary" asynchronous="true" condition_visible="(getValue(select_doc_specialists).notEquals(''))" rows="4" sorted="true"/>
+		<list id="select_readers" advancedView_visible="false" condition_enabled_create="false" condition_enabled_edit="false" condition_enabled_import="false" condition_visible="(getValue(select_readers).notEquals(''))" label_en="Select Readers" rows="3"/>
+		<list id="select_auditors" advancedView_visible="false" condition_enabled_create="false" condition_enabled_edit="false" condition_enabled_import="false" condition_visible="(getValue(select_auditors).notEquals(''))" label_en="Select Auditors" rows="3"/>
+		<list id="select_format_reviewers" advancedView_visible="false" condition_enabled_create="false" condition_enabled_edit="false" condition_enabled_import="false" condition_visible="(getValue(select_format_reviewers).notEquals(''))" label_en="Select Format Reviewers" rows="3"/>
+	</content>
+	<buttons>
+		<button id="buttonOk" action="validDialog()"/>
+		<button id="buttonCancel" action="cancelDialog()"/>
+	</buttons>
+</dialog>

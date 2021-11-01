@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dialog id="PropertiesDialog" buttons_right="false" focus="" height="450" resizable="true" signoff_creation="false" signoff_edit="false" signoff_import="false" signoff_intention_dictionary="" signoff_intention_required="false" width="1000">
+	<content>
+		<comment font_color="#C0C0C0" html_content="true" label_en="&lt;center&gt;Folder models define the role attributes to be applied to the containing folders of the document&lt;center&gt;"/>
+		<comment condition_visible_create="false" font_size="6pt" html_content="true" label_en="&lt;p&gt;&amp;nbsp;&lt;/p&gt;"/>
+		<label id="object_name" condition_visible_create="false"/>
+		<comment font_size="6pt" html_content="true" label_en="&lt;p&gt; &lt;/p&gt;"/>
+		<comment font_color="#C0C0C0" font_size="10pt" html_content="true" label_en="The name of the folder model to be used for the document"/>
+		<text id="security_folder_model" condition_required_create="true" condition_required_edit="true" condition_required_import="true" label_en="Folder Security Model"/>
+		<comment font_size="6pt" html_content="true" label_en="&lt;p&gt;&amp;nbsp;&lt;/p&gt;"/>
+		<comment font_color="#C0C0C0" html_content="true" label_en="Select a folder level value to use for folders that contain values that have no match on the grid below."/>
+		<text id="default_folder_level" condition_required_create="true" condition_required_edit="true" condition_required_import="true" label_en="Default Level"/>
+		<comment font_size="6pt" html_content="true" label_en="&lt;p&gt;&amp;nbsp;&lt;/p&gt;"/>
+		<comment font_color="#C0C0C0" html_content="true" label_en="Check this box if folders without a level value should be processed using the default value."/>
+		<boolean id="default_if_null" label_en="Use Default for Empty"/>
+		<comment font_size="6pt" html_content="true" label_en="&lt;p&gt;&amp;nbsp;&lt;/p&gt;"/>
+		<comment font_color="#C0C0C0" label_en="Pick the attribute on the folder that should contain the list of groups to be granted read access (as determined by the group generators and folder levels indicated below)."/>
+		<text id="read_attribute" label_en="Attribute for Roles"/>
+		<comment font_size="6pt" html_content="true" label_en="&lt;p&gt;&amp;nbsp;&lt;/p&gt;"/>
+		<comment font_color="#C0C0C0" html_content="true" label_en="Folder Model Settings"/>
+		<grid grid_height="200">
+			<text id="folder_levels" cell_width="175" condition_required_create="true" condition_required_edit="true" condition_required_import="true" label_en="Folder Level&lt;/br&gt;(value in level attribute&lt;/br&gt;of the folder)"/>
+			<combo id="folder_pattern_read_groups" assistance_dql="select generator_name from lss_sec_group_gen " assistance_type="dql" cell_width="200" condition_required_create="true" condition_required_edit="true" condition_required_import="true" label_en="Group Generator"/>
+			<text id="folder_rpt_tags" cell_width="200" label_en="Tags, For repeating attributes,&lt;/br&gt;a delimited list of document&lt;/br&gt;attributes that need to be evaluated&lt;/br&gt;to determine which values&lt;/br&gt;generated this folder"/>
+			<text id="folder_rpt_tag_generators" cell_width="150" label_en="Tag Generator, if the raw value is used for the &lt;/br&gt;folder name use &lt;b&gt;~tag&lt;/b&gt;.&lt;/br&gt; If a formula is applied&lt;/br&gt; use a valid CDF function&lt;/br&gt; to simulate the formula."/>
+			<text id="folder_rpt_tag_levels" cell_width="150" label_en="Tag Levels, the folder level&lt;/br&gt;at which the associated tag is&lt;/br&gt; represented as the folder name."/>
+		</grid>
+	</content>
+	<buttons>
+		<button id="buttonOk" action="validDialog()"/>
+		<button id="buttonCancel" action="cancelDialog()"/>
+	</buttons>
+</dialog>

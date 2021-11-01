@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_dictionary object_name="Controlled Print Recall Reason" title="Dictionary for Controlled Print Recall Reason" lock_config="false" parents_config="" application_names="OpenText Life Sciences Medical Device for Quality and Manufacturing Solution¬OpenText Life Sciences Medical Device Solution¬OpenText Life Sciences Quality and Manufacturing Solution¬Custom Configurations¬Biocon" security_group="biocon_dict_admin" search_group="biocon_dict_admin" version="2" is_versioned="false" manual_order="false" create_view_option="false" is_dql="false" is_dql_cache="false" dql="" label_en="Controlled Print Recall Reason">
+	<d2_dictionary_value object_name="Document superseded" is_enabled="true" order_no="0">
+		<locale name="en" value="Document superseded"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Document suspended" is_enabled="true" order_no="0">
+		<locale name="en" value="Document suspended"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Document withdrawn" is_enabled="true" order_no="0">
+		<locale name="en" value="Document withdrawn"/>
+	</d2_dictionary_value>
+</d2_dictionary>

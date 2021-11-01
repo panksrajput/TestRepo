@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_create_config object_name="GMP Template Management Artifacts" title="Defines the GMP templates that can be created by members of the cross-functional cd_gmp_template_authors group." lock_config="false" parents_config="" application_names="OpenText Life Sciences Quality and Manufacturing Solution" condition_group_name="cd_gmp_template_authors" for_linked_document="false" is_for_creation="true" is_for_import="true" is_for_import_mobile="false" for_paste_multi="false" for_paste_single="false" config_properties="" skip_edit_content="false" inheritance_hidden="false" inheritance_properties="true" inheritance_content="false" inheritance_vd="false" block_inheritance_mod="false" label_en="GMP Template Management">
+	<header dictionary_name="Content Template Artifact Names" attr_name="artifact_name"/>
+	<row type_name="cd_content_template" property_config="Quality in Manufacturing Content Template Properties" o2_config="" start_version="0.1" attr_inheritance="" lifecycle="Content Template Lifecycle Model" default_value="GMP Template Default Values" workflow="" dictionary_value="GMP Content Template"/>
+</d2_create_config>

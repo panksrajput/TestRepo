@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dialog id="PropertiesDialog" auto_smartview_edit_mode="false" buttons_right="false" focus="object_name" height="720" initial_invalid="false" resizable="true" signoff_creation="false" signoff_edit="false" signoff_import="false" signoff_intention_dictionary="" signoff_intention_required="false" width="600">
+	<content>
+		<fieldset label_en="Document Information">
+			<text id="object_name" condition_required_create="true" condition_required_edit="true" condition_required_import="true"/>
+			<boolean id="copy_file_name" condition_visible_create="false" condition_visible_edit="false"/>
+			<memo id="title" advancedView_enabled="false" condition_enabled="(getValue(copy_file_name).equals('false'))" rows="2"/>
+			<separator/>
+			<tabs>
+				<tab label_en="Classification">
+					<label id="domain" condition_enabled_create="false" condition_enabled_edit="false" condition_enabled_import="false"/>
+					<list id="applicable_groups" assistance_dictionary="DQL - Med Device - All primary groups" assistance_dictionary_alias="auto" assistance_type="dictionary" rows="5" sorted="true"/>
+					<list id="applicable_subgroups" assistance_dictionary="DQL - Med Device - Applicable sub-groups for template" assistance_dictionary_alias="auto" assistance_type="dictionary" rows="5" sorted="true"/>
+					<list id="applicable_artifacts" assistance_dictionary="DQL - Med Device - Applicable artifacts for template" assistance_dictionary_alias="auto" assistance_type="dictionary" rows="5" sorted="true"/>
+					<comment font_color="#646464" html_content="true" label_en="&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;font color=&quot;#646464&quot;&gt;To restrict this template to specific artifacts, select the relevant groups, sub-groups and / or artifact names in the above. If you leave the artifacts list blank, the template will apply to all artifacts in the selected sub-groups. If you leave both the sub-group and artifact lists blank, it applies to all artifacts in the selected groups.&lt;/font&gt;&lt;/td/&lt;/tr&gt;&lt;/table&gt;"/>
+					<separator/>
+					<list id="applicable_sites" assistance_dictionary="DQL - GMP - All applicable sites" assistance_dictionary_alias="en" assistance_type="dictionary" sorted="true"/>
+					<comment html_content="true" label_en="&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;font color=#646464&gt;To restrict this template to specific sites, select the relevant site names in the above.&lt;/font&gt;&lt;/td/&lt;/tr&gt;&lt;/table&gt;"/>
+				</tab>
+				<tab condition_visible_edit="false" label_en="Process Info">
+					<tabs>
+						<tab label_en="Authors">
+							<list id="authors" assistance_dql="select groups_names from dm_group where any i_supergroups_names='cd_med_device_template_authors' union select users_names from dm_group where any i_supergroups_names='cd_med_device_template_authors' union select group_name from dm_group where group_name = 'cd_med_device_template_authors'" assistance_type="dql" asynchronous="false" rows="4" sorted="true"/>
+						</tab>
+						<tab label_en="Approvers">
+							<list id="approvers" assistance_dql="select groups_names from dm_group where any i_supergroups_names='cd_med_device_template_approvers' union select users_names from dm_group where any i_supergroups_names='cd_med_device_template_approvers' union select group_name from dm_group where group_name = 'cd_med_device_template_approvers'" assistance_type="dql" asynchronous="false" rows="4" sorted="true"/>
+						</tab>
+					</tabs>
+				</tab>
+				<tab condition_visible_create="false" condition_visible_import="false" label_en="Template Info">
+					<label id="r_object_type"/>
+					<label id="r_version_label"/>
+					<label id="a_status" assistance_dictionary="Domain Status DQL Dictionary" assistance_dictionary_alias="display_value" assistance_type="dictionary"/>
+					<label id="owner_name"/>
+					<label id="a_content_type"/>
+					<label id="r_full_content_size"/>
+					<separator/>
+					<columns count="2">
+						<label id="r_creator_name"/>
+						<date id="r_creation_date" condition_enabled_create="false" condition_enabled_edit="false" condition_enabled_import="false"/>
+					</columns>
+					<columns count="2">
+						<label id="r_modifier"/>
+						<date id="r_modify_date" condition_enabled_create="false" condition_enabled_edit="false" condition_enabled_import="false"/>
+					</columns>
+					<columns count="2">
+						<label id="r_lock_owner"/>
+						<date id="r_lock_date" condition_enabled_create="false" condition_enabled_edit="false" condition_enabled_import="false"/>
+					</columns>
+				</tab>
+			</tabs>
+		</fieldset>
+	</content>
+	<buttons>
+		<button id="buttonOk" action="validDialog()"/>
+		<button id="buttonCancel" action="cancelDialog()"/>
+	</buttons>
+</dialog>

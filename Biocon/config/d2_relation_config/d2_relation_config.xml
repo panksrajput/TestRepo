@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_relation_config new_format="true">
+	<object_name value=""/>
+	<title value=""/>
+	<subject value=""/>
+	<authors/>
+	<keywords/>
+	<a_status value=""/>
+	<a_content_type value=""/>
+	<log_entry value=""/>
+	<language_code value=""/>
+	<relation_type>
+		<repeating value="Related Drawing"/>
+		<repeating value="Related Policy"/>
+		<repeating value="Supporting Document"/>
+		<repeating value="Validation Results"/>
+		<repeating value="Related Form"/>
+	</relation_type>
+	<is_multiple>
+		<repeating value="T"/>
+		<repeating value="T"/>
+		<repeating value="T"/>
+		<repeating value="T"/>
+		<repeating value="T"/>
+	</is_multiple>
+	<is_control>
+		<repeating value="F"/>
+		<repeating value="F"/>
+		<repeating value="F"/>
+		<repeating value="F"/>
+		<repeating value="F"/>
+	</is_control>
+	<child_version>
+		<repeating value="current"/>
+		<repeating value="current"/>
+		<repeating value="current"/>
+		<repeating value="all"/>
+		<repeating value="current"/>
+	</child_version>
+	<child_version_label>
+		<repeating value=""/>
+		<repeating value=""/>
+		<repeating value=""/>
+		<repeating value=""/>
+		<repeating value=""/>
+	</child_version_label>
+	<relation_inherit_type value=""/>
+	<relation_inherit_name value=""/>
+	<lock_config value="F"/>
+</d2_relation_config>

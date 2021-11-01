@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<textWatermark>
+	<textValue>Reference Copy</textValue>
+	<fontName>helvetica</fontName>
+	<fontColor>#FF0000</fontColor>
+	<fontSize>40</fontSize>
+	<rotation>270.0</rotation>
+	<horizontalAlign>RIGHT</horizontalAlign>
+	<verticalAlign>CENTER</verticalAlign>
+	<opacity>50</opacity>
+</textWatermark>

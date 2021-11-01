@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_queryform_config new_format="true">
+	<object_name value="Find all Deactivated Users"/>
+	<title value="Provides list of all deactivate users."/>
+	<subject value=""/>
+	<authors/>
+	<keywords/>
+	<a_status value=""/>
+	<a_content_type value=""/>
+	<log_entry value=""/>
+	<language_code value=""/>
+	<application_names>
+		<repeating value="OpenText Life Sciences Medical Device Solution"/>
+		<repeating value="OpenText Life Sciences Medical Device for Quality and Manufacturing Solution"/>
+		<repeating value="OpenText Life Sciences eTMF Solution"/>
+		<repeating value="OpenText Life Sciences Quality and Manufacturing Solution"/>
+		<repeating value="OpenText Life Sciences Research and Development Solution"/>
+		<repeating value="OpenText Life Sciences Submission Storage and Viewing"/>
+	</application_names>
+	<lock_config value="F"/>
+	<parents_config/>
+	<default_value value=""/>
+	<description value=""/>
+	<property_page value="Find all Deactivated Users"/>
+	<locale>
+		<repeating value="en"/>
+	</locale>
+	<label>
+		<repeating value="Find all Deactivated Users"/>
+	</label>
+	<ignore_empty_attr value="F"/>
+	<dql_value value="select user_name,deactivated_ip_addr,deactivated_utc_time,user_os_name,user_address,user_login_name,first_failed_auth_utc_time,last_login_utc_time,'0000000000000000' as r_object_id  from dm_user where user_state =1"/>
+	<path value="/"/>
+	<add_mandatory_hidden value="F"/>
+	<add_user_pref value="F"/>
+	<facet_indent/>
+	<facet_position/>
+	<facet_sort/>
+	<is_facet/>
+	<is_xplore value="F"/>
+	<dictionary_name/>
+	<dql_qualification/>
+	<order_by value=""/>
+	<order_by_direction value="Asc"/>
+	<folder_path/>
+	<folder_descend value="F"/>
+	<col_name/>
+	<attr/>
+	<attr_value/>
+	<all_versions value="F"/>
+	<bracket_close/>
+	<bracket_open/>
+	<case_sensitive value="F"/>
+	<facets/>
+	<fulltext_operator value=""/>
+	<fulltext_words value=""/>
+	<logical/>
+	<operator/>
+	<type_name/>
+	<attr_name/>
+	<alias_locale_name/>
+</d2_queryform_config>

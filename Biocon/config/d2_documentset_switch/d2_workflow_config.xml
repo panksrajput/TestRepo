@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_documentset_switch object_name="d2_workflow_config">
+	<d2_documentset name="Change Request¬Change Requests" config="Cat 1-3 Collaborative Author Site Performers"/>
+	<d2_documentset name="Change Request¬Change Requests" config="Change Request For Approval Workflow [CR-APPROVE]"/>
+	<d2_documentset name="Change Request¬Change Requests" config="Change Request For Review/Approval Workflow [CR-REVIEW-APPROVE]"/>
+	<d2_documentset name="Change Request¬Change Requests" config="GMP SharePoint Collaboration 1 Step"/>
+	<d2_documentset name="Change Request¬Change Requests" config="GMP SharePoint Collaboration 2 Step"/>
+	<d2_documentset name="Controlled Documents¬Cat 1 Controlled Documents" config="Bio Cat 1 Review Approve Site Performers [1-GMP-REVIEW-APPROVE]"/>
+	<d2_documentset name="Controlled Documents¬Cat 1 Controlled Documents" config="Cat 1 Approve Site Performers [1-GMP-APPROVE]"/>
+	<d2_documentset name="Controlled Documents¬Cat 1 Controlled Documents" config="Cat 1 GMP withdrawal WF"/>
+	<d2_documentset name="Controlled Documents¬Cat 1 Controlled Documents" config="Cat 1 Periodic Review[1-PERIODIC]"/>
+	<d2_documentset name="Controlled Documents¬Cat 1 Controlled Documents" config="Cat 1-3 Collaborative Author Site Performers"/>
+	<d2_documentset name="Controlled Documents¬Cat 1 Controlled Documents" config="GMP SharePoint Collaboration 1 Step"/>
+	<d2_documentset name="Controlled Documents¬Cat 1 Controlled Documents" config="GMP SharePoint Collaboration 2 Step"/>
+	<d2_documentset name="Controlled Documents¬Cat 2 Controlled Documents" config="Bio Cat 2 Review/Approve Site Performer[2-GMP-APPROVE-REVIEW]"/>
+	<d2_documentset name="Controlled Documents¬Cat 2 Controlled Documents" config="Cat 1-3 Collaborative Author Site Performers"/>
+	<d2_documentset name="Controlled Documents¬Cat 2 Controlled Documents" config="Cat 2 GMP Direct Approval Site Performers [2-GMP-APPROVE]"/>
+	<d2_documentset name="Controlled Documents¬Cat 2 Controlled Documents" config="Cat 2 GMP Direct Approval Site Performers [2-GMP-APPROVE] noSig"/>
+	<d2_documentset name="Controlled Documents¬Cat 2 Controlled Documents" config="GMP SharePoint Collaboration 1 Step"/>
+	<d2_documentset name="Controlled Documents¬Cat 2 Controlled Documents" config="GMP SharePoint Collaboration 2 Step"/>
+	<d2_documentset name="Controlled Documents¬Cat 3 Controlled Documents" config="Cat 1-3 Collaborative Author Site Performers"/>
+	<d2_documentset name="Controlled Documents¬Cat 3 Controlled Documents" config="Cat 3 GMP Delegated Approved [3-GMP-APPROVE]"/>
+	<d2_documentset name="Controlled Documents¬Cat 3 Controlled Documents" config="Cat 3 GMP Delegated Approved [3-GMP-APPROVE] noSig"/>
+	<d2_documentset name="Controlled Documents¬Cat 3 Controlled Documents" config="Cat 3 GMP Review [3-GMP-REVIEW]"/>
+	<d2_documentset name="Controlled Documents¬Cat 3 Controlled Documents" config="GMP SharePoint Collaboration 1 Step"/>
+	<d2_documentset name="Controlled Documents¬Cat 3 Controlled Documents" config="GMP SharePoint Collaboration 2 Step"/>
+	<d2_documentset name="Recall Objects" config="Controlled Recall External"/>
+	<d2_documentset name="Recall Objects" config="Controlled Recall Internal"/>
+	<d2_documentset name="Content Templates¬Quality in Manufacturing Content Templates" config="Content Template - Delegated Approval Workflow Template [TEMPLATE-APPROVE]"/>
+	<d2_documentset name="Content Templates¬Med Device Content Templates" config="Content Template - Delegated Approval Workflow Template [TEMPLATE-APPROVE]"/>
+	<switch_defaults/>
+</d2_documentset_switch>

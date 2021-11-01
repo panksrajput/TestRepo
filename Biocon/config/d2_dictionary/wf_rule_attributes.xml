@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_dictionary object_name="wf_rule_attributes" title="" lock_config="false" parents_config="" application_names="OpenText Life Sciences Medical Device for Research and Development Solution¬OpenText Life Sciences Medical Device Solution¬OpenText Life Sciences Medical Device for Quality and Manufacturing Solution¬OpenText Life Sciences eTMF Solution¬OpenText Life Sciences Quality and Manufacturing Solution¬OpenText Life Sciences Research and Development Solution¬OpenText Life Sciences Submission Storage and Viewing" security_group="admingroup" search_group="admingroup" version="2" is_versioned="false" manual_order="false" create_view_option="false" is_dql="false" is_dql_cache="false" dql="" label_en="">
+	<d2_dictionary_value object_name="1-APPROVE" is_enabled="true" order_no="0">
+		<alias name="rule_attribute" value="wf_process_list"/>
+		<alias name="is_workflow" value="Y"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="1-APPROVE-REVIEW" is_enabled="true" order_no="0">
+		<alias name="rule_attribute" value="wf_process_list"/>
+		<alias name="is_workflow" value="Y"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="1-COLLABORATION" is_enabled="true" order_no="0">
+		<alias name="rule_attribute" value="wf_process_list"/>
+		<alias name="is_workflow" value="Y"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="1-FORMATTER" is_enabled="true" order_no="0">
+		<alias name="rule_attribute" value="wf_process_list"/>
+		<alias name="is_workflow" value="Y"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="1-GMP-APPROVE" is_enabled="true" order_no="0">
+		<alias name="rule_attribute" value="wf_process_list"/>
+		<alias name="is_workflow" value="Y"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="1-GMP-APPROVE-REVIEW" is_enabled="true" order_no="0">
+		<alias name="rule_attribute" value="wf_process_list"/>
+		<alias name="is_workflow" value="Y"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="1-PERIODIC" is_enabled="true" order_no="0">
+		<alias name="rule_attribute" value="wf_process_list"/>
+		<alias name="is_workflow" value="Y"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="1-SP-COLLABORATION-1-STEP" is_enabled="true" order_no="0">
+		<alias name="rule_attribute" value="wf_process_list"/>
+		<alias name="is_workflow" value="Y"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="1-SP-COLLABORATION-2-STEP" is_enabled="true" order_no="0">
+		<alias name="rule_attribute" value="wf_process_list"/>
+		<alias name="is_workflow" value="Y"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="2-APPROVE" is_enabled="true" order_no="0">
+		<alias name="rule_attribute" value="wf_process_list"/>
+		<alias name="is_workflow" value="Y"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="2-APPROVE-2-STEP" is_enabled="true" order_no="0">
+		<alias name="rule_attribute" value="wf_process_list"/>
+		<alias name="is_workflow" value="Y"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="2-APPROVE-REVIEW" is_enabled="true" order_no="0">
+		<alias name="rule_attribute" value="wf_process_list"/>
+		<alias name="is_workflow" value="Y"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="2-COLLABORATION" is_enabled="true" order_no="0">
+		<alias name="rule_attribute" value="wf_process_list"/>
+		<alias name="is_workflow" value="Y"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="2-FOR-EDIT" is_enabled="true" order_no="0">
+		<alias name="rule_attribute" value="wf_process_list"/>
+		<alias name="is_workflow" value="Y"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="2-FORMATTER" is_enabled="true" order_no="0">
+		<alias name="rule_attribute" value="wf_process_list"/>
+		<alias name="is_workflow" value="Y"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="2-GMP-APPROVE" is_enabled="true" order_no="0">
+		<alias name="rule_attribute" value="wf_process_list"/>
+		<alias name="is_workflow" value="Y"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="2-GMP-APPROVE-REVIEW" is_enabled="true" order_no="0">
+		<alias name="rule_attribute" value="wf_process_list"/>
+		<alias name="is_workflow" value="Y"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="2-SELFAPPROVE" is_enabled="true" order_no="0">
+		<alias name="rule_attribute" value="wf_process_list"/>
+		<alias name="is_workflow" value="Y"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="2-SP-COLLABORATION-1-STEP" is_enabled="true" order_no="0">
+		<alias name="rule_attribute" value="wf_process_list"/>
+		<alias name="is_workflow" value="Y"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="2-SP-COLLABORATION-2-STEP" is_enabled="true" order_no="0">
+		<alias name="rule_attribute" value="wf_process_list"/>
+		<alias name="is_workflow" value="Y"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="3-APPROVE" is_enabled="true" order_no="0">
+		<alias name="rule_attribute" value="wf_process_list"/>
+		<alias name="is_workflow" value="Y"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="3-COLLABORATION" is_enabled="true" order_no="0">
+		<alias name="rule_attribute" value="wf_process_list"/>
+		<alias name="is_workflow" value="Y"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="3-GMP-APPROVE" is_enabled="true" order_no="0">
+		<alias name="rule_attribute" value="wf_process_list"/>
+		<alias name="is_workflow" value="Y"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="3-GMP-REVIEW" is_enabled="true" order_no="0">
+		<alias name="rule_attribute" value="wf_process_list"/>
+		<alias name="is_workflow" value="Y"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="3-REVIEW" is_enabled="true" order_no="0">
+		<alias name="rule_attribute" value="wf_process_list"/>
+		<alias name="is_workflow" value="Y"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="3-SP-COLLABORATION-1-STEP" is_enabled="true" order_no="0">
+		<alias name="rule_attribute" value="wf_process_list"/>
+		<alias name="is_workflow" value="Y"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="3-SP-COLLABORATION-2-STEP" is_enabled="true" order_no="0">
+		<alias name="rule_attribute" value="wf_process_list"/>
+		<alias name="is_workflow" value="Y"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="APPROVESIG" is_enabled="true" order_no="0">
+		<alias name="rule_attribute" value="wf_signature_list"/>
+		<alias name="is_workflow" value="N"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="COLLABORATE" is_enabled="true" order_no="0">
+		<alias name="rule_attribute" value="wf_process_list"/>
+		<alias name="is_workflow" value="Y"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="CR-APPROVE" is_enabled="true" order_no="0">
+		<alias name="rule_attribute" value="wf_process_list"/>
+		<alias name="is_workflow" value="Y"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="CR-REVIEW-APPROVE" is_enabled="true" order_no="0">
+		<alias name="rule_attribute" value="wf_process_list"/>
+		<alias name="is_workflow" value="Y"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="TEMPLATE-APPROVE" is_enabled="true" order_no="0">
+		<alias name="rule_attribute" value="wf_process_list"/>
+		<alias name="is_workflow" value="Y"/>
+	</d2_dictionary_value>
+</d2_dictionary>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_mailing_config>
+	<add_attachment>true</add_attachment>
+	<rendition_formats/>
+	<list-recipient>
+		<recipient type="group">cd_report_locked_users</recipient>
+	</list-recipient>
+	<list-subject>
+		<subject_en>Locked User Accounts Report</subject_en>
+	</list-subject>
+	<list-object>
+		<object_en>The attached report lists Documentum user accounts that have been locked out due to repeated failed login attempts.</object_en>
+	</list-object>
+</d2_mailing_config>

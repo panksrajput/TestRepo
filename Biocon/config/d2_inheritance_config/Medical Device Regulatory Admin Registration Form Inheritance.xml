@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d2_inheritance_config new_format="true">
+	<object_name value="Medical Device Regulatory Admin Registration Form Inheritance"/>
+	<title value="Facilitates creation of trial registration forms from existing product / trial registrations."/>
+	<subject value=""/>
+	<authors/>
+	<keywords/>
+	<a_status value=""/>
+	<a_content_type value=""/>
+	<log_entry value=""/>
+	<language_code value=""/>
+	<module_type value="d2_inheritance_config"/>
+	<application_names>
+		<repeating value="OpenText Life Sciences Quality and Manufacturing Solution"/>
+		<repeating value="OpenText Life Sciences Medical Device for Quality and Manufacturing Solution"/>
+		<repeating value="OpenText Life Sciences Submission Storage and Viewing"/>
+		<repeating value="OpenText Life Sciences Medical Device Solution"/>
+		<repeating value="OpenText Life Sciences Medical Device for Research and Development Solution"/>
+		<repeating value="OpenText Life Sciences Research and Development Solution"/>
+	</application_names>
+	<lock_config value="F"/>
+	<parents_config/>
+	<attr_name>
+		<repeating value="dv_device_code"/>
+		<repeating value="dv_device_family"/>
+		<repeating value="dv_device_subfamily"/>
+		<repeating value="dv_project_name"/>
+	</attr_name>
+	<vd_restricted_warning_local>
+		<repeating value="en"/>
+	</vd_restricted_warning_local>
+	<vd_restricted_warning/>
+	<vd_restricted_condition>
+		<repeating value=""/>
+	</vd_restricted_condition>
+	<relation_inherit_type value="none"/>
+	<relation_inherit_name value=""/>
+</d2_inheritance_config>
