@@ -33,7 +33,7 @@
 	<d2_dictionary_value object_name="Brother-DCP-L2541DW" is_enabled="true" order_no="0">
 		<locale name="en" value="Brother-DCP-L2541DW"/>
 	</d2_dictionary_value>
-	<d2_dictionary_value object_name="Bullzip PDF Printer" is_enabled="false" order_no="0">
+	<d2_dictionary_value object_name="Bullzip PDF Printer" is_enabled="true" order_no="0">
 		<locale name="en" value="Bullzip PDF Printer"/>
 	</d2_dictionary_value>
 	<d2_dictionary_value object_name="CAMPUS-SECUREPRINT" is_enabled="false" order_no="0">

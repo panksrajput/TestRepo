@@ -42,24 +42,24 @@
 		<xsl>
 			<id>SignaturePage</id>
 			<title>Signatures</title>
+			<includeBookmarks>true</includeBookmarks>
 			<file>BioSignatureNoGMT.xsl</file>
 			<param_PrepareddateLabel>Prepared Date</param_PrepareddateLabel>
 			<param_PreparedbyLabel>Prepared By</param_PreparedbyLabel>
-			<param_PageWidth_cm>21.59</param_PageWidth_cm>
+			<param_PageWidth_cm>21</param_PageWidth_cm>
 			<param_PageHeight_cm>29.7</param_PageHeight_cm>
 			<param_ReasonLabel>Remarks</param_ReasonLabel>
 			<param_VersionLabel>Version</param_VersionLabel>
 			<param_DateLabel>Date</param_DateLabel>
 			<param_UserLabel>User</param_UserLabel>
-			<sameSize>true</sameSize>
-			<includeBookmarks>true</includeBookmarks>
+			<sameSize>false</sameSize>
 		</xsl>
 	</merge>
 	<stamp>
 		<layer>
 			<file>Bio Effective SignPage Overlay.pdf</file>
-			<startPage>SignaturePage</startPage>
 			<endPage>SignaturePage</endPage>
+			<startPage>SignaturePage</startPage>
 		</layer>
 		<layer>
 			<file>Bio Effective Date Header Only.pdf</file>

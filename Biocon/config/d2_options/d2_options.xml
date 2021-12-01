@@ -17,7 +17,7 @@
 	</forbidden_copy>
 	<client_urls>
 		<repeating value="http://bldmsdotapp01:9090/D2-Config"/>
-		<repeating value="https://bldmsdev.biocon.com/D2"/>
+		<repeating value="https://bldmsdotapp01.biocon.com:443/D2"/>
 	</client_urls>
 	<enable_compare value="T"/>
 	<attribute_list_display_mode value="0"/>

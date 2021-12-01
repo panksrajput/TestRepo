@@ -12,7 +12,7 @@
 	<dql_where value="domain='GMP' and primary_group='Site Master File'"/>
 	<order_no value="115"/>
 	<dql_from>
-		<repeating value="cd_quality_gmp_approved"/>
+		<repeating value="cd_quality_gmp_effective"/>
 	</dql_from>
 	<group_names/>
 	<application_names>

@@ -63,8 +63,8 @@
 			</tab>
 			<tab label_en="Finished Good">
 				<grid grid_height="400">
-					<combo id="item_codes" advancedView_enabled="false" assistance_dql="select distinct item_code from cd_manuf_item_info where a_status = 'Active' and item_type = 'Finished Good' and any applicable_sites in ($repeatingvalue(applicable_sites))" assistance_type="dql" autoselect_single="true" cell_width="150" condition_enabled="((getValue(a_status).contains('Draft'))||(getValue(a_status).contains('')))" condition_required_create="true" condition_required_edit="true" condition_required_import="true"/>
-					<combo id="item_names" assistance_dql="select item_name from cd_manuf_item_info where item_code = '$value(item_codes)'" assistance_type="dql" autoselect_single="true" cell_width="450" condition_enabled_create="false" condition_enabled_edit="false" condition_enabled_import="false"/>
+					<combo id="item_codes" advancedView_enabled="false" assistance_dql="select distinct item_code from cd_manuf_item_info where a_status = 'Active' and item_type = 'Finished Good' and any applicable_sites in ($repeatingvalue(applicable_sites)) UNION select 'NA' from dm_docbase_config" assistance_type="dql" autoselect_single="true" cell_width="150" condition_enabled="((getValue(a_status).contains('Draft'))||(getValue(a_status).contains('')))" condition_required_create="true" condition_required_edit="true" condition_required_import="true" no_empty_cell="true"/>
+					<combo id="item_names" assistance_dql="select item_name from cd_manuf_item_info where item_code = '$value(item_codes)' UNION select 'NA' from dm_docbase_config where '$value(item_codes)' = 'NA'" assistance_type="dql" autoselect_single="true" cell_width="450" condition_enabled_create="false" condition_enabled_edit="false" condition_enabled_import="false"/>
 					<combo id="product_codes" assistance_dql="select product_code from cd_manuf_item_info where item_code = '$value(item_codes)'" assistance_type="dql" autoselect_single="true" condition_enabled_create="false" condition_enabled_edit="false" condition_enabled_import="false" label_en="R&amp;D Product Code (where applicable)"/>
 				</grid>
 			</tab>

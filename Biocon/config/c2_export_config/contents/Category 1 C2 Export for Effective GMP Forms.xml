@@ -43,17 +43,17 @@
 		<xsl>
 			<id>SignaturePage</id>
 			<title>Signatures</title>
-			<file>BioSignatureNoGMT.xsl</file>
-			<sameSize>true</sameSize>
 			<includeBookmarks>true</includeBookmarks>
-			<param_UserLabel>User</param_UserLabel>
-			<param_DateLabel>Date</param_DateLabel>
-			<param_VersionLabel>Version</param_VersionLabel>
-			<param_ReasonLabel>Remarks</param_ReasonLabel>
-			<param_PageHeight_cm>29.7</param_PageHeight_cm>
-			<param_PageWidth_cm>21.59</param_PageWidth_cm>
-			<param_PreparedbyLabel>Prepared By:</param_PreparedbyLabel>
+			<file>BioSignatureNoGMT.xsl</file>
 			<param_PrepareddateLabel>Prepared Date:</param_PrepareddateLabel>
+			<param_PreparedbyLabel>Prepared By:</param_PreparedbyLabel>
+			<param_PageWidth_cm>21</param_PageWidth_cm>
+			<param_PageHeight_cm>29.7</param_PageHeight_cm>
+			<param_ReasonLabel>Remarks</param_ReasonLabel>
+			<param_VersionLabel>Version</param_VersionLabel>
+			<param_DateLabel>Date</param_DateLabel>
+			<param_UserLabel>User</param_UserLabel>
+			<sameSize>false</sameSize>
 		</xsl>
 	</merge>
 	<stamp>
@@ -62,23 +62,23 @@
 		</layer>
 		<layer>
 			<file>Bio Page number.pdf</file>
-			<startPage/>
 			<endPage/>
+			<startPage/>
 		</layer>
 		<layer>
 			<file>Bio Export Info.pdf</file>
-			<startPage/>
 			<endPage/>
+			<startPage/>
 		</layer>
 		<layer>
 			<file>Bio Export Validity Status Info Only.pdf</file>
-			<startPage/>
 			<endPage/>
+			<startPage/>
 		</layer>
 		<layer>
 			<file>Bio Effective SignPage Overlay.pdf</file>
-			<startPage>SignaturePage</startPage>
 			<endPage>SignaturePage</endPage>
+			<startPage>SignaturePage</startPage>
 		</layer>
 		<textWatermark>
 			<file>Uncontrolled</file>

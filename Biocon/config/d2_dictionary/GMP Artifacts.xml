@@ -154,6 +154,13 @@
 		<alias name="training_due_days" value="30"/>
 		<locale name="en" value="Attendance - Quality Mgmt Review"/>
 	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Audit Forms" is_enabled="true" order_no="0">
+		<alias name="periodic_interval" value="730 Days"/>
+		<alias name="review_start_days" value="30 Days"/>
+		<alias name="training_models" value="Site By Area By Training Role,Adhoc User Model"/>
+		<alias name="training_due_days" value="30"/>
+		<locale name="en" value="Audit Forms"/>
+	</d2_dictionary_value>
 	<d2_dictionary_value object_name="Audit Report" is_enabled="true" order_no="0">
 		<alias name="periodic_interval" value="730 Days"/>
 		<alias name="review_start_days" value="30 Days"/>
@@ -1253,7 +1260,7 @@
 		<alias name="training_due_days" value="30"/>
 		<locale name="en" value="Foil"/>
 	</d2_dictionary_value>
-	<d2_dictionary_value object_name="Form" is_enabled="true" order_no="0">
+	<d2_dictionary_value object_name="Form" is_enabled="false" order_no="0">
 		<alias name="periodic_interval" value="730 Days"/>
 		<alias name="review_start_days" value="30 Days"/>
 		<alias name="training_models" value="Site By Area By Training Role,Adhoc User Model"/>
@@ -3289,6 +3296,13 @@
 		<alias name="training_models" value="Site By Area By Training Role,Adhoc User Model"/>
 		<alias name="training_due_days" value="30"/>
 		<locale name="en" value="Software Requirement Specifications"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Solvent recovery record" is_enabled="false" order_no="0">
+		<alias name="periodic_interval" value="3650 Days"/>
+		<alias name="review_start_days" value="90 Days"/>
+		<alias name="training_models" value="Site By Area By Training Role,Adhoc User Model"/>
+		<alias name="training_due_days" value="30"/>
+		<locale name="en" value="Solvent recovery record"/>
 	</d2_dictionary_value>
 	<d2_dictionary_value object_name="Solvent Recovery Record" is_enabled="true" order_no="0">
 		<alias name="periodic_interval" value="3650 Days"/>

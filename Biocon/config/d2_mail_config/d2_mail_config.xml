@@ -24,7 +24,7 @@
 	<pop_protocol value=""/>
 	<push_protocol value="smtp"/>
 	<from_address value="bldmsdev.admin@biocon.com"/>
-	<from_name value="DMSAdmin"/>
+	<from_name value="DMSDevAdmin"/>
 	<accept_address value=""/>
 	<reject_address value=""/>
 	<admin_address value=""/>

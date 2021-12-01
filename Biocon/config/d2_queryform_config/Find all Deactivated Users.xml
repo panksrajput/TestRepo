@@ -29,7 +29,7 @@
 		<repeating value="Find all Deactivated Users"/>
 	</label>
 	<ignore_empty_attr value="F"/>
-	<dql_value value="select user_name,deactivated_ip_addr,deactivated_utc_time,user_os_name,user_address,user_login_name,first_failed_auth_utc_time,last_login_utc_time,'0000000000000000' as r_object_id  from dm_user where user_state =1"/>
+	<dql_value value="select adt.deactivated_time,usr.user_name,usr.user_address,usr.failed_auth_attempt,usr.first_failed_auth_utc_time as &quot;first_failed_auth_time&quot; from dm_user usr, (select audited_obj_id,max(time_stamp_utc) as deactivated_time from dm_audittrail where event_name = 'dm_save' and ((attribute_list like '%user_state=1%' and attribute_list_old not like '%user_state=1%') or (attribute_list like '%user_state=2%' and attribute_list_old not like '%user_state=2%') or (attribute_list like '%user_state=3%' and attribute_list_old not like '%user_state=3%')) group by audited_obj_id) adt where usr.user_state &gt;=1 and usr.failed_auth_attempt&lt;5 and usr.r_object_id=adt.audited_obj_id UNION select deactivated_utc_time, user_name, user_address, failed_auth_attempt, first_failed_auth_utc_time from dm_user where user_state &gt;= 1 and failed_auth_attempt&gt;=5 order by 1 desc, 2"/>
 	<path value="/"/>
 	<add_mandatory_hidden value="F"/>
 	<add_user_pref value="F"/>

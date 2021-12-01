@@ -24,6 +24,9 @@
 	<d2_dictionary_value object_name="C3" is_enabled="true" order_no="0">
 		<locale name="en" value="C3"/>
 	</d2_dictionary_value>
+	<d2_dictionary_value object_name="CQA - A1" is_enabled="true" order_no="0">
+		<locale name="en" value="CQA - A1"/>
+	</d2_dictionary_value>
 	<d2_dictionary_value object_name="D1" is_enabled="true" order_no="0">
 		<locale name="en" value="D1"/>
 	</d2_dictionary_value>

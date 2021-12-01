@@ -4176,10 +4176,10 @@
 		<alias name="Artifact Label" value="Seed Fermenter Checklist - Semi-Fin Good"/>
 		<alias name="Creation Profile" value="Manufacturing"/>
 	</d2_dictionary_value>
-	<d2_dictionary_value object_name="Master Manufacturing|Master Manufacturing Document Semi-finished Good|Solvent recovery record" is_enabled="true" order_no="0">
+	<d2_dictionary_value object_name="Master Manufacturing|Master Manufacturing Document Semi-finished Good|Solvent Recovery Record" is_enabled="true" order_no="0">
 		<alias name="GMP Groups" value="Master Manufacturing"/>
 		<alias name="GMP Subgroups" value="Master Manufacturing Document Semi-finished Good"/>
-		<alias name="GMP Artifacts" value="Solvent recovery record"/>
+		<alias name="GMP Artifacts" value="Solvent Recovery Record"/>
 		<alias name="1-COLLABORATION" value="Y"/>
 		<alias name="1-GMP-APPROVE" value="N"/>
 		<alias name="1-GMP-APPROVE-REVIEW" value="Y"/>
@@ -4197,7 +4197,7 @@
 		<alias name="2-SP-COLLABORATION-2-STEP" value="N"/>
 		<alias name="3-SP-COLLABORATION-1-STEP" value="N"/>
 		<alias name="3-SP-COLLABORATION-2-STEP" value="N"/>
-		<alias name="Artifact Label" value="Solvent recovery record - Semi-Fin Good"/>
+		<alias name="Artifact Label" value="Solvent Recovery Record - Semi-Fin Good"/>
 		<alias name="Creation Profile" value="Manufacturing"/>
 	</d2_dictionary_value>
 	<d2_dictionary_value object_name="Master Validation|Validation Equipment|Concept Note" is_enabled="true" order_no="0">
@@ -5472,10 +5472,10 @@
 		<alias name="Artifact Label" value="Master Val - Miscellaneous Validation"/>
 		<alias name="Creation Profile" value="Validation"/>
 	</d2_dictionary_value>
-	<d2_dictionary_value object_name="Master Validation|Validation System|Operational and Performance Qualiication" is_enabled="true" order_no="0">
+	<d2_dictionary_value object_name="Master Validation|Validation System|Operational and Performance Qualification" is_enabled="true" order_no="0">
 		<alias name="GMP Groups" value="Master Validation"/>
 		<alias name="GMP Subgroups" value="Validation System"/>
-		<alias name="GMP Artifacts" value="Operational and Performance Qualiication"/>
+		<alias name="GMP Artifacts" value="Operational and Performance Qualification"/>
 		<alias name="1-COLLABORATION" value="N"/>
 		<alias name="1-GMP-APPROVE" value="N"/>
 		<alias name="1-GMP-APPROVE-REVIEW" value="N"/>
@@ -5493,7 +5493,7 @@
 		<alias name="2-SP-COLLABORATION-2-STEP" value="N"/>
 		<alias name="3-SP-COLLABORATION-1-STEP" value="N"/>
 		<alias name="3-SP-COLLABORATION-2-STEP" value="N"/>
-		<alias name="Artifact Label" value="Master Val - Operational and Performance Qualiication"/>
+		<alias name="Artifact Label" value="Master Val - Operational and Performance Qualification"/>
 		<alias name="Creation Profile" value="Validation"/>
 	</d2_dictionary_value>
 	<d2_dictionary_value object_name="Master Validation|Validation System|Operational Qualification" is_enabled="true" order_no="0">

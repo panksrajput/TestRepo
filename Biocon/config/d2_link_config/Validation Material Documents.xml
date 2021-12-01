@@ -16,23 +16,23 @@
 	<lock_config value="F"/>
 	<parents_config/>
 	<path>
-		<repeating value="/Validation/$value(applicable_sites)/$value(bio_department.Bio Department.en)/Material/$value(material_name)/$value(primary_group)/$value(artifact_name)"/>
+		<repeating value="/Validation/$value(applicable_sites)/Material/$value(material_name)/$value(primary_group)/$value(artifact_name)"/>
 	</path>
 	<undefined_label value="Undefined"/>
 	<undefined_concat value="F"/>
 	<linked_repeating value="F"/>
 	<type>
-		<repeating value="/dm_cabinet/dm_folder/dm_folder/dm_folder/dm_folder/dm_folder/dm_folder"/>
+		<repeating value="/dm_cabinet/dm_folder/dm_folder/dm_folder/dm_folder/dm_folder"/>
 	</type>
 	<first_repeating value="F"/>
 	<is_home_cabinet>
 		<repeating value="F"/>
 	</is_home_cabinet>
 	<acl>
-		<repeating value="//GMP Site Folder Security Model/GMP Folder Security/GMP Folder Security/GMP Folder Security/GMP Folder Security/GMP Folder Security"/>
+		<repeating value="//GMP Site Folder Security Model/GMP Folder Security/GMP Folder Security/GMP Folder Security/GMP Folder Security"/>
 	</acl>
 	<default_value>
-		<repeating value="///////"/>
+		<repeating value="//////"/>
 	</default_value>
 	<regexp_name/>
 	<regexp_pattern/>

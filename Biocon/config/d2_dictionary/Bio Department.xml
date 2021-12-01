@@ -16,6 +16,10 @@
 		<alias name="dep_name" value="Corporate Quality Assurance"/>
 		<locale name="en" value="Corporate Quality Assurance"/>
 	</d2_dictionary_value>
+	<d2_dictionary_value object_name="CQA" is_enabled="true" order_no="0">
+		<alias name="dep_name" value="CQA"/>
+		<locale name="en" value="CQA"/>
+	</d2_dictionary_value>
 	<d2_dictionary_value object_name="EAM" is_enabled="true" order_no="0">
 		<alias name="dep_name" value="EAM"/>
 		<locale name="en" value="EAM"/>
@@ -52,9 +56,17 @@
 		<alias name="dep_name" value="Quality Control Microbiology"/>
 		<locale name="en" value="Quality Control Microbiology"/>
 	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Regulatory Sciences" is_enabled="true" order_no="0">
+		<alias name="dep_name" value=""/>
+		<locale name="en" value="Regulatory Sciences"/>
+	</d2_dictionary_value>
 	<d2_dictionary_value object_name="SCM" is_enabled="true" order_no="0">
 		<alias name="dep_name" value="SCM"/>
 		<locale name="en" value="SCM"/>
+	</d2_dictionary_value>
+	<d2_dictionary_value object_name="Test data GR" is_enabled="false" order_no="0">
+		<alias name="dep_name" value=""/>
+		<locale name="en" value=""/>
 	</d2_dictionary_value>
 	<d2_dictionary_value object_name="Warehouse" is_enabled="true" order_no="0">
 		<alias name="dep_name" value="Warehouse"/>

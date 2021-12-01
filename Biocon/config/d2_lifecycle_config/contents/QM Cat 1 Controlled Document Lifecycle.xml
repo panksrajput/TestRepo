@@ -271,6 +271,9 @@
 			<applymethod argument="-if &quot;domain ='GMP' or domain='Med Device'&quot; -id $value(r_object_id) -query &quot;select v.alias_value as review_start_days from d2_dictionary d,d2_dictionary_value v where d.object_name = v.dictionary_name and d.object_name = 'GMP Artifacts' and d.alias_name='review_start_days' and  v.i_position=d.i_position and v.object_name in (select artifact_name from cd_quality_gmp where r_object_id = '$value(r_object_id)') enable (ROW_BASED)&quot; -context_user &quot;$USER&quot;" name="CDFUpdateAttrsViaQueryMethod"/>
 			<applysecurity/>
 			<applymethod argument="-qualifier  &quot;cd_controlled_doc where r_object_id = (select child_id from dm_relation r where r.parent_id = '$value(r_object_id)' and r.relation_name = 'tech_transfer')&quot; -state_transition &quot;(notify copy changed)&quot; -auto_naming false -auto_linking false -security false -preserve_last_modifier true" name="CDFApplyD2ConfigurationsMethod"/>
+			<set name="bio_lms_reason" value=""/>
+			<set name="bio_lms_justification" value=""/>
+			<set name="bio_lms_quality_notif_id" value=""/>
 			<sendmail d2_mailing_config="Notify of document change state"/>
 			<set name="suppress_signature_page" value="false"/>
 			<applymethod argument="-id &quot;$value(r_object_id)&quot; -if &quot;cd_migrated = true&quot; -attr &quot;suppress_overlays,cd_migrated&quot; -value &quot;false,false&quot;" fetchCurrent="false" name="CDFSetAttributeMethod"/>

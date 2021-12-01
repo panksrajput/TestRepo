@@ -18,7 +18,7 @@
 	<parents_config/>
 	<print_attrs/>
 	<print_attrs_values/>
-	<overlay value="Bio Controlled Print Overlay.pdf"/>
+	<overlay value="Bio Cat 2 Controlled Print Overlay.pdf"/>
 	<cover_page value=""/>
 	<c2_print_profile value="Bio Cat 2/3 C2 Print for Controlled Print Header"/>
 </cd_controlledprint_profiles>
